@@ -51,6 +51,39 @@ Bestanden in `data/`:
 - `equity.csv` – je vermogen per ronde, makkelijk te openen in Excel om een grafiek van te maken
 - `state.json` – posities en risicostatus (de bot gaat hier verder na een herstart)
 
+## Gratis 24/7 laten draaien + zelf leren (GitHub Actions)
+De repo is openbaar, dus GitHub Actions is gratis en onbeperkt. `.github/workflows/copybot.yml` doet elk uur:
+
+1. **Review (1x per dag)** – `tune` bekijkt alle trades en zoekt fouten:
+   - welke trader kost geld? (elke trader heeft een eigen *schaduwboek*: wat als je alleen hem kopieerde)
+   - eten de kosten de winst op? draait de bot vaak binnen een uur zijn eigen trade om (churn)?
+   - werd de dagverlies-stop te vaak geraakt?
+   - doen we het slechter dan gewoon BTC vasthouden? lopen we ver achter op de trader zelf?
+2. **Verbeteren** – maximaal **één** wijziging per review, bijvoorbeeld een slechte trader vervangen,
+   de hefboom verlagen of de minimale trade-grootte verhogen.
+3. **Handelen** – ~50 minuten paper trading, daarna wordt alles opgeslagen op de branch `copybot-data`.
+
+Lees het logboek: branch `copybot-data` → `JOURNAL.md` (nieuwste bovenaan). Daar staat per review
+welke fouten er gevonden zijn en wat de bot besloten heeft, en waarom.
+Het laatste rapport zie je ook bij elke run onder *Actions → Copybot → Summary*.
+
+**Beschermingen tegen "verbeteren tot je kapot bent" (overfitting):**
+| Regel | Waarom |
+|---|---|
+| Een trader wordt pas beoordeeld na 72 uur én 5 gesloten trades | Te weinig data = toeval |
+| Max 1 wijziging per review, daarna 48 uur afkoelen | Anders weet je niet welke wijziging wat deed |
+| Risico mag automatisch alleen strenger, nooit losser | Een bot die zichzelf meer hefboom geeft na een goede week is precies hoe accounts opblazen |
+| Weggestuurde trader komt op een zwarte lijst | Voorkomt heen-en-weer wisselen tussen dezelfde namen |
+
+Alle drempels staan in `copybot/tune.py` (`TuneRules`). Beslissingen worden bewaard in `overrides.json`
+op de data-branch; verwijder dat bestand om opnieuw te beginnen.
+
+**Beperkingen van de gratis variant:**
+- GitHub start geplande runs soms 5–30 minuten te laat. In die gaten wordt niet gehandeld (posities blijven open).
+- Geplande workflows draaien alleen vanaf de standaard-branch van de repo, dus deze code moet daar gemerged zijn.
+- GitHub zet geplande workflows uit na 60 dagen zonder activiteit in de repo. Je krijgt daar een mail over; één klik zet ze weer aan.
+- Alles is openbaar (de repo is publiek), dus ook je nep-resultaten.
+
 ## Eerlijk advies
 - **Draai minimaal 4–8 weken op papier.** Eén goede week zegt niks; dat kan gewoon geluk zijn.
 - **Vergelijk met niets doen.** Doet de bot het slechter dan gewoon BTC kopen en vasthouden, dan heeft hij geen zin.

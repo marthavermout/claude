@@ -1,4 +1,4 @@
-"""Command line: select | run | status | reset-kill"""
+"""Command line: select | run | status | review | tune | reset-kill"""
 
 from __future__ import annotations
 
@@ -6,10 +6,24 @@ import argparse
 import logging
 import sys
 
-from .config import load_config
+from .config import apply_overrides, load_config
 from .engine import Engine
 from .hyperliquid import HyperliquidClient
+from .review import build_review, to_markdown
 from .selector import SelectionRules, select
+from .tune import tune
+
+
+def _cfg(args):
+    cfg = load_config(args.config)
+    if args.data_dir:
+        cfg.data_dir = args.data_dir
+    return apply_overrides(cfg)
+
+
+def _selector(exclude: set[str], n: int) -> list[str]:
+    picks = select(HyperliquidClient(), SelectionRules(), top=n + len(exclude))
+    return [c.address for c in picks if c.address not in exclude][:n]
 
 
 def cmd_select(args) -> int:
@@ -29,17 +43,41 @@ def cmd_select(args) -> int:
 
 
 def cmd_run(args) -> int:
-    engine = Engine(load_config(args.config))
+    cfg = _cfg(args)
+    if not cfg.leaders:
+        print("No leaders configured. Run `select` and add them to the config, or run `tune` to pick automatically.")
+        return 1
+    engine = Engine(cfg)
     if args.once:
         engine.tick()
     else:
-        engine.run()
+        engine.run(minutes=args.minutes)
+    return 0
+
+
+def cmd_review(args) -> int:
+    cfg = _cfg(args)
+    r = build_review(cfg.data_dir, active_leaders=cfg.leaders, since_days=args.days)
+    print(to_markdown(r, f"Laatste {args.days:g} dagen" if args.days else "Sinds de start"))
+    return 0
+
+
+def cmd_tune(args) -> int:
+    cfg = _cfg(args)
+    d = tune(cfg, _selector, if_due_hours=args.if_due)
+    if d is None:
+        print("Review not due yet.")
+        return 0
+    for m in d.mistakes:
+        print("MISTAKE:", m)
+    for o in d.observations:
+        print("NOTE:   ", o)
+    print("DECISION:", d.change or d.skipped_reason or "no change")
     return 0
 
 
 def cmd_status(args) -> int:
-    cfg = load_config(args.config)
-    engine = Engine(cfg)
+    engine = Engine(_cfg(args))
     mids = engine.client.mids()
     b = engine.broker
     eq = b.equity(mids)
@@ -63,7 +101,7 @@ def cmd_status(args) -> int:
 
 
 def cmd_reset_kill(args) -> int:
-    engine = Engine(load_config(args.config))
+    engine = Engine(_cfg(args))
     engine.risk.state.killed = False
     engine.risk.state.kill_reason = ""
     engine.risk.state.peak_equity = 0.0
@@ -75,6 +113,7 @@ def cmd_reset_kill(args) -> int:
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="copybot", description="Paper copytrading bot for Hyperliquid")
     parser.add_argument("-c", "--config", default="config.toml")
+    parser.add_argument("-d", "--data-dir", help="override [bot].data_dir")
     parser.add_argument("-v", "--verbose", action="store_true")
     sub = parser.add_subparsers(dest="cmd", required=True)
 
@@ -85,7 +124,16 @@ def main(argv: list[str] | None = None) -> int:
 
     p = sub.add_parser("run", help="start paper trading")
     p.add_argument("--once", action="store_true", help="run a single round and exit")
+    p.add_argument("--minutes", type=float, help="stop after this many minutes (for scheduled runs)")
     p.set_defaults(func=cmd_run)
+
+    p = sub.add_parser("review", help="show what went well and what went wrong")
+    p.add_argument("--days", type=float, help="only the last N days")
+    p.set_defaults(func=cmd_review)
+
+    p = sub.add_parser("tune", help="review, find mistakes, and apply at most one improvement")
+    p.add_argument("--if-due", type=float, metavar="HOURS", help="skip if the last review was less than HOURS ago")
+    p.set_defaults(func=cmd_tune)
 
     sub.add_parser("status", help="show results").set_defaults(func=cmd_status)
     sub.add_parser("reset-kill", help="resume after the drawdown kill switch").set_defaults(func=cmd_reset_kill)

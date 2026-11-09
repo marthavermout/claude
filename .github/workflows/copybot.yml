@@ -1,0 +1,56 @@
+# Free 24/7 paper trading on GitHub Actions (unlimited minutes for public repos).
+# Every hour: review + self-improve (once a day), then paper trade for ~50 minutes.
+# The bot's memory (positions, logs, journal) lives on the `copybot-data` branch.
+name: Copybot
+
+on:
+  schedule:
+    - cron: "7 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: copybot
+  cancel-in-progress: false
+
+jobs:
+  paper-trade:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: pip install -r copybot/requirements.txt
+
+      - name: Load bot memory (copybot-data branch)
+        run: |
+          if git fetch --depth=1 origin copybot-data; then
+            git worktree add -B copybot-data botdata FETCH_HEAD
+          else
+            git worktree add --orphan -b copybot-data botdata
+          fi
+
+      - name: Daily review and self-improvement
+        working-directory: copybot
+        run: python -m copybot -c config.ci.toml -d ../botdata tune --if-due 23
+
+      - name: Paper trade
+        working-directory: copybot
+        run: python -m copybot -c config.ci.toml -d ../botdata run --minutes 50
+
+      - name: Save bot memory
+        if: always()
+        working-directory: botdata
+        run: |
+          [ -f REPORT.md ] && cat REPORT.md >> "$GITHUB_STEP_SUMMARY"
+          git add -A
+          git -c user.name="copybot" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit -q -m "copybot data $(date -u +%FT%TZ)" || exit 0
+          git push origin copybot-data
