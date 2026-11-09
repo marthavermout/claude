@@ -1,6 +1,7 @@
 # Free 24/7 paper trading on GitHub Actions (unlimited minutes for public repos).
 # Every hour: review + self-improve (once a day), then paper trade for ~50 minutes.
-# The bot's memory (positions, logs, journal) lives on the `copybot-data` branch.
+# The bot's memory (positions, logs, journal) lives on the `copybot-data` branch,
+# together with the live dashboard (index.html + dashboard.json) for GitHub Pages.
 name: Copybot
 
 on:
@@ -38,19 +39,28 @@ jobs:
           fi
 
       - name: Daily review and self-improvement
+        continue-on-error: true  # a failed review must never stop trading
         working-directory: copybot
         run: python -m copybot -c config.ci.toml -d ../botdata tune --if-due 23
 
-      - name: Paper trade
-        working-directory: copybot
-        run: python -m copybot -c config.ci.toml -d ../botdata run --minutes 50
-
-      - name: Save bot memory
-        if: always()
-        working-directory: botdata
+      - name: Paper trade (5 x 10 min, publishing dashboard data after each block)
         run: |
-          [ -f REPORT.md ] && cat REPORT.md >> "$GITHUB_STEP_SUMMARY"
-          git add -A
-          git -c user.name="copybot" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
-            commit -q -m "copybot data $(date -u +%FT%TZ)" || exit 0
-          git push origin copybot-data
+          save() {
+            (cd copybot && python -m copybot -c config.ci.toml -d ../botdata export >/dev/null)
+            cd botdata
+            git add -A
+            if git -c user.name="copybot" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+                commit -q -m "copybot data $(date -u +%FT%TZ)"; then
+              git push -q origin copybot-data || echo "push failed, will retry next block"
+            fi
+            cd ..
+          }
+          save
+          for i in 1 2 3 4 5; do
+            (cd copybot && python -m copybot -c config.ci.toml -d ../botdata run --minutes 10) || true
+            save
+          done
+
+      - name: Show report
+        if: always()
+        run: '[ -f botdata/REPORT.md ] && cat botdata/REPORT.md >> "$GITHUB_STEP_SUMMARY" || true'

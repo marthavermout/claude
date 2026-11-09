@@ -122,3 +122,22 @@ class ReviewTuneTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ExportTest(unittest.TestCase):
+    def test_export_writes_dashboard(self):
+        import json
+        from pathlib import Path
+
+        from copybot.export import export
+        with tempfile.TemporaryDirectory() as tmp:
+            cfg = BotConfig(leaders=[A], starting_balance=1000, fee_bps=0, slippage_bps=0, data_dir=tmp,
+                            copy_existing_positions=True)
+            client = FakeClient()
+            client.leader = {"BTC": 0.4}
+            Engine(cfg, client=client).tick(T0)
+            out = export(cfg)
+            data = json.loads(out.read_text())
+            self.assertEqual(data["positions"][0]["coin"], "BTC")
+            self.assertEqual(len(data["series"]), 1)
+            self.assertTrue((Path(tmp) / "index.html").exists())

@@ -84,6 +84,24 @@ op de data-branch; verwijder dat bestand om opnieuw te beginnen.
 - GitHub zet geplande workflows uit na 60 dagen zonder activiteit in de repo. Je krijgt daar een mail over; één klik zet ze weer aan.
 - Alles is openbaar (de repo is publiek), dus ook je nep-resultaten.
 
+## Live dashboard
+`dashboard/index.html` toont live:
+- je vermogen en winst/verlies sinds de start, met de open posities live doorgerekend op Hyperliquid-prijzen (elke 10 s)
+- een grafiek van het rendement tegenover gewoon BTC vasthouden
+- open posities, gevolgde traders, laatste trades
+- de laatste zelf-review: gevonden fouten, het besluit en alle wijzigingen die de bot zelf maakte
+
+**Online (gratis, GitHub Pages)** – de workflow zet de pagina en `dashboard.json` elke ~10 minuten op de branch
+`copybot-data`. Eenmalig instellen: *Settings → Pages → Build and deployment → Source: Deploy from a branch →
+Branch: `copybot-data`, map `/ (root)` → Save*. Je dashboard staat dan op
+`https://<jouw-github-naam>.github.io/<repo-naam>/`.
+
+**Lokaal:**
+```bash
+python -m copybot export                   # schrijft data/dashboard.json + data/index.html
+python -m http.server -d data 8000         # open http://localhost:8000
+```
+
 ## Eerlijk advies
 - **Draai minimaal 4–8 weken op papier.** Eén goede week zegt niks; dat kan gewoon geluk zijn.
 - **Vergelijk met niets doen.** Doet de bot het slechter dan gewoon BTC kopen en vasthouden, dan heeft hij geen zin.

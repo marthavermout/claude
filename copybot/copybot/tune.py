@@ -141,6 +141,10 @@ def tune(cfg: BotConfig, selector: Selector, rules: TuneRules | None = None,
     n = ov.get("reviews", 0) + 1
     ov["reviews"] = n
     ov["last_review"] = now.isoformat()
+    log = ov.setdefault("review_log", [])
+    log.append({"time": now.isoformat(), "n": n, "mistakes": d.mistakes, "observations": d.observations,
+                "decision": d.change or d.skipped_reason or "niets veranderen"})
+    del log[:-60]
     if d.change:
         ov["last_change"] = now.isoformat()
         ov.setdefault("history", []).append({"time": now.isoformat(), "change": d.change})

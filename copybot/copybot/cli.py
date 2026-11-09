@@ -8,6 +8,7 @@ import sys
 
 from .config import apply_overrides, load_config
 from .engine import Engine
+from .export import export
 from .hyperliquid import HyperliquidClient
 from .review import build_review, to_markdown
 from .selector import SelectionRules, select
@@ -100,6 +101,11 @@ def cmd_status(args) -> int:
     return 0
 
 
+def cmd_export(args) -> int:
+    print(export(_cfg(args)))
+    return 0
+
+
 def cmd_reset_kill(args) -> int:
     engine = Engine(_cfg(args))
     engine.risk.state.killed = False
@@ -136,6 +142,7 @@ def main(argv: list[str] | None = None) -> int:
     p.set_defaults(func=cmd_tune)
 
     sub.add_parser("status", help="show results").set_defaults(func=cmd_status)
+    sub.add_parser("export", help="write dashboard.json + dashboard page into the data dir").set_defaults(func=cmd_export)
     sub.add_parser("reset-kill", help="resume after the drawdown kill switch").set_defaults(func=cmd_reset_kill)
 
     args = parser.parse_args(argv)
