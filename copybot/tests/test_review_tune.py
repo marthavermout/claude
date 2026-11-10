@@ -96,7 +96,17 @@ class ReviewTuneTest(unittest.TestCase):
     def test_if_due_skips(self):
         self.cfg.leaders = []
         tune(self.cfg, self.selector, now=T0)
-        self.assertIsNone(tune(self.cfg, self.selector, now=T0 + timedelta(hours=2), if_due_hours=24))
+        rules = TuneRules(target_leaders=2)
+        self.assertIsNone(tune(self.cfg, self.selector, rules=rules, now=T0 + timedelta(hours=2), if_due_hours=24))
+
+    def test_open_seats_skip_the_wait(self):
+        self.cfg.leaders = []
+        self.selector = lambda exclude, n: [C][:n] if C not in exclude else []
+        tune(self.cfg, self.selector, rules=TuneRules(target_leaders=2), now=T0)
+        self.selector = lambda exclude, n: [D][:n]
+        d = tune(self.cfg, self.selector, rules=TuneRules(target_leaders=2), now=T0 + timedelta(hours=1), if_due_hours=24)
+        self.assertIn("aangevuld", d.change)
+        self.assertEqual(load_overrides(self.tmp.name)["leaders"], [C, D])
 
     def test_halts_tighten_leverage_only(self):
         e = Engine(self.cfg, client=self.client)

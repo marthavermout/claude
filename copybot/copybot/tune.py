@@ -35,6 +35,7 @@ class TuneRules:
     leverage_step: float = 0.75
     leverage_floor: float = 1.0
     cooldown_hours: float = 48
+    inactive_hours: float = 48  # replace a trader that gave nothing to copy for this long
 
 
 @dataclass
@@ -53,13 +54,17 @@ Selector = Callable[[set[str], int], list[str]]  # (exclude, n) -> addresses
 def decide(review: Review, week: Review, cfg: BotConfig, ov: dict, rules: TuneRules,
            selector: Selector, now: datetime) -> Decision:
     d = Decision()
-    leaders = list(cfg.leaders)
+    leaders = list(ov.get("leaders", cfg.leaders))
     blacklist = set(ov.get("blacklist", []))
     risk = ov.setdefault("risk", {})
 
     # ---- diagnose ----
     weak = None
     for s in review.leaders:
+        if s.hours >= rules.inactive_hours and s.trades == 0 and weak is None:
+            weak = s
+            d.mistakes.append(f"Trader `{s.address[:10]}…` heeft in {s.hours:.0f} uur niets gedaan dat we konden kopiëren.")
+            continue
         if s.hours < rules.min_hours_to_judge or s.closed_trades < rules.min_closed_trades:
             d.observations.append(f"`{s.address[:10]}…`: nog te weinig data om te beoordelen "
                                   f"({s.hours:.0f}u, {s.closed_trades} gesloten trades)")
@@ -129,7 +134,8 @@ def tune(cfg: BotConfig, selector: Selector, rules: TuneRules | None = None,
     now = now or datetime.now(timezone.utc)
     data_dir = Path(cfg.data_dir)
     ov = load_overrides(data_dir)
-    if if_due_hours is not None and ov.get("last_review"):
+    seats_open = len(ov.get("leaders", cfg.leaders)) < rules.target_leaders
+    if if_due_hours is not None and ov.get("last_review") and not seats_open:
         if now - datetime.fromisoformat(ov["last_review"]) < timedelta(hours=if_due_hours):
             return None
 

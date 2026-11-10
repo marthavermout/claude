@@ -64,5 +64,9 @@ class HyperliquidClient:
                 positions[pos["coin"]] = size
         return LeaderSnapshot(address=address, equity=equity, positions=positions)
 
+    def recent_fills(self, address: str, hours: float = 24) -> list[dict]:
+        start = int((time.time() - hours * 3600) * 1000)
+        return self._info({"type": "userFillsByTime", "user": address, "startTime": start})
+
     def leaderboard(self, url: str = LEADERBOARD_URL) -> list[dict]:
         return self._request("GET", url)["leaderboardRows"]

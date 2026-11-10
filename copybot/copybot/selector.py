@@ -20,6 +20,7 @@ class Candidate:
     alltime_pnl: float
     turnover: float  # monthly volume / account value
     leverage: float | None = None
+    fills_24h: int | None = None
     score: float = 0.0
 
 
@@ -32,6 +33,7 @@ class SelectionRules:
     min_week_roi: float = -0.05  # not currently blowing up
     max_turnover: float = 40.0  # higher = market maker / HFT, uncopyable
     max_leverage: float = 5.0
+    min_fills_24h: int = 3  # must actually be trading right now (main perps only)
 
 
 def _windows(row: dict) -> dict[str, dict[str, float]]:
@@ -79,6 +81,16 @@ def select(client: HyperliquidClient, rules: SelectionRules, top: int = 10) -> l
             continue
         gross = sum(abs(s) * mids.get(c, 0.0) for c, s in snap.positions.items())
         cand.leverage = gross / snap.equity
-        if cand.leverage <= rules.max_leverage:
-            chosen.append(cand)
+        if cand.leverage > rules.max_leverage:
+            continue
+        if rules.min_fills_24h:
+            try:
+                fills = client.recent_fills(cand.address, 24)
+            except ApiError:
+                continue
+            # coins like "xyz:NVDA" live on a separate exchange section the bot can't copy
+            cand.fills_24h = sum(1 for f in fills if ":" not in f.get("coin", ""))
+            if cand.fills_24h < rules.min_fills_24h:
+                continue
+        chosen.append(cand)
     return chosen

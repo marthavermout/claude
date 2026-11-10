@@ -5,6 +5,7 @@
 
 [bot]
 leaders = []
+target_leaders = 8          # follow 8 active traders (each gets 1/8 of the money)
 copy_ratio = 1.0
 copy_existing_positions = false
 poll_seconds = 30
@@ -20,6 +21,6 @@ max_leverage = 2.0
 max_position_pct = 0.25
 daily_loss_limit_pct = 0.05
 max_drawdown_pct = 0.20
-min_trade_usd = 15.0
+min_trade_usd = 10.0        # Hyperliquid's own minimum order size
 allowed_coins = []
 blocked_coins = []

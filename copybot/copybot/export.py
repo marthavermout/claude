@@ -61,6 +61,7 @@ def build_dashboard(cfg: BotConfig) -> dict:
         "positions": [{"coin": c, **p} for c, p in sorted(broker["positions"].items())],
         "risk": asdict(cfg.risk),
         "leaders": [asdict(s) for s in review.leaders],
+        "following": list(cfg.leaders),
         "stats": {
             "hours": review.hours,
             "total_return": review.total_return,
@@ -88,7 +89,9 @@ def export(cfg: BotConfig) -> Path:
     tmp = out.with_suffix(".tmp")
     tmp.write_text(json.dumps(build_dashboard(cfg), separators=(",", ":")))
     tmp.replace(out)
-    if PAGE.exists():
-        shutil.copyfile(PAGE, d / "index.html")
+    for name in ("index.html", "manifest.json", "icon-180.png", "icon-512.png"):
+        src = PAGE.parent / name
+        if src.exists():
+            shutil.copyfile(src, d / name)
     (d / ".nojekyll").touch()  # GitHub Pages: serve files as-is
     return out
