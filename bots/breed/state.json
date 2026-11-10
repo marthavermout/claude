@@ -375,7 +375,7 @@
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.8351826187048199,
+      "fees_paid": 0.8398081981357199,
       "positions": {
         "AERO": {
           "size": 272.0,
@@ -422,8 +422,8 @@
           "entry": 0.15643128
         },
         "ETC": {
-          "size": 9.65,
-          "entry": 6.680004645699482
+          "size": 11.18,
+          "entry": 6.6852513625223615
         },
         "ETHFI": {
           "size": -222.8,
