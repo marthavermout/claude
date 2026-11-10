@@ -65,7 +65,7 @@
   "risk": {
     "day": "2026-11-10",
     "day_start_equity": 1000.0,
-    "peak_equity": 1003.3208312328186,
+    "peak_equity": 1011.0226752328186,
     "killed": false,
     "kill_reason": ""
   },
@@ -133,11 +133,11 @@
     },
     "0xfb47779fb0f59750fc714ba61a7859b059bbd3e6": {
       "starting_balance": 1000.0,
-      "realized_pnl": 0.0,
-      "fees_paid": 0.20902370663205,
+      "realized_pnl": 0.13710888800000007,
+      "fees_paid": 0.21356705078145,
       "positions": {
         "NEAR": {
-          "size": 60.3,
+          "size": 57.5,
           "entry": 3.55686123
         },
         "VVV": {
@@ -216,5 +216,7 @@
     "0xde5a8068836a16f92813104d7faf602bb0cbdf62": "2026-11-10T18:14:50.595723+00:00",
     "0xd738f8f8f68511eb644a31d8b23d0b20baa4854b": "2026-11-10T18:14:50.595723+00:00"
   },
-  "meta": {}
+  "meta": {},
+  "pattern_trades": {},
+  "pattern_scanned": {}
 }

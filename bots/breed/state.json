@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 0.0,
-    "fees_paid": 0.24715730455415996,
+    "realized_pnl": 0.32198662299999947,
+    "fees_paid": 0.25186291099460995,
     "positions": {
       "FARTCOIN": {
         "size": 100.8,
@@ -13,7 +13,7 @@
         "entry": 71.0026977
       },
       "NEAR": {
-        "size": 43.8,
+        "size": 40.9,
         "entry": 3.49479882
       },
       "PUMP": {
@@ -168,7 +168,6 @@
       "JTO": -1,
       "ACE": -1,
       "WIF": -1,
-      "CAKE": -1,
       "ENS": -1,
       "ONDO": -1,
       "ZETA": -1,
@@ -185,7 +184,6 @@
       "POL": -1,
       "GOAT": -1,
       "PNUT": -1,
-      "XLM": -1,
       "VIRTUAL": -1,
       "PENGU": -1,
       "USUAL": -1,
@@ -378,7 +376,7 @@
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.8111274634822498,
+      "fees_paid": 0.8215329819622499,
       "positions": {
         "AERO": {
           "size": 272.0,
@@ -499,6 +497,10 @@
         "GRASS": {
           "size": 120.8,
           "entry": 0.46940693380629145
+        },
+        "XLM": {
+          "size": -160.0,
+          "entry": 0.14452109000000002
         }
       }
     },
@@ -530,8 +532,13 @@
     "0x94dac1facdc4afd2614c3119447187b4143bc449": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.0,
-      "positions": {}
+      "fees_paid": 0.005019150969000001,
+      "positions": {
+        "ETHFI": {
+          "size": -17.5,
+          "entry": 0.6373525040000001
+        }
+      }
     },
     "0xb83de012dba672c76a7dbbbf3e459cb59d7d6e36": {
       "starting_balance": 1000.0,
@@ -572,5 +579,7 @@
     "0xb83de012dba672c76a7dbbbf3e459cb59d7d6e36": "2026-11-10T16:52:32.714233+00:00",
     "0x03136324349c003f3498130f56f4526bf5720ab1": "2026-11-10T16:52:32.714233+00:00"
   },
-  "meta": {}
+  "meta": {},
+  "pattern_trades": {},
+  "pattern_scanned": {}
 }
