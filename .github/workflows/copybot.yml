@@ -38,15 +38,25 @@ jobs:
             git worktree add --orphan -b copybot-data botdata
           fi
 
-      - name: Daily review and self-improvement
+      - name: Daily review and self-improvement (every bot)
         continue-on-error: true  # a failed review must never stop trading
         working-directory: copybot
-        run: python -m copybot -c config.ci.toml -d ../botdata tune --if-due 23
-
-      - name: Paper trade (5 x 10 min, publishing dashboard data after each block)
         run: |
+          python -m copybot -c config.ci.toml -d ../botdata tune --if-due 23 || true
+          for f in bots/*.toml; do
+            n=$(basename "$f" .toml)
+            python -m copybot -c "$f" -d "../botdata/bots/$n" tune --if-due 23 || true
+          done
+
+      - name: Paper trade (5 x 10 min, all bots side by side)
+        run: |
+          compare_args() {
+            echo "--bot basis=config.ci.toml:../botdata"
+            for f in copybot/bots/*.toml; do n=$(basename "$f" .toml); echo "--bot $n=bots/$n.toml:../botdata/bots/$n"; done
+          }
           save() {
-            (cd copybot && python -m copybot -c config.ci.toml -d ../botdata export >/dev/null)
+            (cd copybot && python -m copybot -c config.ci.toml -d ../botdata export >/dev/null \
+              && python -m copybot compare $(cd .. && compare_args) --out ../botdata/bots.json >/dev/null) || echo "export failed"
             cd botdata
             git add -A
             if git -c user.name="copybot" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
@@ -57,7 +67,12 @@ jobs:
           }
           save
           for i in 1 2 3 4 5; do
-            (cd copybot && python -m copybot -c config.ci.toml -d ../botdata run --minutes 10) || true
+            (cd copybot && python -m copybot -c config.ci.toml -d ../botdata run --minutes 10) &
+            for f in copybot/bots/*.toml; do
+              n=$(basename "$f" .toml)
+              (cd copybot && python -m copybot -c "bots/$n.toml" -d "../botdata/bots/$n" run --minutes 10 > "/tmp/bot-$n.log" 2>&1) &
+            done
+            wait || true
             save
           done
 
