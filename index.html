@@ -283,7 +283,7 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
   <section data-tab="bots" id="bots" style="display:grid;gap:18px" hidden>
     <div class="glass pad">
       <div class="feed-head"><h2>De bots</h2><span class="soft" style="font-size:.78rem" id="bots-updated"></span></div>
-      <p class="note" style="margin:0">Vijf bots met elk $1.000 nepgeld en een eigen strategie, op dezelfde markt en op hetzelfde moment. Hun gezicht laat zien hoe het gaat. Kijk pas na een paar weken naar de winnaar: een paar dagen zegt niets.</p>
+      <p class="note" style="margin:0">Zes bots met elk $1.000 nepgeld en een eigen strategie, op dezelfde markt en op hetzelfde moment. Hun gezicht laat zien hoe het gaat. Kijk pas na een paar weken naar de winnaar: een paar dagen zegt niets.</p>
     </div>
     <div class="crew" id="crew"><div class="glass pad empty">Nog geen data van de bots.</div></div>
     <div class="glass pad">
@@ -694,6 +694,7 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
     alles:       { name: "Alex", role: "Pakt alles meteen, ook oude posities", color: "#c2702a" },
     voorzichtig: { name: "Vera", role: "Voorzichtig: max 1x hefboom", color: "#2f6f6a" },
     agressief:   { name: "Axel", role: "Durft veel: tot 3x hefboom", color: "#b8475a" },
+    random:      { name: "Rik",  role: "Controlegroep: willekeurige traders. Wie Rik niet verslaat, had geluk", color: "#8a7f74" },
   };
   const crewOf = (b, i) => CREW[b.name] || { name: b.name, role: b.description, color: BOT_COLORS[i % BOT_COLORS.length] };
 
@@ -713,7 +714,7 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
       el("path", { d: "M30 30 L22 10 L40 24 Z", fill: color, stroke: ink, "stroke-width": 1.5, "stroke-linejoin": "round" }, body);
       el("path", { d: "M70 30 L78 10 L60 24 Z", fill: color, stroke: ink, "stroke-width": 1.5, "stroke-linejoin": "round" }, body);
     }
-    const antennas = kind === "breed" ? [30, 50, 70] : kind === "basis" ? [50] : [];
+    const antennas = kind === "breed" ? [30, 50, 70] : kind === "basis" || kind === "random" ? [50] : [];
     for (const x of antennas) {
       el("line", { x1: x, y1: 26, x2: x, y2: 12, stroke: ink, "stroke-width": 2 }, body);
       el("circle", { cx: x, cy: 10, r: 4, fill: color, stroke: ink, "stroke-width": 1.2 }, body);
@@ -723,6 +724,10 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
     el("rect", { x: wide ? 12 : 20, y: 24, width: wide ? 76 : 60, height: 56, rx: 18, fill: color, stroke: ink, "stroke-width": 2 }, body);
     if (kind === "voorzichtig") el("path", { d: "M18 40 Q50 6 82 40 Z", fill: "#e0a83c", stroke: ink, "stroke-width": 2, "stroke-linejoin": "round" }, body);
     el("rect", { x: wide ? 20 : 28, y: 36, width: wide ? 60 : 44, height: 34, rx: 10, fill: screen, stroke: ink, "stroke-width": 1.5 }, body);
+    if (kind === "random") {
+      const q = el("text", { x: 50, y: 14, "text-anchor": "middle", style: "font: 700 11px var(--ui); fill: var(--room-4)" }, body);
+      q.textContent = "?";
+    }
     // eyes
     const ex = wide ? [38, 62] : [41, 59];
     for (const x of ex) el("circle", { class: "eye", cx: x, cy: 49, r: 3.6, fill: ink }, body);
