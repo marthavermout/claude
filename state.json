@@ -2,13 +2,18 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 0.0,
-    "fees_paid": 0.0,
-    "positions": {}
+    "fees_paid": 0.034924781146499995,
+    "positions": {
+      "LIT": {
+        "size": -23.0,
+        "entry": 3.3743749899999993
+      }
+    }
   },
   "risk": {
     "day": "2026-11-10",
     "day_start_equity": 1000.0,
-    "peak_equity": 1000.0,
+    "peak_equity": 1000.6038999888534,
     "killed": false,
     "kill_reason": ""
   },
@@ -40,8 +45,17 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.0,
-      "positions": {}
+      "fees_paid": 0.11910458780279999,
+      "positions": {
+        "LIT": {
+          "size": -68.0,
+          "entry": 3.3743749899999997
+        },
+        "XTEN": {
+          "size": 143.0,
+          "entry": 0.246289248
+        }
+      }
     }
   },
   "shadow_started": {
