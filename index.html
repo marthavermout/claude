@@ -283,7 +283,7 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
   <section data-tab="bots" id="bots" style="display:grid;gap:18px" hidden>
     <div class="glass pad">
       <div class="feed-head"><h2>De bots</h2><span class="soft" style="font-size:.78rem" id="bots-updated"></span></div>
-      <p class="note" style="margin:0">Zes bots met elk $1.000 nepgeld en een eigen strategie, op dezelfde markt en op hetzelfde moment. Hun gezicht laat zien hoe het gaat. Kijk pas na een paar weken naar de winnaar: een paar dagen zegt niets.</p>
+      <p class="note" style="margin:0">Zeven bots met elk $1.000 nepgeld en een eigen strategie, op dezelfde markt en op hetzelfde moment. Hun gezicht laat zien hoe het gaat. Kijk pas na een paar weken naar de winnaar: een paar dagen zegt niets.</p>
     </div>
     <div class="crew" id="crew"><div class="glass pad empty">Nog geen data van de bots.</div></div>
     <div class="glass pad">
@@ -694,6 +694,7 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
     alles:       { name: "Alex", role: "Pakt alles meteen, ook oude posities", color: "#c2702a" },
     voorzichtig: { name: "Vera", role: "Voorzichtig: max 1x hefboom", color: "#2f6f6a" },
     agressief:   { name: "Axel", role: "Durft veel: tot 3x hefboom", color: "#b8475a" },
+    patronen:    { name: "Pia",  role: "Leest de grafiek: double bottom, head & shoulders, driehoeken, vlaggen", color: "#3c8a5c" },
     random:      { name: "Rik",  role: "Controlegroep: willekeurige traders. Wie Rik niet verslaat, had geluk", color: "#8a7f74" },
   };
   const crewOf = (b, i) => CREW[b.name] || { name: b.name, role: b.description, color: BOT_COLORS[i % BOT_COLORS.length] };
@@ -724,6 +725,12 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
     el("rect", { x: wide ? 12 : 20, y: 24, width: wide ? 76 : 60, height: 56, rx: 18, fill: color, stroke: ink, "stroke-width": 2 }, body);
     if (kind === "voorzichtig") el("path", { d: "M18 40 Q50 6 82 40 Z", fill: "#e0a83c", stroke: ink, "stroke-width": 2, "stroke-linejoin": "round" }, body);
     el("rect", { x: wide ? 20 : 28, y: 36, width: wide ? 60 : 44, height: 34, rx: 10, fill: screen, stroke: ink, "stroke-width": 1.5 }, body);
+    if (kind === "patronen") {
+      // a magnifying glass over a little zigzag chart
+      el("path", { d: "M8 30 L16 22 L22 27 L30 16", fill: "none", stroke: ink, "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }, body);
+      el("circle", { cx: 80, cy: 16, r: 8, fill: screen, stroke: ink, "stroke-width": 2.2 }, body);
+      el("line", { x1: 85.5, y1: 21.5, x2: 92, y2: 28, stroke: ink, "stroke-width": 3, "stroke-linecap": "round" }, body);
+    }
     if (kind === "random") {
       const q = el("text", { x: 50, y: 14, "text-anchor": "middle", style: "font: 700 11px var(--ui); fill: var(--room-4)" }, body);
       q.textContent = "?";
@@ -777,8 +784,8 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
         .sort((a, c) => c.notional - a.notional);
       for (const p of pos.slice(0, 8)) {
         const c = make("span", null, `coin ${p.size > 0 ? "long" : "short"}`);
-        c.title = `${p.size > 0 ? "Long" : "Short"} ${usd.format(p.notional)}`;
-        c.append(make("i"), document.createTextNode(p.coin + " "));
+        c.title = `${p.size > 0 ? "Long" : "Short"} ${usd.format(p.notional)}${p.why ? " · " + p.why : ""}`;
+        c.append(make("i"), document.createTextNode(p.coin + (p.why ? ` (${p.why})` : "") + " "));
         const pl = make("small", signed(p.pnl)); tone(pl, p.pnl); c.append(pl);
         holds.append(c);
       }
