@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 0.0,
-    "fees_paid": 0.24896240139996004,
+    "fees_paid": 0.26588776814946,
     "positions": {
       "INIT": {
         "size": -45.0,
@@ -29,8 +29,8 @@
         "entry": 0.0051819634000000005
       },
       "LIT": {
-        "size": -11.0,
-        "entry": 3.346289699090909
+        "size": -22.0,
+        "entry": 3.3827778545454548
       },
       "ETHFI": {
         "size": 49.6,
@@ -45,7 +45,7 @@
   "risk": {
     "day": "2026-11-10",
     "day_start_equity": 1000.0,
-    "peak_equity": 1002.1725157803149,
+    "peak_equity": 1002.2405537234505,
     "killed": false,
     "kill_reason": ""
   },
@@ -63,7 +63,6 @@
       "HYPE": -1,
       "XPL": -1,
       "ASTER": -1,
-      "LIT": -1,
       "XMR": -1
     },
     "0x5a19bfe9c095c3bd188eca00a690b95200797aba": {
@@ -154,7 +153,7 @@
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.31707838969604996,
+      "fees_paid": 0.44786531457854994,
       "positions": {
         "ETH": {
           "size": 0.102,
@@ -167,6 +166,10 @@
         "ZRO": {
           "size": -271.9,
           "entry": 1.46015791
+        },
+        "LIT": {
+          "size": -85.0,
+          "entry": 3.41926601
         }
       }
     },
