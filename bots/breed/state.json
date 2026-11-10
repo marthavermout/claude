@@ -49,7 +49,7 @@
   "risk": {
     "day": "2026-11-10",
     "day_start_equity": 1000.0,
-    "peak_equity": 1000.9333113681085,
+    "peak_equity": 1001.4534718206457,
     "killed": false,
     "kill_reason": ""
   },
@@ -286,15 +286,15 @@
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.25091133400439997,
+      "fees_paid": 0.2676290988888,
       "positions": {
         "ETH": {
           "size": 0.102,
           "entry": 2018.1535500000002
         },
         "MORPHO": {
-          "size": 51.0,
-          "entry": 1.9950989399999999
+          "size": 69.4,
+          "entry": 2.0014500658789625
         },
         "ZRO": {
           "size": -171.2,
@@ -379,7 +379,7 @@
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.7731000237150899,
+      "fees_paid": 0.7840402110150299,
       "positions": {
         "AERO": {
           "size": 272.0,
@@ -496,6 +496,10 @@
         "SYRUP": {
           "size": -126.0,
           "entry": 0.135517891
+        },
+        "GRASS": {
+          "size": 52.0,
+          "entry": 0.4675293717923077
         }
       }
     },

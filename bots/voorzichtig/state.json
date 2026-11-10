@@ -41,7 +41,7 @@
   "risk": {
     "day": "2026-11-10",
     "day_start_equity": 1000.0,
-    "peak_equity": 1000.6602331408784,
+    "peak_equity": 1001.7386844785229,
     "killed": false,
     "kill_reason": ""
   },
@@ -151,15 +151,15 @@
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.1807929229455,
+      "fees_paid": 0.1975106878299,
       "positions": {
         "ETH": {
           "size": 0.0743,
           "entry": 2019.15375
         },
         "MORPHO": {
-          "size": 51.0,
-          "entry": 1.99559904
+          "size": 69.4,
+          "entry": 2.001817574524496
         },
         "ZRO": {
           "size": -102.5,

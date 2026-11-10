@@ -145,7 +145,7 @@
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.9004426786186199,
+      "fees_paid": 0.9127084300283699,
       "positions": {
         "ASTER": {
           "size": -165.0,
@@ -172,8 +172,8 @@
           "entry": 3.34593068
         },
         "MORPHO": {
-          "size": 41.4,
-          "entry": 1.9955990399999999
+          "size": 54.9,
+          "entry": 2.0013665867213115
         },
         "SOL": {
           "size": -1.38,
