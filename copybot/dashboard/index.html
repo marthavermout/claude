@@ -155,6 +155,38 @@ a { color: inherit; }
 .badge.new { background: color-mix(in srgb, var(--up) 18%, transparent); color: var(--up); }
 .feed-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px; }
 
+/* bot characters */
+.crew { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 16px; }
+.bot { display: grid; gap: 12px; align-content: start; }
+.bot-top { display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 14px; align-items: center; }
+.bot-face { width: 92px; height: 92px; border-radius: 26px; display: grid; place-items: center; background: var(--glass-strong); border: 1px solid var(--glass-line); position: relative; }
+.bot-face svg { width: 84px; height: 84px; overflow: visible; }
+.rank { position: absolute; top: -8px; left: -8px; width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center;
+  font: 700 .78rem var(--mono); background: var(--ink); color: var(--room-4); box-shadow: var(--shadow); }
+.bot-name { font-size: 1.15rem; font-weight: 700; letter-spacing: -.01em; }
+.bot-role { font-size: .76rem; color: var(--ink-soft); }
+.bot-eq { font-family: var(--mono); font-size: 1.05rem; margin-top: 4px; }
+.mood { display: inline-block; margin-top: 4px; font-size: .72rem; font-weight: 700; padding: 2px 8px; border-radius: 999px; background: var(--glass-strong); }
+.bot-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.bot-stats div { padding: 8px 10px; border-radius: 12px; background: var(--glass-strong); border: 1px solid var(--glass-line); }
+.bot-stats b { display: block; font: 500 .9rem var(--mono); }
+.bot-stats span { font-size: .68rem; color: var(--ink-soft); }
+.holds { display: flex; flex-wrap: wrap; gap: 6px; }
+.coin { display: inline-flex; align-items: center; gap: 5px; padding: 4px 9px; border-radius: 999px; font-size: .75rem; font-weight: 600;
+  background: var(--glass-strong); border: 1px solid var(--glass-line); }
+.coin i { width: 7px; height: 7px; border-radius: 50%; }
+.coin.long i { background: var(--up); } .coin.short i { background: var(--down); }
+.coin small { font: 500 .7rem var(--mono); }
+.bot-desc { font-size: .78rem; color: var(--ink-soft); margin: 0; }
+@media (prefers-reduced-motion: no-preference) {
+  .bot-face svg .body { animation: bob 3.2s ease-in-out infinite; transform-origin: 50% 90%; }
+  .bot:nth-child(2) .bot-face svg .body { animation-delay: -.6s; } .bot:nth-child(3) .bot-face svg .body { animation-delay: -1.2s; }
+  .bot:nth-child(4) .bot-face svg .body { animation-delay: -1.8s; } .bot:nth-child(5) .bot-face svg .body { animation-delay: -2.4s; }
+  @keyframes bob { 50% { transform: translateY(-3px); } }
+  .bot-face svg .eye { animation: blink 5s infinite; transform-box: fill-box; transform-origin: center; }
+  @keyframes blink { 0%, 94%, 100% { transform: scaleY(1); } 96% { transform: scaleY(.1); } }
+}
+
 /* floating tab pill */
 nav.tabs { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(14px + env(safe-area-inset-bottom, 0px)); z-index: 5;
   display: flex; gap: 4px; padding: 6px; border-radius: 999px; max-width: calc(100vw - 24px); overflow-x: auto; }
@@ -250,17 +282,14 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
   <!-- BOTS -->
   <section data-tab="bots" id="bots" style="display:grid;gap:18px" hidden>
     <div class="glass pad">
-      <div class="feed-head"><h2>Welke bot verdient het meest?</h2><span class="soft" style="font-size:.78rem" id="bots-updated"></span></div>
-      <p class="note" style="margin:0 0 12px">Vijf bots met elk $1.000 nepgeld en een eigen strategie, op dezelfde markt en op hetzelfde moment. Zo zie je eerlijk welke aanpak werkt. Kijk pas na een paar weken naar de winnaar: een paar dagen zegt niets.</p>
-      <div class="chart" id="bots-chart" style="min-height:250px"><div class="empty">Nog geen data van de bots.</div></div>
-      <div class="legend" id="bots-legend" style="margin-top:8px"></div>
+      <div class="feed-head"><h2>De bots</h2><span class="soft" style="font-size:.78rem" id="bots-updated"></span></div>
+      <p class="note" style="margin:0">Vijf bots met elk $1.000 nepgeld en een eigen strategie, op dezelfde markt en op hetzelfde moment. Hun gezicht laat zien hoe het gaat. Kijk pas na een paar weken naar de winnaar: een paar dagen zegt niets.</p>
     </div>
+    <div class="crew" id="crew"><div class="glass pad empty">Nog geen data van de bots.</div></div>
     <div class="glass pad">
-      <div class="scroll"><table>
-        <thead><tr><th>#</th><th>Bot</th><th class="r">Vermogen</th><th class="r">Rendement</th><th class="r opt">Grootste daling</th><th class="r">Trades</th><th class="r opt">Open</th><th class="r opt">Traders</th></tr></thead>
-        <tbody id="bots-body"></tbody>
-      </table></div>
-      <div class="list" id="bots-desc" style="margin-top:12px;font-size:.82rem"></div>
+      <h2>De race</h2>
+      <div class="chart" id="bots-chart" style="min-height:250px"><div class="empty">Nog geen koersverloop.</div></div>
+      <div class="legend" id="bots-legend" style="margin-top:8px"></div>
     </div>
   </section>
 
@@ -659,36 +688,112 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
     if (!b.positions.every((p) => mids[p.coin] != null)) return b.equity;
     return cash + b.positions.reduce((s, p) => s + (mids[p.coin] - p.entry) * p.size, 0);
   }
+  const CREW = {
+    basis:       { name: "Bas",  role: "De standaard: 8 traders, normaal risico", color: "#4f7fb8" },
+    breed:       { name: "Bea",  role: "Volgt 15 traders tegelijk", color: "#7a5bb0" },
+    alles:       { name: "Alex", role: "Pakt alles meteen, ook oude posities", color: "#c2702a" },
+    voorzichtig: { name: "Vera", role: "Voorzichtig: max 1x hefboom", color: "#2f6f6a" },
+    agressief:   { name: "Axel", role: "Durft veel: tot 3x hefboom", color: "#b8475a" },
+  };
+  const crewOf = (b, i) => CREW[b.name] || { name: b.name, role: b.description, color: BOT_COLORS[i % BOT_COLORS.length] };
+
+  // original robot characters, one per strategy; the mouth follows the result
+  function botFace(kind, color, mood) {
+    const NS = "http://www.w3.org/2000/svg";
+    const el = (n, a, parent) => { const e = document.createElementNS(NS, n); for (const k in a) e.setAttribute(k, a[k]); if (parent) parent.append(e); return e; };
+    const svg = el("svg", { viewBox: "0 0 100 100", role: "img", "aria-label": `${kind}-bot, ${mood === "up" ? "blij" : mood === "down" ? "balend" : "rustig"}` });
+    const body = el("g", { class: "body" }, svg);
+    const ink = "var(--ink)", screen = "var(--room-4)";
+    // extras behind the head
+    if (kind === "alles") for (const [x1, y1, x2, y2] of [[20, 62, 6, 50], [80, 62, 94, 50], [24, 74, 8, 84], [76, 74, 92, 84]]) {
+      el("line", { x1, y1, x2, y2, stroke: color, "stroke-width": 5, "stroke-linecap": "round" }, body);
+      el("circle", { cx: x2, cy: y2, r: 5, fill: "#e0a83c", stroke: ink, "stroke-width": 1.2 }, body);
+    }
+    if (kind === "agressief") {
+      el("path", { d: "M30 30 L22 10 L40 24 Z", fill: color, stroke: ink, "stroke-width": 1.5, "stroke-linejoin": "round" }, body);
+      el("path", { d: "M70 30 L78 10 L60 24 Z", fill: color, stroke: ink, "stroke-width": 1.5, "stroke-linejoin": "round" }, body);
+    }
+    const antennas = kind === "breed" ? [30, 50, 70] : kind === "basis" ? [50] : [];
+    for (const x of antennas) {
+      el("line", { x1: x, y1: 26, x2: x, y2: 12, stroke: ink, "stroke-width": 2 }, body);
+      el("circle", { cx: x, cy: 10, r: 4, fill: color, stroke: ink, "stroke-width": 1.2 }, body);
+    }
+    // head
+    const wide = kind === "breed";
+    el("rect", { x: wide ? 12 : 20, y: 24, width: wide ? 76 : 60, height: 56, rx: 18, fill: color, stroke: ink, "stroke-width": 2 }, body);
+    if (kind === "voorzichtig") el("path", { d: "M18 40 Q50 6 82 40 Z", fill: "#e0a83c", stroke: ink, "stroke-width": 2, "stroke-linejoin": "round" }, body);
+    el("rect", { x: wide ? 20 : 28, y: 36, width: wide ? 60 : 44, height: 34, rx: 10, fill: screen, stroke: ink, "stroke-width": 1.5 }, body);
+    // eyes
+    const ex = wide ? [38, 62] : [41, 59];
+    for (const x of ex) el("circle", { class: "eye", cx: x, cy: 49, r: 3.6, fill: ink }, body);
+    if (kind === "agressief") {
+      el("line", { x1: 35, y1: 42, x2: 45, y2: 45, stroke: ink, "stroke-width": 2, "stroke-linecap": "round" }, body);
+      el("line", { x1: 65, y1: 42, x2: 55, y2: 45, stroke: ink, "stroke-width": 2, "stroke-linecap": "round" }, body);
+    }
+    // cheeks when happy
+    if (mood === "up") for (const x of ex) el("circle", { cx: x + (x < 50 ? -6 : 6), cy: 57, r: 3, fill: "#e8907f", opacity: .7 }, body);
+    // mouth by mood
+    const mouth = mood === "up" ? "M42 58 Q50 66 58 58" : mood === "down" ? "M42 63 Q50 56 58 63" : "M43 60 L57 60";
+    el("path", { d: mouth, fill: "none", stroke: ink, "stroke-width": 2.4, "stroke-linecap": "round" }, body);
+    // little feet
+    el("rect", { x: 34, y: 80, width: 10, height: 8, rx: 3, fill: ink }, body);
+    el("rect", { x: 56, y: 80, width: 10, height: 8, rx: 3, fill: ink }, body);
+    return svg;
+  }
+
   function renderBots() {
     if (!bots) return;
     $("bots-updated").textContent = `bijgewerkt ${ago(bots.generated_at)}`;
-    const rows = bots.bots.map((b, i) => ({ ...b, color: BOT_COLORS[i % BOT_COLORS.length], live: botLiveEquity(b) }))
-      .sort((a, b) => b.live - a.live);
-    const body = $("bots-body"); body.replaceChildren();
-    rows.forEach((b, i) => {
-      const tr = body.insertRow();
-      cell(tr, String(i + 1), "num soft");
-      const name = tr.insertCell(); const sw = make("i"); sw.style.cssText = `display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:8px;background:${b.color}`;
-      name.append(sw, make("b", b.name));
-      if (b.killed) name.append(make("span", " gestopt", "down"));
-      else if (b.halt) name.append(make("span", " pauze", "soft"));
-      cell(tr, usd.format(b.live), "r num");
+    const rows = bots.bots.map((b, i) => ({ ...b, crew: crewOf(b, i), live: botLiveEquity(b) })).sort((a, b) => b.live - a.live);
+    $("crew").replaceChildren(...rows.map((b, i) => {
       const ret = b.live / b.starting_balance - 1;
-      tone(cell(tr, pct.format(ret), "r num"), ret);
-      cell(tr, b.max_drawdown ? `−${pct.format(b.max_drawdown).replace("+", "")}` : "0,00%", "r num opt");
-      cell(tr, String(b.trades), "r num");
-      cell(tr, String(b.positions.length), "r num opt");
-      cell(tr, String(b.following), "r num opt");
-    });
-    $("bots-desc").replaceChildren(...bots.bots.map((b) => { const d = make("div"); d.append(make("b", b.name + ": "), document.createTextNode(b.description)); return d; }));
+      const mood = b.killed ? "down" : ret > 0.001 ? "up" : ret < -0.001 ? "down" : "flat";
+      const card = make("article", null, "glass pad bot");
+      const top = make("div", null, "bot-top");
+      const face = make("div", null, "bot-face");
+      face.append(botFace(b.name, b.crew.color, mood), make("span", String(i + 1), "rank"));
+      const info = make("div");
+      const name = make("div", b.crew.name, "bot-name");
+      info.append(name, make("div", b.crew.role, "bot-role"));
+      const eq = make("div", `${usd.format(b.live)} `, "bot-eq");
+      const r = make("span", `(${pct.format(ret)})`); tone(r, ret); eq.append(r);
+      const moodTxt = b.killed ? "gestopt: noodrem" : b.halt ? "pauze tot morgen" : mood === "up" ? "blij" : mood === "down" ? "baalt even" : "rustig";
+      const m = make("span", moodTxt, "mood"); m.style.color = mood === "up" ? "var(--up)" : mood === "down" ? "var(--down)" : "var(--ink-soft)";
+      info.append(eq, m);
+      top.append(face, info);
+
+      const stats = make("div", null, "bot-stats");
+      for (const [v, l] of [[String(b.trades), "trades"], [String(b.following), "traders"], [b.max_drawdown ? `−${pct.format(b.max_drawdown).replace("+", "")}` : "0%", "max daling"]]) {
+        const d = make("div"); d.append(make("b", v), make("span", l)); stats.append(d);
+      }
+
+      const holds = make("div", null, "holds");
+      const pos = b.positions.map((p) => { const m2 = mids[p.coin] ?? p.entry; return { ...p, notional: Math.abs(p.size) * m2, pnl: (m2 - p.entry) * p.size }; })
+        .sort((a, c) => c.notional - a.notional);
+      for (const p of pos.slice(0, 8)) {
+        const c = make("span", null, `coin ${p.size > 0 ? "long" : "short"}`);
+        c.title = `${p.size > 0 ? "Long" : "Short"} ${usd.format(p.notional)}`;
+        c.append(make("i"), document.createTextNode(p.coin + " "));
+        const pl = make("small", signed(p.pnl)); tone(pl, p.pnl); c.append(pl);
+        holds.append(c);
+      }
+      if (pos.length > 8) holds.append(make("span", `+${pos.length - 8} meer`, "coin"));
+      const holdHead = make("div", pos.length ? `Zit nu op ${pos.length} ${pos.length === 1 ? "munt" : "munten"} (groen = long, rood = short):` : "Zit nu nergens op. Wacht op een nieuwe trade.", "bot-desc");
+
+      card.append(top, stats, holdHead, holds);
+      return card;
+    }));
     if (!$("bots").hidden) drawBots();
   }
   function drawBots() {
     if (!bots) return;
     const box = $("bots-chart");
-    const series = bots.bots.map((b, i) => ({ name: b.name, color: BOT_COLORS[i % BOT_COLORS.length],
+    const series = bots.bots.map((b, i) => ({ name: b.name, label: crewOf(b, i).name, color: crewOf(b, i).color,
       pts: b.series.map((p) => ({ t: +new Date(p.t), v: p.equity / b.starting_balance - 1 })) })).filter((s) => s.pts.length > 1);
     if (!series.length) return;
+    // race starts when the last bot joined, so every line starts from the same moment
+    const raceStart = Math.max(...series.map((s) => s.pts[0].t));
+    for (const s of series) s.pts = s.pts.filter((p) => p.t >= raceStart);
     const W = box.clientWidth || 600, H = 250, m = { t: 12, r: 12, b: 26, l: 54 };
     const all = series.flatMap((s) => s.pts);
     const t0 = Math.min(...all.map((p) => p.t)), t1 = Math.max(...all.map((p) => p.t));
@@ -718,7 +823,7 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
       svg.append(el("circle", { cx: x(l.t), cy: y(l.v), r: 3.5, fill: s.color }));
     }
     box.replaceChildren(svg);
-    $("bots-legend").replaceChildren(...series.map((s) => { const sp = make("span", s.name); sp.style.color = s.color; return sp; }));
+    $("bots-legend").replaceChildren(...series.map((s) => { const sp = make("span", s.label); sp.style.color = s.color; return sp; }));
   }
 
   let rt; new ResizeObserver(() => { clearTimeout(rt); rt = setTimeout(() => { if (data && !$("overzicht").hidden) drawChart(); if (!$("bots").hidden) drawBots(); }, 100); }).observe(document.body);
