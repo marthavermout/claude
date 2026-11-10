@@ -1,0 +1,554 @@
+{
+  "broker": {
+    "starting_balance": 1000.0,
+    "realized_pnl": 0.0,
+    "fees_paid": 0.13052393909351998,
+    "positions": {
+      "FARTCOIN": {
+        "size": 100.8,
+        "entry": 0.1145229
+      },
+      "HYPE": {
+        "size": 0.36,
+        "entry": 71.0026977
+      },
+      "NEAR": {
+        "size": 43.8,
+        "entry": 3.49479882
+      },
+      "PUMP": {
+        "size": 6516.0,
+        "entry": 0.0033846768
+      },
+      "ZEC": {
+        "size": -0.02,
+        "entry": 1020.3458899999999
+      },
+      "ZRO": {
+        "size": -18.1,
+        "entry": 1.46015791
+      },
+      "kPEPE": {
+        "size": -4022.0,
+        "entry": 0.0051819634000000005
+      },
+      "AERO": {
+        "size": 19.0,
+        "entry": 0.5338917569999999
+      }
+    }
+  },
+  "risk": {
+    "day": "2026-11-10",
+    "day_start_equity": 1000.0,
+    "peak_equity": 1000.0222356069064,
+    "killed": false,
+    "kill_reason": ""
+  },
+  "baselines": {
+    "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
+      "HYPE": -1,
+      "ZEC": -1,
+      "LIT": -1
+    },
+    "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
+      "DYDX": -1,
+      "SOL": -1,
+      "GMX": 1,
+      "WLD": -1,
+      "UNI": -1,
+      "TAO": -1,
+      "HYPE": -1,
+      "XPL": -1,
+      "ASTER": -1,
+      "LIT": -1,
+      "XMR": -1
+    },
+    "0x5a19bfe9c095c3bd188eca00a690b95200797aba": {
+      "PURR": -1,
+      "FARTCOIN": -1,
+      "ZEC": -1,
+      "USELESS": -1
+    },
+    "0x888e000c78b8f1aada5b3c99f880794907b76d77": {
+      "DYDX": -1,
+      "APE": -1,
+      "ARB": -1,
+      "SNX": -1,
+      "WLD": -1,
+      "UNI": -1,
+      "DOT": -1,
+      "NEAR": -1,
+      "FIL": -1,
+      "ZETA": -1,
+      "STRK": -1,
+      "kFLOKI": -1,
+      "ZK": -1,
+      "RENDER": -1,
+      "POL": -1,
+      "SAND": -1,
+      "MOVE": -1,
+      "GRIFFAIN": -1,
+      "TRUMP": -1,
+      "MELANIA": -1,
+      "ANIME": -1,
+      "VVV": -1,
+      "BERA": -1,
+      "KAITO": -1,
+      "NIL": -1,
+      "WCT": -1,
+      "XPL": -1,
+      "WLFI": -1,
+      "AVNT": -1,
+      "STBL": -1,
+      "ZEC": -1,
+      "MON": -1,
+      "MEGA": -1,
+      "ICP": -1,
+      "STABLE": -1,
+      "FOGO": -1,
+      "USELESS": -1
+    },
+    "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
+      "BTC": -1,
+      "DYDX": -1,
+      "JUP": -1,
+      "FARTCOIN": -1,
+      "APEX": -1,
+      "LIT": -1
+    },
+    "0xd10e2b1b66001bd4086d61e43e836ab9c168fd9a": {
+      "ETHFI": 1,
+      "HYPE": -1
+    },
+    "0x972d521729c0d07b360ae470f03878fe405f0650": {},
+    "0x7dacca323e44f168494c779bb5e7483c468ef410": {
+      "HYPE": -1
+    },
+    "0x94fb21bbfaed8927570a2d41af0c21527efbfd81": {
+      "kPEPE": -1
+    },
+    "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
+      "DYDX": -1,
+      "SOL": -1,
+      "BNB": -1,
+      "OP": -1,
+      "LTC": -1,
+      "ARB": -1,
+      "DOGE": -1,
+      "SUI": -1,
+      "CRV": -1,
+      "LDO": -1,
+      "LINK": -1,
+      "STX": -1,
+      "CFX": -1,
+      "XRP": -1,
+      "APT": -1,
+      "AAVE": -1,
+      "UNI": -1,
+      "SEI": -1,
+      "RUNE": -1,
+      "ZRO": -1,
+      "DOT": -1,
+      "KAS": -1,
+      "TIA": -1,
+      "ADA": -1,
+      "GAS": -1,
+      "NEAR": -1,
+      "ORDI": -1,
+      "FIL": -1,
+      "SUSHI": -1,
+      "SUPER": -1,
+      "JUP": -1,
+      "RSR": -1,
+      "JTO": -1,
+      "ACE": -1,
+      "WIF": -1,
+      "CAKE": -1,
+      "ENS": -1,
+      "ONDO": -1,
+      "ZETA": -1,
+      "STRK": -1,
+      "ENA": -1,
+      "MNT": -1,
+      "SAGA": -1,
+      "HBAR": -1,
+      "POPCAT": -1,
+      "TURBO": -1,
+      "BRETT": -1,
+      "ZK": -1,
+      "RENDER": -1,
+      "POL": -1,
+      "GOAT": -1,
+      "GRASS": -1,
+      "PNUT": -1,
+      "XLM": -1,
+      "VIRTUAL": -1,
+      "PENGU": -1,
+      "USUAL": -1,
+      "BIO": -1,
+      "SPX": -1,
+      "TRUMP": -1,
+      "ANIME": -1,
+      "VVV": -1,
+      "PAXG": -1,
+      "ZORA": -1,
+      "SYRUP": -1,
+      "PUMP": -1,
+      "PROVE": -1,
+      "WLFI": 1,
+      "AVNT": -1,
+      "2Z": -1,
+      "MON": -1,
+      "STABLE": 1,
+      "SKR": -1,
+      "GRAM": 1,
+      "PONS": -1
+    },
+    "0xdbbb9b4e361e1e1b6b4c640914ed4e4a11896df9": {
+      "ETH": -1,
+      "ENA": 1,
+      "VVV": -1
+    },
+    "0xa4247526997374fdab0bad6f63c9f3daca8f22d4": {
+      "BTC": -1
+    },
+    "0x94dac1facdc4afd2614c3119447187b4143bc449": {
+      "WLD": -1,
+      "ENA": 1,
+      "SYRUP": -1,
+      "XPL": -1,
+      "ZEC": -1
+    },
+    "0xb83de012dba672c76a7dbbbf3e459cb59d7d6e36": {
+      "BTC": -1,
+      "SOL": -1,
+      "AVAX": -1,
+      "APE": -1,
+      "DOGE": -1,
+      "SUI": -1,
+      "LINK": -1,
+      "XRP": -1,
+      "WLD": -1,
+      "UNI": -1,
+      "ZRO": -1,
+      "NEAR": -1,
+      "ONDO": -1,
+      "TAO": -1,
+      "ENA": -1,
+      "PURR": -1,
+      "HYPE": -1,
+      "FARTCOIN": -1,
+      "VVV": -1,
+      "XPL": -1,
+      "ASTER": -1,
+      "ZEC": -1,
+      "MON": -1,
+      "AERO": -1,
+      "XMR": -1,
+      "GRAM": -1
+    },
+    "0x03136324349c003f3498130f56f4526bf5720ab1": {
+      "BTC": -1,
+      "ETH": -1,
+      "AVAX": -1,
+      "ARB": -1,
+      "CRV": -1,
+      "KAS": -1
+    }
+  },
+  "shadows": {
+    "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
+      "starting_balance": 1000.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.02077893055512,
+      "positions": {
+        "XTEN": {
+          "size": 136.0,
+          "entry": 0.24275854200000002
+        },
+        "CASHCAT": {
+          "size": 218.0,
+          "entry": 0.0603680712
+        }
+      }
+    },
+    "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
+      "starting_balance": 1000.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.25091133400439997,
+      "positions": {
+        "ETH": {
+          "size": 0.102,
+          "entry": 2018.1535500000002
+        },
+        "MORPHO": {
+          "size": 51.0,
+          "entry": 1.9950989399999999
+        },
+        "ZRO": {
+          "size": -171.2,
+          "entry": 1.46015791
+        }
+      }
+    },
+    "0x5a19bfe9c095c3bd188eca00a690b95200797aba": {
+      "starting_balance": 1000.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.0,
+      "positions": {}
+    },
+    "0x888e000c78b8f1aada5b3c99f880794907b76d77": {
+      "starting_balance": 1000.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.15219883239435003,
+      "positions": {
+        "INIT": {
+          "size": -359.0,
+          "entry": 0.245870816
+        },
+        "kPEPE": {
+          "size": -48235.0,
+          "entry": 0.0051819634000000005
+        }
+      }
+    },
+    "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
+      "starting_balance": 1000.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.20970346626693,
+      "positions": {
+        "ETH": {
+          "size": -0.0941,
+          "entry": 2017.34645
+        },
+        "PUMP": {
+          "size": -73877.0,
+          "entry": 0.0033833231999999998
+        },
+        "SOL": {
+          "size": -0.32,
+          "entry": 81.9551057
+        }
+      }
+    },
+    "0xd10e2b1b66001bd4086d61e43e836ab9c168fd9a": {
+      "starting_balance": 1000.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.0,
+      "positions": {}
+    },
+    "0x972d521729c0d07b360ae470f03878fe405f0650": {
+      "starting_balance": 1000.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.11244515203350001,
+      "positions": {
+        "NEAR": {
+          "size": 71.5,
+          "entry": 3.49479882
+        }
+      }
+    },
+    "0x7dacca323e44f168494c779bb5e7483c468ef410": {
+      "starting_balance": 1000.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.0,
+      "positions": {}
+    },
+    "0x94fb21bbfaed8927570a2d41af0c21527efbfd81": {
+      "starting_balance": 1000.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.0,
+      "positions": {}
+    },
+    "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
+      "starting_balance": 1000.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.7654161592953899,
+      "positions": {
+        "AERO": {
+          "size": 272.0,
+          "entry": 0.537317442
+        },
+        "ALGO": {
+          "size": 918.0,
+          "entry": 0.08849969640000001
+        },
+        "ALT": {
+          "size": 15977.0,
+          "entry": 0.0051950388
+        },
+        "APE": {
+          "size": 1016.7,
+          "entry": 0.098859768
+        },
+        "ATOM": {
+          "size": 35.5,
+          "entry": 1.3724744400000002
+        },
+        "BERA": {
+          "size": 680.4,
+          "entry": 0.101100216
+        },
+        "CASHCAT": {
+          "size": 1039.0,
+          "entry": 0.0632896554
+        },
+        "CC": {
+          "size": 130.0,
+          "entry": 0.0884636892
+        },
+        "COMP": {
+          "size": 0.53,
+          "entry": 19.778955
+        },
+        "DASH": {
+          "size": 0.55,
+          "entry": 43.5577098
+        },
+        "EIGEN": {
+          "size": 84.09,
+          "entry": 0.15643128
+        },
+        "ETC": {
+          "size": 5.5,
+          "entry": 6.66563286
+        },
+        "ETHFI": {
+          "size": -222.8,
+          "entry": 0.6251849380000001
+        },
+        "FARTCOIN": {
+          "size": 1511.9,
+          "entry": 0.11452290000000001
+        },
+        "FET": {
+          "size": 449.0,
+          "entry": 0.141268248
+        },
+        "GALA": {
+          "size": 54503.0,
+          "entry": 0.0014822964
+        },
+        "ICP": {
+          "size": 11.9,
+          "entry": 2.3652229499999997
+        },
+        "INJ": {
+          "size": -1.6,
+          "entry": 7.77564456
+        },
+        "KAITO": {
+          "size": -52.0,
+          "entry": 0.202344523
+        },
+        "MEGA": {
+          "size": -531.0,
+          "entry": 0.0515086962
+        },
+        "MET": {
+          "size": -279.0,
+          "entry": 0.2984403
+        },
+        "PENDLE": {
+          "size": 13.0,
+          "entry": 1.5502599900000003
+        },
+        "PYTH": {
+          "size": 420.0,
+          "entry": 0.0644268828
+        },
+        "S": {
+          "size": 2644.0,
+          "entry": 0.0362802546
+        },
+        "SAND": {
+          "size": 2004.0,
+          "entry": 0.042203438999999995
+        },
+        "W": {
+          "size": 1452.9,
+          "entry": 0.01055211
+        },
+        "XMR": {
+          "size": -0.195,
+          "entry": 556.223733
+        },
+        "ZEN": {
+          "size": 8.51,
+          "entry": 4.83016584
+        }
+      }
+    },
+    "0xdbbb9b4e361e1e1b6b4c640914ed4e4a11896df9": {
+      "starting_balance": 1000.0,
+      "realized_pnl": 0.0003989039999987657,
+      "fees_paid": 0.34431989726232004,
+      "positions": {
+        "HYPE": {
+          "size": -3.52,
+          "entry": 70.9743023
+        },
+        "PUMP": {
+          "size": 73877.0,
+          "entry": 0.0033846768
+        },
+        "ZEC": {
+          "size": -0.24,
+          "entry": 1020.2939003999999
+        }
+      }
+    },
+    "0xa4247526997374fdab0bad6f63c9f3daca8f22d4": {
+      "starting_balance": 1000.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.0,
+      "positions": {}
+    },
+    "0x94dac1facdc4afd2614c3119447187b4143bc449": {
+      "starting_balance": 1000.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.0,
+      "positions": {}
+    },
+    "0xb83de012dba672c76a7dbbbf3e459cb59d7d6e36": {
+      "starting_balance": 1000.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.0,
+      "positions": {}
+    },
+    "0x03136324349c003f3498130f56f4526bf5720ab1": {
+      "starting_balance": 1000.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.16376298254729998,
+      "positions": {
+        "HYPE": {
+          "size": 3.52,
+          "entry": 71.0026977
+        },
+        "UNI": {
+          "size": 17.0,
+          "entry": 6.70519077
+        }
+      }
+    }
+  },
+  "shadow_started": {
+    "0xf83858e57d9f804f5ca1603bce82558119aeac7b": "2026-11-10T16:52:32.714233+00:00",
+    "0x643430283b19fa5bd70a1138b495c2b43523cdd5": "2026-11-10T16:52:32.714233+00:00",
+    "0x5a19bfe9c095c3bd188eca00a690b95200797aba": "2026-11-10T16:52:32.714233+00:00",
+    "0x888e000c78b8f1aada5b3c99f880794907b76d77": "2026-11-10T16:52:32.714233+00:00",
+    "0x011820f60d75a2b870ffe64a4764873e14bc8ede": "2026-11-10T16:52:32.714233+00:00",
+    "0xd10e2b1b66001bd4086d61e43e836ab9c168fd9a": "2026-11-10T16:52:32.714233+00:00",
+    "0x972d521729c0d07b360ae470f03878fe405f0650": "2026-11-10T16:52:32.714233+00:00",
+    "0x7dacca323e44f168494c779bb5e7483c468ef410": "2026-11-10T16:52:32.714233+00:00",
+    "0x94fb21bbfaed8927570a2d41af0c21527efbfd81": "2026-11-10T16:52:32.714233+00:00",
+    "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": "2026-11-10T16:52:32.714233+00:00",
+    "0xdbbb9b4e361e1e1b6b4c640914ed4e4a11896df9": "2026-11-10T16:52:32.714233+00:00",
+    "0xa4247526997374fdab0bad6f63c9f3daca8f22d4": "2026-11-10T16:52:32.714233+00:00",
+    "0x94dac1facdc4afd2614c3119447187b4143bc449": "2026-11-10T16:52:32.714233+00:00",
+    "0xb83de012dba672c76a7dbbbf3e459cb59d7d6e36": "2026-11-10T16:52:32.714233+00:00",
+    "0x03136324349c003f3498130f56f4526bf5720ab1": "2026-11-10T16:52:32.714233+00:00"
+  },
+  "meta": {}
+}

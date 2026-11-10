@@ -139,15 +139,19 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.06466367999999934,
-      "fees_paid": 0.1236308953833,
+      "fees_paid": 0.13703264444052,
       "positions": {
         "LIT": {
-          "size": -65.0,
-          "entry": 3.3743749899999997
+          "size": -70.0,
+          "entry": 3.370797134285714
         },
         "XTEN": {
           "size": 143.0,
           "entry": 0.246289248
+        },
+        "CASHCAT": {
+          "size": 218.0,
+          "entry": 0.0603680712
         }
       }
     },
