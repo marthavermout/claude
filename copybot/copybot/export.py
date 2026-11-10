@@ -58,7 +58,8 @@ def build_dashboard(cfg: BotConfig) -> dict:
         "killed": risk.get("killed", False),
         "kill_reason": risk.get("kill_reason", ""),
         "peak_equity": risk.get("peak_equity", 0.0),
-        "positions": [{"coin": c, **p} for c, p in sorted(broker["positions"].items())],
+        "positions": [{"coin": c, **p, **({"why": state["pattern_trades"][c]["pattern"]} if c in state.get("pattern_trades", {}) else {})}
+                      for c, p in sorted(broker["positions"].items())],
         "risk": asdict(cfg.risk),
         "leaders": [asdict(s) for s in review.leaders],
         "following": list(cfg.leaders),

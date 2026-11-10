@@ -22,6 +22,9 @@ class BotConfig:
     slippage_bps: float = 2.0
     data_dir: str = "data"
     target_leaders: int = 3
+    strategy: str = "copy"  # "copy" (follow traders) or "patterns" (read the chart)
+    pattern_coins: list[str] = field(default_factory=list)
+    risk_per_trade: float = 0.01  # patterns: a stop-loss hit costs at most this share of equity
     select_random: bool = False  # control group: pick active traders at random, ignoring past results
     risk: RiskConfig = field(default_factory=RiskConfig)
 
@@ -45,6 +48,9 @@ def load_config(path: str | Path) -> BotConfig:
         data_dir=str(bot.get("data_dir", "data")),
         target_leaders=int(bot.get("target_leaders", 3)),
         select_random=bool(bot.get("select_random", False)),
+        strategy=str(bot.get("strategy", "copy")),
+        pattern_coins=[str(c) for c in bot.get("pattern_coins", [])],
+        risk_per_trade=float(bot.get("risk_per_trade", 0.01)),
         risk=RiskConfig(**raw.get("risk", {})),
     )
 

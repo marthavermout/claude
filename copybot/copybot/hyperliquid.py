@@ -71,5 +71,11 @@ class HyperliquidClient:
         start = int((time.time() - hours * 3600) * 1000)
         return self._info({"type": "userFillsByTime", "user": address, "startTime": start})
 
+    def candles(self, coin: str, interval: str = "15m", count: int = 250) -> list[dict]:
+        minutes = {"1m": 1, "5m": 5, "15m": 15, "1h": 60, "4h": 240}[interval]
+        end = int(time.time() * 1000)
+        start = end - count * minutes * 60_000
+        return self._info({"type": "candleSnapshot", "req": {"coin": coin, "interval": interval, "startTime": start, "endTime": end}})
+
     def leaderboard(self, url: str = LEADERBOARD_URL) -> list[dict]:
         return self._request("GET", url)["leaderboardRows"]

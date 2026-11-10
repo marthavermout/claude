@@ -1,0 +1,24 @@
+# Bot 'patronen': leest de grafiek: double bottom/top, head & shoulders, driehoeken, wedges en vlaggen, alleen met de trend mee
+
+[bot]
+strategy = "patterns"
+pattern_coins = ["BTC", "ETH", "SOL", "HYPE", "XRP", "DOGE", "SUI", "BNB", "AVAX", "LINK"]
+risk_per_trade = 0.01       # a stop-loss hit costs at most 1% of the money
+leaders = []
+target_leaders = 0          # follows no traders
+poll_seconds = 30
+data_dir = "data"
+
+[paper]
+starting_balance = 1000.0
+fee_bps = 4.5
+slippage_bps = 2.0
+
+[risk]
+max_leverage = 2.0
+max_position_pct = 0.25
+daily_loss_limit_pct = 0.05
+max_drawdown_pct = 0.20
+min_trade_usd = 10.0
+allowed_coins = []
+blocked_coins = []
