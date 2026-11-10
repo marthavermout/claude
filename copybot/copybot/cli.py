@@ -11,7 +11,7 @@ import json
 from .backtest import apply_sets, load_records, split_backtest
 from .config import apply_overrides, load_config
 from .engine import Engine
-from .export import export
+from .export import export, export_bots
 from .hyperliquid import HyperliquidClient
 from .review import build_review, to_markdown
 from .selector import SelectionRules, select
@@ -117,6 +117,24 @@ def cmd_export(args) -> int:
     return 0
 
 
+def _description(path: str) -> str:
+    with open(path) as fh:
+        first = fh.readline().strip()
+    return first.split(":", 1)[1].strip() if first.startswith("# Bot") and ":" in first else ""
+
+
+def cmd_compare(args) -> int:
+    bots = []
+    for spec in args.bot:
+        name, _, rest = spec.partition("=")
+        config, _, data_dir = rest.partition(":")
+        cfg = load_config(config)
+        cfg.data_dir = data_dir
+        bots.append((name, _description(config) or "standaard-instellingen", apply_overrides(cfg)))
+    print(export_bots(bots, args.out))
+    return 0
+
+
 def cmd_reset_kill(args) -> int:
     engine = Engine(_cfg(args))
     engine.risk.state.killed = False
@@ -162,6 +180,11 @@ def main(argv: list[str] | None = None) -> int:
     p.set_defaults(func=cmd_backtest)
 
     sub.add_parser("export", help="write dashboard.json + dashboard page into the data dir").set_defaults(func=cmd_export)
+    p = sub.add_parser("compare", help="write bots.json comparing several paper bots")
+    p.add_argument("--bot", action="append", required=True, metavar="NAME=CONFIG:DATADIR")
+    p.add_argument("--out", required=True)
+    p.set_defaults(func=cmd_compare)
+
     sub.add_parser("reset-kill", help="resume after the drawdown kill switch").set_defaults(func=cmd_reset_kill)
 
     args = parser.parse_args(argv)

@@ -43,6 +43,7 @@
 }
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
+section[data-tab] > *, .two > *, .hero > * { min-width: 0; }
 html { background: var(--room-1); }
 body { margin: 0; min-height: 100vh; color: var(--ink); font: 15px/1.5 var(--ui); background: var(--room-1); }
 
@@ -246,6 +247,23 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
     <div class="empty" id="feed-empty" hidden>Je traders hebben de afgelopen 24 uur niets gedaan.</div>
   </section>
 
+  <!-- BOTS -->
+  <section data-tab="bots" id="bots" style="display:grid;gap:18px" hidden>
+    <div class="glass pad">
+      <div class="feed-head"><h2>Welke bot verdient het meest?</h2><span class="soft" style="font-size:.78rem" id="bots-updated"></span></div>
+      <p class="note" style="margin:0 0 12px">Vijf bots met elk $1.000 nepgeld en een eigen strategie, op dezelfde markt en op hetzelfde moment. Zo zie je eerlijk welke aanpak werkt. Kijk pas na een paar weken naar de winnaar: een paar dagen zegt niets.</p>
+      <div class="chart" id="bots-chart" style="min-height:250px"><div class="empty">Nog geen data van de bots.</div></div>
+      <div class="legend" id="bots-legend" style="margin-top:8px"></div>
+    </div>
+    <div class="glass pad">
+      <div class="scroll"><table>
+        <thead><tr><th>#</th><th>Bot</th><th class="r">Vermogen</th><th class="r">Rendement</th><th class="r opt">Grootste daling</th><th class="r">Trades</th><th class="r opt">Open</th><th class="r opt">Traders</th></tr></thead>
+        <tbody id="bots-body"></tbody>
+      </table></div>
+      <div class="list" id="bots-desc" style="margin-top:12px;font-size:.82rem"></div>
+    </div>
+  </section>
+
   <!-- POSITIES -->
   <section data-tab="posities" id="posities" class="glass pad" hidden>
     <h2>Open posities <span class="soft num" id="pos-count"></span></h2>
@@ -295,6 +313,7 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
 <nav class="tabs glass" role="tablist" aria-label="Onderdelen">
   <button role="tab" data-go="overzicht" aria-selected="true">Overzicht</button>
   <button role="tab" data-go="live" aria-selected="false">Live</button>
+  <button role="tab" data-go="bots" aria-selected="false">Bots</button>
   <button role="tab" data-go="posities" aria-selected="false">Posities</button>
   <button role="tab" data-go="trades" aria-selected="false">Trades</button>
   <button role="tab" data-go="traders" aria-selected="false">Traders</button>
@@ -315,7 +334,7 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
   const clean = (s) => String(s).replaceAll("`", "");
   const make = (tag, text, cls) => { const e = document.createElement(tag); if (text != null) e.textContent = text; if (cls) e.className = cls; return e; };
 
-  let data = null, mids = {};
+  let data = null, mids = {}, bots = null;
 
   // greeting by local time
   const h = new Date().getHours();
@@ -331,12 +350,13 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
   });
 
   // tabs with #hash links
-  const TABS = ["overzicht", "live", "posities", "trades", "traders", "reviews"];
+  const TABS = ["overzicht", "live", "bots", "posities", "trades", "traders", "reviews"];
   function show(tab) {
     if (!TABS.includes(tab)) tab = "overzicht";
     document.querySelectorAll("section[data-tab]").forEach((s) => { s.hidden = s.dataset.tab !== tab; });
     document.querySelectorAll("nav.tabs button").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.go === tab)));
     if (tab === "overzicht" && data) drawChart();
+    if (tab === "bots") drawBots();
   }
   document.querySelectorAll("nav.tabs button").forEach((b) => b.addEventListener("click", () => {
     if (location.hash !== `#${b.dataset.go}`) history.replaceState(null, "", `#${b.dataset.go}`);
@@ -361,12 +381,13 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
   }
 
   async function loadMids() {
-    if (!data || !data.positions.length) return;
+    if (!data || (!data.positions.length && !bots?.bots.some((b) => b.positions.length))) return;
     try {
       const r = await fetch("https://api.hyperliquid.xyz/info", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ type: "allMids" }) });
       const raw = await r.json();
       mids = Object.fromEntries(Object.entries(raw).map(([k, v]) => [k, +v]));
       renderLive();
+      renderBots();
     } catch { /* keep last prices */ }
   }
 
@@ -622,8 +643,87 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
     $("feed-mini-empty").hidden = $("feed-empty").hidden = n > 0;
   }
 
-  let rt; new ResizeObserver(() => { clearTimeout(rt); rt = setTimeout(() => data && !$("overzicht").hidden && drawChart(), 100); }).observe($("chart"));
-  loadData().then(() => { loadMids(); loadFeed(); });
+  // ---- bot comparison ----
+  const BOT_COLORS = ["var(--accent)", "#2f6f6a", "#c2702a", "#7a5bb0", "#b8475a", "#4f7fb8", "#8a8a3a"];
+  async function loadBots() {
+    try {
+      const r = await fetch(`bots.json?ts=${Date.now()}`, { cache: "no-store" });
+      if (!r.ok) return;
+      bots = await r.json();
+      renderBots();
+    } catch { /* tab shows its empty state */ }
+  }
+  function botLiveEquity(b) {
+    const cash = b.starting_balance + b.realized_pnl - b.fees_paid;
+    if (!b.positions.length) return b.equity;
+    if (!b.positions.every((p) => mids[p.coin] != null)) return b.equity;
+    return cash + b.positions.reduce((s, p) => s + (mids[p.coin] - p.entry) * p.size, 0);
+  }
+  function renderBots() {
+    if (!bots) return;
+    $("bots-updated").textContent = `bijgewerkt ${ago(bots.generated_at)}`;
+    const rows = bots.bots.map((b, i) => ({ ...b, color: BOT_COLORS[i % BOT_COLORS.length], live: botLiveEquity(b) }))
+      .sort((a, b) => b.live - a.live);
+    const body = $("bots-body"); body.replaceChildren();
+    rows.forEach((b, i) => {
+      const tr = body.insertRow();
+      cell(tr, String(i + 1), "num soft");
+      const name = tr.insertCell(); const sw = make("i"); sw.style.cssText = `display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:8px;background:${b.color}`;
+      name.append(sw, make("b", b.name));
+      if (b.killed) name.append(make("span", " gestopt", "down"));
+      else if (b.halt) name.append(make("span", " pauze", "soft"));
+      cell(tr, usd.format(b.live), "r num");
+      const ret = b.live / b.starting_balance - 1;
+      tone(cell(tr, pct.format(ret), "r num"), ret);
+      cell(tr, b.max_drawdown ? `−${pct.format(b.max_drawdown).replace("+", "")}` : "0,00%", "r num opt");
+      cell(tr, String(b.trades), "r num");
+      cell(tr, String(b.positions.length), "r num opt");
+      cell(tr, String(b.following), "r num opt");
+    });
+    $("bots-desc").replaceChildren(...bots.bots.map((b) => { const d = make("div"); d.append(make("b", b.name + ": "), document.createTextNode(b.description)); return d; }));
+    if (!$("bots").hidden) drawBots();
+  }
+  function drawBots() {
+    if (!bots) return;
+    const box = $("bots-chart");
+    const series = bots.bots.map((b, i) => ({ name: b.name, color: BOT_COLORS[i % BOT_COLORS.length],
+      pts: b.series.map((p) => ({ t: +new Date(p.t), v: p.equity / b.starting_balance - 1 })) })).filter((s) => s.pts.length > 1);
+    if (!series.length) return;
+    const W = box.clientWidth || 600, H = 250, m = { t: 12, r: 12, b: 26, l: 54 };
+    const all = series.flatMap((s) => s.pts);
+    const t0 = Math.min(...all.map((p) => p.t)), t1 = Math.max(...all.map((p) => p.t));
+    let lo = Math.min(0, ...all.map((p) => p.v)), hi = Math.max(0, ...all.map((p) => p.v));
+    if (hi - lo < 0.002) { hi += 0.001; lo -= 0.001; }
+    const padv = (hi - lo) * 0.08; lo -= padv; hi += padv;
+    const x = (t) => m.l + ((t - t0) / (t1 - t0 || 1)) * (W - m.l - m.r);
+    const y = (v) => m.t + (1 - (v - lo) / (hi - lo)) * (H - m.t - m.b);
+    const NS = "http://www.w3.org/2000/svg";
+    const el = (n, a) => { const e = document.createElementNS(NS, n); for (const k in a) e.setAttribute(k, a[k]); return e; };
+    const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Rendement van elke bot sinds de start" });
+    const step = niceStep((hi - lo) / 4);
+    for (let v = Math.ceil(lo / step) * step; v <= hi; v += step) {
+      svg.append(el("line", { x1: m.l, x2: W - m.r, y1: y(v), y2: y(v), stroke: "var(--glass-line)", "stroke-width": Math.abs(v) < step / 2 ? 1.6 : 1 }));
+      const tx = el("text", { x: m.l - 8, y: y(v) + 4, "text-anchor": "end" }); tx.textContent = pct.format(v).replace(",00", ""); svg.append(tx);
+    }
+    const ticks = Math.max(2, Math.min(6, Math.floor((W - m.l - m.r) / 110)));
+    for (let i = 0; i <= ticks; i++) {
+      const t = t0 + (t1 - t0) * (i / ticks);
+      const tx = el("text", { x: x(t), y: H - 6, "text-anchor": i === 0 ? "start" : i === ticks ? "end" : "middle" });
+      tx.textContent = new Date(t).toLocaleString("nl-NL", t1 - t0 > 2 * 864e5 ? { day: "numeric", month: "short" } : { hour: "2-digit", minute: "2-digit" });
+      svg.append(tx);
+    }
+    for (const s of series) {
+      svg.append(el("path", { d: s.pts.map((p, i) => `${i ? "L" : "M"}${x(p.t).toFixed(1)},${y(p.v).toFixed(1)}`).join(""), fill: "none", stroke: s.color, "stroke-width": s.name === "basis" ? 2.4 : 1.8, "stroke-linejoin": "round" }));
+      const l = s.pts[s.pts.length - 1];
+      svg.append(el("circle", { cx: x(l.t), cy: y(l.v), r: 3.5, fill: s.color }));
+    }
+    box.replaceChildren(svg);
+    $("bots-legend").replaceChildren(...series.map((s) => { const sp = make("span", s.name); sp.style.color = s.color; return sp; }));
+  }
+
+  let rt; new ResizeObserver(() => { clearTimeout(rt); rt = setTimeout(() => { if (data && !$("overzicht").hidden) drawChart(); if (!$("bots").hidden) drawBots(); }, 100); }).observe(document.body);
+  loadData().then(() => { loadMids(); loadFeed(); loadBots(); });
+  setInterval(loadBots, 60_000);
   setInterval(loadFeed, 20_000);
   setInterval(loadData, 60_000);
   setInterval(loadMids, 10_000);

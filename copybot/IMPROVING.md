@@ -20,6 +20,19 @@ If `replay/` holds less than **72 hours** of data: do not propose strategy chang
 could be overfit). You may still propose a bug fix or a reliability fix with a unit test. If there
 is nothing like that, stop and report "not enough data yet" with the current numbers.
 
+## 1b. Compare the bots
+Five paper bots run side by side on the same market (`basis` = `config.ci.toml`, the others in
+`bots/*.toml`, data in `/tmp/botdata/bots/<name>/`, summary in `/tmp/botdata/bots.json`).
+Run `review` for each and compare return, max drawdown, fees and number of trades.
+- Only call a winner after **7+ days** and **30+ closed trades** per bot, and when the gap is larger
+  than the day-to-day swings. Otherwise say "too early" with the current ranking.
+- If a variant clearly beats `basis` and its settings are *not* riskier, propose making them the
+  `basis` settings (one PR, with the comparison as evidence).
+- If the winner is a riskier variant (e.g. `agressief`), do not promote it: tell the user the result
+  and the extra risk (its drawdown) and let them decide.
+- A variant that is clearly worst after 14 days may be replaced by a new idea (one per PR),
+  e.g. different trader selection or a different `join_within_pct`.
+
 ## 2. Find the biggest mistake
 Look for the one thing costing the most money or risk, e.g.:
 - fees or churn eating the profit (many small or back-and-forth trades)

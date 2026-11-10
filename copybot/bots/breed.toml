@@ -1,0 +1,29 @@
+# Bot 'breed': volgt 15 traders in plaats van 8 (meer spreiding, meer trades)
+
+# Settings for the free 24/7 run on GitHub Actions (.github/workflows/copybot.yml).
+# Leaders are left empty on purpose: the first review picks them automatically,
+# and later reviews replace traders that keep losing. Those decisions live in
+# overrides.json on the `copybot-data` branch and take precedence over this file.
+
+[bot]
+leaders = []
+target_leaders = 15         # follow 15 active traders
+copy_ratio = 1.0
+copy_existing_positions = false
+join_within_pct = 0.01      # ...but do join an existing position if the price is within 1% of the trader's entry
+poll_seconds = 30
+data_dir = "data"
+
+[paper]
+starting_balance = 1000.0
+fee_bps = 4.5
+slippage_bps = 2.0
+
+[risk]
+max_leverage = 2.0
+max_position_pct = 0.25
+daily_loss_limit_pct = 0.05
+max_drawdown_pct = 0.20
+min_trade_usd = 10.0        # Hyperliquid's own minimum order size
+allowed_coins = []
+blocked_coins = []

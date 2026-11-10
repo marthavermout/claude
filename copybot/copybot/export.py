@@ -95,3 +95,36 @@ def export(cfg: BotConfig) -> Path:
             shutil.copyfile(src, d / name)
     (d / ".nojekyll").touch()  # GitHub Pages: serve files as-is
     return out
+
+
+def bot_summary(name: str, description: str, cfg: BotConfig) -> dict:
+    """Compact numbers for the bot comparison ('Bots' tab)."""
+    full = build_dashboard(cfg)
+    st = full["stats"]
+    return {
+        "name": name,
+        "description": description,
+        "equity": full["equity"],
+        "starting_balance": full["starting_balance"],
+        "realized_pnl": full["realized_pnl"],
+        "fees_paid": full["fees_paid"],
+        "positions": full["positions"],
+        "trades": st["trades"],
+        "max_drawdown": st["max_drawdown"],
+        "btc_return": st["btc_return"],
+        "following": len(full["following"]),
+        "last_tick": full["last_tick"],
+        "halt": full["halt"],
+        "killed": full["killed"],
+        "series": [{"t": p["t"], "equity": p["equity"]} for p in _downsample(full["series"], 240)],
+    }
+
+
+def export_bots(bots: list[tuple[str, str, BotConfig]], out: str | Path) -> Path:
+    data = {"generated_at": datetime.now(timezone.utc).isoformat(),
+            "bots": [bot_summary(n, desc, cfg) for n, desc, cfg in bots]}
+    out = Path(out)
+    tmp = out.with_suffix(".tmp")
+    tmp.write_text(json.dumps(data, separators=(",", ":")))
+    tmp.replace(out)
+    return out
