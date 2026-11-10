@@ -25,9 +25,11 @@ def _cfg(args):
     return apply_overrides(cfg)
 
 
-def _selector(exclude: set[str], n: int) -> list[str]:
-    picks = select(HyperliquidClient(), SelectionRules(), top=n + len(exclude))
-    return [c.address for c in picks if c.address not in exclude][:n]
+def _selector_for(randomize: bool):
+    def pick(exclude: set[str], n: int) -> list[str]:
+        picks = select(HyperliquidClient(), SelectionRules(), top=n + len(exclude), randomize=randomize)
+        return [c.address for c in picks if c.address not in exclude][:n]
+    return pick
 
 
 def cmd_select(args) -> int:
@@ -68,7 +70,7 @@ def cmd_review(args) -> int:
 
 def cmd_tune(args) -> int:
     cfg = _cfg(args)
-    d = tune(cfg, _selector, rules=TuneRules(target_leaders=cfg.target_leaders), if_due_hours=args.if_due)
+    d = tune(cfg, _selector_for(cfg.select_random), rules=TuneRules(target_leaders=cfg.target_leaders), if_due_hours=args.if_due)
     if d is None:
         print("Review not due yet.")
         return 0

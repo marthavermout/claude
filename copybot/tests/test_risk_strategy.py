@@ -104,3 +104,20 @@ class FairEntryTest(unittest.TestCase):
     def test_disabled_by_default(self):
         base = {"BTC": 1}
         self.assertEqual(filter_baseline(self.snap(1, 100), base, {"BTC": 100}).positions, {})
+
+
+class RandomSelectionTest(unittest.TestCase):
+    def row(self, addr, acct, month_roi, alltime_pnl, month_vlm):
+        return {"ethAddress": addr, "accountValue": str(acct), "windowPerformances": [
+            ["week", {"pnl": "0", "roi": "-0.3", "vlm": "0"}],
+            ["month", {"pnl": "0", "roi": str(month_roi), "vlm": str(month_vlm)}],
+            ["allTime", {"pnl": str(alltime_pnl), "roi": "-0.5", "vlm": "0"}]]}
+
+    def test_ignores_results_but_keeps_basic_filters(self):
+        import random
+        from copybot.selector import screen_random
+        rows = [self.row("0xloser", 500_000, -0.4, -90_000, 2_000_000),   # bad results: still allowed
+                self.row("0xsmall", 5_000, 0.1, 1_000, 20_000),            # too small
+                self.row("0xmm", 500_000, 0.1, 400_000, 500_000_000)]      # market maker
+        got = [c.address for c in screen_random(rows, SelectionRules(), random.Random(1))]
+        self.assertEqual(got, ["0xloser"])

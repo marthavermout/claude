@@ -22,6 +22,7 @@ class BotConfig:
     slippage_bps: float = 2.0
     data_dir: str = "data"
     target_leaders: int = 3
+    select_random: bool = False  # control group: pick active traders at random, ignoring past results
     risk: RiskConfig = field(default_factory=RiskConfig)
 
 
@@ -43,6 +44,7 @@ def load_config(path: str | Path) -> BotConfig:
         slippage_bps=float(paper.get("slippage_bps", 2.0)),
         data_dir=str(bot.get("data_dir", "data")),
         target_leaders=int(bot.get("target_leaders", 3)),
+        select_random=bool(bot.get("select_random", False)),
         risk=RiskConfig(**raw.get("risk", {})),
     )
 
