@@ -21,11 +21,16 @@ could be overfit). You may still propose a bug fix or a reliability fix with a u
 is nothing like that, stop and report "not enough data yet" with the current numbers.
 
 ## 1b. Compare the bots
-Five paper bots run side by side on the same market (`basis` = `config.ci.toml`, the others in
+Six paper bots run side by side on the same market (`basis` = `config.ci.toml`, the others in
 `bots/*.toml`, data in `/tmp/botdata/bots/<name>/`, summary in `/tmp/botdata/bots.json`).
 Run `review` for each and compare return, max drawdown, fees and number of trades.
+- `random` (Rik) is the **control group**: traders picked at random, not on past results. It answers
+  "skill or luck?". A bot only counts as better when it beats **both Rik and holding BTC**.
 - Only call a winner after **7+ days** and **30+ closed trades** per bot, and when the gap is larger
   than the day-to-day swings. Otherwise say "too early" with the current ranking.
+- Luck test: take each bot's daily return minus Rik's daily return (from `equity.csv`, one value per
+  UTC day). Report the mean and t = mean / (stdev / sqrt(days)). Only t > 2 over 14+ days counts as
+  evidence; anything less is "not proven yet", whatever the ranking says.
 - If a variant clearly beats `basis` and its settings are *not* riskier, propose making them the
   `basis` settings (one PR, with the comparison as evidence).
 - If the winner is a riskier variant (e.g. `agressief`), do not promote it: tell the user the result
@@ -74,3 +79,14 @@ the hypothesis, the evidence (baseline vs candidate table for both splits, hours
 the risks, and how to undo it.
 
 If nothing passed: no PR. Report what you tried and why it failed. A rejected idea is a valid result.
+
+## 5. Autonomous mode (user's standing instruction, 10 Nov 2026)
+The user does not want to manage this by hand during the 7-week test (until 29 Dec 2026). So:
+- **Fix mistakes every day, not only bugs**: churn, high fees, a trader with nothing to copy, wrong or
+  missing data, a crashed or skipped run, a bot stuck at 0 trades. Small, tested fixes.
+- **Strategy changes** (which settings are "basis") follow the rules in 1b and 3: evidence first.
+- A change that passes all tests and rules may be **merged by you** (PR into `3.x`, then merge), so
+  the user doesn't have to. After merging, restart the Copybot workflow right after a data save.
+- Never: real money, loosening `basis` risk limits, deleting data, touching anything outside `copybot/`
+  and its workflows.
+- The user reads the daily report as a push notification on their phone: Dutch, short, plain words.

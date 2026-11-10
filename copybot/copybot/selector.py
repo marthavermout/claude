@@ -5,6 +5,7 @@ Goal is to avoid the usual traps: lucky one-hit wonders, market makers/HFT bots
 
 from __future__ import annotations
 
+import random
 from dataclasses import dataclass
 
 from .hyperliquid import ApiError, HyperliquidClient
@@ -67,10 +68,31 @@ def screen(rows: list[dict], rules: SelectionRules) -> list[Candidate]:
     return sorted(out, key=lambda c: c.score, reverse=True)
 
 
-def select(client: HyperliquidClient, rules: SelectionRules, top: int = 10) -> list[Candidate]:
+def screen_random(rows: list[dict], rules: SelectionRules, rng: random.Random | None = None) -> list[Candidate]:
+    """Control group: same basic filters (real money, not a market maker) but NO filter or
+    ranking on past results, in random order. If the real selection can't beat this over
+    weeks, picking 'good' traders adds nothing and any profit was luck."""
+    rng = rng or random.Random()
+    out = []
+    for row in rows:
+        acct = float(row["accountValue"])
+        if acct < rules.min_account_value:
+            continue
+        w = _windows(row)
+        month = w.get("month")
+        if not month or month["vlm"] <= 0 or month["vlm"] / acct > rules.max_turnover:
+            continue
+        out.append(Candidate(row["ethAddress"].lower(), acct, w.get("week", {}).get("roi", 0.0), month["roi"],
+                             w.get("allTime", {}).get("roi", 0.0), w.get("allTime", {}).get("pnl", 0.0), month["vlm"] / acct))
+    rng.shuffle(out)
+    return out
+
+
+def select(client: HyperliquidClient, rules: SelectionRules, top: int = 10, randomize: bool = False) -> list[Candidate]:
     chosen = []
     mids = client.mids()
-    for cand in screen(client.leaderboard(), rules):
+    rows = client.leaderboard()
+    for cand in (screen_random(rows, rules) if randomize else screen(rows, rules)):
         if len(chosen) >= top:
             break
         try:
