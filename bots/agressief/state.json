@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 0.0,
-    "fees_paid": 0.23983289516646003,
+    "fees_paid": 0.24433890128496003,
     "positions": {
       "INIT": {
         "size": -45.0,
@@ -29,8 +29,8 @@
         "entry": 0.0051819634000000005
       },
       "LIT": {
-        "size": -8.0,
-        "entry": 3.34947997
+        "size": -11.0,
+        "entry": 3.346289699090909
       },
       "ETHFI": {
         "size": 49.6,
@@ -41,7 +41,7 @@
   "risk": {
     "day": "2026-11-10",
     "day_start_equity": 1000.0,
-    "peak_equity": 1000.8164178564335,
+    "peak_equity": 1001.8326608564334,
     "killed": false,
     "kill_reason": ""
   },
@@ -128,15 +128,15 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.12623086095012,
+      "fees_paid": 0.15162339892662002,
       "positions": {
         "XTEN": {
           "size": 136.0,
           "entry": 0.24275854200000002
         },
         "LIT": {
-          "size": -70.0,
-          "entry": 3.34768033
+          "size": -87.0,
+          "entry": 3.342132014597701
         },
         "CASHCAT": {
           "size": 218.0,

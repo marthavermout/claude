@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 0.007754166666666137,
-    "fees_paid": 0.73931465475666,
+    "realized_pnl": -0.0969082406651567,
+    "fees_paid": 0.7576564291761599,
     "positions": {
       "APEX": {
         "size": -155.0,
@@ -37,8 +37,8 @@
         "entry": 0.246465697
       },
       "LIT": {
-        "size": -35.0,
-        "entry": 3.34593068
+        "size": -38.0,
+        "entry": 3.3451847765789475
       },
       "MORPHO": {
         "size": 6.4,
@@ -93,8 +93,8 @@
         "entry": 0.051842629400000007
       },
       "ZEC": {
-        "size": -0.21,
-        "entry": 1019.939622063492
+        "size": -0.2,
+        "entry": 1020.1541672033258
       },
       "ZRO": {
         "size": -34.0,
@@ -118,15 +118,15 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.34876933653006,
+      "fees_paid": 0.35623773005256,
       "positions": {
         "HYPE": {
           "size": -3.52,
           "entry": 71.0152941
         },
         "LIT": {
-          "size": -70.0,
-          "entry": 3.344384560714286
+          "size": -75.0,
+          "entry": 3.342711324
         },
         "XTEN": {
           "size": 136.0,
@@ -207,8 +207,8 @@
     },
     "0x5a19bfe9c095c3bd188eca00a690b95200797aba": {
       "starting_balance": 1000.0,
-      "realized_pnl": 0.0,
-      "fees_paid": 0.339786564093,
+      "realized_pnl": -0.04561229600000165,
+      "fees_paid": 0.344400661728,
       "positions": {
         "PURR": {
           "size": -2855.0,
@@ -219,7 +219,7 @@
           "entry": 0.130803834
         },
         "ZEC": {
-          "size": -0.25,
+          "size": -0.24,
           "entry": 1020.7938004
         }
       }

@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 0.0,
-    "fees_paid": 0.13052393909351998,
+    "fees_paid": 0.23355183989141998,
     "positions": {
       "FARTCOIN": {
         "size": 100.8,
@@ -29,8 +29,8 @@
         "entry": 1.46015791
       },
       "kPEPE": {
-        "size": -4022.0,
-        "entry": 0.0051819634000000005
+        "size": -47732.0,
+        "entry": 0.005233234464443141
       },
       "AERO": {
         "size": 19.0,
@@ -41,7 +41,7 @@
   "risk": {
     "day": "2026-11-10",
     "day_start_equity": 1000.0,
-    "peak_equity": 1000.0222356069064,
+    "peak_equity": 1000.9333113681085,
     "killed": false,
     "kill_reason": ""
   },
@@ -125,9 +125,7 @@
     "0x7dacca323e44f168494c779bb5e7483c468ef410": {
       "HYPE": -1
     },
-    "0x94fb21bbfaed8927570a2d41af0c21527efbfd81": {
-      "kPEPE": -1
-    },
+    "0x94fb21bbfaed8927570a2d41af0c21527efbfd81": {},
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "DYDX": -1,
       "SOL": -1,
@@ -358,8 +356,13 @@
     "0x94fb21bbfaed8927570a2d41af0c21527efbfd81": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.0,
-      "positions": {}
+      "fees_paid": 0.11247742846431,
+      "positions": {
+        "kPEPE": {
+          "size": -47719.0,
+          "entry": 0.0052379522
+        }
+      }
     },
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
@@ -482,8 +485,8 @@
     },
     "0xdbbb9b4e361e1e1b6b4c640914ed4e4a11896df9": {
       "starting_balance": 1000.0,
-      "realized_pnl": 0.0003989039999987657,
-      "fees_paid": 0.34890335538732004,
+      "realized_pnl": 0.004099547839997516,
+      "fees_paid": 0.35349269807232003,
       "positions": {
         "HYPE": {
           "size": -3.52,
@@ -494,7 +497,7 @@
           "entry": 0.0033846768
         },
         "ZEC": {
-          "size": -0.25,
+          "size": -0.24,
           "entry": 1020.2239943839999
         }
       }
