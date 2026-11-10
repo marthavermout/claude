@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 0.0,
-    "fees_paid": 0.73015917629166,
+    "realized_pnl": 0.007754166666666137,
+    "fees_paid": 0.73931465475666,
     "positions": {
       "APEX": {
         "size": -155.0,
@@ -94,7 +94,7 @@
       },
       "ZEC": {
         "size": -0.21,
-        "entry": 1020.1792566666667
+        "entry": 1019.939622063492
       },
       "ZRO": {
         "size": -34.0,
@@ -109,7 +109,7 @@
   "risk": {
     "day": "2026-11-10",
     "day_start_equity": 1000.0,
-    "peak_equity": 1006.8267955225084,
+    "peak_equity": 1011.0681529440434,
     "killed": false,
     "kill_reason": ""
   },

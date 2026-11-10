@@ -37,7 +37,7 @@
   "risk": {
     "day": "2026-11-10",
     "day_start_equity": 1000.0,
-    "peak_equity": 1001.4217109890051,
+    "peak_equity": 1001.735889989005,
     "killed": false,
     "kill_reason": ""
   },
