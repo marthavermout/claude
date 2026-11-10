@@ -1,0 +1,26 @@
+{
+  "risk": {},
+  "leaders": [
+    "0x999510ad3dd8c94a6659d6401d983137565283e3",
+    "0xd42350dfad9884113f21109b5a7a6736fb4d50c3",
+    "0xf83858e57d9f804f5ca1603bce82558119aeac7b"
+  ],
+  "reviews": 1,
+  "last_review": "2026-11-10T08:40:34.762407+00:00",
+  "review_log": [
+    {
+      "time": "2026-11-10T08:40:34.762407+00:00",
+      "n": 1,
+      "mistakes": [],
+      "observations": [],
+      "decision": "Traders aangevuld: `0x999510ad\u2026`, `0xd42350df\u2026`, `0xf83858e5\u2026`"
+    }
+  ],
+  "last_change": "2026-11-10T08:40:34.762407+00:00",
+  "history": [
+    {
+      "time": "2026-11-10T08:40:34.762407+00:00",
+      "change": "Traders aangevuld: `0x999510ad\u2026`, `0xd42350df\u2026`, `0xf83858e5\u2026`"
+    }
+  ]
+}
