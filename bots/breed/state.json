@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 0.0,
-    "fees_paid": 0.23355183989141998,
+    "fees_paid": 0.24715730455415996,
     "positions": {
       "FARTCOIN": {
         "size": 100.8,
@@ -35,6 +35,14 @@
       "AERO": {
         "size": 19.0,
         "entry": 0.5338917569999999
+      },
+      "ETHFI": {
+        "size": -15.9,
+        "entry": 0.631333708
+      },
+      "LIT": {
+        "size": -6.0,
+        "entry": 3.3660266599999997
       }
     }
   },
@@ -47,9 +55,7 @@
   },
   "baselines": {
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
-      "HYPE": -1,
-      "ZEC": -1,
-      "LIT": -1
+      "HYPE": -1
     },
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "DYDX": -1,
@@ -178,7 +184,6 @@
       "RENDER": -1,
       "POL": -1,
       "GOAT": -1,
-      "GRASS": -1,
       "PNUT": -1,
       "XLM": -1,
       "VIRTUAL": -1,
@@ -191,7 +196,6 @@
       "VVV": -1,
       "PAXG": -1,
       "ZORA": -1,
-      "SYRUP": -1,
       "PUMP": -1,
       "PROVE": -1,
       "WLFI": 1,
@@ -259,7 +263,7 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.02077893055512,
+      "fees_paid": 0.13286761833312,
       "positions": {
         "XTEN": {
           "size": 136.0,
@@ -268,6 +272,10 @@
         "CASHCAT": {
           "size": 218.0,
           "entry": 0.0603680712
+        },
+        "LIT": {
+          "size": -74.0,
+          "entry": 3.3660266599999997
         }
       }
     },
@@ -367,7 +375,7 @@
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.7654161592953899,
+      "fees_paid": 0.7731000237150899,
       "positions": {
         "AERO": {
           "size": 272.0,
@@ -480,6 +488,10 @@
         "ZEN": {
           "size": 8.51,
           "entry": 4.83016584
+        },
+        "SYRUP": {
+          "size": -126.0,
+          "entry": 0.135517891
         }
       }
     },

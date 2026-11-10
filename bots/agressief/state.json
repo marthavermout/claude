@@ -41,14 +41,13 @@
   "risk": {
     "day": "2026-11-10",
     "day_start_equity": 1000.0,
-    "peak_equity": 1001.8326608564334,
+    "peak_equity": 1002.1725157803149,
     "killed": false,
     "kill_reason": ""
   },
   "baselines": {
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
-      "HYPE": -1,
-      "ZEC": -1
+      "HYPE": -1
     },
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "DYDX": -1,

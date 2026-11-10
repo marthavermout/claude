@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": -0.0969082406651567,
-    "fees_paid": 0.7576564291761599,
+    "realized_pnl": -0.44801513944561117,
+    "fees_paid": 0.7992416704611599,
     "positions": {
       "APEX": {
         "size": -155.0,
@@ -93,8 +93,8 @@
         "entry": 0.051842629400000007
       },
       "ZEC": {
-        "size": -0.2,
-        "entry": 1020.1541672033258
+        "size": -0.17,
+        "entry": 1021.33505434968
       },
       "ZRO": {
         "size": -34.0,
@@ -117,8 +117,8 @@
   "shadows": {
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
-      "realized_pnl": 0.0,
-      "fees_paid": 0.35623773005256,
+      "realized_pnl": -1.1472219999999593,
+      "fees_paid": 0.47611195358256,
       "positions": {
         "HYPE": {
           "size": -3.52,
@@ -131,10 +131,6 @@
         "XTEN": {
           "size": 136.0,
           "entry": 0.242783547
-        },
-        "ZEC": {
-          "size": -0.24,
-          "entry": 1019.6793566666666
         },
         "CASHCAT": {
           "size": 219.0,
