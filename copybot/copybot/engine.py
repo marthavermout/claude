@@ -7,6 +7,7 @@ loses money, so bad picks can be replaced."""
 from __future__ import annotations
 
 import csv
+import gzip
 import json
 import logging
 import time
@@ -39,6 +40,8 @@ class Engine:
         self.broker = PaperBroker(cfg.starting_balance, cfg.fee_bps, cfg.slippage_bps)
         self.risk = RiskManager(cfg.risk)
         self._decimals: dict[str, int] | None = None
+        self.record_replay = True
+        self._replay: list[dict] = []
         self._load()
 
     # ---------- persistence ----------
@@ -77,10 +80,28 @@ class Engine:
             writer.writerow(row)
 
     # ---------- trading ----------
-    def _round(self, coin: str, size: float) -> float:
+    def _decimals_for(self, coin: str) -> int:
         if self._decimals is None:
             self._decimals = self.client.size_decimals()
-        return round(size, self._decimals.get(coin, 4))
+        return self._decimals.get(coin, 4)
+
+    def _round(self, coin: str, size: float) -> float:
+        return round(size, self._decimals_for(coin))
+
+    def flush_replay(self) -> Path | None:
+        """Write recorded rounds to replay/<first-tick>.jsonl.gz (immutable files keep git small).
+        `python -m copybot backtest` replays them to test code changes on real history."""
+        if not self._replay:
+            return None
+        folder = self.dir / "replay"
+        folder.mkdir(exist_ok=True)
+        name = self._replay[0]["t"][:19].replace(":", "").replace("-", "") + ".jsonl.gz"
+        path = folder / name
+        with gzip.open(path, "at") as fh:
+            for rec in self._replay:
+                fh.write(json.dumps(rec, separators=(",", ":")) + "\n")
+        self._replay = []
+        return path
 
     def _rebalance(self, broker: PaperBroker, targets: dict[str, float], mids: dict[str, float]) -> list[Fill]:
         fills = []
@@ -117,6 +138,17 @@ class Engine:
                                  snap.address[:10], len(snap.positions), ", ".join(snap.positions))
                 snap = filter_baseline(snap, self.baselines[snap.address])
             snaps.append(snap)
+
+        if self.record_replay:
+            coins = {"BTC"} | set(self.broker.positions)
+            for snap in raw_snaps:
+                coins |= set(snap.positions)
+            self._replay.append({
+                "t": ts,
+                "mids": {c: mids[c] for c in sorted(coins) if c in mids},
+                "dec": {c: self._decimals_for(c) for c in sorted(coins)},
+                "leaders": {s.address: {"equity": s.equity, "positions": s.positions} for s in raw_snaps},
+            })
 
         # shadow books: one per leader, no halts, same position limits
         for raw, snap in zip(raw_snaps, snaps):
@@ -159,11 +191,18 @@ class Engine:
         log.info("paper trading %d leader(s), start balance $%.2f, polling every %ss",
                  len(self.cfg.leaders), self.cfg.starting_balance, self.cfg.poll_seconds)
         deadline = time.monotonic() + minutes * 60 if minutes else None
-        while deadline is None or time.monotonic() < deadline:
-            started = time.monotonic()
-            try:
-                self.tick()
-            except Exception:  # never let one bad round kill a 24/7 bot
-                log.exception("unexpected error in tick")
-            time.sleep(max(1.0, self.cfg.poll_seconds - (time.monotonic() - started)))
+        last_flush = time.monotonic()
+        try:
+            while deadline is None or time.monotonic() < deadline:
+                started = time.monotonic()
+                try:
+                    self.tick()
+                except Exception:  # never let one bad round kill a 24/7 bot
+                    log.exception("unexpected error in tick")
+                if time.monotonic() - last_flush > 600:
+                    self.flush_replay()
+                    last_flush = time.monotonic()
+                time.sleep(max(1.0, self.cfg.poll_seconds - (time.monotonic() - started)))
+        finally:
+            self.flush_replay()
         log.info("run finished (time limit reached)")

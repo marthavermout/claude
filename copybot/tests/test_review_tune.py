@@ -141,3 +141,37 @@ class ExportTest(unittest.TestCase):
             self.assertEqual(data["positions"][0]["coin"], "BTC")
             self.assertEqual(len(data["series"]), 1)
             self.assertTrue((Path(tmp) / "index.html").exists())
+
+
+class BacktestTest(unittest.TestCase):
+    def test_record_and_replay_match_live(self):
+        from copybot.backtest import apply_sets, load_records, run_backtest, split_backtest
+        with tempfile.TemporaryDirectory() as tmp:
+            cfg = BotConfig(leaders=[A], starting_balance=1000, fee_bps=4.5, slippage_bps=2, data_dir=tmp,
+                            copy_existing_positions=True, risk=RiskConfig(max_position_pct=1.0))
+            client = FakeClient()
+            e = Engine(cfg, client=client)
+            t = T0
+            for i in range(10):
+                client.leader = {"BTC": 0.4} if i % 4 < 2 else {}
+                client.prices["BTC"] = 50_000 + 500 * i
+                e.tick(t)
+                t += timedelta(hours=1)
+            e.flush_replay()
+            live_equity = e.broker.equity(client.prices)
+
+            records = load_records(tmp)
+            self.assertEqual(len(records), 10)
+            res = run_backtest(cfg, records)
+            self.assertAlmostEqual(res["final_equity"], round(live_equity, 2), places=2)
+
+            cheap = run_backtest(apply_sets(cfg, ["fee_bps=0", "slippage_bps=0"]), records)
+            self.assertGreater(cheap["final_equity"], res["final_equity"])
+
+            split = split_backtest(cfg, records, 0.5)
+            self.assertEqual(split["in_sample"]["records"] + split["out_of_sample"]["records"], 10)
+
+    def test_unknown_setting(self):
+        from copybot.backtest import apply_sets
+        with self.assertRaises(ValueError):
+            apply_sets(BotConfig(leaders=[]), ["risk.nope=1"])

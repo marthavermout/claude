@@ -84,6 +84,17 @@ op de data-branch; verwijder dat bestand om opnieuw te beginnen.
 - GitHub zet geplande workflows uit na 60 dagen zonder activiteit in de repo. Je krijgt daar een mail over; één klik zet ze weer aan.
 - Alles is openbaar (de repo is publiek), dus ook je nep-resultaten.
 
+## Dagelijks verbetervoorstel (Claude)
+Elke dag leest een geplande Claude-sessie de resultaten en volgt `IMPROVING.md`:
+1. zoek de grootste fout (kosten, een slechte trader, te laat kopiëren, een bug…)
+2. bedenk één codewijziging die dat oplost
+3. **test die eerlijk**: de bot neemt elke ronde op (`replay/`), en `backtest` speelt die echte geschiedenis
+   opnieuw af met de oude en de nieuwe code. De laatste 30% van de geschiedenis is het "examen": de wijziging moet
+   daar beter scoren, terwijl het idee alleen op de eerste 70% is bedacht
+4. alleen als hij slaagt komt er een pull request met het bewijs. **Jij beslist** of je hem merget.
+
+Zelf proberen: `python -m copybot backtest --set risk.min_trade_usd=30`
+
 ## Live dashboard
 `dashboard/index.html` toont live:
 - je vermogen en winst/verlies sinds de start, met de open posities live doorgerekend op Hyperliquid-prijzen (elke 10 s)

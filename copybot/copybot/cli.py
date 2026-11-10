@@ -6,6 +6,9 @@ import argparse
 import logging
 import sys
 
+import json
+
+from .backtest import apply_sets, load_records, split_backtest
 from .config import apply_overrides, load_config
 from .engine import Engine
 from .export import export
@@ -101,6 +104,14 @@ def cmd_status(args) -> int:
     return 0
 
 
+def cmd_backtest(args) -> int:
+    cfg = apply_sets(_cfg(args), args.set or [])
+    records = load_records(cfg.data_dir if not args.replay_dir else args.replay_dir, args.start, args.end)
+    result = split_backtest(cfg, records, args.split)
+    print(json.dumps(result, indent=2))
+    return 0 if "error" not in result else 1
+
+
 def cmd_export(args) -> int:
     print(export(_cfg(args)))
     return 0
@@ -142,6 +153,14 @@ def main(argv: list[str] | None = None) -> int:
     p.set_defaults(func=cmd_tune)
 
     sub.add_parser("status", help="show results").set_defaults(func=cmd_status)
+    p = sub.add_parser("backtest", help="replay recorded history to test a change (in-sample vs out-of-sample)")
+    p.add_argument("--set", action="append", metavar="KEY=VALUE", help="override a setting, e.g. risk.min_trade_usd=30")
+    p.add_argument("--split", type=float, default=0.7, help="fraction of history used as in-sample (default 0.7)")
+    p.add_argument("--start", help="ISO time to start from")
+    p.add_argument("--end", help="ISO time to stop at")
+    p.add_argument("--replay-dir", help="data dir holding replay/ (default: the data dir)")
+    p.set_defaults(func=cmd_backtest)
+
     sub.add_parser("export", help="write dashboard.json + dashboard page into the data dir").set_defaults(func=cmd_export)
     sub.add_parser("reset-kill", help="resume after the drawdown kill switch").set_defaults(func=cmd_reset_kill)
 
