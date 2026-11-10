@@ -49,7 +49,7 @@
   "risk": {
     "day": "2026-11-10",
     "day_start_equity": 1000.0,
-    "peak_equity": 1001.4534718206457,
+    "peak_equity": 1002.0194278206458,
     "killed": false,
     "kill_reason": ""
   },
@@ -219,8 +219,7 @@
       "WLD": -1,
       "ENA": 1,
       "SYRUP": -1,
-      "XPL": -1,
-      "ZEC": -1
+      "XPL": -1
     },
     "0xb83de012dba672c76a7dbbbf3e459cb59d7d6e36": {
       "BTC": -1,
@@ -379,7 +378,7 @@
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.7840402110150299,
+      "fees_paid": 0.8111274634822498,
       "positions": {
         "AERO": {
           "size": 272.0,
@@ -426,8 +425,8 @@
           "entry": 0.15643128
         },
         "ETC": {
-          "size": 5.5,
-          "entry": 6.66563286
+          "size": 9.65,
+          "entry": 6.680004645699482
         },
         "ETHFI": {
           "size": -222.8,
@@ -498,8 +497,8 @@
           "entry": 0.135517891
         },
         "GRASS": {
-          "size": 52.0,
-          "entry": 0.4675293717923077
+          "size": 120.8,
+          "entry": 0.46940693380629145
         }
       }
     },

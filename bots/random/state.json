@@ -1,0 +1,220 @@
+{
+  "broker": {
+    "starting_balance": 1000.0,
+    "realized_pnl": 0.0,
+    "fees_paid": 0.42376114198133996,
+    "positions": {
+      "BTC": {
+        "size": 0.00171,
+        "entry": 73169.1309
+      },
+      "CASHCAT": {
+        "size": 176.0,
+        "entry": 0.059656929
+      },
+      "CHIP": {
+        "size": 703.0,
+        "entry": 0.0326085204
+      },
+      "ETH": {
+        "size": 0.1235,
+        "entry": 2024.25477
+      },
+      "HYPE": {
+        "size": 0.39,
+        "entry": 70.7186409
+      },
+      "NEAR": {
+        "size": 7.5,
+        "entry": 3.55686123
+      },
+      "NIL": {
+        "size": 351.0,
+        "entry": 0.0559721922
+      },
+      "PONS": {
+        "size": 117.0,
+        "entry": 0.143438682
+      },
+      "SKY": {
+        "size": 1176.0,
+        "entry": 0.060192036
+      },
+      "SYRUP": {
+        "size": 352.0,
+        "entry": 0.135237042
+      },
+      "TIA": {
+        "size": 199.2,
+        "entry": 0.419843952
+      },
+      "VVV": {
+        "size": 3.1,
+        "entry": 18.9407874
+      },
+      "XPL": {
+        "size": 3283.0,
+        "entry": 0.0517213422
+      },
+      "kPEPE": {
+        "size": 2269.0,
+        "entry": 0.0052570512000000005
+      }
+    }
+  },
+  "risk": {
+    "day": "2026-11-10",
+    "day_start_equity": 1000.0,
+    "peak_equity": 1003.3208312328186,
+    "killed": false,
+    "kill_reason": ""
+  },
+  "baselines": {
+    "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da": {
+      "LIT": 1
+    },
+    "0xfb47779fb0f59750fc714ba61a7859b059bbd3e6": {
+      "ENA": 1
+    },
+    "0xe00f0d90bc976c311a7f22cbb728d8629ccd5394": {},
+    "0x78c305976508a97adb6775044d962e56af617a7c": {
+      "ZEC": -1
+    },
+    "0xd10e2b1b66001bd4086d61e43e836ab9c168fd9a": {
+      "ETHFI": 1,
+      "HYPE": -1
+    },
+    "0x802dc9bd0e048c4b47d943f7ad61d98d9b7361b0": {},
+    "0xde5a8068836a16f92813104d7faf602bb0cbdf62": {
+      "ZEC": -1,
+      "XMR": -1
+    },
+    "0xd738f8f8f68511eb644a31d8b23d0b20baa4854b": {}
+  },
+  "shadows": {
+    "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da": {
+      "starting_balance": 1000.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.7017032982471301,
+      "positions": {
+        "CASHCAT": {
+          "size": 1408.0,
+          "entry": 0.059656929
+        },
+        "CHIP": {
+          "size": 5622.0,
+          "entry": 0.0326085204
+        },
+        "NIL": {
+          "size": 2812.0,
+          "entry": 0.05597219220000001
+        },
+        "PONS": {
+          "size": 937.0,
+          "entry": 0.14343868200000004
+        },
+        "SKY": {
+          "size": 4154.0,
+          "entry": 0.060192036
+        },
+        "SYRUP": {
+          "size": 1849.0,
+          "entry": 0.135237042
+        },
+        "TIA": {
+          "size": 595.6,
+          "entry": 0.419843952
+        },
+        "XPL": {
+          "size": 4835.0,
+          "entry": 0.0517213422
+        }
+      }
+    },
+    "0xfb47779fb0f59750fc714ba61a7859b059bbd3e6": {
+      "starting_balance": 1000.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.20902370663205,
+      "positions": {
+        "NEAR": {
+          "size": 60.3,
+          "entry": 3.55686123
+        },
+        "VVV": {
+          "size": 13.2,
+          "entry": 18.9407874
+        }
+      }
+    },
+    "0xe00f0d90bc976c311a7f22cbb728d8629ccd5394": {
+      "starting_balance": 1000.0,
+      "realized_pnl": 0.05366200400000515,
+      "fees_paid": 0.17975851288686,
+      "positions": {
+        "HYPE": {
+          "size": 3.14,
+          "entry": 70.7186409
+        },
+        "USELESS": {
+          "size": 198.0,
+          "entry": 0.13298159099999998
+        },
+        "kPEPE": {
+          "size": 18154.0,
+          "entry": 0.0052570512000000005
+        }
+      }
+    },
+    "0x78c305976508a97adb6775044d962e56af617a7c": {
+      "starting_balance": 1000.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.0,
+      "positions": {}
+    },
+    "0xd10e2b1b66001bd4086d61e43e836ab9c168fd9a": {
+      "starting_balance": 1000.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.0,
+      "positions": {}
+    },
+    "0x802dc9bd0e048c4b47d943f7ad61d98d9b7361b0": {
+      "starting_balance": 1000.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.11249795884274999,
+      "positions": {
+        "ETH": {
+          "size": 0.1235,
+          "entry": 2024.25477
+        }
+      }
+    },
+    "0xde5a8068836a16f92813104d7faf602bb0cbdf62": {
+      "starting_balance": 1000.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.0,
+      "positions": {}
+    },
+    "0xd738f8f8f68511eb644a31d8b23d0b20baa4854b": {
+      "starting_balance": 1000.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.1126072924551,
+      "positions": {
+        "BTC": {
+          "size": 0.00342,
+          "entry": 73169.1309
+        }
+      }
+    }
+  },
+  "shadow_started": {
+    "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da": "2026-11-10T18:14:50.595723+00:00",
+    "0xfb47779fb0f59750fc714ba61a7859b059bbd3e6": "2026-11-10T18:14:50.595723+00:00",
+    "0xe00f0d90bc976c311a7f22cbb728d8629ccd5394": "2026-11-10T18:14:50.595723+00:00",
+    "0x78c305976508a97adb6775044d962e56af617a7c": "2026-11-10T18:14:50.595723+00:00",
+    "0xd10e2b1b66001bd4086d61e43e836ab9c168fd9a": "2026-11-10T18:14:50.595723+00:00",
+    "0x802dc9bd0e048c4b47d943f7ad61d98d9b7361b0": "2026-11-10T18:14:50.595723+00:00",
+    "0xde5a8068836a16f92813104d7faf602bb0cbdf62": "2026-11-10T18:14:50.595723+00:00",
+    "0xd738f8f8f68511eb644a31d8b23d0b20baa4854b": "2026-11-10T18:14:50.595723+00:00"
+  },
+  "meta": {}
+}
