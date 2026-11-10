@@ -51,7 +51,7 @@ class ReplayClient:
 
     def snapshot(self, address: str) -> LeaderSnapshot:
         ldr = self.rec["leaders"][address]
-        return LeaderSnapshot(address, ldr["equity"], dict(ldr["positions"]))
+        return LeaderSnapshot(address, ldr["equity"], dict(ldr["positions"]), dict(ldr.get("entries", {})))
 
 
 def run_backtest(cfg: BotConfig, records: list[dict]) -> dict:

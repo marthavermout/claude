@@ -20,6 +20,7 @@ class LeaderSnapshot:
     address: str
     equity: float
     positions: dict[str, float] = field(default_factory=dict)  # coin -> signed size
+    entries: dict[str, float] = field(default_factory=dict)  # coin -> leader's average entry price
 
 
 class HyperliquidClient:
@@ -56,13 +57,15 @@ class HyperliquidClient:
     def snapshot(self, address: str) -> LeaderSnapshot:
         raw = self._info({"type": "clearinghouseState", "user": address})
         equity = float(raw["marginSummary"]["accountValue"])
-        positions = {}
+        positions, entries = {}, {}
         for item in raw.get("assetPositions", []):
             pos = item["position"]
             size = float(pos["szi"])
             if size:
                 positions[pos["coin"]] = size
-        return LeaderSnapshot(address=address, equity=equity, positions=positions)
+                if pos.get("entryPx"):
+                    entries[pos["coin"]] = float(pos["entryPx"])
+        return LeaderSnapshot(address=address, equity=equity, positions=positions, entries=entries)
 
     def recent_fills(self, address: str, hours: float = 24) -> list[dict]:
         start = int((time.time() - hours * 3600) * 1000)

@@ -73,3 +73,34 @@ class SelectorTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class FairEntryTest(unittest.TestCase):
+    def snap(self, size, entry):
+        return LeaderSnapshot("0xa", 1000, {"BTC": size}, {"BTC": entry})
+
+    def test_join_long_close_to_entry(self):
+        base = {"BTC": 1}
+        out = filter_baseline(self.snap(1, 100), base, {"BTC": 100.8}, 0.01)
+        self.assertEqual(out.positions, {"BTC": 1})
+        self.assertEqual(base, {})
+
+    def test_skip_long_after_big_rise(self):
+        base = {"BTC": 1}
+        out = filter_baseline(self.snap(1, 100), base, {"BTC": 103}, 0.01)
+        self.assertEqual(out.positions, {})
+        self.assertEqual(base, {"BTC": 1})
+
+    def test_short_better_price_is_fine(self):
+        base = {"BTC": -1}  # short entered at 100, price now 105: we'd short higher = better
+        out = filter_baseline(self.snap(-1, 100), base, {"BTC": 105}, 0.01)
+        self.assertEqual(out.positions, {"BTC": -1})
+
+    def test_short_after_drop_is_skipped(self):
+        base = {"BTC": -1}
+        out = filter_baseline(self.snap(-1, 100), base, {"BTC": 97}, 0.01)
+        self.assertEqual(out.positions, {})
+
+    def test_disabled_by_default(self):
+        base = {"BTC": 1}
+        self.assertEqual(filter_baseline(self.snap(1, 100), base, {"BTC": 100}).positions, {})

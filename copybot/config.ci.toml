@@ -8,6 +8,7 @@ leaders = []
 target_leaders = 8          # follow 8 active traders (each gets 1/8 of the money)
 copy_ratio = 1.0
 copy_existing_positions = false
+join_within_pct = 0.01      # ...but do join an existing position if the price is within 1% of the trader's entry
 poll_seconds = 30
 data_dir = "data"
 

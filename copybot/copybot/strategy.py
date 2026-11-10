@@ -29,16 +29,31 @@ def target_notionals(
     return targets
 
 
-def filter_baseline(snapshot: LeaderSnapshot, baseline: dict[str, int]) -> LeaderSnapshot:
+def fair_entry(snapshot: LeaderSnapshot, coin: str, mids: dict[str, float] | None, max_drift: float) -> bool:
+    """True if joining now costs at most `max_drift` more than the leader paid.
+    Long: price may not be more than max_drift above their entry. Short: not more than
+    max_drift below it. A better price than theirs is always fine."""
+    if not mids or max_drift <= 0:
+        return False
+    entry, mid, size = snapshot.entries.get(coin), mids.get(coin), snapshot.positions.get(coin, 0.0)
+    if not entry or not mid or not size:
+        return False
+    worse_by = (mid / entry - 1) if size > 0 else (1 - mid / entry)
+    return worse_by <= max_drift
+
+
+def filter_baseline(snapshot: LeaderSnapshot, baseline: dict[str, int],
+                    mids: dict[str, float] | None = None, max_drift: float = 0.0) -> LeaderSnapshot:
     """Hide positions the leader already had when we started (we'd enter at a worse
-    price than they did). A coin leaves the baseline once the leader closes or flips it.
+    price than they did). A coin leaves the baseline once the leader closes or flips it,
+    or as soon as the price is back within `max_drift` of the leader's own entry.
     `baseline` maps coin -> sign (+1/-1) and is updated in place."""
     visible = {}
     for coin in list(baseline):
         size = snapshot.positions.get(coin, 0.0)
-        if size == 0 or (size > 0) != (baseline[coin] > 0):
+        if size == 0 or (size > 0) != (baseline[coin] > 0) or fair_entry(snapshot, coin, mids, max_drift):
             del baseline[coin]
     for coin, size in snapshot.positions.items():
         if coin not in baseline:
             visible[coin] = size
-    return LeaderSnapshot(address=snapshot.address, equity=snapshot.equity, positions=visible)
+    return LeaderSnapshot(address=snapshot.address, equity=snapshot.equity, positions=visible, entries=snapshot.entries)
