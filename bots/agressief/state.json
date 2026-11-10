@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 0.0,
-    "fees_paid": 0.24433890128496003,
+    "fees_paid": 0.24896240139996004,
     "positions": {
       "INIT": {
         "size": -45.0,
@@ -35,6 +35,10 @@
       "ETHFI": {
         "size": 49.6,
         "entry": 0.622204416
+      },
+      "ZEC": {
+        "size": -0.01,
+        "entry": 1027.4444700000001
       }
     }
   },
@@ -126,20 +130,24 @@
   "shadows": {
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
-      "realized_pnl": 0.0,
-      "fees_paid": 0.15162339892662002,
+      "realized_pnl": -0.08997682620689629,
+      "fees_paid": 0.20063339896590004,
       "positions": {
         "XTEN": {
           "size": 136.0,
           "entry": 0.24275854200000002
         },
         "LIT": {
-          "size": -87.0,
+          "size": -84.0,
           "entry": 3.342132014597701
         },
         "CASHCAT": {
-          "size": 218.0,
-          "entry": 0.0603680712
+          "size": 851.0,
+          "entry": 0.05911669759106933
+        },
+        "ZEC": {
+          "size": -0.06,
+          "entry": 1027.4444700000001
         }
       }
     },
