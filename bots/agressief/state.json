@@ -182,11 +182,11 @@
     "0x888e000c78b8f1aada5b3c99f880794907b76d77": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.18041695499088,
+      "fees_paid": 0.18499412337408,
       "positions": {
         "INIT": {
-          "size": -359.0,
-          "entry": 0.245870816
+          "size": -396.0,
+          "entry": 0.24858360666666665
         },
         "kPEPE": {
           "size": -60336.0,
@@ -216,11 +216,11 @@
     "0xd10e2b1b66001bd4086d61e43e836ab9c168fd9a": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.11112881971968,
+      "fees_paid": 0.11618049305232,
       "positions": {
         "ETHFI": {
-          "size": 396.9,
-          "entry": 0.622204416
+          "size": 414.5,
+          "entry": 0.6228682109761159
         }
       }
     },

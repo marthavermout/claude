@@ -188,7 +188,6 @@
       "PENGU": -1,
       "USUAL": -1,
       "BIO": -1,
-      "SPX": -1,
       "TRUMP": -1,
       "ANIME": -1,
       "VVV": -1,
@@ -283,11 +282,11 @@
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.2676290988888,
+      "fees_paid": 0.27250775717535,
       "positions": {
         "ETH": {
-          "size": 0.102,
-          "entry": 2018.1535500000002
+          "size": 0.1073,
+          "entry": 2019.5072223578752
         },
         "MORPHO": {
           "size": 69.4,
@@ -307,15 +306,15 @@
     },
     "0x888e000c78b8f1aada5b3c99f880794907b76d77": {
       "starting_balance": 1000.0,
-      "realized_pnl": 0.0,
-      "fees_paid": 0.15219883239435003,
+      "realized_pnl": -0.28320882159999966,
+      "fees_paid": 0.16163434647765004,
       "positions": {
         "INIT": {
-          "size": -359.0,
-          "entry": 0.245870816
+          "size": -396.0,
+          "entry": 0.24848925685353535
         },
         "kPEPE": {
-          "size": -48235.0,
+          "size": -46199.0,
           "entry": 0.0051819634000000005
         }
       }
@@ -376,7 +375,7 @@
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.8215329819622499,
+      "fees_paid": 0.8351826187048199,
       "positions": {
         "AERO": {
           "size": 272.0,
@@ -495,12 +494,16 @@
           "entry": 0.135517891
         },
         "GRASS": {
-          "size": 120.8,
-          "entry": 0.46940693380629145
+          "size": 145.7,
+          "entry": 0.4709772857501716
         },
         "XLM": {
           "size": -160.0,
           "entry": 0.14452109000000002
+        },
+        "SPX": {
+          "size": -52.7,
+          "entry": 0.349440098
         }
       }
     },

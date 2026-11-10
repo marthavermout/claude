@@ -1,16 +1,16 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 1.016499089999988,
-    "fees_paid": 0.2886850921953601,
+    "realized_pnl": 2.611238585999963,
+    "fees_paid": 0.5003709550536601,
     "positions": {
       "LIT": {
         "size": -11.0,
         "entry": 3.364040693636363
       },
       "HYPE": {
-        "size": 2.94,
-        "entry": 71.1577287
+        "size": -3.48,
+        "entry": 71.7001571
       },
       "INIT": {
         "size": -45.0,
@@ -25,8 +25,8 @@
         "entry": 0.00339130048234072
       },
       "ZRO": {
-        "size": -34.1,
-        "entry": 1.47325529
+        "size": -40.9,
+        "entry": 1.4752084445232274
       },
       "kPEPE": {
         "size": -7584.0,
@@ -47,9 +47,7 @@
   },
   "baselines": {
     "0x999510ad3dd8c94a6659d6401d983137565283e3": {},
-    "0xd42350dfad9884113f21109b5a7a6736fb4d50c3": {
-      "HYPE": -1
-    },
+    "0xd42350dfad9884113f21109b5a7a6736fb4d50c3": {},
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "HYPE": -1
     },
@@ -136,8 +134,13 @@
     "0xd42350dfad9884113f21109b5a7a6736fb4d50c3": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.0,
-      "positions": {}
+      "fees_paid": 0.11260509672555001,
+      "positions": {
+        "HYPE": {
+          "size": -3.49,
+          "entry": 71.7001571
+        }
+      }
     },
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
@@ -171,11 +174,11 @@
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.26793809559584997,
+      "fees_paid": 0.27291269281634994,
       "positions": {
         "ETH": {
-          "size": 0.1022,
-          "entry": 2015.7530699999998
+          "size": 0.1076,
+          "entry": 2017.329221598513
         },
         "MORPHO": {
           "size": 69.6,
@@ -195,15 +198,15 @@
     },
     "0x888e000c78b8f1aada5b3c99f880794907b76d77": {
       "starting_balance": 1000.0,
-      "realized_pnl": 0.0,
-      "fees_paid": 0.15929669578769998,
+      "realized_pnl": -0.30979843919999966,
+      "fees_paid": 0.16402215829121997,
       "positions": {
         "INIT": {
           "size": -397.0,
           "entry": 0.26207549632997484
         },
         "kPEPE": {
-          "size": -48365.0,
+          "size": -46393.0,
           "entry": 0.0051679662
         }
       }
