@@ -15,7 +15,7 @@ from .export import export
 from .hyperliquid import HyperliquidClient
 from .review import build_review, to_markdown
 from .selector import SelectionRules, select
-from .tune import tune
+from .tune import TuneRules, tune
 
 
 def _cfg(args):
@@ -37,10 +37,10 @@ def cmd_select(args) -> int:
     if not picks:
         print("No traders passed the filters.")
         return 1
-    print(f"{'address':44} {'account':>12} {'week':>7} {'month':>7} {'allTime':>8} {'turnover':>8} {'lev':>5}")
+    print(f"{'address':44} {'account':>12} {'week':>7} {'month':>7} {'allTime':>8} {'turnover':>8} {'lev':>5} {'fills24h':>8}")
     for c in picks:
         print(f"{c.address:44} {c.account_value:12,.0f} {c.week_roi:7.1%} {c.month_roi:7.1%} "
-              f"{c.alltime_roi:8.1%} {c.turnover:8.1f} {c.leverage:5.2f}")
+              f"{c.alltime_roi:8.1%} {c.turnover:8.1f} {c.leverage:5.2f} {c.fills_24h or 0:8d}")
     print("\nPaste into config.toml under [bot] (2-4 traders spreads the risk):")
     print("leaders = [\n" + "".join(f'  "{c.address}",\n' for c in picks[:3]) + "]")
     return 0
@@ -68,7 +68,7 @@ def cmd_review(args) -> int:
 
 def cmd_tune(args) -> int:
     cfg = _cfg(args)
-    d = tune(cfg, _selector, if_due_hours=args.if_due)
+    d = tune(cfg, _selector, rules=TuneRules(target_leaders=cfg.target_leaders), if_due_hours=args.if_due)
     if d is None:
         print("Review not due yet.")
         return 0

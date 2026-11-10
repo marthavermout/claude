@@ -4,6 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Copybot Live</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" type="image/png" href="icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Copybot">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#e6d6c2">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
@@ -53,7 +61,7 @@ body { margin: 0; min-height: 100vh; color: var(--ink); font: 15px/1.5 var(--ui)
 .room i:nth-child(5) { width: 8vw; height: 60vh; left: 52vw; top: 30vh; background: var(--room-3); opacity: .45; }
 .room i:nth-child(6) { width: 30vw; height: 12vh; left: 30vw; top: 62vh; background: var(--room-3); opacity: .5; }
 
-.wrap { max-width: 1120px; margin: 0 auto; padding-block: 20px 120px;
+.wrap { max-width: 1120px; margin: 0 auto; padding-block: calc(20px + env(safe-area-inset-top, 0px)) 120px;
   padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
   display: grid; gap: 18px; }
 .glass { background: var(--glass); border: 1px solid var(--glass-line); border-radius: 22px; box-shadow: var(--shadow);
@@ -131,6 +139,21 @@ td.r, th.r { text-align: right; }
 footer { font-size: .76rem; color: var(--ink-soft); display: grid; gap: 4px; padding: 0 6px; }
 a { color: inherit; }
 
+/* live trader activity */
+.feed { display: grid; gap: 8px; }
+.fill { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 10px 12px; border-radius: 14px;
+  background: var(--glass-strong); border: 1px solid var(--glass-line); }
+.fill .who-dot { width: 30px; height: 30px; border-radius: 10px; display: grid; place-items: center; font: 600 .68rem var(--mono); color: var(--room-4); }
+.fill .what { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.fill .sub { font-size: .75rem; color: var(--ink-soft); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.fill .amt { text-align: right; font-family: var(--mono); font-size: .85rem; }
+.fill .amt small { display: block; font-size: .7rem; color: var(--ink-soft); }
+.fill.fresh { border-color: color-mix(in srgb, var(--up) 55%, var(--glass-line)); }
+.badge { display: inline-block; font-size: .64rem; font-weight: 700; letter-spacing: .04em; padding: 1px 6px; border-radius: 999px; margin-left: 6px; vertical-align: 1px;
+  background: color-mix(in srgb, var(--ink) 10%, transparent); color: var(--ink-soft); }
+.badge.new { background: color-mix(in srgb, var(--up) 18%, transparent); color: var(--up); }
+.feed-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px; }
+
 /* floating tab pill */
 nav.tabs { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(14px + env(safe-area-inset-bottom, 0px)); z-index: 5;
   display: flex; gap: 4px; padding: 6px; border-radius: 999px; max-width: calc(100vw - 24px); overflow-x: auto; }
@@ -150,7 +173,7 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
   .opt { display: none; }
   .top { border-radius: 22px; }
   nav.tabs { gap: 0; padding: 4px; }
-  nav.tabs button { padding: 8px 9px; font-size: .76rem; }
+  nav.tabs button { padding: 8px 7px; font-size: .72rem; }
 }
 </style>
 </head>
@@ -190,6 +213,11 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
         </div>
       </div>
     </div>
+    <div class="glass pad" id="live-short">
+      <div class="feed-head"><h2>Live: wat je traders nu doen</h2><span class="soft" style="font-size:.78rem" id="feed-status">Laden…</span></div>
+      <div class="feed" id="feed-mini"></div>
+      <div class="empty" id="feed-mini-empty" hidden>Je traders hebben de afgelopen 24 uur niets gedaan.</div>
+    </div>
     <div class="two">
       <div class="glass pad" id="curve">
         <div class="chart-head">
@@ -208,6 +236,14 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
       <h2>Laatste zelf-review</h2>
       <div id="review-latest"><div class="empty">Nog geen review. De eerste komt binnen een dag na de start.</div></div>
     </div>
+  </section>
+
+  <!-- LIVE -->
+  <section data-tab="live" id="live" class="glass pad" hidden>
+    <div class="feed-head"><h2>Trades van je traders · laatste 24 uur</h2><span class="soft" style="font-size:.78rem" id="feed-status-2"></span></div>
+    <p class="note" style="margin:0 0 12px">Rechtstreeks van Hyperliquid, elke 20 seconden ververst. Dit zijn de trades van de traders zelf. De bot doet nieuwe posities na; posities die een trader al had toen de bot begon, slaat hij over. Trades met "niet te kopiëren" vinden plaats op een apart deel van de beurs (bijvoorbeeld aandelen zoals xyz:NVDA) dat de bot niet volgt.</p>
+    <div class="feed" id="feed"></div>
+    <div class="empty" id="feed-empty" hidden>Je traders hebben de afgelopen 24 uur niets gedaan.</div>
   </section>
 
   <!-- POSITIES -->
@@ -258,6 +294,7 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
 
 <nav class="tabs glass" role="tablist" aria-label="Onderdelen">
   <button role="tab" data-go="overzicht" aria-selected="true">Overzicht</button>
+  <button role="tab" data-go="live" aria-selected="false">Live</button>
   <button role="tab" data-go="posities" aria-selected="false">Posities</button>
   <button role="tab" data-go="trades" aria-selected="false">Trades</button>
   <button role="tab" data-go="traders" aria-selected="false">Traders</button>
@@ -294,7 +331,7 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
   });
 
   // tabs with #hash links
-  const TABS = ["overzicht", "posities", "trades", "traders", "reviews"];
+  const TABS = ["overzicht", "live", "posities", "trades", "traders", "reviews"];
   function show(tab) {
     if (!TABS.includes(tab)) tab = "overzicht";
     document.querySelectorAll("section[data-tab]").forEach((s) => { s.hidden = s.dataset.tab !== tab; });
@@ -524,8 +561,70 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
     return (n < 1.5 ? 1 : n < 3 ? 2 : n < 7 ? 5 : 10) * p;
   }
 
+  // ---- live trader activity (public Hyperliquid fills, fetched in the browser) ----
+  const DIR = { "Open Long": "opent long", "Close Long": "sluit long", "Open Short": "opent short", "Close Short": "sluit short",
+    "Long > Short": "draait naar short", "Short > Long": "draait naar long", Buy: "koopt", Sell: "verkoopt" };
+  const PALETTE = ["#2f6f6a", "#c2702a", "#7a5bb0", "#b8475a", "#4f7fb8", "#8a8a3a", "#6e4428", "#3c8a5c"];
+  let fills = [];
+  function following() {
+    if (!data) return [];
+    return data.following?.length ? data.following : data.leaders.map((l) => l.address);
+  }
+  async function loadFeed() {
+    const addrs = following();
+    if (!addrs.length) return;
+    const start = Date.now() - 864e5;
+    const results = await Promise.allSettled(addrs.map((a) => fetch("https://api.hyperliquid.xyz/info", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ type: "userFillsByTime", user: a, startTime: start }),
+    }).then((r) => r.json()).then((list) => (Array.isArray(list) ? list : []).map((f) => ({ ...f, trader: a })))));
+    if (results.every((r) => r.status === "rejected")) { $("feed-status").textContent = "Hyperliquid niet bereikbaar, nieuwe poging over 20 s"; return; }
+    const raw = results.flatMap((r) => (r.status === "fulfilled" ? r.value : [])).sort((a, b) => b.time - a.time);
+    // one order is often filled in many small pieces: merge same trader + coin + action within 2 minutes
+    fills = [];
+    for (const f of raw) {
+      const last = fills[fills.length - 1];
+      const usdv = +f.sz * +f.px;
+      if (last && last.trader === f.trader && last.coin === f.coin && last.dir === f.dir && last.firstTime - f.time < 120000) {
+        last.usd += usdv; last.closedPnl += +f.closedPnl || 0; last.parts += 1; last.firstTime = f.time;
+      } else {
+        fills.push({ ...f, usd: usdv, closedPnl: +f.closedPnl || 0, parts: 1, firstTime: f.time });
+      }
+    }
+    renderFeed();
+  }
+  function fillRow(f) {
+    const addrs = following();
+    const idx = Math.max(0, addrs.indexOf(f.trader));
+    const row = make("div", null, "fill");
+    const fresh = Date.now() - f.time < 5 * 60000;
+    if (fresh) row.classList.add("fresh");
+    const dot = make("div", String(idx + 1), "who-dot"); dot.style.background = PALETTE[idx % PALETTE.length];
+    const mid = make("div");
+    const action = DIR[f.dir] || f.dir || (f.side === "B" ? "koopt" : "verkoopt");
+    const what = make("div", `${f.coin} · ${action}`, "what");
+    const copyable = !String(f.coin).includes(":") && !String(f.coin).startsWith("@");
+    if (fresh) what.append(make("span", "NIEUW", "badge new"));
+    if (!copyable) what.append(make("span", "niet te kopiëren", "badge"));
+    mid.append(what, make("div", `trader ${idx + 1} (${f.trader.slice(0, 6)}…) · ${ago(new Date(f.time).toISOString())} · prijs ${px(+f.px)}`, "sub"));
+    const pnl = f.closedPnl;
+    const amt = make("div", usd.format(Math.abs(f.usd)), "amt");
+    if (pnl) { const sm = make("small", `resultaat ${signed(pnl)}`); tone(sm, pnl); amt.append(sm); }
+    row.append(dot, mid, amt);
+    return row;
+  }
+  function renderFeed() {
+    const n = fills.length, traders = new Set(fills.map((f) => f.trader)).size;
+    const txt = n ? `${n} trades van ${traders} van je ${following().length} traders · bijgewerkt ${new Date().toLocaleTimeString("nl-NL", { hour: "2-digit", minute: "2-digit", second: "2-digit" })}` : `${following().length} traders gevolgd`;
+    $("feed-status").textContent = txt; $("feed-status-2").textContent = txt;
+    $("feed-mini").replaceChildren(...fills.slice(0, 6).map(fillRow));
+    $("feed").replaceChildren(...fills.slice(0, 80).map(fillRow));
+    $("feed-mini-empty").hidden = $("feed-empty").hidden = n > 0;
+  }
+
   let rt; new ResizeObserver(() => { clearTimeout(rt); rt = setTimeout(() => data && !$("overzicht").hidden && drawChart(), 100); }).observe($("chart"));
-  loadData().then(loadMids);
+  loadData().then(() => { loadMids(); loadFeed(); });
+  setInterval(loadFeed, 20_000);
   setInterval(loadData, 60_000);
   setInterval(loadMids, 10_000);
   setInterval(() => data && renderStatus(), 30_000);

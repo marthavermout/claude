@@ -20,6 +20,7 @@ class BotConfig:
     fee_bps: float = 4.5
     slippage_bps: float = 2.0
     data_dir: str = "data"
+    target_leaders: int = 3
     risk: RiskConfig = field(default_factory=RiskConfig)
 
 
@@ -39,6 +40,7 @@ def load_config(path: str | Path) -> BotConfig:
         fee_bps=float(paper.get("fee_bps", 4.5)),
         slippage_bps=float(paper.get("slippage_bps", 2.0)),
         data_dir=str(bot.get("data_dir", "data")),
+        target_leaders=int(bot.get("target_leaders", 3)),
         risk=RiskConfig(**raw.get("risk", {})),
     )
 
