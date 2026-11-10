@@ -1,0 +1,53 @@
+{
+  "broker": {
+    "starting_balance": 1000.0,
+    "realized_pnl": 0.0,
+    "fees_paid": 0.0,
+    "positions": {}
+  },
+  "risk": {
+    "day": "2026-11-10",
+    "day_start_equity": 1000.0,
+    "peak_equity": 1000.0,
+    "killed": false,
+    "kill_reason": ""
+  },
+  "baselines": {
+    "0x999510ad3dd8c94a6659d6401d983137565283e3": {
+      "HYPE": 1
+    },
+    "0xd42350dfad9884113f21109b5a7a6736fb4d50c3": {
+      "HYPE": -1
+    },
+    "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
+      "HYPE": -1,
+      "ZEC": -1
+    }
+  },
+  "shadows": {
+    "0x999510ad3dd8c94a6659d6401d983137565283e3": {
+      "starting_balance": 1000.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.0,
+      "positions": {}
+    },
+    "0xd42350dfad9884113f21109b5a7a6736fb4d50c3": {
+      "starting_balance": 1000.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.0,
+      "positions": {}
+    },
+    "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
+      "starting_balance": 1000.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.0,
+      "positions": {}
+    }
+  },
+  "shadow_started": {
+    "0x999510ad3dd8c94a6659d6401d983137565283e3": "2026-11-10T08:40:38.775938+00:00",
+    "0xd42350dfad9884113f21109b5a7a6736fb4d50c3": "2026-11-10T08:40:38.775938+00:00",
+    "0xf83858e57d9f804f5ca1603bce82558119aeac7b": "2026-11-10T08:40:38.775938+00:00"
+  },
+  "meta": {}
+}
