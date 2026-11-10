@@ -136,7 +136,12 @@ class Engine:
                     if snap.positions:
                         log.info("%s: ignoring %d existing positions until they close: %s",
                                  snap.address[:10], len(snap.positions), ", ".join(snap.positions))
-                snap = filter_baseline(snap, self.baselines[snap.address])
+                before = set(self.baselines[snap.address])
+                snap = filter_baseline(snap, self.baselines[snap.address], mids, self.cfg.join_within_pct)
+                joined = before - set(self.baselines[snap.address])
+                for coin in sorted(c for c in joined if c in snap.positions):
+                    log.info("%s: joining existing %s position (price within %.1f%% of their entry)",
+                             snap.address[:10], coin, self.cfg.join_within_pct * 100)
             snaps.append(snap)
 
         if self.record_replay:
@@ -147,7 +152,8 @@ class Engine:
                 "t": ts,
                 "mids": {c: mids[c] for c in sorted(coins) if c in mids},
                 "dec": {c: self._decimals_for(c) for c in sorted(coins)},
-                "leaders": {s.address: {"equity": s.equity, "positions": s.positions} for s in raw_snaps},
+                "leaders": {s.address: {"equity": s.equity, "positions": s.positions, "entries": s.entries}
+                            for s in raw_snaps},
             })
 
         # shadow books: one per leader, no halts, same position limits

@@ -16,6 +16,7 @@ class BotConfig:
     starting_balance: float = 1000.0
     copy_ratio: float = 1.0
     copy_existing_positions: bool = False
+    join_within_pct: float = 0.0  # still join an existing position if price is within this of the leader's entry
     poll_seconds: float = 15.0
     fee_bps: float = 4.5
     slippage_bps: float = 2.0
@@ -36,6 +37,7 @@ def load_config(path: str | Path) -> BotConfig:
         starting_balance=float(paper.get("starting_balance", 1000.0)),
         copy_ratio=float(bot.get("copy_ratio", 1.0)),
         copy_existing_positions=bool(bot.get("copy_existing_positions", False)),
+        join_within_pct=float(bot.get("join_within_pct", 0.0)),
         poll_seconds=float(bot.get("poll_seconds", 15.0)),
         fee_bps=float(paper.get("fee_bps", 4.5)),
         slippage_bps=float(paper.get("slippage_bps", 2.0)),
