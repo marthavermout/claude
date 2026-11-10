@@ -1,0 +1,31 @@
+{
+  "risk": {},
+  "leaders": [
+    "0xf83858e57d9f804f5ca1603bce82558119aeac7b",
+    "0x643430283b19fa5bd70a1138b495c2b43523cdd5",
+    "0x5a19bfe9c095c3bd188eca00a690b95200797aba",
+    "0x888e000c78b8f1aada5b3c99f880794907b76d77",
+    "0x011820f60d75a2b870ffe64a4764873e14bc8ede",
+    "0xd10e2b1b66001bd4086d61e43e836ab9c168fd9a",
+    "0x972d521729c0d07b360ae470f03878fe405f0650",
+    "0x7dacca323e44f168494c779bb5e7483c468ef410"
+  ],
+  "reviews": 1,
+  "last_review": "2026-11-10T16:50:57.965419+00:00",
+  "review_log": [
+    {
+      "time": "2026-11-10T16:50:57.965419+00:00",
+      "n": 1,
+      "mistakes": [],
+      "observations": [],
+      "decision": "Traders aangevuld: `0xf83858e5\u2026`, `0x64343028\u2026`, `0x5a19bfe9\u2026`, `0x888e000c\u2026`, `0x011820f6\u2026`, `0xd10e2b1b\u2026`, `0x972d5217\u2026`, `0x7dacca32\u2026`"
+    }
+  ],
+  "last_change": "2026-11-10T16:50:57.965419+00:00",
+  "history": [
+    {
+      "time": "2026-11-10T16:50:57.965419+00:00",
+      "change": "Traders aangevuld: `0xf83858e5\u2026`, `0x64343028\u2026`, `0x5a19bfe9\u2026`, `0x888e000c\u2026`, `0x011820f6\u2026`, `0xd10e2b1b\u2026`, `0x972d5217\u2026`, `0x7dacca32\u2026`"
+    }
+  ]
+}
