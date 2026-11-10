@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 0.32198662299999947,
-    "fees_paid": 0.29427179310710994,
+    "realized_pnl": 0.2317912229999971,
+    "fees_paid": 0.29901191594210996,
     "positions": {
       "FARTCOIN": {
         "size": 100.8,
@@ -21,7 +21,7 @@
         "entry": 0.0033846768
       },
       "ZEC": {
-        "size": -0.05,
+        "size": -0.04,
         "entry": 1044.34109
       },
       "ZRO": {
@@ -140,7 +140,6 @@
       "BNB": -1,
       "OP": -1,
       "LTC": -1,
-      "ARB": -1,
       "DOGE": -1,
       "SUI": -1,
       "CRV": -1,
