@@ -18,6 +18,7 @@ from pathlib import Path
 from .config import BotConfig
 from .hyperliquid import ApiError, HyperliquidClient
 from .paper import Fill, PaperBroker
+from .patterns import PatternTrade, exit_reason, parse_candles, risk_notional, scan
 from .risk import RiskManager, RiskState
 from .strategy import filter_baseline, target_notionals
 
@@ -37,6 +38,8 @@ class Engine:
         self.shadows: dict[str, PaperBroker] = {}
         self.shadow_started: dict[str, str] = {}
         self.meta: dict = {}
+        self.pattern_trades: dict[str, dict] = {}  # coin -> PatternTrade fields + opened (ISO)
+        self.pattern_scanned: dict[str, int] = {}  # coin -> start time of the last candle scanned
         self.broker = PaperBroker(cfg.starting_balance, cfg.fee_bps, cfg.slippage_bps)
         self.risk = RiskManager(cfg.risk)
         self._decimals: dict[str, int] | None = None
@@ -56,6 +59,8 @@ class Engine:
         self.shadows = {a: PaperBroker.from_dict(b, fee, slip) for a, b in data.get("shadows", {}).items()}
         self.shadow_started = data.get("shadow_started", {})
         self.meta = data.get("meta", {})
+        self.pattern_trades = data.get("pattern_trades", {})
+        self.pattern_scanned = data.get("pattern_scanned", {})
 
     def save(self) -> None:
         data = {
@@ -65,6 +70,8 @@ class Engine:
             "shadows": {a: b.to_dict() for a, b in self.shadows.items()},
             "shadow_started": self.shadow_started,
             "meta": self.meta,
+            "pattern_trades": self.pattern_trades,
+            "pattern_scanned": self.pattern_scanned,
         }
         tmp = self.state_path.with_suffix(".tmp")
         tmp.write_text(json.dumps(data, indent=2))
@@ -121,9 +128,10 @@ class Engine:
     def tick(self, now: datetime | None = None) -> list[Fill]:
         now = now or datetime.now(timezone.utc)
         ts = now.isoformat()
+        patterns = self.cfg.strategy == "patterns"
         try:
             mids = self.client.mids()
-            raw_snaps = [self.client.snapshot(a) for a in self.cfg.leaders]
+            raw_snaps = [] if patterns else [self.client.snapshot(a) for a in self.cfg.leaders]
         except ApiError as exc:
             log.warning("data unavailable, skipping this round (no trades): %s", exc)
             return []
@@ -177,7 +185,11 @@ class Engine:
         if halt:
             if self.broker.positions:
                 log.warning("RISK STOP: %s -> closing all positions", halt)
+            for coin in list(self.pattern_trades):
+                self._close_pattern(coin, "risicostop", mids.get(coin), ts)
             targets = {}
+        elif patterns:
+            targets = self.risk.apply_limits(self._pattern_targets(mids, now, equity), equity)
         else:
             targets = self.risk.apply_limits(target_notionals(snaps, mids, equity, self.cfg.copy_ratio), equity)
 
@@ -192,6 +204,52 @@ class Engine:
                          [ts, round(equity, 4), len(self.broker.positions), mids.get("BTC", ""), halt or ""])
         self.save()
         return fills
+
+    # ---------- chart patterns ----------
+    def _close_pattern(self, coin: str, reason: str, price: float | None, ts: str) -> None:
+        tr = self.pattern_trades.pop(coin, None)
+        if tr is None:
+            return
+        log.info("pattern %s %s closed: %s", coin, tr["pattern"], reason)
+        self._append_csv("pattern_trades.csv", ["time", "coin", "event", "pattern", "side", "entry", "sl", "tp", "price"],
+                         [ts, coin, reason, tr["pattern"], tr["side"], tr["entry"], tr["sl"], tr["tp"], price or ""])
+
+    def _pattern_targets(self, mids: dict[str, float], now: datetime, equity: float) -> dict[str, float]:
+        ts = now.isoformat()
+        # 1) exits: stop-loss, take-profit or too long open
+        for coin, tr in list(self.pattern_trades.items()):
+            mid = mids.get(coin)
+            if mid is None:
+                continue
+            bars = int((now - datetime.fromisoformat(tr["opened"])).total_seconds() // 900)
+            t = PatternTrade(coin, tr["pattern"], tr["side"], tr["entry"], tr["sl"], tr["tp"], 0)
+            hit = exit_reason(t, mid, mid, bars)
+            if hit:
+                self._close_pattern(coin, hit[0], mid, ts)
+        # 2) entries: scan each coin once per new closed 15m candle
+        bar_start = int(now.timestamp() // 900 * 900 * 1000)
+        for coin in self.cfg.pattern_coins:
+            if coin in self.pattern_trades or self.pattern_scanned.get(coin) == bar_start or coin not in mids:
+                continue
+            try:
+                candles = [c for c in parse_candles(self.client.candles(coin, "15m", 250)) if c.t < bar_start]
+            except (ApiError, KeyError, ValueError) as exc:
+                log.warning("candles for %s unavailable: %s", coin, exc)
+                continue
+            self.pattern_scanned[coin] = bar_start
+            sig = scan(candles)
+            mid = mids[coin]
+            if not sig or not ((sig.side > 0 and sig.sl < mid < sig.tp) or (sig.side < 0 and sig.tp < mid < sig.sl)):
+                continue
+            notional = risk_notional(equity, mid, sig.sl, self.cfg.risk_per_trade, equity * self.cfg.risk.max_position_pct)
+            if notional < self.cfg.risk.min_trade_usd:
+                continue
+            self.pattern_trades[coin] = {"pattern": sig.pattern, "side": sig.side, "entry": mid, "sl": sig.sl, "tp": sig.tp,
+                                         "size": sig.side * notional / mid, "opened": ts}
+            log.info("pattern %s: %s -> %s, SL %.4g TP %.4g", coin, sig.pattern, "long" if sig.side > 0 else "short", sig.sl, sig.tp)
+            self._append_csv("pattern_trades.csv", ["time", "coin", "event", "pattern", "side", "entry", "sl", "tp", "price"],
+                             [ts, coin, "open", sig.pattern, sig.side, mid, sig.sl, sig.tp, mid])
+        return {coin: tr["size"] * mids[coin] for coin, tr in self.pattern_trades.items() if coin in mids}
 
     def run(self, minutes: float | None = None) -> None:
         log.info("paper trading %d leader(s), start balance $%.2f, polling every %ss",

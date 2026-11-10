@@ -24,6 +24,9 @@ is nothing like that, stop and report "not enough data yet" with the current num
 Six paper bots run side by side on the same market (`basis` = `config.ci.toml`, the others in
 `bots/*.toml`, data in `/tmp/botdata/bots/<name>/`, summary in `/tmp/botdata/bots.json`).
 Run `review` for each and compare return, max drawdown, fees and number of trades.
+- `patronen` (Pia) does not copy anyone: it trades chart patterns (`copybot/patterns.py`) with a trend
+  filter. Its 30-day backtest before going live was a loss (482 trades, -$148 without and about -$47 with
+  the trend filter). Judge it like the others; `copybot.patterns.backtest` replays candles to test changes.
 - `random` (Rik) is the **control group**: traders picked at random, not on past results. It answers
   "skill or luck?". A bot only counts as better when it beats **both Rik and holding BTC**.
 - Only call a winner after **7+ days** and **30+ closed trades** per bot, and when the gap is larger
