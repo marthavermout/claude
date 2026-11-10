@@ -1,0 +1,25 @@
+# Copy this file to config.toml and edit it.
+
+[bot]
+# Hyperliquid addresses to copy. Find candidates with: python -m copybot select
+leaders = [
+  # "0x0000000000000000000000000000000000000000",
+]
+copy_ratio = 1.0                 # 1.0 = same % exposure as the leader, 0.5 = half
+copy_existing_positions = false  # false: only copy trades opened after the bot starts
+poll_seconds = 15
+data_dir = "data"
+
+[paper]
+starting_balance = 1000.0  # fake money
+fee_bps = 4.5              # Hyperliquid taker fee 0.045%
+slippage_bps = 2.0         # assumed price disadvantage per trade
+
+[risk]
+max_leverage = 2.0          # total positions max 2x your equity
+max_position_pct = 0.25     # one coin max 25% of equity
+daily_loss_limit_pct = 0.05 # -5% today -> close everything, pause until tomorrow (UTC)
+max_drawdown_pct = 0.20     # -20% from peak -> close everything, stop for good
+min_trade_usd = 15.0        # skip adjustments smaller than this
+allowed_coins = []          # e.g. ["BTC", "ETH", "SOL"]; empty = all
+blocked_coins = []
