@@ -283,7 +283,7 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
   <section data-tab="bots" id="bots" style="display:grid;gap:18px" hidden>
     <div class="glass pad">
       <div class="feed-head"><h2>De bots</h2><span class="soft" style="font-size:.78rem" id="bots-updated"></span></div>
-      <p class="note" style="margin:0">Zeven bots met elk $1.000 nepgeld en een eigen strategie, op dezelfde markt en op hetzelfde moment. Hun gezicht laat zien hoe het gaat. Kijk pas na een paar weken naar de winnaar: een paar dagen zegt niets.</p>
+      <p class="note" style="margin:0">Negen bots met elk $1.000 nepgeld en een eigen strategie, op dezelfde markt en op hetzelfde moment. Hun gezicht laat zien hoe het gaat. Kijk pas na een paar weken naar de winnaar: een paar dagen zegt niets.</p>
     </div>
     <div class="crew" id="crew"><div class="glass pad empty">Nog geen data van de bots.</div></div>
     <div class="glass pad">
@@ -421,7 +421,7 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
   }
 
   function liveEquity() {
-    const cash = data.starting_balance + data.realized_pnl - data.fees_paid;
+    const cash = data.starting_balance + data.realized_pnl - data.fees_paid - (data.funding_paid || 0);
     const have = Object.keys(mids).length > 0 && data.positions.every((p) => mids[p.coin] != null);
     if (!have) return { equity: data.equity, unreal: data.equity - cash };
     const unreal = data.positions.reduce((s, p) => s + (mids[p.coin] - p.entry) * p.size, 0);
@@ -683,7 +683,7 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
     } catch { /* tab shows its empty state */ }
   }
   function botLiveEquity(b) {
-    const cash = b.starting_balance + b.realized_pnl - b.fees_paid;
+    const cash = b.starting_balance + b.realized_pnl - b.fees_paid - (b.funding_paid || 0);
     if (!b.positions.length) return b.equity;
     if (!b.positions.every((p) => mids[p.coin] != null)) return b.equity;
     return cash + b.positions.reduce((s, p) => s + (mids[p.coin] - p.entry) * p.size, 0);
@@ -695,6 +695,8 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
     voorzichtig: { name: "Vera", role: "Voorzichtig: max 1x hefboom", color: "#2f6f6a" },
     agressief:   { name: "Axel", role: "Durft veel: tot 3x hefboom", color: "#b8475a" },
     patronen:    { name: "Pia",  role: "Leest de grafiek: double bottom, head & shoulders, driehoeken, vlaggen", color: "#3c8a5c" },
+    trend:       { name: "Tom",  role: "Trendvolger: long wat stijgt, short wat daalt", color: "#2f56e0" },
+    funding:     { name: "Fien", role: "Funding-verdiener: gaat tegen de massa in en int de vergoeding", color: "#b98a12" },
     random:      { name: "Rik",  role: "Controlegroep: willekeurige traders. Wie Rik niet verslaat, had geluk", color: "#8a7f74" },
   };
   const crewOf = (b, i) => CREW[b.name] || { name: b.name, role: b.description, color: BOT_COLORS[i % BOT_COLORS.length] };
@@ -730,6 +732,17 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
       el("path", { d: "M8 30 L16 22 L22 27 L30 16", fill: "none", stroke: ink, "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }, body);
       el("circle", { cx: 80, cy: 16, r: 8, fill: screen, stroke: ink, "stroke-width": 2.2 }, body);
       el("line", { x1: 85.5, y1: 21.5, x2: 92, y2: 28, stroke: ink, "stroke-width": 3, "stroke-linecap": "round" }, body);
+    }
+    if (kind === "trend") {
+      // an arrow riding up
+      el("path", { d: "M10 34 L24 22 L32 28 L44 12", fill: "none", stroke: color, "stroke-width": 3.2, "stroke-linecap": "round", "stroke-linejoin": "round" }, body);
+      el("path", { d: "M37 11 L45 11 L45 19", fill: "none", stroke: color, "stroke-width": 3.2, "stroke-linecap": "round", "stroke-linejoin": "round" }, body);
+    }
+    if (kind === "funding") {
+      // a coin with a % sign
+      el("circle", { cx: 80, cy: 15, r: 10, fill: "#e0a83c", stroke: ink, "stroke-width": 1.8 }, body);
+      const t = el("text", { x: 80, y: 19.5, "text-anchor": "middle", style: "font: 700 11px var(--ui); fill: var(--ink)" }, body);
+      t.textContent = "%";
     }
     if (kind === "random") {
       const q = el("text", { x: 50, y: 14, "text-anchor": "middle", style: "font: 700 11px var(--ui); fill: var(--room-4)" }, body);

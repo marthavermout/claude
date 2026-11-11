@@ -22,8 +22,8 @@ class BotConfig:
     slippage_bps: float = 2.0
     data_dir: str = "data"
     target_leaders: int = 3
-    strategy: str = "copy"  # "copy" (follow traders) or "patterns" (read the chart)
-    pattern_coins: list[str] = field(default_factory=list)
+    strategy: str = "copy"  # "copy" (follow traders), "patterns", "trend" or "funding"
+    pattern_coins: list[str] = field(default_factory=list)  # coins for patterns / trend / funding
     risk_per_trade: float = 0.01  # patterns: a stop-loss hit costs at most this share of equity
     select_random: bool = False  # control group: pick active traders at random, ignoring past results
     risk: RiskConfig = field(default_factory=RiskConfig)

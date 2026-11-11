@@ -19,6 +19,7 @@ from .config import BotConfig
 from .hyperliquid import ApiError, HyperliquidClient
 from .paper import Fill, PaperBroker
 from .patterns import PatternTrade, exit_reason, parse_candles, risk_notional, scan
+from . import quant
 from .risk import RiskManager, RiskState
 from .strategy import filter_baseline, target_notionals
 
@@ -40,6 +41,9 @@ class Engine:
         self.meta: dict = {}
         self.pattern_trades: dict[str, dict] = {}  # coin -> PatternTrade fields + opened (ISO)
         self.pattern_scanned: dict[str, int] = {}  # coin -> start time of the last candle scanned
+        self.quant_sizes: dict[str, float] = {}     # trend/funding: coin -> signed target size
+        self.funding_pos: dict[str, dict] = {}      # funding bot: coin -> {side, entry, notional, size}
+        self.quant_hour: int = 0                    # last hour the trend/funding bot decided
         self.broker = PaperBroker(cfg.starting_balance, cfg.fee_bps, cfg.slippage_bps)
         self.risk = RiskManager(cfg.risk)
         self._decimals: dict[str, int] | None = None
@@ -61,6 +65,9 @@ class Engine:
         self.meta = data.get("meta", {})
         self.pattern_trades = data.get("pattern_trades", {})
         self.pattern_scanned = data.get("pattern_scanned", {})
+        self.quant_sizes = data.get("quant_sizes", {})
+        self.funding_pos = data.get("funding_pos", {})
+        self.quant_hour = data.get("quant_hour", 0)
 
     def save(self) -> None:
         data = {
@@ -72,6 +79,9 @@ class Engine:
             "meta": self.meta,
             "pattern_trades": self.pattern_trades,
             "pattern_scanned": self.pattern_scanned,
+            "quant_sizes": self.quant_sizes,
+            "funding_pos": self.funding_pos,
+            "quant_hour": self.quant_hour,
         }
         tmp = self.state_path.with_suffix(".tmp")
         tmp.write_text(json.dumps(data, indent=2))
@@ -128,7 +138,7 @@ class Engine:
     def tick(self, now: datetime | None = None) -> list[Fill]:
         now = now or datetime.now(timezone.utc)
         ts = now.isoformat()
-        patterns = self.cfg.strategy == "patterns"
+        patterns = self.cfg.strategy != "copy"
         try:
             mids = self.client.mids()
             raw_snaps = [] if patterns else [self.client.snapshot(a) for a in self.cfg.leaders]
@@ -179,6 +189,12 @@ class Engine:
             self._append_csv("leaders.csv", ["time", "leader", "leader_equity", "shadow_equity"],
                              [ts, snap.address, round(raw.equity, 2), round(shadow.equity(mids), 4)])
 
+        # funding data is only needed once per hour (settlement, and the funding bot's decision)
+        hour = int(now.timestamp() // 3600)
+        need_ctxs = hour != self.meta.get("funding_hour") or (self.cfg.strategy == "funding" and hour != self.quant_hour)
+        ctxs = self._asset_ctxs() if need_ctxs else {}
+        self._accrue_funding(ctxs, now)
+
         # the real paper book
         equity = self.broker.equity(mids)
         halt = self.risk.halt_reason(equity, now.strftime("%Y-%m-%d"))
@@ -188,8 +204,12 @@ class Engine:
             for coin in list(self.pattern_trades):
                 self._close_pattern(coin, "risicostop", mids.get(coin), ts)
             targets = {}
-        elif patterns:
+        elif self.cfg.strategy == "patterns":
             targets = self.risk.apply_limits(self._pattern_targets(mids, now, equity), equity)
+        elif self.cfg.strategy == "trend":
+            targets = self.risk.apply_limits(self._trend_targets(mids, now, equity), equity)
+        elif self.cfg.strategy == "funding":
+            targets = self.risk.apply_limits(self._funding_targets(ctxs, mids, now, equity), equity)
         else:
             targets = self.risk.apply_limits(target_notionals(snaps, mids, equity, self.cfg.copy_ratio), equity)
 
@@ -204,6 +224,82 @@ class Engine:
                          [ts, round(equity, 4), len(self.broker.positions), mids.get("BTC", ""), halt or ""])
         self.save()
         return fills
+
+    # ---------- funding payments (all bots) ----------
+    def _asset_ctxs(self) -> dict[str, dict]:
+        getter = getattr(self.client, "asset_ctxs", None)
+        if getter is None:
+            return {}
+        try:
+            return getter()
+        except (ApiError, KeyError, ValueError, TypeError) as exc:
+            log.warning("funding data unavailable: %s", exc)
+            return {}
+
+    def _accrue_funding(self, ctxs: dict[str, dict], now: datetime) -> None:
+        """Hyperliquid settles funding every hour. Charge (or pay) it once per hour boundary,
+        to the real book and every shadow book, so results match what a real account would get."""
+        if not ctxs:
+            return
+        hour = int(now.timestamp() // 3600)
+        last = self.meta.get("funding_hour")
+        self.meta["funding_hour"] = hour
+        if last is None or hour <= last:
+            return
+        rates = {c: v["funding"] for c, v in ctxs.items()}
+        marks = {c: v["mark"] for c, v in ctxs.items()}
+        for _ in range(min(hour - last, 3)):  # a long gap means we weren't running: charge at most a few hours
+            paid = self.broker.apply_funding(rates, marks)
+            for shadow in self.shadows.values():
+                shadow.apply_funding(rates, marks)
+            if paid:
+                log.info("funding %s $%.4f", "paid" if paid > 0 else "received", abs(paid))
+
+    # ---------- trend follower and funding earner ----------
+    def _log_event(self, ts: str, coin: str, event: str, detail: str = "") -> None:
+        self._append_csv("strategy_events.csv", ["time", "coin", "event", "detail"], [ts, coin, event, detail])
+
+    def _trend_targets(self, mids: dict[str, float], now: datetime, equity: float) -> dict[str, float]:
+        hour = int(now.timestamp() // 3600)
+        if hour != self.quant_hour or not self.quant_sizes:
+            hour_start_ms = hour * 3_600_000
+            for coin in self.cfg.pattern_coins:
+                mid = mids.get(coin)
+                if not mid:
+                    continue
+                try:
+                    candles = [c for c in parse_candles(self.client.candles(coin, "1h", 600)) if c.t < hour_start_ms]
+                except (ApiError, KeyError, ValueError) as exc:
+                    log.warning("candles for %s unavailable: %s", coin, exc)
+                    continue
+                current = self.quant_sizes.get(coin, 0.0) * mid
+                target = quant.keep_or_resize(current, quant.trend_target([c.c for c in candles], equity, self.cfg.risk.max_position_pct))
+                if (target > 0) != (current > 0) or (target == 0) != (current == 0):
+                    self._log_event(now.isoformat(), coin, "trend " + ("omhoog: long" if target > 0 else "omlaag: short" if target < 0 else "geen"))
+                self.quant_sizes[coin] = target / mid
+            self.quant_hour = hour
+        return {c: s * mids[c] for c, s in self.quant_sizes.items() if c in mids and s}
+
+    def _funding_targets(self, ctxs: dict[str, dict], mids: dict[str, float], now: datetime, equity: float) -> dict[str, float]:
+        ts = now.isoformat()
+        # stop-loss every tick
+        for coin, p in list(self.funding_pos.items()):
+            mid = mids.get(coin)
+            if mid and (mid / p["entry"] - 1) * p["side"] <= -quant.FUNDING_STOP:
+                del self.funding_pos[coin]
+                self._log_event(ts, coin, "stop-loss")
+        hour = int(now.timestamp() // 3600)
+        if hour != self.quant_hour and ctxs:
+            rates = {c: ctxs[c]["funding"] for c in self.cfg.pattern_coins if c in ctxs}
+            prices = {c: mids[c] for c in rates if c in mids}
+            _, pos, events = quant.funding_targets(rates, prices, self.funding_pos, equity)
+            for coin, p in pos.items():
+                p.setdefault("size", p["side"] * p["notional"] / p["entry"])
+            for coin, reason in events:
+                self._log_event(ts, coin, reason, f"funding {rates.get(coin, 0) * 100:.4f}%/uur")
+            self.funding_pos = pos
+            self.quant_hour = hour
+        return {c: p["size"] * mids[c] for c, p in self.funding_pos.items() if c in mids}
 
     # ---------- chart patterns ----------
     def _close_pattern(self, coin: str, reason: str, price: float | None, ts: str) -> None:

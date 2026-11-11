@@ -21,12 +21,17 @@ could be overfit). You may still propose a bug fix or a reliability fix with a u
 is nothing like that, stop and report "not enough data yet" with the current numbers.
 
 ## 1b. Compare the bots
-Six paper bots run side by side on the same market (`basis` = `config.ci.toml`, the others in
+Nine paper bots run side by side on the same market (`basis` = `config.ci.toml`, the others in
 `bots/*.toml`, data in `/tmp/botdata/bots/<name>/`, summary in `/tmp/botdata/bots.json`).
 Run `review` for each and compare return, max drawdown, fees and number of trades.
 - `patronen` (Pia) does not copy anyone: it trades chart patterns (`copybot/patterns.py`) with a trend
   filter. Its 30-day backtest before going live was a loss (482 trades, -$148 without and about -$47 with
   the trend filter). Judge it like the others; `copybot.patterns.backtest` replays candles to test changes.
+- `trend` (Tom) and `funding` (Fien) read the market themselves (`copybot/quant.py`, settings fixed before
+  testing). 208-day backtest on 15 coins, first 70% / last 30% (exam), costs and funding included:
+  Tom +11.1% / -0.6% (max drawdown 17% / 11%, BTC -1.5% / -7.0%); Fien -9.8% / -13.3% (funding earned, but
+  unhedged price moves and costs were larger). `quant.simulate` replays hourly data to test changes.
+- Since 11 Nov 2026 every bot pays/receives hourly funding like a real account (before that it was ignored).
 - `random` (Rik) is the **control group**: traders picked at random, not on past results. It answers
   "skill or luck?". A bot only counts as better when it beats **both Rik and holding BTC**.
 - Only call a winner after **7+ days** and **30+ closed trades** per bot, and when the gap is larger
