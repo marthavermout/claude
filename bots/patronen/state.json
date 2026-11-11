@@ -3,6 +3,7 @@
     "starting_balance": 1000.0,
     "realized_pnl": -7.308037086600048,
     "fees_paid": 2.02799987806662,
+    "funding_paid": 0.0,
     "positions": {
       "BTC": {
         "size": -0.00339,
@@ -40,7 +41,9 @@
   "baselines": {},
   "shadows": {},
   "shadow_started": {},
-  "meta": {},
+  "meta": {
+    "funding_hour": 498444
+  },
   "pattern_trades": {
     "BTC": {
       "pattern": "bearish wedge",
@@ -108,5 +111,8 @@
     "BNB": 1794401100000,
     "AVAX": 1794401100000,
     "LINK": 1794383100000
-  }
+  },
+  "quant_sizes": {},
+  "funding_pos": {},
+  "quant_hour": 0
 }

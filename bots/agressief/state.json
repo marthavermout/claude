@@ -3,6 +3,7 @@
     "starting_balance": 1000.0,
     "realized_pnl": 3.4507427759609315,
     "fees_paid": 0.3658427002119601,
+    "funding_paid": 0.0,
     "positions": {
       "INIT": {
         "size": -159.0,
@@ -134,6 +135,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 7.447138818320148,
       "fees_paid": 0.5751816427488601,
+      "funding_paid": 0.0,
       "positions": {
         "LIT": {
           "size": -84.0,
@@ -153,6 +155,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -4.581220970345574,
       "fees_paid": 0.5454808078455,
+      "funding_paid": 0.0,
       "positions": {
         "ETH": {
           "size": 0.1069,
@@ -176,12 +179,14 @@
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.0,
+      "funding_paid": 0.0,
       "positions": {}
     },
     "0x888e000c78b8f1aada5b3c99f880794907b76d77": {
       "starting_balance": 1000.0,
       "realized_pnl": -0.7390984255999958,
       "fees_paid": 0.28516108844727,
+      "funding_paid": 0.0,
       "positions": {
         "INIT": {
           "size": -1282.0,
@@ -197,6 +202,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -1.7732227767010986,
       "fees_paid": 0.52432179533784,
+      "funding_paid": 0.0,
       "positions": {
         "ETH": {
           "size": -0.099,
@@ -219,11 +225,12 @@
     "0xd10e2b1b66001bd4086d61e43e836ab9c168fd9a": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.4602127230859546,
-      "fees_paid": 0.13603057827515996,
+      "fees_paid": 0.14055421322123995,
+      "funding_paid": 0.0,
       "positions": {
         "ETHFI": {
-          "size": 415.0,
-          "entry": 0.6241696010059903
+          "size": 430.7,
+          "entry": 0.6247571546781657
         }
       }
     },
@@ -231,6 +238,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 0.6790116599999971,
       "fees_paid": 0.18603663853590002,
+      "funding_paid": 0.0,
       "positions": {
         "NEAR": {
           "size": 110.9,
@@ -242,6 +250,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.0,
+      "funding_paid": 0.0,
       "positions": {}
     }
   },
@@ -255,7 +264,12 @@
     "0x972d521729c0d07b360ae470f03878fe405f0650": "2026-11-10T16:52:32.646988+00:00",
     "0x7dacca323e44f168494c779bb5e7483c468ef410": "2026-11-10T16:52:32.646988+00:00"
   },
-  "meta": {},
+  "meta": {
+    "funding_hour": 498444
+  },
   "pattern_trades": {},
-  "pattern_scanned": {}
+  "pattern_scanned": {},
+  "quant_sizes": {},
+  "funding_pos": {},
+  "quant_hour": 0
 }
