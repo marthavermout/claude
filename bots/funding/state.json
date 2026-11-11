@@ -3,7 +3,7 @@
     "starting_balance": 1000.0,
     "realized_pnl": 0.0,
     "fees_paid": 0.09001294773975001,
-    "funding_paid": 0.0,
+    "funding_paid": -0.0120582923072733,
     "positions": {
       "AVAX": {
         "size": 23.37,
@@ -22,7 +22,7 @@
   "shadows": {},
   "shadow_started": {},
   "meta": {
-    "funding_hour": 498444
+    "funding_hour": 498445
   },
   "pattern_trades": {},
   "pattern_scanned": {},
@@ -35,5 +35,5 @@
       "size": 23.37131171487
     }
   },
-  "quant_hour": 498444
+  "quant_hour": 498445
 }
