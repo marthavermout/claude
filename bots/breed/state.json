@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 15.531667054141202,
-    "fees_paid": 0.63960826900014,
+    "fees_paid": 0.6448441303683901,
     "funding_paid": 0.0870903658785004,
     "positions": {
       "FARTCOIN": {
@@ -30,8 +30,8 @@
         "entry": 1.5031719245238098
       },
       "kPEPE": {
-        "size": -52101.0,
-        "entry": 0.005216269060822007
+        "size": -54526.0,
+        "entry": 0.005197668668578061
       },
       "AERO": {
         "size": 19.0,
@@ -74,7 +74,7 @@
   "risk": {
     "day": "2026-11-11",
     "day_start_equity": 995.7085117602579,
-    "peak_equity": 1044.7619640135904,
+    "peak_equity": 1047.907345588353,
     "killed": false,
     "kill_reason": ""
   },
