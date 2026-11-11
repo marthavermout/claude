@@ -45,7 +45,7 @@
   "risk": {
     "day": "2026-11-11",
     "day_start_equity": 998.7972901888303,
-    "peak_equity": 1004.1090342169774,
+    "peak_equity": 1004.8370782169774,
     "killed": false,
     "kill_reason": ""
   },
@@ -129,17 +129,9 @@
   "shadows": {
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
-      "realized_pnl": 0.0,
-      "fees_paid": 0.23276522518587,
+      "realized_pnl": 0.9511270378000015,
+      "fees_paid": 0.2707431419331,
       "positions": {
-        "XTEN": {
-          "size": 136.0,
-          "entry": 0.242783547
-        },
-        "CASHCAT": {
-          "size": 853.0,
-          "entry": 0.05911568712731536
-        },
         "LIT": {
           "size": -44.0,
           "entry": 3.3783741899999997
@@ -186,11 +178,11 @@
     "0x888e000c78b8f1aada5b3c99f880794907b76d77": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.14316405291171,
+      "fees_paid": 0.14768022024756,
       "positions": {
         "INIT": {
-          "size": -757.0,
-          "entry": 0.22215746846895637
+          "size": -810.0,
+          "entry": 0.22001127289382713
         },
         "kPEPE": {
           "size": -28896.0,

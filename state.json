@@ -45,7 +45,7 @@
   "risk": {
     "day": "2026-11-11",
     "day_start_equity": 992.3612724746363,
-    "peak_equity": 1004.4179984837381,
+    "peak_equity": 1006.0717584837381,
     "killed": false,
     "kill_reason": ""
   },
@@ -146,28 +146,20 @@
     },
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
-      "realized_pnl": -0.012730030263159442,
-      "fees_paid": 0.33386794382375995,
+      "realized_pnl": 0.43920801953684613,
+      "fees_paid": 0.37767392827488,
       "positions": {
         "LIT": {
           "size": -73.0,
           "entry": 3.366730466578947
-        },
-        "XTEN": {
-          "size": 143.0,
-          "entry": 0.246289248
-        },
-        "CASHCAT": {
-          "size": 852.0,
-          "entry": 0.05911619176619718
         },
         "ZEC": {
           "size": -0.13,
           "entry": 1033.8108887692306
         },
         "ETH": {
-          "size": 0.1146,
-          "entry": 2056.86129
+          "size": 0.1201,
+          "entry": 2056.8246465362195
         }
       }
     },
