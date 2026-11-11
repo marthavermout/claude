@@ -54,7 +54,7 @@
   "risk": {
     "day": "2026-11-11",
     "day_start_equity": 1005.3041929245692,
-    "peak_equity": 1034.0934402962039,
+    "peak_equity": 1039.164500296204,
     "killed": false,
     "kill_reason": ""
   },
@@ -206,7 +206,7 @@
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
       "realized_pnl": -3.3207589559558883,
-      "fees_paid": 0.5883684156717299,
+      "fees_paid": 0.59919510075156,
       "funding_paid": -0.015700252750255203,
       "positions": {
         "ETH": {
@@ -214,27 +214,27 @@
           "entry": 2019.6227623232323
         },
         "PUMP": {
-          "size": -107967.0,
-          "entry": 0.0034007131606146497
+          "size": -111006.0,
+          "entry": 0.003405246047866619
         },
         "SOL": {
           "size": -0.32,
           "entry": 81.9551057
         },
         "LIT": {
-          "size": -116.0,
-          "entry": 3.4663256501264827
+          "size": -120.0,
+          "entry": 3.4609594217889335
         }
       }
     },
     "0xd10e2b1b66001bd4086d61e43e836ab9c168fd9a": {
       "starting_balance": 1000.0,
-      "realized_pnl": 1.425832534852663,
-      "fees_paid": 0.2802622148927999,
+      "realized_pnl": 1.7616126066644013,
+      "fees_paid": 0.2848112477042399,
       "funding_paid": 0.0270630294520422,
       "positions": {
         "ETHFI": {
-          "size": 422.1,
+          "size": 406.5,
           "entry": 0.6264860084223245
         },
         "LIT": {
