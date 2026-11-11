@@ -3,7 +3,7 @@
     "starting_balance": 1000.0,
     "realized_pnl": 4.108930367999964,
     "fees_paid": 0.6128699185974601,
-    "funding_paid": 0.2218315973964294,
+    "funding_paid": 0.2529737993839154,
     "positions": {
       "LIT": {
         "size": -42.0,
@@ -127,7 +127,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.11239363248165,
-      "funding_paid": 0.009580018499999999,
+      "funding_paid": 0.012796714124999999,
       "positions": {
         "HYPE": {
           "size": 3.51,
@@ -139,7 +139,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -0.31536827000000156,
       "fees_paid": 0.11726412234435002,
-      "funding_paid": -0.0095254315,
+      "funding_paid": -0.012595497125,
       "positions": {
         "HYPE": {
           "size": -3.35,
@@ -151,7 +151,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 7.429103476112976,
       "fees_paid": 0.5833253292513301,
-      "funding_paid": 0.011620324749589,
+      "funding_paid": 0.012301809374588999,
       "positions": {
         "LIT": {
           "size": -70.0,
@@ -178,7 +178,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -1.5986738886687941,
       "fees_paid": 0.43236965533634986,
-      "funding_paid": 0.009202027852802401,
+      "funding_paid": 0.008163459877802402,
       "positions": {
         "ETH": {
           "size": 0.1182,
@@ -209,7 +209,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -0.6862276408627026,
       "fees_paid": 0.28155066545232,
-      "funding_paid": 1.6353257032219402,
+      "funding_paid": 1.8991227924086502,
       "positions": {
         "INIT": {
           "size": -1285.0,
@@ -224,8 +224,8 @@
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
       "realized_pnl": -1.004456977588116,
-      "fees_paid": 0.35957698520526,
-      "funding_paid": -0.008656561697616203,
+      "fees_paid": 0.36409594873176,
+      "funding_paid": -0.017576732122616203,
       "positions": {
         "ETH": {
           "size": -0.0928,
@@ -240,8 +240,8 @@
           "entry": 81.95010669999999
         },
         "LIT": {
-          "size": -71.0,
-          "entry": 3.4758979428524466
+          "size": -74.0,
+          "entry": 3.470687771790861
         }
       }
     }
@@ -257,7 +257,7 @@
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": "2026-11-10T16:39:50.567090+00:00"
   },
   "meta": {
-    "funding_hour": 498447
+    "funding_hour": 498448
   },
   "pattern_trades": {},
   "pattern_scanned": {},
