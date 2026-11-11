@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 0.1927369168000002,
-    "fees_paid": 0.43473400778537996,
+    "realized_pnl": 0.5031889573325452,
+    "fees_paid": 0.43930101720077996,
     "positions": {
       "BTC": {
         "size": 0.00171,
@@ -53,7 +53,7 @@
         "entry": 18.9407874
       },
       "XPL": {
-        "size": 3211.0,
+        "size": 3021.0,
         "entry": 0.051781356691933976
       },
       "kPEPE": {
