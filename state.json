@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 2.611238585999963,
-    "fees_paid": 0.58772096206191,
+    "realized_pnl": 3.994364025999964,
+    "fees_paid": 0.5964935762339101,
     "positions": {
       "LIT": {
         "size": -45.0,
@@ -31,10 +31,6 @@
       "kPEPE": {
         "size": -7584.0,
         "entry": 0.0051679662
-      },
-      "ZEC": {
-        "size": -0.02,
-        "entry": 1043.89118
       },
       "ETH": {
         "size": 0.0181,
@@ -146,19 +142,15 @@
     },
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
-      "realized_pnl": 0.43920801953684613,
-      "fees_paid": 0.37767392827488,
+      "realized_pnl": 8.121196019202102,
+      "fees_paid": 0.43941728268153,
       "positions": {
         "LIT": {
           "size": -73.0,
           "entry": 3.366730466578947
         },
-        "ZEC": {
-          "size": -0.13,
-          "entry": 1033.8108887692306
-        },
         "ETH": {
-          "size": 0.1201,
+          "size": 0.115,
           "entry": 2056.8246465362195
         }
       }
