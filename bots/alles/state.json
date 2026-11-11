@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": -0.409412033787931,
-    "fees_paid": 0.89850481340661,
+    "realized_pnl": -0.22809083079232764,
+    "fees_paid": 0.9030167406116101,
     "funding_paid": 0.19874844829046392,
     "positions": {
       "APEX": {
@@ -94,7 +94,7 @@
         "entry": 0.051842629400000007
       },
       "ZEC": {
-        "size": -0.18,
+        "size": -0.17,
         "entry": 1020.7826102995604
       },
       "ZRO": {
