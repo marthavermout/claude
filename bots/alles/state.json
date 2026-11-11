@@ -150,8 +150,8 @@
     },
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
-      "realized_pnl": -5.282912429212736,
-      "fees_paid": 1.02076704841032,
+      "realized_pnl": -5.594193877212735,
+      "fees_paid": 1.02533872956372,
       "funding_paid": -0.007993484124392,
       "positions": {
         "ASTER": {
@@ -187,7 +187,7 @@
           "entry": 81.9860995
         },
         "TAO": {
-          "size": -0.836,
+          "size": -0.79,
           "entry": 214.087174
         },
         "UNI": {
@@ -298,8 +298,8 @@
     },
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
-      "realized_pnl": -3.6231562182811965,
-      "fees_paid": 0.7547121246814201,
+      "realized_pnl": -3.812805192010879,
+      "fees_paid": 0.7593220139749202,
       "funding_paid": -0.013189795552923999,
       "positions": {
         "APEX": {
@@ -327,7 +327,7 @@
           "entry": 0.251474695
         },
         "LIT": {
-          "size": -73.0,
+          "size": -70.0,
           "entry": 3.351516485423439
         },
         "PUMP": {
