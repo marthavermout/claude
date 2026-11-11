@@ -169,11 +169,11 @@
     },
     "0x888e000c78b8f1aada5b3c99f880794907b76d77": {
       "starting_balance": 1000.0,
-      "realized_pnl": 1.8974120991290029,
-      "fees_paid": 0.16210578954546,
+      "realized_pnl": 1.9789183701865465,
+      "fees_paid": 0.16785806802111,
       "positions": {
         "INIT": {
-          "size": -754.0,
+          "size": -695.0,
           "entry": 0.21803978522131431
         },
         "kPEPE": {
