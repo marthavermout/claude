@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: write
+  actions: write   # lets a finished run start the next one (see the last step)
 
 concurrency:
   group: copybot
@@ -19,8 +20,11 @@ concurrency:
 jobs:
   paper-trade:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 75
     steps:
+      - name: Remember start time
+        run: echo "RUN_STARTED=$(date +%s)" >> "$GITHUB_ENV"
+
       - uses: actions/checkout@v4
 
       - uses: actions/setup-python@v5
@@ -79,3 +83,18 @@ jobs:
       - name: Show report
         if: always()
         run: '[ -f botdata/REPORT.md ] && cat botdata/REPORT.md >> "$GITHUB_STEP_SUMMARY" || true'
+
+      # GitHub's hourly schedule is best-effort and often skips hours, which left the bots
+      # idle for 3-4 hours at a time. So each run starts the next one when it ends.
+      # Guard: only after a run that lasted 20+ minutes, so a crash can't loop every minute.
+      - name: Start the next run
+        if: always() && github.ref == 'refs/heads/3.x'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          elapsed=$(( $(date +%s) - RUN_STARTED ))
+          if [ "$elapsed" -ge 1200 ]; then
+            gh workflow run copybot.yml --ref 3.x --repo "$GITHUB_REPOSITORY" && echo "next run requested"
+          else
+            echo "run lasted only ${elapsed}s: not chaining (the hourly schedule will retry)"
+          fi
