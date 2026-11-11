@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 24.835050896999988,
-    "fees_paid": 0.7436013609554101,
+    "fees_paid": 0.74817780498351,
     "funding_paid": 0.3440111950315589,
     "positions": {
       "INIT": {
@@ -42,8 +42,8 @@
         "entry": 1.2388477199999999
       },
       "HYPE": {
-        "size": -5.59,
-        "entry": 73.3328305
+        "size": -5.73,
+        "entry": 73.31595080506108
       },
       "XMR": {
         "size": -0.051,
@@ -54,7 +54,7 @@
   "risk": {
     "day": "2026-11-11",
     "day_start_equity": 1005.3041929245692,
-    "peak_equity": 1040.632198178613,
+    "peak_equity": 1040.7882143525849,
     "killed": false,
     "kill_reason": ""
   },
@@ -135,12 +135,12 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
       "realized_pnl": 6.635267346703124,
-      "fees_paid": 0.62202838300911,
+      "fees_paid": 0.62945493490161,
       "funding_paid": 0.018510944853965,
       "positions": {
         "LIT": {
-          "size": -70.0,
-          "entry": 3.348806203271095
+          "size": -75.0,
+          "entry": 3.345598438386355
         },
         "ETH": {
           "size": 0.0952,
@@ -154,8 +154,8 @@
     },
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
-      "realized_pnl": -5.861958032651104,
-      "fees_paid": 0.70138268315145,
+      "realized_pnl": -6.692450962334722,
+      "fees_paid": 0.70613667325935,
       "funding_paid": -0.0136398144901522,
       "positions": {
         "ETH": {
@@ -167,7 +167,7 @@
           "entry": 2.0038967045272966
         },
         "ZRO": {
-          "size": -251.6,
+          "size": -245.0,
           "entry": 1.4748378079267241
         },
         "LIT": {
@@ -230,12 +230,12 @@
     "0xd10e2b1b66001bd4086d61e43e836ab9c168fd9a": {
       "starting_balance": 1000.0,
       "realized_pnl": 1.7616126066644013,
-      "fees_paid": 0.2848112477042399,
+      "fees_paid": 0.2905803788997599,
       "funding_paid": 0.0306308333787842,
       "positions": {
         "ETHFI": {
-          "size": 406.5,
-          "entry": 0.6264860084223245
+          "size": 426.3,
+          "entry": 0.6274615387503517
         },
         "LIT": {
           "size": 53.0,
