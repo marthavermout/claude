@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 15.531667054141202,
-    "fees_paid": 0.6190722457911,
+    "fees_paid": 0.63067940013114,
     "funding_paid": 0.079536386306197,
     "positions": {
       "FARTCOIN": {
@@ -18,12 +18,12 @@
         "entry": 3.7939910500000003
       },
       "PUMP": {
-        "size": 1085.0,
-        "entry": 0.0033846768
+        "size": 5426.0,
+        "entry": 0.003570322473129377
       },
       "ZEC": {
-        "size": -0.03,
-        "entry": 1044.34109
+        "size": -0.04,
+        "entry": 1035.59284
       },
       "ZRO": {
         "size": -25.2,
@@ -74,7 +74,7 @@
   "risk": {
     "day": "2026-11-11",
     "day_start_equity": 995.7085117602579,
-    "peak_equity": 1033.6359521472673,
+    "peak_equity": 1034.6056519931626,
     "killed": false,
     "kill_reason": ""
   },
@@ -153,9 +153,7 @@
     "0x7dacca323e44f168494c779bb5e7483c468ef410": {},
     "0x94fb21bbfaed8927570a2d41af0c21527efbfd81": {},
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
-      "DYDX": -1,
       "SOL": -1,
-      "BNB": -1,
       "LTC": -1,
       "DOGE": -1,
       "CRV": -1,
@@ -599,7 +597,7 @@
     "0x94dac1facdc4afd2614c3119447187b4143bc449": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.024049490039820005,
+      "fees_paid": 0.029198237584320004,
       "funding_paid": -0.0033371978375000004,
       "positions": {
         "ETHFI": {
@@ -609,6 +607,10 @@
         "XPL": {
           "size": -787.0,
           "entry": 0.0537352508
+        },
+        "NEAR": {
+          "size": -3.0,
+          "entry": 3.81388707
         }
       }
     },
@@ -621,12 +623,12 @@
     },
     "0x03136324349c003f3498130f56f4526bf5720ab1": {
       "starting_balance": 1000.0,
-      "realized_pnl": 0.0,
-      "fees_paid": 0.27665159500835995,
+      "realized_pnl": 0.4549928320000002,
+      "fees_paid": 0.28132951173785997,
       "funding_paid": 0.0816738205527554,
       "positions": {
         "HYPE": {
-          "size": 3.52,
+          "size": 3.38,
           "entry": 71.0026977
         },
         "UNI": {
