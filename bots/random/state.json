@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 0.5031889573325452,
-    "fees_paid": 0.43930101720077996,
+    "fees_paid": 0.5537153145138299,
     "positions": {
       "BTC": {
         "size": 0.00171,
@@ -59,13 +59,17 @@
       "kPEPE": {
         "size": 2269.0,
         "entry": 0.0052570512000000005
+      },
+      "XMR": {
+        "size": -0.441,
+        "entry": 576.539669
       }
     }
   },
   "risk": {
     "day": "2026-11-11",
     "day_start_equity": 1014.2650935337367,
-    "peak_equity": 1017.8378085337367,
+    "peak_equity": 1018.3326491911992,
     "killed": false,
     "kill_reason": ""
   },
@@ -86,8 +90,7 @@
     },
     "0x802dc9bd0e048c4b47d943f7ad61d98d9b7361b0": {},
     "0xde5a8068836a16f92813104d7faf602bb0cbdf62": {
-      "ZEC": -1,
-      "XMR": -1
+      "ZEC": -1
     },
     "0xd738f8f8f68511eb644a31d8b23d0b20baa4854b": {}
   },
@@ -191,8 +194,13 @@
     "0xde5a8068836a16f92813104d7faf602bb0cbdf62": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.0,
-      "positions": {}
+      "fees_paid": 0.1125981973557,
+      "positions": {
+        "XMR": {
+          "size": -0.434,
+          "entry": 576.539669
+        }
+      }
     },
     "0xd738f8f8f68511eb644a31d8b23d0b20baa4854b": {
       "starting_balance": 1000.0,

@@ -224,8 +224,7 @@
     "0x94dac1facdc4afd2614c3119447187b4143bc449": {
       "WLD": -1,
       "ENA": 1,
-      "SYRUP": -1,
-      "XPL": -1
+      "SYRUP": -1
     },
     "0xb83de012dba672c76a7dbbbf3e459cb59d7d6e36": {
       "BTC": -1,
@@ -567,11 +566,15 @@
     "0x94dac1facdc4afd2614c3119447187b4143bc449": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.005019150969000001,
+      "fees_paid": 0.024049490039820005,
       "positions": {
         "ETHFI": {
           "size": -17.5,
           "entry": 0.6373525040000001
+        },
+        "XPL": {
+          "size": -787.0,
+          "entry": 0.0537352508
         }
       }
     },
