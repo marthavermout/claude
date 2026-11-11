@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 3.4507427759609315,
-    "fees_paid": 0.3658427002119601,
+    "realized_pnl": 3.530156593460931,
+    "fees_paid": 0.37043584615746006,
     "funding_paid": 0.07714668458466001,
     "positions": {
       "INIT": {
@@ -30,7 +30,7 @@
         "entry": 0.0051819634000000005
       },
       "LIT": {
-        "size": -40.0,
+        "size": -37.0,
         "entry": 3.4288016024999997
       },
       "ETHFI": {
@@ -225,12 +225,16 @@
     "0xd10e2b1b66001bd4086d61e43e836ab9c168fd9a": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.4602127230859546,
-      "fees_paid": 0.14055421322123995,
+      "fees_paid": 0.17711830507733994,
       "funding_paid": 0.0034297179375,
       "positions": {
         "ETHFI": {
-          "size": 430.7,
-          "entry": 0.6247571546781657
+          "size": 456.7,
+          "entry": 0.6255576258110049
+        },
+        "LIT": {
+          "size": 19.0,
+          "entry": 3.4023303299999994
         }
       }
     },

@@ -193,7 +193,6 @@
       "TURBO": -1,
       "BRETT": -1,
       "RENDER": -1,
-      "POL": -1,
       "PNUT": -1,
       "VIRTUAL": -1,
       "PENGU": -1,
@@ -355,9 +354,14 @@
     "0xd10e2b1b66001bd4086d61e43e836ab9c168fd9a": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.0,
+      "fees_paid": 0.029089924321499996,
       "funding_paid": 0.0,
-      "positions": {}
+      "positions": {
+        "LIT": {
+          "size": 19.0,
+          "entry": 3.4023303299999994
+        }
+      }
     },
     "0x972d521729c0d07b360ae470f03878fe405f0650": {
       "starting_balance": 1000.0,
@@ -393,7 +397,7 @@
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
       "realized_pnl": 1.9067341115649792,
-      "fees_paid": 1.0992644500706996,
+      "fees_paid": 1.1143797389081995,
       "funding_paid": -0.0009187965577498996,
       "positions": {
         "AERO": {
@@ -547,6 +551,10 @@
         "WLFI": {
           "size": 2998.0,
           "entry": 0.046934385
+        },
+        "POL": {
+          "size": -375.0,
+          "entry": 0.089572082
         }
       }
     },
