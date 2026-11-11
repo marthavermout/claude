@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": -1.2317003024456104,
-    "fees_paid": 0.8197564465533599,
+    "realized_pnl": -0.6634102304456122,
+    "fees_paid": 0.8244179550651599,
     "positions": {
       "APEX": {
         "size": -155.0,
@@ -45,7 +45,7 @@
         "entry": 1.99559904
       },
       "NEAR": {
-        "size": 68.6,
+        "size": 65.8,
         "entry": 3.4966491900000003
       },
       "PUMP": {
@@ -107,8 +107,8 @@
     }
   },
   "risk": {
-    "day": "2026-11-10",
-    "day_start_equity": 1000.0,
+    "day": "2026-11-11",
+    "day_start_equity": 977.0857856482467,
     "peak_equity": 1011.0681529440434,
     "killed": false,
     "kill_reason": ""
@@ -144,8 +144,8 @@
     },
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
-      "realized_pnl": -2.298612174000001,
-      "fees_paid": 0.9612206650352697,
+      "realized_pnl": -3.003298510000002,
+      "fees_paid": 0.9657513789968697,
       "positions": {
         "ASTER": {
           "size": -165.0,
@@ -200,15 +200,15 @@
           "entry": 0.051842629400000007
         },
         "ZRO": {
-          "size": -120.3,
+          "size": -113.9,
           "entry": 1.4630573299999998
         }
       }
     },
     "0x5a19bfe9c095c3bd188eca00a690b95200797aba": {
       "starting_balance": 1000.0,
-      "realized_pnl": -3.6430419262642375,
-      "fees_paid": 0.4024587304592999,
+      "realized_pnl": -3.727181936719896,
+      "fees_paid": 0.4163553820142999,
       "positions": {
         "PURR": {
           "size": -2591.0,
@@ -219,15 +219,15 @@
           "entry": 0.130803834
         },
         "ZEC": {
-          "size": -0.23,
-          "entry": 1022.6769280394096
+          "size": -0.24,
+          "entry": 1023.1423198313328
         }
       }
     },
     "0x888e000c78b8f1aada5b3c99f880794907b76d77": {
       "starting_balance": 1000.0,
-      "realized_pnl": -0.20388651079999914,
-      "fees_paid": 0.45744893999370007,
+      "realized_pnl": -1.1276132657704911,
+      "fees_paid": 0.46553264371116004,
       "positions": {
         "ARB": {
           "size": -440.3,
@@ -282,15 +282,15 @@
           "entry": 1020.8457899999999
         },
         "kPEPE": {
-          "size": -48062.0,
+          "size": -44781.0,
           "entry": 0.005193556624147976
         }
       }
     },
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
-      "realized_pnl": -1.3606196298000035,
-      "fees_paid": 0.6930347173932601,
+      "realized_pnl": -2.1233094518000035,
+      "fees_paid": 0.7038711562476601,
       "positions": {
         "APEX": {
           "size": -1238.0,
@@ -309,7 +309,7 @@
           "entry": 2018.34625
         },
         "FARTCOIN": {
-          "size": -2181.7,
+          "size": -2072.1,
           "entry": 0.114567082
         },
         "JUP": {
@@ -321,7 +321,7 @@
           "entry": 3.3462086243999996
         },
         "PUMP": {
-          "size": -70811.0,
+          "size": -67633.0,
           "entry": 0.0033863226
         },
         "SOL": {
@@ -347,11 +347,11 @@
     },
     "0x972d521729c0d07b360ae470f03878fe405f0650": {
       "starting_balance": 1000.0,
-      "realized_pnl": 0.0,
-      "fees_paid": 0.11250468768825,
+      "realized_pnl": 0.5310575199999986,
+      "fees_paid": 0.11714944155165,
       "positions": {
         "NEAR": {
-          "size": 71.5,
+          "size": 68.7,
           "entry": 3.4966491900000003
         }
       }

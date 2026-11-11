@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 2.611238585999963,
-    "fees_paid": 0.55846378416366,
+    "fees_paid": 0.56301259022046,
     "positions": {
       "LIT": {
         "size": -45.0,
@@ -13,8 +13,8 @@
         "entry": 71.7001571
       },
       "INIT": {
-        "size": -45.0,
-        "entry": 0.260587872
+        "size": -93.0,
+        "entry": 0.2347840015483871
       },
       "MORPHO": {
         "size": 6.4,
@@ -39,8 +39,8 @@
     }
   },
   "risk": {
-    "day": "2026-11-10",
-    "day_start_equity": 1000.0,
+    "day": "2026-11-11",
+    "day_start_equity": 992.3612724746363,
     "peak_equity": 1001.7411634475355,
     "killed": false,
     "kill_reason": ""
@@ -171,19 +171,19 @@
     },
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
-      "realized_pnl": -0.36201178199999956,
-      "fees_paid": 0.3903668786695499,
+      "realized_pnl": -1.025724962,
+      "fees_paid": 0.3994958628512999,
       "positions": {
         "ETH": {
           "size": 0.1076,
           "entry": 2017.329221598513
         },
         "MORPHO": {
-          "size": 69.6,
-          "entry": 2.002824766465517
+          "size": 74.6,
+          "entry": 2.003262234530831
         },
         "ZRO": {
-          "size": -163.1,
+          "size": -156.6,
           "entry": 1.47325529
         },
         "LIT": {
@@ -200,15 +200,15 @@
     },
     "0x888e000c78b8f1aada5b3c99f880794907b76d77": {
       "starting_balance": 1000.0,
-      "realized_pnl": -0.30979843919999966,
-      "fees_paid": 0.19053657699668997,
+      "realized_pnl": -1.0899575846753506,
+      "fees_paid": 0.19689562585214995,
       "positions": {
         "INIT": {
           "size": -654.0,
           "entry": 0.23335032365749234
         },
         "kPEPE": {
-          "size": -48351.0,
+          "size": -45770.0,
           "entry": 0.005172824693267977
         }
       }
@@ -216,11 +216,11 @@
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
       "realized_pnl": -0.37972632799999867,
-      "fees_paid": 0.32580893535777,
+      "fees_paid": 0.33081215501367,
       "positions": {
         "ETH": {
-          "size": -0.0937,
-          "entry": 2014.9469299999998
+          "size": -0.0991,
+          "entry": 2017.3440286881937
         },
         "PUMP": {
           "size": -70601.0,

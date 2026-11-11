@@ -63,9 +63,9 @@
     }
   },
   "risk": {
-    "day": "2026-11-10",
-    "day_start_equity": 1000.0,
-    "peak_equity": 1015.3237762328187,
+    "day": "2026-11-11",
+    "day_start_equity": 1014.2650935337367,
+    "peak_equity": 1016.2763465337367,
     "killed": false,
     "kill_reason": ""
   },
@@ -94,8 +94,8 @@
   "shadows": {
     "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da": {
       "starting_balance": 1000.0,
-      "realized_pnl": 0.45447375359999986,
-      "fees_paid": 0.71237856116745,
+      "realized_pnl": 1.117814277599997,
+      "fees_paid": 0.71693719325865,
       "positions": {
         "CASHCAT": {
           "size": 1408.0,
@@ -110,7 +110,7 @@
           "entry": 0.05597219220000001
         },
         "PONS": {
-          "size": 937.0,
+          "size": 871.0,
           "entry": 0.14343868200000004
         },
         "SKY": {
@@ -133,11 +133,11 @@
     },
     "0xfb47779fb0f59750fc714ba61a7859b059bbd3e6": {
       "starting_balance": 1000.0,
-      "realized_pnl": 0.13710888800000007,
-      "fees_paid": 0.21356705078145,
+      "realized_pnl": 0.5294199019999993,
+      "fees_paid": 0.2187054121536,
       "positions": {
         "NEAR": {
-          "size": 57.5,
+          "size": 54.4,
           "entry": 3.55686123
         },
         "VVV": {
