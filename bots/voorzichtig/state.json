@@ -46,7 +46,7 @@
   "risk": {
     "day": "2026-11-11",
     "day_start_equity": 998.7972901888303,
-    "peak_equity": 1017.028185454968,
+    "peak_equity": 1017.1943740799578,
     "killed": false,
     "kill_reason": ""
   },
@@ -182,12 +182,12 @@
     "0x888e000c78b8f1aada5b3c99f880794907b76d77": {
       "starting_balance": 1000.0,
       "realized_pnl": 5.13921379688498,
-      "fees_paid": 0.21849591236436003,
+      "fees_paid": 0.22359578393601004,
       "funding_paid": 1.421843079476146,
       "positions": {
         "INIT": {
-          "size": -1037.0,
-          "entry": 0.1995441656462054
+          "size": -1116.0,
+          "entry": 0.19557378827250446
         },
         "kPEPE": {
           "size": -30920.0,
