@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 19.545466273801864,
-    "fees_paid": 1.1674214824150806,
+    "fees_paid": 1.1720326932384306,
     "funding_paid": 0.2673263454324296,
     "positions": {
       "APEX": {
@@ -54,8 +54,8 @@
         "entry": 0.0034126747414527365
       },
       "PURR": {
-        "size": -651.0,
-        "entry": 0.08753648920000001
+        "size": -762.0,
+        "entry": 0.08823279479291339
       },
       "SOL": {
         "size": -0.25,
@@ -118,7 +118,7 @@
   "risk": {
     "day": "2026-11-11",
     "day_start_equity": 977.0857856482467,
-    "peak_equity": 1011.2129835504559,
+    "peak_equity": 1012.8460391627291,
     "killed": false,
     "kill_reason": ""
   },
@@ -299,7 +299,7 @@
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
       "realized_pnl": -5.94047089324379,
-      "fees_paid": 0.80252492403843,
+      "fees_paid": 0.80845257827043,
       "funding_paid": -0.09742731785949199,
       "positions": {
         "APEX": {
@@ -327,8 +327,8 @@
           "entry": 0.251474695
         },
         "LIT": {
-          "size": -70.0,
-          "entry": 3.3513054212279556
+          "size": -74.0,
+          "entry": 3.34816141143185
         },
         "PUMP": {
           "size": -67242.0,
