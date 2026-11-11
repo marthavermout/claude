@@ -159,12 +159,12 @@
     "0xe00f0d90bc976c311a7f22cbb728d8629ccd5394": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.9330652310389151,
-      "fees_paid": 0.31775164369083,
+      "fees_paid": 0.33993756098703,
       "funding_paid": 0.011492327181324001,
       "positions": {
         "HYPE": {
-          "size": 2.56,
-          "entry": 70.7186409
+          "size": 3.24,
+          "entry": 71.09313553703704
         },
         "kPEPE": {
           "size": 14951.0,

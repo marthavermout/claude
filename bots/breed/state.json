@@ -70,7 +70,7 @@
   "risk": {
     "day": "2026-11-11",
     "day_start_equity": 995.7085117602579,
-    "peak_equity": 1031.8879020983122,
+    "peak_equity": 1032.1176850983122,
     "killed": false,
     "kill_reason": ""
   },
@@ -385,19 +385,19 @@
     "0x94fb21bbfaed8927570a2d41af0c21527efbfd81": {
       "starting_balance": 1000.0,
       "realized_pnl": -0.6089821968000008,
-      "fees_paid": 0.12911746904837998,
+      "fees_paid": 0.13363517057733,
       "funding_paid": -0.009238119,
       "positions": {
         "kPEPE": {
-          "size": -49584.0,
-          "entry": 0.005231861170950307
+          "size": -51627.0,
+          "entry": 0.005219283340720941
         }
       }
     },
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
       "realized_pnl": 2.2148006255649824,
-      "fees_paid": 1.1393927953461895,
+      "fees_paid": 1.1439310555125894,
       "funding_paid": 0.0299005756579753,
       "positions": {
         "AERO": {
@@ -545,8 +545,8 @@
           "entry": 0.0016916615999999999
         },
         "STX": {
-          "size": -128.9,
-          "entry": 0.318606266
+          "size": -160.9,
+          "entry": 0.31792026276817903
         },
         "WLFI": {
           "size": 2998.0,
