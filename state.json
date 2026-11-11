@@ -172,11 +172,11 @@
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
       "realized_pnl": -1.025724962,
-      "fees_paid": 0.3994958628512999,
+      "fees_paid": 0.4040539580380499,
       "positions": {
         "ETH": {
-          "size": 0.1076,
-          "entry": 2017.329221598513
+          "size": 0.1125,
+          "entry": 2019.4997747466666
         },
         "MORPHO": {
           "size": 74.6,

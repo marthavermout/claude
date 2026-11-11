@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 0.0,
-    "fees_paid": 0.21905886296961,
+    "realized_pnl": 0.6057624419999981,
+    "fees_paid": 0.22357988483435998,
     "positions": {
       "INIT": {
         "size": -45.0,
@@ -13,7 +13,7 @@
         "entry": 1.99559904
       },
       "NEAR": {
-        "size": 42.9,
+        "size": 40.2,
         "entry": 3.4966491900000003
       },
       "PUMP": {
