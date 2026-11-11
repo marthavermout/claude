@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 0.5031889573325452,
-    "fees_paid": 0.5537153145138299,
+    "fees_paid": 0.56447093520783,
     "funding_paid": 0.006597599200684001,
     "positions": {
       "BTC": {
@@ -64,6 +64,10 @@
       "XMR": {
         "size": -0.441,
         "entry": 576.539669
+      },
+      "LIT": {
+        "size": 7.0,
+        "entry": 3.4144827600000007
       }
     }
   },
@@ -138,12 +142,12 @@
     },
     "0xfb47779fb0f59750fc714ba61a7859b059bbd3e6": {
       "starting_balance": 1000.0,
-      "realized_pnl": 0.8103706216230345,
-      "fees_paid": 0.23251910474295,
+      "realized_pnl": 1.3543191366983867,
+      "fees_paid": 0.2370890813148,
       "funding_paid": -0.0016007375185199996,
       "positions": {
         "NEAR": {
-          "size": 57.3,
+          "size": 54.6,
           "entry": 3.5598351770091283
         },
         "VVV": {
@@ -182,12 +186,12 @@
     "0xd10e2b1b66001bd4086d61e43e836ab9c168fd9a": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.029089924321499996,
+      "fees_paid": 0.08286802779149999,
       "funding_paid": 0.0,
       "positions": {
         "LIT": {
-          "size": 19.0,
-          "entry": 3.4023303299999994
+          "size": 54.0,
+          "entry": 3.4102069049999995
         }
       }
     },
