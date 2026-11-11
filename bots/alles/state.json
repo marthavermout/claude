@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 0.47199068933204724,
-    "fees_paid": 0.87330564284841,
+    "fees_paid": 0.87943793906241,
     "positions": {
       "APEX": {
         "size": -155.0,
@@ -107,6 +107,10 @@
       "ETH": {
         "size": 0.0158,
         "entry": 2056.86129
+      },
+      "GRAM": {
+        "size": 11.0,
+        "entry": 1.2388477199999999
       }
     }
   },
@@ -122,7 +126,7 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
       "realized_pnl": 6.017198546383285,
-      "fees_paid": 0.8389624581242098,
+      "fees_paid": 0.8891357907842098,
       "positions": {
         "HYPE": {
           "size": -3.51,
@@ -135,6 +139,10 @@
         "ETH": {
           "size": 0.1144,
           "entry": 2056.824462552301
+        },
+        "GRAM": {
+          "size": 90.0,
+          "entry": 1.2388477199999999
         }
       }
     },
