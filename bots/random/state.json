@@ -134,11 +134,11 @@
     "0xfb47779fb0f59750fc714ba61a7859b059bbd3e6": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.5294199019999993,
-      "fees_paid": 0.2187054121536,
+      "fees_paid": 0.22340428649055,
       "positions": {
         "NEAR": {
-          "size": 54.4,
-          "entry": 3.55686123
+          "size": 57.3,
+          "entry": 3.559078427277487
         },
         "VVV": {
           "size": 13.2,
@@ -149,15 +149,15 @@
     "0xe00f0d90bc976c311a7f22cbb728d8629ccd5394": {
       "starting_balance": 1000.0,
       "realized_pnl": 3.192145321000006,
-      "fees_paid": 0.23151667173435003,
+      "fees_paid": 0.24821261760582003,
       "positions": {
         "HYPE": {
           "size": 2.56,
           "entry": 70.7186409
         },
         "kPEPE": {
-          "size": 9683.0,
-          "entry": 0.0052570512000000005
+          "size": 16750.0,
+          "entry": 0.005254097236191045
         }
       }
     },

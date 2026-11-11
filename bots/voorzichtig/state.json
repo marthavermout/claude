@@ -2,11 +2,11 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 0.6057624419999981,
-    "fees_paid": 0.22357988483435998,
+    "fees_paid": 0.24860237482251,
     "positions": {
       "INIT": {
-        "size": -45.0,
-        "entry": 0.246465697
+        "size": -159.0,
+        "entry": 0.2137886488113208
       },
       "MORPHO": {
         "size": 6.4,
@@ -35,13 +35,17 @@
       "ZEC": {
         "size": -0.01,
         "entry": 1027.4444700000001
+      },
+      "ETH": {
+        "size": 0.0159,
+        "entry": 2056.86129
       }
     }
   },
   "risk": {
     "day": "2026-11-11",
     "day_start_equity": 998.7972901888303,
-    "peak_equity": 1002.4675314785229,
+    "peak_equity": 1004.1090342169774,
     "killed": false,
     "kill_reason": ""
   },
@@ -126,7 +130,7 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.15604032175722,
+      "fees_paid": 0.23276522518587,
       "positions": {
         "XTEN": {
           "size": 136.0,
@@ -141,8 +145,12 @@
           "entry": 3.3783741899999997
         },
         "ZEC": {
-          "size": -0.11,
-          "entry": 1042.3960245454546
+          "size": -0.13,
+          "entry": 1033.8108887692306
+        },
+        "ETH": {
+          "size": 0.0733,
+          "entry": 2056.86129
         }
       }
     },
@@ -178,11 +186,11 @@
     "0x888e000c78b8f1aada5b3c99f880794907b76d77": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.13376240961651,
+      "fees_paid": 0.14316405291171,
       "positions": {
         "INIT": {
-          "size": -653.0,
-          "entry": 0.22554465999234302
+          "size": -757.0,
+          "entry": 0.22215746846895637
         },
         "kPEPE": {
           "size": -28896.0,
