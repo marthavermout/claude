@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 4.193038192765568,
-    "fees_paid": 0.52962137129475,
+    "realized_pnl": 15.531667054141202,
+    "fees_paid": 0.6064807855869,
     "funding_paid": 0.079536386306197,
     "positions": {
       "FARTCOIN": {
@@ -14,8 +14,8 @@
         "entry": 74.1196731
       },
       "NEAR": {
-        "size": 41.8,
-        "entry": 3.5227319863307267
+        "size": -0.20000000000000284,
+        "entry": 3.7939910500000003
       },
       "PUMP": {
         "size": 1085.0,
@@ -26,8 +26,8 @@
         "entry": 1044.34109
       },
       "ZRO": {
-        "size": -18.1,
-        "entry": 1.46015791
+        "size": -25.2,
+        "entry": 1.5031719245238098
       },
       "kPEPE": {
         "size": -52101.0,
@@ -361,15 +361,10 @@
     },
     "0x972d521729c0d07b360ae470f03878fe405f0650": {
       "starting_balance": 1000.0,
-      "realized_pnl": 0.5362385559999989,
-      "fees_paid": 0.1170899058969,
+      "realized_pnl": 21.090744757000003,
+      "fees_paid": 0.23438113920765002,
       "funding_paid": 0.02915130245142,
-      "positions": {
-        "NEAR": {
-          "size": 68.7,
-          "entry": 3.49479882
-        }
-      }
+      "positions": {}
     },
     "0x7dacca323e44f168494c779bb5e7483c468ef410": {
       "starting_balance": 1000.0,
