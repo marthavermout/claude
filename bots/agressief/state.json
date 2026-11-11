@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 1.7967347409999974,
-    "fees_paid": 0.34314801988896004,
+    "realized_pnl": 2.452647299749997,
+    "fees_paid": 0.34848316064736007,
     "positions": {
       "INIT": {
         "size": -159.0,
@@ -13,7 +13,7 @@
         "entry": 1.9950989399999999
       },
       "NEAR": {
-        "size": 76.8,
+        "size": 73.6,
         "entry": 3.4999861853906253
       },
       "PUMP": {
@@ -45,7 +45,7 @@
   "risk": {
     "day": "2026-11-11",
     "day_start_equity": 1005.3041929245692,
-    "peak_equity": 1016.219617063711,
+    "peak_equity": 1020.8874362749526,
     "killed": false,
     "kill_reason": ""
   },
