@@ -50,7 +50,7 @@ def cmd_select(args) -> int:
 
 def cmd_run(args) -> int:
     cfg = _cfg(args)
-    if not cfg.leaders and cfg.strategy != "patterns":
+    if not cfg.leaders and cfg.strategy == "copy":
         print("No leaders configured. Run `select` and add them to the config, or run `tune` to pick automatically.")
         return 1
     engine = Engine(cfg)

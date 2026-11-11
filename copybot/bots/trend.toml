@@ -1,0 +1,23 @@
+# Bot 'trend': Trendvolger: long op munten die stijgen, short op munten die dalen (24 uur tegen 7 dagen), positie naar beweeglijkheid
+
+[bot]
+strategy = "trend"
+pattern_coins = ["BTC", "ETH", "SOL", "HYPE", "XRP", "DOGE", "SUI", "BNB", "AVAX", "LINK", "LTC", "ADA", "AAVE", "ENA", "WLD"]
+leaders = []
+target_leaders = 0          # follows no traders
+poll_seconds = 30
+data_dir = "data"
+
+[paper]
+starting_balance = 1000.0
+fee_bps = 4.5
+slippage_bps = 2.0
+
+[risk]
+max_leverage = 2.0
+max_position_pct = 0.25
+daily_loss_limit_pct = 0.05
+max_drawdown_pct = 0.20
+min_trade_usd = 10.0
+allowed_coins = []
+blocked_coins = []

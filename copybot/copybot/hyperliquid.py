@@ -71,6 +71,17 @@ class HyperliquidClient:
         start = int((time.time() - hours * 3600) * 1000)
         return self._info({"type": "userFillsByTime", "user": address, "startTime": start})
 
+    def asset_ctxs(self) -> dict[str, dict]:
+        """coin -> {"funding": hourly rate, "mark": mark price, "volume": 24h $ volume}."""
+        meta, ctxs = self._info({"type": "metaAndAssetCtxs"})
+        out = {}
+        for u, c in zip(meta["universe"], ctxs):
+            if c.get("funding") is None or c.get("markPx") is None:
+                continue
+            out[u["name"]] = {"funding": float(c["funding"]), "mark": float(c["markPx"]),
+                              "volume": float(c.get("dayNtlVlm") or 0)}
+        return out
+
     def candles(self, coin: str, interval: str = "15m", count: int = 250) -> list[dict]:
         minutes = {"1m": 1, "5m": 5, "15m": 15, "1h": 60, "4h": 240}[interval]
         end = int(time.time() * 1000)

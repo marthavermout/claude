@@ -27,11 +27,12 @@ class PaperBroker:
     slippage_bps: float = 2.0
     realized_pnl: float = 0.0
     fees_paid: float = 0.0
+    funding_paid: float = 0.0  # net funding paid (negative = received)
     positions: dict[str, Position] = field(default_factory=dict)
 
     @property
     def cash(self) -> float:
-        return self.starting_balance + self.realized_pnl - self.fees_paid
+        return self.starting_balance + self.realized_pnl - self.fees_paid - self.funding_paid
 
     def size(self, coin: str) -> float:
         pos = self.positions.get(coin)
@@ -49,6 +50,17 @@ class PaperBroker:
 
     def gross_notional(self, mids: dict[str, float]) -> float:
         return sum(abs(p.size) * mids.get(c, p.entry) for c, p in self.positions.items())
+
+    def apply_funding(self, rates: dict[str, float], marks: dict[str, float]) -> float:
+        """One hourly funding payment: a positive rate means longs pay shorts."""
+        paid = 0.0
+        for coin, pos in self.positions.items():
+            rate, mark = rates.get(coin), marks.get(coin)
+            if rate is None or mark is None:
+                continue
+            paid += pos.size * mark * rate
+        self.funding_paid += paid
+        return paid
 
     def execute(self, coin: str, delta: float, mid: float) -> Fill:
         if delta == 0:
@@ -86,6 +98,7 @@ class PaperBroker:
             "starting_balance": self.starting_balance,
             "realized_pnl": self.realized_pnl,
             "fees_paid": self.fees_paid,
+            "funding_paid": self.funding_paid,
             "positions": {c: {"size": p.size, "entry": p.entry} for c, p in self.positions.items()},
         }
 
@@ -97,6 +110,7 @@ class PaperBroker:
             slippage_bps=slippage_bps,
             realized_pnl=data["realized_pnl"],
             fees_paid=data["fees_paid"],
+            funding_paid=data.get("funding_paid", 0.0),
         )
         broker.positions = {c: Position(**p) for c, p in data["positions"].items()}
         return broker
