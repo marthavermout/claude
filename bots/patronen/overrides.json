@@ -1,7 +1,9 @@
 {
-  "risk": {},
-  "reviews": 1,
-  "last_review": "2026-11-10T18:25:31.102784+00:00",
+  "risk": {
+    "min_trade_usd": 15.0
+  },
+  "reviews": 2,
+  "last_review": "2026-11-11T17:52:48.310492+00:00",
   "review_log": [
     {
       "time": "2026-11-10T18:25:31.102784+00:00",
@@ -9,6 +11,22 @@
       "mistakes": [],
       "observations": [],
       "decision": "niets veranderen"
+    },
+    {
+      "time": "2026-11-11T17:52:48.310492+00:00",
+      "n": 2,
+      "mistakes": [
+        "29% van de trades draait binnen een uur de vorige om (churn)."
+      ],
+      "observations": [],
+      "decision": "Minimale trade-grootte verhoogd: $10.0 \u2192 $15.0 (minder kleine aanpassingen)."
+    }
+  ],
+  "last_change": "2026-11-11T17:52:48.310492+00:00",
+  "history": [
+    {
+      "time": "2026-11-11T17:52:48.310492+00:00",
+      "change": "Minimale trade-grootte verhoogd: $10.0 \u2192 $15.0 (minder kleine aanpassingen)."
     }
   ]
 }
