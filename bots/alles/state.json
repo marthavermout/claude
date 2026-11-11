@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": -0.4598901449208568,
-    "fees_paid": 0.8680012399412099,
+    "realized_pnl": 0.47199068933204724,
+    "fees_paid": 0.87330564284841,
     "positions": {
       "APEX": {
         "size": -155.0,
@@ -45,7 +45,7 @@
         "entry": 1.99559904
       },
       "NEAR": {
-        "size": 68.8,
+        "size": 65.7,
         "entry": 3.501832639273256
       },
       "PUMP": {
