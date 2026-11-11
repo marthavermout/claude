@@ -98,7 +98,7 @@
     "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da": {
       "starting_balance": 1000.0,
       "realized_pnl": 1.117814277599997,
-      "fees_paid": 0.71693719325865,
+      "fees_paid": 0.72147707555355,
       "positions": {
         "CASHCAT": {
           "size": 1408.0,
@@ -117,8 +117,8 @@
           "entry": 0.14343868200000004
         },
         "SKY": {
-          "size": 4154.0,
-          "entry": 0.060192036
+          "size": 4324.0,
+          "entry": 0.060158729154949124
         },
         "SYRUP": {
           "size": 1849.0,
