@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 4.108930367999964,
-    "fees_paid": 0.6128699185974601,
+    "fees_paid": 0.6281404128876601,
     "funding_paid": 0.2815873543455814,
     "positions": {
       "LIT": {
@@ -40,6 +40,10 @@
       "GRAM": {
         "size": 13.0,
         "entry": 1.2388477199999999
+      },
+      "XMR": {
+        "size": -0.057,
+        "entry": 595.340908
       }
     }
   },
@@ -66,8 +70,7 @@
       "TAO": -1,
       "HYPE": -1,
       "XPL": -1,
-      "ASTER": -1,
-      "XMR": -1
+      "ASTER": -1
     },
     "0x5a19bfe9c095c3bd188eca00a690b95200797aba": {
       "PURR": -1,
@@ -177,7 +180,7 @@
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
       "realized_pnl": -1.5986738886687941,
-      "fees_paid": 0.43236965533634986,
+      "fees_paid": 0.5392631153677498,
       "funding_paid": 0.005495462930458401,
       "positions": {
         "ETH": {
@@ -195,6 +198,10 @@
         "LIT": {
           "size": -72.0,
           "entry": 3.479931874399999
+        },
+        "XMR": {
+          "size": -0.399,
+          "entry": 595.340908
         }
       }
     },

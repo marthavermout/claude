@@ -213,12 +213,12 @@
     },
     "0xde5a8068836a16f92813104d7faf602bb0cbdf62": {
       "starting_balance": 1000.0,
-      "realized_pnl": 0.0,
-      "fees_paid": 0.1125981973557,
+      "realized_pnl": -0.30182082199999927,
+      "fees_paid": 0.11714454519345,
       "funding_paid": 0.0068295472499239965,
       "positions": {
         "XMR": {
-          "size": -0.434,
+          "size": -0.417,
           "entry": 576.539669
         }
       }
