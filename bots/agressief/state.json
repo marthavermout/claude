@@ -238,12 +238,12 @@
     "0xd10e2b1b66001bd4086d61e43e836ab9c168fd9a": {
       "starting_balance": 1000.0,
       "realized_pnl": -4.350900616867506,
-      "fees_paid": 0.3976587173799898,
+      "fees_paid": 0.4089651451633798,
       "funding_paid": 0.0867181363287842,
       "positions": {
         "ETHFI": {
-          "size": 424.6,
-          "entry": 0.6282476136451541
+          "size": 465.5,
+          "entry": 0.6270232692329376
         }
       }
     },
