@@ -1,0 +1,23 @@
+# Bot 'funding-mini': dezelfde bot als 'funding', maar met $50: laat zien wat een klein bedrag echt kan
+
+[bot]
+strategy = "funding"
+pattern_coins = ["BTC", "ETH", "SOL", "HYPE", "XRP", "DOGE", "SUI", "BNB", "AVAX", "LINK", "LTC", "ADA", "AAVE", "ENA", "WLD"]
+leaders = []
+target_leaders = 0          # follows no traders
+poll_seconds = 60           # minis poll half as often to spare the exchange's rate limit
+data_dir = "data"
+
+[paper]
+starting_balance = 50.0     # the small amount the user wants to compare
+fee_bps = 4.5
+slippage_bps = 2.0
+
+[risk]
+max_leverage = 1.0
+max_position_pct = 0.25
+daily_loss_limit_pct = 0.05
+max_drawdown_pct = 0.20
+min_trade_usd = 10.0
+allowed_coins = []
+blocked_coins = []

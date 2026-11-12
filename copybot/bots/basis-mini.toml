@@ -1,0 +1,25 @@
+# Bot 'basis-mini': dezelfde bot als 'basis', maar met $50: laat zien wat een klein bedrag echt kan
+
+[bot]
+leaders = []
+target_leaders = 8          # follow 8 active traders (each gets 1/8 of the money)
+follow_bot = "../.."        # always the same traders as the big bot
+copy_ratio = 1.0
+copy_existing_positions = false
+join_within_pct = 0.01      # ...but do join an existing position if the price is within 1% of the trader's entry
+poll_seconds = 60           # minis poll half as often to spare the exchange's rate limit
+data_dir = "data"
+
+[paper]
+starting_balance = 50.0     # the small amount the user wants to compare
+fee_bps = 4.5
+slippage_bps = 2.0
+
+[risk]
+max_leverage = 2.0
+max_position_pct = 0.25
+daily_loss_limit_pct = 0.05
+max_drawdown_pct = 0.20
+min_trade_usd = 10.0        # Hyperliquid's own minimum order size
+allowed_coins = []
+blocked_coins = []

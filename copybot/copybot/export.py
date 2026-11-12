@@ -122,6 +122,7 @@ def bot_summary(name: str, description: str, cfg: BotConfig) -> dict:
         "halt": full["halt"],
         "killed": full["killed"],
         "series": [{"t": p["t"], "equity": p["equity"]} for p in _downsample(full["series"], 240)],
+        "recent_trades": full["trades"][:12],  # newest first
     }
 
 

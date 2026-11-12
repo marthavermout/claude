@@ -1,0 +1,30 @@
+# Bot 'voorzichtig-mini': dezelfde bot als 'voorzichtig', maar met $50: laat zien wat een klein bedrag echt kan
+
+# Settings for the free 24/7 run on GitHub Actions (.github/workflows/copybot.yml).
+# Leaders are left empty on purpose: the first review picks them automatically,
+# and later reviews replace traders that keep losing. Those decisions live in
+# overrides.json on the `copybot-data` branch and take precedence over this file.
+
+[bot]
+leaders = []
+target_leaders = 8          # follow 8 active traders (each gets 1/8 of the money)
+follow_bot = "../voorzichtig"        # always the same traders as the big bot
+copy_ratio = 1.0
+copy_existing_positions = false
+join_within_pct = 0.005     # join an existing position if the price is within 0.5% of the trader's entry
+poll_seconds = 60           # minis poll half as often to spare the exchange's rate limit
+data_dir = "data"
+
+[paper]
+starting_balance = 50.0     # the small amount the user wants to compare
+fee_bps = 4.5
+slippage_bps = 2.0
+
+[risk]
+max_leverage = 1.0
+max_position_pct = 0.15
+daily_loss_limit_pct = 0.05
+max_drawdown_pct = 0.20
+min_trade_usd = 10.0        # Hyperliquid's own minimum order size
+allowed_coins = []
+blocked_coins = []

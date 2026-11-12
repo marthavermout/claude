@@ -70,7 +70,8 @@ def cmd_review(args) -> int:
 
 def cmd_tune(args) -> int:
     cfg = _cfg(args)
-    d = tune(cfg, _selector_for(cfg.select_random), rules=TuneRules(target_leaders=cfg.target_leaders), if_due_hours=args.if_due)
+    target = len(cfg.leaders) if cfg.follow_bot else cfg.target_leaders  # a mini never has open seats
+    d = tune(cfg, _selector_for(cfg.select_random), rules=TuneRules(target_leaders=target), if_due_hours=args.if_due)
     if d is None:
         print("Review not due yet.")
         return 0

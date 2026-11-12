@@ -21,7 +21,7 @@ could be overfit). You may still propose a bug fix or a reliability fix with a u
 is nothing like that, stop and report "not enough data yet" with the current numbers.
 
 ## 1b. Compare the bots
-Ten paper bots run side by side on the same market (`basis` = `config.ci.toml`, the others in
+Eighteen paper bots run side by side (nine strategies, each with $1000 and with $50) on the same market (`basis` = `config.ci.toml`, the others in
 `bots/*.toml`, data in `/tmp/botdata/bots/<name>/`, summary in `/tmp/botdata/bots.json`).
 Run `review` for each and compare return, max drawdown, fees and number of trades.
 - `patronen` (Pia) does not copy anyone: it trades chart patterns (`copybot/patterns.py`) with a trend
@@ -38,9 +38,11 @@ Run `review` for each and compare return, max drawdown, fees and number of trade
   15m candles: -$255/-$87 -> -$153/-$27, still a loss in every variant: no proven edge). Rejected: Pia on
   1h candles (sign flips between periods), 20% rebalance band for copy bots, Fien with a higher threshold.
   Copy bots were NOT changed: only ~2 days of data.
-- `klein` (Mini) is Bas with $100 and the same traders (`follow_bot`). Replay showed $100 makes 3 trades
-  where $1000 makes 29, because of the $10 minimum order. The final verdict for ~EUR 100 real money must
-  use Mini's result, not the $1000 bots.
+- Every strategy also runs as a `<name>-mini` bot with $50 (`bots/*-mini.toml`, added 12 Nov 2026 at the
+  user's request; they replace the single $100 `klein` bot). Copy minis mirror their big bot's traders
+  (`follow_bot`) and never pick their own. A replay showed $50 makes 2-4 trades where $1000 makes 30-90,
+  because of the $10 minimum order. The final verdict on starting with a small real amount must use the
+  minis' results, not the $1000 bots.
 - The "fees eat X% of the result" check now compares fees with the whole result (open positions
   included). Before, it only used closed trades and flagged Alex at 219% while he was up 5%.
 - `random` (Rik) is the **control group**: traders picked at random, not on past results. It answers

@@ -60,7 +60,8 @@ def decide(review: Review, week: Review, cfg: BotConfig, ov: dict, rules: TuneRu
 
     # ---- diagnose ----
     weak = None
-    for s in review.leaders:
+    mirror = bool(getattr(cfg, "follow_bot", ""))  # a mini mirrors another bot's traders: never pick its own
+    for s in ([] if mirror else review.leaders):
         if s.hours >= rules.inactive_hours and s.trades == 0 and weak is None:
             weak = s
             d.mistakes.append(f"Trader `{s.address[:10]}…` heeft in {s.hours:.0f} uur niets gedaan dat we konden kopiëren.")
@@ -95,7 +96,7 @@ def decide(review: Review, week: Review, cfg: BotConfig, ov: dict, rules: TuneRu
         d.observations.append(f"Slechter dan gewoon BTC vasthouden ({review.total_return:+.2%} vs {review.btc_return:+.2%}).")
 
     # ---- fill empty seats (always allowed, not a 'change' to an experiment) ----
-    if len(leaders) < rules.target_leaders and weak is None:
+    if len(leaders) < rules.target_leaders and weak is None and not mirror:
         new = selector(blacklist | set(leaders), rules.target_leaders - len(leaders))
         if new:
             ov["leaders"] = leaders + new
