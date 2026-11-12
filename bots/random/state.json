@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 1.422539020132541,
-    "fees_paid": 0.7562992512072599,
+    "fees_paid": 0.76095471751434,
     "funding_paid": -1.0249698806792542,
     "positions": {
       "CASHCAT": {
@@ -50,8 +50,8 @@
         "entry": 19.061954287811638
       },
       "XPL": {
-        "size": 4012.0,
-        "entry": 0.05176924248767013
+        "size": 4216.0,
+        "entry": 0.05171814078342803
       },
       "kPEPE": {
         "size": 167.0,
