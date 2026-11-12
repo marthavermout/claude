@@ -607,12 +607,12 @@
     },
     "0x94dac1facdc4afd2614c3119447187b4143bc449": {
       "starting_balance": 1000.0,
-      "realized_pnl": 1.3880004122000031,
-      "fees_paid": 0.038741535912330004,
+      "realized_pnl": 2.128998279600003,
+      "fees_paid": 0.04331680203258,
       "funding_paid": -0.018853449610274,
       "positions": {
         "XPL": {
-          "size": -787.0,
+          "size": -584.0,
           "entry": 0.0537352508
         }
       }
