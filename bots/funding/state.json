@@ -1,13 +1,13 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 2.0930281347999875,
-    "fees_paid": 0.63144966410568,
-    "funding_paid": -0.1268766709626281,
+    "realized_pnl": -3.781263821600027,
+    "fees_paid": 0.8085746555209801,
+    "funding_paid": -0.12456511147870611,
     "positions": {
-      "AVAX": {
-        "size": 23.34,
-        "entry": 8.58451656
+      "ENA": {
+        "size": -1412.0,
+        "entry": 0.14102179
       }
     }
   },
@@ -22,18 +22,18 @@
   "shadows": {},
   "shadow_started": {},
   "meta": {
-    "funding_hour": 498469
+    "funding_hour": 498470
   },
   "pattern_trades": {},
   "pattern_scanned": {},
   "quant_sizes": {},
   "funding_pos": {
-    "AVAX": {
-      "side": 1,
-      "entry": 8.5828,
-      "notional": 200.35343204035135,
-      "size": 23.34359789816276
+    "ENA": {
+      "side": -1,
+      "entry": 0.14105,
+      "notional": 199.15015141435458,
+      "size": -1411.9117434551902
     }
   },
-  "quant_hour": 498469
+  "quant_hour": 498470
 }

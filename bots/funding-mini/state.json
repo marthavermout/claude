@@ -2,14 +2,19 @@
   "broker": {
     "starting_balance": 50.0,
     "realized_pnl": 0.0,
-    "fees_paid": 0.0,
+    "fees_paid": 0.0045056461905,
     "funding_paid": 0.0,
-    "positions": {}
+    "positions": {
+      "ENA": {
+        "size": -71.0,
+        "entry": 0.14102179
+      }
+    }
   },
   "risk": {
     "day": "2026-11-12",
     "day_start_equity": 50.0,
-    "peak_equity": 50.0,
+    "peak_equity": 50.131586443809496,
     "killed": false,
     "kill_reason": ""
   },
@@ -17,11 +22,18 @@
   "shadows": {},
   "shadow_started": {},
   "meta": {
-    "funding_hour": 498469
+    "funding_hour": 498470
   },
   "pattern_trades": {},
   "pattern_scanned": {},
   "quant_sizes": {},
-  "funding_pos": {},
-  "quant_hour": 498469
+  "funding_pos": {
+    "ENA": {
+      "side": -1,
+      "entry": 0.14105,
+      "notional": 10.0,
+      "size": -70.89684509039347
+    }
+  },
+  "quant_hour": 498470
 }
