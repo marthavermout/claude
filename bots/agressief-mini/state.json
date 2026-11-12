@@ -3,7 +3,7 @@
     "starting_balance": 50.0,
     "realized_pnl": 0.0,
     "fees_paid": 0.0090289918404,
-    "funding_paid": 0.0,
+    "funding_paid": 0.00022420953284800002,
     "positions": {
       "HYPE": {
         "size": -0.28,
@@ -14,7 +14,7 @@
   "risk": {
     "day": "2026-11-12",
     "day_start_equity": 50.0,
-    "peak_equity": 50.0075373201596,
+    "peak_equity": 50.07003311062675,
     "killed": false,
     "kill_reason": ""
   },
@@ -102,7 +102,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.004616053276050001,
-      "funding_paid": 0.0005420121870930001,
+      "funding_paid": 0.0005794973192850001,
       "positions": {
         "ETH": {
           "size": 0.0051,
@@ -114,7 +114,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.01356627341115,
-      "funding_paid": -0.0010199590814679999,
+      "funding_paid": -0.0012329768268679998,
       "positions": {
         "ETH": {
           "size": 0.005,
@@ -144,7 +144,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.00899747294544,
-      "funding_paid": -0.0007793263842,
+      "funding_paid": -0.0005609353008448001,
       "positions": {
         "PUMP": {
           "size": -5936.0,
@@ -156,7 +156,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.005929124687819999,
-      "funding_paid": 0.001157694525,
+      "funding_paid": 0.001324764325,
       "positions": {
         "ETHFI": {
           "size": 21.4,
@@ -175,7 +175,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.0090289918404,
-      "funding_paid": 0.0,
+      "funding_paid": 0.00022420953284800002,
       "positions": {
         "HYPE": {
           "size": -0.28,
@@ -195,7 +195,7 @@
     "0x7dacca323e44f168494c779bb5e7483c468ef410": "2026-11-12T12:28:05.248630+00:00"
   },
   "meta": {
-    "funding_hour": 498475
+    "funding_hour": 498476
   },
   "pattern_trades": {},
   "pattern_scanned": {},
