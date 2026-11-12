@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 13.36503282406008,
-    "fees_paid": 0.4204141809916501,
+    "realized_pnl": 13.717613285052709,
+    "fees_paid": 0.4249573750487701,
     "funding_paid": 0.6949396481795475,
     "positions": {
       "INIT": {
@@ -14,7 +14,7 @@
         "entry": 2.0212593884347823
       },
       "PUMP": {
-        "size": -25915.0,
+        "size": -22859.0,
         "entry": 0.003419033787497588
       },
       "ZRO": {
@@ -50,7 +50,7 @@
   "risk": {
     "day": "2026-11-12",
     "day_start_equity": 1036.401539874728,
-    "peak_equity": 1045.3619940810288,
+    "peak_equity": 1047.7111030810288,
     "killed": false,
     "kill_reason": ""
   },
