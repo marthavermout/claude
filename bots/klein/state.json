@@ -118,7 +118,7 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 100.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.0137207641041,
+      "fees_paid": 0.0182218441401,
       "funding_paid": 0.0003800504375,
       "positions": {
         "CASHCAT": {
@@ -128,6 +128,10 @@
         "ETH": {
           "size": 0.0098,
           "entry": 2048.75967
+        },
+        "GRAM": {
+          "size": 8.0,
+          "entry": 1.2503000100000001
         }
       }
     },
