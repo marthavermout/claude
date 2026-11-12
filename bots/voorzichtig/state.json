@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 13.688873518999996,
-    "fees_paid": 0.4114313126734501,
+    "realized_pnl": 13.541352028999995,
+    "fees_paid": 0.4158660530479501,
     "funding_paid": 0.6606319364793339,
     "positions": {
       "INIT": {
@@ -41,10 +41,6 @@
         "size": 228.0,
         "entry": 0.054529903799999994
       },
-      "ZEC": {
-        "size": 0.01,
-        "entry": 1000.2500100000001
-      },
       "ETHFI": {
         "size": 68.8,
         "entry": 0.61207239
@@ -54,7 +50,7 @@
   "risk": {
     "day": "2026-11-12",
     "day_start_equity": 1036.401539874728,
-    "peak_equity": 1039.2295040370473,
+    "peak_equity": 1039.8141049066728,
     "killed": false,
     "kill_reason": ""
   },
@@ -137,8 +133,8 @@
   "shadows": {
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
-      "realized_pnl": 8.270686577799976,
-      "fees_paid": 0.50639377003947,
+      "realized_pnl": 8.350534577799987,
+      "fees_paid": 0.52413273153747,
       "funding_paid": 0.06918882155478301,
       "positions": {
         "LIT": {
@@ -156,10 +152,6 @@
         "CASHCAT": {
           "size": 1766.0,
           "entry": 0.05429675355526614
-        },
-        "ZEC": {
-          "size": 0.04,
-          "entry": 983.5016609999998
         }
       }
     },
