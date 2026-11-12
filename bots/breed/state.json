@@ -3,7 +3,7 @@
     "starting_balance": 1000.0,
     "realized_pnl": 17.91372890814536,
     "fees_paid": 0.6731955036594901,
-    "funding_paid": 0.06216318569358151,
+    "funding_paid": 0.053496122806922605,
     "positions": {
       "FARTCOIN": {
         "size": 100.8,
@@ -78,7 +78,7 @@
   "risk": {
     "day": "2026-11-12",
     "day_start_equity": 1069.6902267819933,
-    "peak_equity": 1075.4029888172468,
+    "peak_equity": 1077.8051338172468,
     "killed": false,
     "kill_reason": ""
   },
@@ -262,7 +262,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 7.923117599663552,
       "fees_paid": 0.6410694618748801,
-      "funding_paid": 0.06363046610899,
+      "funding_paid": 0.07010846992811219,
       "positions": {
         "LIT": {
           "size": -76.0,
@@ -290,7 +290,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -0.5456960604441151,
       "fees_paid": 0.5608047994488001,
-      "funding_paid": -1.0200245429062833,
+      "funding_paid": -1.1730224434641452,
       "positions": {
         "ETH": {
           "size": 0.1076,
@@ -325,7 +325,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 25.81088330945176,
       "fees_paid": 0.31962033985617,
-      "funding_paid": 4.260656135752799,
+      "funding_paid": 4.381196454452022,
       "positions": {
         "INIT": {
           "size": -991.0,
@@ -341,7 +341,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -0.9397968325517592,
       "fees_paid": 0.3915282823182,
-      "funding_paid": 0.021475676260277795,
+      "funding_paid": 0.031885559252872196,
       "positions": {
         "ETH": {
           "size": -0.0879,
@@ -365,7 +365,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -5.5435280299999885,
       "fees_paid": 0.28439906164289996,
-      "funding_paid": 0.0193397575537842,
+      "funding_paid": 0.022457728553784202,
       "positions": {
         "ETHFI": {
           "size": 404.0,
@@ -384,7 +384,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.11755071440414999,
-      "funding_paid": -0.0377237219375,
+      "funding_paid": -0.0406903027676,
       "positions": {
         "HYPE": {
           "size": -3.53,
@@ -396,7 +396,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -0.6089821968000008,
       "fees_paid": 0.14469546467601,
-      "funding_paid": 0.0526239780590482,
+      "funding_paid": 0.061689599290078,
       "positions": {
         "kPEPE": {
           "size": -57049.0,
@@ -408,7 +408,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 2.434732621981437,
       "fees_paid": 1.2237981361648198,
-      "funding_paid": -0.4363487670087999,
+      "funding_paid": -0.5056099259268529,
       "positions": {
         "AERO": {
           "size": 35.0,
@@ -588,7 +588,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -0.039426726526652606,
       "fees_paid": 0.40402926310095005,
-      "funding_paid": -0.10818960142412042,
+      "funding_paid": -0.11742607969931741,
       "positions": {
         "HYPE": {
           "size": -3.52,
@@ -615,7 +615,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.029198237584320004,
-      "funding_paid": -0.011940717937500001,
+      "funding_paid": -0.0127091459125,
       "positions": {
         "ETHFI": {
           "size": -17.5,
@@ -642,7 +642,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 0.4549928320000002,
       "fees_paid": 0.28132951173785997,
-      "funding_paid": 0.17668371025988464,
+      "funding_paid": 0.18848581491988364,
       "positions": {
         "HYPE": {
           "size": 3.38,
@@ -677,7 +677,7 @@
     "0x03136324349c003f3498130f56f4526bf5720ab1": "2026-11-10T16:52:32.714233+00:00"
   },
   "meta": {
-    "funding_hour": 498462
+    "funding_hour": 498463
   },
   "pattern_trades": {},
   "pattern_scanned": {},

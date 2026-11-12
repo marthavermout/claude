@@ -2,9 +2,18 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 2.0485924383999685,
-    "fees_paid": 0.36091231479018004,
+    "fees_paid": 0.54125258013108,
     "funding_paid": -0.0794800781469893,
-    "positions": {}
+    "positions": {
+      "AVAX": {
+        "size": 23.34,
+        "entry": 8.58451656
+      },
+      "WLD": {
+        "size": 655.8,
+        "entry": 0.305571102
+      }
+    }
   },
   "risk": {
     "day": "2026-11-12",
@@ -17,11 +26,24 @@
   "shadows": {},
   "shadow_started": {},
   "meta": {
-    "funding_hour": 498462
+    "funding_hour": 498463
   },
   "pattern_trades": {},
   "pattern_scanned": {},
   "quant_sizes": {},
-  "funding_pos": {},
-  "quant_hour": 498462
+  "funding_pos": {
+    "AVAX": {
+      "side": 1,
+      "entry": 8.5828,
+      "notional": 200.35343204035135,
+      "size": 23.34359789816276
+    },
+    "WLD": {
+      "side": 1,
+      "entry": 0.30551,
+      "notional": 200.35343204035135,
+      "size": 655.7999150284813
+    }
+  },
+  "quant_hour": 498463
 }
