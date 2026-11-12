@@ -3,7 +3,7 @@
     "starting_balance": 1000.0,
     "realized_pnl": -28.08834060360025,
     "fees_paid": 4.344575474307059,
-    "funding_paid": -0.0370880462202985,
+    "funding_paid": -0.0391077743285615,
     "positions": {
       "HYPE": {
         "size": 3.34,
@@ -34,7 +34,7 @@
   "shadows": {},
   "shadow_started": {},
   "meta": {
-    "funding_hour": 498459
+    "funding_hour": 498460
   },
   "pattern_trades": {
     "HYPE": {
@@ -75,16 +75,16 @@
     }
   },
   "pattern_scanned": {
-    "BTC": 1794455100000,
-    "ETH": 1794455100000,
+    "BTC": 1794456000000,
+    "ETH": 1794456000000,
     "SOL": 1794455100000,
     "HYPE": 1794405600000,
     "XRP": 1794455100000,
-    "DOGE": 1794455100000,
-    "SUI": 1794455100000,
-    "BNB": 1794455100000,
+    "DOGE": 1794456000000,
+    "SUI": 1794456000000,
+    "BNB": 1794456000000,
     "AVAX": 1794409200000,
-    "LINK": 1794455100000
+    "LINK": 1794456000000
   },
   "quant_sizes": {},
   "funding_pos": {},
