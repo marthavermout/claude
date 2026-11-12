@@ -3,7 +3,7 @@
     "starting_balance": 1000.0,
     "realized_pnl": -0.08233204260003264,
     "fees_paid": 0.26997112241703003,
-    "funding_paid": -0.0570304026954363,
+    "funding_paid": -0.06799701666685079,
     "positions": {
       "AVAX": {
         "size": 23.45,
@@ -12,8 +12,8 @@
     }
   },
   "risk": {
-    "day": "2026-11-11",
-    "day_start_equity": 1000.0,
+    "day": "2026-11-12",
+    "day_start_equity": 999.7929597256498,
     "peak_equity": 1004.3599004362221,
     "killed": false,
     "kill_reason": ""
@@ -22,7 +22,7 @@
   "shadows": {},
   "shadow_started": {},
   "meta": {
-    "funding_hour": 498452
+    "funding_hour": 498457
   },
   "pattern_trades": {},
   "pattern_scanned": {},
@@ -35,5 +35,5 @@
       "size": 23.453481298272735
     }
   },
-  "quant_hour": 498452
+  "quant_hour": 498457
 }

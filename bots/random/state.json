@@ -2,8 +2,8 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": -0.5463952748674553,
-    "fees_paid": 0.59773110705126,
-    "funding_paid": -0.1711802759416338,
+    "fees_paid": 0.6149362059829799,
+    "funding_paid": -0.3864199842838497,
     "positions": {
       "BTC": {
         "size": 0.00171,
@@ -46,16 +46,16 @@
         "entry": 0.135237042
       },
       "TIA": {
-        "size": 176.1,
-        "entry": 0.419843952
+        "size": 219.1,
+        "entry": 0.4182637638210863
       },
       "VVV": {
         "size": 3.1,
         "entry": 18.9407874
       },
       "XPL": {
-        "size": 3210.0,
-        "entry": 0.051852554894184597
+        "size": 3611.0,
+        "entry": 0.051778782521720454
       },
       "kPEPE": {
         "size": 167.0,
@@ -68,8 +68,8 @@
     }
   },
   "risk": {
-    "day": "2026-11-11",
-    "day_start_equity": 1014.2650935337367,
+    "day": "2026-11-12",
+    "day_start_equity": 996.4282811520326,
     "peak_equity": 1026.01172469786,
     "killed": false,
     "kill_reason": ""
@@ -98,28 +98,28 @@
   "shadows": {
     "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da": {
       "starting_balance": 1000.0,
-      "realized_pnl": 1.117814277599997,
-      "fees_paid": 0.73053722972205,
-      "funding_paid": 0.14203036915502681,
+      "realized_pnl": 0.7540820101596645,
+      "fees_paid": 0.75926242470546,
+      "funding_paid": 0.18166942782328932,
       "positions": {
         "CASHCAT": {
           "size": 1408.0,
           "entry": 0.059656929
         },
         "CHIP": {
-          "size": 5552.0,
-          "entry": 0.03258691161224784
+          "size": 5980.0,
+          "entry": 0.032489096519999996
         },
         "NIL": {
-          "size": 2620.0,
-          "entry": 0.05597219220000001
+          "size": 2991.0,
+          "entry": 0.05596301149428285
         },
         "PONS": {
-          "size": 871.0,
-          "entry": 0.14343868200000004
+          "size": 997.0,
+          "entry": 0.14403404678635912
         },
         "SKY": {
-          "size": 4324.0,
+          "size": 4134.0,
           "entry": 0.060158729154949124
         },
         "SYRUP": {
@@ -139,12 +139,12 @@
     "0xfb47779fb0f59750fc714ba61a7859b059bbd3e6": {
       "starting_balance": 1000.0,
       "realized_pnl": 2.7461606956710023,
-      "fees_paid": 0.25633034703494995,
-      "funding_paid": 0.02749211866555,
+      "fees_paid": 0.26552270838959996,
+      "funding_paid": 0.0356597941378,
       "positions": {
         "NEAR": {
-          "size": 57.3,
-          "entry": 3.5759881781967024
+          "size": 63.0,
+          "entry": 3.5766919410741433
         },
         "VVV": {
           "size": 12.7,
@@ -156,7 +156,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -1.9175931429919197,
       "fees_paid": 0.5727441518096399,
-      "funding_paid": 0.0345524500145179,
+      "funding_paid": 0.041837907692399506,
       "positions": {
         "HYPE": {
           "size": 2.68,
@@ -190,7 +190,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.11249795884274999,
-      "funding_paid": 0.022545948162920004,
+      "funding_paid": 0.029784399967985,
       "positions": {
         "ETH": {
           "size": 0.1235,
@@ -202,7 +202,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -0.30182082199999927,
       "fees_paid": 0.11714454519345,
-      "funding_paid": -0.23392504734472896,
+      "funding_paid": -0.460403319744919,
       "positions": {
         "XMR": {
           "size": -0.417,
@@ -214,7 +214,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.1126072924551,
-      "funding_paid": 0.0138995849354616,
+      "funding_paid": 0.0170678644576236,
       "positions": {
         "BTC": {
           "size": 0.00342,
@@ -234,7 +234,7 @@
     "0xd738f8f8f68511eb644a31d8b23d0b20baa4854b": "2026-11-10T18:14:50.595723+00:00"
   },
   "meta": {
-    "funding_hour": 498452
+    "funding_hour": 498457
   },
   "pattern_trades": {},
   "pattern_scanned": {},
