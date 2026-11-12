@@ -78,7 +78,7 @@
   "risk": {
     "day": "2026-11-12",
     "day_start_equity": 1069.6902267819933,
-    "peak_equity": 1069.6902267819933,
+    "peak_equity": 1069.9983038172468,
     "killed": false,
     "kill_reason": ""
   },
@@ -340,7 +340,7 @@
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
       "realized_pnl": -0.8123277926889947,
-      "fees_paid": 0.38116516601115,
+      "fees_paid": 0.38701804520115,
       "funding_paid": 0.021475676260277795,
       "positions": {
         "ETH": {
@@ -356,8 +356,8 @@
           "entry": 81.9551057
         },
         "LIT": {
-          "size": -74.0,
-          "entry": 3.4658712198263664
+          "size": -78.0,
+          "entry": 3.4548829290660397
         }
       }
     },
@@ -407,7 +407,7 @@
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
       "realized_pnl": 2.434732621981437,
-      "fees_paid": 1.2128841303026396,
+      "fees_paid": 1.2179814072433197,
       "funding_paid": -0.4363487670087999,
       "positions": {
         "AERO": {
@@ -573,6 +573,10 @@
         "SUI": {
           "size": -37.9,
           "entry": 0.848310304
+        },
+        "DYDX": {
+          "size": -125.8,
+          "entry": 0.090041988
         }
       }
     },
