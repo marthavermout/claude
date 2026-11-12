@@ -116,6 +116,8 @@ def bot_summary(name: str, description: str, cfg: BotConfig) -> dict:
         "max_drawdown": st["max_drawdown"],
         "btc_return": st["btc_return"],
         "following": len(full["following"]),
+        "peak_equity": full["peak_equity"],
+        "kill_at": full["risk"]["max_drawdown_pct"],  # drop from the peak at which the bot stops for good
         "last_tick": full["last_tick"],
         "halt": full["halt"],
         "killed": full["killed"],

@@ -106,7 +106,7 @@ h2 { margin: 0 0 12px; font-size: .95rem; font-weight: 600; }
 .two { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 18px; }
 
 .chart-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: baseline; }
-.legend { display: flex; gap: 14px; font-size: .78rem; color: var(--ink-soft); }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: .78rem; color: var(--ink-soft); }
 .legend span::before { content: ""; display: inline-block; width: 14px; height: 2px; margin-right: 6px; vertical-align: middle; background: currentColor; }
 .legend .us { color: var(--accent); } .legend .btc { color: var(--btc); }
 .chart { position: relative; min-height: 240px; }
@@ -157,34 +157,113 @@ a { color: inherit; }
 
 /* bot characters */
 .crew { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 16px; }
-.bot { display: grid; gap: 12px; align-content: start; }
+.bot { --c: var(--ink); display: grid; gap: 12px; align-content: start;
+  box-shadow: var(--shadow), 0 0 0 1px color-mix(in srgb, var(--c) 30%, transparent); }
+.bot.leader { box-shadow: var(--shadow), 0 0 0 2px #e0a83c, 0 0 34px color-mix(in srgb, #e0a83c 40%, transparent); }
 .bot-top { display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 14px; align-items: center; }
 .bot-face { width: 92px; height: 92px; border-radius: 26px; display: grid; place-items: center; background: var(--glass-strong); border: 1px solid var(--glass-line); position: relative; }
-.bot-face svg { width: 84px; height: 84px; overflow: visible; }
+.face-slot svg { width: 84px; height: 84px; overflow: visible; }
+.aura { position: absolute; inset: -8px; border-radius: 32px; opacity: .55; pointer-events: none;
+  background: radial-gradient(circle, color-mix(in srgb, var(--c) 50%, transparent), transparent 70%); }
+.face-slot { position: relative; display: grid; place-items: center; }
 .rank { position: absolute; top: -8px; left: -8px; width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center;
   font: 700 .78rem var(--mono); background: var(--ink); color: var(--room-4); box-shadow: var(--shadow); }
+.bot.leader .rank { background: #e0a83c; color: #2b211a; }
+.crown { position: absolute; top: -19px; left: 50%; width: 34px; height: 22px; transform: translateX(-50%) rotate(-7deg); display: none; }
+.bot.leader .crown, .lane.leader .crown { display: block; }
+.fx { position: absolute; inset: 0; pointer-events: none; }
+.fx i { position: absolute; display: none; }
+[data-mood="up"] .fx .spark { display: block; width: 10px; height: 10px; background: #e0a83c;
+  clip-path: polygon(50% 0, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0 50%, 38% 38%); }
+.fx .spark:nth-child(1) { top: 2px; right: 4px; } .fx .spark:nth-child(2) { top: 30px; left: 0; } .fx .spark:nth-child(3) { bottom: 12px; right: -2px; }
+[data-mood="down"] .fx .cloud { display: block; top: -2px; right: 2px; width: 28px; height: 12px; border-radius: 999px; background: var(--ink-soft); opacity: .75; }
+[data-mood="down"] .fx .drop { display: block; top: 12px; width: 2px; height: 6px; border-radius: 2px; background: #4f7fb8; }
+.fx .drop:nth-child(5) { right: 8px; } .fx .drop:nth-child(6) { right: 15px; } .fx .drop:nth-child(7) { right: 22px; }
 .bot-name { font-size: 1.15rem; font-weight: 700; letter-spacing: -.01em; }
+.tags { display: flex; flex-wrap: wrap; gap: 5px; margin: 2px 0 3px; }
+.type, .lvl { font-size: .64rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: 2px 8px; border-radius: 999px; }
+.type { background: var(--c); color: #fff; }
+.lvl { background: var(--glass-strong); border: 1px solid var(--glass-line); }
+.hp { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 8px; font-size: .7rem; font-weight: 700; }
+.hp-label { letter-spacing: .06em; text-transform: uppercase; color: var(--ink-soft); }
+.hp-bar { height: 9px; border-radius: 999px; overflow: hidden; background: color-mix(in srgb, var(--ink) 10%, transparent); border: 1px solid var(--glass-line); }
+.hp-bar i { display: block; height: 100%; width: 0; border-radius: inherit; }
+.hp-txt { font-family: var(--mono); font-weight: 500; }
 .bot-role { font-size: .76rem; color: var(--ink-soft); }
 .bot-eq { font-family: var(--mono); font-size: 1.05rem; margin-top: 4px; }
 .mood { display: inline-block; margin-top: 4px; font-size: .72rem; font-weight: 700; padding: 2px 8px; border-radius: 999px; background: var(--glass-strong); }
+.bot-how { margin: 0; font-size: .82rem; line-height: 1.45; padding: 10px 12px; border-radius: 14px;
+  background: color-mix(in srgb, var(--c) 9%, var(--glass-strong)); border: 1px solid var(--glass-line); }
+.bot-how b { display: block; font-size: .68rem; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 2px; }
 .bot-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
 .bot-stats div { padding: 8px 10px; border-radius: 12px; background: var(--glass-strong); border: 1px solid var(--glass-line); }
 .bot-stats b { display: block; font: 500 .9rem var(--mono); }
 .bot-stats span { font-size: .68rem; color: var(--ink-soft); }
 .holds { display: flex; flex-wrap: wrap; gap: 6px; }
-.coin { display: inline-flex; align-items: center; gap: 5px; padding: 4px 9px; border-radius: 999px; font-size: .75rem; font-weight: 600;
+.coin { display: inline-flex; align-items: center; gap: 5px; padding: 3px 9px 3px 4px; border-radius: 999px; font-size: .75rem; font-weight: 600;
   background: var(--glass-strong); border: 1px solid var(--glass-line); }
+.coin.long { border-color: color-mix(in srgb, var(--up) 55%, var(--glass-line)); }
+.coin.short { border-color: color-mix(in srgb, var(--down) 55%, var(--glass-line)); }
+.coin.more { padding-left: 9px; }
 .coin i { width: 7px; height: 7px; border-radius: 50%; }
 .coin.long i { background: var(--up); } .coin.short i { background: var(--down); }
 .coin small { font: 500 .7rem var(--mono); }
+.logo { width: 18px; height: 18px; border-radius: 50%; overflow: hidden; display: inline-grid; place-items: center; flex: none; vertical-align: -4px; background: var(--glass-strong); }
+.logo img { width: 18px; height: 18px; display: block; }
+.logo.letters { font: 700 .5rem var(--mono); background: var(--ink); color: var(--room-4); }
+td .logo, .mini .logo { margin-right: 7px; }
 .bot-desc { font-size: .78rem; color: var(--ink-soft); margin: 0; }
+
+/* the race track */
+.arena { --zero: 50%; display: flex; flex-direction: column; gap: 6px; }
+.lane { --c: var(--ink); display: grid; grid-template-columns: 42px minmax(0, 1fr) 66px; align-items: center; gap: 8px; }
+.lane .who-name { font-size: .8rem; font-weight: 700; }
+.lane .pct { font: 500 .8rem var(--mono); text-align: right; }
+.track { position: relative; height: 42px; border-radius: 999px; background: color-mix(in srgb, var(--ink) 6%, transparent); }
+.track::before { content: ""; position: absolute; top: 5px; bottom: 5px; left: var(--zero); width: 2px; border-radius: 2px; background: var(--ink-soft); opacity: .45; }
+.track::after { content: ""; position: absolute; top: 6px; bottom: 6px; right: 8px; width: 10px; border-radius: 2px; opacity: .5;
+  background: repeating-conic-gradient(var(--ink) 0 25%, transparent 0 50%) 0 0 / 10px 10px; }
+.trail { position: absolute; top: 50%; height: 7px; margin-top: -3.5px; border-radius: 999px; background: var(--c); opacity: .5; }
+.runner { position: absolute; top: 50%; width: 40px; height: 40px; margin: -20px 0 0 -20px; }
+.runner .slot svg { width: 40px; height: 40px; overflow: visible; display: block; }
+.runner .crown { top: -11px; width: 20px; height: 13px; }
+.arena-key { display: flex; flex-wrap: wrap; gap: 14px; font-size: .74rem; color: var(--ink-soft); margin-top: 10px; }
+
 @media (prefers-reduced-motion: no-preference) {
   .bot-face svg .body { animation: bob 3.2s ease-in-out infinite; transform-origin: 50% 90%; }
-  .bot:nth-child(2) .bot-face svg .body { animation-delay: -.6s; } .bot:nth-child(3) .bot-face svg .body { animation-delay: -1.2s; }
-  .bot:nth-child(4) .bot-face svg .body { animation-delay: -1.8s; } .bot:nth-child(5) .bot-face svg .body { animation-delay: -2.4s; }
+  .bot:nth-child(2n) .bot-face svg .body { animation-delay: -.8s; } .bot:nth-child(3n) .bot-face svg .body { animation-delay: -1.7s; }
   @keyframes bob { 50% { transform: translateY(-3px); } }
+  [data-mood="up"] .bot-face svg .body { animation: happy 1.5s ease-in-out infinite; }
+  @keyframes happy { 0%, 100% { transform: translateY(0) rotate(0); } 30% { transform: translateY(-6px) rotate(-3deg); } 60% { transform: translateY(0) rotate(2deg); } }
+  [data-mood="down"] .bot-face svg .body { animation: sad 4s ease-in-out infinite; }
+  @keyframes sad { 50% { transform: translateY(2px) rotate(-2deg); } }
   .bot-face svg .eye { animation: blink 5s infinite; transform-box: fill-box; transform-origin: center; }
   @keyframes blink { 0%, 94%, 100% { transform: scaleY(1); } 96% { transform: scaleY(.1); } }
+  .aura { animation: aura 3.6s ease-in-out infinite; }
+  @keyframes aura { 50% { opacity: .9; transform: scale(1.08); } }
+  .crown { animation: crown 1.8s ease-in-out infinite; }
+  @keyframes crown { 50% { transform: translateX(-50%) translateY(-4px) rotate(5deg); } }
+  .fx .spark { animation: twinkle 1.6s ease-in-out infinite; }
+  .fx .spark:nth-child(2) { animation-delay: -.5s; } .fx .spark:nth-child(3) { animation-delay: -1s; }
+  @keyframes twinkle { 0%, 100% { transform: scale(.3) rotate(0); opacity: .2; } 50% { transform: scale(1.15) rotate(45deg); opacity: 1; } }
+  .fx .drop { animation: rain .9s linear infinite; }
+  .fx .drop:nth-child(6) { animation-delay: -.3s; } .fx .drop:nth-child(7) { animation-delay: -.6s; }
+  @keyframes rain { from { transform: translateY(0); opacity: 1; } to { transform: translateY(16px); opacity: 0; } }
+  .bot { transition: transform .25s ease, box-shadow .25s ease; }
+  .bot:hover { transform: translateY(-5px) rotate(-.4deg); }
+  .hp-bar i { transition: width 1.2s cubic-bezier(.2, .9, .2, 1), background .4s; }
+  .bot.enter { animation: pop .6s cubic-bezier(.2, 1.3, .4, 1) both; }
+  @keyframes pop { from { opacity: .2; transform: translateY(22px) scale(.94); } }
+  .coin.new { animation: chip .45s cubic-bezier(.2, 1.4, .4, 1) both; }
+  @keyframes chip { from { transform: scale(.4); opacity: 0; } }
+  .runner, .trail { transition: left 1.6s cubic-bezier(.2, .9, .2, 1), width 1.6s cubic-bezier(.2, .9, .2, 1); }
+  .runner .slot svg { animation: hop .55s ease-in-out infinite; }
+  .lane:nth-child(2n) .runner .slot svg { animation-delay: -.2s; } .lane:nth-child(3n) .runner .slot svg { animation-delay: -.35s; }
+  @keyframes hop { 50% { transform: translateY(-4px) rotate(4deg); } }
+  .room i { animation: drift 24s ease-in-out infinite alternate; }
+  .room i:nth-child(2n) { animation-duration: 31s; animation-direction: alternate-reverse; }
+  .room i:nth-child(3n) { animation-duration: 38s; }
+  @keyframes drift { to { transform: translate(4vw, -3vh) scale(1.12); } }
 }
 
 /* floating tab pill */
@@ -282,12 +361,14 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
   <!-- BOTS -->
   <section data-tab="bots" id="bots" style="display:grid;gap:18px" hidden>
     <div class="glass pad">
-      <div class="feed-head"><h2>De bots</h2><span class="soft" style="font-size:.78rem" id="bots-updated"></span></div>
-      <p class="note" style="margin:0">Tien bots op dezelfde markt en op hetzelfde moment, elk met een eigen strategie. Negen hebben $1.000 nepgeld; Mini heeft $100. Hun gezicht laat zien hoe het gaat. Kijk pas na een paar weken naar de winnaar: een paar dagen zegt niets.</p>
+      <div class="feed-head"><h2>De renbaan</h2><span class="soft" style="font-size:.78rem" id="bots-updated"></span></div>
+      <div class="arena" id="arena"><div class="empty">Nog geen data van de bots.</div></div>
+      <div class="arena-key"><span>Streepje = start (0%)</span><span>Rechts ervan = winst, links = verlies</span><span>Kroon = koploper</span></div>
+      <p class="note">Tien bots op dezelfde markt en op hetzelfde moment, elk met een eigen strategie. Negen hebben $1.000 nepgeld; Mini heeft $100. Kijk pas na een paar weken naar de winnaar: een paar dagen zegt niets.</p>
     </div>
-    <div class="crew" id="crew"><div class="glass pad empty">Nog geen data van de bots.</div></div>
+    <div class="crew" id="crew"></div>
     <div class="glass pad">
-      <h2>De race</h2>
+      <h2>Het verloop</h2>
       <div class="chart" id="bots-chart" style="min-height:250px"><div class="empty">Nog geen koersverloop.</div></div>
       <div class="legend" id="bots-legend" style="margin-top:8px"></div>
     </div>
@@ -364,6 +445,8 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
   const make = (tag, text, cls) => { const e = document.createElement(tag); if (text != null) e.textContent = text; if (cls) e.className = cls; return e; };
 
   let data = null, mids = {}, bots = null;
+  const cards = new Map(), lanes = new Map();   // Bots tab: one card and one race lane per bot
+  let introDone = false, lastRows = [];
 
   // greeting by local time
   const h = new Date().getHours();
@@ -385,7 +468,7 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
     document.querySelectorAll("section[data-tab]").forEach((s) => { s.hidden = s.dataset.tab !== tab; });
     document.querySelectorAll("nav.tabs button").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.go === tab)));
     if (tab === "overzicht" && data) drawChart();
-    if (tab === "bots") drawBots();
+    if (tab === "bots") { drawBots(); introBots(); }
   }
   document.querySelectorAll("nav.tabs button").forEach((b) => b.addEventListener("click", () => {
     if (location.hash !== `#${b.dataset.go}`) history.replaceState(null, "", `#${b.dataset.go}`);
@@ -460,7 +543,7 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
     const body = $("pos-body"); body.replaceChildren();
     for (const p of rows) {
       const tr = body.insertRow();
-      cell(tr, p.coin);
+      tr.insertCell().append(coinLogo(p.coin), document.createTextNode(p.coin));
       tr.insertCell().append(sideTag(p.size));
       cell(tr, usd.format(p.notional), "r num");
       cell(tr, px(p.entry), "r num opt");
@@ -470,7 +553,7 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
     const mini = $("mini-pos"); mini.replaceChildren();
     for (const p of rows.slice(0, 5)) {
       const row = make("div", null, "row");
-      const left = make("div"); left.append(make("b", p.coin), document.createTextNode(" "), sideTag(p.size));
+      const left = make("div"); left.append(coinLogo(p.coin), make("b", p.coin), document.createTextNode(" "), sideTag(p.size));
       const right = make("div", signed(p.pnl), "num"); tone(right, p.pnl);
       row.append(left, right); mini.append(row);
     }
@@ -689,16 +772,26 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
     return cash + b.positions.reduce((s, p) => s + (mids[p.coin] - p.entry) * p.size, 0);
   }
   const CREW = {
-    basis:       { name: "Bas",  role: "De standaard: 8 traders, normaal risico", color: "#4f7fb8" },
-    breed:       { name: "Bea",  role: "Volgt 15 traders tegelijk", color: "#7a5bb0" },
-    alles:       { name: "Alex", role: "Pakt alles meteen, ook oude posities", color: "#c2702a" },
-    voorzichtig: { name: "Vera", role: "Voorzichtig: max 1x hefboom", color: "#2f6f6a" },
-    agressief:   { name: "Axel", role: "Durft veel: tot 3x hefboom", color: "#b8475a" },
-    patronen:    { name: "Pia",  role: "Leest de grafiek: double bottom, head & shoulders, driehoeken, vlaggen", color: "#3c8a5c" },
-    trend:       { name: "Tom",  role: "Trendvolger: long wat stijgt, short wat daalt", color: "#2f56e0" },
-    funding:     { name: "Fien", role: "Funding-verdiener: gaat tegen de massa in en int de vergoeding", color: "#b98a12" },
-    klein:       { name: "Mini", role: "Bas met $100: wat kun je met een klein bedrag echt kopiëren?", color: "#6b8fb0" },
-    random:      { name: "Rik",  role: "Controlegroep: willekeurige traders. Wie Rik niet verslaat, had geluk", color: "#8a7f74" },
+    basis:       { type: "Staal", name: "Bas",  role: "De standaard: 8 traders, normaal risico", color: "#4f7fb8",
+      how: "Kijkt elke 30 seconden wat 8 goed presterende traders doen en doet hun nieuwe posities na, naar verhouding van zijn geld. Zet maximaal 2x zijn geld in." },
+    breed:       { type: "Zwerm", name: "Bea",  role: "Volgt 15 traders tegelijk", color: "#7a5bb0",
+      how: "Doet hetzelfde als Bas, maar verdeelt haar geld over 15 traders. Eén slechte trader doet dan minder pijn." },
+    alles:       { type: "Storm", name: "Alex", role: "Pakt alles meteen, ook oude posities", color: "#c2702a",
+      how: "Neemt meteen alle posities van zijn traders over, ook posities die al lang openstaan. Veel trades en grote schommelingen." },
+    voorzichtig: { type: "Schild", name: "Vera", role: "Voorzichtig: max 1x hefboom", color: "#2f6f6a",
+      how: "Kopieert net als Bas, maar zet nooit meer in dan ze heeft. Ze stapt alleen in als de prijs bijna gelijk is aan die van de trader." },
+    agressief:   { type: "Vuur", name: "Axel", role: "Durft veel: tot 3x hefboom", color: "#b8475a",
+      how: "Kopieert net als Bas, maar mag tot 3x zijn geld inzetten en tot 40% in één munt. Hij wint sneller en verliest sneller." },
+    patronen:    { type: "Kennis", name: "Pia",  role: "Leest de grafiek", color: "#3c8a5c",
+      how: "Kopieert niemand. Zoekt elk kwartier in de grafiek naar bekende patronen, zoals een double bottom, en stapt in bij een uitbraak met een vaste stop-loss en een winstdoel." },
+    trend:       { type: "Wind", name: "Tom",  role: "Trendvolger", color: "#2f56e0",
+      how: "Kopieert niemand. Gaat long op munten die de laatste 2 dagen sterker zijn dan de laatste 2 weken, en short op de rest." },
+    funding:     { type: "Goud", name: "Fien", role: "Funding-verdiener", color: "#b98a12",
+      how: "Longs en shorts betalen elkaar elk uur een vergoeding (funding). Fien kiest de kant die betaald krijgt, en alleen als de trend meewerkt." },
+    klein:       { type: "Mini", name: "Mini", role: "Bas met $100", color: "#6b8fb0",
+      how: "Precies Bas, met dezelfde traders, maar met $100. Orders onder $10 kunnen niet, dus hij kan veel minder kopiëren. Zo zie je wat €100 echt doet." },
+    random:      { type: "Toeval", name: "Rik",  role: "Controlegroep: willekeurige traders", color: "#8a7f74",
+      how: "Volgt 8 willekeurig gekozen traders. Hij is de meetlat: een bot die Rik niet verslaat, had waarschijnlijk gewoon geluk." },
   };
   const crewOf = (b, i) => CREW[b.name] || { name: b.name, role: b.description, color: BOT_COLORS[i % BOT_COLORS.length] };
 
@@ -767,48 +860,180 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
     return svg;
   }
 
+  // coin logo from the exchange, with a letter badge when there is none
+  function coinLogo(coin) {
+    const wrap = make("span", null, "logo");
+    const img = new Image();
+    img.alt = ""; img.width = 18; img.height = 18; img.loading = "lazy"; img.referrerPolicy = "no-referrer";
+    img.onerror = () => { wrap.classList.add("letters"); wrap.replaceChildren(document.createTextNode(coin.replace(/^k(?=[A-Z])/, "").slice(0, 2).toUpperCase())); };
+    img.src = `https://app.hyperliquid.xyz/coins/${encodeURIComponent(coin)}.svg`;
+    wrap.append(img);
+    return wrap;
+  }
+  function crownSvg() {
+    const NS = "http://www.w3.org/2000/svg";
+    const svg = document.createElementNS(NS, "svg");
+    svg.setAttribute("viewBox", "0 0 24 16"); svg.setAttribute("class", "crown"); svg.setAttribute("aria-hidden", "true");
+    const path = document.createElementNS(NS, "path");
+    path.setAttribute("d", "M2 14 L3.5 4 L8.5 9 L12 1.5 L15.5 9 L20.5 4 L22 14 Z");
+    path.setAttribute("fill", "#e0a83c"); path.setAttribute("stroke", "var(--ink)"); path.setAttribute("stroke-width", "1.4"); path.setAttribute("stroke-linejoin", "round");
+    svg.append(path);
+    return svg;
+  }
+  const calm = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function countUp(el, from, to) {
+    if (calm()) { el.textContent = usd.format(to); return; }
+    const t0 = performance.now();
+    const step = (t) => {
+      const k = Math.min(1, (t - t0) / 1100), e = 1 - Math.pow(1 - k, 3);
+      el.textContent = usd.format(from + (to - from) * e);
+      if (k < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }
+
+
+  function buildCard(b) {
+    const card = make("article", null, "glass pad bot");
+    card.style.setProperty("--c", b.crew.color);
+    const top = make("div", null, "bot-top");
+    const face = make("div", null, "bot-face");
+    const slot = make("div", null, "face-slot");
+    const fx = make("div", null, "fx");
+    for (const c of ["spark", "spark", "spark", "cloud", "drop", "drop", "drop"]) fx.append(make("i", null, c));
+    const rank = make("span", "", "rank");
+    face.append(make("div", null, "aura"), slot, fx, crownSvg(), rank);
+    const info = make("div");
+    const eq = make("div", null, "bot-eq"), eqNum = make("span", "—"), ret = make("span");
+    eq.append(eqNum, document.createTextNode(" "), ret);
+    const mood = make("span", "", "mood");
+    const tag = make("div", null, "tags"), lvl = make("span", "Lv 1", "lvl");
+    tag.append(make("span", `type ${b.crew.type || "Bot"}`, "type"), lvl);
+    info.append(make("div", b.crew.name, "bot-name"), tag, make("div", b.crew.role, "bot-role"), eq, mood);
+    const hp = make("div", null, "hp"), hpFill = make("i"), hpTxt = make("span", "", "hp-txt");
+    const hpBar = make("div", null, "hp-bar"); hpBar.append(hpFill);
+    hp.append(make("span", "Leven", "hp-label"), hpBar, hpTxt);
+    top.append(face, info);
+    const how = make("p", null, "bot-how");
+    how.append(make("b", "Zo werkt " + b.crew.name), document.createTextNode(b.crew.how || b.description || ""));
+    const stats = make("div", null, "bot-stats"), statEls = [];
+    for (const l of ["trades", "traders", "max daling"]) { const d = make("div"), v = make("b", "—"); d.append(v, make("span", l)); stats.append(d); statEls.push(v); }
+    const holdHead = make("div", "", "bot-desc"), holds = make("div", null, "holds");
+    card.append(top, hp, how, stats, holdHead, holds);
+    return { card, slot, rank, eqNum, ret, mood, statEls, holdHead, holds, lvl, hp, hpFill, hpTxt, moodNow: null, sig: null };
+  }
+
+  function updateCard(ref, b, i) {
+    ref.card.style.order = i;
+    ref.card.classList.toggle("leader", i === 0);
+    ref.rank.textContent = String(i + 1);
+    if (b.mood !== ref.moodNow) { ref.slot.replaceChildren(botFace(b.name, b.crew.color, b.mood)); ref.card.dataset.mood = b.mood; ref.moodNow = b.mood; }
+    if (introDone) ref.eqNum.textContent = usd.format(b.live);
+    tone(ref.ret, b.ret).textContent = `(${pct.format(b.ret)})`;
+    ref.mood.textContent = b.killed ? "gestopt: noodrem" : b.halt ? "pauze tot morgen" : i === 0 ? "koploper" : b.mood === "up" ? "blij" : b.mood === "down" ? "baalt even" : "rustig";
+    ref.mood.style.color = b.mood === "up" ? "var(--up)" : b.mood === "down" ? "var(--down)" : "var(--ink-soft)";
+    // level = days in the race; life = how far the bot is from its emergency stop
+    const first = b.series && b.series.length ? new Date(b.series[0].t) : null;
+    ref.lvl.textContent = `Lv ${first ? Math.max(1, Math.floor((Date.now() - first) / 864e5) + 1) : 1}`;
+    if (b.peak_equity && b.kill_at) {
+      const drop = Math.max(0, 1 - b.live / Math.max(b.peak_equity, b.live));
+      const life = b.killed ? 0 : Math.max(0, Math.min(1, 1 - drop / b.kill_at));
+      ref.hp.hidden = false;
+      ref.hpFill.style.width = `${Math.round(life * 100)}%`;
+      ref.hpFill.style.background = life > 0.6 ? "var(--up)" : life > 0.3 ? "var(--warn)" : "var(--down)";
+      ref.hpTxt.textContent = b.killed ? "KO" : `${Math.round(life * 100)}/100`;
+      ref.hp.title = `Bij 0 stopt de bot voorgoed: dat is ${Math.round(b.kill_at * 100)}% onder zijn hoogste stand.`;
+    } else ref.hp.hidden = true;
+    const vals = [String(b.trades), b.following ? String(b.following) : "geen", b.max_drawdown ? `−${pct.format(b.max_drawdown).replace("+", "")}` : "0%"];
+    ref.statEls.forEach((el, k) => { el.textContent = vals[k]; });
+
+    const pos = b.positions.map((p) => { const m2 = mids[p.coin] ?? p.entry; return { ...p, notional: Math.abs(p.size) * m2, pnl: (m2 - p.entry) * p.size }; })
+      .sort((a, c) => c.notional - a.notional);
+    const shown = pos.slice(0, 8);
+    const sig = shown.map((p) => p.coin + (p.size > 0 ? "+" : "-")).join(",") + "|" + pos.length;
+    if (sig !== ref.sig) {
+      const fresh = ref.sig !== null;
+      ref.holds.replaceChildren(...shown.map((p) => {
+        const c = make("span", null, `coin ${p.size > 0 ? "long" : "short"}${fresh ? " new" : ""}`);
+        c.append(coinLogo(p.coin), document.createTextNode(p.coin + (p.why ? ` (${p.why})` : "") + " "), make("small"));
+        return c;
+      }));
+      if (pos.length > 8) ref.holds.append(make("span", `+${pos.length - 8} meer`, "coin more"));
+      ref.sig = sig;
+    }
+    shown.forEach((p, k) => {
+      const chip = ref.holds.children[k];
+      chip.title = `${p.size > 0 ? "Long" : "Short"} ${usd.format(p.notional)}${p.why ? " · " + p.why : ""}`;
+      tone(chip.querySelector("small"), p.pnl).textContent = signed(p.pnl);
+    });
+    ref.holdHead.textContent = pos.length ? `Zit nu op ${pos.length} ${pos.length === 1 ? "munt" : "munten"} (groene rand = long, rode rand = short):` : "Zit nu nergens op. Wacht op een nieuwe kans.";
+  }
+
+  function renderArena(rows) {
+    const arena = $("arena");
+    if (!lanes.size) arena.replaceChildren();
+    const rets = rows.map((r) => r.ret);
+    let lo = Math.min(0, ...rets), hi = Math.max(0, ...rets);
+    if (hi - lo < 0.002) { hi += 0.001; lo -= 0.001; }
+    const at = (v) => 8 + 80 * (v - lo) / (hi - lo);
+    arena.style.setProperty("--zero", `${at(0)}%`);
+    rows.forEach((b, i) => {
+      let ln = lanes.get(b.name);
+      if (!ln) {
+        const lane = make("div", null, "lane"); lane.style.setProperty("--c", b.crew.color);
+        const track = make("div", null, "track"), trail = make("div", null, "trail"), runner = make("div", null, "runner");
+        const slot = make("div", null, "slot"); runner.append(slot, crownSvg());
+        track.append(trail, runner);
+        const pctEl = make("div", "", "pct");
+        lane.append(make("div", b.crew.name, "who-name"), track, pctEl);
+        arena.append(lane);
+        ln = { lane, trail, runner, slot, pctEl, moodNow: null };
+        lanes.set(b.name, ln);
+        runner.style.left = `${at(0)}%`; trail.style.left = `${at(0)}%`; trail.style.width = "0%";
+      }
+      ln.lane.style.order = i;
+      ln.lane.classList.toggle("leader", i === 0);
+      if (b.mood !== ln.moodNow) { ln.slot.replaceChildren(botFace(b.name, b.crew.color, b.mood)); ln.moodNow = b.mood; }
+      tone(ln.pctEl, b.ret).textContent = pct.format(b.ret);
+      if (introDone) placeRunner(ln, at(b.ret), at(0));
+      ln.target = [at(b.ret), at(0)];
+    });
+  }
+  function placeRunner(ln, x, zero) {
+    ln.runner.style.left = `${x}%`;
+    ln.trail.style.left = `${Math.min(x, zero)}%`;
+    ln.trail.style.width = `${Math.abs(x - zero)}%`;
+  }
+
+  // the entrance plays once, the first time the Bots tab is actually on screen
+  function introBots() {
+    if (introDone || !lastRows.length || $("bots").hidden) return;
+    introDone = true;
+    lastRows.forEach((b, i) => {
+      const ref = cards.get(b.name);
+      ref.card.style.animationDelay = `${i * 70}ms`;
+      ref.card.classList.add("enter");
+      countUp(ref.eqNum, b.starting_balance, b.live);
+    });
+    requestAnimationFrame(() => requestAnimationFrame(() => lanes.forEach((ln) => ln.target && placeRunner(ln, ...ln.target))));
+  }
+
   function renderBots() {
     if (!bots) return;
     $("bots-updated").textContent = `bijgewerkt ${ago(bots.generated_at)}`;
-    const rows = bots.bots.map((b, i) => ({ ...b, crew: crewOf(b, i), live: botLiveEquity(b) })).sort((a, b) => b.live - a.live);
-    $("crew").replaceChildren(...rows.map((b, i) => {
-      const ret = b.live / b.starting_balance - 1;
-      const mood = b.killed ? "down" : ret > 0.001 ? "up" : ret < -0.001 ? "down" : "flat";
-      const card = make("article", null, "glass pad bot");
-      const top = make("div", null, "bot-top");
-      const face = make("div", null, "bot-face");
-      face.append(botFace(b.name, b.crew.color, mood), make("span", String(i + 1), "rank"));
-      const info = make("div");
-      const name = make("div", b.crew.name, "bot-name");
-      info.append(name, make("div", b.crew.role, "bot-role"));
-      const eq = make("div", `${usd.format(b.live)} `, "bot-eq");
-      const r = make("span", `(${pct.format(ret)})`); tone(r, ret); eq.append(r);
-      const moodTxt = b.killed ? "gestopt: noodrem" : b.halt ? "pauze tot morgen" : mood === "up" ? "blij" : mood === "down" ? "baalt even" : "rustig";
-      const m = make("span", moodTxt, "mood"); m.style.color = mood === "up" ? "var(--up)" : mood === "down" ? "var(--down)" : "var(--ink-soft)";
-      info.append(eq, m);
-      top.append(face, info);
-
-      const stats = make("div", null, "bot-stats");
-      for (const [v, l] of [[String(b.trades), "trades"], [String(b.following), "traders"], [b.max_drawdown ? `−${pct.format(b.max_drawdown).replace("+", "")}` : "0%", "max daling"]]) {
-        const d = make("div"); d.append(make("b", v), make("span", l)); stats.append(d);
-      }
-
-      const holds = make("div", null, "holds");
-      const pos = b.positions.map((p) => { const m2 = mids[p.coin] ?? p.entry; return { ...p, notional: Math.abs(p.size) * m2, pnl: (m2 - p.entry) * p.size }; })
-        .sort((a, c) => c.notional - a.notional);
-      for (const p of pos.slice(0, 8)) {
-        const c = make("span", null, `coin ${p.size > 0 ? "long" : "short"}`);
-        c.title = `${p.size > 0 ? "Long" : "Short"} ${usd.format(p.notional)}${p.why ? " · " + p.why : ""}`;
-        c.append(make("i"), document.createTextNode(p.coin + (p.why ? ` (${p.why})` : "") + " "));
-        const pl = make("small", signed(p.pnl)); tone(pl, p.pnl); c.append(pl);
-        holds.append(c);
-      }
-      if (pos.length > 8) holds.append(make("span", `+${pos.length - 8} meer`, "coin"));
-      const holdHead = make("div", pos.length ? `Zit nu op ${pos.length} ${pos.length === 1 ? "munt" : "munten"} (groen = long, rood = short):` : "Zit nu nergens op. Wacht op een nieuwe trade.", "bot-desc");
-
-      card.append(top, stats, holdHead, holds);
-      return card;
-    }));
+    const rows = bots.bots.map((b, i) => {
+      const live = botLiveEquity(b), ret = live / b.starting_balance - 1;
+      return { ...b, crew: crewOf(b, i), live, ret, mood: b.killed ? "down" : ret > 0.001 ? "up" : ret < -0.001 ? "down" : "flat" };
+    }).sort((a, b) => b.ret - a.ret);
+    lastRows = rows;
+    const crew = $("crew");
+    rows.forEach((b, i) => {
+      let ref = cards.get(b.name);
+      if (!ref) { ref = buildCard(b); cards.set(b.name, ref); crew.append(ref.card); }
+      updateCard(ref, b, i);
+    });
+    renderArena(rows);
+    introBots();
     if (!$("bots").hidden) drawBots();
   }
   function drawBots() {
