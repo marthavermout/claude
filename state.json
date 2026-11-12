@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 3.760740512385328,
-    "fees_paid": 0.8853371633992501,
+    "realized_pnl": 13.615120461689195,
+    "fees_paid": 0.88994052188685,
     "funding_paid": 0.34190030187345033,
     "positions": {
       "LIT": {
@@ -14,7 +14,7 @@
         "entry": 71.38977510000001
       },
       "INIT": {
-        "size": -181.0,
+        "size": -89.0,
         "entry": 0.2183050595359116
       },
       "MORPHO": {
@@ -209,12 +209,12 @@
     },
     "0x888e000c78b8f1aada5b3c99f880794907b76d77": {
       "starting_balance": 1000.0,
-      "realized_pnl": 44.53829491908809,
-      "fees_paid": 0.3395925180819,
+      "realized_pnl": 60.12428617767776,
+      "fees_paid": 0.3469979208663,
       "funding_paid": 5.457484749148099,
       "positions": {
         "INIT": {
-          "size": -842.0,
+          "size": -694.0,
           "entry": 0.2165029857472275
         },
         "kPEPE": {
