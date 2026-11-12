@@ -138,6 +138,19 @@ def cmd_compare(args) -> int:
     return 0
 
 
+def cmd_run_all(args) -> int:
+    from .fleet import run_fleet
+    bots = []
+    for spec in args.bot:
+        name, _, rest = spec.partition("=")
+        config, _, data_dir = rest.partition(":")
+        cfg = load_config(config)
+        cfg.data_dir = data_dir
+        bots.append((name, apply_overrides(cfg)))
+    run_fleet(bots, minutes=args.minutes, poll_seconds=args.poll, use_websocket=not args.no_websocket)
+    return 0
+
+
 def cmd_reset_kill(args) -> int:
     engine = Engine(_cfg(args))
     engine.risk.state.killed = False
@@ -187,6 +200,13 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--bot", action="append", required=True, metavar="NAME=CONFIG:DATADIR")
     p.add_argument("--out", required=True)
     p.set_defaults(func=cmd_compare)
+
+    p = sub.add_parser("run-all", help="run many bots in one process with shared data (fast)")
+    p.add_argument("--bot", action="append", required=True, metavar="NAME=CONFIG:DATADIR")
+    p.add_argument("--minutes", type=float, required=True)
+    p.add_argument("--poll", type=float, default=5.0, help="seconds between rounds (default 5)")
+    p.add_argument("--no-websocket", action="store_true", help="poll only")
+    p.set_defaults(func=cmd_run_all)
 
     sub.add_parser("reset-kill", help="resume after the drawdown kill switch").set_defaults(func=cmd_reset_kill)
 
