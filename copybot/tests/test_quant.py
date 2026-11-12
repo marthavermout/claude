@@ -117,3 +117,31 @@ class ImprovementsTest(unittest.TestCase):
         from copybot.patterns import Signal, reward_risk
         self.assertAlmostEqual(reward_risk(Signal("x", 1, 100, 98, 103)), 1.5)
         self.assertLess(reward_risk(Signal("x", -1, 100, 104, 98)), 1.5)
+
+
+class MiniBotTest(unittest.TestCase):
+    def test_mini_never_picks_its_own_traders(self):
+        import json, os
+        from copybot.config import apply_overrides
+        from copybot.tune import TuneRules, tune
+        a = "0x" + "a" * 40
+        with tempfile.TemporaryDirectory() as tmp:
+            json.dump({"leaders": [a]}, open(f"{tmp}/overrides.json", "w"))
+            cfg = apply_overrides(BotConfig(leaders=[], data_dir=f"{tmp}/bots/basis-mini", follow_bot="../.."))
+            picked = []
+            d = tune(cfg, lambda ex, n: picked.append(n) or ["0x" + "c" * 40], rules=TuneRules(target_leaders=8),
+                     now=datetime(2026, 11, 12, tzinfo=timezone.utc))
+            self.assertEqual(picked, [])
+            self.assertIsNone(d.change)
+
+    def test_bots_json_has_recent_trades(self):
+        from copybot.export import bot_summary
+        from tests.test_engine import FakeClient
+        with tempfile.TemporaryDirectory() as tmp:
+            cfg = BotConfig(leaders=["0x" + "a" * 40], starting_balance=50, fee_bps=0, slippage_bps=0, data_dir=tmp,
+                            copy_existing_positions=True, risk=RiskConfig(max_position_pct=1.0, min_trade_usd=1))
+            client = FakeClient(); client.leader = {"BTC": 0.4}
+            Engine(cfg, client=client).tick(datetime(2026, 11, 12, tzinfo=timezone.utc))
+            s = bot_summary("basis-mini", "x", cfg)
+            self.assertEqual(s["starting_balance"], 50)
+            self.assertEqual(s["recent_trades"][0]["coin"], "BTC")
