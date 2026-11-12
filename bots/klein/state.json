@@ -1,0 +1,210 @@
+{
+  "broker": {
+    "starting_balance": 100.0,
+    "realized_pnl": 0.0,
+    "fees_paid": 0.009349127701649997,
+    "funding_paid": 0.0,
+    "positions": {
+      "HYPE": {
+        "size": 0.29,
+        "entry": 71.64082529999999
+      }
+    }
+  },
+  "risk": {
+    "day": "2026-11-12",
+    "day_start_equity": 100.0,
+    "peak_equity": 100.0,
+    "killed": false,
+    "kill_reason": ""
+  },
+  "baselines": {
+    "0x999510ad3dd8c94a6659d6401d983137565283e3": {},
+    "0xd42350dfad9884113f21109b5a7a6736fb4d50c3": {},
+    "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
+      "HYPE": -1,
+      "LIT": -1
+    },
+    "0x329c787b163a730bd7900df2beb3ff4fe4670375": {},
+    "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
+      "DYDX": -1,
+      "SOL": -1,
+      "GMX": 1,
+      "WLD": -1,
+      "UNI": -1,
+      "TAO": -1,
+      "HYPE": -1,
+      "XPL": -1,
+      "ASTER": -1,
+      "LIT": -1,
+      "XMR": -1
+    },
+    "0x5a19bfe9c095c3bd188eca00a690b95200797aba": {
+      "PURR": -1,
+      "FARTCOIN": -1,
+      "ZEC": -1,
+      "USELESS": -1
+    },
+    "0x888e000c78b8f1aada5b3c99f880794907b76d77": {
+      "DYDX": -1,
+      "APE": -1,
+      "ARB": -1,
+      "kPEPE": -1,
+      "SNX": -1,
+      "WLD": -1,
+      "UNI": -1,
+      "DOT": -1,
+      "NEAR": -1,
+      "FIL": -1,
+      "ZETA": -1,
+      "STRK": -1,
+      "kFLOKI": -1,
+      "ZK": -1,
+      "RENDER": -1,
+      "POL": -1,
+      "SAND": -1,
+      "MOVE": -1,
+      "GRIFFAIN": -1,
+      "TRUMP": -1,
+      "MELANIA": -1,
+      "ANIME": -1,
+      "VVV": -1,
+      "BERA": -1,
+      "KAITO": -1,
+      "NIL": -1,
+      "WCT": -1,
+      "INIT": -1,
+      "XPL": -1,
+      "WLFI": -1,
+      "AVNT": -1,
+      "STBL": -1,
+      "ZEC": -1,
+      "MON": -1,
+      "MEGA": -1,
+      "ICP": -1,
+      "STABLE": -1,
+      "FOGO": -1,
+      "USELESS": -1
+    },
+    "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
+      "BTC": -1,
+      "DYDX": -1,
+      "JUP": -1,
+      "FARTCOIN": -1,
+      "APEX": -1,
+      "LIT": -1
+    }
+  },
+  "shadows": {
+    "0x999510ad3dd8c94a6659d6401d983137565283e3": {
+      "starting_balance": 100.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.011283429984749998,
+      "funding_paid": 0.0,
+      "positions": {
+        "HYPE": {
+          "size": 0.35,
+          "entry": 71.64082529999999
+        }
+      }
+    },
+    "0xd42350dfad9884113f21109b5a7a6736fb4d50c3": {
+      "starting_balance": 100.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.0,
+      "funding_paid": 0.0,
+      "positions": {}
+    },
+    "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
+      "starting_balance": 100.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.0137207641041,
+      "funding_paid": 0.0,
+      "positions": {
+        "CASHCAT": {
+          "size": 195.0,
+          "entry": 0.0533986776
+        },
+        "ETH": {
+          "size": 0.0098,
+          "entry": 2048.75967
+        }
+      }
+    },
+    "0x329c787b163a730bd7900df2beb3ff4fe4670375": {
+      "starting_balance": 100.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.0,
+      "funding_paid": 0.0,
+      "positions": {}
+    },
+    "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
+      "starting_balance": 100.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.027200177471249996,
+      "funding_paid": 0.0,
+      "positions": {
+        "ETH": {
+          "size": 0.0105,
+          "entry": 2048.75967
+        },
+        "MORPHO": {
+          "size": 7.0,
+          "entry": 2.00014995
+        },
+        "ZRO": {
+          "size": -16.0,
+          "entry": 1.55823829
+        }
+      }
+    },
+    "0x5a19bfe9c095c3bd188eca00a690b95200797aba": {
+      "starting_balance": 100.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.0,
+      "funding_paid": 0.0,
+      "positions": {}
+    },
+    "0x888e000c78b8f1aada5b3c99f880794907b76d77": {
+      "starting_balance": 100.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.0,
+      "funding_paid": 0.0,
+      "positions": {}
+    },
+    "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
+      "starting_balance": 100.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.01926592724376,
+      "funding_paid": 0.0,
+      "positions": {
+        "ETH": {
+          "size": -0.0087,
+          "entry": 2047.94033
+        },
+        "PUMP": {
+          "size": -7253.0,
+          "entry": 0.0034463106
+        }
+      }
+    }
+  },
+  "shadow_started": {
+    "0x999510ad3dd8c94a6659d6401d983137565283e3": "2026-11-12T10:46:35.663141+00:00",
+    "0xd42350dfad9884113f21109b5a7a6736fb4d50c3": "2026-11-12T10:46:35.663141+00:00",
+    "0xf83858e57d9f804f5ca1603bce82558119aeac7b": "2026-11-12T10:46:35.663141+00:00",
+    "0x329c787b163a730bd7900df2beb3ff4fe4670375": "2026-11-12T10:46:35.663141+00:00",
+    "0x643430283b19fa5bd70a1138b495c2b43523cdd5": "2026-11-12T10:46:35.663141+00:00",
+    "0x5a19bfe9c095c3bd188eca00a690b95200797aba": "2026-11-12T10:46:35.663141+00:00",
+    "0x888e000c78b8f1aada5b3c99f880794907b76d77": "2026-11-12T10:46:35.663141+00:00",
+    "0x011820f60d75a2b870ffe64a4764873e14bc8ede": "2026-11-12T10:46:35.663141+00:00"
+  },
+  "meta": {
+    "funding_hour": 498466
+  },
+  "pattern_trades": {},
+  "pattern_scanned": {},
+  "quant_sizes": {},
+  "funding_pos": {},
+  "quant_hour": 0
+}
