@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": -2.3086231974140827,
-    "fees_paid": 0.99879458461317,
+    "realized_pnl": -2.4794905071321844,
+    "fees_paid": 1.04669272102797,
     "funding_paid": -2.0933323464054965,
     "positions": {
       "CASHCAT": {
@@ -62,8 +62,8 @@
         "entry": 0.615363048
       },
       "BTC": {
-        "size": 0.00276,
-        "entry": 72045.48592608696
+        "size": 0.00172,
+        "entry": 72041.67726644294
       }
     }
   },
@@ -149,12 +149,12 @@
     },
     "0xe00f0d90bc976c311a7f22cbb728d8629ccd5394": {
       "starting_balance": 1000.0,
-      "realized_pnl": -2.3760101826988684,
-      "fees_paid": 0.7739976244262399,
+      "realized_pnl": -3.261841482613904,
+      "fees_paid": 0.9256435781684399,
       "funding_paid": 0.07007896058324431,
       "positions": {
         "HYPE": {
-          "size": 2.09,
+          "size": 0.84,
           "entry": 71.34710877673206
         },
         "kPEPE": {
@@ -164,10 +164,6 @@
         "USELESS": {
           "size": 87.0,
           "entry": 0.14035632213544671
-        },
-        "BTC": {
-          "size": 0.00345,
-          "entry": 72084.9141
         }
       }
     },
