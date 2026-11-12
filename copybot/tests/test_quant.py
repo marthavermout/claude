@@ -81,3 +81,39 @@ class QuantEngineTest(unittest.TestCase):
             self.assertEqual(e.broker.funding_paid, 0)       # first tick only notes the hour
             e.tick(t0.replace(hour=11))
             self.assertGreater(e.broker.funding_paid, 0)     # long pays positive funding
+
+
+class ImprovementsTest(unittest.TestCase):
+    def test_fee_drag_counts_open_profit(self):
+        """A bot that is up $50 on open positions with $1 of fees must not be flagged for fees."""
+        import csv
+        from copybot.review import build_review
+        with tempfile.TemporaryDirectory() as tmp:
+            with open(f"{tmp}/equity.csv", "w", newline="") as fh:
+                w = csv.writer(fh); w.writerow(["time", "equity", "positions", "btc", "halt"])
+                w.writerow(["2026-11-10T00:00:00+00:00", 1000, 0, 70000, ""])
+                w.writerow(["2026-11-11T00:00:00+00:00", 1050, 3, 70000, ""])
+            with open(f"{tmp}/trades.csv", "w", newline="") as fh:
+                w = csv.writer(fh); w.writerow(["time", "coin", "size", "price", "fee", "realized_pnl"])
+                w.writerow(["2026-11-10T01:00:00+00:00", "BTC", 0.01, 70000, 1.0, 0.4])
+            r = build_review(tmp)
+            self.assertLess(r.fee_drag, 0.05)
+
+    def test_follow_bot_mirrors_leaders(self):
+        import json, os
+        from copybot.config import apply_overrides
+        a, b = "0x" + "a" * 40, "0x" + "b" * 40
+        with tempfile.TemporaryDirectory() as tmp:
+            json.dump({"leaders": [a]}, open(f"{tmp}/overrides.json", "w"))
+            first = apply_overrides(BotConfig(leaders=[], data_dir=f"{tmp}/bots/klein", follow_bot="../.."))
+            self.assertEqual(first.leaders, [a])  # own folder does not exist yet
+            os.makedirs(f"{tmp}/bots/klein")
+            json.dump({"leaders": [b], "risk": {"max_leverage": 1.5}}, open(f"{tmp}/bots/klein/overrides.json", "w"))
+            cfg = apply_overrides(BotConfig(leaders=[], data_dir=f"{tmp}/bots/klein", follow_bot="../.."))
+            self.assertEqual(cfg.leaders, [a])
+            self.assertEqual(cfg.risk.max_leverage, 1.5)
+
+    def test_pattern_needs_enough_reward(self):
+        from copybot.patterns import Signal, reward_risk
+        self.assertAlmostEqual(reward_risk(Signal("x", 1, 100, 98, 103)), 1.5)
+        self.assertLess(reward_risk(Signal("x", -1, 100, 104, 98)), 1.5)

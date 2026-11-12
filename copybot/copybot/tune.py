@@ -27,7 +27,7 @@ class TuneRules:
     drop_leader_below: float = -0.08  # shadow return
     copy_gap_warn: float = 0.10  # we lag the trader's own result by >10 points
     min_trades_for_cost_rules: int = 20
-    max_fee_drag: float = 0.5  # fees > 50% of realized pnl
+    max_fee_drag: float = 0.5  # fees > 50% of the result before fees
     max_churn_ratio: float = 0.25
     min_trade_usd_step: float = 1.5
     min_trade_usd_cap: float = 100.0
@@ -79,7 +79,7 @@ def decide(review: Review, week: Review, cfg: BotConfig, ov: dict, rules: TuneRu
 
     costly = False
     if review.trades >= rules.min_trades_for_cost_rules:
-        if review.realized and review.fee_drag > rules.max_fee_drag:
+        if review.fee_drag > rules.max_fee_drag:
             costly = True
             d.mistakes.append(f"Kosten slokken {review.fee_drag:.0%} van het resultaat op.")
         if review.churn_ratio > rules.max_churn_ratio:

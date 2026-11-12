@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import os
 import tomllib
 from dataclasses import dataclass, field, fields
 from pathlib import Path
@@ -25,6 +26,7 @@ class BotConfig:
     strategy: str = "copy"  # "copy" (follow traders), "patterns", "trend" or "funding"
     pattern_coins: list[str] = field(default_factory=list)  # coins for patterns / trend / funding
     risk_per_trade: float = 0.01  # patterns: a stop-loss hit costs at most this share of equity
+    follow_bot: str = ""  # data dir (relative to ours) of a bot whose traders we mirror
     select_random: bool = False  # control group: pick active traders at random, ignoring past results
     risk: RiskConfig = field(default_factory=RiskConfig)
 
@@ -48,6 +50,7 @@ def load_config(path: str | Path) -> BotConfig:
         data_dir=str(bot.get("data_dir", "data")),
         target_leaders=int(bot.get("target_leaders", 3)),
         select_random=bool(bot.get("select_random", False)),
+        follow_bot=str(bot.get("follow_bot", "")),
         strategy=str(bot.get("strategy", "copy")),
         pattern_coins=[str(c) for c in bot.get("pattern_coins", [])],
         risk_per_trade=float(bot.get("risk_per_trade", 0.01)),
@@ -69,15 +72,21 @@ def apply_overrides(cfg: BotConfig) -> BotConfig:
     """The self-improvement loop stores its decisions in <data_dir>/overrides.json.
     They take precedence over the TOML file."""
     path = Path(cfg.data_dir) / OVERRIDES_FILE
-    if not path.exists():
-        return cfg
-    data = json.loads(path.read_text())
+    data = json.loads(path.read_text()) if path.exists() else {}
     if "leaders" in data:
         cfg.leaders = [a.lower() for a in data["leaders"]]
         validate_leaders(cfg.leaders)
     for key, value in data.get("risk", {}).items():
         if key in RISK_KEYS:
             setattr(cfg.risk, key, value)
+    if cfg.follow_bot:  # always the same traders as that bot, whatever our own file says
+        # normpath: works even when our own data dir does not exist yet (first run)
+        other = Path(os.path.normpath(os.path.join(cfg.data_dir, cfg.follow_bot))) / OVERRIDES_FILE
+        if other.exists():
+            leaders = json.loads(other.read_text()).get("leaders")
+            if leaders:
+                cfg.leaders = [a.lower() for a in leaders]
+                validate_leaders(cfg.leaders)
     return cfg
 
 
