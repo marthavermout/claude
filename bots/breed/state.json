@@ -398,7 +398,7 @@
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
       "realized_pnl": 8.136153706837261,
-      "fees_paid": 1.35081412749585,
+      "fees_paid": 1.3612525247578502,
       "funding_paid": -0.85835665908917,
       "positions": {
         "AERO": {
@@ -572,6 +572,10 @@
         "GOAT": {
           "size": -1050.0,
           "entry": 0.0123105374
+        },
+        "PAXG": {
+          "size": 0.006,
+          "entry": 3866.07306
         }
       }
     },
