@@ -23,7 +23,7 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.011259812087099998,
+      "fees_paid": 0.0157790532546,
       "funding_paid": -0.0006021108057199999,
       "positions": {
         "HYPE": {
@@ -33,6 +33,10 @@
         "LIT": {
           "size": -4.0,
           "entry": 3.1000298699999997
+        },
+        "ETH": {
+          "size": 0.005,
+          "entry": 2008.5516300000002
         }
       }
     },
