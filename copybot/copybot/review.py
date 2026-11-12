@@ -54,7 +54,7 @@ class Review:
     trades_per_day: float = 0.0
     fees: float = 0.0
     realized: float = 0.0
-    fee_drag: float = 0.0  # fees / |gross realized|, >1 means fees ate more than the edge
+    fee_drag: float = 0.0  # fees / |result before fees| (closed AND open trades); >1 = fees ate more than the edge
     churn_trades: int = 0  # trades reversing the previous trade on that coin within an hour
     halt_days: list[str] = field(default_factory=list)
     coin_pnl: dict[str, float] = field(default_factory=dict)
@@ -96,7 +96,8 @@ def build_review(data_dir: str | Path, active_leaders: list[str] | None = None, 
     r.trades_per_day = r.trades / (r.hours / 24) if r.hours >= 1 else float(r.trades)
     r.fees = sum(float(t["fee"]) for t in trades)
     r.realized = sum(float(t["realized_pnl"]) for t in trades)
-    r.fee_drag = r.fees / abs(r.realized) if r.realized else (float("inf") if r.fees else 0.0)
+    gross = r.end_equity - r.start_equity + r.fees  # result before fees, open positions included
+    r.fee_drag = r.fees / abs(gross) if abs(gross) > 1e-9 else (float("inf") if r.fees else 0.0)
 
     coin_pnl: dict[str, float] = defaultdict(float)
     last: dict[str, tuple[datetime, float]] = {}

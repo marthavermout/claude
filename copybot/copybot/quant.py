@@ -18,12 +18,13 @@ from __future__ import annotations
 import math
 
 # --- trend follower ---
-FAST_HOURS = 24
-SLOW_HOURS = 168
+FAST_HOURS = 48              # was 24 until 12 Nov 2026: the slower pair won in-sample AND on the exam part
+SLOW_HOURS = 336             # 14 days (was 7)
 VOL_HOURS = 168
 TARGET_DAILY_VOL = 0.03      # each coin sized as if it moved 3% a day...
 BASE_WEIGHT = 0.05           # ...at 5% of equity (halved after the first backtest showed a 32% drawdown, above the 20% kill switch); wilder coins get less
 REBALANCE_BAND = 0.25        # only resize when the target differs 25%+ (saves fees)
+TREND_DEADBAND = 0.0         # stay out while fast and slow average are closer than this (0 = always in)
 
 # --- funding earner ---
 HIGH_FUNDING = 0.0000375     # per hour: 3x Hyperliquid's base rate (~33%/year)
@@ -51,8 +52,19 @@ def trend_target(closes: list[float], equity: float, max_position_pct: float) ->
     daily = hourly * math.sqrt(24)
     if daily <= 0:
         return 0.0
+    if abs(fast / slow - 1) < TREND_DEADBAND:
+        return 0.0
     size = min(equity * BASE_WEIGHT * TARGET_DAILY_VOL / daily, equity * max_position_pct)
     return size if fast > slow else -size
+
+
+def trend_side(closes: list[float], fast: int = 24, slow: int = 168) -> int:
+    """+1 when the 24h average is above the 7-day average, -1 when below, 0 without enough data.
+    (Used by the funding bot; kept at 24h/7d, the setting it was tested with.)"""
+    if len(closes) < slow + 2:
+        return 0
+    window = closes[-slow * 3:]
+    return 1 if ema_last(window, fast) > ema_last(window, slow) else -1
 
 
 def keep_or_resize(current: float, target: float) -> float:
@@ -65,7 +77,8 @@ def keep_or_resize(current: float, target: float) -> float:
 
 
 def funding_targets(funding: dict[str, float], prices: dict[str, float], open_pos: dict[str, dict],
-                    equity: float) -> tuple[dict[str, float], dict[str, dict], list[tuple[str, str]]]:
+                    equity: float, trend: dict[str, int] | None = None,
+                    ) -> tuple[dict[str, float], dict[str, dict], list[tuple[str, str]]]:
     """Decide funding positions for this hour.
 
     funding: coin -> current hourly rate (positive = longs pay shorts)
@@ -86,6 +99,8 @@ def funding_targets(funding: dict[str, float], prices: dict[str, float], open_po
             del pos[coin]
     candidates = sorted((c for c, r in funding.items() if abs(r) >= HIGH_FUNDING and c not in pos and c in prices),
                         key=lambda c: -abs(funding[c]))
+    if trend is not None:  # only collect funding on the side the price trend agrees with
+        candidates = [c for c in candidates if trend.get(c, 0) == (-1 if funding[c] > 0 else 1)]
     for coin in candidates[:max(0, MAX_FUNDING_POSITIONS - len(pos))]:
         side = -1 if funding[coin] > 0 else 1
         pos[coin] = {"side": side, "entry": prices[coin], "notional": equity * FUNDING_WEIGHT}
@@ -94,7 +109,8 @@ def funding_targets(funding: dict[str, float], prices: dict[str, float], open_po
 
 
 def simulate(candles: dict[str, list[list]], funding: dict[str, list[list]], strategy: str, start: int, end: int,
-             equity: float = 1000.0, cost_bps: float = 6.5, max_position_pct: float = 0.25, max_leverage: float = 2.0) -> dict:
+             equity: float = 1000.0, cost_bps: float = 6.5, max_position_pct: float = 0.25, max_leverage: float = 2.0,
+             funding_with_trend: bool = True) -> dict:
     """Hour-by-hour portfolio backtest between hour indexes [start, end) on aligned hourly data.
     Price PnL, funding payments and trading costs (fee + slippage) are all included."""
     coins = [c for c in candles if len(candles[c]) >= end]
@@ -115,7 +131,8 @@ def simulate(candles: dict[str, list[list]], funding: dict[str, list[list]], str
             targets = {c: keep_or_resize(pos.get(c, 0.0), trend_target([x[4] for x in candles[c][max(0, i - 600):i + 1]], eq, max_position_pct))
                        for c in coins}
         elif strategy == "funding":
-            targets, fstate, _ = funding_targets(rates, prices, fstate, eq)
+            tr = {c: trend_side([x[4] for x in candles[c][max(0, i - 600):i + 1]]) for c in rates} if funding_with_trend else None
+            targets, fstate, _ = funding_targets(rates, prices, fstate, eq, tr)
         elif strategy == "hold_btc":
             targets = {"BTC": equity} if i == start else dict(pos)
         else:

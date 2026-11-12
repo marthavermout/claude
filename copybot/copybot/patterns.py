@@ -18,6 +18,7 @@ TOL = 0.006            # two prices count as "the same level" within 0.6%
 MIN_HEIGHT = 0.008     # a pattern must be at least 0.8% tall
 MAX_BARS_OPEN = 96     # close a trade after 24h (15m candles) if neither SL nor TP was hit
 SL_BUFFER = 0.002      # stop a little beyond the pattern's extreme
+MIN_REWARD_RISK = 1.5  # skip patterns whose take-profit is less than 1.5x the stop-loss distance
 
 
 @dataclass
@@ -208,7 +209,14 @@ class PatternTrade:
     size: float = 0.0  # signed coin amount (live bot)
 
 
-def exit_reason(trade: PatternTrade, high: float, low: float, bars_open: int) -> tuple[str, float] | None:
+def reward_risk(sig: Signal) -> float:
+    """How much the take-profit can win for every dollar the stop-loss can lose."""
+    risk = abs(sig.entry - sig.sl)
+    return abs(sig.tp - sig.entry) / risk if risk > 0 else 0.0
+
+
+def exit_reason(trade: PatternTrade, high: float, low: float, bars_open: int,
+                max_bars_open: int | None = None) -> tuple[str, float] | None:
     """Did this candle (or price range) hit SL or TP? SL is checked first (conservative)."""
     if trade.side > 0:
         if low <= trade.sl:
@@ -220,7 +228,7 @@ def exit_reason(trade: PatternTrade, high: float, low: float, bars_open: int) ->
             return "stop-loss", trade.sl
         if low <= trade.tp:
             return "take-profit", trade.tp
-    if bars_open >= MAX_BARS_OPEN:
+    if bars_open >= (MAX_BARS_OPEN if max_bars_open is None else max_bars_open):
         return "time", None  # caller uses the close
     return None
 
@@ -256,7 +264,8 @@ class BacktestResult:
 
 def backtest(candles_by_coin: dict[str, list[Candle]], equity: float = 1000.0, risk_per_trade: float = 0.01,
              max_position_pct: float = 0.25, fee_bps: float = 4.5, slippage_bps: float = 2.0,
-             trend_filter: bool = True) -> BacktestResult:
+             trend_filter: bool = True, min_rr: float = MIN_REWARD_RISK, cooldown_bars: int = 0,
+             max_bars_open: int | None = None) -> BacktestResult:
     """Walk forward candle by candle per coin; at most one open trade per coin.
     Each trade risks `risk_per_trade` of the starting equity (no compounding: keeps coins comparable)."""
     cost = (fee_bps + slippage_bps) / 10_000
@@ -265,14 +274,17 @@ def backtest(candles_by_coin: dict[str, list[Candle]], equity: float = 1000.0, r
         open_t: PatternTrade | None = None
         notional = 0.0
         open_i = 0
+        blocked_until = 0
         tracker = PivotTracker()
         trend = ema([c.c for c in cs], TREND_EMA) if cs else []
         for j in range(1, len(cs)):
             pv = tracker.update(cs, j)
             if open_t:
-                hit = exit_reason(open_t, cs[j].h, cs[j].l, j - open_i)
+                hit = exit_reason(open_t, cs[j].h, cs[j].l, j - open_i, max_bars_open)
                 if hit:
                     reason, px = hit
+                    if reason == "stop-loss":
+                        blocked_until = j + cooldown_bars
                     px = cs[j].c if px is None else px
                     ret = open_t.side * (px - open_t.entry) / open_t.entry - 2 * cost
                     res.trades.append({"coin": coin, "pattern": open_t.pattern, "side": open_t.side, "reason": reason,
@@ -282,6 +294,8 @@ def backtest(candles_by_coin: dict[str, list[Candle]], equity: float = 1000.0, r
             sig = detect(cs, j, pv)
             if trend_filter:
                 sig = with_trend(sig, cs[j].c, trend[j])
+            if sig and (j < blocked_until or reward_risk(sig) < min_rr):
+                sig = None
             if sig:
                 notional = risk_notional(equity, sig.entry, sig.sl, risk_per_trade, equity * max_position_pct)
                 if notional > 0:
@@ -317,4 +331,7 @@ def scan(candles: list[Candle]) -> Signal | None:
         return None
     j = len(candles) - 1
     trend = ema([c.c for c in candles], TREND_EMA)[j]
-    return with_trend(detect(candles, j), candles[j].c, trend)
+    sig = with_trend(detect(candles, j), candles[j].c, trend)
+    if sig and reward_risk(sig) < MIN_REWARD_RISK:
+        return None
+    return sig

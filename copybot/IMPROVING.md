@@ -21,7 +21,7 @@ could be overfit). You may still propose a bug fix or a reliability fix with a u
 is nothing like that, stop and report "not enough data yet" with the current numbers.
 
 ## 1b. Compare the bots
-Nine paper bots run side by side on the same market (`basis` = `config.ci.toml`, the others in
+Ten paper bots run side by side on the same market (`basis` = `config.ci.toml`, the others in
 `bots/*.toml`, data in `/tmp/botdata/bots/<name>/`, summary in `/tmp/botdata/bots.json`).
 Run `review` for each and compare return, max drawdown, fees and number of trades.
 - `patronen` (Pia) does not copy anyone: it trades chart patterns (`copybot/patterns.py`) with a trend
@@ -32,6 +32,17 @@ Run `review` for each and compare return, max drawdown, fees and number of trade
   Tom +11.1% / -0.6% (max drawdown 17% / 11%, BTC -1.5% / -7.0%); Fien -9.8% / -13.3% (funding earned, but
   unhedged price moves and costs were larger). `quant.simulate` replays hourly data to test changes.
 - Since 11 Nov 2026 every bot pays/receives hourly funding like a real account (before that it was ignored).
+- Review of all bots on 12 Nov 2026 (user request). Applied, each tested on first 70% / last 30%:
+  Tom slower trend 48h/14d (+11.1%/-0.6% -> +18.1%/+5.4%, lower drawdown); Fien only with the trend
+  (-9.8%/-13.3% -> -1.3%/-0.5%, still no profit); Pia needs take-profit >= 1.5x stop-loss (52 days of
+  15m candles: -$255/-$87 -> -$153/-$27, still a loss in every variant: no proven edge). Rejected: Pia on
+  1h candles (sign flips between periods), 20% rebalance band for copy bots, Fien with a higher threshold.
+  Copy bots were NOT changed: only ~2 days of data.
+- `klein` (Mini) is Bas with $100 and the same traders (`follow_bot`). Replay showed $100 makes 3 trades
+  where $1000 makes 29, because of the $10 minimum order. The final verdict for ~EUR 100 real money must
+  use Mini's result, not the $1000 bots.
+- The "fees eat X% of the result" check now compares fees with the whole result (open positions
+  included). Before, it only used closed trades and flagged Alex at 219% while he was up 5%.
 - `random` (Rik) is the **control group**: traders picked at random, not on past results. It answers
   "skill or luck?". A bot only counts as better when it beats **both Rik and holding BTC**.
 - Only call a winner after **7+ days** and **30+ closed trades** per bot, and when the gap is larger

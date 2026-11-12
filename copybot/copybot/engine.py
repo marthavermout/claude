@@ -292,7 +292,17 @@ class Engine:
         if hour != self.quant_hour and ctxs:
             rates = {c: ctxs[c]["funding"] for c in self.cfg.pattern_coins if c in ctxs}
             prices = {c: mids[c] for c in rates if c in mids}
-            _, pos, events = quant.funding_targets(rates, prices, self.funding_pos, equity)
+            # only collect funding where the price trend agrees (tested: loss -9.8%/-13.3% -> -1.3%/-0.5%)
+            trend: dict[str, int] = {}
+            for coin, rate in rates.items():
+                if abs(rate) < quant.HIGH_FUNDING or coin in self.funding_pos or coin not in prices:
+                    continue
+                try:
+                    closes = [c.c for c in parse_candles(self.client.candles(coin, "1h", 600)) if c.t < hour * 3_600_000]
+                    trend[coin] = quant.trend_side(closes)
+                except (ApiError, KeyError, ValueError) as exc:
+                    log.warning("candles for %s unavailable: %s", coin, exc)
+            _, pos, events = quant.funding_targets(rates, prices, self.funding_pos, equity, trend)
             for coin, p in pos.items():
                 p.setdefault("size", p["side"] * p["notional"] / p["entry"])
             for coin, reason in events:
