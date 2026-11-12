@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 18.619768318570898,
-    "fees_paid": 1.2464394424326006,
+    "fees_paid": 1.2509762961803406,
     "funding_paid": 0.041467461474858885,
     "positions": {
       "APEX": {
@@ -22,8 +22,8 @@
         "entry": 0.6313871250689127
       },
       "FARTCOIN": {
-        "size": -482.6,
-        "entry": 0.114567082
+        "size": -574.8,
+        "entry": 0.11372994257202504
       },
       "GMX": {
         "size": 2.12,
@@ -299,12 +299,12 @@
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
       "realized_pnl": -3.451025740212994,
-      "fees_paid": 0.9459964803638701,
+      "fees_paid": 0.9548023168442701,
       "funding_paid": -0.3187690804366694,
       "positions": {
         "APEX": {
-          "size": -1118.0,
-          "entry": 0.18362326799999998
+          "size": -1225.0,
+          "entry": 0.18355864419265305
         },
         "BTC": {
           "size": -0.00032,
