@@ -136,9 +136,14 @@
     "0xd738f8f8f68511eb644a31d8b23d0b20baa4854b": {
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.0,
+      "fees_paid": 0.0055036690137,
       "funding_paid": 0.0,
-      "positions": {}
+      "positions": {
+        "BTC": {
+          "size": 0.00017,
+          "entry": 71943.3858
+        }
+      }
     }
   },
   "shadow_started": {

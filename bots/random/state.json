@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": -0.16407529108506402,
-    "fees_paid": 0.8377056840841198,
+    "realized_pnl": -1.1071607097350344,
+    "fees_paid": 0.9350250293678399,
     "funding_paid": -1.8003129415309234,
     "positions": {
       "CASHCAT": {
@@ -30,7 +30,7 @@
         "entry": 0.143438682
       },
       "SKY": {
-        "size": 1835.0,
+        "size": 1530.0,
         "entry": 0.059236771415803816
       },
       "SYRUP": {
@@ -38,15 +38,15 @@
         "entry": 0.13308767874951075
       },
       "TIA": {
-        "size": 294.0,
+        "size": 259.0,
         "entry": 0.4148844500938776
       },
       "VVV": {
-        "size": 4.19,
+        "size": 3.62,
         "entry": 19.037220763961813
       },
       "XPL": {
-        "size": 4837.0,
+        "size": 4269.0,
         "entry": 0.05134686302057369
       },
       "kPEPE": {
@@ -54,12 +54,16 @@
         "entry": 0.0052570512000000005
       },
       "XMR": {
-        "size": -0.28,
+        "size": -0.236,
         "entry": 576.539669
       },
       "ETHFI": {
         "size": 66.5,
         "entry": 0.615363048
+      },
+      "BTC": {
+        "size": 0.0017,
+        "entry": 72020.9013
       }
     }
   },
@@ -93,8 +97,8 @@
   "shadows": {
     "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da": {
       "starting_balance": 1000.0,
-      "realized_pnl": -0.09093632958981804,
-      "fees_paid": 0.8213000973476401,
+      "realized_pnl": -0.5389980090436615,
+      "fees_paid": 0.82706753412954,
       "funding_paid": 0.36552680105419905,
       "positions": {
         "CASHCAT": {
@@ -102,7 +106,7 @@
           "entry": 0.05791850916333333
         },
         "CHIP": {
-          "size": 7020.0,
+          "size": 6609.0,
           "entry": 0.032273936402564096
         },
         "NIL": {
@@ -209,9 +213,14 @@
     "0xd738f8f8f68511eb644a31d8b23d0b20baa4854b": {
       "starting_balance": 1000.0,
       "realized_pnl": 1.7463552839999985,
-      "fees_paid": 0.226000444788,
+      "fees_paid": 0.3387851762238,
       "funding_paid": 0.0170678644576236,
-      "positions": {}
+      "positions": {
+        "BTC": {
+          "size": 0.00348,
+          "entry": 72020.9013
+        }
+      }
     }
   },
   "shadow_started": {

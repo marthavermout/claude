@@ -172,13 +172,11 @@
       "SKR": -1,
       "CHIP": -1,
       "GRAM": 1,
-      "PONS": -1,
-      "USELESS": -1
+      "PONS": -1
     },
     "0xdbbb9b4e361e1e1b6b4c640914ed4e4a11896df9": {
       "ETH": -1,
       "ENA": 1,
-      "HYPE": -1,
       "VVV": -1,
       "ZEC": -1
     },
@@ -234,9 +232,14 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.0,
+      "fees_paid": 0.004616053276050001,
       "funding_paid": 0.0,
-      "positions": {}
+      "positions": {
+        "ETH": {
+          "size": 0.0051,
+          "entry": 2011.3521899999998
+        }
+      }
     },
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 50.0,
@@ -323,12 +326,16 @@
     "0xdbbb9b4e361e1e1b6b4c640914ed4e4a11896df9": {
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.0056256704091,
+      "fees_paid": 0.011372685776099999,
       "funding_paid": 0.00031247475,
       "positions": {
         "PUMP": {
           "size": 3710.0,
           "entry": 0.0033696738
+        },
+        "HYPE": {
+          "size": -0.18,
+          "entry": 70.950807
         }
       }
     },
