@@ -78,7 +78,7 @@
   "risk": {
     "day": "2026-11-12",
     "day_start_equity": 1069.6902267819933,
-    "peak_equity": 1069.9983038172468,
+    "peak_equity": 1075.4029888172468,
     "killed": false,
     "kill_reason": ""
   },
@@ -339,12 +339,12 @@
     },
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
-      "realized_pnl": -0.8123277926889947,
-      "fees_paid": 0.38701804520115,
+      "realized_pnl": -0.9397968325517592,
+      "fees_paid": 0.3915282823182,
       "funding_paid": 0.021475676260277795,
       "positions": {
         "ETH": {
-          "size": -0.0928,
+          "size": -0.0879,
           "entry": 2019.4449202320889
         },
         "PUMP": {
@@ -407,7 +407,7 @@
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
       "realized_pnl": 2.434732621981437,
-      "fees_paid": 1.2179814072433197,
+      "fees_paid": 1.2237981361648198,
       "funding_paid": -0.4363487670087999,
       "positions": {
         "AERO": {
@@ -577,13 +577,17 @@
         "DYDX": {
           "size": -125.8,
           "entry": 0.090041988
+        },
+        "GOAT": {
+          "size": -1050.0,
+          "entry": 0.0123105374
         }
       }
     },
     "0xdbbb9b4e361e1e1b6b4c640914ed4e4a11896df9": {
       "starting_balance": 1000.0,
       "realized_pnl": -0.039426726526652606,
-      "fees_paid": 0.39952348772607005,
+      "fees_paid": 0.40402926310095005,
       "funding_paid": -0.10818960142412042,
       "positions": {
         "HYPE": {
@@ -591,8 +595,8 @@
           "entry": 70.9743023
         },
         "PUMP": {
-          "size": 70942.0,
-          "entry": 0.0033846768
+          "size": 73870.0,
+          "entry": 0.0033860643794774606
         },
         "ZEC": {
           "size": -0.25,

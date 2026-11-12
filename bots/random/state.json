@@ -138,12 +138,12 @@
     "0xfb47779fb0f59750fc714ba61a7859b059bbd3e6": {
       "starting_balance": 1000.0,
       "realized_pnl": 2.7461606956710023,
-      "fees_paid": 0.26552270838959996,
+      "fees_paid": 0.27011376816794996,
       "funding_paid": 0.049500410384462006,
       "positions": {
         "NEAR": {
-          "size": 63.0,
-          "entry": 3.5766919410741433
+          "size": 65.9,
+          "entry": 3.5741114924229294
         },
         "VVV": {
           "size": 12.7,

@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 4.108930367999964,
-    "fees_paid": 0.6382117676058301,
+    "fees_paid": 0.64300651471458,
     "funding_paid": 0.441142110741896,
     "positions": {
       "LIT": {
@@ -10,8 +10,8 @@
         "entry": 3.4554721006666664
       },
       "HYPE": {
-        "size": -3.48,
-        "entry": 71.7001571
+        "size": -3.63,
+        "entry": 71.67260062892562
       },
       "INIT": {
         "size": -181.0,
@@ -58,7 +58,7 @@
   "risk": {
     "day": "2026-11-12",
     "day_start_equity": 1030.4027239373224,
-    "peak_equity": 1030.4027239373224,
+    "peak_equity": 1031.5492558097435,
     "killed": false,
     "kill_reason": ""
   },
@@ -246,12 +246,12 @@
     },
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
-      "realized_pnl": -0.8527953322155328,
-      "fees_paid": 0.38702874737690995,
+      "realized_pnl": -0.9905587406433836,
+      "fees_paid": 0.39153898449395996,
       "funding_paid": 0.014268395608464495,
       "positions": {
         "ETH": {
-          "size": -0.0928,
+          "size": -0.0879,
           "entry": 2017.3440286881937
         },
         "PUMP": {

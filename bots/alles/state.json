@@ -122,7 +122,7 @@
   "risk": {
     "day": "2026-11-12",
     "day_start_equity": 1047.1947039653935,
-    "peak_equity": 1052.5903571411898,
+    "peak_equity": 1056.5722811411897,
     "killed": false,
     "kill_reason": ""
   },
@@ -311,7 +311,7 @@
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
       "realized_pnl": -5.94047089324379,
-      "fees_paid": 0.83298073790718,
+      "fees_paid": 0.83882488884318,
       "funding_paid": -0.14754467038064778,
       "positions": {
         "APEX": {
@@ -339,8 +339,8 @@
           "entry": 0.251474695
         },
         "LIT": {
-          "size": -74.0,
-          "entry": 3.34816141143185
+          "size": -78.0,
+          "entry": 3.3429608528968835
         },
         "PUMP": {
           "size": -72594.0,
@@ -378,12 +378,12 @@
     "0x7dacca323e44f168494c779bb5e7483c468ef410": {
       "starting_balance": 1000.0,
       "realized_pnl": -0.3235215479999985,
-      "fees_paid": 0.11710777407930001,
+      "fees_paid": 0.12189334302405,
       "funding_paid": -0.049133839000000006,
       "positions": {
         "HYPE": {
-          "size": -3.38,
-          "entry": 71.0152941
+          "size": -3.53,
+          "entry": 71.01028093852692
         }
       }
     }

@@ -62,7 +62,7 @@
   "risk": {
     "day": "2026-11-12",
     "day_start_equity": 1057.2918628423333,
-    "peak_equity": 1057.2918628423333,
+    "peak_equity": 1059.4019295007022,
     "killed": false,
     "kill_reason": ""
   },
@@ -245,12 +245,12 @@
     },
     "0xd10e2b1b66001bd4086d61e43e836ab9c168fd9a": {
       "starting_balance": 1000.0,
-      "realized_pnl": -3.7885500991250614,
-      "fees_paid": 0.37781871210629986,
+      "realized_pnl": -3.953355353038721,
+      "fees_paid": 0.38244231480077984,
       "funding_paid": 0.06280505744128419,
       "positions": {
         "ETHFI": {
-          "size": 454.9,
+          "size": 438.3,
           "entry": 0.6288842113441964
         }
       }
