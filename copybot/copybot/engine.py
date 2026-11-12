@@ -48,6 +48,10 @@ class Engine:
         self.risk = RiskManager(cfg.risk)
         self._decimals: dict[str, int] | None = None
         self.record_replay = True
+        # With fast polling, write history rows (equity, leaders, replay) at most this often.
+        # Trades are always written. 0 = every round (single-bot runs and tests).
+        self.log_every_s = 0.0
+        self._last_log: datetime | None = None
         self._replay: list[dict] = []
         self._load()
 
@@ -162,7 +166,8 @@ class Engine:
                              snap.address[:10], coin, self.cfg.join_within_pct * 100)
             snaps.append(snap)
 
-        if self.record_replay:
+        log_now = self._last_log is None or (now - self._last_log).total_seconds() >= self.log_every_s
+        if self.record_replay and log_now:
             coins = {"BTC"} | set(self.broker.positions)
             for snap in raw_snaps:
                 coins |= set(snap.positions)
@@ -186,8 +191,9 @@ class Engine:
             for f in self._rebalance(shadow, s_targets, mids):
                 self._append_csv("shadow_trades.csv", ["time", "leader"] + TRADE_HEADER[1:],
                                  [ts, snap.address, f.coin, f.size, f.price, f.fee, f.realized])
-            self._append_csv("leaders.csv", ["time", "leader", "leader_equity", "shadow_equity"],
-                             [ts, snap.address, round(raw.equity, 2), round(shadow.equity(mids), 4)])
+            if log_now:
+                self._append_csv("leaders.csv", ["time", "leader", "leader_equity", "shadow_equity"],
+                                 [ts, snap.address, round(raw.equity, 2), round(shadow.equity(mids), 4)])
 
         # funding data is only needed once per hour (settlement, and the funding bot's decision)
         hour = int(now.timestamp() // 3600)
@@ -220,9 +226,12 @@ class Engine:
             self._append_csv("trades.csv", TRADE_HEADER, [ts, f.coin, f.size, f.price, f.fee, f.realized])
 
         equity = self.broker.equity(mids)
-        self._append_csv("equity.csv", ["time", "equity", "positions", "btc", "halt"],
-                         [ts, round(equity, 4), len(self.broker.positions), mids.get("BTC", ""), halt or ""])
-        self.save()
+        if log_now or fills:
+            self._append_csv("equity.csv", ["time", "equity", "positions", "btc", "halt"],
+                             [ts, round(equity, 4), len(self.broker.positions), mids.get("BTC", ""), halt or ""])
+            self._last_log = now
+        if log_now or fills or halt:
+            self.save()
         return fills
 
     # ---------- funding payments (all bots) ----------

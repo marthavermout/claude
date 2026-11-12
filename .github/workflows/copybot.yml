@@ -35,7 +35,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install
-        run: pip install -r copybot/requirements.txt
+        run: pip install -r copybot/requirements.txt websockets
 
       - name: Load bot memory (copybot-data branch)
         run: |
@@ -73,13 +73,12 @@ jobs:
             cd ..
           }
           save
+          # all bots in ONE process: they share the market data, look every 5 s, and are woken
+          # within ~1 s by a websocket when one of the most active traders trades
+          bots="--bot basis=config.ci.toml:../botdata"
+          for f in copybot/bots/*.toml; do n=$(basename "$f" .toml); bots="$bots --bot $n=bots/$n.toml:../botdata/bots/$n"; done
           for i in 1 2 3 4 5; do
-            (cd copybot && python -m copybot -c config.ci.toml -d ../botdata run --minutes 10) &
-            for f in copybot/bots/*.toml; do
-              n=$(basename "$f" .toml)
-              (cd copybot && python -m copybot -c "bots/$n.toml" -d "../botdata/bots/$n" run --minutes 10 > "/tmp/bot-$n.log" 2>&1) &
-            done
-            wait || true
+            (cd copybot && python -m copybot run-all $bots --minutes 10 --poll 5) || true
             save
           done
 

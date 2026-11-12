@@ -43,6 +43,11 @@ Run `review` for each and compare return, max drawdown, fees and number of trade
   (`follow_bot`) and never pick their own. A replay showed $50 makes 2-4 trades where $1000 makes 30-90,
   because of the $10 minimum order. The final verdict on starting with a small real amount must use the
   minis' results, not the $1000 bots.
+- Since 12 Nov 2026 all bots run in one process (`copybot run-all`, `copybot/fleet.py`) on a shared, cached
+  client: each trader is fetched once per round for every bot, rounds are every 5 s (was 30-60 s per bot),
+  and a websocket on the 10 most active followed traders wakes the bots ~0.4 s after they trade (10 is
+  Hyperliquid's per-connection limit). Budget measured live: ~310 requests/min. History rows (equity,
+  leaders, replay) are written at most every 30 s; trades are always written.
 - The "fees eat X% of the result" check now compares fees with the whole result (open positions
   included). Before, it only used closed trades and flagged Alex at 219% while he was up 5%.
 - `random` (Rik) is the **control group**: traders picked at random, not on past results. It answers
