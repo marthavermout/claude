@@ -98,7 +98,7 @@
     "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da": {
       "starting_balance": 1000.0,
       "realized_pnl": -0.5389980090436615,
-      "fees_paid": 0.82706753412954,
+      "fees_paid": 0.83166111171135,
       "funding_paid": 0.37938183341699744,
       "positions": {
         "CASHCAT": {
@@ -106,8 +106,8 @@
           "entry": 0.05791850916333333
         },
         "CHIP": {
-          "size": 6609.0,
-          "entry": 0.032273936402564096
+          "size": 6938.0,
+          "entry": 0.032214816354330655
         },
         "NIL": {
           "size": 3418.0,
