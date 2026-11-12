@@ -185,7 +185,6 @@
     },
     "0xa4247526997374fdab0bad6f63c9f3daca8f22d4": {},
     "0x94dac1facdc4afd2614c3119447187b4143bc449": {
-      "AVAX": 1,
       "WLD": -1,
       "NEAR": -1,
       "ETHFI": -1,
@@ -244,7 +243,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.0101918651778,
-      "funding_paid": 0.0,
+      "funding_paid": 0.000226320948248,
       "positions": {
         "ETH": {
           "size": 0.005,
@@ -274,7 +273,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.0056234205909000004,
-      "funding_paid": 0.0,
+      "funding_paid": -0.00015609825,
       "positions": {
         "PUMP": {
           "size": -3710.0,
@@ -286,7 +285,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.0056243565963899995,
-      "funding_paid": 0.0,
+      "funding_paid": 0.0001552315625,
       "positions": {
         "ETHFI": {
           "size": 20.3,
@@ -326,7 +325,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.0056256704091,
-      "funding_paid": 0.0,
+      "funding_paid": 0.00015609825,
       "positions": {
         "PUMP": {
           "size": 3710.0,
@@ -359,7 +358,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.005682030678900001,
-      "funding_paid": 0.0,
+      "funding_paid": 0.00015833025,
       "positions": {
         "HYPE": {
           "size": 0.18,
@@ -386,7 +385,7 @@
     "0x03136324349c003f3498130f56f4526bf5720ab1": "2026-11-12T12:28:05.516665+00:00"
   },
   "meta": {
-    "funding_hour": 498468
+    "funding_hour": 498469
   },
   "pattern_trades": {},
   "pattern_scanned": {},
