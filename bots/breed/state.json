@@ -605,8 +605,8 @@
     },
     "0x94dac1facdc4afd2614c3119447187b4143bc449": {
       "starting_balance": 1000.0,
-      "realized_pnl": 0.0,
-      "fees_paid": 0.029198237584320004,
+      "realized_pnl": 0.9742181400000001,
+      "fees_paid": 0.033908586965820005,
       "funding_paid": -0.014238713125,
       "positions": {
         "ETHFI": {
@@ -616,10 +616,6 @@
         "XPL": {
           "size": -787.0,
           "entry": 0.0537352508
-        },
-        "NEAR": {
-          "size": -3.0,
-          "entry": 3.81388707
         }
       }
     },
