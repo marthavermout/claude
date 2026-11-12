@@ -407,7 +407,7 @@
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
       "realized_pnl": 2.434732621981437,
-      "fees_paid": 1.2081840092163896,
+      "fees_paid": 1.2128841303026396,
       "funding_paid": -0.4363487670087999,
       "positions": {
         "AERO": {
@@ -447,8 +447,8 @@
           "entry": 19.778955
         },
         "DASH": {
-          "size": 0.55,
-          "entry": 43.5577098
+          "size": 0.8,
+          "entry": 43.001817393749995
         },
         "EIGEN": {
           "size": 84.09,
