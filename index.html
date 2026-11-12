@@ -283,7 +283,7 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
   <section data-tab="bots" id="bots" style="display:grid;gap:18px" hidden>
     <div class="glass pad">
       <div class="feed-head"><h2>De bots</h2><span class="soft" style="font-size:.78rem" id="bots-updated"></span></div>
-      <p class="note" style="margin:0">Negen bots met elk $1.000 nepgeld en een eigen strategie, op dezelfde markt en op hetzelfde moment. Hun gezicht laat zien hoe het gaat. Kijk pas na een paar weken naar de winnaar: een paar dagen zegt niets.</p>
+      <p class="note" style="margin:0">Tien bots op dezelfde markt en op hetzelfde moment, elk met een eigen strategie. Negen hebben $1.000 nepgeld; Mini heeft $100. Hun gezicht laat zien hoe het gaat. Kijk pas na een paar weken naar de winnaar: een paar dagen zegt niets.</p>
     </div>
     <div class="crew" id="crew"><div class="glass pad empty">Nog geen data van de bots.</div></div>
     <div class="glass pad">
@@ -697,6 +697,7 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
     patronen:    { name: "Pia",  role: "Leest de grafiek: double bottom, head & shoulders, driehoeken, vlaggen", color: "#3c8a5c" },
     trend:       { name: "Tom",  role: "Trendvolger: long wat stijgt, short wat daalt", color: "#2f56e0" },
     funding:     { name: "Fien", role: "Funding-verdiener: gaat tegen de massa in en int de vergoeding", color: "#b98a12" },
+    klein:       { name: "Mini", role: "Bas met $100: wat kun je met een klein bedrag echt kopiëren?", color: "#6b8fb0" },
     random:      { name: "Rik",  role: "Controlegroep: willekeurige traders. Wie Rik niet verslaat, had geluk", color: "#8a7f74" },
   };
   const crewOf = (b, i) => CREW[b.name] || { name: b.name, role: b.description, color: BOT_COLORS[i % BOT_COLORS.length] };
@@ -705,7 +706,7 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
   function botFace(kind, color, mood) {
     const NS = "http://www.w3.org/2000/svg";
     const el = (n, a, parent) => { const e = document.createElementNS(NS, n); for (const k in a) e.setAttribute(k, a[k]); if (parent) parent.append(e); return e; };
-    const svg = el("svg", { viewBox: "0 0 100 100", role: "img", "aria-label": `${kind}-bot, ${mood === "up" ? "blij" : mood === "down" ? "balend" : "rustig"}` });
+    const svg = el("svg", { viewBox: kind === "klein" ? "-22 -30 144 144" : "0 0 100 100", role: "img", "aria-label": `${kind}-bot, ${mood === "up" ? "blij" : mood === "down" ? "balend" : "rustig"}` });
     const body = el("g", { class: "body" }, svg);
     const ink = "var(--ink)", screen = "var(--room-4)";
     // extras behind the head
@@ -717,7 +718,7 @@ button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
       el("path", { d: "M30 30 L22 10 L40 24 Z", fill: color, stroke: ink, "stroke-width": 1.5, "stroke-linejoin": "round" }, body);
       el("path", { d: "M70 30 L78 10 L60 24 Z", fill: color, stroke: ink, "stroke-width": 1.5, "stroke-linejoin": "round" }, body);
     }
-    const antennas = kind === "breed" ? [30, 50, 70] : kind === "basis" || kind === "random" ? [50] : [];
+    const antennas = kind === "breed" ? [30, 50, 70] : kind === "basis" || kind === "random" || kind === "klein" ? [50] : [];
     for (const x of antennas) {
       el("line", { x1: x, y1: 26, x2: x, y2: 12, stroke: ink, "stroke-width": 2 }, body);
       el("circle", { cx: x, cy: 10, r: 4, fill: color, stroke: ink, "stroke-width": 1.2 }, body);
