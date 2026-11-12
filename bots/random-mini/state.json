@@ -1,0 +1,166 @@
+{
+  "broker": {
+    "starting_balance": 50.0,
+    "realized_pnl": 0.0,
+    "fees_paid": 0.01109360857806,
+    "funding_paid": 0.0,
+    "positions": {
+      "ETH": {
+        "size": 0.0062,
+        "entry": 2019.95391
+      },
+      "XPL": {
+        "size": 246.0,
+        "entry": 0.049303858799999996
+      }
+    }
+  },
+  "risk": {
+    "day": "2026-11-12",
+    "day_start_equity": 50.0,
+    "peak_equity": 50.03413488462194,
+    "killed": false,
+    "kill_reason": ""
+  },
+  "baselines": {
+    "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da": {
+      "LIT": 1
+    },
+    "0xfb47779fb0f59750fc714ba61a7859b059bbd3e6": {
+      "ENA": 1
+    },
+    "0xe00f0d90bc976c311a7f22cbb728d8629ccd5394": {},
+    "0x78c305976508a97adb6775044d962e56af617a7c": {
+      "ZEC": -1
+    },
+    "0xd10e2b1b66001bd4086d61e43e836ab9c168fd9a": {
+      "HYPE": -1
+    },
+    "0x802dc9bd0e048c4b47d943f7ad61d98d9b7361b0": {},
+    "0xde5a8068836a16f92813104d7faf602bb0cbdf62": {
+      "ZEC": -1,
+      "XMR": -1
+    },
+    "0xd738f8f8f68511eb644a31d8b23d0b20baa4854b": {}
+  },
+  "shadows": {
+    "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da": {
+      "starting_balance": 50.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.032290372533149994,
+      "funding_paid": 0.0,
+      "positions": {
+        "CHIP": {
+          "size": 369.0,
+          "entry": 0.030898178399999997
+        },
+        "NIL": {
+          "size": 184.0,
+          "entry": 0.0559551888
+        },
+        "SKY": {
+          "size": 220.0,
+          "entry": 0.0569253828
+        },
+        "SYRUP": {
+          "size": 99.0,
+          "entry": 0.126280251
+        },
+        "TIA": {
+          "size": 31.4,
+          "entry": 0.39842966999999996
+        },
+        "XPL": {
+          "size": 254.0,
+          "entry": 0.049303858799999996
+        }
+      }
+    },
+    "0xfb47779fb0f59750fc714ba61a7859b059bbd3e6": {
+      "starting_balance": 50.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.011031960200850002,
+      "funding_paid": 0.0,
+      "positions": {
+        "NEAR": {
+          "size": 3.5,
+          "entry": 3.43093605
+        },
+        "VVV": {
+          "size": 0.66,
+          "entry": 18.9502893
+        }
+      }
+    },
+    "0xe00f0d90bc976c311a7f22cbb728d8629ccd5394": {
+      "starting_balance": 50.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.0,
+      "funding_paid": 0.0,
+      "positions": {}
+    },
+    "0x78c305976508a97adb6775044d962e56af617a7c": {
+      "starting_balance": 50.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.0,
+      "funding_paid": 0.0,
+      "positions": {}
+    },
+    "0xd10e2b1b66001bd4086d61e43e836ab9c168fd9a": {
+      "starting_balance": 50.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.0056243565963899995,
+      "funding_paid": 0.0,
+      "positions": {
+        "ETHFI": {
+          "size": 20.3,
+          "entry": 0.6156931139999999
+        }
+      }
+    },
+    "0x802dc9bd0e048c4b47d943f7ad61d98d9b7361b0": {
+      "starting_balance": 50.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.005635671408899999,
+      "funding_paid": 0.0,
+      "positions": {
+        "ETH": {
+          "size": 0.0062,
+          "entry": 2019.95391
+        }
+      }
+    },
+    "0xde5a8068836a16f92813104d7faf602bb0cbdf62": {
+      "starting_balance": 50.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.0,
+      "funding_paid": 0.0,
+      "positions": {}
+    },
+    "0xd738f8f8f68511eb644a31d8b23d0b20baa4854b": {
+      "starting_balance": 50.0,
+      "realized_pnl": 0.0,
+      "fees_paid": 0.0,
+      "funding_paid": 0.0,
+      "positions": {}
+    }
+  },
+  "shadow_started": {
+    "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da": "2026-11-12T12:28:05.638668+00:00",
+    "0xfb47779fb0f59750fc714ba61a7859b059bbd3e6": "2026-11-12T12:28:05.638668+00:00",
+    "0xe00f0d90bc976c311a7f22cbb728d8629ccd5394": "2026-11-12T12:28:05.638668+00:00",
+    "0x78c305976508a97adb6775044d962e56af617a7c": "2026-11-12T12:28:05.638668+00:00",
+    "0xd10e2b1b66001bd4086d61e43e836ab9c168fd9a": "2026-11-12T12:28:05.638668+00:00",
+    "0x802dc9bd0e048c4b47d943f7ad61d98d9b7361b0": "2026-11-12T12:28:05.638668+00:00",
+    "0xde5a8068836a16f92813104d7faf602bb0cbdf62": "2026-11-12T12:28:05.638668+00:00",
+    "0xd738f8f8f68511eb644a31d8b23d0b20baa4854b": "2026-11-12T12:28:05.638668+00:00"
+  },
+  "meta": {
+    "funding_hour": 498468
+  },
+  "pattern_trades": {},
+  "pattern_scanned": {},
+  "quant_sizes": {},
+  "funding_pos": {},
+  "quant_hour": 0
+}

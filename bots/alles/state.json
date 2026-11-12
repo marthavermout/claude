@@ -122,7 +122,7 @@
   "risk": {
     "day": "2026-11-12",
     "day_start_equity": 1047.1947039653935,
-    "peak_equity": 1079.628036365679,
+    "peak_equity": 1080.754040365679,
     "killed": false,
     "kill_reason": ""
   },
@@ -159,7 +159,7 @@
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
       "realized_pnl": -7.946886586212394,
-      "fees_paid": 1.1329342208080198,
+      "fees_paid": 1.1376657330662698,
       "funding_paid": -1.5870609102531068,
       "positions": {
         "ASTER": {
@@ -179,8 +179,8 @@
           "entry": 7.572214140000001
         },
         "HYPE": {
-          "size": -2.85,
-          "entry": 71.22544907323231
+          "size": -3.0,
+          "entry": 71.1690005145707
         },
         "LIT": {
           "size": -67.0,
@@ -223,12 +223,12 @@
     "0x5a19bfe9c095c3bd188eca00a690b95200797aba": {
       "starting_balance": 1000.0,
       "realized_pnl": -8.53840416819902,
-      "fees_paid": 0.6020985362668201,
+      "fees_paid": 0.6075000693441001,
       "funding_paid": -0.23245842294724264,
       "positions": {
         "PURR": {
-          "size": -2742.0,
-          "entry": 0.08781777647043078
+          "size": -2878.0,
+          "entry": 0.08783869003485795
         },
         "USELESS": {
           "size": -2006.0,

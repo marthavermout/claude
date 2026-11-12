@@ -1,0 +1,27 @@
+{
+  "broker": {
+    "starting_balance": 50.0,
+    "realized_pnl": 0.0,
+    "fees_paid": 0.0,
+    "funding_paid": 0.0,
+    "positions": {}
+  },
+  "risk": {
+    "day": "2026-11-12",
+    "day_start_equity": 50.0,
+    "peak_equity": 50.0,
+    "killed": false,
+    "kill_reason": ""
+  },
+  "baselines": {},
+  "shadows": {},
+  "shadow_started": {},
+  "meta": {
+    "funding_hour": 498468
+  },
+  "pattern_trades": {},
+  "pattern_scanned": {},
+  "quant_sizes": {},
+  "funding_pos": {},
+  "quant_hour": 498468
+}
