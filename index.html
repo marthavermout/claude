@@ -442,7 +442,7 @@ nav.tabs a[aria-current="page"] { color: var(--ink); background: var(--glass-str
   </section>
 
   <footer>
-    <div>Prijzen live van Hyperliquid (elke 10 s). De bots slaan hun stand elke 10 minuten op. Kosten (0,045% per trade), slippage en funding zijn meegerekend.</div>
+    <div>De bots kijken elke 5 seconden, en bij de 10 drukste traders binnen een seconde na hun trade. Prijzen hier live (elke 10 s); de stand van de bots wordt elke 10 minuten opgeslagen. Kosten (0,045% per trade), slippage en funding zijn meegerekend.</div>
   </footer>
 </div>
 
@@ -472,7 +472,7 @@ nav.tabs a[aria-current="page"] { color: var(--ink); background: var(--glass-str
   const ORDER = ["basis", "breed", "alles", "voorzichtig", "agressief", "trend", "patronen", "funding", "random"];
   const CREW = {
     basis:       { name: "Bas",  type: "Staal",  color: "#4f7fb8", role: "De standaard: kopieert 8 traders",
-      how: "Kijkt elke 30 seconden wat 8 goed presterende traders doen en doet hun nieuwe posities na, naar verhouding van zijn geld. Hij zet maximaal 2x zijn geld in." },
+      how: "Kijkt elke 5 seconden wat 8 goed presterende traders doen (bij de drukste traders binnen een seconde) en doet hun nieuwe posities na, naar verhouding van zijn geld. Hij zet maximaal 2x zijn geld in." },
     breed:       { name: "Bea",  type: "Zwerm",  color: "#7a5bb0", role: "Kopieert 15 traders tegelijk",
       how: "Doet hetzelfde als Bas, maar verdeelt haar geld over 15 traders. Eén slechte trader doet dan minder pijn." },
     alles:       { name: "Alex", type: "Storm",  color: "#c2702a", role: "Pakt alles meteen, ook oude posities",

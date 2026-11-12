@@ -10,8 +10,8 @@
     "0x888e000c78b8f1aada5b3c99f880794907b76d77",
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede"
   ],
-  "reviews": 3,
-  "last_review": "2026-11-11T16:11:40.139845+00:00",
+  "reviews": 4,
+  "last_review": "2026-11-12T15:31:16.867817+00:00",
   "review_log": [
     {
       "time": "2026-11-10T08:40:34.762407+00:00",
@@ -44,6 +44,22 @@
         "`0xf83858e5\u2026`: nog te weinig data om te beoordelen (32u, 11 gesloten trades)",
         "`0x999510ad\u2026`: nog te weinig data om te beoordelen (32u, 0 gesloten trades)",
         "`0x888e000c\u2026`: nog te weinig data om te beoordelen (24u, 3 gesloten trades)"
+      ],
+      "decision": "niets veranderen"
+    },
+    {
+      "time": "2026-11-12T15:31:16.867817+00:00",
+      "n": 4,
+      "mistakes": [],
+      "observations": [
+        "`0x999510ad\u2026`: nog te weinig data om te beoordelen (55u, 0 gesloten trades)",
+        "`0x5a19bfe9\u2026`: nog te weinig data om te beoordelen (47u, 0 gesloten trades)",
+        "`0x329c787b\u2026`: nog te weinig data om te beoordelen (47u, 1 gesloten trades)",
+        "`0xd42350df\u2026`: nog te weinig data om te beoordelen (55u, 2 gesloten trades)",
+        "`0xf83858e5\u2026`: nog te weinig data om te beoordelen (55u, 12 gesloten trades)",
+        "`0x011820f6\u2026`: nog te weinig data om te beoordelen (47u, 7 gesloten trades)",
+        "`0x64343028\u2026`: nog te weinig data om te beoordelen (47u, 10 gesloten trades)",
+        "`0x888e000c\u2026`: nog te weinig data om te beoordelen (47u, 4 gesloten trades)"
       ],
       "decision": "niets veranderen"
     }
