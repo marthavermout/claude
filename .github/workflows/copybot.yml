@@ -6,7 +6,10 @@ name: Copybot
 
 on:
   schedule:
-    - cron: "7 * * * *"
+    # Safety net only: each run normally starts the next one itself. If GitHub fails to start a
+    # run (it did once, a "startup_failure"), this restarts the bots within ~15 minutes. While a run
+    # is busy, the concurrency group just queues/cancels these extra triggers.
+    - cron: "*/15 * * * *"
   workflow_dispatch:
 
 permissions:
