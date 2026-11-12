@@ -97,8 +97,8 @@
   "shadows": {
     "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da": {
       "starting_balance": 1000.0,
-      "realized_pnl": -0.11213035635328661,
-      "fees_paid": 0.8167824682542001,
+      "realized_pnl": -0.09093632958981804,
+      "fees_paid": 0.8213000973476401,
       "funding_paid": 0.34946350861826103,
       "positions": {
         "CASHCAT": {
@@ -110,7 +110,7 @@
           "entry": 0.032273936402564096
         },
         "NIL": {
-          "size": 3597.0,
+          "size": 3418.0,
           "entry": 0.05596637841584654
         },
         "PONS": {
@@ -205,12 +205,12 @@
     "0xde5a8068836a16f92813104d7faf602bb0cbdf62": {
       "starting_balance": 1000.0,
       "realized_pnl": -0.30182082199999927,
-      "fees_paid": 0.12631790415465,
+      "fees_paid": 0.13092658648379998,
       "funding_paid": -2.536118911912965,
       "positions": {
         "XMR": {
-          "size": -0.453,
-          "entry": 575.7224814768211
+          "size": -0.472,
+          "entry": 574.2453398220338
         }
       }
     },
