@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 1.3927838589149344,
-    "fees_paid": 0.8264018640503699,
+    "realized_pnl": -0.16407529108506402,
+    "fees_paid": 0.8377056840841198,
     "funding_paid": -1.8003129415309234,
     "positions": {
       "CASHCAT": {
@@ -20,10 +20,6 @@
       "HYPE": {
         "size": 0.39,
         "entry": 70.7186409
-      },
-      "NEAR": {
-        "size": 7.5,
-        "entry": 3.55686123
       },
       "NIL": {
         "size": 532.0,
@@ -137,14 +133,10 @@
     },
     "0xfb47779fb0f59750fc714ba61a7859b059bbd3e6": {
       "starting_balance": 1000.0,
-      "realized_pnl": 2.251266751834255,
-      "fees_paid": 0.28888330939920004,
+      "realized_pnl": -12.31225716600001,
+      "fees_paid": 0.3931798889106001,
       "funding_paid": 0.06803238242059202,
       "positions": {
-        "NEAR": {
-          "size": 69.2,
-          "entry": 3.559735557945582
-        },
         "VVV": {
           "size": 13.24,
           "entry": 18.927101128549854
