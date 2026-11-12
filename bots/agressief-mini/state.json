@@ -2,14 +2,19 @@
   "broker": {
     "starting_balance": 50.0,
     "realized_pnl": 0.0,
-    "fees_paid": 0.0,
+    "fees_paid": 0.0090289918404,
     "funding_paid": 0.0,
-    "positions": {}
+    "positions": {
+      "HYPE": {
+        "size": -0.28,
+        "entry": 71.6586654
+      }
+    }
   },
   "risk": {
     "day": "2026-11-12",
     "day_start_equity": 50.0,
-    "peak_equity": 50.0,
+    "peak_equity": 50.0075373201596,
     "killed": false,
     "kill_reason": ""
   },
@@ -90,9 +95,7 @@
       "HYPE": -1
     },
     "0x972d521729c0d07b360ae470f03878fe405f0650": {},
-    "0x7dacca323e44f168494c779bb5e7483c468ef410": {
-      "HYPE": -1
-    }
+    "0x7dacca323e44f168494c779bb5e7483c468ef410": {}
   },
   "shadows": {
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
@@ -171,9 +174,14 @@
     "0x7dacca323e44f168494c779bb5e7483c468ef410": {
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.0,
+      "fees_paid": 0.0090289918404,
       "funding_paid": 0.0,
-      "positions": {}
+      "positions": {
+        "HYPE": {
+          "size": -0.28,
+          "entry": 71.6586654
+        }
+      }
     }
   },
   "shadow_started": {
