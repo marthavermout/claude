@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 50.0,
     "realized_pnl": 0.0,
-    "fees_paid": 0.01109360857806,
+    "fees_paid": 0.01563495816636,
     "funding_paid": 0.0014231783043988002,
     "positions": {
       "ETH": {
@@ -12,6 +12,10 @@
       "XPL": {
         "size": 246.0,
         "entry": 0.049303858799999996
+      },
+      "BTC": {
+        "size": 0.00014,
+        "entry": 72084.9141
       }
     }
   },
@@ -91,9 +95,14 @@
     "0xe00f0d90bc976c311a7f22cbb728d8629ccd5394": {
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.0,
+      "fees_paid": 0.00551449592865,
       "funding_paid": 0.0,
-      "positions": {}
+      "positions": {
+        "BTC": {
+          "size": 0.00017,
+          "entry": 72084.9141
+        }
+      }
     },
     "0x78c305976508a97adb6775044d962e56af617a7c": {
       "starting_balance": 50.0,
