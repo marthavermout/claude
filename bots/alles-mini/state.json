@@ -91,7 +91,7 @@
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.02245064217336,
+      "fees_paid": 0.026957334404609998,
       "funding_paid": -0.003923940899468001,
       "positions": {
         "DYDX": {
@@ -109,6 +109,10 @@
         "PUMP": {
           "size": -3710.0,
           "entry": 0.0033683262
+        },
+        "APEX": {
+          "size": -55.0,
+          "entry": 0.182088575
         }
       }
     },
