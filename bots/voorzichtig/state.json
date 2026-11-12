@@ -138,7 +138,7 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
       "realized_pnl": 8.270686577799976,
-      "fees_paid": 0.49566697729515,
+      "fees_paid": 0.50065930716147,
       "funding_paid": 0.04697222401251581,
       "positions": {
         "LIT": {
@@ -154,8 +154,8 @@
           "entry": 1.2388477199999999
         },
         "CASHCAT": {
-          "size": 1555.0,
-          "entry": 0.0545299038
+          "size": 1766.0,
+          "entry": 0.05429675355526614
         },
         "ZEC": {
           "size": 0.04,
