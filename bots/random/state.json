@@ -98,7 +98,7 @@
     "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da": {
       "starting_balance": 1000.0,
       "realized_pnl": -2.892134183842158,
-      "fees_paid": 0.9303433720902,
+      "fees_paid": 0.93496402978695,
       "funding_paid": 0.4184988611618297,
       "positions": {
         "CASHCAT": {
@@ -106,8 +106,8 @@
           "entry": 0.05791850916333333
         },
         "CHIP": {
-          "size": 6739.0,
-          "entry": 0.031951076355715646
+          "size": 7074.0,
+          "entry": 0.031889515376896764
         },
         "NIL": {
           "size": 3449.0,
@@ -149,12 +149,12 @@
     },
     "0xe00f0d90bc976c311a7f22cbb728d8629ccd5394": {
       "starting_balance": 1000.0,
-      "realized_pnl": -3.261841482613904,
-      "fees_paid": 0.9256435781684399,
+      "realized_pnl": -3.3919107267969197,
+      "fees_paid": 0.9336115967459399,
       "funding_paid": 0.07853814782669752,
       "positions": {
         "HYPE": {
-          "size": 0.84,
+          "size": 0.59,
           "entry": 71.34710877673206
         },
         "kPEPE": {
