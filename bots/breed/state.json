@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 25.179053155302366,
-    "fees_paid": 0.8093478303831603,
+    "fees_paid": 0.8178411863721603,
     "funding_paid": -0.13498676869568202,
     "positions": {
       "FARTCOIN": {
@@ -18,8 +18,8 @@
         "entry": 0.0034662388452612017
       },
       "ZEC": {
-        "size": -0.05,
-        "entry": 997.9910761428571
+        "size": -0.07,
+        "entry": 982.4811175306123
       },
       "ZRO": {
         "size": -32.5,
