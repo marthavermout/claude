@@ -135,7 +135,7 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
       "realized_pnl": 7.7540251408075065,
-      "fees_paid": 1.43447494027689,
+      "fees_paid": 1.44722483774649,
       "funding_paid": -0.03401145257119069,
       "positions": {
         "HYPE": {
@@ -157,6 +157,10 @@
         "BTC": {
           "size": 0.00362,
           "entry": 68696.2365
+        },
+        "XTEN": {
+          "size": 131.0,
+          "entry": 0.21628324799999998
         }
       }
     },
