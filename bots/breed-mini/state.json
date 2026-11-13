@@ -14,7 +14,7 @@
   "risk": {
     "day": "2026-11-13",
     "day_start_equity": 49.944470239685295,
-    "peak_equity": 50.312627008474436,
+    "peak_equity": 50.320065242513564,
     "killed": false,
     "kill_reason": ""
   },
@@ -197,7 +197,6 @@
       "ZRO": -1,
       "NEAR": -1,
       "ONDO": -1,
-      "TAO": -1,
       "ENA": -1,
       "PURR": -1,
       "HYPE": -1,
