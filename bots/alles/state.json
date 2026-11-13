@@ -222,16 +222,16 @@
     },
     "0x5a19bfe9c095c3bd188eca00a690b95200797aba": {
       "starting_balance": 1000.0,
-      "realized_pnl": -6.383713001388628,
-      "fees_paid": 0.6919673523730199,
+      "realized_pnl": -6.849209949287061,
+      "fees_paid": 0.7012152777882599,
       "funding_paid": -0.44940416686891493,
       "positions": {
         "PURR": {
-          "size": -2876.0,
+          "size": -2764.0,
           "entry": 0.08785527414067214
         },
         "USELESS": {
-          "size": -1937.0,
+          "size": -1859.0,
           "entry": 0.13135458609674727
         },
         "ZEC": {
@@ -306,8 +306,8 @@
     },
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
-      "realized_pnl": -2.0958871149202993,
-      "fees_paid": 1.0281948213849301,
+      "realized_pnl": -1.8643957596230356,
+      "fees_paid": 1.03403960010693,
       "funding_paid": -0.44306554816626464,
       "positions": {
         "APEX": {
@@ -335,7 +335,7 @@
           "entry": 0.251474695
         },
         "LIT": {
-          "size": -82.0,
+          "size": -78.0,
           "entry": 3.304972128824316
         },
         "PUMP": {
