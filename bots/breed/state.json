@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 26.428005891715326,
-    "fees_paid": 0.8802222509515503,
+    "fees_paid": 0.8847460501107303,
     "funding_paid": -0.13584666220883973,
     "positions": {
       "FARTCOIN": {
@@ -26,8 +26,8 @@
         "entry": 1.527004999446154
       },
       "kPEPE": {
-        "size": -50526.0,
-        "entry": 0.005116908151188598
+        "size": -52709.0,
+        "entry": 0.0050957101873940905
       },
       "ETHFI": {
         "size": 36.4,
