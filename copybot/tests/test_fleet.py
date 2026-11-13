@@ -68,3 +68,23 @@ class SharedClientTest(unittest.TestCase):
             rows = list(csv.DictReader(open(f"{tmp}/equity.csv")))
             self.assertEqual(len(rows), 2)   # t=0 and t=30, not 12 rows
             self.assertEqual(len(list(csv.DictReader(open(f"{tmp}/trades.csv")))), 1)
+
+
+class DataGrowthTest(unittest.TestCase):
+    def test_leaders_log_is_sparse_and_minis_skip_it(self):
+        import csv, os
+        a = "0x" + "a" * 40
+        with tempfile.TemporaryDirectory() as tmp:
+            big = Engine(BotConfig(leaders=[a], data_dir=f"{tmp}/big", copy_existing_positions=True,
+                                   risk=RiskConfig(max_position_pct=1.0)), client=CountingClient())
+            mini = Engine(BotConfig(leaders=[a], data_dir=f"{tmp}/mini", follow_bot="../big", copy_existing_positions=True,
+                                    risk=RiskConfig(max_position_pct=1.0)), client=CountingClient())
+            for e in (big, mini):
+                e.log_every_s, e.leaders_log_every_s = 30, 600
+            t0 = datetime(2026, 11, 13, tzinfo=timezone.utc)
+            for s in range(0, 1300, 5):
+                for e in (big, mini):
+                    e.tick(t0 + timedelta(seconds=s))
+            self.assertEqual(len(list(csv.DictReader(open(f"{tmp}/big/leaders.csv")))), 3)   # t=0, 600, 1200
+            self.assertFalse(os.path.exists(f"{tmp}/mini/leaders.csv"))
+            self.assertGreater(mini.broker.size("BTC"), 0)                                     # but it still trades
