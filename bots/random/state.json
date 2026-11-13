@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": -3.1677099215353057,
-    "fees_paid": 1.20655122244038,
+    "realized_pnl": -3.1133477972266377,
+    "fees_paid": 1.2110564052235802,
     "funding_paid": -2.9131187315194893,
     "positions": {
       "CASHCAT": {
@@ -38,7 +38,7 @@
         "entry": 0.13308767874951075
       },
       "TIA": {
-        "size": 259.6,
+        "size": 235.6,
         "entry": 0.41488146548713883
       },
       "VVV": {
