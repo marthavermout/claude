@@ -394,8 +394,8 @@
     },
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
-      "realized_pnl": 7.7919149445515465,
-      "fees_paid": 1.3947474134850306,
+      "realized_pnl": 7.657623162265831,
+      "fees_paid": 1.3993455329250306,
       "funding_paid": -0.8308466438573212,
       "positions": {
         "AERO": {
@@ -503,7 +503,7 @@
           "entry": 0.01055211
         },
         "XMR": {
-          "size": -0.05,
+          "size": -0.03,
           "entry": 504.18757088571425
         },
         "ZEN": {

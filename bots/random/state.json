@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": -1.724685201964706,
-    "fees_paid": 1.15478066365047,
+    "realized_pnl": -2.234042030279653,
+    "fees_paid": 1.1593338023405702,
     "funding_paid": -2.9497375217418753,
     "positions": {
       "CASHCAT": {
@@ -46,7 +46,7 @@
         "entry": 18.909883357033753
       },
       "XPL": {
-        "size": 4586.0,
+        "size": 4376.0,
         "entry": 0.05060687050626165
       },
       "kPEPE": {
@@ -97,8 +97,8 @@
   "shadows": {
     "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da": {
       "starting_balance": 1000.0,
-      "realized_pnl": -2.892134183842158,
-      "fees_paid": 0.94865323943142,
+      "realized_pnl": -3.0319596771494086,
+      "fees_paid": 0.95782217757696,
       "funding_paid": 0.4342201240600661,
       "positions": {
         "CASHCAT": {
@@ -110,11 +110,11 @@
           "entry": 0.031889515376896764
         },
         "NIL": {
-          "size": 3639.0,
+          "size": 3448.0,
           "entry": 0.05564976286127929
         },
         "PONS": {
-          "size": 1213.0,
+          "size": 1145.0,
           "entry": 0.14538439541180745
         },
         "SKY": {
@@ -189,12 +189,12 @@
     "0x802dc9bd0e048c4b47d943f7ad61d98d9b7361b0": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.11249795884274999,
+      "fees_paid": 0.11706376182074998,
       "funding_paid": 0.0778274898372075,
       "positions": {
         "ETH": {
-          "size": 0.1235,
-          "entry": 2024.25477
+          "size": 0.1288,
+          "entry": 2019.7336407996893
         }
       }
     },
