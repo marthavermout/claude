@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 18.619768318570898,
-    "fees_paid": 1.2509762961803406,
+    "realized_pnl": 19.73840626127335,
+    "fees_paid": 1.2595719799733405,
     "funding_paid": 0.03136566409204778,
     "positions": {
       "APEX": {
@@ -94,7 +94,7 @@
         "entry": 0.051842629400000007
       },
       "ZEC": {
-        "size": -0.23,
+        "size": -0.21,
         "entry": 1011.0078741351226
       },
       "ZRO": {
@@ -214,8 +214,8 @@
     },
     "0x5a19bfe9c095c3bd188eca00a690b95200797aba": {
       "starting_balance": 1000.0,
-      "realized_pnl": -7.790754829268922,
-      "fees_paid": 0.65247840583749,
+      "realized_pnl": -7.9386135373661935,
+      "fees_paid": 0.6571042395692399,
       "funding_paid": -0.39580490428163406,
       "positions": {
         "PURR": {
@@ -223,7 +223,7 @@
           "entry": 0.08783869003485795
         },
         "USELESS": {
-          "size": -1935.0,
+          "size": -1858.0,
           "entry": 0.13158145203769778
         },
         "ZEC": {
