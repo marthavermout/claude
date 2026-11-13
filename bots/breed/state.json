@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 26.591887122813638,
-    "fees_paid": 0.8223609518945103,
+    "fees_paid": 0.8302164851870103,
     "funding_paid": -0.1402331682483045,
     "positions": {
       "FARTCOIN": {
@@ -58,8 +58,8 @@
         "entry": 0.228684254
       },
       "ETH": {
-        "size": 0.0087,
-        "entry": 2056.86129
+        "size": 0.0177,
+        "entry": 1997.2561510169494
       },
       "XMR": {
         "size": -0.027,
@@ -256,7 +256,7 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
       "realized_pnl": 9.67208810778854,
-      "fees_paid": 1.01616829351056,
+      "fees_paid": 1.04191698596931,
       "funding_paid": 0.07182447878286599,
       "positions": {
         "LIT": {
@@ -264,8 +264,8 @@
           "entry": 3.33827518015625
         },
         "ETH": {
-          "size": 0.1003,
-          "entry": 2056.5919222817897
+          "size": 0.1298,
+          "entry": 2030.0114513086558
         },
         "CASHCAT": {
           "size": 2851.0,
