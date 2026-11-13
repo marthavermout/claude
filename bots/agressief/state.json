@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 24.68372542324231,
-    "fees_paid": 0.84980723933043,
+    "fees_paid": 0.85431891268467,
     "funding_paid": 0.23209098026006264,
     "positions": {
       "INIT": {
@@ -46,8 +46,8 @@
         "entry": 589.6520459999999
       },
       "CASHCAT": {
-        "size": 233.0,
-        "entry": 0.0545299038
+        "size": 441.0,
+        "entry": 0.051545143702040816
       }
     }
   },
@@ -135,7 +135,7 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.8825023917146142,
-      "fees_paid": 0.7893581429223,
+      "fees_paid": 0.81036161437662,
       "funding_paid": 0.08724376341788052,
       "positions": {
         "LIT": {
@@ -147,8 +147,12 @@
           "entry": 2056.6236261104664
         },
         "CASHCAT": {
-          "size": 2637.0,
-          "entry": 0.053030113192719
+          "size": 2845.0,
+          "entry": 0.052676295542636205
+        },
+        "ZEC": {
+          "size": 0.04,
+          "entry": 916.2682169999999
         }
       }
     },
@@ -229,12 +233,12 @@
     },
     "0xd10e2b1b66001bd4086d61e43e836ab9c168fd9a": {
       "starting_balance": 1000.0,
-      "realized_pnl": -4.97902644506057,
-      "fees_paid": 0.46729745948213974,
+      "realized_pnl": -5.4380870167826405,
+      "fees_paid": 0.47191407462440976,
       "funding_paid": 0.14138663557878417,
       "positions": {
         "ETHFI": {
-          "size": 436.0,
+          "size": 418.9,
           "entry": 0.6267956334691269
         }
       }
@@ -249,12 +253,12 @@
     "0x7dacca323e44f168494c779bb5e7483c468ef410": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.31864654549999916,
-      "fees_paid": 0.2055605686578,
+      "fees_paid": 0.21028300398180003,
       "funding_paid": -0.14652305386847553,
       "positions": {
         "HYPE": {
-          "size": -5.67,
-          "entry": 73.13431333306879
+          "size": -5.82,
+          "entry": 73.05255280386599
         }
       }
     }
