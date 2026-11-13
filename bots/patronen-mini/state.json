@@ -1,14 +1,10 @@
 {
   "broker": {
     "starting_balance": 50.0,
-    "realized_pnl": 0.41219653919999943,
-    "fees_paid": 0.044321058641610005,
-    "funding_paid": -0.0007832475647257998,
+    "realized_pnl": 0.7754369331999973,
+    "fees_paid": 0.050004827910360004,
+    "funding_paid": -0.0006598387448177997,
     "positions": {
-      "HYPE": {
-        "size": 0.17,
-        "entry": 72.1609293
-      },
       "AVAX": {
         "size": 1.51,
         "entry": 8.37527472
@@ -18,7 +14,7 @@
   "risk": {
     "day": "2026-11-13",
     "day_start_equity": 49.947847045742,
-    "peak_equity": 50.72205191992312,
+    "peak_equity": 50.786077116834456,
     "killed": false,
     "kill_reason": ""
   },
@@ -26,18 +22,9 @@
   "shadows": {},
   "shadow_started": {},
   "meta": {
-    "funding_hour": 498491
+    "funding_hour": 498492
   },
   "pattern_trades": {
-    "HYPE": {
-      "pattern": "bullish flag",
-      "side": 1,
-      "entry": 72.1465,
-      "sl": 71.01269,
-      "tp": 74.28699999999999,
-      "size": 0.1745744620688857,
-      "opened": "2026-11-13T09:15:00.240016+00:00"
-    },
     "AVAX": {
       "pattern": "bullish flag",
       "side": 1,
@@ -49,16 +36,16 @@
     }
   },
   "pattern_scanned": {
-    "BTC": 1794570300000,
-    "ETH": 1794570300000,
-    "SOL": 1794570300000,
-    "HYPE": 1794561300000,
-    "XRP": 1794570300000,
-    "DOGE": 1794570300000,
-    "SUI": 1794570300000,
-    "BNB": 1794570300000,
+    "BTC": 1794571200000,
+    "ETH": 1794571200000,
+    "SOL": 1794571200000,
+    "HYPE": 1794571200000,
+    "XRP": 1794571200000,
+    "DOGE": 1794571200000,
+    "SUI": 1794571200000,
+    "BNB": 1794571200000,
     "AVAX": 1794564900000,
-    "LINK": 1794570300000
+    "LINK": 1794571200000
   },
   "quant_sizes": {},
   "funding_pos": {},
