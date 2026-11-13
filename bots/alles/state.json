@@ -302,8 +302,8 @@
     },
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
-      "realized_pnl": -2.9351023189994665,
-      "fees_paid": 1.12916251409175,
+      "realized_pnl": -2.5668081853313014,
+      "fees_paid": 1.13612359297914,
       "funding_paid": -0.5867273256925563,
       "positions": {
         "APEX": {
@@ -323,7 +323,7 @@
           "entry": 2018.4205451167727
         },
         "FARTCOIN": {
-          "size": -2478.6,
+          "size": -2337.5,
           "entry": 0.11224208595229032
         },
         "JUP": {
