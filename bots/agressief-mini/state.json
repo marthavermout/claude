@@ -94,7 +94,10 @@
       "HYPE": -1
     },
     "0x972d521729c0d07b360ae470f03878fe405f0650": {},
-    "0x7dacca323e44f168494c779bb5e7483c468ef410": {}
+    "0x7dacca323e44f168494c779bb5e7483c468ef410": {},
+    "0xa1d4fc32f21d9d77a4c20a6ac4b748815912c07c": {
+      "ADA": -1
+    }
   },
   "shadows": {
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
