@@ -126,8 +126,8 @@
   "shadows": {
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
-      "realized_pnl": -0.5283211652831565,
-      "fees_paid": 1.11257815042557,
+      "realized_pnl": -0.3193829526132519,
+      "fees_paid": 1.11846352726557,
       "funding_paid": 0.010363568488637703,
       "positions": {
         "HYPE": {
@@ -135,7 +135,7 @@
           "entry": 70.99964897252502
         },
         "LIT": {
-          "size": -79.0,
+          "size": -75.0,
           "entry": 3.321888353167476
         },
         "ETH": {
