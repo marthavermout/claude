@@ -151,12 +151,12 @@
     },
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
-      "realized_pnl": 10.18559286769909,
-      "fees_paid": 1.0845920273841902,
+      "realized_pnl": 10.0343589773171,
+      "fees_paid": 1.0891638390636902,
       "funding_paid": 0.11402785611996316,
       "positions": {
         "LIT": {
-          "size": -76.0,
+          "size": -73.0,
           "entry": 3.3361158732060034
         },
         "ETH": {
