@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": -3.0331310899093675,
-    "fees_paid": 1.2637628034629402,
+    "realized_pnl": -2.7896141380255863,
+    "fees_paid": 1.27289743192179,
     "funding_paid": -2.800165188009126,
     "positions": {
       "CASHCAT": {
@@ -38,7 +38,7 @@
         "entry": 0.13308767874951075
       },
       "TIA": {
-        "size": 235.6,
+        "size": 211.7,
         "entry": 0.41488146548713883
       },
       "VVV": {
@@ -46,7 +46,7 @@
         "entry": 18.909883357033753
       },
       "XPL": {
-        "size": 3749.0,
+        "size": 3548.0,
         "entry": 0.0504477133133015
       },
       "kPEPE": {
@@ -97,8 +97,8 @@
   "shadows": {
     "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da": {
       "starting_balance": 1000.0,
-      "realized_pnl": -2.5661994852511523,
-      "fees_paid": 1.0456157640703505,
+      "realized_pnl": -2.397990304280204,
+      "fees_paid": 1.0547321972689805,
       "funding_paid": 0.5821065464243904,
       "positions": {
         "CASHCAT": {
@@ -106,11 +106,11 @@
           "entry": 0.056753359645196844
         },
         "CHIP": {
-          "size": 6138.0,
+          "size": 5825.0,
           "entry": 0.03182037265304977
         },
         "NIL": {
-          "size": 3061.0,
+          "size": 2879.0,
           "entry": 0.05566348692321141
         },
         "PONS": {
@@ -137,12 +137,12 @@
     },
     "0xfb47779fb0f59750fc714ba61a7859b059bbd3e6": {
       "starting_balance": 1000.0,
-      "realized_pnl": -12.31225716600001,
-      "fees_paid": 0.3931798889106001,
+      "realized_pnl": -11.984664096845934,
+      "fees_paid": 0.39775624745580007,
       "funding_paid": 0.13961465757059205,
       "positions": {
         "VVV": {
-          "size": 13.24,
+          "size": 12.72,
           "entry": 18.927101128549854
         }
       }

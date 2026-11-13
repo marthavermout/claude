@@ -14,7 +14,7 @@
   "risk": {
     "day": "2026-11-13",
     "day_start_equity": 50.375182257539045,
-    "peak_equity": 50.68772164538167,
+    "peak_equity": 50.75552164538167,
     "killed": false,
     "kill_reason": ""
   },
@@ -22,8 +22,7 @@
     "0x999510ad3dd8c94a6659d6401d983137565283e3": {},
     "0xd42350dfad9884113f21109b5a7a6736fb4d50c3": {},
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
-      "HYPE": -1,
-      "LIT": -1
+      "HYPE": -1
     },
     "0x329c787b163a730bd7900df2beb3ff4fe4670375": {},
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {

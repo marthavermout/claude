@@ -20,8 +20,7 @@
   },
   "baselines": {
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
-      "HYPE": -1,
-      "LIT": -1
+      "HYPE": -1
     },
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "DYDX": -1,
@@ -110,7 +109,6 @@
       "CRV": -1,
       "LDO": -1,
       "LINK": -1,
-      "STX": -1,
       "CFX": -1,
       "XRP": -1,
       "APT": -1,
@@ -174,7 +172,6 @@
     },
     "0xa4247526997374fdab0bad6f63c9f3daca8f22d4": {},
     "0x94dac1facdc4afd2614c3119447187b4143bc449": {
-      "WLD": -1,
       "NEAR": -1,
       "XPL": -1
     },

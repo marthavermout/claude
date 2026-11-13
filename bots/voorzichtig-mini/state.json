@@ -15,8 +15,7 @@
   },
   "baselines": {
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
-      "HYPE": -1,
-      "LIT": -1
+      "HYPE": -1
     },
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "DYDX": -1,

@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 21.965380516826293,
-    "fees_paid": 0.6244244256004202,
+    "realized_pnl": 22.839985669258727,
+    "fees_paid": 0.6495457803244202,
     "funding_paid": 0.9334896393715107,
     "positions": {
       "INIT": {
@@ -46,7 +46,7 @@
         "entry": 72.7739423
       },
       "BTC": {
-        "size": 0.00222,
+        "size": 0.00142,
         "entry": 68688.28445945946
       }
     }
@@ -135,12 +135,12 @@
   "shadows": {
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
-      "realized_pnl": 8.71413441779998,
-      "fees_paid": 0.81461934400338,
+      "realized_pnl": 8.795615917799982,
+      "fees_paid": 0.81912181931838,
       "funding_paid": 0.07550755156359082,
       "positions": {
         "LIT": {
-          "size": -48.0,
+          "size": -45.0,
           "entry": 3.3623274
         },
         "ETH": {
@@ -159,8 +159,8 @@
     },
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
-      "realized_pnl": -0.7841709750000014,
-      "fees_paid": 0.2760608809269,
+      "realized_pnl": -0.4134065958510671,
+      "fees_paid": 0.2805701751054,
       "funding_paid": 0.0347700195688541,
       "positions": {
         "ETH": {
@@ -176,7 +176,7 @@
           "entry": 1.4630573299999998
         },
         "LIT": {
-          "size": -47.0,
+          "size": -44.0,
           "entry": 3.4638060363829783
         }
       }
@@ -206,8 +206,8 @@
     },
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
-      "realized_pnl": -0.6339938789105554,
-      "fees_paid": 0.24278386292549997,
+      "realized_pnl": -0.3747058806126847,
+      "fees_paid": 0.24734433233699998,
       "funding_paid": -0.06737942097806622,
       "positions": {
         "ETH": {
@@ -223,7 +223,7 @@
           "entry": 81.9860995
         },
         "LIT": {
-          "size": -47.0,
+          "size": -44.0,
           "entry": 3.464554822765957
         }
       }
