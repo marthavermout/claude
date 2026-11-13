@@ -210,7 +210,7 @@
     "0x888e000c78b8f1aada5b3c99f880794907b76d77": {
       "starting_balance": 1000.0,
       "realized_pnl": 60.90014401943278,
-      "fees_paid": 0.3515847160419,
+      "fees_paid": 0.35610935833242,
       "funding_paid": 6.050114795390104,
       "positions": {
         "INIT": {
@@ -218,19 +218,19 @@
           "entry": 0.2165029857472275
         },
         "kPEPE": {
-          "size": -61479.0,
-          "entry": 0.00502001648043708
+          "size": -63701.0,
+          "entry": 0.0050027527644211445
         }
       }
     },
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
-      "realized_pnl": -0.35933025489531123,
-      "fees_paid": 0.42247886577147,
+      "realized_pnl": 0.008520945978959693,
+      "fees_paid": 0.42712446295511997,
       "funding_paid": -0.04210449302962951,
       "positions": {
         "ETH": {
-          "size": -0.0941,
+          "size": -0.0888,
           "entry": 2017.2453769574097
         },
         "PUMP": {

@@ -133,12 +133,16 @@
     "0xde5a8068836a16f92813104d7faf602bb0cbdf62": {
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.005591738124,
+      "fees_paid": 0.0112002060933,
       "funding_paid": 0.0,
       "positions": {
         "ETH": {
           "size": 0.0063,
           "entry": 1972.3943999999997
+        },
+        "BTC": {
+          "size": 0.00018,
+          "entry": 69240.3453
         }
       }
     },

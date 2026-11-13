@@ -14,7 +14,7 @@
   "risk": {
     "day": "2026-11-13",
     "day_start_equity": 49.944470239685295,
-    "peak_equity": 50.12851700847443,
+    "peak_equity": 50.19226700847443,
     "killed": false,
     "kill_reason": ""
   },
@@ -181,8 +181,7 @@
       "NEAR": -1,
       "SYRUP": -1,
       "PUMP": -1,
-      "XPL": -1,
-      "AXS": -1
+      "XPL": -1
     },
     "0xb83de012dba672c76a7dbbbf3e459cb59d7d6e36": {
       "BTC": -1,
