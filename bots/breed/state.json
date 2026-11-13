@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 25.179053155302366,
-    "fees_paid": 0.7492004622045902,
+    "fees_paid": 0.7540003324385103,
     "funding_paid": -0.13000492480827233,
     "positions": {
       "FARTCOIN": {
@@ -26,8 +26,8 @@
         "entry": 1.5031719245238098
       },
       "kPEPE": {
-        "size": -50429.0,
-        "entry": 0.005142423611411418
+        "size": -52765.0,
+        "entry": 0.005116908151188598
       },
       "AERO": {
         "size": 19.0,
