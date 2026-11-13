@@ -93,8 +93,8 @@
   "shadows": {
     "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da": {
       "starting_balance": 1000.0,
-      "realized_pnl": -2.723062984280205,
-      "fees_paid": 1.0779189879445208,
+      "realized_pnl": -3.1684257467488233,
+      "fees_paid": 1.0870423998509708,
       "funding_paid": 0.6165352312450672,
       "positions": {
         "CASHCAT": {
@@ -106,15 +106,15 @@
           "entry": 0.031817641531608834
         },
         "NIL": {
-          "size": 3063.0,
-          "entry": 0.05565487351718108
+          "size": 3248.0,
+          "entry": 0.055609369411368736
         },
         "PONS": {
           "size": 1081.0,
           "entry": 0.14598902102453312
         },
         "SKY": {
-          "size": 4133.0,
+          "size": 3957.0,
           "entry": 0.060063961241298966
         },
         "SYRUP": {
@@ -145,12 +145,12 @@
     },
     "0xe00f0d90bc976c311a7f22cbb728d8629ccd5394": {
       "starting_balance": 1000.0,
-      "realized_pnl": -3.3919107267969197,
-      "fees_paid": 0.9654726171758399,
+      "realized_pnl": -3.1729383842340693,
+      "fees_paid": 0.9739312536101399,
       "funding_paid": 0.09051793937050213,
       "positions": {
         "HYPE": {
-          "size": 1.58,
+          "size": 1.32,
           "entry": 71.45383658245058
         },
         "kPEPE": {
