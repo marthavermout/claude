@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 30.55398531215726,
-    "fees_paid": 1.4491646692662603,
+    "fees_paid": 1.4553096359638502,
     "funding_paid": -0.07887433867979694,
     "positions": {
       "APEX": {
@@ -18,8 +18,8 @@
         "entry": 0.0893902415057416
       },
       "ETHFI": {
-        "size": 87.2,
-        "entry": 0.6251496838348624
+        "size": 110.1,
+        "entry": 0.6191510806594006
       },
       "FARTCOIN": {
         "size": -574.8,
