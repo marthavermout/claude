@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 25.583562855538844,
-    "fees_paid": 0.8449236759258002,
+    "realized_pnl": 25.706410624008637,
+    "fees_paid": 0.8494290881631003,
     "funding_paid": -0.13584666220883973,
     "positions": {
       "FARTCOIN": {
@@ -14,7 +14,7 @@
         "entry": 73.64470809089433
       },
       "PUMP": {
-        "size": 6771.0,
+        "size": 3918.0,
         "entry": 0.0034662388452612017
       },
       "ZEC": {
@@ -210,9 +210,7 @@
       "VVV": -1
     },
     "0xa4247526997374fdab0bad6f63c9f3daca8f22d4": {},
-    "0x94dac1facdc4afd2614c3119447187b4143bc449": {
-      "WLD": -1
-    },
+    "0x94dac1facdc4afd2614c3119447187b4143bc449": {},
     "0xb83de012dba672c76a7dbbbf3e459cb59d7d6e36": {
       "BTC": -1,
       "SOL": -1,
@@ -229,7 +227,6 @@
       "ONDO": -1,
       "ENA": -1,
       "PURR": -1,
-      "HYPE": -1,
       "FARTCOIN": -1,
       "VVV": -1,
       "XPL": -1,
@@ -275,7 +272,7 @@
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.9521076563513552,
-      "fees_paid": 0.6496447771971002,
+      "fees_paid": 0.6541838337042002,
       "funding_paid": -3.79667144536963,
       "positions": {
         "ETH": {
@@ -295,8 +292,8 @@
           "entry": 3.4387773211154076
         },
         "XMR": {
-          "size": -0.358,
-          "entry": 588.7721542878188
+          "size": -0.377,
+          "entry": 585.8547041725176
         }
       }
     },
@@ -628,12 +625,16 @@
     "0xb83de012dba672c76a7dbbbf3e459cb59d7d6e36": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.06608843684210569,
-      "fees_paid": 0.014738308448400003,
+      "fees_paid": 0.12707508784815003,
       "funding_paid": 0.00166218651777,
       "positions": {
         "ETH": {
           "size": 0.0064,
           "entry": 1993.030982631579
+        },
+        "HYPE": {
+          "size": -3.35,
+          "entry": 74.5185933
         }
       }
     },
