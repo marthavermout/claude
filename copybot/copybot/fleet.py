@@ -169,6 +169,7 @@ def run_fleet(bots: list[tuple[str, BotConfig]], minutes: float, poll_seconds: f
     for name, cfg in bots:
         eng = Engine(cfg, client=shared)
         eng.log_every_s = log_every_s
+        eng.leaders_log_every_s = 600
         engines.append((name, eng))
     wake = threading.Event()
 

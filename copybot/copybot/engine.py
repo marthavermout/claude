@@ -52,6 +52,10 @@ class Engine:
         # Trades are always written. 0 = every round (single-bot runs and tests).
         self.log_every_s = 0.0
         self._last_log: datetime | None = None
+        # leaders.csv only needs the first and last row per trader (for the review), so it is
+        # written far less often; it was the main reason the data branch grew ~2 MB/bot/day.
+        self.leaders_log_every_s = 0.0
+        self._last_leaders_log: datetime | None = None
         self._replay: list[dict] = []
         self._load()
 
@@ -179,8 +183,12 @@ class Engine:
                             for s in raw_snaps},
             })
 
-        # shadow books: one per leader, no halts, same position limits
-        for raw, snap in zip(raw_snaps, snaps):
+        # shadow books: one per leader, no halts, same position limits.
+        # A mini mirrors its big bot's traders and never judges them, so it skips this work.
+        log_leaders = self._last_leaders_log is None or (now - self._last_leaders_log).total_seconds() >= self.leaders_log_every_s
+        if log_leaders and raw_snaps and not self.cfg.follow_bot:
+            self._last_leaders_log = now
+        for raw, snap in ([] if self.cfg.follow_bot else zip(raw_snaps, snaps)):
             shadow = self.shadows.get(snap.address)
             if shadow is None:
                 shadow = self.shadows[snap.address] = PaperBroker(
@@ -191,7 +199,7 @@ class Engine:
             for f in self._rebalance(shadow, s_targets, mids):
                 self._append_csv("shadow_trades.csv", ["time", "leader"] + TRADE_HEADER[1:],
                                  [ts, snap.address, f.coin, f.size, f.price, f.fee, f.realized])
-            if log_now:
+            if log_leaders:
                 self._append_csv("leaders.csv", ["time", "leader", "leader_equity", "shadow_equity"],
                                  [ts, snap.address, round(raw.equity, 2), round(shadow.equity(mids), 4)])
 
