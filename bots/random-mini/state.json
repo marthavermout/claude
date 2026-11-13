@@ -3,7 +3,7 @@
     "starting_balance": 50.0,
     "realized_pnl": 0.0,
     "fees_paid": 0.01563495816636,
-    "funding_paid": 0.0043264024620036,
+    "funding_paid": 0.0047443518870036,
     "positions": {
       "ETH": {
         "size": 0.0062,
@@ -52,7 +52,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.032290372533149994,
-      "funding_paid": 0.0016372722646935006,
+      "funding_paid": 0.0025199772896935006,
       "positions": {
         "CHIP": {
           "size": 369.0,
@@ -84,7 +84,7 @@
       "starting_balance": 50.0,
       "realized_pnl": -0.28404649000000015,
       "fees_paid": 0.0163078635591,
-      "funding_paid": 0.002642311625,
+      "funding_paid": 0.002792494625,
       "positions": {
         "VVV": {
           "size": 0.66,
@@ -110,7 +110,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.0056243565963899995,
-      "funding_paid": 0.0023780155875,
+      "funding_paid": 0.0025314303,
       "positions": {
         "ETHFI": {
           "size": 20.3,
@@ -122,7 +122,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.005635671408899999,
-      "funding_paid": 0.0017480269318144001,
+      "funding_paid": 0.0018978809318144002,
       "positions": {
         "ETH": {
           "size": 0.0062,
@@ -134,7 +134,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.0112002060933,
-      "funding_paid": 0.0,
+      "funding_paid": 0.00030731625000000005,
       "positions": {
         "ETH": {
           "size": 0.0063,
@@ -150,7 +150,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.0055036690137,
-      "funding_paid": 0.0016492566588600002,
+      "funding_paid": 0.0017956882838600003,
       "positions": {
         "BTC": {
           "size": 0.00017,
@@ -170,7 +170,7 @@
     "0xd738f8f8f68511eb644a31d8b23d0b20baa4854b": "2026-11-12T12:28:05.638668+00:00"
   },
   "meta": {
-    "funding_hour": 498483
+    "funding_hour": 498484
   },
   "pattern_trades": {},
   "pattern_scanned": {},
