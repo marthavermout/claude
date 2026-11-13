@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": -2.627294059819645,
-    "fees_paid": 1.1640302805570302,
+    "fees_paid": 1.17368003036673,
     "funding_paid": -2.9497375217418753,
     "positions": {
       "CASHCAT": {
@@ -46,16 +46,16 @@
         "entry": 18.909883357033753
       },
       "XPL": {
-        "size": 4162.0,
-        "entry": 0.05060687050626165
+        "size": 4393.0,
+        "entry": 0.0504771337703303
       },
       "kPEPE": {
         "size": 167.0,
         "entry": 0.0052570512000000005
       },
       "XMR": {
-        "size": -0.216,
-        "entry": 576.539669
+        "size": -0.236,
+        "entry": 571.4245905254237
       },
       "ETHFI": {
         "size": 66.5,
@@ -98,7 +98,7 @@
     "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da": {
       "starting_balance": 1000.0,
       "realized_pnl": -3.406729911525341,
-      "fees_paid": 0.96238912400496,
+      "fees_paid": 0.96734386505502,
       "funding_paid": 0.4342201240600661,
       "positions": {
         "CASHCAT": {
@@ -106,8 +106,8 @@
           "entry": 0.056753359645196844
         },
         "CHIP": {
-          "size": 6744.0,
-          "entry": 0.031889515376896764
+          "size": 7105.0,
+          "entry": 0.031818920108176184
         },
         "NIL": {
           "size": 3448.0,
@@ -221,12 +221,12 @@
     "0xd738f8f8f68511eb644a31d8b23d0b20baa4854b": {
       "starting_balance": 1000.0,
       "realized_pnl": 1.7463552839999985,
-      "fees_paid": 0.3387851762238,
+      "fees_paid": 0.3436570944126,
       "funding_paid": 0.0516928473040836,
       "positions": {
         "BTC": {
-          "size": 0.00348,
-          "entry": 72020.9013
+          "size": 0.00364,
+          "entry": 71829.45642527472
         }
       }
     }
