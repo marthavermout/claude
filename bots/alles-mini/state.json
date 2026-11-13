@@ -43,7 +43,7 @@
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.0138875024439,
+      "fees_paid": 0.0194506395939,
       "funding_paid": -0.0043039362597048995,
       "positions": {
         "HYPE": {
@@ -57,6 +57,10 @@
         "ZRO": {
           "size": -6.7,
           "entry": 1.53034387
+        },
+        "LIT": {
+          "size": -4.0,
+          "entry": 3.09063175
         }
       }
     },
