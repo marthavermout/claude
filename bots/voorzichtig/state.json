@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 21.965380516826293,
-    "fees_paid": 0.6134219048862902,
+    "fees_paid": 0.6182257910714102,
     "funding_paid": 0.9324262898923655,
     "positions": {
       "INIT": {
@@ -38,8 +38,8 @@
         "entry": 0.05146081304036697
       },
       "ETHFI": {
-        "size": 68.8,
-        "entry": 0.61207239
+        "size": 86.4,
+        "entry": 0.6109477206666667
       },
       "HYPE": {
         "size": -2.14,
