@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 13.615120461689195,
-    "fees_paid": 0.89804272700385,
+    "fees_paid": 0.90255618811557,
     "funding_paid": 0.3025789077101031,
     "positions": {
       "LIT": {
@@ -42,8 +42,8 @@
         "entry": 595.340908
       },
       "CASHCAT": {
-        "size": 227.0,
-        "entry": 0.0545299038
+        "size": 434.0,
+        "entry": 0.05163180125391705
       },
       "ZEC": {
         "size": 0.02,
