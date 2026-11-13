@@ -134,12 +134,12 @@
   "shadows": {
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
-      "realized_pnl": 7.7540251408075065,
-      "fees_paid": 1.44722483774649,
+      "realized_pnl": 7.453304289906328,
+      "fees_paid": 1.45183102730019,
       "funding_paid": -0.019119444111463692,
       "positions": {
         "HYPE": {
-          "size": -3.53,
+          "size": -3.39,
           "entry": 70.96611382213445
         },
         "LIT": {
@@ -166,8 +166,8 @@
     },
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
-      "realized_pnl": -7.903957471906869,
-      "fees_paid": 1.41935298407829,
+      "realized_pnl": -7.8835642432043045,
+      "fees_paid": 1.42520568438429,
       "funding_paid": -3.1589267759468322,
       "positions": {
         "ASTER": {
@@ -191,7 +191,7 @@
           "entry": 70.9905024945055
         },
         "LIT": {
-          "size": -64.0,
+          "size": -60.0,
           "entry": 3.256598477175641
         },
         "MORPHO": {
