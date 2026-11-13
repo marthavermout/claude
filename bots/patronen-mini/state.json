@@ -3,7 +3,7 @@
     "starting_balance": 50.0,
     "realized_pnl": -0.041424599999999145,
     "fees_paid": 0.022084615592279998,
-    "funding_paid": -0.0003476936393664,
+    "funding_paid": -0.0006589197893663999,
     "positions": {
       "XRP": {
         "size": -12.0,
@@ -18,7 +18,7 @@
   "risk": {
     "day": "2026-11-13",
     "day_start_equity": 49.947847045742,
-    "peak_equity": 50.047193003888,
+    "peak_equity": 50.07843792259709,
     "killed": false,
     "kill_reason": ""
   },
@@ -26,7 +26,7 @@
   "shadows": {},
   "shadow_started": {},
   "meta": {
-    "funding_hour": 498481
+    "funding_hour": 498482
   },
   "pattern_trades": {
     "XRP": {
@@ -49,16 +49,16 @@
     }
   },
   "pattern_scanned": {
-    "BTC": 1794534300000,
-    "ETH": 1794534300000,
-    "SOL": 1794534300000,
-    "HYPE": 1794534300000,
+    "BTC": 1794535200000,
+    "ETH": 1794535200000,
+    "SOL": 1794535200000,
+    "HYPE": 1794535200000,
     "XRP": 1794529800000,
-    "DOGE": 1794534300000,
+    "DOGE": 1794535200000,
     "SUI": 1794530700000,
-    "BNB": 1794534300000,
-    "AVAX": 1794534300000,
-    "LINK": 1794534300000
+    "BNB": 1794535200000,
+    "AVAX": 1794535200000,
+    "LINK": 1794535200000
   },
   "quant_sizes": {},
   "funding_pos": {},
