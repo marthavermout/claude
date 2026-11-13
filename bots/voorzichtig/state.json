@@ -136,8 +136,8 @@
   "shadows": {
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
-      "realized_pnl": 8.795615917799982,
-      "fees_paid": 0.81912181931838,
+      "realized_pnl": 8.260037425868925,
+      "fees_paid": 0.82362307888638,
       "funding_paid": 0.08206466391480283,
       "positions": {
         "LIT": {
@@ -149,7 +149,7 @@
           "entry": 2056.86129
         },
         "CASHCAT": {
-          "size": 2843.0,
+          "size": 2643.0,
           "entry": 0.05269188765965529
         },
         "BTC": {
