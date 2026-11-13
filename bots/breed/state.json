@@ -253,12 +253,12 @@
   "shadows": {
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
-      "realized_pnl": 1.1593780796635693,
-      "fees_paid": 0.7241299487771401,
+      "realized_pnl": 1.5273040171635683,
+      "fees_paid": 0.7299945314591401,
       "funding_paid": 0.07618781755122538,
       "positions": {
         "LIT": {
-          "size": -80.0,
+          "size": -76.0,
           "entry": 3.350082974375
         },
         "ETH": {
