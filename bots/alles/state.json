@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 31.12285648534361,
-    "fees_paid": 1.51351320599415,
+    "realized_pnl": 28.118285105143602,
+    "fees_paid": 1.54283698916433,
     "funding_paid": -0.10285153822177945,
     "positions": {
       "APEX": {
@@ -16,10 +16,6 @@
       "DYDX": {
         "size": -1036.3,
         "entry": 0.0893902415057416
-      },
-      "ETHFI": {
-        "size": 110.1,
-        "entry": 0.6191510806594006
       },
       "FARTCOIN": {
         "size": -574.8,
@@ -163,7 +159,7 @@
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
       "realized_pnl": -10.927967637079584,
-      "fees_paid": 1.46383715888424,
+      "fees_paid": 1.46834114040774,
       "funding_paid": -3.1384641678889666,
       "positions": {
         "ASTER": {
@@ -187,8 +183,8 @@
           "entry": 70.9905024945055
         },
         "LIT": {
-          "size": -53.0,
-          "entry": 3.256598477175641
+          "size": -56.0,
+          "entry": 3.2608672700055172
         },
         "MORPHO": {
           "size": 54.9,
@@ -354,14 +350,10 @@
     },
     "0xd10e2b1b66001bd4086d61e43e836ab9c168fd9a": {
       "starting_balance": 1000.0,
-      "realized_pnl": -6.298799746538208,
-      "fees_paid": 0.4253152132711799,
+      "realized_pnl": -19.65599090673821,
+      "fees_paid": 0.5320633721686199,
       "funding_paid": 0.04723967703661469,
       "positions": {
-        "ETHFI": {
-          "size": 400.8,
-          "entry": 0.62518792925
-        },
         "HYPE": {
           "size": -3.25,
           "entry": 70.98559749093485

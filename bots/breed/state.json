@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 26.428005891715326,
-    "fees_paid": 0.8847460501107303,
+    "realized_pnl": 25.999358674115324,
+    "fees_paid": 0.9007529471909103,
     "funding_paid": -0.14587723838279473,
     "positions": {
       "FARTCOIN": {
@@ -30,8 +30,8 @@
         "entry": 0.0050957101873940905
       },
       "ETHFI": {
-        "size": 36.4,
-        "entry": 0.6036376264615385
+        "size": -23.699999999999996,
+        "entry": 0.591861604
       },
       "LIT": {
         "size": -24.0,
@@ -173,7 +173,6 @@
       "NEAR": -1,
       "ORDI": -1,
       "FIL": -1,
-      "JUP": -1,
       "JTO": -1,
       "ACE": -1,
       "WIF": -1,
@@ -346,15 +345,10 @@
     },
     "0xd10e2b1b66001bd4086d61e43e836ab9c168fd9a": {
       "starting_balance": 1000.0,
-      "realized_pnl": -5.5435280299999885,
-      "fees_paid": 0.28439906164289996,
+      "realized_pnl": -15.038111405999981,
+      "fees_paid": 0.39199950125009997,
       "funding_paid": 0.1190803380537842,
-      "positions": {
-        "ETHFI": {
-          "size": 404.0,
-          "entry": 0.615363048
-        }
-      }
+      "positions": {}
     },
     "0x972d521729c0d07b360ae470f03878fe405f0650": {
       "starting_balance": 1000.0,

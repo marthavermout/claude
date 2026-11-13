@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 22.839985669258727,
-    "fees_paid": 0.6495457803244202,
+    "realized_pnl": 21.08820484385873,
+    "fees_paid": 0.6787097608615202,
     "funding_paid": 0.9235833627952748,
     "positions": {
       "INIT": {
@@ -36,10 +36,6 @@
       "CASHCAT": {
         "size": 436.0,
         "entry": 0.05146081304036697
-      },
-      "ETHFI": {
-        "size": 109.5,
-        "entry": 0.6078596024054794
       },
       "HYPE": {
         "size": -2.14,
@@ -230,15 +226,10 @@
     },
     "0xd10e2b1b66001bd4086d61e43e836ab9c168fd9a": {
       "starting_balance": 1000.0,
-      "realized_pnl": -4.498852589999979,
-      "fees_paid": 0.20018677549949998,
+      "realized_pnl": -9.430284373999989,
+      "fees_paid": 0.2651731796187,
       "funding_paid": 0.07140121133306519,
-      "positions": {
-        "ETHFI": {
-          "size": 244.0,
-          "entry": 0.61207239
-        }
-      }
+      "positions": {}
     },
     "0x972d521729c0d07b360ae470f03878fe405f0650": {
       "starting_balance": 1000.0,
