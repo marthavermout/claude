@@ -3,7 +3,7 @@
     "starting_balance": 1000.0,
     "realized_pnl": 18.619768318570898,
     "fees_paid": 1.2509762961803406,
-    "funding_paid": 0.04437158254683588,
+    "funding_paid": 0.03136566409204778,
     "positions": {
       "APEX": {
         "size": -155.0,
@@ -116,8 +116,8 @@
     }
   },
   "risk": {
-    "day": "2026-11-12",
-    "day_start_equity": 1047.1947039653935,
+    "day": "2026-11-13",
+    "day_start_equity": 1045.8446086077277,
     "peak_equity": 1097.4029715037238,
     "killed": false,
     "kill_reason": ""
@@ -128,7 +128,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -0.24097697143666075,
       "fees_paid": 1.10797586765307,
-      "funding_paid": 0.009508154831359703,
+      "funding_paid": 0.012919200863397703,
       "positions": {
         "HYPE": {
           "size": -3.52,
@@ -152,7 +152,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -7.517188732467943,
       "fees_paid": 1.2613866189203697,
-      "funding_paid": -2.4332704984023565,
+      "funding_paid": -2.6185179592861294,
       "positions": {
         "ASTER": {
           "size": -165.0,
@@ -216,7 +216,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -7.790754829268922,
       "fees_paid": 0.65247840583749,
-      "funding_paid": -0.3896331107571341,
+      "funding_paid": -0.39580490428163406,
       "positions": {
         "PURR": {
           "size": -2759.0,
@@ -236,7 +236,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 53.654219638444005,
       "fees_paid": 0.6774240977808299,
-      "funding_paid": 5.319608350044569,
+      "funding_paid": 5.4201052018627776,
       "positions": {
         "ARB": {
           "size": -491.7,
@@ -299,8 +299,8 @@
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
       "realized_pnl": -3.451025740212994,
-      "fees_paid": 0.9548023168442701,
-      "funding_paid": -0.335894856644195,
+      "fees_paid": 0.9593467452767701,
+      "funding_paid": -0.3480046335614782,
       "positions": {
         "APEX": {
           "size": -1225.0,
@@ -315,8 +315,8 @@
           "entry": 0.08893335112546723
         },
         "ETH": {
-          "size": -0.0892,
-          "entry": 2018.34625
+          "size": -0.0942,
+          "entry": 2018.4205451167727
         },
         "FARTCOIN": {
           "size": -2339.9,
@@ -344,7 +344,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -5.499282773999968,
       "fees_paid": 0.4160112453496799,
-      "funding_paid": 0.046054959393233195,
+      "funding_paid": 0.04603977814323319,
       "positions": {
         "ETHFI": {
           "size": 400.8,
@@ -367,7 +367,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -0.3235215479999985,
       "fees_paid": 0.12189334302405,
-      "funding_paid": -0.063913089609851,
+      "funding_paid": -0.067120041659851,
       "positions": {
         "HYPE": {
           "size": -3.53,
@@ -387,7 +387,7 @@
     "0x7dacca323e44f168494c779bb5e7483c468ef410": "2026-11-10T16:52:32.648945+00:00"
   },
   "meta": {
-    "funding_hour": 498479
+    "funding_hour": 498480
   },
   "pattern_trades": {},
   "pattern_scanned": {},
