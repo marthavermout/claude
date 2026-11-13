@@ -3,7 +3,7 @@
     "starting_balance": 50.0,
     "realized_pnl": 0.0,
     "fees_paid": 0.01563495816636,
-    "funding_paid": 0.0046759359234416,
+    "funding_paid": 0.0050742289712576005,
     "positions": {
       "ETH": {
         "size": 0.0062,
@@ -52,7 +52,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.032290372533149994,
-      "funding_paid": 0.003183558909542101,
+      "funding_paid": 0.004071238759542101,
       "positions": {
         "CHIP": {
           "size": 369.0,
@@ -84,7 +84,7 @@
       "starting_balance": 50.0,
       "realized_pnl": -0.28404649000000015,
       "fees_paid": 0.0163078635591,
-      "funding_paid": 0.002940862625,
+      "funding_paid": 0.003089189375,
       "positions": {
         "VVV": {
           "size": 0.66,
@@ -110,7 +110,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.0056243565963899995,
-      "funding_paid": 0.0026824140875,
+      "funding_paid": 0.002835235025,
       "positions": {
         "ETHFI": {
           "size": 20.3,
@@ -122,7 +122,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.005635671408899999,
-      "funding_paid": 0.0019465670924864002,
+      "funding_paid": 0.0020750078653024003,
       "positions": {
         "ETH": {
           "size": 0.0062,
@@ -134,7 +134,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.0112002060933,
-      "funding_paid": 0.000246418053498,
+      "funding_paid": 0.000530130701682,
       "positions": {
         "ETH": {
           "size": 0.0063,
@@ -149,12 +149,16 @@
     "0xd738f8f8f68511eb644a31d8b23d0b20baa4854b": {
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.0055036690137,
-      "funding_paid": 0.0016914503114650002,
+      "fees_paid": 0.011137130480700001,
+      "funding_paid": 0.0018361394364650003,
       "positions": {
         "BTC": {
           "size": 0.00017,
           "entry": 71943.3858
+        },
+        "BNB": {
+          "size": 0.02,
+          "entry": 625.9401630000001
         }
       }
     }
@@ -170,7 +174,7 @@
     "0xd738f8f8f68511eb644a31d8b23d0b20baa4854b": "2026-11-12T12:28:05.638668+00:00"
   },
   "meta": {
-    "funding_hour": 498485
+    "funding_hour": 498486
   },
   "pattern_trades": {},
   "pattern_scanned": {},
