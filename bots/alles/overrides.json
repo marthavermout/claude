@@ -1,5 +1,7 @@
 {
-  "risk": {},
+  "risk": {
+    "min_trade_usd": 15.0
+  },
   "leaders": [
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b",
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5",
@@ -10,8 +12,8 @@
     "0x972d521729c0d07b360ae470f03878fe405f0650",
     "0x7dacca323e44f168494c779bb5e7483c468ef410"
   ],
-  "reviews": 3,
-  "last_review": "2026-11-12T15:31:17.658906+00:00",
+  "reviews": 4,
+  "last_review": "2026-11-13T14:43:23.899329+00:00",
   "review_log": [
     {
       "time": "2026-11-10T16:50:57.965419+00:00",
@@ -55,13 +57,35 @@
         "`0x888e000c\u2026`: nog te weinig data om te beoordelen (47u, 8 gesloten trades)"
       ],
       "decision": "Afkoelperiode: vorige wijziging was minder dan 48u geleden; eerst het effect daarvan meten."
+    },
+    {
+      "time": "2026-11-13T14:43:23.899329+00:00",
+      "n": 4,
+      "mistakes": [
+        "29% van de trades draait binnen een uur de vorige om (churn)."
+      ],
+      "observations": [
+        "`0xd10e2b1b\u2026`: nog te weinig data om te beoordelen (70u, 7 gesloten trades)",
+        "`0x5a19bfe9\u2026`: nog te weinig data om te beoordelen (70u, 40 gesloten trades)",
+        "`0x64343028\u2026`: nog te weinig data om te beoordelen (70u, 59 gesloten trades)",
+        "`0xf83858e5\u2026`: nog te weinig data om te beoordelen (70u, 24 gesloten trades)",
+        "`0x7dacca32\u2026`: nog te weinig data om te beoordelen (70u, 3 gesloten trades)",
+        "`0x011820f6\u2026`: nog te weinig data om te beoordelen (70u, 44 gesloten trades)",
+        "`0x972d5217\u2026`: nog te weinig data om te beoordelen (70u, 2 gesloten trades)",
+        "`0x888e000c\u2026`: nog te weinig data om te beoordelen (70u, 14 gesloten trades)"
+      ],
+      "decision": "Minimale trade-grootte verhoogd: $10.0 \u2192 $15.0 (minder kleine aanpassingen)."
     }
   ],
-  "last_change": "2026-11-10T16:50:57.965419+00:00",
+  "last_change": "2026-11-13T14:43:23.899329+00:00",
   "history": [
     {
       "time": "2026-11-10T16:50:57.965419+00:00",
       "change": "Traders aangevuld: `0xf83858e5\u2026`, `0x64343028\u2026`, `0x5a19bfe9\u2026`, `0x888e000c\u2026`, `0x011820f6\u2026`, `0xd10e2b1b\u2026`, `0x972d5217\u2026`, `0x7dacca32\u2026`"
+    },
+    {
+      "time": "2026-11-13T14:43:23.899329+00:00",
+      "change": "Minimale trade-grootte verhoogd: $10.0 \u2192 $15.0 (minder kleine aanpassingen)."
     }
   ]
 }

@@ -3,15 +3,15 @@
   "leaders": [
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b",
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5",
-    "0x5a19bfe9c095c3bd188eca00a690b95200797aba",
     "0x888e000c78b8f1aada5b3c99f880794907b76d77",
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede",
     "0xd10e2b1b66001bd4086d61e43e836ab9c168fd9a",
     "0x972d521729c0d07b360ae470f03878fe405f0650",
-    "0x7dacca323e44f168494c779bb5e7483c468ef410"
+    "0x7dacca323e44f168494c779bb5e7483c468ef410",
+    "0x9eb42f017e793512e4734f8785de605c4cb3a24e"
   ],
-  "reviews": 3,
-  "last_review": "2026-11-12T15:31:19.477771+00:00",
+  "reviews": 4,
+  "last_review": "2026-11-13T14:43:52.124983+00:00",
   "review_log": [
     {
       "time": "2026-11-10T16:52:13.348091+00:00",
@@ -51,13 +51,37 @@
         "`0x888e000c\u2026`: nog te weinig data om te beoordelen (47u, 6 gesloten trades)"
       ],
       "decision": "niets veranderen"
+    },
+    {
+      "time": "2026-11-13T14:43:52.124983+00:00",
+      "n": 4,
+      "mistakes": [
+        "Trader `0x5a19bfe9\u2026` heeft in 70 uur niets gedaan dat we konden kopi\u00ebren."
+      ],
+      "observations": [
+        "`0x64343028\u2026`: nog te weinig data om te beoordelen (70u, 2 gesloten trades)",
+        "`0xd10e2b1b\u2026`: nog te weinig data om te beoordelen (70u, 2 gesloten trades)",
+        "`0xf83858e5\u2026`: nog te weinig data om te beoordelen (70u, 10 gesloten trades)",
+        "`0x7dacca32\u2026`: nog te weinig data om te beoordelen (70u, 0 gesloten trades)",
+        "`0x011820f6\u2026`: nog te weinig data om te beoordelen (70u, 3 gesloten trades)",
+        "`0x972d5217\u2026`: nog te weinig data om te beoordelen (70u, 2 gesloten trades)",
+        "`0x888e000c\u2026`: nog te weinig data om te beoordelen (70u, 10 gesloten trades)"
+      ],
+      "decision": "Trader `0x5a19bfe9\u2026` vervangen door `0x9eb42f01\u2026`."
     }
   ],
-  "last_change": "2026-11-10T16:52:13.348091+00:00",
+  "last_change": "2026-11-13T14:43:52.124983+00:00",
   "history": [
     {
       "time": "2026-11-10T16:52:13.348091+00:00",
       "change": "Traders aangevuld: `0xf83858e5\u2026`, `0x64343028\u2026`, `0x5a19bfe9\u2026`, `0x888e000c\u2026`, `0x011820f6\u2026`, `0xd10e2b1b\u2026`, `0x972d5217\u2026`, `0x7dacca32\u2026`"
+    },
+    {
+      "time": "2026-11-13T14:43:52.124983+00:00",
+      "change": "Trader `0x5a19bfe9\u2026` vervangen door `0x9eb42f01\u2026`."
     }
+  ],
+  "blacklist": [
+    "0x5a19bfe9c095c3bd188eca00a690b95200797aba"
   ]
 }
