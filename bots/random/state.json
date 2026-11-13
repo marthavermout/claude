@@ -102,7 +102,7 @@
     "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da": {
       "starting_balance": 1000.0,
       "realized_pnl": -4.327075913747336,
-      "fees_paid": 0.9902596907730601,
+      "fees_paid": 0.9948448026120601,
       "funding_paid": 0.4538970511475661,
       "positions": {
         "CASHCAT": {
@@ -130,8 +130,8 @@
           "entry": 0.13476202296118808
         },
         "TIA": {
-          "size": 547.6,
-          "entry": 0.419843952
+          "size": 572.1,
+          "entry": 0.41967433234609336
         },
         "XPL": {
           "size": 4835.0,
