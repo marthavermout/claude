@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": -3.238375561964706,
-    "fees_paid": 1.15027296729147,
+    "realized_pnl": -1.724685201964706,
+    "fees_paid": 1.15478066365047,
     "funding_paid": -3.0182835470487186,
     "positions": {
       "CASHCAT": {
@@ -54,7 +54,7 @@
         "entry": 0.0052570512000000005
       },
       "XMR": {
-        "size": -0.236,
+        "size": -0.216,
         "entry": 576.539669
       },
       "ETHFI": {
