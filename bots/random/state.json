@@ -107,7 +107,7 @@
     "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da": {
       "starting_balance": 1000.0,
       "realized_pnl": -3.7092020944130075,
-      "fees_paid": 1.1286719426586609,
+      "fees_paid": 1.133271259338061,
       "funding_paid": 0.7604342557670138,
       "positions": {
         "CASHCAT": {
@@ -123,8 +123,8 @@
           "entry": 0.05543390573110122
         },
         "PONS": {
-          "size": 1087.0,
-          "entry": 0.14577131989837397
+          "size": 1161.0,
+          "entry": 0.1452834870469703
         },
         "SKY": {
           "size": 3957.0,
