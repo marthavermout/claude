@@ -35,8 +35,8 @@
   "shadows": {
     "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da": {
       "starting_balance": 1000.0,
-      "realized_pnl": -81.80304008570876,
-      "fees_paid": 1.7555698507527007,
+      "realized_pnl": -81.76754245370876,
+      "fees_paid": 1.7647933216682705,
       "funding_paid": 0.6898449581536968,
       "positions": {
         "CASHCAT": {
@@ -44,8 +44,8 @@
           "entry": 0.053348024753530315
         },
         "CHIP": {
-          "size": 3642.0,
-          "entry": 0.031791908831591234
+          "size": 4011.0,
+          "entry": 0.03136601075822869
         },
         "NIL": {
           "size": 1822.0,
@@ -76,7 +76,7 @@
           "entry": 2.93688726
         },
         "BTC": {
-          "size": 0.00257,
+          "size": 0.00241,
           "entry": 65238.5451
         },
         "SOL": {
