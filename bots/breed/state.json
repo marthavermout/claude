@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 29.352749536351563,
-    "fees_paid": 1.0536784469952307,
+    "fees_paid": 1.0610242400427308,
     "funding_paid": -0.17078246457626092,
     "positions": {
       "FARTCOIN": {
@@ -34,8 +34,8 @@
         "entry": 0.591861604
       },
       "LIT": {
-        "size": -47.0,
-        "entry": 3.3251836144376905
+        "size": -52.0,
+        "entry": 3.319377200549451
       },
       "MORPHO": {
         "size": 5.0,
