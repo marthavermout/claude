@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 22.886155101734172,
-    "fees_paid": 1.5283393298534698,
+    "realized_pnl": 23.477607915179057,
+    "fees_paid": 1.5329410162567199,
     "funding_paid": 0.3069191400712326,
     "positions": {
       "LIT": {
@@ -10,7 +10,7 @@
         "entry": 3.4491924679555552
       },
       "HYPE": {
-        "size": -2.19,
+        "size": -2.04,
         "entry": 72.11615065629923
       },
       "INIT": {
