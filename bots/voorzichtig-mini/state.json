@@ -21,7 +21,6 @@
       "DYDX": -1,
       "GMX": 1,
       "WLD": -1,
-      "UNI": -1,
       "TAO": -1,
       "HYPE": -1,
       "XPL": -1,
@@ -160,7 +159,7 @@
     "0x7dacca323e44f168494c779bb5e7483c468ef410": "2026-11-12T12:28:05.648774+00:00"
   },
   "meta": {
-    "funding_hour": 498525
+    "funding_hour": 498526
   },
   "pattern_trades": {},
   "pattern_scanned": {},
