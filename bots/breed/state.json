@@ -391,8 +391,8 @@
     },
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
-      "realized_pnl": 22.24601239501114,
-      "fees_paid": 1.6444975485226507,
+      "realized_pnl": 22.96687245875914,
+      "fees_paid": 1.6490369181650408,
       "funding_paid": -2.2950945954577104,
       "positions": {
         "AERO": {
@@ -548,7 +548,7 @@
           "entry": 0.046934385
         },
         "POL": {
-          "size": -184.0,
+          "size": -63.0,
           "entry": 0.089325191388
         },
         "OP": {
