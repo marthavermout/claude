@@ -35,8 +35,8 @@
   "shadows": {
     "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da": {
       "starting_balance": 1000.0,
-      "realized_pnl": -79.8092078002667,
-      "fees_paid": 1.7508575384037006,
+      "realized_pnl": -81.80304008570876,
+      "fees_paid": 1.7555698507527007,
       "funding_paid": 0.7659485640699963,
       "positions": {
         "CASHCAT": {
@@ -64,7 +64,7 @@
           "entry": 0.13167547452227285
         },
         "TIA": {
-          "size": 498.8,
+          "size": 468.8,
           "entry": 0.4155212501814019
         },
         "XPL": {
