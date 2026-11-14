@@ -78,7 +78,7 @@
   "risk": {
     "day": "2026-11-14",
     "day_start_equity": 1079.1179006642258,
-    "peak_equity": 1135.2519615566266,
+    "peak_equity": 1135.4367165566266,
     "killed": false,
     "kill_reason": ""
   },
@@ -248,7 +248,7 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
       "realized_pnl": 10.042201222722241,
-      "fees_paid": 1.22072502839904,
+      "fees_paid": 1.2276694562068802,
       "funding_paid": 0.0016375251265927787,
       "positions": {
         "LIT": {
@@ -260,8 +260,8 @@
           "entry": 2030.0114513086558
         },
         "CASHCAT": {
-          "size": 4582.0,
-          "entry": 0.04848280139606996
+          "size": 4963.0,
+          "entry": 0.047870291717105086
         },
         "BTC": {
           "size": 0.00364,
@@ -390,7 +390,7 @@
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
       "realized_pnl": 22.256822897979323,
-      "fees_paid": 1.6943773436137808,
+      "fees_paid": 1.7053395556177806,
       "funding_paid": -2.818078318300022,
       "positions": {
         "AERO": {
@@ -580,6 +580,10 @@
         "APEX": {
           "size": 150.0,
           "entry": 0.13794184952
+        },
+        "PNUT": {
+          "size": 835.4,
+          "entry": 0.029160247929135744
         }
       }
     },
