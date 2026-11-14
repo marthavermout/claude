@@ -47,7 +47,9 @@ class Engine:
         self.broker = PaperBroker(cfg.starting_balance, cfg.fee_bps, cfg.slippage_bps)
         self.risk = RiskManager(cfg.risk)
         self._decimals: dict[str, int] | None = None
-        self.record_replay = True
+        # A mini sees exactly the same traders and prices as its big bot, so recording it again would
+        # only duplicate history; backtest a mini with `--replay-dir` pointing at the big bot.
+        self.record_replay = not cfg.follow_bot
         # With fast polling, write history rows (equity, leaders, replay) at most this often.
         # Trades are always written. 0 = every round (single-bot runs and tests).
         self.log_every_s = 0.0
