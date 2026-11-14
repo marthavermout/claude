@@ -25,6 +25,7 @@ class BotConfig:
     target_leaders: int = 3
     strategy: str = "copy"  # "copy" (follow traders), "patterns", "trend" or "funding"
     pattern_coins: list[str] = field(default_factory=list)  # coins for patterns / trend / funding
+    patterns: list[str] = field(default_factory=list)       # patterns Pia may trade (empty = all)
     risk_per_trade: float = 0.01  # patterns: a stop-loss hit costs at most this share of equity
     follow_bot: str = ""  # data dir (relative to ours) of a bot whose traders we mirror
     select_random: bool = False  # control group: pick active traders at random, ignoring past results
@@ -53,6 +54,7 @@ def load_config(path: str | Path) -> BotConfig:
         follow_bot=str(bot.get("follow_bot", "")),
         strategy=str(bot.get("strategy", "copy")),
         pattern_coins=[str(c) for c in bot.get("pattern_coins", [])],
+        patterns=[str(p) for p in bot.get("patterns", [])],
         risk_per_trade=float(bot.get("risk_per_trade", 0.01)),
         risk=RiskConfig(**raw.get("risk", {})),
     )

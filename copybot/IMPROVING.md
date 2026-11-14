@@ -50,6 +50,17 @@ Run `review` for each and compare return, max drawdown, fees and number of trade
   leaders, replay) are written at most every 30 s; trades are always written.
 - The "fees eat X% of the result" check now compares fees with the whole result (open positions
   included). Before, it only used closed trades and flagged Alex at 219% while he was up 5%.
+- Pia (14 Nov 2026, user request "recognise all wave forms"): she now recognises 19 patterns
+  (`patterns.ALL_PATTERNS`, incl. symmetrical triangle, rectangle, cup with handle, Elliott wave 3,
+  engulfing candles) but only trades those in `patterns = [...]` in her config. Each pattern was tested
+  alone; rule fixed beforehand: profit after costs on the first 70% AND last 30% of 52 days of 15m
+  candles AND of 208 days of 1h candles, 10+ trades in each part. Only the symmetrical triangle passed
+  (19 + 5 tests, so one pass could still be luck). Patterns she may not trade are logged in
+  `pattern_seen.csv`. Weekly (Sundays): re-run the per-pattern test on fresh candles and check the
+  seen patterns' outcomes; add a pattern only if it passes the same rule on data it was not picked on,
+  remove the triangle if it stops passing. Note: the 1.5x reward/risk filter makes double/triple
+  tops and bottoms and rectangles impossible to trade (their target equals their risk); retested
+  without the filter on 14 Nov, all five still lost money.
 - `random` (Rik) is the **control group**: traders picked at random, not on past results. It answers
   "skill or luck?". A bot only counts as better when it beats **both Rik and holding BTC**.
 - Only call a winner after **7+ days** and **30+ closed trades** per bot, and when the gap is larger

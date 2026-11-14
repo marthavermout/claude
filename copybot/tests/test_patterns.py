@@ -79,7 +79,7 @@ class PatternEngineTest(unittest.TestCase):
                             risk=RiskConfig(max_position_pct=1.0, max_leverage=5))
             client = FakeCandleClient(cs, 100.7)
             original = eng.scan
-            eng.scan = lambda candles: detect(candles, len(candles) - 1)  # no trend filter on this tiny series
+            eng.scan = lambda candles, enabled=None: detect(candles, len(candles) - 1)  # no trend filter on this tiny series
             try:
                 e = Engine(cfg, client=client)
                 fills = e.tick(now)
@@ -92,3 +92,36 @@ class PatternEngineTest(unittest.TestCase):
                 self.assertGreater(e.broker.realized_pnl, 0)
             finally:
                 eng.scan = original
+
+
+class SelectionTest(unittest.TestCase):
+    def test_only_enabled_patterns_trade_and_others_are_seen(self):
+        import csv, os
+        import copybot.engine as eng
+        from copybot.patterns import detect_all, pick
+        cs = double_bottom()
+        self.assertEqual(pick(detect_all(cs, len(cs) - 1), None).pattern, "double bottom")
+        self.assertIsNone(pick(detect_all(cs, len(cs) - 1), {"symmetrical triangle"}))
+        now = datetime.fromtimestamp(cs[-1].t / 1000 + 900, tz=timezone.utc) + timedelta(seconds=5)
+        with tempfile.TemporaryDirectory() as tmp:
+            cfg = BotConfig(leaders=[], data_dir=tmp, strategy="patterns", pattern_coins=["BTC"],
+                            patterns=["symmetrical triangle"], fee_bps=0, slippage_bps=0,
+                            risk=RiskConfig(max_position_pct=1.0, max_leverage=5))
+            original = eng.scan
+            eng.scan = lambda candles, enabled=None: pick(detect_all(candles, len(candles) - 1), enabled)
+            try:
+                e = Engine(cfg, client=FakeCandleClient(cs, 100.7))
+                self.assertEqual(e.tick(now), [])      # double bottom is not allowed to trade
+            finally:
+                eng.scan = original
+            rows = list(csv.DictReader(open(os.path.join(tmp, "pattern_seen.csv"))))
+            self.assertEqual(rows[0]["pattern"], "double bottom")
+
+    def test_new_patterns_are_found(self):
+        from copybot.patterns import detect_extra, pivots
+        # wave 1 up 100->106, pullback to 102.5 (58%), then the break above 106
+        path = [100] * 30 + [101, 102, 103, 104, 105, 106, 105, 104, 103.2, 102.5, 103, 104, 105, 105.8, 106.4]
+        cs = series(path)
+        j = len(cs) - 1
+        names = [s.pattern for s in detect_extra(cs, j, pivots(cs, j))]
+        self.assertIn("elliott wave 3", names)
