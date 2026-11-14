@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 100.42436377133666,
-    "fees_paid": 1.7906385056828407,
+    "realized_pnl": 102.16465891858319,
+    "fees_paid": 1.8002157547496407,
     "funding_paid": -0.4510386295803826,
     "positions": {
       "FARTCOIN": {
@@ -10,7 +10,7 @@
         "entry": 0.1145229
       },
       "HYPE": {
-        "size": -3.21,
+        "size": -2.87,
         "entry": 67.71491426837213
       },
       "PUMP": {
@@ -254,8 +254,8 @@
   "shadows": {
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
-      "realized_pnl": 10.042201222722241,
-      "fees_paid": 1.24186278465495,
+      "realized_pnl": 7.427558571181619,
+      "fees_paid": 1.24893518629167,
       "funding_paid": 0.017957352499458384,
       "positions": {
         "LIT": {
@@ -267,7 +267,7 @@
           "entry": 2030.0114513086558
         },
         "CASHCAT": {
-          "size": 5755.0,
+          "size": 5363.0,
           "entry": 0.04676298656413424
         },
         "BTC": {

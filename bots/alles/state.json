@@ -126,8 +126,8 @@
   "shadows": {
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
-      "realized_pnl": 6.729600412479198,
-      "fees_paid": 1.64215918261917,
+      "realized_pnl": 4.282264010282322,
+      "fees_paid": 1.6489258852579198,
       "funding_paid": -0.11401165157490041,
       "positions": {
         "HYPE": {
@@ -143,7 +143,7 @@
           "entry": 2014.175025875324
         },
         "CASHCAT": {
-          "size": 5884.0,
+          "size": 5509.0,
           "entry": 0.04662520900585833
         },
         "BTC": {
@@ -159,7 +159,7 @@
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
       "realized_pnl": -6.055171436228618,
-      "fees_paid": 2.2274361726919207,
+      "fees_paid": 2.2342482397559706,
       "funding_paid": -2.8591023741903365,
       "positions": {
         "ASTER": {
@@ -207,15 +207,15 @@
           "entry": 0.05049323618708921
         },
         "ZRO": {
-          "size": -219.5,
-          "entry": 1.4953611731241763
+          "size": -230.6,
+          "entry": 1.48902733872401
         }
       }
     },
     "0x5a19bfe9c095c3bd188eca00a690b95200797aba": {
       "starting_balance": 1000.0,
-      "realized_pnl": -0.8221533029307961,
-      "fees_paid": 0.9220352577627597,
+      "realized_pnl": 2.862407632551449,
+      "fees_paid": 0.9290500629932698,
       "funding_paid": -1.0514682595564724,
       "positions": {
         "PURR": {
@@ -223,7 +223,7 @@
           "entry": 0.08699599666001442
         },
         "USELESS": {
-          "size": -3059.0,
+          "size": -2900.0,
           "entry": 0.12121394341686946
         },
         "ZEC": {
