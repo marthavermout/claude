@@ -7,7 +7,7 @@
     "positions": {}
   },
   "risk": {
-    "day": "2026-11-13",
+    "day": "2026-11-14",
     "day_start_equity": 50.0,
     "peak_equity": 50.0,
     "killed": false,
@@ -160,7 +160,7 @@
     "0x7dacca323e44f168494c779bb5e7483c468ef410": "2026-11-12T12:28:05.648774+00:00"
   },
   "meta": {
-    "funding_hour": 498503
+    "funding_hour": 498504
   },
   "pattern_trades": {},
   "pattern_scanned": {},
