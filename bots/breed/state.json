@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 38.59624171756244,
-    "fees_paid": 1.2234067364447105,
+    "realized_pnl": 38.6339342806424,
+    "fees_paid": 1.2279309943153505,
     "funding_paid": -0.37456537735151296,
     "positions": {
       "FARTCOIN": {
@@ -46,7 +46,7 @@
         "entry": 8.515396579999999
       },
       "WLFI": {
-        "size": -2254.0,
+        "size": -2041.0,
         "entry": 0.04737839879004676
       },
       "INIT": {
@@ -391,8 +391,8 @@
     },
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
-      "realized_pnl": 22.33729379831987,
-      "fees_paid": 1.661233421195371,
+      "realized_pnl": 21.205624576884272,
+      "fees_paid": 1.665906051482371,
       "funding_paid": -2.4926504787507233,
       "positions": {
         "AERO": {
@@ -416,7 +416,7 @@
           "entry": 1.3724744400000002
         },
         "BERA": {
-          "size": 730.9,
+          "size": 633.4,
           "entry": 0.11810555980959586
         },
         "CASHCAT": {
