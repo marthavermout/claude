@@ -33,8 +33,8 @@
   "shadows": {
     "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da": {
       "starting_balance": 1000.0,
-      "realized_pnl": -109.24958272519072,
-      "fees_paid": 2.05633036635372,
+      "realized_pnl": -110.07335945466086,
+      "fees_paid": 2.0608678418770796,
       "funding_paid": 0.48184766327834494,
       "positions": {
         "CASHCAT": {
@@ -46,7 +46,7 @@
           "entry": 0.029747487659853977
         },
         "NIL": {
-          "size": 2796.0,
+          "size": 2588.0,
           "entry": 0.05243776764552953
         },
         "PONS": {
