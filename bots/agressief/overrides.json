@@ -10,8 +10,8 @@
     "0x7dacca323e44f168494c779bb5e7483c468ef410",
     "0xa1d4fc32f21d9d77a4c20a6ac4b748815912c07c"
   ],
-  "reviews": 4,
-  "last_review": "2026-11-13T14:43:05.747549+00:00",
+  "reviews": 5,
+  "last_review": "2026-11-14T13:59:29.603399+00:00",
   "review_log": [
     {
       "time": "2026-11-10T16:50:40.565967+00:00",
@@ -68,6 +68,18 @@
         "`0x888e000c\u2026`: nog te weinig data om te beoordelen (70u, 7 gesloten trades)"
       ],
       "decision": "Trader `0x5a19bfe9\u2026` vervangen door `0xa1d4fc32\u2026`."
+    },
+    {
+      "time": "2026-11-14T13:59:29.603399+00:00",
+      "n": 5,
+      "mistakes": [],
+      "observations": [
+        "`0xf83858e5\u2026` zelf +14.44%, onze kopie -2.50%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo).",
+        "`0xa1d4fc32\u2026`: nog te weinig data om te beoordelen (23u, 2 gesloten trades)",
+        "`0x7dacca32\u2026` zelf +36.30%, onze kopie +3.14%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo).",
+        "`0x972d5217\u2026`: nog te weinig data om te beoordelen (93u, 2 gesloten trades)"
+      ],
+      "decision": "niets veranderen"
     }
   ],
   "last_change": "2026-11-13T14:43:05.747549+00:00",
