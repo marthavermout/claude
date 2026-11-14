@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 50.0,
     "realized_pnl": 0.0,
-    "fees_paid": 0.01563495816636,
+    "fees_paid": 0.02092135523436,
     "funding_paid": 0.010441506210502204,
     "positions": {
       "ETH": {
@@ -16,6 +16,10 @@
       "BTC": {
         "size": 0.00014,
         "entry": 72084.9141
+      },
+      "LIT": {
+        "size": 4.0,
+        "entry": 2.93688726
       }
     }
   },
@@ -27,9 +31,7 @@
     "kill_reason": ""
   },
   "baselines": {
-    "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da": {
-      "LIT": 1
-    },
+    "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da": {},
     "0xfb47779fb0f59750fc714ba61a7859b059bbd3e6": {
       "ENA": 1
     },

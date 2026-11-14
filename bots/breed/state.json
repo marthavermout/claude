@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 42.617299991250654,
-    "fees_paid": 1.3265533434405603,
+    "realized_pnl": 44.68105768842509,
+    "fees_paid": 1.3355751769464603,
     "funding_paid": -0.41678654453466035,
     "positions": {
       "FARTCOIN": {
@@ -26,7 +26,7 @@
         "entry": 1.527004999446154
       },
       "kPEPE": {
-        "size": -43610.0,
+        "size": -41173.0,
         "entry": 0.004964666935976379
       },
       "ETHFI": {
@@ -62,8 +62,8 @@
         "entry": 595.340908
       },
       "CASHCAT": {
-        "size": 210.0,
-        "entry": 0.0545299038
+        "size": 437.0,
+        "entry": 0.04911822213775744
       },
       "BTC": {
         "size": 0.00415,
@@ -82,7 +82,7 @@
   "risk": {
     "day": "2026-11-14",
     "day_start_equity": 1079.1179006642258,
-    "peak_equity": 1122.187517028294,
+    "peak_equity": 1123.0405030282939,
     "killed": false,
     "kill_reason": ""
   },
@@ -253,7 +253,7 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
       "realized_pnl": 10.975009650026667,
-      "fees_paid": 1.1605222857118502,
+      "fees_paid": 1.1653459132944601,
       "funding_paid": 0.11159399324863356,
       "positions": {
         "LIT": {
@@ -265,8 +265,8 @@
           "entry": 2030.0114513086558
         },
         "CASHCAT": {
-          "size": 4017.0,
-          "entry": 0.05053100181520686
+          "size": 4260.0,
+          "entry": 0.05016483725293098
         },
         "BTC": {
           "size": 0.00364,
@@ -399,7 +399,7 @@
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
       "realized_pnl": 19.92774664236216,
-      "fees_paid": 1.6756533970732808,
+      "fees_paid": 1.6801596801496808,
       "funding_paid": -2.757972748325713,
       "positions": {
         "AERO": {
@@ -455,8 +455,8 @@
           "entry": 0.6169714207283776
         },
         "FARTCOIN": {
-          "size": 1201.6,
-          "entry": 0.11452290000000001
+          "size": 1303.1,
+          "entry": 0.11328729877369349
         },
         "FET": {
           "size": 611.0,

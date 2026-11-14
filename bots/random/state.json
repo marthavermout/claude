@@ -14,9 +14,7 @@
     "kill_reason": ""
   },
   "baselines": {
-    "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da": {
-      "LIT": 1
-    },
+    "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da": {},
     "0xfb47779fb0f59750fc714ba61a7859b059bbd3e6": {
       "ENA": 1
     },
@@ -37,8 +35,8 @@
   "shadows": {
     "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da": {
       "starting_balance": 1000.0,
-      "realized_pnl": -10.138410229245954,
-      "fees_paid": 1.2219049385977505,
+      "realized_pnl": -25.845064248013422,
+      "fees_paid": 1.3541159140263006,
       "funding_paid": 0.7786951001883222,
       "positions": {
         "CASHCAT": {
@@ -46,32 +44,36 @@
           "entry": 0.053348024753530315
         },
         "CHIP": {
-          "size": 6805.0,
+          "size": 6295.0,
           "entry": 0.031791908831591234
         },
         "NIL": {
-          "size": 3903.0,
+          "size": 3559.0,
           "entry": 0.05501224723111996
         },
         "PONS": {
-          "size": 1543.0,
+          "size": 1458.0,
           "entry": 0.14110275177157003
         },
         "SKY": {
-          "size": 3600.0,
+          "size": 3272.0,
           "entry": 0.060063961241298966
         },
         "SYRUP": {
-          "size": 1917.0,
+          "size": 1745.0,
           "entry": 0.13412488890009314
         },
         "TIA": {
-          "size": 544.2,
+          "size": 502.0,
           "entry": 0.41967433234609336
         },
         "XPL": {
-          "size": 4227.0,
+          "size": 3844.0,
           "entry": 0.0517213422
+        },
+        "LIT": {
+          "size": 62.0,
+          "entry": 2.93688726
         }
       }
     },
@@ -85,7 +87,7 @@
     "0xe00f0d90bc976c311a7f22cbb728d8629ccd5394": {
       "starting_balance": 1000.0,
       "realized_pnl": -3.9287431678996807,
-      "fees_paid": 1.07299078782309,
+      "fees_paid": 1.10310129797094,
       "funding_paid": 0.10092617893617936,
       "positions": {
         "HYPE": {
@@ -101,8 +103,8 @@
           "entry": 0.14035632213544671
         },
         "BTC": {
-          "size": 0.00236,
-          "entry": 67229.9433
+          "size": 0.00337,
+          "entry": 66936.17535934718
         }
       }
     },
