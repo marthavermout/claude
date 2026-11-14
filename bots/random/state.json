@@ -35,8 +35,8 @@
   "shadows": {
     "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da": {
       "starting_balance": 1000.0,
-      "realized_pnl": -60.00082529726447,
-      "fees_paid": 1.4951623539294907,
+      "realized_pnl": -61.07228442273209,
+      "fees_paid": 1.5870647211568205,
       "funding_paid": 0.7888855447001353,
       "positions": {
         "CASHCAT": {
@@ -44,7 +44,7 @@
           "entry": 0.053348024753530315
         },
         "CHIP": {
-          "size": 4496.0,
+          "size": 4133.0,
           "entry": 0.031791908831591234
         },
         "NIL": {
@@ -74,6 +74,10 @@
         "LIT": {
           "size": 62.0,
           "entry": 2.93688726
+        },
+        "BTC": {
+          "size": 0.00297,
+          "entry": 65238.5451
         }
       }
     },
@@ -86,13 +90,13 @@
     },
     "0xe00f0d90bc976c311a7f22cbb728d8629ccd5394": {
       "starting_balance": 1000.0,
-      "realized_pnl": -3.9287431678996807,
-      "fees_paid": 1.1206927032984901,
+      "realized_pnl": -4.565551924268741,
+      "fees_paid": 1.1370456353988903,
       "funding_paid": 0.10183669588343937,
       "positions": {
         "HYPE": {
-          "size": 1.64,
-          "entry": 70.26446776656655
+          "size": 1.68,
+          "entry": 69.82127752547623
         },
         "kPEPE": {
           "size": 1312.0,
