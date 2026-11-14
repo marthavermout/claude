@@ -118,7 +118,7 @@
   "risk": {
     "day": "2026-11-14",
     "day_start_equity": 1069.713501384612,
-    "peak_equity": 1215.46176046885,
+    "peak_equity": 1217.27073246885,
     "killed": false,
     "kill_reason": ""
   },
@@ -215,7 +215,7 @@
     "0x5a19bfe9c095c3bd188eca00a690b95200797aba": {
       "starting_balance": 1000.0,
       "realized_pnl": -3.420279290059595,
-      "fees_paid": 0.8644575112518599,
+      "fees_paid": 0.8715111867345599,
       "funding_paid": -1.0301002402064725,
       "positions": {
         "PURR": {
@@ -223,8 +223,8 @@
           "entry": 0.08789431396868119
         },
         "USELESS": {
-          "size": -2575.0,
-          "entry": 0.1255720442323121
+          "size": -2729.0,
+          "entry": 0.1242296989022366
         },
         "ZEC": {
           "size": -0.33,
