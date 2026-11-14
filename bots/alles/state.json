@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 49.36694746207996,
-    "fees_paid": 2.06315679761145,
+    "fees_paid": 2.0701604903426998,
     "funding_paid": 0.046915380398374215,
     "positions": {
       "ASTER": {
@@ -22,8 +22,8 @@
         "entry": 7.572214140000001
       },
       "HYPE": {
-        "size": -4.86,
-        "entry": 69.29972740513213
+        "size": -5.11,
+        "entry": 68.95507569744464
       },
       "INIT": {
         "size": -75.0,
