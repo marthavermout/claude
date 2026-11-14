@@ -78,7 +78,7 @@
   "risk": {
     "day": "2026-11-14",
     "day_start_equity": 1079.1179006642258,
-    "peak_equity": 1129.096362814067,
+    "peak_equity": 1131.7893968140672,
     "killed": false,
     "kill_reason": ""
   },
@@ -248,7 +248,7 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
       "realized_pnl": 10.042201222722241,
-      "fees_paid": 1.21597259785299,
+      "fees_paid": 1.22072502839904,
       "funding_paid": 0.0016375251265927787,
       "positions": {
         "LIT": {
@@ -260,8 +260,8 @@
           "entry": 2030.0114513086558
         },
         "CASHCAT": {
-          "size": 4325.0,
-          "entry": 0.048921905023767066
+          "size": 4582.0,
+          "entry": 0.04848280139606996
         },
         "BTC": {
           "size": 0.00364,
@@ -323,7 +323,7 @@
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
       "realized_pnl": 1.6645835826037212,
-      "fees_paid": 0.54310334002659,
+      "fees_paid": 0.54829773094059,
       "funding_paid": -0.09315263053735397,
       "positions": {
         "ETH": {
@@ -339,8 +339,8 @@
           "entry": 81.9551057
         },
         "LIT": {
-          "size": -91.0,
-          "entry": 3.3577093319706077
+          "size": -95.0,
+          "entry": 3.3378383171507924
         }
       }
     },
@@ -653,12 +653,12 @@
     "0xa1d4fc32f21d9d77a4c20a6ac4b748815912c07c": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.35989954904133004,
+      "fees_paid": 0.36506856503133006,
       "funding_paid": -0.030926279554961404,
       "positions": {
         "LIT": {
-          "size": -87.0,
-          "entry": 3.1859891114942536
+          "size": -91.0,
+          "entry": 3.172173130769232
         },
         "WLFI": {
           "size": -5443.0,

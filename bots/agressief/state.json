@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 41.86915559479416,
-    "fees_paid": 1.9246509049847393,
+    "fees_paid": 1.9291961595538794,
     "funding_paid": 0.3641861653080796,
     "positions": {
       "INIT": {
@@ -38,8 +38,8 @@
         "entry": 589.6520459999999
       },
       "CASHCAT": {
-        "size": 441.0,
-        "entry": 0.051545143702040816
+        "size": 687.0,
+        "entry": 0.04779035528646288
       },
       "BTC": {
         "size": 0.00671,
@@ -58,7 +58,7 @@
   "risk": {
     "day": "2026-11-14",
     "day_start_equity": 1053.8537945573116,
-    "peak_equity": 1111.5674447953072,
+    "peak_equity": 1117.6106298315378,
     "killed": false,
     "kill_reason": ""
   },
@@ -139,7 +139,7 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
       "realized_pnl": 1.6137195936030784,
-      "fees_paid": 1.4368467214443599,
+      "fees_paid": 1.4415066922521598,
       "funding_paid": 0.029462816730275954,
       "positions": {
         "LIT": {
@@ -151,8 +151,8 @@
           "entry": 1983.7513750319251
         },
         "CASHCAT": {
-          "size": 4261.0,
-          "entry": 0.04897625254040668
+          "size": 4513.0,
+          "entry": 0.04853607417652844
         },
         "BTC": {
           "size": 0.00582,
@@ -269,12 +269,12 @@
     "0xa1d4fc32f21d9d77a4c20a6ac4b748815912c07c": {
       "starting_balance": 1000.0,
       "realized_pnl": 1.0336069622221482,
-      "fees_paid": 0.64070848335132,
+      "fees_paid": 0.64590287426532,
       "funding_paid": -0.04957547889593081,
       "positions": {
         "LIT": {
-          "size": -144.0,
-          "entry": 3.168755730303464
+          "size": -148.0,
+          "entry": 3.1611075411060727
         },
         "WLFI": {
           "size": -9039.0,
