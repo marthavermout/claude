@@ -197,6 +197,98 @@ def detect(candles: list[Candle], j: int, pv: list[Pivot] | None = None) -> Sign
     return None
 
 
+def detect_extra(candles: list[Candle], j: int, pv: list[Pivot]) -> list[Signal]:
+    """More patterns from the classic literature (Bulkowski, Edwards & Magee) and Elliott:
+    symmetrical triangle, rectangle, cup with handle, Elliott wave 3, engulfing candles."""
+    out: list[Signal] = []
+    if j < 30 or len(pv) < 3:
+        return out
+    c = candles[j].c
+
+    # --- symmetrical triangle & rectangle: last two highs and two lows ---
+    highs = [p for p in pv[-4:] if p.kind == "H"]
+    lows = [p for p in pv[-4:] if p.kind == "L"]
+    if len(highs) == 2 and len(lows) == 2:
+        h1, h2 = highs
+        l1, l2 = lows
+        height = max(h1.price, h2.price) - min(l1.price, l2.price)
+        if height / c >= MIN_HEIGHT:
+            if h2.price < h1.price * (1 - TOL) and l2.price > l1.price * (1 + TOL):   # converging
+                upper, lower = _line(h1, h2, j), _line(l1, l2, j)
+                if candles[j].c > upper and candles[j - 1].c <= _line(h1, h2, j - 1):
+                    out.append(Signal("symmetrical triangle", 1, c, l2.price * (1 - SL_BUFFER), upper + height))
+                if candles[j].c < lower and candles[j - 1].c >= _line(l1, l2, j - 1):
+                    out.append(Signal("symmetrical triangle", -1, c, h2.price * (1 + SL_BUFFER), lower - height))
+            if _same(h1.price, h2.price) and _same(l1.price, l2.price):                  # flat box
+                top, bottom = max(h1.price, h2.price), min(l1.price, l2.price)
+                if _broke_up(candles, j, top):
+                    out.append(Signal("rectangle", 1, c, bottom * (1 - SL_BUFFER), top + (top - bottom)))
+                if _broke_down(candles, j, bottom):
+                    out.append(Signal("rectangle", -1, c, top * (1 + SL_BUFFER), bottom - (top - bottom)))
+
+    # --- cup with handle (and the inverted version): rim, deep cup, rim, shallow handle ---
+    if len(pv) >= 4:
+        a, b, d, e = pv[-4:]
+        if (a.kind, b.kind, d.kind, e.kind) == ("H", "L", "H", "L") and _same(a.price, d.price, 2 * TOL):
+            rim, depth = max(a.price, d.price), max(a.price, d.price) - b.price
+            if depth / rim >= 2 * MIN_HEIGHT and d.i - a.i >= 12 and e.price > b.price + depth / 2 and _broke_up(candles, j, rim):
+                out.append(Signal("cup with handle", 1, c, e.price * (1 - SL_BUFFER), rim + depth))
+        if (a.kind, b.kind, d.kind, e.kind) == ("L", "H", "L", "H") and _same(a.price, d.price, 2 * TOL):
+            rim, depth = min(a.price, d.price), b.price - min(a.price, d.price)
+            if depth / rim >= 2 * MIN_HEIGHT and d.i - a.i >= 12 and e.price < b.price - depth / 2 and _broke_down(candles, j, rim):
+                out.append(Signal("inverted cup with handle", -1, c, e.price * (1 + SL_BUFFER), rim - depth))
+
+    # --- Elliott wave 3: wave 1, a 50-79% wave-2 pullback, then the break of wave 1's end ---
+    w0, w1, w2 = pv[-3:]
+    if (w0.kind, w1.kind, w2.kind) == ("L", "H", "L"):
+        wave1 = w1.price - w0.price
+        back = (w1.price - w2.price) / wave1 if wave1 > 0 else 0
+        if wave1 / w0.price >= 2 * MIN_HEIGHT and 0.5 <= back <= 0.786 and _broke_up(candles, j, w1.price):
+            out.append(Signal("elliott wave 3", 1, c, w2.price * (1 - SL_BUFFER), w2.price + 1.618 * wave1))
+    if (w0.kind, w1.kind, w2.kind) == ("H", "L", "H"):
+        wave1 = w0.price - w1.price
+        back = (w2.price - w1.price) / wave1 if wave1 > 0 else 0
+        if wave1 / w0.price >= 2 * MIN_HEIGHT and 0.5 <= back <= 0.786 and _broke_down(candles, j, w1.price):
+            out.append(Signal("elliott wave 3", -1, c, w2.price * (1 + SL_BUFFER), w2.price - 1.618 * wave1))
+
+    # --- engulfing candle at a fresh 20-candle low/high ---
+    prev, cur = candles[j - 1], candles[j]
+    window = candles[j - 20:j + 1]
+    body_prev, body_cur = abs(prev.c - prev.o), abs(cur.c - cur.o)
+    if body_prev > 0 and body_cur > 1.2 * body_prev:
+        low = min(x.l for x in window)
+        high = max(x.h for x in window)
+        if prev.c < prev.o and cur.c > cur.o and cur.o <= prev.c and cur.c >= prev.o and min(prev.l, cur.l) <= low:
+            sl = min(prev.l, cur.l) * (1 - SL_BUFFER)
+            out.append(Signal("bullish engulfing", 1, c, sl, c + 2 * (c - sl)))
+        if prev.c > prev.o and cur.c < cur.o and cur.o >= prev.c and cur.c <= prev.o and max(prev.h, cur.h) >= high:
+            sl = max(prev.h, cur.h) * (1 + SL_BUFFER)
+            out.append(Signal("bearish engulfing", -1, c, sl, c - 2 * (sl - c)))
+    return out
+
+
+ALL_PATTERNS = [
+    "double bottom", "double top", "triple bottom", "triple top", "head & shoulders", "inverted head & shoulders",
+    "ascending triangle", "descending triangle", "bullish wedge", "bearish wedge", "bullish flag", "bearish flag",
+    "symmetrical triangle", "rectangle", "cup with handle", "inverted cup with handle", "elliott wave 3",
+    "bullish engulfing", "bearish engulfing",
+]
+
+
+def detect_all(candles: list[Candle], j: int, pv: list[Pivot] | None = None) -> list[Signal]:
+    pv = pivots(candles, j) if pv is None else pv
+    first = detect(candles, j, pv)
+    return ([first] if first else []) + detect_extra(candles, j, pv)
+
+
+def pick(signals: list[Signal], enabled: set[str] | None) -> Signal | None:
+    """The first signal whose pattern is switched on (None = all patterns on)."""
+    for sig in signals:
+        if enabled is None or sig.pattern in enabled:
+            return sig
+    return None
+
+
 @dataclass
 class PatternTrade:
     coin: str
@@ -265,7 +357,7 @@ class BacktestResult:
 def backtest(candles_by_coin: dict[str, list[Candle]], equity: float = 1000.0, risk_per_trade: float = 0.01,
              max_position_pct: float = 0.25, fee_bps: float = 4.5, slippage_bps: float = 2.0,
              trend_filter: bool = True, min_rr: float = MIN_REWARD_RISK, cooldown_bars: int = 0,
-             max_bars_open: int | None = None) -> BacktestResult:
+             max_bars_open: int | None = None, enabled: set[str] | None = None) -> BacktestResult:
     """Walk forward candle by candle per coin; at most one open trade per coin.
     Each trade risks `risk_per_trade` of the starting equity (no compounding: keeps coins comparable)."""
     cost = (fee_bps + slippage_bps) / 10_000
@@ -291,7 +383,7 @@ def backtest(candles_by_coin: dict[str, list[Candle]], equity: float = 1000.0, r
                                        "entry_t": open_t.opened_bar_t, "exit_t": cs[j].t, "ret": ret, "pnl": notional * ret})
                     open_t = None
                 continue
-            sig = detect(cs, j, pv)
+            sig = pick(detect_all(cs, j, pv), enabled)
             if trend_filter:
                 sig = with_trend(sig, cs[j].c, trend[j])
             if sig and (j < blocked_until or reward_risk(sig) < min_rr):
@@ -325,13 +417,13 @@ def with_trend(sig: Signal | None, close: float, trend: float) -> Signal | None:
     return sig
 
 
-def scan(candles: list[Candle]) -> Signal | None:
+def scan(candles: list[Candle], enabled: set[str] | None = None) -> Signal | None:
     """Signal on the last *closed* candle (pass closed candles only)."""
     if len(candles) < 40:
         return None
     j = len(candles) - 1
     trend = ema([c.c for c in candles], TREND_EMA)[j]
-    sig = with_trend(detect(candles, j), candles[j].c, trend)
+    sig = with_trend(pick(detect_all(candles, j), enabled), candles[j].c, trend)
     if sig and reward_risk(sig) < MIN_REWARD_RISK:
         return None
     return sig

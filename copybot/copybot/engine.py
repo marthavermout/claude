@@ -18,7 +18,7 @@ from pathlib import Path
 from .config import BotConfig
 from .hyperliquid import ApiError, HyperliquidClient
 from .paper import Fill, PaperBroker
-from .patterns import PatternTrade, exit_reason, parse_candles, risk_notional, scan
+from .patterns import PatternTrade, detect_all, exit_reason, parse_candles, risk_notional, scan
 from . import quant
 from .risk import RiskManager, RiskState
 from .strategy import filter_baseline, target_notionals
@@ -362,7 +362,15 @@ class Engine:
                 log.warning("candles for %s unavailable: %s", coin, exc)
                 continue
             self.pattern_scanned[coin] = bar_start
-            sig = scan(candles)
+            enabled = set(self.cfg.patterns) if self.cfg.patterns else None
+            sig = scan(candles, enabled)
+            # recognise every pattern; the ones Pia may not trade yet are logged as "seen" so
+            # their live track record builds up (a pattern earns trading rights with evidence)
+            if enabled is not None and len(candles) >= 40:
+                for seen in detect_all(candles, len(candles) - 1):
+                    if seen.pattern not in enabled:
+                        self._append_csv("pattern_seen.csv", ["time", "coin", "pattern", "side", "entry", "sl", "tp"],
+                                         [ts, coin, seen.pattern, seen.side, seen.entry, seen.sl, seen.tp])
             mid = mids[coin]
             if not sig or not ((sig.side > 0 and sig.sl < mid < sig.tp) or (sig.side < 0 and sig.tp < mid < sig.sl)):
                 continue
