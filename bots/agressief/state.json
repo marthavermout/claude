@@ -269,12 +269,12 @@
     "0xa1d4fc32f21d9d77a4c20a6ac4b748815912c07c": {
       "starting_balance": 1000.0,
       "realized_pnl": 4.905848740640938,
-      "fees_paid": 0.7052396267781,
+      "fees_paid": 0.7104634418061,
       "funding_paid": 0.05595137363188059,
       "positions": {
         "LIT": {
-          "size": -144.0,
-          "entry": 3.1459607476054687
+          "size": -148.0,
+          "entry": 3.1393704425350504
         },
         "WLFI": {
           "size": -9041.0,
