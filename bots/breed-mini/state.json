@@ -14,7 +14,7 @@
   "risk": {
     "day": "2026-11-14",
     "day_start_equity": 50.12355843614241,
-    "peak_equity": 50.477475079071354,
+    "peak_equity": 50.77248983419636,
     "killed": false,
     "kill_reason": ""
   },
@@ -162,7 +162,6 @@
     },
     "0xdbbb9b4e361e1e1b6b4c640914ed4e4a11896df9": {
       "ETH": -1,
-      "ENA": 1,
       "VVV": -1,
       "ZEC": -1
     },
