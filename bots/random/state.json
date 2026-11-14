@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": -3.969235215168005,
-    "fees_paid": 1.4341315980984302,
+    "fees_paid": 1.4565960333370802,
     "funding_paid": -2.6792401144353573,
     "positions": {
       "CASHCAT": {
@@ -72,6 +72,10 @@
       "LTC": {
         "size": 0.34,
         "entry": 49.429884
+      },
+      "BNB": {
+        "size": 0.081,
+        "entry": 616.308237
       }
     }
   },
@@ -225,12 +229,16 @@
     "0xd738f8f8f68511eb644a31d8b23d0b20baa4854b": {
       "starting_balance": 1000.0,
       "realized_pnl": 3.6536751939999608,
-      "fees_paid": 0.5670371163186,
+      "fees_paid": 0.6779725989786,
       "funding_paid": 0.083112061635839,
       "positions": {
         "BTC": {
           "size": 0.00364,
           "entry": 71829.45642527472
+        },
+        "BNB": {
+          "size": 0.4,
+          "entry": 616.308237
         }
       }
     },
