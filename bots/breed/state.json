@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 36.10200470510152,
-    "fees_paid": 1.2111426177738307,
+    "realized_pnl": 38.59624171756244,
+    "fees_paid": 1.2234067364447105,
     "funding_paid": -0.37456537735151296,
     "positions": {
       "FARTCOIN": {
@@ -26,7 +26,7 @@
         "entry": 1.527004999446154
       },
       "kPEPE": {
-        "size": -46901.0,
+        "size": -43343.0,
         "entry": 0.005019726380658438
       },
       "ETHFI": {
@@ -66,7 +66,7 @@
         "entry": 0.0545299038
       },
       "BTC": {
-        "size": 0.00248,
+        "size": 0.0023,
         "entry": 67973.70475289892
       },
       "BERA": {
@@ -391,8 +391,8 @@
     },
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
-      "realized_pnl": 23.390779008203143,
-      "fees_paid": 1.656483090101641,
+      "realized_pnl": 22.33729379831987,
+      "fees_paid": 1.661233421195371,
       "funding_paid": -2.4926504787507233,
       "positions": {
         "AERO": {
@@ -416,7 +416,7 @@
           "entry": 1.3724744400000002
         },
         "BERA": {
-          "size": 829.2,
+          "size": 730.9,
           "entry": 0.11810555980959586
         },
         "CASHCAT": {

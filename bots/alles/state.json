@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 35.1382274481249,
-    "fees_paid": 1.7503594475590798,
+    "realized_pnl": 38.496066168213865,
+    "fees_paid": 1.7622143500654799,
     "funding_paid": -0.2202311520554733,
     "positions": {
       "APEX": {
@@ -74,7 +74,7 @@
         "entry": 6.70735826
       },
       "USELESS": {
-        "size": -1912.0,
+        "size": -1680.0,
         "entry": 0.12802614875900414
       },
       "WLD": {
