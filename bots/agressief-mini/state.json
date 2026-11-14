@@ -3,7 +3,7 @@
     "starting_balance": 50.0,
     "realized_pnl": 0.0,
     "fees_paid": 0.028624965615810002,
-    "funding_paid": -0.004717000818368599,
+    "funding_paid": -0.004149915026605399,
     "positions": {
       "HYPE": {
         "size": -0.28,
@@ -26,7 +26,7 @@
   "risk": {
     "day": "2026-11-14",
     "day_start_equity": 49.97702428884081,
-    "peak_equity": 51.44798849902678,
+    "peak_equity": 51.527090853210794,
     "killed": false,
     "kill_reason": ""
   },
@@ -113,7 +113,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.004616053276050001,
-      "funding_paid": 0.0005428693651560003,
+      "funding_paid": 0.00046128125728500034,
       "positions": {
         "ETH": {
           "size": 0.0051,
@@ -125,7 +125,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.01356627341115,
-      "funding_paid": -0.011239361346978,
+      "funding_paid": -0.011566874188028,
       "positions": {
         "ETH": {
           "size": 0.005,
@@ -155,7 +155,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.00899747294544,
-      "funding_paid": -0.003738648492376,
+      "funding_paid": -0.0027197110796912,
       "positions": {
         "PUMP": {
           "size": -5936.0,
@@ -167,7 +167,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.005929124687819999,
-      "funding_paid": 0.007773122000000002,
+      "funding_paid": 0.007916988850000002,
       "positions": {
         "ETHFI": {
           "size": 21.4,
@@ -186,7 +186,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.0090289918404,
-      "funding_paid": -0.0032874001700512,
+      "funding_paid": -0.0028815948206752,
       "positions": {
         "HYPE": {
           "size": -0.28,
@@ -206,7 +206,7 @@
     "0x7dacca323e44f168494c779bb5e7483c468ef410": "2026-11-12T12:28:05.248630+00:00"
   },
   "meta": {
-    "funding_hour": 498517
+    "funding_hour": 498518
   },
   "pattern_trades": {},
   "pattern_scanned": {},
