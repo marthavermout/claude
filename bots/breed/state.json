@@ -379,12 +379,12 @@
     "0x94fb21bbfaed8927570a2d41af0c21527efbfd81": {
       "starting_balance": 1000.0,
       "realized_pnl": 4.982524069194937,
-      "fees_paid": 0.1922058170073,
+      "fees_paid": 0.19675579462974,
       "funding_paid": -0.014009130550214502,
       "positions": {
         "kPEPE": {
-          "size": -63230.0,
-          "entry": 0.004958612500066504
+          "size": -65732.0,
+          "entry": 0.0049236921098156925
         }
       }
     },
@@ -613,12 +613,12 @@
     },
     "0x94dac1facdc4afd2614c3119447187b4143bc449": {
       "starting_balance": 1000.0,
-      "realized_pnl": 2.128998279600003,
-      "fees_paid": 0.04331680203258,
+      "realized_pnl": 3.346563476800003,
+      "fees_paid": 0.04782269803158,
       "funding_paid": -0.033573289643298004,
       "positions": {
         "XPL": {
-          "size": -584.0,
+          "size": -375.0,
           "entry": 0.0537352508
         }
       }
