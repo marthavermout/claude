@@ -58,7 +58,7 @@
   "risk": {
     "day": "2026-11-14",
     "day_start_equity": 1053.8537945573116,
-    "peak_equity": 1132.126386180833,
+    "peak_equity": 1132.500865180833,
     "killed": false,
     "kill_reason": ""
   },
@@ -166,8 +166,8 @@
     },
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
-      "realized_pnl": -15.787770487794983,
-      "fees_paid": 1.2814207927910994,
+      "realized_pnl": -15.95977968607662,
+      "fees_paid": 1.2862410991595994,
       "funding_paid": -3.719590683114831,
       "positions": {
         "ETH": {
@@ -175,7 +175,7 @@
           "entry": 1988.2349662863016
         },
         "ZRO": {
-          "size": -275.5,
+          "size": -268.5,
           "entry": 1.5056832473883375
         },
         "LIT": {
