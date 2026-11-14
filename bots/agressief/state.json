@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 43.183811440845005,
-    "fees_paid": 1.9578782275101894,
+    "realized_pnl": 44.0282889266811,
+    "fees_paid": 1.9626646646061894,
     "funding_paid": 0.47144730502488524,
     "positions": {
       "INIT": {
@@ -30,7 +30,7 @@
         "entry": 1998.434465015773
       },
       "HYPE": {
-        "size": -6.84,
+        "size": -6.68,
         "entry": 71.75627728647558
       },
       "XMR": {
@@ -166,8 +166,8 @@
     },
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
-      "realized_pnl": -14.889306310569365,
-      "fees_paid": 1.2491057623351498,
+      "realized_pnl": -15.186592529016076,
+      "fees_paid": 1.2537078065599498,
       "funding_paid": -3.711971963672501,
       "positions": {
         "ETH": {
@@ -175,7 +175,7 @@
           "entry": 1988.2349662863016
         },
         "ZRO": {
-          "size": -268.8,
+          "size": -262.2,
           "entry": 1.5044664735686801
         },
         "LIT": {
@@ -256,24 +256,24 @@
     },
     "0x7dacca323e44f168494c779bb5e7483c468ef410": {
       "starting_balance": 1000.0,
-      "realized_pnl": 1.6189842133252008,
-      "fees_paid": 0.27637407342450016,
+      "realized_pnl": 2.6458475836237794,
+      "fees_paid": 0.28142423625510016,
       "funding_paid": -0.09683312825024266,
       "positions": {
         "HYPE": {
-          "size": -6.48,
+          "size": -6.31,
           "entry": 72.0555731664622
         }
       }
     },
     "0xa1d4fc32f21d9d77a4c20a6ac4b748815912c07c": {
       "starting_balance": 1000.0,
-      "realized_pnl": 2.7549722011039157,
-      "fees_paid": 0.6794174019096001,
+      "realized_pnl": 4.078356550219063,
+      "fees_paid": 0.6894391598604,
       "funding_paid": 0.04622185477460919,
       "positions": {
         "LIT": {
-          "size": -148.0,
+          "size": -144.0,
           "entry": 3.1526910697611763
         },
         "WLFI": {
@@ -281,7 +281,7 @@
           "entry": 0.04770122958595657
         },
         "HYPE": {
-          "size": -6.55,
+          "size": -6.39,
           "entry": 68.64495808794027
         }
       }
