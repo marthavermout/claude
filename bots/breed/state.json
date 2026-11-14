@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 33.283657820571,
-    "fees_paid": 1.1500229793293106,
+    "fees_paid": 1.1765201557049105,
     "funding_paid": -0.3602110837916602,
     "positions": {
       "FARTCOIN": {
@@ -66,8 +66,8 @@
         "entry": 0.0545299038
       },
       "BTC": {
-        "size": 0.00159,
-        "entry": 68665.78132640345
+        "size": 0.00247,
+        "entry": 68040.97428217875
       },
       "BERA": {
         "size": 84.3,
