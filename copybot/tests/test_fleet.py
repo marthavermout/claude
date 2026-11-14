@@ -88,3 +88,6 @@ class DataGrowthTest(unittest.TestCase):
             self.assertEqual(len(list(csv.DictReader(open(f"{tmp}/big/leaders.csv")))), 3)   # t=0, 600, 1200
             self.assertFalse(os.path.exists(f"{tmp}/mini/leaders.csv"))
             self.assertGreater(mini.broker.size("BTC"), 0)                                     # but it still trades
+            big.flush_replay(); mini.flush_replay()
+            self.assertTrue(os.listdir(f"{tmp}/big/replay"))
+            self.assertFalse(os.path.exists(f"{tmp}/mini/replay"))
