@@ -391,8 +391,8 @@
     },
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
-      "realized_pnl": 20.58171904651799,
-      "fees_paid": 1.6351812392072407,
+      "realized_pnl": 22.24601239501114,
+      "fees_paid": 1.6444975485226507,
       "funding_paid": -1.7630951107834292,
       "positions": {
         "AERO": {
@@ -416,7 +416,7 @@
           "entry": 1.3724744400000002
         },
         "BERA": {
-          "size": 990.4,
+          "size": 829.2,
           "entry": 0.11810555980959586
         },
         "CASHCAT": {
