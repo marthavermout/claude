@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 45.07111981439342,
-    "fees_paid": 2.029976786428199,
+    "fees_paid": 2.034576475956269,
     "funding_paid": 0.48986834600112666,
     "positions": {
       "INIT": {
@@ -46,8 +46,8 @@
         "entry": 67389.57931173453
       },
       "WLFI": {
-        "size": -4666.0,
-        "entry": 0.04724653788546055
+        "size": -4885.0,
+        "entry": 0.0472208552831441
       },
       "ZEC": {
         "size": 0.02,
@@ -268,12 +268,12 @@
     },
     "0xa1d4fc32f21d9d77a4c20a6ac4b748815912c07c": {
       "starting_balance": 1000.0,
-      "realized_pnl": 4.078356550219063,
-      "fees_paid": 0.6999492689181,
+      "realized_pnl": 4.905848740640938,
+      "fees_paid": 0.7052396267781,
       "funding_paid": 0.05595137363188059,
       "positions": {
         "LIT": {
-          "size": -148.0,
+          "size": -144.0,
           "entry": 3.1459607476054687
         },
         "WLFI": {
