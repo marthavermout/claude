@@ -35,8 +35,8 @@
   "shadows": {
     "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da": {
       "starting_balance": 1000.0,
-      "realized_pnl": -75.4915693877721,
-      "fees_paid": 1.7323843471810205,
+      "realized_pnl": -79.8092078002667,
+      "fees_paid": 1.7508575384037006,
       "funding_paid": 0.7659485640699963,
       "positions": {
         "CASHCAT": {
@@ -56,11 +56,11 @@
           "entry": 0.14110275177157003
         },
         "SKY": {
-          "size": 3233.0,
+          "size": 3049.0,
           "entry": 0.05974222072337229
         },
         "SYRUP": {
-          "size": 1747.0,
+          "size": 1644.0,
           "entry": 0.13167547452227285
         },
         "TIA": {
@@ -76,11 +76,11 @@
           "entry": 2.93688726
         },
         "BTC": {
-          "size": 0.00273,
+          "size": 0.00257,
           "entry": 65238.5451
         },
         "SOL": {
-          "size": 2.42,
+          "size": 2.28,
           "entry": 74.1133197
         }
       }
