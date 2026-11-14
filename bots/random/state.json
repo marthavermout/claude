@@ -87,12 +87,12 @@
     "0xe00f0d90bc976c311a7f22cbb728d8629ccd5394": {
       "starting_balance": 1000.0,
       "realized_pnl": -3.9287431678996807,
-      "fees_paid": 1.10310129797094,
+      "fees_paid": 1.1100415845006901,
       "funding_paid": 0.10092617893617936,
       "positions": {
         "HYPE": {
-          "size": 1.41,
-          "entry": 70.78784977458805
+          "size": 1.64,
+          "entry": 70.26446776656655
         },
         "kPEPE": {
           "size": 1312.0,
@@ -124,13 +124,13 @@
     },
     "0x802dc9bd0e048c4b47d943f7ad61d98d9b7361b0": {
       "starting_balance": 1000.0,
-      "realized_pnl": 0.0,
-      "fees_paid": 0.11706376182074998,
+      "realized_pnl": -20.602290398999966,
+      "fees_paid": 0.33499254434535,
       "funding_paid": 0.05399336674445549,
       "positions": {
         "ETH": {
-          "size": 0.1288,
-          "entry": 2019.7336407996893
+          "size": -0.13159999999999997,
+          "entry": 1859.77797
         }
       }
     },

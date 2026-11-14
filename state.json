@@ -169,12 +169,12 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
       "realized_pnl": 10.521872802258926,
-      "fees_paid": 1.1817484439432402,
+      "fees_paid": 1.18710120317724,
       "funding_paid": 0.11997774443645977,
       "positions": {
         "LIT": {
-          "size": -73.0,
-          "entry": 3.327095172260237
+          "size": -77.0,
+          "entry": 3.3087398453895753
         },
         "ETH": {
           "size": 0.1297,
@@ -255,12 +255,12 @@
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
       "realized_pnl": 1.5774720667374766,
-      "fees_paid": 0.52304777164323,
+      "fees_paid": 0.53346853082448,
       "funding_paid": -0.10501527106572828,
       "positions": {
         "ETH": {
-          "size": -0.0887,
-          "entry": 2013.2909093384894
+          "size": -0.1012,
+          "entry": 1993.4401806652568
         },
         "PUMP": {
           "size": -82898.0,
