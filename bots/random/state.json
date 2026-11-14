@@ -102,8 +102,8 @@
   "shadows": {
     "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da": {
       "starting_balance": 1000.0,
-      "realized_pnl": -7.290690430438735,
-      "fees_paid": 1.1908771605846906,
+      "realized_pnl": -7.875655219789951,
+      "fees_paid": 1.1954250497249106,
       "funding_paid": 0.7403157548915843,
       "positions": {
         "CASHCAT": {
@@ -123,7 +123,7 @@
           "entry": 0.14403890869417366
         },
         "SKY": {
-          "size": 3778.0,
+          "size": 3600.0,
           "entry": 0.060063961241298966
         },
         "SYRUP": {
