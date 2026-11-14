@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": -3.1008320895836334,
-    "fees_paid": 1.4887248285579302,
+    "realized_pnl": -8.094683866897505,
+    "fees_paid": 1.5360484324217403,
     "funding_paid": -2.6545542770063117,
     "positions": {
       "CASHCAT": {
@@ -26,24 +26,20 @@
         "entry": 0.0559374822518797
       },
       "PONS": {
-        "size": 117.0,
-        "entry": 0.143438682
+        "size": 193.0,
+        "entry": 0.13933858753367875
       },
       "SKY": {
-        "size": 1727.0,
-        "entry": 0.058532305949374044
+        "size": 1905.0,
+        "entry": 0.05833935443998372
       },
       "SYRUP": {
         "size": 527.0,
         "entry": 0.12908929608119288
       },
       "TIA": {
-        "size": 290.4,
-        "entry": 0.40823550706620965
-      },
-      "VVV": {
-        "size": 4.21,
-        "entry": 18.88414777062087
+        "size": 319.3,
+        "entry": 0.4041514112847706
       },
       "XPL": {
         "size": 4812.0,
@@ -107,12 +103,12 @@
     "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da": {
       "starting_balance": 1000.0,
       "realized_pnl": -7.290690430438735,
-      "fees_paid": 1.1862433229024707,
+      "fees_paid": 1.1908771605846906,
       "funding_paid": 0.7669333817887117,
       "positions": {
         "CASHCAT": {
-          "size": 1854.0,
-          "entry": 0.05546813681352928
+          "size": 2081.0,
+          "entry": 0.05436585426423993
         },
         "CHIP": {
           "size": 6805.0,
@@ -146,15 +142,10 @@
     },
     "0xfb47779fb0f59750fc714ba61a7859b059bbd3e6": {
       "starting_balance": 1000.0,
-      "realized_pnl": -11.984664096845934,
-      "fees_paid": 0.40225726447920007,
+      "realized_pnl": -28.06470488200012,
+      "fees_paid": 0.5078609900091,
       "funding_paid": 0.1679846855376641,
-      "positions": {
-        "VVV": {
-          "size": 13.26,
-          "entry": 18.9106324590614
-        }
-      }
+      "positions": {}
     },
     "0xe00f0d90bc976c311a7f22cbb728d8629ccd5394": {
       "starting_balance": 1000.0,
