@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 47.91746581708438,
-    "fees_paid": 1.3936848462153906,
+    "fees_paid": 1.3983392911401906,
     "funding_paid": -0.38379988529196996,
     "positions": {
       "FARTCOIN": {
@@ -10,8 +10,8 @@
         "entry": 0.1145229
       },
       "HYPE": {
-        "size": -4.25,
-        "entry": 72.74650349010733
+        "size": -4.41,
+        "entry": 72.45257387232567
       },
       "PUMP": {
         "size": 4104.0,
@@ -78,7 +78,7 @@
   "risk": {
     "day": "2026-11-14",
     "day_start_equity": 1079.1179006642258,
-    "peak_equity": 1138.5726705624763,
+    "peak_equity": 1141.8168750615516,
     "killed": false,
     "kill_reason": ""
   },
@@ -366,12 +366,12 @@
     "0x7dacca323e44f168494c779bb5e7483c468ef410": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.037777034368272296,
-      "fees_paid": 0.13587602513624997,
+      "fees_paid": 0.14053921631144997,
       "funding_paid": -0.055108089193579915,
       "positions": {
         "HYPE": {
-          "size": -3.83,
-          "entry": 73.43712724977331
+          "size": -3.99,
+          "entry": 73.08943469238892
         }
       }
     },

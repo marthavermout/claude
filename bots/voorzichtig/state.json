@@ -50,7 +50,7 @@
   "risk": {
     "day": "2026-11-14",
     "day_start_equity": 1038.845676088162,
-    "peak_equity": 1076.060299946367,
+    "peak_equity": 1077.4692261995394,
     "killed": false,
     "kill_reason": ""
   },
@@ -246,12 +246,12 @@
     "0x7dacca323e44f168494c779bb5e7483c468ef410": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.07208167153185001,
+      "fees_paid": 0.07672168334385002,
       "funding_paid": 0.00045345415298411046,
       "positions": {
         "HYPE": {
-          "size": -2.21,
-          "entry": 72.48031325475114
+          "size": -2.37,
+          "entry": 71.93781841898735
         }
       }
     },
