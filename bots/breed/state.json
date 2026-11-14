@@ -82,7 +82,7 @@
   "risk": {
     "day": "2026-11-14",
     "day_start_equity": 1079.1179006642258,
-    "peak_equity": 1108.7561374520053,
+    "peak_equity": 1112.7575784520052,
     "killed": false,
     "kill_reason": ""
   },
@@ -588,7 +588,7 @@
     "0xdbbb9b4e361e1e1b6b4c640914ed4e4a11896df9": {
       "starting_balance": 1000.0,
       "realized_pnl": 1.9362424268771392,
-      "fees_paid": 0.61351339708026,
+      "fees_paid": 0.62167139015526,
       "funding_paid": -0.18491265396794804,
       "positions": {
         "HYPE": {
@@ -600,8 +600,8 @@
           "entry": 0.0033821924654784444
         },
         "ZEC": {
-          "size": -0.27,
-          "entry": 1002.6408004186675
+          "size": -0.29,
+          "entry": 996.0065159070351
         },
         "ENA": {
           "size": 2013.0,
@@ -631,12 +631,12 @@
     "0xb83de012dba672c76a7dbbbf3e459cb59d7d6e36": {
       "starting_balance": 1000.0,
       "realized_pnl": -0.16373546800000005,
-      "fees_paid": 0.14197433665230003,
+      "fees_paid": 0.14653753757955001,
       "funding_paid": -0.011426522765086803,
       "positions": {
         "HYPE": {
-          "size": -3.64,
-          "entry": 74.23658103241758
+          "size": -3.79,
+          "entry": 73.97403732532982
         }
       }
     },
