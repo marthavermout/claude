@@ -3,7 +3,7 @@
     "starting_balance": 1000.0,
     "realized_pnl": 38.75926727058449,
     "fees_paid": 1.7354347943303694,
-    "funding_paid": 0.33268254298257377,
+    "funding_paid": 0.34106608702262897,
     "positions": {
       "INIT": {
         "size": -76.0,
@@ -142,7 +142,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 7.577341131415205,
       "fees_paid": 1.3018121927108999,
-      "funding_paid": 0.1414824726067243,
+      "funding_paid": 0.1360442387110323,
       "positions": {
         "LIT": {
           "size": -75.0,
@@ -166,7 +166,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -7.266070252414457,
       "fees_paid": 1.0807898366546997,
-      "funding_paid": -3.8460947292805754,
+      "funding_paid": -3.8373049861571396,
       "positions": {
         "ETH": {
           "size": 0.1096,
@@ -201,7 +201,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 72.55573635552591,
       "fees_paid": 0.3766560884946,
-      "funding_paid": 6.70840569173329,
+      "funding_paid": 6.704011801470791,
       "positions": {
         "INIT": {
           "size": -567.0,
@@ -217,7 +217,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -0.5537548543578131,
       "fees_paid": 0.9185975846553603,
-      "funding_paid": -0.18460687560705502,
+      "funding_paid": -0.1668282075658238,
       "positions": {
         "ETH": {
           "size": -0.0949,
@@ -255,7 +255,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 1.6189842133252008,
       "fees_paid": 0.2575108340770501,
-      "funding_paid": -0.17319788538074865,
+      "funding_paid": -0.16292882880296866,
       "positions": {
         "HYPE": {
           "size": -5.85,
@@ -267,7 +267,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 0.27450832854546015,
       "fees_paid": 0.57990100543515,
-      "funding_paid": -0.010482692705843798,
+      "funding_paid": -0.0103727591065918,
       "positions": {
         "LIT": {
           "size": -132.0,
@@ -296,7 +296,7 @@
     "0xa1d4fc32f21d9d77a4c20a6ac4b748815912c07c": "2026-11-13T14:44:19.118852+00:00"
   },
   "meta": {
-    "funding_hour": 498513
+    "funding_hour": 498514
   },
   "pattern_trades": {},
   "pattern_scanned": {},
