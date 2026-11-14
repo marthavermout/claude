@@ -78,7 +78,7 @@
   "risk": {
     "day": "2026-11-14",
     "day_start_equity": 1079.1179006642258,
-    "peak_equity": 1138.3814136547467,
+    "peak_equity": 1138.5726705624763,
     "killed": false,
     "kill_reason": ""
   },
@@ -389,8 +389,8 @@
     },
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
-      "realized_pnl": 24.53306123238066,
-      "fees_paid": 1.7197870075803907,
+      "realized_pnl": 26.775214525179358,
+      "fees_paid": 1.7246059200201607,
       "funding_paid": -2.8873247739482175,
       "positions": {
         "AERO": {
@@ -546,7 +546,7 @@
           "entry": 0.046934385
         },
         "OP": {
-          "size": -292.9,
+          "size": -164.2,
           "entry": 0.1006281865065944
         },
         "SUI": {
