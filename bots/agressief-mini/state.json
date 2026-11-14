@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 50.0,
     "realized_pnl": 0.0,
-    "fees_paid": 0.01362133388826,
+    "fees_paid": 0.01931170558626,
     "funding_paid": -0.0038098284073205995,
     "positions": {
       "HYPE": {
@@ -12,13 +12,17 @@
       "WLFI": {
         "size": -217.0,
         "entry": 0.047028592400000006
+      },
+      "LIT": {
+        "size": -4.0,
+        "entry": 3.1613176100000002
       }
     }
   },
   "risk": {
     "day": "2026-11-14",
     "day_start_equity": 49.97702428884081,
-    "peak_equity": 50.50866435731906,
+    "peak_equity": 50.65923642562106,
     "killed": false,
     "kill_reason": ""
   },
