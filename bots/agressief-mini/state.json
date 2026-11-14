@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 50.0,
     "realized_pnl": 0.0,
-    "fees_paid": 0.028624965615810002,
+    "fees_paid": 0.03343871467341,
     "funding_paid": -0.004746608684291399,
     "positions": {
       "HYPE": {
@@ -10,8 +10,8 @@
         "entry": 71.6586654
       },
       "WLFI": {
-        "size": -217.0,
-        "entry": 0.047028592400000006
+        "size": -450.0,
+        "entry": 0.04644983261955556
       },
       "LIT": {
         "size": -4.0,
@@ -26,7 +26,7 @@
   "risk": {
     "day": "2026-11-14",
     "day_start_equity": 49.97702428884081,
-    "peak_equity": 54.0027007936451,
+    "peak_equity": 54.69778092581089,
     "killed": false,
     "kill_reason": ""
   },
@@ -36,7 +36,6 @@
     },
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "DYDX": -1,
-      "GMX": 1,
       "WLD": -1,
       "UNI": -1,
       "TAO": -1,
