@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 38.75926727058449,
-    "fees_paid": 1.7354347943303694,
+    "realized_pnl": 38.72332188594857,
+    "fees_paid": 1.7399487653940593,
     "funding_paid": 0.35851890101797285,
     "positions": {
       "INIT": {
@@ -50,7 +50,7 @@
         "entry": 67831.17994511018
       },
       "WLFI": {
-        "size": -4785.0,
+        "size": -4574.0,
         "entry": 0.047370148926844005
       }
     }
