@@ -118,7 +118,7 @@
   "risk": {
     "day": "2026-11-14",
     "day_start_equity": 1069.713501384612,
-    "peak_equity": 1214.4132834467168,
+    "peak_equity": 1214.564683446717,
     "killed": false,
     "kill_reason": ""
   },
@@ -159,7 +159,7 @@
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
       "realized_pnl": -12.568669180147362,
-      "fees_paid": 2.0876400986962507,
+      "fees_paid": 2.0946465471262505,
       "funding_paid": -2.9076142581801028,
       "positions": {
         "ASTER": {
@@ -179,8 +179,8 @@
           "entry": 7.544115606327745
         },
         "HYPE": {
-          "size": -3.97,
-          "entry": 69.45242113135423
+          "size": -4.21,
+          "entry": 69.19144828776159
         },
         "LIT": {
           "size": -93.0,
