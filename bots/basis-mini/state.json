@@ -1,14 +1,10 @@
 {
   "broker": {
     "starting_balance": 50.0,
-    "realized_pnl": 0.8662151250000015,
-    "fees_paid": 0.025327686394350006,
+    "realized_pnl": 0.9604150890000018,
+    "fees_paid": 0.025936527638250006,
     "funding_paid": 0.002254363755178801,
     "positions": {
-      "HYPE": {
-        "size": -0.01999999999999999,
-        "entry": 72.35902530000001
-      },
       "BTC": {
         "size": 0.00018,
         "entry": 68263.1499

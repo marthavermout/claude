@@ -634,12 +634,12 @@
     "0xb83de012dba672c76a7dbbbf3e459cb59d7d6e36": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.47760459579947157,
-      "fees_paid": 0.15124218207030002,
+      "fees_paid": 0.15580376332155002,
       "funding_paid": -0.0009800902529136023,
       "positions": {
         "HYPE": {
-          "size": -3.64,
-          "entry": 73.97403732532982
+          "size": -3.79,
+          "entry": 73.7209348520318
         }
       }
     },
