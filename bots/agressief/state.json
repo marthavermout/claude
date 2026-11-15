@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 81.38025724294728,
-    "fees_paid": 3.531186458829181,
+    "fees_paid": 3.5427233650863608,
     "funding_paid": 0.9758236950587,
     "positions": {
       "INIT": {
@@ -48,6 +48,10 @@
       "GMX": {
         "size": 3.56,
         "entry": 7.045700712303371
+      },
+      "SUI": {
+        "size": -35.4,
+        "entry": 0.724225126
       }
     }
   },
@@ -250,7 +254,7 @@
     "0xa1d4fc32f21d9d77a4c20a6ac4b748815912c07c": {
       "starting_balance": 1000.0,
       "realized_pnl": 116.05441787560227,
-      "fees_paid": 1.5884566511758196,
+      "fees_paid": 1.6789594440464095,
       "funding_paid": 0.01670145889638358,
       "positions": {
         "WLFI": {
@@ -260,6 +264,10 @@
         "HYPE": {
           "size": -6.58,
           "entry": 63.79521143037979
+        },
+        "SUI": {
+          "size": -277.7,
+          "entry": 0.724225126
         }
       }
     }

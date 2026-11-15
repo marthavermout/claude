@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 132.35793440316675,
-    "fees_paid": 2.5476676198119907,
+    "fees_paid": 2.5561736439168605,
     "funding_paid": -0.14441104306576477,
     "positions": {
       "FARTCOIN": {
@@ -88,6 +88,10 @@
       "GMX": {
         "size": 1.8,
         "entry": 6.8958789
+      },
+      "SUI": {
+        "size": -26.1,
+        "entry": 0.724225126
       }
     }
   },
@@ -667,7 +671,7 @@
     "0xa1d4fc32f21d9d77a4c20a6ac4b748815912c07c": {
       "starting_balance": 1000.0,
       "realized_pnl": 70.62524826698584,
-      "fees_paid": 0.8746672691742299,
+      "fees_paid": 0.9622369502845198,
       "funding_paid": 0.008270712566862994,
       "positions": {
         "WLFI": {
@@ -677,6 +681,10 @@
         "HYPE": {
           "size": -3.92,
           "entry": 63.7157543
+        },
+        "SUI": {
+          "size": -268.7,
+          "entry": 0.724225126
         }
       }
     }
