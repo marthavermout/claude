@@ -188,24 +188,24 @@
     },
     "0x802dc9bd0e048c4b47d943f7ad61d98d9b7361b0": {
       "starting_balance": 1000.0,
-      "realized_pnl": -20.18660245502895,
-      "fees_paid": 0.35004617382735004,
+      "realized_pnl": -20.111473922004794,
+      "fees_paid": 0.35467444929735004,
       "funding_paid": 0.1376093712233627,
       "positions": {
         "ETH": {
-          "size": -0.1392,
+          "size": -0.1336,
           "entry": 1850.033059468599
         }
       }
     },
     "0xde5a8068836a16f92813104d7faf602bb0cbdf62": {
       "starting_balance": 1000.0,
-      "realized_pnl": 2.8491444118925107,
-      "fees_paid": 0.4129073690229,
+      "realized_pnl": 3.9935436193438925,
+      "fees_paid": 0.4179332675016,
       "funding_paid": -4.3522663334774565,
       "positions": {
         "XMR": {
-          "size": -0.517,
+          "size": -0.495,
           "entry": 559.6846587932446
         },
         "ETH": {
