@@ -118,8 +118,8 @@
   "shadows": {
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
-      "realized_pnl": -36.15289993999946,
-      "fees_paid": 1.9743142699133096,
+      "realized_pnl": -33.95838047363582,
+      "fees_paid": 2.0030286508883095,
       "funding_paid": 0.0022890384008040924,
       "positions": {
         "HYPE": {
@@ -129,10 +129,6 @@
         "BTC": {
           "size": 0.00386,
           "entry": 68319.80889792746
-        },
-        "ZEC": {
-          "size": 0.07,
-          "entry": 880.2173719090908
         }
       }
     },
