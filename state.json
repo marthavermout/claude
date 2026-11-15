@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 55.32680436566062,
-    "fees_paid": 2.709446719251059,
+    "realized_pnl": 55.540760951327385,
+    "fees_paid": 2.714251440864509,
     "funding_paid": 0.4462364206122258,
     "positions": {
       "LIT": {
@@ -30,7 +30,7 @@
         "entry": 0.00491500907035385
       },
       "ETH": {
-        "size": 0.1135,
+        "size": 0.1076,
         "entry": 1773.4241619208872
       },
       "XMR": {
@@ -54,7 +54,7 @@
   "risk": {
     "day": "2026-11-15",
     "day_start_equity": 1071.313982882855,
-    "peak_equity": 1091.730584417737,
+    "peak_equity": 1095.9759858371235,
     "killed": false,
     "kill_reason": ""
   },
@@ -184,12 +184,12 @@
     },
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
-      "realized_pnl": 6.688160614765321,
-      "fees_paid": 1.2144123008157601,
+      "realized_pnl": 6.159569771063623,
+      "fees_paid": 1.2189739742985601,
       "funding_paid": -3.3457843307223314,
       "positions": {
         "ETH": {
-          "size": 0.1504,
+          "size": 0.1448,
           "entry": 1904.579112089589
         },
         "ZRO": {
