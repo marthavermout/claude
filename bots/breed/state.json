@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 99.08554425319254,
-    "fees_paid": 1.9663799949891003,
+    "realized_pnl": 99.12917246407599,
+    "fees_paid": 1.9730744198563503,
     "funding_paid": -0.37190061611149733,
     "positions": {
       "FARTCOIN": {
@@ -10,7 +10,7 @@
         "entry": 0.1145229
       },
       "HYPE": {
-        "size": -4.1,
+        "size": -3.87,
         "entry": 64.87012137340632
       },
       "PUMP": {
@@ -247,7 +247,6 @@
     "0x03136324349c003f3498130f56f4526bf5720ab1": {
       "ETH": -1,
       "ARB": -1,
-      "CRV": -1,
       "KAS": -1
     },
     "0xa1d4fc32f21d9d77a4c20a6ac4b748815912c07c": {}
