@@ -3,7 +3,7 @@
     "starting_balance": 1000.0,
     "realized_pnl": 3.6977434876774837,
     "fees_paid": 0.37699411524084003,
-    "funding_paid": 0.21522325152370123,
+    "funding_paid": 0.227005773697687,
     "positions": {
       "AAVE": {
         "size": -0.39,
@@ -78,7 +78,7 @@
   "shadows": {},
   "shadow_started": {},
   "meta": {
-    "funding_hour": 498531
+    "funding_hour": 498532
   },
   "pattern_trades": {},
   "pattern_scanned": {},
@@ -95,10 +95,10 @@
     "LINK": -4.96460352466497,
     "LTC": -1.1441793173386394,
     "ADA": -285.5497088875104,
-    "AAVE": -0.38823663318678947,
+    "AAVE": -0.3882366331867894,
     "ENA": -233.62889750532207,
     "WLD": -129.82247306257025
   },
   "funding_pos": {},
-  "quant_hour": 498531
+  "quant_hour": 498532
 }
