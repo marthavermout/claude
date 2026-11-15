@@ -7,8 +7,8 @@
     "positions": {}
   },
   "risk": {
-    "day": "2026-11-14",
-    "day_start_equity": 998.5720383669476,
+    "day": "2026-11-15",
+    "day_start_equity": 998.4284390874477,
     "peak_equity": 1007.0952116444789,
     "killed": false,
     "kill_reason": ""
@@ -17,11 +17,11 @@
   "shadows": {},
   "shadow_started": {},
   "meta": {
-    "funding_hour": 498527
+    "funding_hour": 498528
   },
   "pattern_trades": {},
   "pattern_scanned": {},
   "quant_sizes": {},
   "funding_pos": {},
-  "quant_hour": 498527
+  "quant_hour": 498528
 }
