@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 97.33494227955234,
-    "fees_paid": 2.40687318474612,
+    "realized_pnl": 97.17136996110888,
+    "fees_paid": 2.41138307214324,
     "funding_paid": -0.17724133850231474,
     "positions": {
       "FARTCOIN": {
@@ -42,7 +42,7 @@
         "entry": 8.515396579999999
       },
       "WLFI": {
-        "size": -5366.0,
+        "size": -5155.0,
         "entry": 0.04672227334197416
       },
       "INIT": {
