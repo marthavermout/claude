@@ -1,18 +1,15 @@
-# Review #5 — 2026-11-14 13:59 UTC
+# Review #6 — 2026-11-15 13:15 UTC
 
 **Gevonden fouten:**
-- Trader `0xa4247526…` heeft in 93 uur niets gedaan dat we konden kopiëren.
+- Trader `0xa4247526…` heeft in 116 uur niets gedaan dat we konden kopiëren.
 
 **Observaties (geen automatische actie):**
-- `0x03136324…`: nog te weinig data om te beoordelen (93u, 3 gesloten trades)
-- `0xf83858e5…` zelf +14.44%, onze kopie -1.69%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo).
-- `0xd10e2b1b…`: nog te weinig data om te beoordelen (93u, 3 gesloten trades)
-- `0x94dac1fa…`: nog te weinig data om te beoordelen (93u, 4 gesloten trades)
-- `0xa1d4fc32…`: nog te weinig data om te beoordelen (23u, 0 gesloten trades)
-- `0x972d5217…`: nog te weinig data om te beoordelen (93u, 2 gesloten trades)
-- `0x7dacca32…`: nog te weinig data om te beoordelen (93u, 1 gesloten trades)
-- `0xb83de012…`: nog te weinig data om te beoordelen (93u, 4 gesloten trades)
-- `0x94fb21bb…` zelf +83.89%, onze kopie +4.91%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo).
+- `0xf83858e5…` zelf +60.83%, onze kopie -4.38%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo).
+- `0xdbbb9b4e…` zelf +20.00%, onze kopie -2.30%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo).
+- `0xd10e2b1b…`: nog te weinig data om te beoordelen (116u, 3 gesloten trades)
+- `0x972d5217…`: nog te weinig data om te beoordelen (116u, 2 gesloten trades)
+- `0x7dacca32…` zelf +23.26%, onze kopie +1.86%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo).
+- `0xa1d4fc32…`: nog te weinig data om te beoordelen (47u, 13 gesloten trades)
 
 **Besluit:** Afkoelperiode: vorige wijziging was minder dan 48u geleden; eerst het effect daarvan meten.
 
@@ -21,72 +18,72 @@
 | Meting | Waarde |
 |---|---|
 | Periode | 24.0 uur |
-| Vermogen | $1,057.67 → $1,110.06 (+4.95%) |
-| BTC vasthouden (benchmark) | -4.00% |
-| Grootste daling (drawdown) | 1.37% |
-| Trades | 53 (53.0/dag) |
-| Gerealiseerd / kosten | $+15.34 / $0.43 |
-| Heen-en-weer trades (churn) | 10 (19%) |
+| Vermogen | $1,107.74 → $1,118.09 (+0.93%) |
+| BTC vasthouden (benchmark) | -1.85% |
+| Grootste daling (drawdown) | 5.10% |
+| Trades | 153 (153.0/dag) |
+| Gerealiseerd / kosten | $+55.57 / $1.09 |
+| Heen-en-weer trades (churn) | 50 (33%) |
 | Dagen met risicostop | geen |
 
 **Per trader (schaduwboek: wat als je alleen deze trader kopieerde)**
 
 | Trader | Uren | Kopie-rendement | Rendement trader zelf | Trades |
 |---|---|---|---|---|
-| `0xd82cb57a…` | 24 | -3.06% | -6.54% | 30 |
-| `0x03136324…` | 24 | -1.54% | -0.93% | 2 |
-| `0xf83858e5…` | 24 | -1.48% | -0.23% | 10 |
-| `0xd10e2b1b…` | 24 | -0.11% | +88.39% | 1 |
-| `0x972d5217…` | 24 | -0.03% | +0.00% | 1 |
+| `0xdbbb9b4e…` | 24 | -4.98% | +9.74% | 15 |
+| `0xd82cb57a…` | 24 | -3.53% | +3.24% | 57 |
+| `0xf83858e5…` | 24 | -2.86% | +41.84% | 21 |
+| `0x972d5217…` | 24 | -0.41% | +147.65% | 1 |
+| `0x7dacca32…` | 24 | -0.26% | -10.46% | 12 |
+| `0xb83de012…` | 24 | -0.23% | -27.85% | 10 |
+| `0xd10e2b1b…` | 24 | +0.00% | -49.25% | 0 |
 | `0xa4247526…` | 24 | +0.00% | +0.00% | 0 |
-| `0x94dac1fa…` | 24 | +0.13% | +0.16% | 0 |
-| `0x94fb21bb…` | 24 | +1.53% | +16.10% | 5 |
-| `0xa1d4fc32…` | 23 | +1.67% | +23.32% | 7 |
-| `0xdbbb9b4e…` | 24 | +2.05% | -12.15% | 8 |
-| `0x888e000c…` | 24 | +2.10% | +8.86% | 4 |
-| `0xb83de012…` | 24 | +2.24% | -12.06% | 7 |
-| `0x7dacca32…` | 24 | +2.29% | -13.98% | 2 |
-| `0x64343028…` | 24 | +2.75% | +8.78% | 15 |
-| `0x011820f6…` | 24 | +5.32% | +10.19% | 7 |
+| `0x888e000c…` | 24 | +0.05% | +2.00% | 1 |
+| `0x94dac1fa…` | 24 | +0.10% | +0.11% | 3 |
+| `0x64343028…` | 24 | +0.88% | -35.05% | 70 |
+| `0x94fb21bb…` | 24 | +1.48% | -36.59% | 8 |
+| `0x03136324…` | 24 | +1.79% | -5.57% | 12 |
+| `0x011820f6…` | 24 | +2.65% | -21.79% | 40 |
+| `0xa1d4fc32…` | 24 | +3.53% | -54.08% | 30 |
 
-**Slechtste munten:** BTC $-0.47, ETHFI $-0.44, ENA $-0.02
-**Beste munten:** kPEPE $+12.56, LIT $+2.43, HYPE $+0.49
+**Slechtste munten:** ETH $-4.19, CASHCAT $-3.28, PUMP $-2.18
+**Beste munten:** HYPE $+35.01, LIT $+24.30, kPEPE $+4.81
 
 ## Sinds de start
 
 | Meting | Waarde |
 |---|---|
-| Periode | 93.1 uur |
-| Vermogen | $999.82 → $1,110.06 (+11.03%) |
-| BTC vasthouden (benchmark) | -8.39% |
-| Grootste daling (drawdown) | 3.81% |
-| Trades | 126 (32.5/dag) |
-| Gerealiseerd / kosten | $+41.76 / $1.32 |
-| Heen-en-weer trades (churn) | 14 (11%) |
+| Periode | 116.4 uur |
+| Vermogen | $999.82 → $1,118.09 (+11.83%) |
+| BTC vasthouden (benchmark) | -10.07% |
+| Grootste daling (drawdown) | 5.10% |
+| Trades | 279 (57.5/dag) |
+| Gerealiseerd / kosten | $+97.33 / $2.41 |
+| Heen-en-weer trades (churn) | 64 (23%) |
 | Dagen met risicostop | geen |
 
 **Per trader (schaduwboek: wat als je alleen deze trader kopieerde)**
 
 | Trader | Uren | Kopie-rendement | Rendement trader zelf | Trades |
 |---|---|---|---|---|
-| `0x03136324…` | 93 | -1.86% | -6.12% | 11 |
-| `0xf83858e5…` | 93 | -1.69% | +14.44% | 56 |
-| `0xd10e2b1b…` | 93 | -1.55% | +2.11% | 7 |
-| `0xd82cb57a…` | 93 | -1.01% | -4.11% | 157 |
-| `0xa4247526…` | 93 | +0.00% | -100.00% | 0 |
-| `0x94dac1fa…` | 93 | +0.52% | +0.43% | 7 |
-| `0xa1d4fc32…` | 23 | +1.67% | +23.32% | 7 |
-| `0x972d5217…` | 93 | +2.07% | +29.14% | 4 |
-| `0x7dacca32…` | 93 | +2.26% | +36.30% | 5 |
-| `0xb83de012…` | 93 | +2.37% | -29.70% | 11 |
-| `0x64343028…` | 93 | +2.74% | -2.45% | 56 |
-| `0xdbbb9b4e…` | 93 | +3.01% | +9.93% | 35 |
-| `0x94fb21bb…` | 93 | +4.91% | +83.89% | 15 |
-| `0x011820f6…` | 93 | +5.34% | +11.25% | 42 |
-| `0x888e000c…` | 93 | +17.66% | +5.83% | 26 |
+| `0xd82cb57a…` | 116 | -4.47% | -1.17% | 214 |
+| `0xf83858e5…` | 116 | -4.38% | +60.83% | 77 |
+| `0xdbbb9b4e…` | 116 | -2.30% | +20.00% | 50 |
+| `0xd10e2b1b…` | 116 | -1.55% | -49.00% | 7 |
+| `0x03136324…` | 116 | -0.01% | -10.82% | 23 |
+| `0xa4247526…` | 116 | +0.00% | -100.00% | 0 |
+| `0x94dac1fa…` | 116 | +0.66% | +0.57% | 10 |
+| `0x972d5217…` | 116 | +1.62% | +218.68% | 5 |
+| `0x7dacca32…` | 116 | +1.86% | +23.26% | 17 |
+| `0xb83de012…` | 116 | +2.00% | -49.13% | 20 |
+| `0x64343028…` | 116 | +3.76% | -36.88% | 126 |
+| `0xa1d4fc32…` | 47 | +5.30% | -43.78% | 37 |
+| `0x94fb21bb…` | 116 | +6.34% | +15.87% | 23 |
+| `0x011820f6…` | 116 | +8.47% | -12.39% | 82 |
+| `0x888e000c…` | 116 | +17.68% | +7.79% | 27 |
 
-**Slechtste munten:** AERO $-1.08, ETHFI $-0.21, ZRO $-0.02
-**Beste munten:** kPEPE $+19.27, NEAR $+12.89, LIT $+2.50
+**Slechtste munten:** ETH $-4.20, CASHCAT $-3.29, ENA $-1.30
+**Beste munten:** HYPE $+37.20, LIT $+26.80, kPEPE $+24.09
 
 ---
 

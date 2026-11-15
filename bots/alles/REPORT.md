@@ -1,72 +1,72 @@
-# Review #5 — 2026-11-14 13:59 UTC
+# Review #6 — 2026-11-15 13:15 UTC
 
 **Gevonden fouten:**
-- 26% van de trades draait binnen een uur de vorige om (churn).
+- geen
 
 **Observaties (geen automatische actie):**
-- `0xf83858e5…` zelf +14.44%, onze kopie -0.89%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo).
-- `0x7dacca32…`: nog te weinig data om te beoordelen (93u, 3 gesloten trades)
-- `0x972d5217…`: nog te weinig data om te beoordelen (93u, 2 gesloten trades)
+- `0xf83858e5…` zelf +60.83%, onze kopie -3.72%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo).
+- `0x7dacca32…`: nog te weinig data om te beoordelen (116u, 4 gesloten trades)
+- `0x972d5217…`: nog te weinig data om te beoordelen (116u, 2 gesloten trades)
 
-**Besluit:** Afkoelperiode: vorige wijziging was minder dan 48u geleden; eerst het effect daarvan meten.
+**Besluit:** niets veranderen
 
 ## Laatste 24 uur
 
 | Meting | Waarde |
 |---|---|
 | Periode | 24.0 uur |
-| Vermogen | $1,023.50 → $1,150.71 (+12.43%) |
-| BTC vasthouden (benchmark) | -4.00% |
-| Grootste daling (drawdown) | 2.57% |
-| Trades | 26 (26.0/dag) |
-| Gerealiseerd / kosten | $+13.01 / $0.29 |
-| Heen-en-weer trades (churn) | 2 (8%) |
-| Dagen met risicostop | geen |
+| Vermogen | $1,146.49 → $1,166.30 (+1.73%) |
+| BTC vasthouden (benchmark) | -1.85% |
+| Grootste daling (drawdown) | 10.55% |
+| Trades | 68 (68.0/dag) |
+| Gerealiseerd / kosten | $+125.50 / $1.14 |
+| Heen-en-weer trades (churn) | 7 (10%) |
+| Dagen met risicostop | 2026-11-15 |
 
 **Per trader (schaduwboek: wat als je alleen deze trader kopieerde)**
 
 | Trader | Uren | Kopie-rendement | Rendement trader zelf | Trades |
 |---|---|---|---|---|
-| `0x972d5217…` | 24 | -0.03% | +0.00% | 1 |
-| `0xf83858e5…` | 24 | +0.78% | -0.23% | 6 |
-| `0xd10e2b1b…` | 24 | +2.13% | +88.39% | 3 |
-| `0x7dacca32…` | 24 | +2.28% | -13.98% | 1 |
-| `0x888e000c…` | 24 | +6.49% | +8.86% | 2 |
-| `0x5a19bfe9…` | 24 | +9.43% | -22.24% | 11 |
-| `0x64343028…` | 24 | +9.49% | +8.78% | 45 |
-| `0x011820f6…` | 24 | +12.19% | +10.19% | 21 |
+| `0xf83858e5…` | 24 | -2.86% | +41.84% | 21 |
+| `0x972d5217…` | 24 | -0.44% | +147.65% | 0 |
+| `0xd10e2b1b…` | 24 | -0.23% | -49.25% | 4 |
+| `0x7dacca32…` | 24 | -0.19% | -10.46% | 3 |
+| `0x5a19bfe9…` | 24 | +0.79% | -9.30% | 36 |
+| `0x888e000c…` | 24 | +1.69% | +2.00% | 0 |
+| `0x64343028…` | 24 | +5.65% | -35.05% | 137 |
+| `0x011820f6…` | 24 | +7.05% | -21.79% | 69 |
 
-**Slechtste munten:** ETHFI $-3.03, BTC $-0.08, HYPE $-0.02
-**Beste munten:** USELESS $+9.29, ZEC $+6.22, SOL $+0.37
+**Slechtste munten:** BTC $-10.93, ETH $-8.04, CASHCAT $-5.52
+**Beste munten:** USELESS $+36.45, LIT $+13.73, FARTCOIN $+11.24
 
 ## Sinds de start
 
 | Meting | Waarde |
 |---|---|
-| Periode | 93.1 uur |
-| Vermogen | $998.95 → $1,150.71 (+15.19%) |
-| BTC vasthouden (benchmark) | -8.41% |
-| Grootste daling (drawdown) | 9.23% |
-| Trades | 150 (38.7/dag) |
-| Gerealiseerd / kosten | $+44.14 / $1.80 |
-| Heen-en-weer trades (churn) | 39 (26%) |
-| Dagen met risicostop | geen |
+| Periode | 116.4 uur |
+| Vermogen | $998.95 → $1,166.30 (+16.75%) |
+| BTC vasthouden (benchmark) | -10.10% |
+| Grootste daling (drawdown) | 10.55% |
+| Trades | 218 (45.0/dag) |
+| Gerealiseerd / kosten | $+169.64 / $2.94 |
+| Heen-en-weer trades (churn) | 46 (21%) |
+| Dagen met risicostop | 2026-11-15 |
 
 **Per trader (schaduwboek: wat als je alleen deze trader kopieerde)**
 
 | Trader | Uren | Kopie-rendement | Rendement trader zelf | Trades |
 |---|---|---|---|---|
-| `0xf83858e5…` | 93 | -0.89% | +14.44% | 73 |
-| `0xd10e2b1b…` | 93 | -0.82% | +2.11% | 16 |
-| `0x7dacca32…` | 93 | +1.13% | +36.30% | 7 |
-| `0x972d5217…` | 93 | +2.05% | +29.14% | 4 |
-| `0x5a19bfe9…` | 93 | +6.56% | -24.08% | 87 |
-| `0x64343028…` | 93 | +7.13% | -2.45% | 166 |
-| `0x011820f6…` | 93 | +13.56% | +11.25% | 115 |
-| `0x888e000c…` | 93 | +23.46% | +5.83% | 47 |
+| `0xf83858e5…` | 116 | -3.72% | +60.83% | 94 |
+| `0xd10e2b1b…` | 116 | -1.18% | -49.00% | 20 |
+| `0x7dacca32…` | 116 | +0.81% | +23.26% | 10 |
+| `0x972d5217…` | 116 | +1.57% | +218.68% | 4 |
+| `0x5a19bfe9…` | 116 | +6.94% | -31.07% | 120 |
+| `0x64343028…` | 116 | +13.10% | -36.88% | 303 |
+| `0x011820f6…` | 116 | +22.12% | -12.39% | 184 |
+| `0x888e000c…` | 116 | +25.33% | +7.79% | 47 |
 
-**Slechtste munten:** ETHFI $-3.06, HYPE $-2.09, GRAM $-0.99
-**Beste munten:** NEAR $+20.77, ZEC $+11.12, USELESS $+7.91
+**Slechtste munten:** BTC $-9.45, ETH $-8.06, CASHCAT $-5.53
+**Beste munten:** USELESS $+44.35, NEAR $+21.56, ZEC $+16.84
 
 ---
 
