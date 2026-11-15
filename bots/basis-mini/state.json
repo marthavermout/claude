@@ -3,7 +3,7 @@
     "starting_balance": 50.0,
     "realized_pnl": 0.9604150890000018,
     "fees_paid": 0.04265809353270001,
-    "funding_paid": -0.0021564916814210983,
+    "funding_paid": -0.0020378688635874984,
     "positions": {
       "BTC": {
         "size": 0.00018,
@@ -108,7 +108,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.005682030678900001,
-      "funding_paid": -0.0022827474043397977,
+      "funding_paid": -0.0024988858336439978,
       "positions": {
         "HYPE": {
           "size": 0.18,
@@ -127,7 +127,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.004616053276050001,
-      "funding_paid": -0.002692512795412501,
+      "funding_paid": -0.002749027625740501,
       "positions": {
         "ETH": {
           "size": 0.0051,
@@ -146,7 +146,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.010192234104000001,
-      "funding_paid": -0.004653803997532001,
+      "funding_paid": -0.004213964645458001,
       "positions": {
         "ETH": {
           "size": 0.005,
@@ -176,7 +176,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.0056234205909000004,
-      "funding_paid": 0.003966772341056,
+      "funding_paid": 0.004214477346765,
       "positions": {
         "PUMP": {
           "size": -3710.0,
@@ -196,7 +196,7 @@
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": "2026-11-12T12:28:05.519022+00:00"
   },
   "meta": {
-    "funding_hour": 498537
+    "funding_hour": 498538
   },
   "pattern_trades": {},
   "pattern_scanned": {},
