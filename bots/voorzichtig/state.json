@@ -3,7 +3,7 @@
     "starting_balance": 1000.0,
     "realized_pnl": 35.466346733585446,
     "fees_paid": 1.1662355088208805,
-    "funding_paid": 1.1967317764698078,
+    "funding_paid": 1.2158479794483992,
     "positions": {
       "INIT": {
         "size": -73.0,
@@ -130,7 +130,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -25.553255088599975,
       "fees_paid": 1.13992058817315,
-      "funding_paid": 0.042515112779529275,
+      "funding_paid": 0.04429237412952927,
       "positions": {
         "BTC": {
           "size": 0.00218,
@@ -142,7 +142,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -8.332502729304116,
       "fees_paid": 0.46374003573524997,
-      "funding_paid": 0.1453934458394153,
+      "funding_paid": 0.1631925993263556,
       "positions": {
         "ETH": {
           "size": 0.0858,
@@ -173,7 +173,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 55.91178613017658,
       "fees_paid": 0.29636153912844,
-      "funding_paid": 6.364701876071777,
+      "funding_paid": 6.405436124635049,
       "positions": {
         "INIT": {
           "size": -547.0,
@@ -189,7 +189,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 6.030983535861291,
       "fees_paid": 0.33913298559968985,
-      "funding_paid": 0.18760427818990583,
+      "funding_paid": 0.20303537814187883,
       "positions": {
         "ETH": {
           "size": -0.0867,
@@ -220,7 +220,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 12.689829023999998,
       "fees_paid": 0.20898581876055,
-      "funding_paid": 0.031548928171651607,
+      "funding_paid": 0.033399562696651605,
       "positions": {
         "BTC": {
           "size": 0.00227,
@@ -232,7 +232,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 1.1376016338267743,
       "fees_paid": 0.08597338538715002,
-      "funding_paid": 0.0379003787967431,
+      "funding_paid": 0.0359391992967431,
       "positions": {
         "HYPE": {
           "size": -2.38,
@@ -244,7 +244,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 11.977027843157897,
       "fees_paid": 0.21562225511400002,
-      "funding_paid": -0.03016175515841311,
+      "funding_paid": -0.02824953140841311,
       "positions": {
         "ZEC": {
           "size": 0.17,
@@ -265,7 +265,7 @@
     "0x9eb42f017e793512e4734f8785de605c4cb3a24e": "2026-11-13T14:44:19.118852+00:00"
   },
   "meta": {
-    "funding_hour": 498536
+    "funding_hour": 498537
   },
   "pattern_trades": {},
   "pattern_scanned": {},
