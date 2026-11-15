@@ -1,4 +1,4 @@
-# Review #5 — 2026-11-14 15:42 UTC
+# Review #6 — 2026-11-15 14:59 UTC
 
 **Gevonden fouten:**
 - geen
@@ -10,32 +10,32 @@
 | Meting | Waarde |
 |---|---|
 | Periode | 24.0 uur |
-| Vermogen | $986.82 → $1,027.15 (+4.09%) |
-| BTC vasthouden (benchmark) | -3.73% |
-| Grootste daling (drawdown) | 1.60% |
-| Trades | 18 (18.0/dag) |
-| Gerealiseerd / kosten | $+40.40 / $2.09 |
-| Heen-en-weer trades (churn) | 0 (0%) |
+| Vermogen | $1,025.38 → $1,030.75 (+0.52%) |
+| BTC vasthouden (benchmark) | -1.50% |
+| Grootste daling (drawdown) | 3.21% |
+| Trades | 6 (6.0/dag) |
+| Gerealiseerd / kosten | $+6.95 / $0.69 |
+| Heen-en-weer trades (churn) | 1 (17%) |
 | Dagen met risicostop | geen |
 
-**Slechtste munten:** BTC $+3.81, SUI $+5.26, HYPE $+5.52
-**Beste munten:** SOL $+10.20, XRP $+7.39, AVAX $+6.13
+**Slechtste munten:** BNB $-3.53, SUI $-0.12, XRP $+3.61
+**Beste munten:** ETH $+6.31, XRP $+3.61, SUI $-0.12
 
 ## Sinds de start
 
 | Meting | Waarde |
 |---|---|
-| Periode | 93.3 uur |
-| Vermogen | $1,000.00 → $1,027.15 (+2.72%) |
-| BTC vasthouden (benchmark) | -10.33% |
+| Periode | 116.6 uur |
+| Vermogen | $1,000.00 → $1,030.75 (+3.07%) |
+| BTC vasthouden (benchmark) | -11.38% |
 | Grootste daling (drawdown) | 4.45% |
-| Trades | 96 (24.7/dag) |
-| Gerealiseerd / kosten | $+36.26 / $9.16 |
-| Heen-en-weer trades (churn) | 15 (16%) |
+| Trades | 101 (20.8/dag) |
+| Gerealiseerd / kosten | $+39.49 / $9.74 |
+| Heen-en-weer trades (churn) | 16 (16%) |
 | Dagen met risicostop | geen |
 
-**Slechtste munten:** LINK $-11.87, ETH $-3.00, DOGE $-0.60
-**Beste munten:** SUI $+11.08, XRP $+9.39, SOL $+9.38
+**Slechtste munten:** LINK $-11.87, BNB $-1.91, DOGE $-0.60
+**Beste munten:** SUI $+10.97, XRP $+9.39, SOL $+9.38
 
 ---
 
