@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": -88.6063366223999,
-    "fees_paid": 2.66863983870573,
+    "realized_pnl": -88.63597918779902,
+    "fees_paid": 2.69021154819483,
     "funding_paid": -2.5085075804609644,
     "positions": {
       "BTC": {
@@ -58,8 +58,8 @@
         "entry": 0.34428884400000004
       },
       "XMR": {
-        "size": -0.466,
-        "entry": 469.4334979527897
+        "size": -0.424,
+        "entry": 469.49310371084704
       },
       "XPL": {
         "size": 3871.0,
@@ -95,7 +95,7 @@
     "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da": {
       "starting_balance": 1000.0,
       "realized_pnl": -112.89560176188384,
-      "fees_paid": 2.0746828927583096,
+      "fees_paid": 2.07922051020033,
       "funding_paid": 0.4412926764056753,
       "positions": {
         "CASHCAT": {
@@ -119,8 +119,8 @@
           "entry": 0.058160626333487966
         },
         "SYRUP": {
-          "size": 1705.0,
-          "entry": 0.12599431660786925
+          "size": 1807.0,
+          "entry": 0.12446259221473
         },
         "TIA": {
           "size": 495.1,
@@ -145,8 +145,8 @@
     },
     "0xe00f0d90bc976c311a7f22cbb728d8629ccd5394": {
       "starting_balance": 1000.0,
-      "realized_pnl": -6.016737831655224,
-      "fees_paid": 1.3575474969458408,
+      "realized_pnl": -4.880199651655224,
+      "fees_paid": 1.3654102140878408,
       "funding_paid": 0.07260575625773356,
       "positions": {
         "HYPE": {
@@ -166,7 +166,7 @@
           "entry": 65805.20297553325
         },
         "ZEC": {
-          "size": 0.06,
+          "size": 0.04,
           "entry": 816.808329
         }
       }
