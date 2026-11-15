@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": -93.6267413814699,
-    "fees_paid": 3.1716001524289514,
+    "fees_paid": 3.2039239216725015,
     "funding_paid": -2.5726091835687184,
     "positions": {
       "BTC": {
@@ -62,8 +62,12 @@
         "entry": 0.043448085401480534
       },
       "ETH": {
-        "size": -0.0056,
-        "entry": 1791.59161
+        "size": -0.0119,
+        "entry": 1794.7674452941176
+      },
+      "VVV": {
+        "size": 3.12,
+        "entry": 19.3928778
       }
     }
   },
@@ -135,9 +139,14 @@
     "0xfb47779fb0f59750fc714ba61a7859b059bbd3e6": {
       "starting_balance": 1000.0,
       "realized_pnl": -28.06470488200012,
-      "fees_paid": 0.5078609900091,
+      "fees_paid": 0.6171204635343,
       "funding_paid": 0.1679846855376641,
-      "positions": {}
+      "positions": {
+        "VVV": {
+          "size": 12.52,
+          "entry": 19.3928778
+        }
+      }
     },
     "0xe00f0d90bc976c311a7f22cbb728d8629ccd5394": {
       "starting_balance": 1000.0,
