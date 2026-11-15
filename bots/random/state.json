@@ -99,7 +99,7 @@
     "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da": {
       "starting_balance": 1000.0,
       "realized_pnl": -126.37528771715897,
-      "fees_paid": 2.160910155446549,
+      "fees_paid": 2.165455439721629,
       "funding_paid": -0.14287615639551438,
       "positions": {
         "CHIP": {
@@ -107,8 +107,8 @@
           "entry": 0.02926541169753146
         },
         "NIL": {
-          "size": 3249.0,
-          "entry": 0.051948336898993676
+          "size": 3453.0,
+          "entry": 0.051804453607654344
         },
         "PONS": {
           "size": 1114.0,
