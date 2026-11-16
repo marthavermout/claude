@@ -246,8 +246,8 @@
     },
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
-      "realized_pnl": 138.18806777541764,
-      "fees_paid": 2.08882460015829,
+      "realized_pnl": 138.52128620630756,
+      "fees_paid": 2.09652100413129,
       "funding_paid": 0.43686412863280727,
       "positions": {
         "BTC": {
@@ -271,7 +271,7 @@
           "entry": 0.251474695
         },
         "LIT": {
-          "size": -114.0,
+          "size": -108.0,
           "entry": 2.906056395148322
         },
         "PUMP": {
