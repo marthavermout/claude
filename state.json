@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 105.29035333295025,
-    "fees_paid": 7.161381775756529,
+    "realized_pnl": 105.51133923377333,
+    "fees_paid": 7.168162797939779,
     "funding_paid": 0.905611487247405,
     "positions": {
       "LIT": {
@@ -22,7 +22,7 @@
         "entry": 0.0030564337950934996
       },
       "ZRO": {
-        "size": -49.3,
+        "size": -38.8,
         "entry": 1.456183246268865
       },
       "kPEPE": {
