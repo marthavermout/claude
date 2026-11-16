@@ -1,13 +1,13 @@
 {
   "broker": {
     "starting_balance": 50.0,
-    "realized_pnl": -0.015237873999997363,
-    "fees_paid": 0.0329705196138,
+    "realized_pnl": 1.1793437110000022,
+    "fees_paid": 0.0388528808508,
     "funding_paid": 0.0028366522591341,
     "positions": {
       "HYPE": {
-        "size": -0.17,
-        "entry": 72.3865198
+        "size": 0.03,
+        "entry": 65.3595693
       },
       "BTC": {
         "size": 0.00019,
@@ -197,7 +197,8 @@
       "ARB": -1,
       "KAS": -1
     },
-    "0xa1d4fc32f21d9d77a4c20a6ac4b748815912c07c": {}
+    "0xa1d4fc32f21d9d77a4c20a6ac4b748815912c07c": {},
+    "0x5461e3a694004602961722522e70f62beb05ae65": {}
   },
   "shadows": {
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
