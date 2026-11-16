@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": -87.66164508579071,
-    "fees_paid": 4.769202684624214,
+    "realized_pnl": -87.605375125215,
+    "fees_paid": 4.773728925444964,
     "funding_paid": -2.620636762282637,
     "positions": {
       "BTC": {
@@ -34,7 +34,7 @@
         "entry": 19.3928778
       },
       "ETH": {
-        "size": 0.0398,
+        "size": 0.0343,
         "entry": 1818.553268077145
       },
       "ATOM": {
@@ -304,8 +304,8 @@
     },
     "0x18a794ea0363e75ab119d0392f172edc19625df3": {
       "starting_balance": 1000.0,
-      "realized_pnl": -0.5478278578009145,
-      "fees_paid": 0.5865382421123401,
+      "realized_pnl": -0.791600530617315,
+      "fees_paid": 0.59129486524674,
       "funding_paid": -0.17612351256520992,
       "positions": {
         "ADA": {
@@ -353,7 +353,7 @@
           "entry": 872.8204010000001
         },
         "ZRO": {
-          "size": -175.2,
+          "size": -168.0,
           "entry": 1.4342362443310555
         },
         "TRUMP": {
