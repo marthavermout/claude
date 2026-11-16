@@ -17,14 +17,14 @@
   "shadows": {},
   "shadow_started": {},
   "meta": {
-    "funding_hour": 498569
+    "funding_hour": 498570
   },
   "pattern_trades": {},
   "pattern_scanned": {},
   "quant_sizes": {
     "BTC": -4.6771191259496945e-05,
     "ETH": -0.0011649075427903092,
-    "SOL": -0.029071916846861452,
+    "SOL": -0.029071916846861456,
     "HYPE": -0.022254449381584804,
     "XRP": -2.156634648058365,
     "DOGE": -34.90164859191063,
@@ -39,5 +39,5 @@
     "WLD": -5.5012283808706615
   },
   "funding_pos": {},
-  "quant_hour": 498569
+  "quant_hour": 498570
 }
