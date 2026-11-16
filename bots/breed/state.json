@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 132.30827962025765,
-    "fees_paid": 2.6035847096994003,
+    "fees_paid": 2.6083250694378,
     "funding_paid": -0.131522845317334,
     "positions": {
       "FARTCOIN": {
@@ -10,8 +10,8 @@
         "entry": 0.1145229
       },
       "HYPE": {
-        "size": -4.18,
-        "entry": 64.54437786289174
+        "size": -4.34,
+        "entry": 64.59208115642569
       },
       "PUMP": {
         "size": 8163.0,
@@ -366,12 +366,12 @@
     "0x7dacca323e44f168494c779bb5e7483c468ef410": {
       "starting_balance": 1000.0,
       "realized_pnl": 6.634392137218103,
-      "fees_paid": 0.19670975685539996,
+      "fees_paid": 0.20146818497939994,
       "funding_paid": 0.04503518495955836,
       "positions": {
         "HYPE": {
-          "size": -3.72,
-          "entry": 71.26696516956503
+          "size": -3.88,
+          "entry": 71.05345235844894
         }
       }
     },
