@@ -27,6 +27,8 @@ class BotConfig:
     pattern_coins: list[str] = field(default_factory=list)  # coins for patterns / trend / funding
     patterns: list[str] = field(default_factory=list)       # patterns Pia may trade (empty = all)
     risk_per_trade: float = 0.01  # patterns: a stop-loss hit costs at most this share of equity
+    max_coins: int = 0          # small accounts: only the N largest copy positions (0 = all)
+    round_up_min: bool = False  # small accounts: round a $5-10 target up to the $10 minimum order
     follow_bot: str = ""  # data dir (relative to ours) of a bot whose traders we mirror
     select_random: bool = False  # control group: pick active traders at random, ignoring past results
     risk: RiskConfig = field(default_factory=RiskConfig)
@@ -52,6 +54,8 @@ def load_config(path: str | Path) -> BotConfig:
         target_leaders=int(bot.get("target_leaders", 3)),
         select_random=bool(bot.get("select_random", False)),
         follow_bot=str(bot.get("follow_bot", "")),
+        max_coins=int(bot.get("max_coins", 0)),
+        round_up_min=bool(bot.get("round_up_min", False)),
         strategy=str(bot.get("strategy", "copy")),
         pattern_coins=[str(c) for c in bot.get("pattern_coins", [])],
         patterns=[str(p) for p in bot.get("patterns", [])],

@@ -42,6 +42,31 @@ def fair_entry(snapshot: LeaderSnapshot, coin: str, mids: dict[str, float] | Non
     return worse_by <= max_drift
 
 
+def fit_small_account(targets: dict[str, float], equity: float, min_order: float, max_coins: int = 0,
+                      round_up: bool = False, max_gross: float | None = None) -> dict[str, float]:
+    """Make copy targets usable for a small account, where most would fall under the exchange's
+    minimum order and be skipped.
+    - max_coins: keep only the N largest targets and give them the money of the dropped ones
+      (same total exposure, fewer but tradable positions).
+    - round_up: a target between half the minimum and the minimum becomes the minimum.
+    Total exposure never goes above `max_gross` (the bot's leverage limit)."""
+    out = {c: v for c, v in targets.items() if v}
+    if not out:
+        return out
+    gross = sum(abs(v) for v in out.values())
+    if max_coins and len(out) > max_coins:
+        keep = dict(sorted(out.items(), key=lambda kv: -abs(kv[1]))[:max_coins])
+        kept = sum(abs(v) for v in keep.values())
+        out = {c: v * gross / kept for c, v in keep.items()} if kept else keep
+    if round_up:
+        out = {c: (min_order if v > 0 else -min_order) if min_order / 2 <= abs(v) < min_order else v for c, v in out.items()}
+    cap = max_gross if max_gross is not None else float("inf")
+    total = sum(abs(v) for v in out.values())
+    if total > cap > 0:
+        out = {c: v * cap / total for c, v in out.items()}
+    return out
+
+
 def filter_baseline(snapshot: LeaderSnapshot, baseline: dict[str, int],
                     mids: dict[str, float] | None = None, max_drift: float = 0.0) -> LeaderSnapshot:
     """Hide positions the leader already had when we started (we'd enter at a worse

@@ -61,6 +61,11 @@ Run `review` for each and compare return, max drawdown, fees and number of trade
   remove the triangle if it stops passing. Note: the 1.5x reward/risk filter makes double/triple
   tops and bottoms and rectangles impossible to trade (their target equals their risk); retested
   without the filter on 14 Nov, all five still lost money.
+- Small accounts (16 Nov 2026): `max_coins` and `round_up_min` let a mini concentrate on its largest
+  copy targets or round $5-10 targets up to the $10 minimum. Tested per mini on the big bots' recorded
+  history (splits 0.7 and 0.5): only round-up for `alles-mini` passed, so only that is on. Vera's mini
+  cannot trade at all ($50 x 15% per coin = $7.50 < $10). The amount matters far more than any trick:
+  replaying Bas with $50/$100/$300/$500/$1000 gave +3.3/+7.2/+10.9/+11.5/+11.7%.
 - `random` (Rik) is the **control group**: traders picked at random, not on past results. It answers
   "skill or luck?". A bot only counts as better when it beats **both Rik and holding BTC**.
 - Only call a winner after **7+ days** and **30+ closed trades** per bot, and when the gap is larger
