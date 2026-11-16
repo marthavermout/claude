@@ -625,12 +625,12 @@
     "0x94dac1facdc4afd2614c3119447187b4143bc449": {
       "starting_balance": 1000.0,
       "realized_pnl": 6.5753818234000025,
-      "fees_paid": 0.11769701876415002,
+      "fees_paid": 0.12581110062315004,
       "funding_paid": -0.05070090566265561,
       "positions": {
         "ZEC": {
-          "size": -0.12,
-          "entry": 882.6484350000001
+          "size": -0.14,
+          "entry": 885.3507515714286
         },
         "XPL": {
           "size": -732.0,

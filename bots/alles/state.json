@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 172.12851450527765,
-    "fees_paid": 3.8313751789811716,
+    "realized_pnl": 173.10371689667764,
+    "fees_paid": 3.838135898954792,
     "funding_paid": 0.20617110978230896,
     "positions": {
       "ASTER": {
@@ -54,7 +54,7 @@
         "entry": 194.821028
       },
       "USELESS": {
-        "size": -1720.0,
+        "size": -1563.0,
         "entry": 0.101904615
       },
       "WLD": {
@@ -182,8 +182,8 @@
     },
     "0x888e000c78b8f1aada5b3c99f880794907b76d77": {
       "starting_balance": 1000.0,
-      "realized_pnl": 102.8715389141375,
-      "fees_paid": 0.7980527523587401,
+      "realized_pnl": 110.47250652876285,
+      "fees_paid": 0.8238255700915801,
       "funding_paid": 9.268818665079703,
       "positions": {
         "ARB": {
@@ -207,11 +207,11 @@
           "entry": 3.49525081
         },
         "SAND": {
-          "size": -1696.0,
+          "size": -825.0,
           "entry": 0.041847347606249995
         },
         "STRK": {
-          "size": -4076.1,
+          "size": -3303.7,
           "entry": 0.03680069412840705
         },
         "TRUMP": {
