@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 135.19339069751823,
-    "fees_paid": 2.68051300855695,
+    "realized_pnl": 135.60716927505675,
+    "fees_paid": 3.0882845382683404,
     "funding_paid": -0.1504251858490028,
     "positions": {
       "FARTCOIN": {
@@ -42,8 +42,8 @@
         "entry": 8.515396579999999
       },
       "WLFI": {
-        "size": -4274.0,
-        "entry": 0.04669812571480299
+        "size": -3778.0,
+        "entry": 0.046626059253237026
       },
       "INIT": {
         "size": -44.0,
@@ -96,6 +96,10 @@
       "APE": {
         "size": 124.2,
         "entry": 0.08054610599999999
+      },
+      "MORPHO": {
+        "size": 166.1,
+        "entry": 1.7217942899999996
       }
     }
   },
@@ -326,7 +330,7 @@
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
       "realized_pnl": 42.76149490007898,
-      "fees_paid": 0.85555397801691,
+      "fees_paid": 0.86026408580691,
       "funding_paid": 0.6035777981240651,
       "positions": {
         "ETH": {
@@ -342,8 +346,8 @@
           "entry": 81.9551057
         },
         "LIT": {
-          "size": -104.0,
-          "entry": 2.9893901121855104
+          "size": -108.0,
+          "entry": 2.9755877580304912
         }
       }
     },
@@ -380,10 +384,15 @@
     },
     "0x94fb21bbfaed8927570a2d41af0c21527efbfd81": {
       "starting_balance": 1000.0,
-      "realized_pnl": 71.81335091960007,
-      "fees_paid": 0.35039745368226005,
+      "realized_pnl": 71.48813711560013,
+      "fees_paid": 0.7118410877558101,
       "funding_paid": 0.2605890556143898,
-      "positions": {}
+      "positions": {
+        "MORPHO": {
+          "size": 155.5,
+          "entry": 1.7217942899999998
+        }
+      }
     },
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
@@ -674,8 +683,8 @@
     },
     "0xa1d4fc32f21d9d77a4c20a6ac4b748815912c07c": {
       "starting_balance": 1000.0,
-      "realized_pnl": 69.82494421511012,
-      "fees_paid": 1.03389633386226,
+      "realized_pnl": 69.89771008836891,
+      "fees_paid": 1.03843418625126,
       "funding_paid": 0.038174131470242595,
       "positions": {
         "WLFI": {
@@ -687,7 +696,7 @@
           "entry": 63.79224880196079
         },
         "SUI": {
-          "size": -270.4,
+          "size": -256.4,
           "entry": 0.7254915923756281
         }
       }
