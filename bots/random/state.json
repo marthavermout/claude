@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": -92.02971877328694,
-    "fees_paid": 3.454764011679152,
+    "realized_pnl": -91.95598214595674,
+    "fees_paid": 3.4595600334417016,
     "funding_paid": -2.725205373560628,
     "positions": {
       "BTC": {
@@ -62,7 +62,7 @@
         "entry": 0.04340014428084086
       },
       "ETH": {
-        "size": -0.018,
+        "size": -0.0121,
         "entry": 1818.908943445797
       },
       "VVV": {
