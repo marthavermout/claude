@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 132.2658012530988,
-    "fees_paid": 2.59900664446944,
+    "realized_pnl": 132.30827962025765,
+    "fees_paid": 2.6035847096994003,
     "funding_paid": -0.1388151090720107,
     "positions": {
       "FARTCOIN": {
@@ -42,7 +42,7 @@
         "entry": 8.515396579999999
       },
       "WLFI": {
-        "size": -3985.0,
+        "size": -3767.0,
         "entry": 0.04686218649522414
       },
       "INIT": {
@@ -670,8 +670,8 @@
     },
     "0xa1d4fc32f21d9d77a4c20a6ac4b748815912c07c": {
       "starting_balance": 1000.0,
-      "realized_pnl": 70.49573416969076,
-      "fees_paid": 0.9858181095005398,
+      "realized_pnl": 70.54672393038979,
+      "fees_paid": 0.9903958002556198,
       "funding_paid": 0.008466003867747696,
       "positions": {
         "WLFI": {
@@ -683,7 +683,7 @@
           "entry": 63.7157543
         },
         "SUI": {
-          "size": -256.3,
+          "size": -242.2,
           "entry": 0.7250805590850373
         }
       }
