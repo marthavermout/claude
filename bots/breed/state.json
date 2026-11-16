@@ -3,7 +3,7 @@
     "starting_balance": 1000.0,
     "realized_pnl": 132.2658012530988,
     "fees_paid": 2.59900664446944,
-    "funding_paid": -0.1494553155934296,
+    "funding_paid": -0.1388151090720107,
     "positions": {
       "FARTCOIN": {
         "size": 100.8,
@@ -261,7 +261,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -30.580834824399957,
       "fees_paid": 1.5840707502536997,
-      "funding_paid": 0.08235320695091042,
+      "funding_paid": 0.08265491827209442,
       "positions": {
         "BTC": {
           "size": 0.00364,
@@ -272,8 +272,8 @@
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
       "realized_pnl": 12.508031462357748,
-      "fees_paid": 1.3175108356135494,
-      "funding_paid": -3.029399150320412,
+      "fees_paid": 1.3224892697275494,
+      "funding_paid": -3.037431400852702,
       "positions": {
         "ETH": {
           "size": 0.1446,
@@ -284,8 +284,8 @@
           "entry": 1.4531534797581453
         },
         "LIT": {
-          "size": -94.0,
-          "entry": 3.1768486093926738
+          "size": -98.0,
+          "entry": 3.160070981662361
         },
         "XMR": {
           "size": -0.529,
@@ -308,7 +308,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 73.86958428327223,
       "fees_paid": 0.3957888016456201,
-      "funding_paid": 7.744372430667529,
+      "funding_paid": 7.740131861355029,
       "positions": {
         "INIT": {
           "size": -566.0,
@@ -324,7 +324,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 27.00483895625973,
       "fees_paid": 0.77065062531273,
-      "funding_paid": 0.46032958636692883,
+      "funding_paid": 0.46507143790581834,
       "positions": {
         "ETH": {
           "size": -0.1054,
@@ -355,7 +355,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 21.090744757000003,
       "fees_paid": 0.35382624395175005,
-      "funding_paid": 0.09402917710037557,
+      "funding_paid": 0.09435907024826358,
       "positions": {
         "BTC": {
           "size": 0.00398,
@@ -367,7 +367,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 6.634392137218103,
       "fees_paid": 0.19670975685539996,
-      "funding_paid": 0.02913099411334436,
+      "funding_paid": 0.03773688314717636,
       "positions": {
         "HYPE": {
           "size": -3.72,
@@ -386,7 +386,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 22.208790800509217,
       "fees_paid": 1.9564271090843415,
-      "funding_paid": -4.412344479216581,
+      "funding_paid": -4.4512184097047856,
       "positions": {
         "AERO": {
           "size": 15.0,
@@ -606,7 +606,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 26.109116395304014,
       "fees_paid": 1.1359387219199402,
-      "funding_paid": -0.4769327096814521,
+      "funding_paid": -0.4743088325817431,
       "positions": {
         "HYPE": {
           "size": -3.62,
@@ -644,7 +644,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 5.866919793599975,
       "fees_paid": 0.20362424418810002,
-      "funding_paid": 0.13056730377611744,
+      "funding_paid": 0.13945080213362143,
       "positions": {
         "HYPE": {
           "size": -3.84,
@@ -656,7 +656,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -27.066566384620355,
       "fees_paid": 0.40378656933773993,
-      "funding_paid": 0.4286378971116285,
+      "funding_paid": 0.4274449420968115,
       "positions": {
         "HYPE": {
           "size": 3.73,
@@ -672,7 +672,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 70.49573416969076,
       "fees_paid": 0.9858181095005398,
-      "funding_paid": -0.009706236061786108,
+      "funding_paid": 0.008466003867747696,
       "positions": {
         "WLFI": {
           "size": -5666.0,
@@ -708,7 +708,7 @@
     "0xa1d4fc32f21d9d77a4c20a6ac4b748815912c07c": "2026-11-13T14:44:19.118852+00:00"
   },
   "meta": {
-    "funding_hour": 498552
+    "funding_hour": 498553
   },
   "pattern_trades": {},
   "pattern_scanned": {},
