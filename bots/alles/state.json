@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 171.6150686634,
-    "fees_paid": 3.725721250680871,
+    "fees_paid": 3.732643328819671,
     "funding_paid": 0.3141707296155376,
     "positions": {
       "ASTER": {
@@ -10,8 +10,8 @@
         "entry": 0.517186542
       },
       "BTC": {
-        "size": 0.00446,
-        "entry": 65342.5659
+        "size": 0.0047,
+        "entry": 65278.77442085107
       },
       "DYDX": {
         "size": -1203.9,
