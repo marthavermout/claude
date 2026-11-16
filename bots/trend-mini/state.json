@@ -7,7 +7,7 @@
     "positions": {}
   },
   "risk": {
-    "day": "2026-11-15",
+    "day": "2026-11-16",
     "day_start_equity": 50.0,
     "peak_equity": 50.0,
     "killed": false,
@@ -17,14 +17,14 @@
   "shadows": {},
   "shadow_started": {},
   "meta": {
-    "funding_hour": 498551
+    "funding_hour": 498552
   },
   "pattern_trades": {},
   "pattern_scanned": {},
   "quant_sizes": {
     "BTC": -4.6771191259496945e-05,
     "ETH": -0.0011649075427903094,
-    "SOL": -0.029071916846861442,
+    "SOL": -0.02907191684686144,
     "HYPE": -0.022254449381584804,
     "XRP": -2.1566346480583647,
     "DOGE": -34.901648591910615,
@@ -39,5 +39,5 @@
     "WLD": -5.5012283808706615
   },
   "funding_pos": {},
-  "quant_hour": 498551
+  "quant_hour": 498552
 }
