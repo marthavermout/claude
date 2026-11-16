@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": -88.48987119101777,
-    "fees_paid": 4.760681103531364,
+    "realized_pnl": -87.66164508579071,
+    "fees_paid": 4.769202684624214,
     "funding_paid": -2.620636762282637,
     "positions": {
       "BTC": {
@@ -16,10 +16,6 @@
       "HBAR": {
         "size": 337.0,
         "entry": 0.056146227
-      },
-      "HYPE": {
-        "size": 0.27,
-        "entry": 67.06896580656642
       },
       "LTC": {
         "size": 0.34,
@@ -284,8 +280,8 @@
     },
     "0xd57c9295947b5a616a3933344ef03a1ad67318ea": {
       "starting_balance": 1000.0,
-      "realized_pnl": -1.0178913194343628,
-      "fees_paid": 0.40280011778826,
+      "realized_pnl": 8.256274180565638,
+      "fees_paid": 0.47506894738101,
       "funding_paid": -0.2748220872234458,
       "positions": {
         "DOGE": {
@@ -299,10 +295,6 @@
         "HBAR": {
           "size": 2786.0,
           "entry": 0.0628905756
-        },
-        "HYPE": {
-          "size": 2.29,
-          "entry": 66.08001467030567
         },
         "LTC": {
           "size": 2.81,
