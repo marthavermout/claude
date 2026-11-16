@@ -2,16 +2,16 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": -91.95598214595674,
-    "fees_paid": 3.4595600334417016,
-    "funding_paid": -2.725205373560628,
+    "fees_paid": 3.502696549667942,
+    "funding_paid": -2.74741905458189,
     "positions": {
       "BTC": {
         "size": 0.00356,
         "entry": 64127.3229
       },
       "CHIP": {
-        "size": 829.0,
-        "entry": 0.0262742538
+        "size": 1263.0,
+        "entry": 0.026472222126840854
       },
       "DOGE": {
         "size": 440.0,
@@ -34,32 +34,32 @@
         "entry": 44.4508884
       },
       "NIL": {
-        "size": 415.0,
-        "entry": 0.049539905999999995
+        "size": 632.0,
+        "entry": 0.049616145928481015
       },
       "PONS": {
         "size": 138.0,
         "entry": 0.115308057
       },
       "SKY": {
-        "size": 1201.0,
-        "entry": 0.0523894758
+        "size": 1479.0,
+        "entry": 0.05261714674766735
       },
       "SYRUP": {
-        "size": 511.0,
-        "entry": 0.0999615245107632
+        "size": 632.0,
+        "entry": 0.10053762723892405
       },
       "TIA": {
         "size": 138.3,
         "entry": 0.34428884400000004
       },
       "XMR": {
-        "size": -0.128,
-        "entry": 472.10883019547276
+        "size": -0.159,
+        "entry": 476.5876738932108
       },
       "XPL": {
-        "size": 3501.0,
-        "entry": 0.04340014428084086
+        "size": 4215.0,
+        "entry": 0.04333178548365927
       },
       "ETH": {
         "size": -0.0121,
@@ -100,7 +100,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -126.37528771715897,
       "fees_paid": 2.170525973625629,
-      "funding_paid": -0.3657577532034513,
+      "funding_paid": -0.42773569810025186,
       "positions": {
         "CHIP": {
           "size": 6573.0,
@@ -140,7 +140,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -27.54920900600012,
       "fees_paid": 0.6216285662333999,
-      "funding_paid": 0.22045100116266408,
+      "funding_paid": 0.2234559447876641,
       "positions": {
         "VVV": {
           "size": 12.03,
@@ -152,7 +152,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -6.060148853374629,
       "fees_paid": 1.794065346479791,
-      "funding_paid": 0.05561034477632386,
+      "funding_paid": 0.049341426433468755,
       "positions": {
         "HYPE": {
           "size": 1.09,
@@ -198,7 +198,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -20.111473922004794,
       "fees_paid": 0.35467444929735004,
-      "funding_paid": 0.1478315910581675,
+      "funding_paid": 0.14944500805550912,
       "positions": {
         "ETH": {
           "size": -0.1336,
@@ -210,7 +210,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 3.9935436193438925,
       "fees_paid": 0.4179332675016,
-      "funding_paid": -4.347867291301823,
+      "funding_paid": -4.365573648816511,
       "positions": {
         "XMR": {
           "size": -0.495,
@@ -228,21 +228,16 @@
     },
     "0xd738f8f8f68511eb644a31d8b23d0b20baa4854b": {
       "starting_balance": 1000.0,
-      "realized_pnl": -20.147933988000066,
-      "fees_paid": 2.32594673273415,
-      "funding_paid": 0.150330875241016,
-      "positions": {
-        "BTC": {
-          "size": 0.00377,
-          "entry": 64813.4601
-        }
-      }
+      "realized_pnl": -21.19927238000006,
+      "fees_paid": 2.4354296655174,
+      "funding_paid": 0.13766941058740678,
+      "positions": {}
     },
     "0xd57c9295947b5a616a3933344ef03a1ad67318ea": {
       "starting_balance": 1000.0,
       "realized_pnl": -1.0178913194343628,
       "fees_paid": 0.40280011778826,
-      "funding_paid": -0.3335755332465237,
+      "funding_paid": -0.33777912584649333,
       "positions": {
         "DOGE": {
           "size": 3700.0,
@@ -279,7 +274,7 @@
     "0xd57c9295947b5a616a3933344ef03a1ad67318ea": "2026-11-13T16:27:55.365084+00:00"
   },
   "meta": {
-    "funding_hour": 498553
+    "funding_hour": 498554
   },
   "pattern_trades": {},
   "pattern_scanned": {},
