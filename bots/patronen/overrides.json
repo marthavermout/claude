@@ -2,8 +2,8 @@
   "risk": {
     "min_trade_usd": 15.0
   },
-  "reviews": 6,
-  "last_review": "2026-11-15T14:59:49.430107+00:00",
+  "reviews": 7,
+  "last_review": "2026-11-16T14:19:30.397132+00:00",
   "review_log": [
     {
       "time": "2026-11-10T18:25:31.102784+00:00",
@@ -47,6 +47,13 @@
     {
       "time": "2026-11-15T14:59:49.430107+00:00",
       "n": 6,
+      "mistakes": [],
+      "observations": [],
+      "decision": "niets veranderen"
+    },
+    {
+      "time": "2026-11-16T14:19:30.397132+00:00",
+      "n": 7,
       "mistakes": [],
       "observations": [],
       "decision": "niets veranderen"
