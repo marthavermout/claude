@@ -98,8 +98,8 @@
   "shadows": {
     "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da": {
       "starting_balance": 1000.0,
-      "realized_pnl": -126.37528771715897,
-      "fees_paid": 2.179694836231469,
+      "realized_pnl": -126.69981467945445,
+      "fees_paid": 2.184260482419569,
       "funding_paid": -0.5647506158690946,
       "positions": {
         "CHIP": {
@@ -111,7 +111,7 @@
           "entry": 0.051804453607654344
         },
         "PONS": {
-          "size": 1199.0,
+          "size": 1117.0,
           "entry": 0.12768789488165228
         },
         "SKY": {
