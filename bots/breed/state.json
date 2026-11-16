@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 135.86939950036327,
-    "fees_paid": 4.539022055805329,
+    "fees_paid": 4.546330708782329,
     "funding_paid": -0.11460843256352718,
     "positions": {
       "FARTCOIN": {
@@ -30,8 +30,8 @@
         "entry": 0.591861604
       },
       "LIT": {
-        "size": -43.0,
-        "entry": 2.775081468426903
+        "size": -49.0,
+        "entry": 2.766733759231772
       },
       "AVAX": {
         "size": -2.93,
@@ -261,7 +261,7 @@
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
       "realized_pnl": 41.27305545784534,
-      "fees_paid": 1.608581964579299,
+      "fees_paid": 1.6130897262013488,
       "funding_paid": -2.7230518593932076,
       "positions": {
         "ETH": {
@@ -281,8 +281,8 @@
           "entry": 522.4834713674112
         },
         "GMX": {
-          "size": 23.33,
-          "entry": 7.007840358110134
+          "size": 24.68,
+          "entry": 7.030395607929879
         }
       }
     },
@@ -590,12 +590,12 @@
     },
     "0xdbbb9b4e361e1e1b6b4c640914ed4e4a11896df9": {
       "starting_balance": 1000.0,
-      "realized_pnl": 27.27935022425638,
-      "fees_paid": 1.1901186835146,
+      "realized_pnl": 26.307765678304,
+      "fees_paid": 1.19478646563435,
       "funding_paid": -0.6042206096382855,
       "positions": {
         "HYPE": {
-          "size": -3.63,
+          "size": -3.48,
           "entry": 62.675097393650795
         },
         "PUMP": {
