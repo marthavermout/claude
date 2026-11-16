@@ -121,3 +121,18 @@ class RandomSelectionTest(unittest.TestCase):
                 self.row("0xmm", 500_000, 0.1, 400_000, 500_000_000)]      # market maker
         got = [c.address for c in screen_random(rows, SelectionRules(), random.Random(1))]
         self.assertEqual(got, ["0xloser"])
+
+
+class SmallAccountTest(unittest.TestCase):
+    def test_round_up_and_concentrate(self):
+        from copybot.strategy import fit_small_account
+        t = {"BTC": 7.0, "ETH": -6.0, "SOL": 3.0, "XRP": 2.0}
+        up = fit_small_account(t, 50, 10, round_up=True, max_gross=100)
+        self.assertEqual(up["BTC"], 10)
+        self.assertEqual(up["ETH"], -10)
+        self.assertEqual(up["SOL"], 3.0)          # under half the minimum: left alone
+        top = fit_small_account(t, 50, 10, max_coins=2, max_gross=100)
+        self.assertEqual(set(top), {"BTC", "ETH"})
+        self.assertAlmostEqual(sum(abs(v) for v in top.values()), 18.0)   # same total exposure
+        capped = fit_small_account({"BTC": 9.0, "ETH": 9.0}, 50, 10, round_up=True, max_gross=15)
+        self.assertAlmostEqual(sum(abs(v) for v in capped.values()), 15.0)  # never above the leverage limit
