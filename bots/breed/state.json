@@ -230,21 +230,12 @@
     "0xa4247526997374fdab0bad6f63c9f3daca8f22d4": {},
     "0x94dac1facdc4afd2614c3119447187b4143bc449": {},
     "0xb83de012dba672c76a7dbbbf3e459cb59d7d6e36": {
-      "BTC": -1,
-      "AVAX": -1,
-      "APE": -1,
       "DOGE": -1,
       "LINK": -1,
-      "XRP": -1,
       "WLD": -1,
-      "UNI": -1,
-      "ONDO": -1,
       "PURR": -1,
       "FARTCOIN": -1,
-      "ASTER": -1,
-      "MON": -1,
-      "AERO": -1,
-      "GRAM": -1
+      "ASTER": -1
     },
     "0x03136324349c003f3498130f56f4526bf5720ab1": {
       "ETH": -1,
