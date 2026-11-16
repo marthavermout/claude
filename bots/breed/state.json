@@ -388,8 +388,8 @@
     },
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
-      "realized_pnl": 22.208790800509217,
-      "fees_paid": 1.9564271090843415,
+      "realized_pnl": 23.672834784509217,
+      "fees_paid": 1.9605031511297415,
       "funding_paid": -4.683933330505692,
       "positions": {
         "AERO": {
@@ -463,10 +463,6 @@
         "INJ": {
           "size": -1.6,
           "entry": 7.77564456
-        },
-        "KAITO": {
-          "size": -52.0,
-          "entry": 0.202344523
         },
         "MEGA": {
           "size": -732.0,
