@@ -376,7 +376,7 @@
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
       "realized_pnl": 23.777483972109216,
-      "fees_paid": 1.9928831183239515,
+      "fees_paid": 1.9974579971151616,
       "funding_paid": -5.315993127058438,
       "positions": {
         "AERO": {
@@ -590,6 +590,10 @@
         "KAITO": {
           "size": 57.0,
           "entry": 0.17753549999999998
+        },
+        "MELANIA": {
+          "size": -219.1,
+          "entry": 0.046400718
         }
       }
     },
