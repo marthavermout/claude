@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 131.93142973258756,
-    "fees_paid": 5.704648887393635,
+    "fees_paid": 5.709179628360634,
     "funding_paid": 0.15905072468379666,
     "positions": {
       "FARTCOIN": {
@@ -66,8 +66,8 @@
         "entry": 0.11912381999999998
       },
       "ENA": {
-        "size": 466.0,
-        "entry": 0.12141674914037272
+        "size": 552.0,
+        "entry": 0.12074006949169146
       },
       "APT": {
         "size": 22.83,

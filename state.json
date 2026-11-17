@@ -54,7 +54,7 @@
   "risk": {
     "day": "2026-11-17",
     "day_start_equity": 1120.407954657266,
-    "peak_equity": 1141.5944219239802,
+    "peak_equity": 1143.17975592398,
     "killed": false,
     "kill_reason": ""
   },
@@ -185,7 +185,7 @@
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
       "realized_pnl": 35.02766081747267,
-      "fees_paid": 1.58011939178442,
+      "fees_paid": 1.5870029472979201,
       "funding_paid": -2.5701702343955164,
       "positions": {
         "ETH": {
@@ -201,8 +201,8 @@
           "entry": 2.9808072321087264
         },
         "XMR": {
-          "size": -0.223,
-          "entry": 527.0679569899048
+          "size": -0.253,
+          "entry": 525.031400943671
         },
         "GMX": {
           "size": 24.01,
