@@ -162,8 +162,8 @@
     },
     "0x5a19bfe9c095c3bd188eca00a690b95200797aba": {
       "starting_balance": 1000.0,
-      "realized_pnl": 28.965459920116352,
-      "fees_paid": 1.2291705488009694,
+      "realized_pnl": 32.1050393862916,
+      "fees_paid": 1.2359400266258094,
       "funding_paid": -2.23098493536306,
       "positions": {
         "PURR": {
@@ -171,7 +171,7 @@
           "entry": 0.08738450521621285
         },
         "USELESS": {
-          "size": -3112.0,
+          "size": -2948.0,
           "entry": 0.11087111903277592
         },
         "ZEC": {
@@ -246,8 +246,8 @@
     },
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
-      "realized_pnl": 140.71430156310348,
-      "fees_paid": 2.2125709967884206,
+      "realized_pnl": 141.0873750729332,
+      "fees_paid": 2.2193695036179006,
       "funding_paid": 0.5248850878595471,
       "positions": {
         "BTC": {
@@ -255,7 +255,7 @@
           "entry": 72896.9177
         },
         "DYDX": {
-          "size": -3990.1,
+          "size": -3806.5,
           "entry": 0.08431844479427954
         },
         "ETH": {
