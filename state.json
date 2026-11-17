@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 125.52376284759983,
-    "fees_paid": 9.310742679529532,
+    "fees_paid": 9.319020014665533,
     "funding_paid": 1.30166518998646,
     "positions": {
       "LIT": {
@@ -42,8 +42,8 @@
         "entry": 68178.44161817637
       },
       "ZEC": {
-        "size": 0.29,
-        "entry": 879.2909745454546
+        "size": 0.31,
+        "entry": 881.8982603167156
       },
       "GMX": {
         "size": 3.29,
