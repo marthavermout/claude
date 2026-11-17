@@ -316,12 +316,12 @@
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
       "realized_pnl": 52.28568877158781,
-      "fees_paid": 0.95642157819231,
+      "fees_paid": 0.96100088814711,
       "funding_paid": 0.6894214335095229,
       "positions": {
         "ETH": {
-          "size": -0.1054,
-          "entry": 1930.9340985267283
+          "size": -0.111,
+          "entry": 1925.1954804388936
         },
         "PUMP": {
           "size": -98163.0,
@@ -382,8 +382,8 @@
     },
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
-      "realized_pnl": 16.961086312452643,
-      "fees_paid": 2.0250186405838217,
+      "realized_pnl": 16.304271143652645,
+      "fees_paid": 2.0295229514414417,
       "funding_paid": -5.558849612771585,
       "positions": {
         "AERO": {
@@ -475,7 +475,7 @@
           "entry": 0.0644268828
         },
         "S": {
-          "size": 1747.0,
+          "size": 1453.0,
           "entry": 0.0362802546
         },
         "SAND": {
