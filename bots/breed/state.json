@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 130.20797058464424,
-    "fees_paid": 5.571080040927065,
+    "realized_pnl": 130.41334987161176,
+    "fees_paid": 5.580859042836365,
     "funding_paid": 0.0828240723207336,
     "positions": {
       "FARTCOIN": {
@@ -30,7 +30,7 @@
         "entry": 0.591861604
       },
       "LIT": {
-        "size": -84.0,
+        "size": -80.0,
         "entry": 2.8943533858159927
       },
       "AVAX": {
@@ -46,7 +46,7 @@
         "entry": 0.228684254
       },
       "ETH": {
-        "size": -0.1213,
+        "size": -0.1156,
         "entry": 1817.3826487199153
       },
       "XMR": {
@@ -232,8 +232,7 @@
     "0xa4247526997374fdab0bad6f63c9f3daca8f22d4": {},
     "0x94dac1facdc4afd2614c3119447187b4143bc449": {},
     "0xb83de012dba672c76a7dbbbf3e459cb59d7d6e36": {
-      "WLD": -1,
-      "FARTCOIN": -1
+      "WLD": -1
     },
     "0x03136324349c003f3498130f56f4526bf5720ab1": {
       "ETH": -1,
