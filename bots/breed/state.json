@@ -257,8 +257,8 @@
     },
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
-      "realized_pnl": 41.35720499675768,
-      "fees_paid": 1.652679922110479,
+      "realized_pnl": 40.75639881014035,
+      "fees_paid": 1.658206847274479,
       "funding_paid": -2.707871379729835,
       "positions": {
         "ETH": {
@@ -270,7 +270,7 @@
           "entry": 1.4493857715649228
         },
         "LIT": {
-          "size": -87.0,
+          "size": -83.0,
           "entry": 2.920312433345667
         },
         "XMR": {
@@ -308,8 +308,8 @@
     },
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
-      "realized_pnl": 51.56198083118273,
-      "fees_paid": 0.93641788926504,
+      "realized_pnl": 51.02369319071487,
+      "fees_paid": 0.94194481442904,
       "funding_paid": 0.6265638309705878,
       "positions": {
         "ETH": {
@@ -325,7 +325,7 @@
           "entry": 81.9551057
         },
         "LIT": {
-          "size": -92.0,
+          "size": -88.0,
           "entry": 2.9359420698830356
         }
       }
@@ -627,12 +627,12 @@
     "0x94dac1facdc4afd2614c3119447187b4143bc449": {
       "starting_balance": 1000.0,
       "realized_pnl": 6.5753818234000025,
-      "fees_paid": 0.13857750473157002,
+      "fees_paid": 0.14687838922257002,
       "funding_paid": -0.0704910361286156,
       "positions": {
         "ZEC": {
-          "size": -0.16,
-          "entry": 888.429153625
+          "size": -0.18,
+          "entry": 892.1948586666667
         },
         "XPL": {
           "size": -954.0,
