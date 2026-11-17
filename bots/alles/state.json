@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 172.4601016616744,
-    "fees_paid": 3.8820621543064218,
+    "fees_paid": 3.8889309613202117,
     "funding_paid": -0.10329387331292864,
     "positions": {
       "ASTER": {
@@ -42,8 +42,8 @@
         "entry": 0.0029704058
       },
       "PURR": {
-        "size": -1142.0,
-        "entry": 0.0904002683436077
+        "size": -1305.0,
+        "entry": 0.09080545749777778
       },
       "STRK": {
         "size": -466.3,
