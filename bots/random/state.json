@@ -1,9 +1,9 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": -86.94105930565323,
-    "fees_paid": 4.821585439600714,
-    "funding_paid": -2.63290797247737,
+    "realized_pnl": -86.97759558944813,
+    "fees_paid": 5.104804204589405,
+    "funding_paid": -2.6283066434249323,
     "positions": {
       "BTC": {
         "size": 0.00356,
@@ -34,8 +34,8 @@
         "entry": 19.555541621223025
       },
       "ETH": {
-        "size": 0.0401,
-        "entry": 1818.4923387729402
+        "size": -0.0635,
+        "entry": 1829.68399
       },
       "ATOM": {
         "size": 8.94,
@@ -46,8 +46,8 @@
         "entry": 0.394901004
       },
       "NEAR": {
-        "size": -3.8,
-        "entry": 3.1704157900000003
+        "size": 4.7,
+        "entry": 3.29030793
       },
       "WLFI": {
         "size": 351.0,
@@ -62,8 +62,12 @@
         "entry": 0.154520898
       },
       "ZEC": {
-        "size": 0.06,
-        "entry": 923.427982
+        "size": 0.08,
+        "entry": 925.641966375
+      },
+      "ETHFI": {
+        "size": 55.6,
+        "entry": 0.48380674199999996
       }
     }
   },
@@ -156,7 +160,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -131.86203340315112,
       "fees_paid": 2.2123854937889984,
-      "funding_paid": -0.6951446488742736,
+      "funding_paid": -0.6910160877417072,
       "positions": {
         "CHIP": {
           "size": 6573.0,
@@ -196,7 +200,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -27.54920900600012,
       "fees_paid": 0.6216285662333999,
-      "funding_paid": 0.43436596725776994,
+      "funding_paid": 0.4482875090620259,
       "positions": {
         "VVV": {
           "size": 12.03,
@@ -206,17 +210,25 @@
     },
     "0xe00f0d90bc976c311a7f22cbb728d8629ccd5394": {
       "starting_balance": 1000.0,
-      "realized_pnl": -14.83153149839993,
-      "fees_paid": 2.9495485172417415,
-      "funding_paid": 0.09430146904648105,
+      "realized_pnl": -14.91648915939993,
+      "fees_paid": 3.2658658259505313,
+      "funding_paid": 0.10354884104648106,
       "positions": {
         "BTC": {
-          "size": 0.0004599999999999999,
-          "entry": 64816.4607
+          "size": 0.00378,
+          "entry": 65043.109195238096
         },
         "ZEC": {
           "size": 0.27,
           "entry": 919.2832643333334
+        },
+        "NEAR": {
+          "size": 70.3,
+          "entry": 3.29030793
+        },
+        "ETHFI": {
+          "size": 478.1,
+          "entry": 0.48380674199999996
         }
       }
     },
@@ -238,7 +250,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -20.111473922004794,
       "fees_paid": 0.35467444929735004,
-      "funding_paid": 0.1766358563981603,
+      "funding_paid": 0.1735722413981603,
       "positions": {
         "ETH": {
           "size": -0.1336,
@@ -250,7 +262,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 4.636085596966517,
       "fees_paid": 0.4379155052049,
-      "funding_paid": -4.193479166931082,
+      "funding_paid": -4.190424751306082,
       "positions": {
         "XMR": {
           "size": -0.51,
@@ -270,7 +282,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -21.19927238000006,
       "fees_paid": 2.6551504023776995,
-      "funding_paid": 0.18058348006364325,
+      "funding_paid": 0.18671665281364325,
       "positions": {
         "BTC": {
           "size": 0.00376,
@@ -286,7 +298,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 8.256274180565638,
       "fees_paid": 0.47506894738101,
-      "funding_paid": -0.2691779082921464,
+      "funding_paid": -0.2683136531218004,
       "positions": {
         "DOGE": {
           "size": 3700.0,
@@ -310,7 +322,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -1.3468102055992417,
       "fees_paid": 0.59586893187714,
-      "funding_paid": -0.28397309532532244,
+      "funding_paid": -0.31071227628267606,
       "positions": {
         "ADA": {
           "size": 568.0,
@@ -380,7 +392,7 @@
     "0x18a794ea0363e75ab119d0392f172edc19625df3": "2026-11-16T14:20:29.822197+00:00"
   },
   "meta": {
-    "funding_hour": 498580
+    "funding_hour": 498581
   },
   "pattern_trades": {},
   "pattern_scanned": {},

@@ -1,9 +1,9 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 173.1213458546785,
-    "fees_paid": 3.873713164842422,
-    "funding_paid": 0.08541719383052346,
+    "realized_pnl": 172.4601016616744,
+    "fees_paid": 3.8820621543064218,
+    "funding_paid": 0.07321968418038345,
     "positions": {
       "ASTER": {
         "size": -45.0,
@@ -70,7 +70,7 @@
         "entry": 0.044630072199999996
       },
       "ZEC": {
-        "size": -0.23,
+        "size": -0.21,
         "entry": 894.6032863497942
       },
       "ZRO": {
@@ -96,7 +96,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -32.043211377164084,
       "fees_paid": 2.161355162707259,
-      "funding_paid": 0.05090490034408507,
+      "funding_paid": 0.05104933309408507,
       "positions": {
         "HYPE": {
           "size": -3.4,
@@ -110,9 +110,9 @@
     },
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
-      "realized_pnl": 94.33988886057224,
-      "fees_paid": 3.7341793472495413,
-      "funding_paid": -1.3529541293554426,
+      "realized_pnl": 93.58282650380761,
+      "fees_paid": 3.741148608323041,
+      "funding_paid": -1.3655251135773365,
       "positions": {
         "ASTER": {
           "size": -269.0,
@@ -131,7 +131,7 @@
           "entry": 7.414172668306356
         },
         "HYPE": {
-          "size": -3.65,
+          "size": -3.43,
           "entry": 66.95538396925167
         },
         "LIT": {
@@ -164,7 +164,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 26.182312538278453,
       "fees_paid": 1.188146993698619,
-      "funding_paid": -1.6827839603696346,
+      "funding_paid": -1.6927782133696345,
       "positions": {
         "PURR": {
           "size": -2770.0,
@@ -184,7 +184,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 110.47250652876285,
       "fees_paid": 0.8238255700915801,
-      "funding_paid": 9.541122928732284,
+      "funding_paid": 9.530280012795135,
       "positions": {
         "ARB": {
           "size": -491.7,
@@ -246,9 +246,9 @@
     },
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
-      "realized_pnl": 138.3346059926591,
-      "fees_paid": 2.1261281410916104,
-      "funding_paid": 0.48275260165677303,
+      "realized_pnl": 137.4938737225262,
+      "fees_paid": 2.1330446741216105,
+      "funding_paid": 0.465112597439913,
       "positions": {
         "BTC": {
           "size": -0.00032,
@@ -271,7 +271,7 @@
           "entry": 0.251474695
         },
         "LIT": {
-          "size": -103.0,
+          "size": -98.0,
           "entry": 2.905868225973415
         },
         "PUMP": {
@@ -288,7 +288,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -17.48401780751406,
       "fees_paid": 0.58066720627977,
-      "funding_paid": 0.09961348571726009,
+      "funding_paid": 0.09652402759226009,
       "positions": {
         "HYPE": {
           "size": -3.51,
@@ -300,7 +300,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 20.958443301999996,
       "fees_paid": 0.3493263679065,
-      "funding_paid": 0.11174884206030342,
+      "funding_paid": 0.11485340381030341,
       "positions": {
         "BTC": {
           "size": 0.00382,
@@ -312,7 +312,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 0.3749778596786684,
       "fees_paid": 0.17000599477364997,
-      "funding_paid": -0.062033220425312625,
+      "funding_paid": -0.06523710292531262,
       "positions": {
         "HYPE": {
           "size": -3.64,
@@ -332,7 +332,7 @@
     "0x7dacca323e44f168494c779bb5e7483c468ef410": "2026-11-10T16:52:32.648945+00:00"
   },
   "meta": {
-    "funding_hour": 498580
+    "funding_hour": 498581
   },
   "pattern_trades": {},
   "pattern_scanned": {},
