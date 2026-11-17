@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 132.89199617120488,
-    "fees_paid": 4.73488215996276,
+    "realized_pnl": 132.2438952381031,
+    "fees_paid": 4.74566288217876,
     "funding_paid": -0.10251624390762548,
     "positions": {
       "FARTCOIN": {
@@ -31,7 +31,7 @@
       },
       "LIT": {
         "size": -79.0,
-        "entry": 2.7978743327612445
+        "entry": 2.8085187567245584
       },
       "AVAX": {
         "size": -2.93,
@@ -208,7 +208,6 @@
       "STRK": -1,
       "ENA": -1,
       "HBAR": -1,
-      "POPCAT": -1,
       "TURBO": -1,
       "BRETT": -1,
       "RENDER": -1,
