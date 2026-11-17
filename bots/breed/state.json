@@ -373,7 +373,7 @@
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
       "realized_pnl": 12.95606262970903,
-      "fees_paid": 2.0871942881660117,
+      "fees_paid": 2.0917643242404615,
       "funding_paid": -5.900362240902189,
       "positions": {
         "AERO": {
@@ -591,6 +591,10 @@
         "MELANIA": {
           "size": -885.0,
           "entry": 0.04680632725740113
+        },
+        "TRB": {
+          "size": 0.77,
+          "entry": 13.1891373
         }
       }
     },
