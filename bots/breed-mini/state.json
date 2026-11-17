@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 50.0,
-    "realized_pnl": 1.0781078980000027,
-    "fees_paid": 0.06109889079599999,
+    "realized_pnl": 1.2672224280000046,
+    "fees_paid": 0.06684008657714999,
     "funding_paid": 0.006667632751364102,
     "positions": {
       "BTC": {
@@ -12,10 +12,6 @@
       "WLFI": {
         "size": -231.0,
         "entry": 0.045910816
-      },
-      "MORPHO": {
-        "size": 7.3,
-        "entry": 1.7217942899999998
       },
       "HYPE": {
         "size": -0.19,
