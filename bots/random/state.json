@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": -87.5568436899336,
-    "fees_paid": 5.159658495873514,
+    "realized_pnl": -87.54568602628555,
+    "fees_paid": 5.164432226928814,
     "funding_paid": -2.629570342825578,
     "positions": {
       "BTC": {
@@ -34,7 +34,7 @@
         "entry": 19.555541621223025
       },
       "ETH": {
-        "size": -0.0661,
+        "size": -0.0603,
         "entry": 1830.939465111732
       },
       "ATOM": {
