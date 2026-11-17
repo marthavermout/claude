@@ -162,12 +162,16 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
       "realized_pnl": -30.9864298946001,
-      "fees_paid": 1.7511591714704093,
+      "fees_paid": 1.7807839453304093,
       "funding_paid": 0.11422879273906299,
       "positions": {
         "BTC": {
           "size": 0.00364,
           "entry": 68696.2365
+        },
+        "LIT": {
+          "size": -22.0,
+          "entry": 2.9924014
         }
       }
     },

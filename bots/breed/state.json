@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 124.82207336048168,
-    "fees_paid": 5.211035352243902,
+    "fees_paid": 5.216421674763902,
     "funding_paid": 0.012870916591081909,
     "positions": {
       "FARTCOIN": {
@@ -30,8 +30,8 @@
         "entry": 0.591861604
       },
       "LIT": {
-        "size": -78.0,
-        "entry": 2.855887237238777
+        "size": -82.0,
+        "entry": 2.862546464690544
       },
       "AVAX": {
         "size": -2.93,
@@ -246,12 +246,16 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
       "realized_pnl": -29.278050134399948,
-      "fees_paid": 1.7354175744491995,
+      "fees_paid": 1.7650423483091995,
       "funding_paid": 0.10576630595344001,
       "positions": {
         "BTC": {
           "size": 0.00364,
           "entry": 68716.2405
+        },
+        "LIT": {
+          "size": -22.0,
+          "entry": 2.9924014
         }
       }
     },

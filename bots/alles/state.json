@@ -95,7 +95,7 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
       "realized_pnl": -32.043211377164084,
-      "fees_paid": 2.161355162707259,
+      "fees_paid": 2.1909799365672593,
       "funding_paid": 0.036788948506293065,
       "positions": {
         "HYPE": {
@@ -105,6 +105,10 @@
         "BTC": {
           "size": 0.00386,
           "entry": 68319.80889792746
+        },
+        "LIT": {
+          "size": -22.0,
+          "entry": 2.9924014
         }
       }
     },
