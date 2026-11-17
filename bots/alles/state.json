@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 172.0759291850785,
-    "fees_paid": 3.866938184217242,
+    "realized_pnl": 173.1213458546785,
+    "fees_paid": 3.873713164842422,
     "funding_paid": 0.08541719383052346,
     "positions": {
       "ASTER": {
@@ -54,7 +54,7 @@
         "entry": 194.821028
       },
       "USELESS": {
-        "size": -1563.0,
+        "size": -1405.0,
         "entry": 0.101904615
       },
       "WLD": {
