@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 172.0759291850785,
-    "fees_paid": 3.860124967633142,
+    "fees_paid": 3.866938184217242,
     "funding_paid": 0.08541719383052346,
     "positions": {
       "ASTER": {
@@ -42,8 +42,8 @@
         "entry": 0.0029704058
       },
       "PURR": {
-        "size": -984.0,
-        "entry": 0.0895290906
+        "size": -1142.0,
+        "entry": 0.0904002683436077
       },
       "STRK": {
         "size": -466.3,
@@ -162,12 +162,12 @@
     },
     "0x5a19bfe9c095c3bd188eca00a690b95200797aba": {
       "starting_balance": 1000.0,
-      "realized_pnl": 27.564155093791236,
-      "fees_paid": 1.1812966432524892,
+      "realized_pnl": 26.182312538278453,
+      "fees_paid": 1.188146993698619,
       "funding_paid": -1.6827839603696346,
       "positions": {
         "PURR": {
-          "size": -2929.0,
+          "size": -2770.0,
           "entry": 0.08705131091752967
         },
         "USELESS": {
