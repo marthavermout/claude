@@ -603,12 +603,12 @@
     },
     "0xdbbb9b4e361e1e1b6b4c640914ed4e4a11896df9": {
       "starting_balance": 1000.0,
-      "realized_pnl": -21.221444317052665,
-      "fees_paid": 1.31145464127951,
+      "realized_pnl": -22.391968643005043,
+      "fees_paid": 1.31621194630026,
       "funding_paid": -0.6196088576346868,
       "positions": {
         "HYPE": {
-          "size": -3.48,
+          "size": -3.33,
           "entry": 62.675097393650795
         },
         "ZEC": {
