@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 130.23767119273742,
-    "fees_paid": 4.832643720439981,
+    "fees_paid": 4.838099509063981,
     "funding_paid": 0.0068636543738598045,
     "positions": {
       "FARTCOIN": {
@@ -30,8 +30,8 @@
         "entry": 0.591861604
       },
       "LIT": {
-        "size": -83.0,
-        "entry": 2.8177202619426525
+        "size": -87.0,
+        "entry": 2.827525936336094
       },
       "AVAX": {
         "size": -2.93,
@@ -595,8 +595,8 @@
     },
     "0xdbbb9b4e361e1e1b6b4c640914ed4e4a11896df9": {
       "starting_balance": 1000.0,
-      "realized_pnl": -20.34277071705052,
-      "fees_paid": 1.30692977493381,
+      "realized_pnl": -21.221444317052665,
+      "fees_paid": 1.31145464127951,
       "funding_paid": -0.6135885457596867,
       "positions": {
         "HYPE": {
@@ -608,7 +608,7 @@
           "entry": 967.369453153183
         },
         "ENA": {
-          "size": 2101.0,
+          "size": 2015.0,
           "entry": 0.12713874588374585
         }
       }
