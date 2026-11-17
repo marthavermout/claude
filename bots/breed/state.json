@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 125.28450113152657,
-    "fees_paid": 5.205686662719902,
+    "realized_pnl": 124.82207336048168,
+    "fees_paid": 5.211035352243902,
     "funding_paid": 0.012870916591081909,
     "positions": {
       "FARTCOIN": {
@@ -30,7 +30,7 @@
         "entry": 0.591861604
       },
       "LIT": {
-        "size": -82.0,
+        "size": -78.0,
         "entry": 2.855887237238777
       },
       "AVAX": {
@@ -375,8 +375,8 @@
     },
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
-      "realized_pnl": 21.685542738772867,
-      "fees_paid": 2.0113513533380716,
+      "realized_pnl": 20.74131508043248,
+      "fees_paid": 2.0158804150945215,
       "funding_paid": -5.477618641336944,
       "positions": {
         "AERO": {
@@ -436,7 +436,7 @@
           "entry": 0.1117173654752594
         },
         "FET": {
-          "size": 533.0,
+          "size": 456.0,
           "entry": 0.1429715498615635
         },
         "GALA": {
@@ -666,7 +666,7 @@
     "0xa1d4fc32f21d9d77a4c20a6ac4b748815912c07c": {
       "starting_balance": 1000.0,
       "realized_pnl": 62.21943819869069,
-      "fees_paid": 1.5153444877811404,
+      "fees_paid": 1.5199573250291405,
       "funding_paid": 0.07576704804877898,
       "positions": {
         "WLFI": {
@@ -674,8 +674,8 @@
           "entry": 0.047561355088143784
         },
         "HYPE": {
-          "size": -3.64,
-          "entry": 64.05937908930589
+          "size": -3.79,
+          "entry": 64.22873069263152
         },
         "SUI": {
           "size": -105.0,
