@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": -86.48308562656437,
-    "fees_paid": 6.138298291922197,
+    "realized_pnl": -86.66222438856437,
+    "fees_paid": 6.159879100147148,
     "funding_paid": -2.557073732108636,
     "positions": {
       "BTC": {
@@ -76,10 +76,6 @@
       "ZEC": {
         "size": -0.02,
         "entry": 929.239115
-      },
-      "BNB": {
-        "size": 0.083,
-        "entry": 579.9577153373493
       }
     }
   },
@@ -283,17 +279,13 @@
     },
     "0xd738f8f8f68511eb644a31d8b23d0b20baa4854b": {
       "starting_balance": 1000.0,
-      "realized_pnl": -34.09201934400004,
-      "fees_paid": 3.3035028739245,
+      "realized_pnl": -35.35039119600005,
+      "fees_paid": 3.41036687609865,
       "funding_paid": 0.21468178065090301,
       "positions": {
         "BTC": {
           "size": 0.00375,
           "entry": 64581.4137
-        },
-        "BNB": {
-          "size": 0.411,
-          "entry": 580.861149
         }
       }
     },
