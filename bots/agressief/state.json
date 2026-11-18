@@ -138,8 +138,8 @@
   "shadows": {
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
-      "realized_pnl": -36.67504599080015,
-      "fees_paid": 2.13210414536022,
+      "realized_pnl": -34.59402860680015,
+      "fees_paid": 2.15604984311082,
       "funding_paid": 0.29862934325629453,
       "positions": {
         "BTC": {
