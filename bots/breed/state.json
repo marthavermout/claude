@@ -3,7 +3,7 @@
     "starting_balance": 1000.0,
     "realized_pnl": 132.28843204986117,
     "fees_paid": 5.8301796447879335,
-    "funding_paid": 0.20905949811395177,
+    "funding_paid": 0.21140981303493397,
     "positions": {
       "FARTCOIN": {
         "size": 100.8,
@@ -249,7 +249,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -25.698967594399953,
       "fees_paid": 1.7930565350261995,
-      "funding_paid": 0.1989453973541506,
+      "funding_paid": 0.1996021070987506,
       "positions": {
         "BTC": {
           "size": 0.00364,
@@ -261,7 +261,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 40.37210822757556,
       "fees_paid": 1.7232754645430086,
-      "funding_paid": -2.4928520619343413,
+      "funding_paid": -2.4934539630479273,
       "positions": {
         "ETH": {
           "size": 0.1459,
@@ -296,7 +296,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 105.04941556280973,
       "fees_paid": 0.43444606090149007,
-      "funding_paid": 9.250964823857492,
+      "funding_paid": 9.272393147105486,
       "positions": {
         "INIT": {
           "size": -450.0,
@@ -312,7 +312,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 56.61900872140351,
       "fees_paid": 1.0239080916690002,
-      "funding_paid": 0.799559031700275,
+      "funding_paid": 0.801928840500191,
       "positions": {
         "ETH": {
           "size": -0.111,
@@ -343,7 +343,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 21.090744757000003,
       "fees_paid": 0.35382624395175005,
-      "funding_paid": 0.19822273576261476,
+      "funding_paid": 0.19894078652731476,
       "positions": {
         "BTC": {
           "size": 0.00398,
@@ -355,7 +355,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 7.165196629752785,
       "fees_paid": 0.21542469196139993,
-      "funding_paid": -0.14270901580297463,
+      "funding_paid": -0.14590446017797462,
       "positions": {
         "HYPE": {
           "size": -3.73,
@@ -374,7 +374,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 11.005610312109031,
       "fees_paid": 2.124527522174551,
-      "funding_paid": -6.2854601442100915,
+      "funding_paid": -6.3166659438159485,
       "positions": {
         "AERO": {
           "size": 15.0,
@@ -606,7 +606,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -21.76773050351268,
       "fees_paid": 1.5066684207109797,
-      "funding_paid": -0.7941061038911579,
+      "funding_paid": -0.8005564431796779,
       "positions": {
         "HYPE": {
           "size": -3.48,
@@ -639,9 +639,9 @@
     },
     "0x94dac1facdc4afd2614c3119447187b4143bc449": {
       "starting_balance": 1000.0,
-      "realized_pnl": 6.508422020600002,
-      "fees_paid": 0.16119696627315003,
-      "funding_paid": -0.1610466659891973,
+      "realized_pnl": 6.5079039670000025,
+      "fees_paid": 0.16124439315663003,
+      "funding_paid": -0.1626140813709857,
       "positions": {
         "ZEC": {
           "size": -0.18,
@@ -650,10 +650,6 @@
         "XPL": {
           "size": -1185.0,
           "entry": 0.04465142742177215
-        },
-        "WLD": {
-          "size": -0.3999999999999986,
-          "entry": 0.262187552
         }
       }
     },
@@ -668,7 +664,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -26.91848981899507,
       "fees_paid": 0.4178655731394899,
-      "funding_paid": 0.7809682247428773,
+      "funding_paid": 0.7886438343891633,
       "positions": {
         "HYPE": {
           "size": 3.58,
@@ -684,7 +680,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 60.98938355678767,
       "fees_paid": 1.5774345716555704,
-      "funding_paid": 0.31515771213685784,
+      "funding_paid": 0.31537531426822385,
       "positions": {
         "WLFI": {
           "size": -5666.0,
@@ -736,7 +732,7 @@
     "0x5461e3a694004602961722522e70f62beb05ae65": "2026-11-16T12:35:52.266332+00:00"
   },
   "meta": {
-    "funding_hour": 498612
+    "funding_hour": 498613
   },
   "pattern_trades": {},
   "pattern_scanned": {},
