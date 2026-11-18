@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 131.13475777280163,
-    "fees_paid": 5.751551269945804,
+    "realized_pnl": 131.17190739583395,
+    "fees_paid": 5.756095360582203,
     "funding_paid": 0.14867102899365198,
     "positions": {
       "FARTCOIN": {
@@ -46,7 +46,7 @@
         "entry": 0.228684254
       },
       "ETH": {
-        "size": -0.1296,
+        "size": -0.124,
         "entry": 1809.8444312557695
       },
       "XMR": {
