@@ -115,12 +115,12 @@
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
       "realized_pnl": 96.03043248032404,
-      "fees_paid": 4.040436731115152,
+      "fees_paid": 4.047298200546752,
       "funding_paid": -1.254850149792278,
       "positions": {
         "ASTER": {
-          "size": -269.0,
-          "entry": 0.5916276540355987
+          "size": -297.0,
+          "entry": 0.5871903999447006
         },
         "DYDX": {
           "size": -1619.6,
