@@ -167,12 +167,12 @@
     "0x5a19bfe9c095c3bd188eca00a690b95200797aba": {
       "starting_balance": 1000.0,
       "realized_pnl": 36.65244527172692,
-      "fees_paid": 1.2937601532314693,
+      "fees_paid": 1.3005780929707493,
       "funding_paid": -2.4922297435141587,
       "positions": {
         "PURR": {
-          "size": -2941.0,
-          "entry": 0.08738450521621285
+          "size": -3115.0,
+          "entry": 0.08736719327103756
         },
         "USELESS": {
           "size": -2804.0,
@@ -315,12 +315,12 @@
     "0x7dacca323e44f168494c779bb5e7483c468ef410": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.3749778596786684,
-      "fees_paid": 0.17000599477364997,
+      "fees_paid": 0.17680634393174996,
       "funding_paid": -0.15913329961706466,
       "positions": {
         "HYPE": {
-          "size": -3.64,
-          "entry": 70.15850788113224
+          "size": -3.87,
+          "entry": 69.89376116416571
         }
       }
     }
