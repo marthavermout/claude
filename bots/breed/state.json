@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 131.17190739583395,
-    "fees_paid": 5.756095360582203,
+    "realized_pnl": 131.27957145663396,
+    "fees_paid": 5.760615011571184,
     "funding_paid": 0.14867102899365198,
     "positions": {
       "FARTCOIN": {
@@ -10,7 +10,7 @@
         "entry": 0.1145229
       },
       "PUMP": {
-        "size": 12816.0,
+        "size": 9094.0,
         "entry": 0.0026695338
       },
       "ZEC": {
@@ -600,8 +600,8 @@
     },
     "0xdbbb9b4e361e1e1b6b4c640914ed4e4a11896df9": {
       "starting_balance": 1000.0,
-      "realized_pnl": -22.59673391351268,
-      "fees_paid": 1.4945535214656296,
+      "realized_pnl": -21.76773050351268,
+      "fees_paid": 1.5021481218319797,
       "funding_paid": -0.7427597102982145,
       "positions": {
         "HYPE": {
@@ -617,7 +617,7 @@
           "entry": 0.12652512709778893
         },
         "VVV": {
-          "size": -5.43,
+          "size": -4.62,
           "entry": 21.859127299999997
         },
         "PUMP": {
