@@ -373,7 +373,7 @@
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
       "realized_pnl": 11.914759573109032,
-      "fees_paid": 2.110842605736451,
+      "fees_paid": 2.1154545181845013,
       "funding_paid": -6.1127126533242055,
       "positions": {
         "AERO": {
@@ -595,6 +595,10 @@
         "TRB": {
           "size": 0.77,
           "entry": 13.1891373
+        },
+        "POPCAT": {
+          "size": 365.0,
+          "entry": 0.0280786146
         }
       }
     },
