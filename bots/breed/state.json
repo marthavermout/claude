@@ -389,8 +389,8 @@
     },
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
-      "realized_pnl": 10.075372989668093,
-      "fees_paid": 2.156843873877571,
+      "realized_pnl": 9.019301073668093,
+      "fees_paid": 2.161344710530171,
       "funding_paid": -6.559571295987398,
       "positions": {
         "AERO": {
@@ -454,7 +454,7 @@
           "entry": 0.1429715498615635
         },
         "GALA": {
-          "size": 39211.0,
+          "size": 31751.0,
           "entry": 0.0014822964
         },
         "ICP": {
