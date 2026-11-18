@@ -114,8 +114,8 @@
     },
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
-      "realized_pnl": 95.67668336983962,
-      "fees_paid": 4.103434802187902,
+      "realized_pnl": 96.12004752729496,
+      "fees_paid": 4.110775004934902,
       "funding_paid": -1.2701648481604844,
       "positions": {
         "ASTER": {
@@ -139,7 +139,7 @@
           "entry": 66.97396026349419
         },
         "LIT": {
-          "size": -99.0,
+          "size": -93.0,
           "entry": 2.792487636242556
         },
         "TAO": {
@@ -166,12 +166,12 @@
     },
     "0x5a19bfe9c095c3bd188eca00a690b95200797aba": {
       "starting_balance": 1000.0,
-      "realized_pnl": 38.58929282196016,
-      "fees_paid": 1.3519761364745997,
+      "realized_pnl": 40.15501896406027,
+      "fees_paid": 1.3587760709895598,
       "funding_paid": -2.6046999421928985,
       "positions": {
         "PURR": {
-          "size": -3735.0,
+          "size": -3541.0,
           "entry": 0.08596232850979439
         },
         "USELESS": {
@@ -187,7 +187,7 @@
     "0x888e000c78b8f1aada5b3c99f880794907b76d77": {
       "starting_balance": 1000.0,
       "realized_pnl": 110.47250652876285,
-      "fees_paid": 0.8238255700915801,
+      "fees_paid": 0.8305784042545801,
       "funding_paid": 10.515089422712443,
       "positions": {
         "ARB": {
@@ -231,8 +231,8 @@
           "entry": 0.130803834
         },
         "VVV": {
-          "size": -1.96,
-          "entry": 19.012196799999998
+          "size": -2.64,
+          "entry": 19.799319646969696
         },
         "WLD": {
           "size": -79.9,
