@@ -372,8 +372,8 @@
     },
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
-      "realized_pnl": 10.111673477109033,
-      "fees_paid": 2.1199607627553014,
+      "realized_pnl": 11.005610312109031,
+      "fees_paid": 2.124527522174551,
       "funding_paid": -6.252379913342981,
       "positions": {
         "AERO": {
@@ -453,7 +453,7 @@
           "entry": 0.05118110518680629
         },
         "MET": {
-          "size": -127.0,
+          "size": -90.0,
           "entry": 0.2984403
         },
         "PENDLE": {
