@@ -1,37 +1,37 @@
-# Review #7 — 2026-11-18 08:50 UTC
+# Review #8 — 2026-11-19 08:15 UTC
 
 **Gevonden fouten:**
-- 43% van de trades draait binnen een uur de vorige om (churn).
+- 44% van de trades draait binnen een uur de vorige om (churn).
 
-**Besluit:** Afkoelperiode: vorige wijziging was minder dan 48u geleden; eerst het effect daarvan meten.
+**Besluit:** Minimale trade-grootte verhoogd: $15.0 → $22.5 (minder kleine aanpassingen).
 
 ## Laatste 24 uur
 
 | Meting | Waarde |
 |---|---|
 | Periode | 24.0 uur |
-| Vermogen | $52.98 → $53.73 (+1.41%) |
-| BTC vasthouden (benchmark) | +0.63% |
-| Grootste daling (drawdown) | 3.64% |
-| Trades | 3 (3.0/dag) |
-| Gerealiseerd / kosten | $+2.97 / $0.03 |
-| Heen-en-weer trades (churn) | 1 (33%) |
+| Vermogen | $53.63 → $53.64 (+0.03%) |
+| BTC vasthouden (benchmark) | -1.29% |
+| Grootste daling (drawdown) | 2.69% |
+| Trades | 2 (2.0/dag) |
+| Gerealiseerd / kosten | $-0.43 / $0.02 |
+| Heen-en-weer trades (churn) | 1 (50%) |
 | Dagen met risicostop | geen |
 
-**Slechtste munten:** HYPE $+0.56, ZEC $+2.37
-**Beste munten:** ZEC $+2.37, HYPE $+0.56
+**Slechtste munten:** HYPE $-0.45
+**Beste munten:** HYPE $-0.45
 
 ## Sinds de start
 
 | Meting | Waarde |
 |---|---|
-| Periode | 140.4 uur |
-| Vermogen | $49.99 → $53.73 (+7.47%) |
-| BTC vasthouden (benchmark) | -11.08% |
+| Periode | 163.8 uur |
+| Vermogen | $49.99 → $53.64 (+7.30%) |
+| BTC vasthouden (benchmark) | -12.42% |
 | Grootste daling (drawdown) | 4.49% |
-| Trades | 23 (3.9/dag) |
-| Gerealiseerd / kosten | $+4.41 / $0.21 |
-| Heen-en-weer trades (churn) | 10 (43%) |
+| Trades | 25 (3.7/dag) |
+| Gerealiseerd / kosten | $+3.98 / $0.24 |
+| Heen-en-weer trades (churn) | 11 (44%) |
 | Dagen met risicostop | geen |
 
 **Per trader (schaduwboek: wat als je alleen deze trader kopieerde)**
@@ -46,8 +46,8 @@
 | `0x888e000c…` | 19 | +0.00% | -7.40% | 0 |
 | `0x999510ad…` | 19 | +0.66% | +13.64% | 1 |
 
-**Slechtste munten:** BTC $-0.01, ETH $-0.00, HYPE $+1.84
-**Beste munten:** ZEC $+2.37, HYPE $+1.84, ETH $-0.00
+**Slechtste munten:** BTC $-0.01, ETH $-0.00, HYPE $+1.39
+**Beste munten:** ZEC $+2.37, HYPE $+1.39, ETH $-0.00
 
 ---
 
