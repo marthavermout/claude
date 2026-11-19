@@ -202,12 +202,12 @@
     },
     "0xfb47779fb0f59750fc714ba61a7859b059bbd3e6": {
       "starting_balance": 1000.0,
-      "realized_pnl": -24.61010453517067,
-      "fees_paid": 0.64437195534885,
+      "realized_pnl": -23.189051625745456,
+      "fees_paid": 0.6489549298206,
       "funding_paid": 0.6369709374636933,
       "positions": {
         "VVV": {
-          "size": 11.61,
+          "size": 11.16,
           "entry": 19.474077345721746
         }
       }

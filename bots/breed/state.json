@@ -389,8 +389,8 @@
     },
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
-      "realized_pnl": 8.239307145091093,
-      "fees_paid": 2.179480119447061,
+      "realized_pnl": 7.604672385091093,
+      "fees_paid": 2.184045209996311,
       "funding_paid": -6.7674837754762045,
       "positions": {
         "AERO": {
@@ -522,7 +522,7 @@
           "entry": 0.167076578
         },
         "HYPE": {
-          "size": 0.36,
+          "size": 0.21,
           "entry": 71.8618695
         },
         "RSR": {
