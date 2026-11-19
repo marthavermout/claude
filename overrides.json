@@ -1,6 +1,6 @@
 {
   "risk": {
-    "min_trade_usd": 15.0
+    "min_trade_usd": 22.5
   },
   "leaders": [
     "0x999510ad3dd8c94a6659d6401d983137565283e3",
@@ -12,8 +12,8 @@
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede",
     "0x9eb42f017e793512e4734f8785de605c4cb3a24e"
   ],
-  "reviews": 10,
-  "last_review": "2026-11-18T11:26:12.133230+00:00",
+  "reviews": 11,
+  "last_review": "2026-11-19T10:51:24.809011+00:00",
   "review_log": [
     {
       "time": "2026-11-10T08:40:34.762407+00:00",
@@ -149,9 +149,23 @@
         "`0x9eb42f01\u2026`: nog te weinig data om te beoordelen (117u, 4 gesloten trades)"
       ],
       "decision": "Afkoelperiode: vorige wijziging was minder dan 48u geleden; eerst het effect daarvan meten."
+    },
+    {
+      "time": "2026-11-19T10:51:24.809011+00:00",
+      "n": 11,
+      "mistakes": [
+        "41% van de trades draait binnen een uur de vorige om (churn)."
+      ],
+      "observations": [
+        "`0xf83858e5\u2026` zelf +64.22%, onze kopie -4.71%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo).",
+        "`0x999510ad\u2026`: nog te weinig data om te beoordelen (218u, 2 gesloten trades)",
+        "`0xd42350df\u2026` zelf +3093.61%, onze kopie -0.54%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo).",
+        "`0x9eb42f01\u2026`: nog te weinig data om te beoordelen (140u, 4 gesloten trades)"
+      ],
+      "decision": "Minimale trade-grootte verhoogd: $15.0 \u2192 $22.5 (minder kleine aanpassingen)."
     }
   ],
-  "last_change": "2026-11-16T12:35:01.299457+00:00",
+  "last_change": "2026-11-19T10:51:24.809011+00:00",
   "history": [
     {
       "time": "2026-11-10T08:40:34.762407+00:00",
@@ -168,6 +182,10 @@
     {
       "time": "2026-11-16T12:35:01.299457+00:00",
       "change": "Minimale trade-grootte verhoogd: $10.0 \u2192 $15.0 (minder kleine aanpassingen)."
+    },
+    {
+      "time": "2026-11-19T10:51:24.809011+00:00",
+      "change": "Minimale trade-grootte verhoogd: $15.0 \u2192 $22.5 (minder kleine aanpassingen)."
     }
   ],
   "blacklist": [

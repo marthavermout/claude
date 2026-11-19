@@ -12,8 +12,8 @@
     "0x972d521729c0d07b360ae470f03878fe405f0650",
     "0x7dacca323e44f168494c779bb5e7483c468ef410"
   ],
-  "reviews": 9,
-  "last_review": "2026-11-18T11:26:14.088496+00:00",
+  "reviews": 10,
+  "last_review": "2026-11-19T10:51:26.131538+00:00",
   "review_log": [
     {
       "time": "2026-11-10T16:50:57.965419+00:00",
@@ -128,6 +128,16 @@
       "observations": [
         "`0xf83858e5\u2026` zelf +58.98%, onze kopie -3.95%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo).",
         "`0x972d5217\u2026`: nog te weinig data om te beoordelen (187u, 2 gesloten trades)"
+      ],
+      "decision": "niets veranderen"
+    },
+    {
+      "time": "2026-11-19T10:51:26.131538+00:00",
+      "n": 10,
+      "mistakes": [],
+      "observations": [
+        "`0xf83858e5\u2026` zelf +62.28%, onze kopie -4.15%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo).",
+        "`0x972d5217\u2026`: nog te weinig data om te beoordelen (210u, 2 gesloten trades)"
       ],
       "decision": "niets veranderen"
     }
