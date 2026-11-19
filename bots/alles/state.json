@@ -17,12 +17,12 @@
   "shadows": {
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
-      "realized_pnl": -25.525237843732317,
-      "fees_paid": 2.6647621442479794,
+      "realized_pnl": -25.471477787334493,
+      "fees_paid": 2.671682638069979,
       "funding_paid": 0.08873285907159328,
       "positions": {
         "HYPE": {
-          "size": -3.63,
+          "size": -3.41,
           "entry": 70.14834189271738
         },
         "BTC": {
@@ -177,8 +177,8 @@
     },
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
-      "realized_pnl": 158.4586717628532,
-      "fees_paid": 2.468047530536191,
+      "realized_pnl": 160.52152366848344,
+      "fees_paid": 2.4749535634165807,
       "funding_paid": 0.042862274639501485,
       "positions": {
         "BTC": {
@@ -194,7 +194,7 @@
           "entry": 1941.8654167120376
         },
         "FARTCOIN": {
-          "size": -3922.8,
+          "size": -3742.9,
           "entry": 0.09677371673057386
         },
         "JUP": {
