@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 50.0,
     "realized_pnl": 1.2672224280000046,
-    "fees_paid": 0.0725803521507,
+    "fees_paid": 0.07755878626469999,
     "funding_paid": 0.01641320555330431,
     "positions": {
       "BTC": {
@@ -24,6 +24,10 @@
       "kPEPE": {
         "size": 3433.0,
         "entry": 0.003715743
+      },
+      "LIT": {
+        "size": -4.0,
+        "entry": 2.76579673
       }
     }
   },
