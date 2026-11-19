@@ -389,8 +389,8 @@
     },
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
-      "realized_pnl": 8.827059772291095,
-      "fees_paid": 2.174976631924741,
+      "realized_pnl": 8.239307145091093,
+      "fees_paid": 2.179480119447061,
       "funding_paid": -6.718782842811081,
       "positions": {
         "AERO": {
@@ -410,7 +410,7 @@
           "entry": 0.09835796119514204
         },
         "ATOM": {
-          "size": 28.0,
+          "size": 20.28,
           "entry": 1.3724744400000002
         },
         "BERA": {
