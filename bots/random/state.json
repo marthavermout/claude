@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": -81.19491646012402,
-    "fees_paid": 6.407470300620878,
+    "realized_pnl": -81.18774014212401,
+    "fees_paid": 6.407577307215279,
     "funding_paid": -2.529112415498206,
     "positions": {
       "BTC": {
@@ -20,10 +20,6 @@
       "LTC": {
         "size": 0.34,
         "entry": 44.4508884
-      },
-      "PONS": {
-        "size": 2.0,
-        "entry": 0.115308057
       },
       "XMR": {
         "size": -0.11,
