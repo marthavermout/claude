@@ -632,7 +632,7 @@
     "0xdbbb9b4e361e1e1b6b4c640914ed4e4a11896df9": {
       "starting_balance": 1000.0,
       "realized_pnl": -21.608824575929834,
-      "fees_paid": 1.5329074483855798,
+      "fees_paid": 1.5397393149856797,
       "funding_paid": -0.8834762379613645,
       "positions": {
         "HYPE": {
@@ -644,8 +644,8 @@
           "entry": 961.0064322529473
         },
         "ENA": {
-          "size": 2107.0,
-          "entry": 0.1258881300314382
+          "size": 2253.0,
+          "entry": 0.12446880415190426
         },
         "VVV": {
           "size": -4.62,
@@ -666,12 +666,12 @@
     },
     "0x94dac1facdc4afd2614c3119447187b4143bc449": {
       "starting_balance": 1000.0,
-      "realized_pnl": 5.2333364270000065,
-      "fees_paid": 0.19554627773439,
+      "realized_pnl": 5.461411140333341,
+      "fees_paid": 0.20347339784139,
       "funding_paid": -0.23906845585336575,
       "positions": {
         "ZEC": {
-          "size": -0.12,
+          "size": -0.1,
           "entry": 892.1948586666667
         },
         "XPL": {
