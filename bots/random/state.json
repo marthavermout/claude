@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": -81.18774014212401,
-    "fees_paid": 6.407577307215279,
+    "realized_pnl": -81.4439678267659,
+    "fees_paid": 6.412111018776279,
     "funding_paid": -2.5314779890294203,
     "positions": {
       "BTC": {
@@ -22,7 +22,7 @@
         "entry": 44.4508884
       },
       "XMR": {
-        "size": -0.11,
+        "size": -0.09,
         "entry": 490.93434476790566
       },
       "VVV": {
