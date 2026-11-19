@@ -37,8 +37,8 @@
     },
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
-      "realized_pnl": 93.46898365062013,
-      "fees_paid": 4.167511309891712,
+      "realized_pnl": 93.03683223058886,
+      "fees_paid": 4.174336200096811,
       "funding_paid": -1.418822181682845,
       "positions": {
         "ASTER": {
@@ -58,7 +58,7 @@
           "entry": 7.397797563914868
         },
         "HYPE": {
-          "size": -3.64,
+          "size": -3.42,
           "entry": 66.97396026349419
         },
         "LIT": {
