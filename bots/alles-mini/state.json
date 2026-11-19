@@ -19,7 +19,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.0157790532546,
-      "funding_paid": 0.014305871452757,
+      "funding_paid": 0.014357643803141,
       "positions": {
         "HYPE": {
           "size": -0.18,
@@ -39,7 +39,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.0194506395939,
-      "funding_paid": 0.016326212178065007,
+      "funding_paid": 0.016182615265385007,
       "positions": {
         "HYPE": {
           "size": -0.15,
@@ -63,7 +63,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.01124099055216,
-      "funding_paid": -0.10751945447869062,
+      "funding_paid": -0.10778437842869061,
       "positions": {
         "PURR": {
           "size": -142.0,
@@ -79,7 +79,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.00562322353032,
-      "funding_paid": 0.005243805317882995,
+      "funding_paid": 0.005294316886471795,
       "positions": {
         "kPEPE": {
           "size": -2838.0,
@@ -91,7 +91,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.026957334404609998,
-      "funding_paid": -0.002655700794065836,
+      "funding_paid": -0.003275196856565836,
       "positions": {
         "DYDX": {
           "size": -141.3,
@@ -119,7 +119,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.01130411491749,
-      "funding_paid": 0.019203472295250292,
+      "funding_paid": 0.019593955637534292,
       "positions": {
         "ETHFI": {
           "size": 20.3,
@@ -142,7 +142,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.0056797583211,
-      "funding_paid": -0.002279992763662202,
+      "funding_paid": -0.002013605858878202,
       "positions": {
         "HYPE": {
           "size": -0.18,
@@ -162,7 +162,7 @@
     "0x7dacca323e44f168494c779bb5e7483c468ef410": "2026-11-12T12:28:05.473017+00:00"
   },
   "meta": {
-    "funding_hour": 498646
+    "funding_hour": 498647
   },
   "pattern_trades": {},
   "pattern_scanned": {},
