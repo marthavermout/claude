@@ -1,41 +1,41 @@
-# Review #9 — 2026-11-18 13:10 UTC
+# Review #10 — 2026-11-19 12:35 UTC
 
 **Gevonden fouten:**
-- Kosten slokken 52% van het resultaat op.
+- Kosten slokken 386% van het resultaat op.
 
-**Besluit:** Minimale trade-grootte verhoogd: $15.0 → $22.5 (minder kleine aanpassingen).
+**Besluit:** Afkoelperiode: vorige wijziging was minder dan 48u geleden; eerst het effect daarvan meten.
 
 ## Laatste 24 uur
 
 | Meting | Waarde |
 |---|---|
 | Periode | 24.0 uur |
-| Vermogen | $1,026.55 → $1,011.57 (-1.46%) |
-| BTC vasthouden (benchmark) | -1.69% |
-| Grootste daling (drawdown) | 2.12% |
-| Trades | 15 (15.0/dag) |
-| Gerealiseerd / kosten | $-18.66 / $1.73 |
-| Heen-en-weer trades (churn) | 2 (13%) |
+| Vermogen | $1,014.57 → $989.53 (-2.47%) |
+| BTC vasthouden (benchmark) | -0.74% |
+| Grootste daling (drawdown) | 3.26% |
+| Trades | 14 (14.0/dag) |
+| Gerealiseerd / kosten | $-20.08 / $1.60 |
+| Heen-en-weer trades (churn) | 1 (7%) |
 | Dagen met risicostop | geen |
 
-**Slechtste munten:** SUI $-6.38, LINK $-3.45, BTC $-3.22
-**Beste munten:** SOL $-0.12, BNB $-2.14, HYPE $-2.38
+**Slechtste munten:** HYPE $-5.24, DOGE $-3.99, AVAX $-3.50
+**Beste munten:** SOL $+0.59, SUI $-3.09, BTC $-3.11
 
 ## Sinds de start
 
 | Meting | Waarde |
 |---|---|
-| Periode | 186.7 uur |
-| Vermogen | $1,000.00 → $1,011.57 (+1.16%) |
-| BTC vasthouden (benchmark) | -12.59% |
-| Grootste daling (drawdown) | 4.56% |
-| Trades | 127 (16.3/dag) |
-| Gerealiseerd / kosten | $+19.17 / $12.76 |
-| Heen-en-weer trades (churn) | 18 (14%) |
+| Periode | 210.2 uur |
+| Vermogen | $1,000.00 → $989.53 (-1.05%) |
+| BTC vasthouden (benchmark) | -12.96% |
+| Grootste daling (drawdown) | 6.59% |
+| Trades | 139 (15.9/dag) |
+| Gerealiseerd / kosten | $+5.31 / $14.13 |
+| Heen-en-weer trades (churn) | 19 (14%) |
 | Dagen met risicostop | geen |
 
-**Slechtste munten:** LINK $-15.32, BNB $-4.05, SUI $-2.27
-**Beste munten:** HYPE $+10.44, SOL $+9.26, AVAX $+6.44
+**Slechtste munten:** LINK $-15.32, SUI $-5.36, DOGE $-4.59
+**Beste munten:** SOL $+9.85, XRP $+5.34, HYPE $+5.20
 
 ---
 
