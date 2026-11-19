@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 149.94070764441594,
-    "fees_paid": 6.6634054104768285,
+    "fees_paid": 6.671569792273829,
     "funding_paid": 0.34699042466814894,
     "positions": {
       "FARTCOIN": {
@@ -14,8 +14,8 @@
         "entry": 0.0026695338
       },
       "ZEC": {
-        "size": -0.06,
-        "entry": 943.7564575493199
+        "size": -0.08,
+        "entry": 934.60572641199
       },
       "ZRO": {
         "size": -32.5,
@@ -258,8 +258,8 @@
   "shadows": {
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
-      "realized_pnl": -21.984306189846908,
-      "fees_paid": 2.2354930378917888,
+      "realized_pnl": -22.413675369846928,
+      "fees_paid": 2.4072546634767886,
       "funding_paid": 0.20102126550174867,
       "positions": {
         "BTC": {
@@ -273,6 +273,10 @@
         "LIT": {
           "size": -44.0,
           "entry": 2.9211060128070176
+        },
+        "ZEC": {
+          "size": -0.14,
+          "entry": 909.61804
         }
       }
     },
