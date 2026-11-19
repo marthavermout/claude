@@ -213,7 +213,7 @@
     "0xe00f0d90bc976c311a7f22cbb728d8629ccd5394": {
       "starting_balance": 1000.0,
       "realized_pnl": -27.15559772015147,
-      "fees_paid": 4.382636926895103,
+      "fees_paid": 4.408062375968103,
       "funding_paid": 0.07149243824614415,
       "positions": {
         "BTC": {
@@ -235,6 +235,10 @@
         "INIT": {
           "size": 193.0,
           "entry": 0.112727541
+        },
+        "ZEC": {
+          "size": 0.06,
+          "entry": 941.683299
         }
       }
     },
