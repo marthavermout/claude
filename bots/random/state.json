@@ -212,8 +212,8 @@
     },
     "0xe00f0d90bc976c311a7f22cbb728d8629ccd5394": {
       "starting_balance": 1000.0,
-      "realized_pnl": -27.21549653268584,
-      "fees_paid": 4.355995160909252,
+      "realized_pnl": -27.15559772015147,
+      "fees_paid": 4.372846539959252,
       "funding_paid": 0.18316621157773416,
       "positions": {
         "BTC": {
@@ -221,7 +221,7 @@
           "entry": 65010.62375931758
         },
         "NEAR": {
-          "size": 15.1,
+          "size": 4.1,
           "entry": 3.398873653405966
         },
         "ETHFI": {
