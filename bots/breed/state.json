@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 145.67623468866705,
-    "fees_paid": 6.428266643083767,
+    "realized_pnl": 151.83374319946705,
+    "fees_paid": 6.568528247401317,
     "funding_paid": 0.2956041718939232,
     "positions": {
       "FARTCOIN": {
@@ -22,16 +22,16 @@
         "entry": 1.527004999446154
       },
       "kPEPE": {
-        "size": 74639.0,
-        "entry": 0.003715743
+        "size": -4356.0,
+        "entry": 0.0037982401999999997
       },
       "ETHFI": {
         "size": -23.699999999999996,
         "entry": 0.591861604
       },
       "LIT": {
-        "size": -92.0,
-        "entry": 2.8004252716016627
+        "size": -96.0,
+        "entry": 2.805099941951593
       },
       "AVAX": {
         "size": -2.93,
@@ -322,7 +322,7 @@
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
       "realized_pnl": 64.28640300578758,
-      "fees_paid": 1.0954893330723605,
+      "fees_paid": 1.1007208865523606,
       "funding_paid": 0.7800764922323491,
       "positions": {
         "ETH": {
@@ -338,8 +338,8 @@
           "entry": 81.9551057
         },
         "LIT": {
-          "size": -92.0,
-          "entry": 2.9084593265646124
+          "size": -96.0,
+          "entry": 2.9083742962910866
         }
       }
     },
@@ -376,15 +376,10 @@
     },
     "0x94fb21bbfaed8927570a2d41af0c21527efbfd81": {
       "starting_balance": 1000.0,
-      "realized_pnl": 75.51653566560017,
-      "fees_paid": 0.9550264489667102,
+      "realized_pnl": 81.4810007284001,
+      "fees_paid": 1.0786004846656203,
       "funding_paid": 0.3625268218908263,
-      "positions": {
-        "kPEPE": {
-          "size": 72299.0,
-          "entry": 0.0037157430000000005
-        }
-      }
+      "positions": {}
     },
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
