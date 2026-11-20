@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 211.17745157193946,
-    "fees_paid": 10.843874882790557,
+    "realized_pnl": 211.42418840356837,
+    "fees_paid": 10.866413585398305,
     "funding_paid": 0.31052479468447064,
     "positions": {
       "FARTCOIN": {
@@ -14,7 +14,7 @@
         "entry": 0.0026695338
       },
       "ZEC": {
-        "size": 0.39,
+        "size": 0.37,
         "entry": 753.2500104185549
       },
       "ZRO": {
@@ -118,15 +118,15 @@
         "entry": 68.9742921
       },
       "HYPE": {
-        "size": -0.22999999999999998,
-        "entry": 60.840329499999996
+        "size": -0.8,
+        "entry": 60.959430675
       }
     }
   },
   "risk": {
     "day": "2026-11-20",
     "day_start_equity": 1143.0554417448645,
-    "peak_equity": 1208.4781585507112,
+    "peak_equity": 1211.2699323623176,
     "killed": false,
     "kill_reason": ""
   },
@@ -394,8 +394,8 @@
     },
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
-      "realized_pnl": -11.455310098013499,
-      "fees_paid": 2.267970332613391,
+      "realized_pnl": -7.484275498013499,
+      "fees_paid": 2.274912745818391,
       "funding_paid": -7.804754906728266,
       "positions": {
         "AERO": {
@@ -475,7 +475,7 @@
           "entry": 0.05118110518680629
         },
         "MET": {
-          "size": -90.0,
+          "size": -25.0,
           "entry": 0.2984403
         },
         "PENDLE": {
@@ -635,12 +635,12 @@
     "0xdbbb9b4e361e1e1b6b4c640914ed4e4a11896df9": {
       "starting_balance": 1000.0,
       "realized_pnl": 27.405035792365933,
-      "fees_paid": 1.6770417622738196,
+      "fees_paid": 1.6838740955338196,
       "funding_paid": -1.0267112827813114,
       "positions": {
         "HYPE": {
-          "size": -3.72,
-          "entry": 62.99988521367128
+          "size": -3.97,
+          "entry": 62.85706191306226
         },
         "ENA": {
           "size": 2408.0,
