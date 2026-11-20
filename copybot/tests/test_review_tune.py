@@ -121,6 +121,15 @@ class ReviewTuneTest(unittest.TestCase):
         self.assertIn("hefboom", d.change)
         self.assertEqual(load_overrides(self.tmp.name)["risk"]["max_leverage"], 2.25)
 
+    def test_min_trade_never_freezes_a_small_account(self):
+        from copybot.config import save_overrides
+        self.cfg.starting_balance = 50.0
+        self.cfg.risk.min_trade_usd = 22.5
+        save_overrides(self.tmp.name, {"risk": {"min_trade_usd": 22.5}, "last_change": T0.isoformat()})
+        d = tune(self.cfg, self.selector, rules=TuneRules(target_leaders=2), now=T0 + timedelta(hours=1))
+        self.assertIn("terug naar $10", d.change)          # repaired even inside the cooldown
+        self.assertEqual(load_overrides(self.tmp.name)["risk"]["min_trade_usd"], 10.0)
+
     def test_journal_newest_first(self):
         self.cfg.leaders = []
         tune(self.cfg, self.selector, now=T0)

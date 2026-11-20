@@ -31,6 +31,8 @@ class TuneRules:
     max_churn_ratio: float = 0.25
     min_trade_usd_step: float = 1.5
     min_trade_usd_cap: float = 100.0
+    min_trade_max_share: float = 0.2  # ...and never above 20% of the starting balance (the $50 minis stay at $10)
+    exchange_min_order: float = 10.0
     max_halt_days_per_week: int = 2
     leverage_step: float = 0.75
     leverage_floor: float = 1.0
@@ -103,6 +105,15 @@ def decide(review: Review, week: Review, cfg: BotConfig, ov: dict, rules: TuneRu
             d.change = "Traders aangevuld: " + ", ".join(f"`{a[:10]}…`" for a in new)
             return d
 
+    min_cap = min(rules.min_trade_usd_cap,
+                  max(rules.exchange_min_order, round(cfg.starting_balance * rules.min_trade_max_share, 2)))
+    if cfg.risk.min_trade_usd > min_cap:
+        # Repair, no cooldown (20 Nov 2026): the minimum once grew to $22.50 on a $50 bot, which then could
+        # copy nothing at all. A repair of the tuner's own mistake, not a looser risk limit.
+        risk["min_trade_usd"] = min_cap
+        d.change = (f"Minimale trade-grootte terug naar ${min_cap}: ${cfg.risk.min_trade_usd} is te groot voor "
+                    f"een account van ${cfg.starting_balance:.0f} (de bot kon niets meer kopiëren).")
+        return d
     # ---- at most one change, with cooldown ----
     last_change = ov.get("last_change")
     if last_change and now - datetime.fromisoformat(last_change) < timedelta(hours=rules.cooldown_hours):
@@ -122,8 +133,8 @@ def decide(review: Review, week: Review, cfg: BotConfig, ov: dict, rules: TuneRu
         new_lev = max(rules.leverage_floor, round(cfg.risk.max_leverage * rules.leverage_step, 2))
         risk["max_leverage"] = new_lev
         d.change = f"Max hefboom verlaagd: {cfg.risk.max_leverage}x → {new_lev}x."
-    elif costly and cfg.risk.min_trade_usd < rules.min_trade_usd_cap:
-        new_min = min(rules.min_trade_usd_cap, round(cfg.risk.min_trade_usd * rules.min_trade_usd_step, 2))
+    elif costly and cfg.risk.min_trade_usd < min_cap:
+        new_min = min(min_cap, round(cfg.risk.min_trade_usd * rules.min_trade_usd_step, 2))
         risk["min_trade_usd"] = new_min
         d.change = f"Minimale trade-grootte verhoogd: ${cfg.risk.min_trade_usd} → ${new_min} (minder kleine aanpassingen)."
     return d
