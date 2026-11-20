@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 223.90474914737058,
-    "fees_paid": 12.644619268291459,
+    "realized_pnl": 223.85209498871544,
+    "fees_paid": 12.70624997182616,
     "funding_paid": 0.30096535443510486,
     "positions": {
       "FARTCOIN": {
@@ -110,8 +110,8 @@
         "entry": 68.9742921
       },
       "HYPE": {
-        "size": -0.79,
-        "entry": 60.27263692834445
+        "size": -0.3,
+        "entry": 60.31939030015754
       }
     }
   },
@@ -145,7 +145,6 @@
       "APE": -1,
       "SNX": -1,
       "WLD": -1,
-      "UNI": -1,
       "DOT": -1,
       "NEAR": -1,
       "FIL": -1,
@@ -154,7 +153,6 @@
       "ZK": -1,
       "RENDER": -1,
       "POL": -1,
-      "SAND": -1,
       "MOVE": -1,
       "GRIFFAIN": -1,
       "TRUMP": -1,
