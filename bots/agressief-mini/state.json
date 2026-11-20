@@ -30,7 +30,7 @@
   "risk": {
     "day": "2026-11-20",
     "day_start_equity": 52.59491927028967,
-    "peak_equity": 55.71901098059138,
+    "peak_equity": 55.722495262399946,
     "killed": false,
     "kill_reason": ""
   },
@@ -78,7 +78,6 @@
       "KAITO": -1,
       "NIL": -1,
       "WCT": -1,
-      "INIT": -1,
       "XPL": -1,
       "WLFI": -1,
       "AVNT": -1,
