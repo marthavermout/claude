@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 50.0,
-    "realized_pnl": 3.0619475666000016,
-    "fees_paid": 0.19198761913512,
+    "realized_pnl": 3.0791012596000016,
+    "fees_paid": 0.20427043807602,
     "funding_paid": 0.01956801558394291,
     "positions": {
       "BTC": {
@@ -25,16 +25,16 @@
         "size": 0.19,
         "entry": 68.9742921
       },
-      "HYPE": {
-        "size": 0.2,
-        "entry": 61.098442245
+      "ZEC": {
+        "size": 0.02,
+        "entry": 752.9155529999999
       }
     }
   },
   "risk": {
     "day": "2026-11-20",
     "day_start_equity": 50.74104813262696,
-    "peak_equity": 53.349649749628256,
+    "peak_equity": 53.44472633994004,
     "killed": false,
     "kill_reason": ""
   },
