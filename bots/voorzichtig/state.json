@@ -133,7 +133,7 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
       "realized_pnl": -0.42599856190710916,
-      "fees_paid": 2.0355275340462597,
+      "fees_paid": 2.0427594901482595,
       "funding_paid": 0.1043605164423567,
       "positions": {
         "BTC": {
@@ -147,18 +147,22 @@
         "ZEC": {
           "size": 0.16,
           "entry": 774.689907
+        },
+        "LIT": {
+          "size": 7.0,
+          "entry": 2.29585908
         }
       }
     },
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
       "realized_pnl": -0.5121981050053745,
-      "fees_paid": 0.58326360300576,
+      "fees_paid": 0.58778406391716,
       "funding_paid": 0.48718007825256915,
       "positions": {
         "ETH": {
-          "size": 0.0917,
-          "entry": 1973.620599389313
+          "size": 0.098,
+          "entry": 1949.249772
         },
         "ZRO": {
           "size": -128.3,
@@ -243,12 +247,12 @@
     "0x7dacca323e44f168494c779bb5e7483c468ef410": {
       "starting_balance": 1000.0,
       "realized_pnl": 1.6492922255393723,
-      "fees_paid": 0.09515152293390002,
+      "fees_paid": 0.09975899950425002,
       "funding_paid": -0.04701940971353593,
       "positions": {
         "HYPE": {
-          "size": -2.39,
-          "entry": 70.69652777508813
+          "size": -2.56,
+          "entry": 70.00138211150806
         }
       }
     },
