@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 155.2015682704001,
-    "fees_paid": 5.682599505938878,
+    "realized_pnl": 156.0855345370194,
+    "fees_paid": 5.6896255796226285,
     "funding_paid": -0.6038771261282972,
     "positions": {
       "ASTER": {
@@ -26,7 +26,7 @@
         "entry": 6.9593916
       },
       "HYPE": {
-        "size": -5.28,
+        "size": -5.03,
         "entry": 65.98985336647728
       },
       "LIT": {
@@ -110,8 +110,8 @@
     },
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
-      "realized_pnl": 118.60812573344371,
-      "fees_paid": 4.723503768902702,
+      "realized_pnl": 120.49191733275075,
+      "fees_paid": 4.731177915925202,
       "funding_paid": -1.3205141551318762,
       "positions": {
         "ASTER": {
@@ -135,7 +135,7 @@
           "entry": 66.02042139521014
         },
         "LIT": {
-          "size": -108.0,
+          "size": -101.0,
           "entry": 2.7053502356152896
         },
         "TAO": {
@@ -162,12 +162,12 @@
     },
     "0x5a19bfe9c095c3bd188eca00a690b95200797aba": {
       "starting_balance": 1000.0,
-      "realized_pnl": 48.23816337958952,
-      "fees_paid": 1.5816279073681798,
+      "realized_pnl": 50.704272831138105,
+      "fees_paid": 1.5883963643888999,
       "funding_paid": -2.9874537672822807,
       "positions": {
         "PURR": {
-          "size": -4511.0,
+          "size": -4299.0,
           "entry": 0.08258077855258766
         },
         "USELESS": {
@@ -246,8 +246,8 @@
     },
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
-      "realized_pnl": 160.52152366848344,
-      "fees_paid": 2.6493206326266607,
+      "realized_pnl": 163.5930117006117,
+      "fees_paid": 2.6561592028672205,
       "funding_paid": -0.15023612004025252,
       "positions": {
         "BTC": {
@@ -275,7 +275,7 @@
           "entry": 2.8008182635512333
         },
         "PUMP": {
-          "size": -160872.0,
+          "size": -154480.0,
           "entry": 0.0028579960558398386
         },
         "SOL": {
