@@ -166,8 +166,8 @@
     },
     "0x5a19bfe9c095c3bd188eca00a690b95200797aba": {
       "starting_balance": 1000.0,
-      "realized_pnl": 57.378412695529484,
-      "fees_paid": 1.66884570728118,
+      "realized_pnl": 59.67626671067699,
+      "fees_paid": 1.6756002529201799,
       "funding_paid": -3.0454380387572813,
       "positions": {
         "PURR": {
@@ -179,7 +179,7 @@
           "entry": 0.09925681541720278
         },
         "ZEC": {
-          "size": -0.44,
+          "size": -0.42,
           "entry": 865.3977717573752
         }
       }
@@ -187,7 +187,7 @@
     "0x888e000c78b8f1aada5b3c99f880794907b76d77": {
       "starting_balance": 1000.0,
       "realized_pnl": 321.4722569286,
-      "fees_paid": 1.08665100726516,
+      "fees_paid": 1.24170904667196,
       "funding_paid": 11.790530439428295,
       "positions": {
         "FIL": {
@@ -221,13 +221,17 @@
         "ZEC": {
           "size": -0.02,
           "entry": 1010.3478899999999
+        },
+        "BTC": {
+          "size": 0.00584,
+          "entry": 59002.2981
         }
       }
     },
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
-      "realized_pnl": 168.57192809800125,
-      "fees_paid": 2.6979600691107004,
+      "realized_pnl": 171.52745923560803,
+      "fees_paid": 2.7049442542684203,
       "funding_paid": -0.18331533164917033,
       "positions": {
         "BTC": {
@@ -243,7 +247,7 @@
           "entry": 1925.5553676097777
         },
         "FARTCOIN": {
-          "size": -4931.4,
+          "size": -4732.0,
           "entry": 0.09265768605419654
         },
         "JUP": {

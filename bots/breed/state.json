@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 222.86969164292827,
-    "fees_paid": 12.852085718319113,
+    "realized_pnl": 221.8273986023275,
+    "fees_paid": 12.988140044904263,
     "funding_paid": 0.30096535443510486,
     "positions": {
       "FARTCOIN": {
@@ -14,8 +14,8 @@
         "entry": 0.0026695338
       },
       "ZEC": {
-        "size": 0.39,
-        "entry": 757.8383285529835
+        "size": 0.37,
+        "entry": 757.0858056026128
       },
       "ZRO": {
         "size": -32.5,
@@ -26,8 +26,8 @@
         "entry": 0.591861604
       },
       "LIT": {
-        "size": -116.0,
-        "entry": 2.6003428592721
+        "size": -123.0,
+        "entry": 2.5860774915899483
       },
       "AVAX": {
         "size": -2.93,
@@ -110,8 +110,8 @@
         "entry": 68.9742921
       },
       "HYPE": {
-        "size": -1.44,
-        "entry": 60.606433838793365
+        "size": -2.13,
+        "entry": 61.08323538815321
       }
     }
   },
@@ -304,9 +304,14 @@
     "0x888e000c78b8f1aada5b3c99f880794907b76d77": {
       "starting_balance": 1000.0,
       "realized_pnl": 237.4424713621999,
-      "fees_paid": 0.53638679377125,
+      "fees_paid": 0.67445217132525,
       "funding_paid": 11.03647056452543,
-      "positions": {}
+      "positions": {
+        "BTC": {
+          "size": 0.0052,
+          "entry": 59002.29810000001
+        }
+      }
     },
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
@@ -644,12 +649,12 @@
     },
     "0x94dac1facdc4afd2614c3119447187b4143bc449": {
       "starting_balance": 1000.0,
-      "realized_pnl": 6.309609853666675,
-      "fees_paid": 0.21112146214839,
+      "realized_pnl": 9.143405607000009,
+      "fees_paid": 0.21787600778739,
       "funding_paid": -0.272470719981332,
       "positions": {
         "ZEC": {
-          "size": -0.08,
+          "size": -0.06,
           "entry": 892.1948586666667
         },
         "XPL": {
