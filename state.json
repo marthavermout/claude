@@ -144,7 +144,7 @@
     "0xd42350dfad9884113f21109b5a7a6736fb4d50c3": {
       "starting_balance": 1000.0,
       "realized_pnl": 4.238573341966827,
-      "fees_paid": 0.5761146755632498,
+      "fees_paid": 0.6061359776017498,
       "funding_paid": 0.11937693331667254,
       "positions": {
         "HYPE": {
@@ -158,6 +158,10 @@
         "DOGE": {
           "size": 438.0,
           "entry": 0.05941688099999999
+        },
+        "ZEC": {
+          "size": -0.09,
+          "entry": 741.266717
         }
       }
     },
@@ -225,12 +229,12 @@
     },
     "0x888e000c78b8f1aada5b3c99f880794907b76d77": {
       "starting_balance": 1000.0,
-      "realized_pnl": 186.22188079205318,
-      "fees_paid": 0.5222233747493099,
+      "realized_pnl": 239.67976040487764,
+      "fees_paid": 0.5394760986041099,
       "funding_paid": 11.037582234410225,
       "positions": {
         "INIT": {
-          "size": -452.0,
+          "size": -28.0,
           "entry": 0.2165029857472275
         }
       }

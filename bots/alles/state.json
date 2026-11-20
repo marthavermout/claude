@@ -167,12 +167,12 @@
     "0x5a19bfe9c095c3bd188eca00a690b95200797aba": {
       "starting_balance": 1000.0,
       "realized_pnl": 57.378412695529484,
-      "fees_paid": 1.65220147129428,
+      "fees_paid": 1.65896183695068,
       "funding_paid": -3.033557361307281,
       "positions": {
         "PURR": {
-          "size": -4358.0,
-          "entry": 0.08171534956521179
+          "size": -4574.0,
+          "entry": 0.08114091128054066
         },
         "USELESS": {
           "size": -4164.0,
@@ -186,8 +186,8 @@
     },
     "0x888e000c78b8f1aada5b3c99f880794907b76d77": {
       "starting_balance": 1000.0,
-      "realized_pnl": 259.21190581801187,
-      "fees_paid": 1.04261177072907,
+      "realized_pnl": 285.65515741362555,
+      "fees_paid": 1.05156365574807,
       "funding_paid": 11.788061929489325,
       "positions": {
         "FIL": {
@@ -195,7 +195,7 @@
           "entry": 0.7411617380000001
         },
         "INIT": {
-          "size": -251.0,
+          "size": -31.0,
           "entry": 0.21061967916188024
         },
         "MELANIA": {
