@@ -1,9 +1,9 @@
 {
   "risk": {
-    "min_trade_usd": 22.5
+    "min_trade_usd": 10.0
   },
-  "reviews": 8,
-  "last_review": "2026-11-19T08:15:38.229889+00:00",
+  "reviews": 9,
+  "last_review": "2026-11-20T07:42:32.052028+00:00",
   "review_log": [
     {
       "time": "2026-11-12T12:27:59.460315+00:00",
@@ -68,9 +68,18 @@
       ],
       "observations": [],
       "decision": "Minimale trade-grootte verhoogd: $15.0 \u2192 $22.5 (minder kleine aanpassingen)."
+    },
+    {
+      "time": "2026-11-20T07:42:32.052028+00:00",
+      "n": 9,
+      "mistakes": [
+        "44% van de trades draait binnen een uur de vorige om (churn)."
+      ],
+      "observations": [],
+      "decision": "Minimale trade-grootte terug naar $10.0: $22.5 is te groot voor een account van $50 (de bot kon niets meer kopi\u00ebren)."
     }
   ],
-  "last_change": "2026-11-19T08:15:38.229889+00:00",
+  "last_change": "2026-11-20T07:42:32.052028+00:00",
   "history": [
     {
       "time": "2026-11-16T09:59:26.102375+00:00",
@@ -79,6 +88,10 @@
     {
       "time": "2026-11-19T08:15:38.229889+00:00",
       "change": "Minimale trade-grootte verhoogd: $15.0 \u2192 $22.5 (minder kleine aanpassingen)."
+    },
+    {
+      "time": "2026-11-20T07:42:32.052028+00:00",
+      "change": "Minimale trade-grootte terug naar $10.0: $22.5 is te groot voor een account van $50 (de bot kon niets meer kopi\u00ebren)."
     }
   ]
 }
