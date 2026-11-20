@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 185.67425520543622,
-    "fees_paid": 9.607009295386705,
+    "realized_pnl": 193.23370892603572,
+    "fees_paid": 9.624636170056705,
     "funding_paid": 0.30666999155427127,
     "positions": {
       "FARTCOIN": {
@@ -14,7 +14,7 @@
         "entry": 0.0026695338
       },
       "ZEC": {
-        "size": -0.06,
+        "size": -0.010000000000000002,
         "entry": 934.60572641199
       },
       "ZRO": {
@@ -632,17 +632,13 @@
     },
     "0xdbbb9b4e361e1e1b6b4c640914ed4e4a11896df9": {
       "starting_balance": 1000.0,
-      "realized_pnl": -21.608824575929834,
-      "fees_paid": 1.5748058891878196,
+      "realized_pnl": 27.405035792365933,
+      "fees_paid": 1.6770417622738196,
       "funding_paid": -1.003857695706848,
       "positions": {
         "HYPE": {
           "size": -3.72,
           "entry": 62.99988521367128
-        },
-        "ZEC": {
-          "size": -0.29,
-          "entry": 952.429963614813
         },
         "ENA": {
           "size": 2408.0,
