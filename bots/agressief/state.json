@@ -138,12 +138,12 @@
     },
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
-      "realized_pnl": 54.67084300311705,
-      "fees_paid": 2.9373363657077416,
+      "realized_pnl": 53.25942426292619,
+      "fees_paid": 2.9476461320919918,
       "funding_paid": -2.369428267847137,
       "positions": {
         "ETH": {
-          "size": 0.1721,
+          "size": 0.159,
           "entry": 1856.642038564188
         },
         "ZRO": {
