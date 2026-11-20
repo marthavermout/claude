@@ -39,7 +39,6 @@
       "SNX": -1,
       "WLD": -1,
       "DOT": -1,
-      "NEAR": -1,
       "FIL": -1,
       "ZETA": -1,
       "kFLOKI": -1,
@@ -151,7 +150,7 @@
     "0x7dacca323e44f168494c779bb5e7483c468ef410": "2026-11-12T12:28:05.648774+00:00"
   },
   "meta": {
-    "funding_hour": 498669
+    "funding_hour": 498670
   },
   "pattern_trades": {},
   "pattern_scanned": {},
