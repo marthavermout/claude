@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 170.08233918011368,
-    "fees_paid": 8.220409689455728,
+    "realized_pnl": 170.34335485035936,
+    "fees_paid": 8.227194385723648,
     "funding_paid": 0.32697679793195694,
     "positions": {
       "FARTCOIN": {
@@ -38,7 +38,7 @@
         "entry": 8.515396579999999
       },
       "WLFI": {
-        "size": -2564.0,
+        "size": -2230.0,
         "entry": 0.045922510442651755
       },
       "INIT": {
@@ -122,7 +122,7 @@
   "risk": {
     "day": "2026-11-20",
     "day_start_equity": 1143.0554417448645,
-    "peak_equity": 1183.3816583612124,
+    "peak_equity": 1186.8456548473446,
     "killed": false,
     "kill_reason": ""
   },
@@ -624,12 +624,12 @@
     "0xdbbb9b4e361e1e1b6b4c640914ed4e4a11896df9": {
       "starting_balance": 1000.0,
       "realized_pnl": -21.608824575929834,
-      "fees_paid": 1.5541725557249997,
+      "fees_paid": 1.5611187522077996,
       "funding_paid": -0.9575026301610722,
       "positions": {
         "HYPE": {
-          "size": -3.48,
-          "entry": 62.909074945648605
+          "size": -3.72,
+          "entry": 62.99988521367128
         },
         "ZEC": {
           "size": -0.29,
@@ -698,7 +698,7 @@
     "0xa1d4fc32f21d9d77a4c20a6ac4b748815912c07c": {
       "starting_balance": 1000.0,
       "realized_pnl": 74.88908872559978,
-      "fees_paid": 1.9103325649380007,
+      "fees_paid": 1.9172787614208007,
       "funding_paid": 0.4303439962668974,
       "positions": {
         "WLFI": {
@@ -706,8 +706,8 @@
           "entry": 0.04738067894504844
         },
         "HYPE": {
-          "size": -4.04,
-          "entry": 64.65641466316362
+          "size": -4.28,
+          "entry": 64.63736154747218
         },
         "LIT": {
           "size": -102.0,
