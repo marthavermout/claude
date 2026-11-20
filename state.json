@@ -1,12 +1,12 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 139.29390486771894,
-    "fees_paid": 13.902590406430985,
+    "realized_pnl": 142.75121058475727,
+    "fees_paid": 13.917900577852985,
     "funding_paid": 1.8435499181639001,
     "positions": {
       "LIT": {
-        "size": -63.0,
+        "size": -50.0,
         "entry": 2.883069913618334
       },
       "HYPE": {
@@ -165,8 +165,8 @@
     },
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
-      "realized_pnl": -21.315481625732755,
-      "fees_paid": 2.463320412206099,
+      "realized_pnl": -8.244225835031003,
+      "fees_paid": 2.513961748448099,
       "funding_paid": 0.2010399282250276,
       "positions": {
         "BTC": {
@@ -176,10 +176,6 @@
         "XPL": {
           "size": -2319.0,
           "entry": 0.0467421846976416
-        },
-        "LIT": {
-          "size": -43.0,
-          "entry": 2.9211060128070176
         }
       }
     },

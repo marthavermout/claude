@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 151.61705954040008,
-    "fees_paid": 5.5650092152041895,
+    "realized_pnl": 152.59268643040008,
+    "fees_paid": 5.57325315366219,
     "funding_paid": -0.5129497601745572,
     "positions": {
       "ASTER": {
@@ -30,7 +30,7 @@
         "entry": 66.61610803392071
       },
       "LIT": {
-        "size": -46.0,
+        "size": -39.0,
         "entry": 2.75649859
       },
       "PUMP": {
@@ -86,8 +86,8 @@
   "shadows": {
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
-      "realized_pnl": -22.32997154733451,
-      "fees_paid": 2.9060196092002792,
+      "realized_pnl": -8.994734983196604,
+      "fees_paid": 2.9578386509362793,
       "funding_paid": 0.10527640140500526,
       "positions": {
         "HYPE": {
@@ -101,10 +101,6 @@
         "XPL": {
           "size": -2331.0,
           "entry": 0.0467390766123682
-        },
-        "LIT": {
-          "size": -44.0,
-          "entry": 2.9201968782758616
         }
       }
     },
