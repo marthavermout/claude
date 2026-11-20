@@ -391,8 +391,8 @@
     },
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
-      "realized_pnl": -1.995403154678141,
-      "fees_paid": 2.225986375957471,
+      "realized_pnl": -6.452777029682257,
+      "fees_paid": 2.233054079633971,
       "funding_paid": -7.4904822873177554,
       "positions": {
         "AERO": {
@@ -408,7 +408,7 @@
           "entry": 0.0051950388
         },
         "APE": {
-          "size": 838.8,
+          "size": 633.8,
           "entry": 0.09835796119514204
         },
         "ATOM": {
