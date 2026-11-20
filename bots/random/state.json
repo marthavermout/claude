@@ -252,12 +252,12 @@
     "0xde5a8068836a16f92813104d7faf602bb0cbdf62": {
       "starting_balance": 1000.0,
       "realized_pnl": 5.573898548679452,
-      "fees_paid": 0.4470037539912,
+      "fees_paid": 0.453817406988,
       "funding_paid": -4.154510906359034,
       "positions": {
         "XMR": {
-          "size": -0.49,
-          "entry": 554.1270745856467
+          "size": -0.522,
+          "entry": 549.1642100593235
         },
         "ETH": {
           "size": 0.142,
