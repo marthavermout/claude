@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 158.08250681981943,
-    "fees_paid": 5.7223814467969785,
+    "fees_paid": 5.729139994816978,
     "funding_paid": -0.6440730314304379,
     "positions": {
       "ASTER": {
@@ -62,8 +62,8 @@
         "entry": 0.0469666048
       },
       "ZEC": {
-        "size": -0.33,
-        "entry": 855.7295774242423
+        "size": -0.35,
+        "entry": 849.7421604285714
       },
       "ZRO": {
         "size": -34.9,
@@ -167,7 +167,7 @@
     "0x5a19bfe9c095c3bd188eca00a690b95200797aba": {
       "starting_balance": 1000.0,
       "realized_pnl": 57.378412695529484,
-      "fees_paid": 1.64536689883221,
+      "fees_paid": 1.65220147129428,
       "funding_paid": -3.033557361307281,
       "positions": {
         "PURR": {
@@ -175,8 +175,8 @@
           "entry": 0.08171534956521179
         },
         "USELESS": {
-          "size": -3963.0,
-          "entry": 0.1004586022186809
+          "size": -4164.0,
+          "entry": 0.09925681541720278
         },
         "ZEC": {
           "size": -0.41,
