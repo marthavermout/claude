@@ -1,6 +1,7 @@
 {
   "risk": {
-    "min_trade_usd": 15.0
+    "min_trade_usd": 15.0,
+    "max_leverage": 1.5
   },
   "leaders": [
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b",
@@ -12,8 +13,8 @@
     "0x972d521729c0d07b360ae470f03878fe405f0650",
     "0x7dacca323e44f168494c779bb5e7483c468ef410"
   ],
-  "reviews": 10,
-  "last_review": "2026-11-19T10:51:26.131538+00:00",
+  "reviews": 11,
+  "last_review": "2026-11-20T10:18:54.620073+00:00",
   "review_log": [
     {
       "time": "2026-11-10T16:50:57.965419+00:00",
@@ -140,9 +141,21 @@
         "`0x972d5217\u2026`: nog te weinig data om te beoordelen (210u, 2 gesloten trades)"
       ],
       "decision": "niets veranderen"
+    },
+    {
+      "time": "2026-11-20T10:18:54.620073+00:00",
+      "n": 11,
+      "mistakes": [
+        "2 dagen met dagverlies-stop in de afgelopen week."
+      ],
+      "observations": [
+        "`0xf83858e5\u2026` zelf +65.58%, onze kopie -1.64%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo).",
+        "`0x972d5217\u2026`: nog te weinig data om te beoordelen (233u, 2 gesloten trades)"
+      ],
+      "decision": "Max hefboom verlaagd: 2.0x \u2192 1.5x."
     }
   ],
-  "last_change": "2026-11-13T14:43:23.899329+00:00",
+  "last_change": "2026-11-20T10:18:54.620073+00:00",
   "history": [
     {
       "time": "2026-11-10T16:50:57.965419+00:00",
@@ -151,6 +164,10 @@
     {
       "time": "2026-11-13T14:43:23.899329+00:00",
       "change": "Minimale trade-grootte verhoogd: $10.0 \u2192 $15.0 (minder kleine aanpassingen)."
+    },
+    {
+      "time": "2026-11-20T10:18:54.620073+00:00",
+      "change": "Max hefboom verlaagd: 2.0x \u2192 1.5x."
     }
   ]
 }
