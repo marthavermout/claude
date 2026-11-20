@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 97.01233155855645,
-    "fees_paid": 7.763124503741577,
+    "realized_pnl": 97.60893893551606,
+    "fees_paid": 7.776534122879127,
     "funding_paid": 1.9120673427851385,
     "positions": {
       "BTC": {
@@ -10,7 +10,7 @@
         "entry": 61972.8921
       },
       "ETH": {
-        "size": -0.0671,
+        "size": -0.0498,
         "entry": 1756.9804055467982
       },
       "GMX": {
