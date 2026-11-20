@@ -186,12 +186,12 @@
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
       "realized_pnl": 18.26631563970402,
-      "fees_paid": 0.4797425031122699,
+      "fees_paid": 0.4847031477848699,
       "funding_paid": 0.4450956976237475,
       "positions": {
         "ETH": {
-          "size": -0.0987,
-          "entry": 1941.0791481860317
+          "size": -0.1055,
+          "entry": 1920.456556909586
         },
         "PUMP": {
           "size": -71454.0,
