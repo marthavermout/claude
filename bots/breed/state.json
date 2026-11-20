@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 150.95058643265574,
-    "fees_paid": 6.694078403953529,
+    "realized_pnl": 152.14675432537592,
+    "fees_paid": 6.701295439057769,
     "funding_paid": 0.3576880357821649,
     "positions": {
       "FARTCOIN": {
@@ -118,7 +118,7 @@
         "entry": 0.056099217599999994
       },
       "SKY": {
-        "size": 1223.0,
+        "size": 879.0,
         "entry": 0.04314444155372036
       }
     }
