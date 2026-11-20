@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 111.6741718947623,
-    "fees_paid": 8.082471356165698,
+    "realized_pnl": 113.5650943443623,
+    "fees_paid": 8.092159057318497,
     "funding_paid": 1.7953125986514868,
     "positions": {
       "BTC": {
@@ -36,10 +36,6 @@
       "ZRO": {
         "size": -33.0,
         "entry": 1.30993796
-      },
-      "kPEPE": {
-        "size": -6312.0,
-        "entry": 0.0037102578
       },
       "ZEC": {
         "size": 0.03,
@@ -78,7 +74,6 @@
     "0x888e000c78b8f1aada5b3c99f880794907b76d77": {
       "DYDX": -1,
       "APE": -1,
-      "ARB": -1,
       "SNX": -1,
       "WLD": -1,
       "UNI": -1,
@@ -86,7 +81,6 @@
       "NEAR": -1,
       "FIL": -1,
       "ZETA": -1,
-      "STRK": -1,
       "kFLOKI": -1,
       "ZK": -1,
       "RENDER": -1,
@@ -189,17 +183,13 @@
     },
     "0x888e000c78b8f1aada5b3c99f880794907b76d77": {
       "starting_balance": 1000.0,
-      "realized_pnl": 109.27716195905732,
-      "fees_paid": 0.44247053804679004,
+      "realized_pnl": 187.41455888289642,
+      "fees_paid": 0.52649354178729,
       "funding_paid": 10.995582266832017,
       "positions": {
         "INIT": {
           "size": -452.0,
           "entry": 0.21326183987987518
-        },
-        "kPEPE": {
-          "size": -54745.0,
-          "entry": 0.0048379794138978735
         }
       }
     },
