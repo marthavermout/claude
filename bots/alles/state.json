@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 152.59268643040008,
-    "fees_paid": 5.609311966025639,
+    "fees_paid": 5.616571038920639,
     "funding_paid": -0.5736041203286224,
     "positions": {
       "ASTER": {
@@ -62,8 +62,8 @@
         "entry": 0.0469666048
       },
       "ZEC": {
-        "size": -0.28,
-        "entry": 876.3379116428571
+        "size": -0.3,
+        "entry": 871.6862945333332
       },
       "ZRO": {
         "size": -34.9,
