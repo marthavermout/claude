@@ -3,7 +3,7 @@
     "starting_balance": 1000.0,
     "realized_pnl": 5.859421570879235,
     "fees_paid": 0.38632270758624004,
-    "funding_paid": 0.5349496597110232,
+    "funding_paid": 0.5345670550949051,
     "positions": {
       "AAVE": {
         "size": -0.39,
@@ -70,7 +70,7 @@
   "risk": {
     "day": "2026-11-20",
     "day_start_equity": 1104.958115932786,
-    "peak_equity": 1146.0513951059027,
+    "peak_equity": 1147.8041877105188,
     "killed": false,
     "kill_reason": ""
   },
@@ -78,7 +78,7 @@
   "shadows": {},
   "shadow_started": {},
   "meta": {
-    "funding_hour": 498663
+    "funding_hour": 498664
   },
   "pattern_trades": {},
   "pattern_scanned": {},
@@ -92,13 +92,13 @@
     "SUI": -45.60992599221554,
     "BNB": -0.1046130044963945,
     "AVAX": -5.177385938024755,
-    "LINK": -3.9250732483444595,
+    "LINK": -3.925073248344459,
     "LTC": -0.9109329917885963,
     "ADA": -285.5497088875104,
     "AAVE": -0.3072477111535445,
-    "ENA": -233.62889750532213,
+    "ENA": -233.62889750532216,
     "WLD": -129.82247306257025
   },
   "funding_pos": {},
-  "quant_hour": 498663
+  "quant_hour": 498664
 }
