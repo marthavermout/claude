@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 63.18692585452964,
-    "fees_paid": 1.4422296059826307,
+    "fees_paid": 1.4526879197271307,
     "funding_paid": 2.0884255486856507,
     "positions": {
       "INIT": {
@@ -44,13 +44,17 @@
       "XPL": {
         "size": -342.0,
         "entry": 0.04694560899999999
+      },
+      "ZEC": {
+        "size": 0.03,
+        "entry": 774.689907
       }
     }
   },
   "risk": {
     "day": "2026-11-20",
     "day_start_equity": 1104.0022755584566,
-    "peak_equity": 1143.6655456987316,
+    "peak_equity": 1145.7268101749871,
     "killed": false,
     "kill_reason": ""
   },
@@ -129,7 +133,7 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
       "realized_pnl": -0.42599856190710916,
-      "fees_paid": 1.9750439537490598,
+      "fees_paid": 2.0308216270530597,
       "funding_paid": 0.10336606175719269,
       "positions": {
         "BTC": {
@@ -139,13 +143,17 @@
         "XPL": {
           "size": -2360.0,
           "entry": 0.04673011808597762
+        },
+        "ZEC": {
+          "size": 0.16,
+          "entry": 774.689907
         }
       }
     },
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
       "realized_pnl": -0.5121981050053745,
-      "fees_paid": 0.57782947754826,
+      "fees_paid": 0.58326360300576,
       "funding_paid": 0.49674610374316414,
       "positions": {
         "ETH": {
@@ -157,8 +165,8 @@
           "entry": 1.4081568923000138
         },
         "LIT": {
-          "size": -60.0,
-          "entry": 3.0937161594818927
+          "size": -65.0,
+          "entry": 3.0415200602909778
         },
         "GMX": {
           "size": 21.89,
@@ -192,7 +200,7 @@
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
       "realized_pnl": 18.26631563970402,
-      "fees_paid": 0.4690568031797699,
+      "fees_paid": 0.4745532411722699,
       "funding_paid": 0.42445350998482273,
       "positions": {
         "ETH": {
@@ -208,8 +216,8 @@
           "entry": 81.9860995
         },
         "LIT": {
-          "size": -65.0,
-          "entry": 3.0084510186814097
+          "size": -70.0,
+          "entry": 2.968051755204166
         }
       }
     },

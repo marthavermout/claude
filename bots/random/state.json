@@ -238,9 +238,14 @@
     "0x802dc9bd0e048c4b47d943f7ad61d98d9b7361b0": {
       "starting_balance": 1000.0,
       "realized_pnl": -2.356791609999848,
-      "fees_paid": 0.9118162981386,
+      "fees_paid": 1.0239256065168,
       "funding_paid": 0.15841550371162771,
-      "positions": {}
+      "positions": {
+        "ETH": {
+          "size": 0.1484,
+          "entry": 1678.7856900000002
+        }
+      }
     },
     "0xde5a8068836a16f92813104d7faf602bb0cbdf62": {
       "starting_balance": 1000.0,
@@ -296,8 +301,8 @@
     },
     "0x18a794ea0363e75ab119d0392f172edc19625df3": {
       "starting_balance": 1000.0,
-      "realized_pnl": -2.9031601875341666,
-      "fees_paid": 1.0823691829662905,
+      "realized_pnl": -0.734502325006595,
+      "fees_paid": 1.0893413921292905,
       "funding_paid": -1.4157433549971372,
       "positions": {
         "ADA": {
@@ -341,7 +346,7 @@
           "entry": 0.0456657488054802
         },
         "ZEC": {
-          "size": -0.15,
+          "size": -0.13,
           "entry": 883.1228001263786
         },
         "ZRO": {
