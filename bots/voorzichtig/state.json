@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 61.53330034922457,
-    "fees_paid": 1.4282734850740808,
+    "realized_pnl": 63.18692585452964,
+    "fees_paid": 1.4328217142880308,
     "funding_paid": 2.0809032665463207,
     "positions": {
       "INIT": {
@@ -14,7 +14,7 @@
         "entry": 0.0032150364283825704
       },
       "ZRO": {
-        "size": -43.5,
+        "size": -35.4,
         "entry": 1.4519508069512432
       },
       "kPEPE": {
@@ -50,7 +50,7 @@
   "risk": {
     "day": "2026-11-20",
     "day_start_equity": 1104.0022755584566,
-    "peak_equity": 1124.6745114187797,
+    "peak_equity": 1125.1331031585655,
     "killed": false,
     "kill_reason": ""
   },

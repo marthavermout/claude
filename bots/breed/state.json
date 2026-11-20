@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 170.08233918011368,
-    "fees_paid": 8.213377056263727,
+    "fees_paid": 8.220409689455728,
     "funding_paid": 0.32697679793195694,
     "positions": {
       "FARTCOIN": {
@@ -30,8 +30,8 @@
         "entry": 0.591861604
       },
       "LIT": {
-        "size": -108.0,
-        "entry": 2.790821545558128
+        "size": -114.0,
+        "entry": 2.781024567370858
       },
       "AVAX": {
         "size": -2.93,
@@ -122,7 +122,7 @@
   "risk": {
     "day": "2026-11-20",
     "day_start_equity": 1143.0554417448645,
-    "peak_equity": 1182.7440572344044,
+    "peak_equity": 1183.3816583612124,
     "killed": false,
     "kill_reason": ""
   },
