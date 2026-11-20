@@ -34,7 +34,7 @@
   "risk": {
     "day": "2026-11-20",
     "day_start_equity": 50.74104813262696,
-    "peak_equity": 53.22508174962826,
+    "peak_equity": 53.349649749628256,
     "killed": false,
     "kill_reason": ""
   },
@@ -162,9 +162,7 @@
       "MON": -1,
       "MET": -1
     },
-    "0xdbbb9b4e361e1e1b6b4c640914ed4e4a11896df9": {
-      "ETH": -1
-    },
+    "0xdbbb9b4e361e1e1b6b4c640914ed4e4a11896df9": {},
     "0xa4247526997374fdab0bad6f63c9f3daca8f22d4": {},
     "0x94dac1facdc4afd2614c3119447187b4143bc449": {},
     "0xb83de012dba672c76a7dbbbf3e459cb59d7d6e36": {},

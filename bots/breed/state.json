@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 195.25464892052926,
-    "fees_paid": 9.638382726118165,
+    "realized_pnl": 197.96730720594545,
+    "fees_paid": 9.645853657505665,
     "funding_paid": 0.30666999155427127,
     "positions": {
       "FARTCOIN": {
@@ -30,7 +30,7 @@
         "entry": 0.591861604
       },
       "LIT": {
-        "size": -94.0,
+        "size": -87.0,
         "entry": 2.7592468622023114
       },
       "AVAX": {
@@ -126,7 +126,7 @@
   "risk": {
     "day": "2026-11-20",
     "day_start_equity": 1143.0554417448645,
-    "peak_equity": 1204.0238209677277,
+    "peak_equity": 1206.7444412863401,
     "killed": false,
     "kill_reason": ""
   },
@@ -241,9 +241,7 @@
       "2Z": -1,
       "MON": -1
     },
-    "0xdbbb9b4e361e1e1b6b4c640914ed4e4a11896df9": {
-      "ETH": -1
-    },
+    "0xdbbb9b4e361e1e1b6b4c640914ed4e4a11896df9": {},
     "0xa4247526997374fdab0bad6f63c9f3daca8f22d4": {},
     "0x94dac1facdc4afd2614c3119447187b4143bc449": {},
     "0xb83de012dba672c76a7dbbbf3e459cb59d7d6e36": {},
@@ -278,8 +276,8 @@
     },
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
-      "realized_pnl": 40.883594762765725,
-      "fees_paid": 1.8780027349295685,
+      "realized_pnl": 40.31176600571158,
+      "fees_paid": 1.8923230867862684,
       "funding_paid": -2.5568057975371112,
       "positions": {
         "ETH": {
@@ -291,15 +289,15 @@
           "entry": 1.4078329237466767
         },
         "LIT": {
-          "size": -111.0,
-          "entry": 2.8528124940456485
+          "size": -118.0,
+          "entry": 2.825818468551415
         },
         "XMR": {
           "size": -0.229,
           "entry": 521.2218994763532
         },
         "GMX": {
-          "size": 24.5,
+          "size": 22.3,
           "entry": 7.095654742297339
         }
       }
@@ -330,7 +328,7 @@
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
       "realized_pnl": 65.76538244445523,
-      "fees_paid": 1.1716109225311506,
+      "fees_paid": 1.1791363421461507,
       "funding_paid": 0.7312504422421239,
       "positions": {
         "ETH": {
@@ -346,8 +344,8 @@
           "entry": 81.9551057
         },
         "LIT": {
-          "size": -121.0,
-          "entry": 2.849615784330118
+          "size": -128.0,
+          "entry": 2.824427067218315
         }
       }
     },
@@ -707,7 +705,7 @@
     "0xa1d4fc32f21d9d77a4c20a6ac4b748815912c07c": {
       "starting_balance": 1000.0,
       "realized_pnl": 74.88908872559978,
-      "fees_paid": 1.9459844172911707,
+      "fees_paid": 1.9534170879596706,
       "funding_paid": 0.40259863039693383,
       "positions": {
         "WLFI": {
@@ -719,8 +717,8 @@
           "entry": 64.49512777001787
         },
         "LIT": {
-          "size": -115.0,
-          "entry": 2.720741114441291
+          "size": -122.0,
+          "entry": 2.700018640088102
         }
       }
     },

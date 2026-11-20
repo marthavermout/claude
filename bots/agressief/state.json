@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 106.43525507710095,
-    "fees_paid": 7.924758305862598,
+    "fees_paid": 7.935078351959098,
     "funding_paid": 1.834502148786037,
     "positions": {
       "BTC": {
@@ -40,13 +40,17 @@
       "kPEPE": {
         "size": -6312.0,
         "entry": 0.0037102578
+      },
+      "ZEC": {
+        "size": 0.03,
+        "entry": 764.447859
       }
     }
   },
   "risk": {
     "day": "2026-11-20",
     "day_start_equity": 1086.4155427494823,
-    "peak_equity": 1192.2808211870142,
+    "peak_equity": 1195.5209922073518,
     "killed": false,
     "kill_reason": ""
   },
@@ -198,7 +202,7 @@
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
       "realized_pnl": 99.65824700861077,
-      "fees_paid": 2.1490807652191806,
+      "fees_paid": 2.1593724528699005,
       "funding_paid": 1.160682203906386,
       "positions": {
         "ETH": {
@@ -206,8 +210,8 @@
           "entry": 1933.0818487812237
         },
         "PUMP": {
-          "size": -220309.0,
-          "entry": 0.0027902640927687707
+          "size": -230093.0,
+          "entry": 0.0027710130643496113
         },
         "SOL": {
           "size": -0.32,
@@ -253,7 +257,7 @@
     "0xa1d4fc32f21d9d77a4c20a6ac4b748815912c07c": {
       "starting_balance": 1000.0,
       "realized_pnl": 110.22510709068321,
-      "fees_paid": 3.3380693526155385,
+      "fees_paid": 3.3487900330505385,
       "funding_paid": 0.6054643254152511,
       "positions": {
         "WLFI": {
@@ -265,8 +269,8 @@
           "entry": 65.0373405086698
         },
         "LIT": {
-          "size": -197.0,
-          "entry": 2.7357493070613654
+          "size": -207.0,
+          "entry": 2.7186780086526037
         }
       }
     }
