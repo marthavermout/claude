@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 223.0756831248767,
-    "fees_paid": 13.962168825311505,
+    "realized_pnl": 223.03048348388552,
+    "fees_paid": 13.975823849929004,
     "funding_paid": 0.2951808380880108,
     "positions": {
       "FARTCOIN": {
@@ -111,7 +111,7 @@
       },
       "HYPE": {
         "size": 4.06,
-        "entry": 60.8661590639647
+        "entry": 60.855474152390514
       }
     }
   },
@@ -377,7 +377,7 @@
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
       "realized_pnl": -1.5795510302023406,
-      "fees_paid": 2.3368806899231407,
+      "fees_paid": 2.3440189057443908,
       "funding_paid": -7.882755927300612,
       "positions": {
         "AERO": {
@@ -449,8 +449,8 @@
           "entry": 2.3652229499999997
         },
         "INJ": {
-          "size": -6.5,
-          "entry": 6.689365705384616
+          "size": -9.0,
+          "entry": 6.593730990000001
         },
         "MEGA": {
           "size": -732.0,
