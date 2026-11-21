@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 219.9450532843569,
-    "fees_paid": 17.078185890337487,
+    "realized_pnl": 220.27662127805993,
+    "fees_paid": 17.194896904542286,
     "funding_paid": 0.3300325988530675,
     "positions": {
       "FARTCOIN": {
@@ -110,8 +110,8 @@
         "entry": 68.9742921
       },
       "HYPE": {
-        "size": 2.09,
-        "entry": 56.33380190874372
+        "size": 3.05,
+        "entry": 56.51403389343522
       }
     }
   },
