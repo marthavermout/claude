@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 116.48589464393282,
-    "fees_paid": 8.102593718833496,
+    "realized_pnl": 117.12623564833453,
+    "fees_paid": 8.112779896461657,
     "funding_paid": 1.7431328466840852,
     "positions": {
       "BTC": {
@@ -30,7 +30,7 @@
         "entry": 0.0026454708000000003
       },
       "WLFI": {
-        "size": -4303.0,
+        "size": -3791.0,
         "entry": 0.045461506424222094
       },
       "ZRO": {
@@ -50,7 +50,7 @@
   "risk": {
     "day": "2026-11-21",
     "day_start_equity": 1187.3710081389645,
-    "peak_equity": 1209.4118579521207,
+    "peak_equity": 1213.3482918340546,
     "killed": false,
     "kill_reason": ""
   },
