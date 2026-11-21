@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 85.62208958575606,
-    "fees_paid": 1.4863284860016606,
+    "fees_paid": 1.4910747440601606,
     "funding_paid": 2.080304283750415,
     "positions": {
       "PUMP": {
@@ -22,8 +22,8 @@
         "entry": 1852.6642651958161
       },
       "HYPE": {
-        "size": -2.78,
-        "entry": 70.26593578752447
+        "size": -2.96,
+        "entry": 69.55626406058042
       },
       "BTC": {
         "size": 0.00294,
@@ -46,7 +46,7 @@
   "risk": {
     "day": "2026-11-21",
     "day_start_equity": 1143.6812228102076,
-    "peak_equity": 1154.4234077442482,
+    "peak_equity": 1155.5335436161895,
     "killed": false,
     "kill_reason": ""
   },
