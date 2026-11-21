@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": -131.9063702675186,
-    "fees_paid": 7.804886472483759,
+    "fees_paid": 7.8117086342432795,
     "funding_paid": -2.1974808119606255,
     "positions": {
       "BTC": {
@@ -36,6 +36,10 @@
       "PUMP": {
         "size": 7238.0,
         "entry": 0.0023144628
+      },
+      "WLFI": {
+        "size": 344.0,
+        "entry": 0.0440708124
       }
     }
   },
@@ -212,12 +216,12 @@
     },
     "0x802dc9bd0e048c4b47d943f7ad61d98d9b7361b0": {
       "starting_balance": 1000.0,
-      "realized_pnl": -2.356791609999848,
-      "fees_paid": 1.0307934713151001,
+      "realized_pnl": -2.3343904636517734,
+      "fees_paid": 1.03779336680595,
       "funding_paid": 0.08292537175445575,
       "positions": {
         "ETH": {
-          "size": 0.1583,
+          "size": 0.149,
           "entry": 1670.2066845862287
         }
       }
