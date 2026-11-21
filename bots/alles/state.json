@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 161.71598055394986,
-    "fees_paid": 5.802762373773389,
+    "fees_paid": 5.8098193560945885,
     "funding_paid": -0.7100116429382332,
     "positions": {
       "ASTER": {
@@ -26,8 +26,8 @@
         "entry": 6.9593916
       },
       "HYPE": {
-        "size": -5.81,
-        "entry": 65.10795368836155
+        "size": -6.09,
+        "entry": 64.68955564291963
       },
       "LIT": {
         "size": -39.0,
@@ -78,7 +78,7 @@
   "risk": {
     "day": "2026-11-21",
     "day_start_equity": 1284.2420592692579,
-    "peak_equity": 1365.1113454575,
+    "peak_equity": 1365.4346269602438,
     "killed": false,
     "kill_reason": ""
   },
@@ -87,12 +87,12 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
       "realized_pnl": -8.994734983196604,
-      "fees_paid": 3.0977979948152985,
+      "fees_paid": 3.1045796187191983,
       "funding_paid": 0.033700856883210784,
       "positions": {
         "HYPE": {
-          "size": -4.13,
-          "entry": 68.9580946278853
+          "size": -4.4,
+          "entry": 68.15163776253779
         },
         "BTC": {
           "size": 0.00438,
