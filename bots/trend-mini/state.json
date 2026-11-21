@@ -7,7 +7,7 @@
     "positions": {}
   },
   "risk": {
-    "day": "2026-11-20",
+    "day": "2026-11-21",
     "day_start_equity": 50.0,
     "peak_equity": 50.0,
     "killed": false,
@@ -17,7 +17,7 @@
   "shadows": {},
   "shadow_started": {},
   "meta": {
-    "funding_hour": 498671
+    "funding_hour": 498672
   },
   "pattern_trades": {},
   "pattern_scanned": {},
@@ -30,7 +30,7 @@
     "DOGE": -34.90164859191063,
     "SUI": -2.3789095723181433,
     "BNB": -0.004059232235464542,
-    "AVAX": -0.1903658561817725,
+    "AVAX": -0.19036585618177249,
     "LINK": -0.203802208843805,
     "LTC": -0.04647511788339886,
     "ADA": -11.946730176079994,
@@ -39,5 +39,5 @@
     "WLD": -5.501228380870661
   },
   "funding_pos": {},
-  "quant_hour": 498671
+  "quant_hour": 498672
 }
