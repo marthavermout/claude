@@ -86,8 +86,8 @@
   "shadows": {
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
-      "realized_pnl": -8.994734983196604,
-      "fees_paid": 3.1267554855056985,
+      "realized_pnl": -8.55456168550216,
+      "fees_paid": 3.1335839822819684,
       "funding_paid": 0.03196578525032278,
       "positions": {
         "HYPE": {
@@ -99,7 +99,7 @@
           "entry": 67112.04301232877
         },
         "XPL": {
-          "size": -2700.0,
+          "size": -2363.0,
           "entry": 0.04633415601867788
         },
         "ZEC": {
@@ -118,8 +118,8 @@
     },
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
-      "realized_pnl": 135.23780797561352,
-      "fees_paid": 4.974317553510992,
+      "realized_pnl": 137.5312444938994,
+      "fees_paid": 4.9814743670874915,
       "funding_paid": -1.2431365404438275,
       "positions": {
         "ASTER": {
@@ -143,7 +143,7 @@
           "entry": 64.45546172771587
         },
         "LIT": {
-          "size": -113.0,
+          "size": -106.0,
           "entry": 2.599638098326554
         },
         "TAO": {
