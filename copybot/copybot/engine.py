@@ -21,7 +21,7 @@ from .paper import Fill, PaperBroker
 from .patterns import PatternTrade, detect_all, exit_reason, parse_candles, risk_notional, scan
 from . import quant
 from .risk import RiskManager, RiskState
-from .strategy import filter_baseline, fit_small_account, target_notionals
+from .strategy import filter_baseline, fit_small_account, hold_within_band, target_notionals
 
 log = logging.getLogger("copybot")
 
@@ -232,6 +232,9 @@ class Engine:
                 targets = self.risk.apply_limits(fit_small_account(
                     targets, equity, self.cfg.risk.min_trade_usd, self.cfg.max_coins, self.cfg.round_up_min,
                     max_gross=equity * self.cfg.risk.max_leverage), equity)
+            if self.cfg.rebalance_band:
+                targets = hold_within_band(targets, {c: self.broker.size(c) * mids[c] for c in self.broker.positions
+                                                     if c in mids}, self.cfg.rebalance_band)
 
         fills = self._rebalance(self.broker, targets, mids)
         for f in fills:

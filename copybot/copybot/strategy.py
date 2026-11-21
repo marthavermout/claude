@@ -82,3 +82,14 @@ def filter_baseline(snapshot: LeaderSnapshot, baseline: dict[str, int],
         if coin not in baseline:
             visible[coin] = size
     return LeaderSnapshot(address=snapshot.address, equity=snapshot.equity, positions=visible, entries=snapshot.entries)
+
+
+def hold_within_band(targets: dict[str, float], current: dict[str, float], band: float) -> dict[str, float]:
+    """Keep the current position of a coin when the new target is on the same side and within
+    `band` (a share of the target) of it: traders that resize all day then cost no fees."""
+    out = dict(targets)
+    for coin, cur in current.items():
+        t = targets.get(coin, 0.0)
+        if t and cur and (t > 0) == (cur > 0) and abs(t - cur) < band * abs(t):
+            out[coin] = cur
+    return out
