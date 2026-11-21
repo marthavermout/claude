@@ -1,15 +1,10 @@
 {
   "broker": {
     "starting_balance": 50.0,
-    "realized_pnl": 1.9794562758000045,
-    "fees_paid": 0.5711457705346799,
+    "realized_pnl": 1.9085152308000048,
+    "fees_paid": 0.5769735358546798,
     "funding_paid": 0.023054485142317314,
-    "positions": {
-      "LINK": {
-        "size": -1.5,
-        "entry": 8.58643237
-      }
-    }
+    "positions": {}
   },
   "risk": {
     "day": "2026-11-21",
@@ -24,17 +19,7 @@
   "meta": {
     "funding_hour": 498690
   },
-  "pattern_trades": {
-    "LINK": {
-      "pattern": "symmetrical triangle",
-      "side": -1,
-      "entry": 8.58815,
-      "sl": 8.6286228,
-      "tp": 8.228617391304349,
-      "size": -1.4959948743810247,
-      "opened": "2026-11-21T17:45:04.782457+00:00"
-    }
-  },
+  "pattern_trades": {},
   "pattern_scanned": {
     "BTC": 1795285800000,
     "ETH": 1795285800000,
@@ -45,7 +30,7 @@
     "SUI": 1795285800000,
     "BNB": 1795285800000,
     "AVAX": 1795285800000,
-    "LINK": 1795283100000
+    "LINK": 1795285800000
   },
   "quant_sizes": {},
   "funding_pos": {},
