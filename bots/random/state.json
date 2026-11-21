@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": -131.89372279301708,
-    "fees_paid": 7.7321958039984695,
+    "realized_pnl": -131.8938825620548,
+    "fees_paid": 7.7460128032958195,
     "funding_paid": -2.3370082977439197,
     "positions": {
       "BTC": {
@@ -30,7 +30,7 @@
         "entry": 1.154769
       },
       "HYPE": {
-        "size": 2.94,
+        "size": 2.41,
         "entry": 57.933212551014556
       },
       "PUMP": {
@@ -285,7 +285,7 @@
     "0x18a794ea0363e75ab119d0392f172edc19625df3": {
       "starting_balance": 1000.0,
       "realized_pnl": 15.47964435305402,
-      "fees_paid": 1.1652804706149904,
+      "fees_paid": 1.1720571365106904,
       "funding_paid": -1.6519751306867445,
       "positions": {
         "ADA": {
@@ -333,8 +333,8 @@
           "entry": 883.1228001263786
         },
         "ZRO": {
-          "size": -165.0,
-          "entry": 1.376855487155488
+          "size": -178.4,
+          "entry": 1.3578498482435846
         },
         "TRUMP": {
           "size": 18.2,
