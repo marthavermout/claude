@@ -61,6 +61,10 @@ Run `review` for each and compare return, max drawdown, fees and number of trade
   remove the triangle if it stops passing. Note: the 1.5x reward/risk filter makes double/triple
   tops and bottoms and rectangles impossible to trade (their target equals their risk); retested
   without the filter on 14 Nov, all five still lost money.
+- Rebalance band (21 Nov 2026): `rebalance_band = 0.25` keeps a copied position while the target stays within
+  25% of it. Bea made 671 HYPE trades in 14h as traders resized all day. On the exam part (splits 0.7 and 0.5)
+  it won for Bea, Alex and Axel (+1.1 to +5.6 points) and is on there; Vera lost slightly and Bas (the
+  reference bot) gained little, so they stay off. In-sample it cost ~1 point everywhere: re-check after a week.
 - Minimum trade size vs account (20 Nov 2026): the tuner's churn fix raised Bas-mini's minimum trade to
   $22.50 on a $50 account; replaying basis' history showed it then makes 0 trades. The minimum is now capped
   at 20% of the starting balance (never below the exchange's $10), and a too-high value is repaired at once.

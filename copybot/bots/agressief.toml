@@ -6,6 +6,10 @@
 # overrides.json on the `copybot-data` branch and take precedence over this file.
 
 [bot]
+# Hold a position while the copy target stays within 25% of it (same value as Tom's rebalance band, not
+# fitted). 21 Nov 2026: Bea made 671 HYPE trades in 14h as traders resized all day (-$14). Exam part of the
+# recorded history: +8.61% -> +10.04% and +8.57% -> +9.70%. In-sample it cost about 1 point, so watch it.
+rebalance_band = 0.25
 leaders = []
 target_leaders = 8          # follow 8 active traders (each gets 1/8 of the money)
 copy_ratio = 1.0

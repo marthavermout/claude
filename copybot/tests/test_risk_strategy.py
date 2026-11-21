@@ -136,3 +136,14 @@ class SmallAccountTest(unittest.TestCase):
         self.assertAlmostEqual(sum(abs(v) for v in top.values()), 18.0)   # same total exposure
         capped = fit_small_account({"BTC": 9.0, "ETH": 9.0}, 50, 10, round_up=True, max_gross=15)
         self.assertAlmostEqual(sum(abs(v) for v in capped.values()), 15.0)  # never above the leverage limit
+
+
+class BandTest(unittest.TestCase):
+    def test_hold_within_band(self):
+        from copybot.strategy import hold_within_band
+        out = hold_within_band({"BTC": 100.0, "ETH": 100.0, "SOL": -50.0, "XRP": 0.0},
+                               {"BTC": 90.0, "ETH": 60.0, "SOL": 40.0, "XRP": 30.0}, 0.25)
+        self.assertEqual(out["BTC"], 90.0)    # within 25%: keep, no trade
+        self.assertEqual(out["ETH"], 100.0)   # 40% off: resize
+        self.assertEqual(out["SOL"], -50.0)   # side flips: follow
+        self.assertEqual(out["XRP"], 0.0)     # trader closed: close
