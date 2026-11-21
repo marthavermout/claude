@@ -121,7 +121,7 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
       "realized_pnl": -18.09478120450405,
-      "fees_paid": 2.9097485347902308,
+      "fees_paid": 2.9221668680602506,
       "funding_paid": 0.31902425366637416,
       "positions": {
         "BTC": {
@@ -139,6 +139,10 @@
         "LIT": {
           "size": 23.0,
           "entry": 2.221246334347826
+        },
+        "CASHCAT": {
+          "size": 774.0,
+          "entry": 0.0356541294
         }
       }
     },

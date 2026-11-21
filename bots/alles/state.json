@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 158.08250681981943,
-    "fees_paid": 5.7866634865728885,
+    "realized_pnl": 161.71598055394986,
+    "fees_paid": 5.7935387913588885,
     "funding_paid": -0.7068710938733274,
     "positions": {
       "ASTER": {
@@ -30,7 +30,7 @@
         "entry": 65.10795368836155
       },
       "LIT": {
-        "size": -46.0,
+        "size": -39.0,
         "entry": 2.7017041163043483
       },
       "PUMP": {
@@ -78,7 +78,7 @@
   "risk": {
     "day": "2026-11-21",
     "day_start_equity": 1284.2420592692579,
-    "peak_equity": 1361.3226957072752,
+    "peak_equity": 1361.5342332299144,
     "killed": false,
     "kill_reason": ""
   },
@@ -87,7 +87,7 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
       "realized_pnl": -8.994734983196604,
-      "fees_paid": 3.0671967971677487,
+      "fees_paid": 3.075054288351749,
       "funding_paid": 0.04059975962718068,
       "positions": {
         "HYPE": {
@@ -107,8 +107,8 @@
           "entry": 774.689907
         },
         "LIT": {
-          "size": 25.0,
-          "entry": 2.2400839272
+          "size": 33.0,
+          "entry": 2.2261572636363636
         },
         "CASHCAT": {
           "size": 479.0,
@@ -263,12 +263,12 @@
     "0xd10e2b1b66001bd4086d61e43e836ab9c168fd9a": {
       "starting_balance": 1000.0,
       "realized_pnl": -17.479655301714295,
-      "fees_paid": 0.61532737667622,
+      "fees_paid": 0.6222389188412699,
       "funding_paid": -0.012236133129032552,
       "positions": {
         "HYPE": {
-          "size": -4.26,
-          "entry": 68.34136326537897
+          "size": -4.53,
+          "entry": 67.65854086081995
         }
       }
     },
