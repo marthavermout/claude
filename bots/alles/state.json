@@ -87,7 +87,7 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
       "realized_pnl": -7.51571725433589,
-      "fees_paid": 3.521131289818379,
+      "fees_paid": 3.527902684576529,
       "funding_paid": 0.015208165858618578,
       "positions": {
         "XPL": {
@@ -113,6 +113,10 @@
         "MON": {
           "size": 2694.0,
           "entry": 0.013605720600000001
+        },
+        "XTEN": {
+          "size": 81.0,
+          "entry": 0.185772147
         }
       }
     },
