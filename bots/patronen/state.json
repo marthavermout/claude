@@ -1,15 +1,10 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 20.30207488720004,
-    "fees_paid": 17.068356456386397,
+    "realized_pnl": 19.02731557520004,
+    "fees_paid": 17.181772556070598,
     "funding_paid": 0.3287922971441923,
-    "positions": {
-      "HYPE": {
-        "size": -4.12,
-        "entry": 60.8643247
-      }
-    }
+    "positions": {}
   },
   "risk": {
     "day": "2026-11-21",
@@ -24,17 +19,7 @@
   "meta": {
     "funding_hour": 498691
   },
-  "pattern_trades": {
-    "HYPE": {
-      "pattern": "symmetrical triangle",
-      "side": -1,
-      "entry": 60.8765,
-      "sl": 61.149054,
-      "tp": 59.58733333333333,
-      "size": -4.119067984327546,
-      "opened": "2026-11-21T19:00:01.776577+00:00"
-    }
-  },
+  "pattern_trades": {},
   "pattern_scanned": {
     "BTC": 1795287600000,
     "ETH": 1795287600000,
