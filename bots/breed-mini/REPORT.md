@@ -1,7 +1,7 @@
-# Review #9 — 2026-11-20 07:42 UTC
+# Review #10 — 2026-11-21 07:12 UTC
 
 **Gevonden fouten:**
-- 29% van de trades draait binnen een uur de vorige om (churn).
+- 34% van de trades draait binnen een uur de vorige om (churn).
 
 **Besluit:** niets veranderen
 
@@ -10,28 +10,28 @@
 | Meting | Waarde |
 |---|---|
 | Periode | 24.0 uur |
-| Vermogen | $50.02 → $51.77 (+3.48%) |
-| BTC vasthouden (benchmark) | -2.97% |
-| Grootste daling (drawdown) | 2.16% |
-| Trades | 4 (4.0/dag) |
-| Gerealiseerd / kosten | $+0.39 / $0.03 |
-| Heen-en-weer trades (churn) | 3 (75%) |
+| Vermogen | $51.86 → $53.42 (+3.00%) |
+| BTC vasthouden (benchmark) | -5.89% |
+| Grootste daling (drawdown) | 4.10% |
+| Trades | 23 (23.0/dag) |
+| Gerealiseerd / kosten | $+1.24 / $0.13 |
+| Heen-en-weer trades (churn) | 9 (39%) |
 | Dagen met risicostop | geen |
 
-**Slechtste munten:** HYPE $+0.36
-**Beste munten:** HYPE $+0.36
+**Slechtste munten:** SOL $-0.01, HYPE $+0.33, ETH $+0.35
+**Beste munten:** ZEC $+0.43, ETH $+0.35, HYPE $+0.33
 
 ## Sinds de start
 
 | Meting | Waarde |
 |---|---|
-| Periode | 187.2 uur |
-| Vermogen | $50.00 → $51.77 (+3.53%) |
-| BTC vasthouden (benchmark) | -15.30% |
-| Grootste daling (drawdown) | 4.08% |
-| Trades | 21 (2.7/dag) |
-| Gerealiseerd / kosten | $+1.94 / $0.12 |
-| Heen-en-weer trades (churn) | 6 (29%) |
+| Periode | 210.7 uur |
+| Vermogen | $50.00 → $53.42 (+6.83%) |
+| BTC vasthouden (benchmark) | -19.91% |
+| Grootste daling (drawdown) | 4.10% |
+| Trades | 44 (5.0/dag) |
+| Gerealiseerd / kosten | $+3.18 / $0.25 |
+| Heen-en-weer trades (churn) | 15 (34%) |
 | Dagen met risicostop | geen |
 
 **Per trader (schaduwboek: wat als je alleen deze trader kopieerde)**
@@ -52,8 +52,8 @@
 | `0x7dacca32…` | 19 | +0.13% | +85.12% | 1 |
 | `0x03136324…` | 19 | +0.66% | -5.20% | 1 |
 
-**Slechtste munten:** NEAR $-0.11, BTC $-0.01, LIT $-0.00
-**Beste munten:** HYPE $+1.54, kPEPE $+0.27, MORPHO $+0.15
+**Slechtste munten:** NEAR $-0.11, SOL $-0.01, BTC $-0.01
+**Beste munten:** HYPE $+1.87, ZEC $+0.43, ETH $+0.35
 
 ---
 

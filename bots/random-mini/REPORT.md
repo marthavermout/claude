@@ -1,38 +1,38 @@
-# Review #9 — 2026-11-20 07:42 UTC
+# Review #10 — 2026-11-21 07:12 UTC
 
 **Gevonden fouten:**
-- geen
+- 2 dagen met dagverlies-stop in de afgelopen week.
 
-**Besluit:** niets veranderen
+**Besluit:** Max hefboom verlaagd: 2.0x → 1.5x.
 
 ## Laatste 24 uur
 
 | Meting | Waarde |
 |---|---|
 | Periode | 24.0 uur |
-| Vermogen | $46.97 → $46.38 (-1.26%) |
-| BTC vasthouden (benchmark) | -2.97% |
-| Grootste daling (drawdown) | 2.45% |
-| Trades | 3 (3.0/dag) |
-| Gerealiseerd / kosten | $+0.47 / $0.03 |
+| Vermogen | $46.57 → $45.42 (-2.48%) |
+| BTC vasthouden (benchmark) | -5.89% |
+| Grootste daling (drawdown) | 8.92% |
+| Trades | 7 (7.0/dag) |
+| Gerealiseerd / kosten | $-2.85 / $0.03 |
 | Heen-en-weer trades (churn) | 0 (0%) |
-| Dagen met risicostop | geen |
+| Dagen met risicostop | 2026-11-20 |
 
-**Slechtste munten:** VVV $-0.01, ETH $+0.45
-**Beste munten:** ETH $+0.45, VVV $-0.01
+**Slechtste munten:** BTC $-1.04, ETH $-0.98, VVV $-0.86
+**Beste munten:** HYPE $-0.00, VVV $-0.86, ETH $-0.98
 
 ## Sinds de start
 
 | Meting | Waarde |
 |---|---|
-| Periode | 187.2 uur |
-| Vermogen | $49.98 → $46.38 (-7.21%) |
-| BTC vasthouden (benchmark) | -15.30% |
-| Grootste daling (drawdown) | 8.55% |
-| Trades | 23 (2.9/dag) |
-| Gerealiseerd / kosten | $-2.61 / $0.12 |
-| Heen-en-weer trades (churn) | 2 (9%) |
-| Dagen met risicostop | 2026-11-14 |
+| Periode | 210.7 uur |
+| Vermogen | $49.98 → $45.42 (-9.13%) |
+| BTC vasthouden (benchmark) | -19.91% |
+| Grootste daling (drawdown) | 14.93% |
+| Trades | 30 (3.4/dag) |
+| Gerealiseerd / kosten | $-5.45 / $0.15 |
+| Heen-en-weer trades (churn) | 2 (7%) |
+| Dagen met risicostop | 2026-11-14, 2026-11-20 |
 
 **Per trader (schaduwboek: wat als je alleen deze trader kopieerde)**
 
@@ -45,8 +45,8 @@
 | `0xe00f0d90…` | 19 | -0.09% | +3.58% | 2 |
 | `0xd10e2b1b…` | 19 | -0.05% | -7.17% | 1 |
 
-**Slechtste munten:** BTC $-0.96, XPL $-0.87, ETH $-0.57
-**Beste munten:** VVV $-0.01, LIT $-0.32, ETH $-0.57
+**Slechtste munten:** BTC $-2.00, ETH $-1.54, XPL $-0.87
+**Beste munten:** HYPE $-0.00, LIT $-0.32, VVV $-0.87
 
 ---
 
