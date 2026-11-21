@@ -377,7 +377,7 @@
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
       "realized_pnl": -24.59886706759352,
-      "fees_paid": 2.427943546309411,
+      "fees_paid": 2.435072235286411,
       "funding_paid": -8.055414175654073,
       "positions": {
         "AERO": {
@@ -605,15 +605,15 @@
           "entry": 2.7146569599999997
         },
         "ZEC": {
-          "size": -0.04,
-          "entry": 798.9351810000001
+          "size": -0.06,
+          "entry": 796.6489716666667
         }
       }
     },
     "0xdbbb9b4e361e1e1b6b4c640914ed4e4a11896df9": {
       "starting_balance": 1000.0,
-      "realized_pnl": 23.109773365765378,
-      "fees_paid": 1.7548292332741497,
+      "realized_pnl": 7.310115852765348,
+      "fees_paid": 1.8373289411663998,
       "funding_paid": -1.2470228065003768,
       "positions": {
         "HYPE": {
@@ -623,10 +623,6 @@
         "ENA": {
           "size": 2416.0,
           "entry": 0.1208937310199301
-        },
-        "VVV": {
-          "size": -7.91,
-          "entry": 21.17990223666245
         },
         "PUMP": {
           "size": 98036.0,
