@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": -131.9063702675186,
-    "fees_paid": 7.8117086342432795,
+    "realized_pnl": -130.41263094351862,
+    "fees_paid": 7.818547918612779,
     "funding_paid": -2.1875953157114885,
     "positions": {
       "BTC": {
@@ -22,7 +22,7 @@
         "entry": 0.051590316000000004
       },
       "VVV": {
-        "size": 10.41,
+        "size": 9.75,
         "entry": 20.7646521
       },
       "ZRO": {
@@ -248,12 +248,12 @@
     },
     "0xd738f8f8f68511eb644a31d8b23d0b20baa4854b": {
       "starting_balance": 1000.0,
-      "realized_pnl": -25.808565616999953,
-      "fees_paid": 4.71754437864795,
+      "realized_pnl": -26.530488090999956,
+      "fees_paid": 4.72447087667055,
       "funding_paid": 0.20889116479986808,
       "positions": {
         "BTC": {
-          "size": -0.004300000000000001,
+          "size": -0.00404,
           "entry": 56424.2129
         }
       }
