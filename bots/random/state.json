@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": -129.3275146727824,
-    "fees_paid": 7.878712795432029,
+    "realized_pnl": -129.4488284807824,
+    "fees_paid": 7.900378129632429,
     "funding_paid": -2.1909596808356064,
     "positions": {
       "BTC": {
@@ -40,10 +40,6 @@
       "WLFI": {
         "size": 344.0,
         "entry": 0.0440708124
-      },
-      "BNB": {
-        "size": -0.088,
-        "entry": 545.7258330000001
       },
       "LTC": {
         "size": 0.92,
@@ -256,17 +252,13 @@
     },
     "0xd738f8f8f68511eb644a31d8b23d0b20baa4854b": {
       "starting_balance": 1000.0,
-      "realized_pnl": -26.530488090999956,
-      "fees_paid": 4.83154228510515,
+      "realized_pnl": -27.131542866999947,
+      "fees_paid": 4.93888416818895,
       "funding_paid": 0.2242727724055961,
       "positions": {
         "BTC": {
           "size": -0.00404,
           "entry": 56424.2129
-        },
-        "BNB": {
-          "size": -0.436,
-          "entry": 545.7258330000001
         }
       }
     },
