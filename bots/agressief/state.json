@@ -55,9 +55,7 @@
     "kill_reason": ""
   },
   "baselines": {
-    "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
-      "HYPE": -1
-    },
+    "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {},
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "DYDX": -1,
       "WLD": -1,
@@ -120,14 +118,10 @@
   "shadows": {
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
-      "realized_pnl": -18.09478120450405,
-      "fees_paid": 2.9529185921752505,
+      "realized_pnl": -93.77957116650406,
+      "fees_paid": 3.1091203705702504,
       "funding_paid": 0.31815721533285074,
       "positions": {
-        "BTC": {
-          "size": 0.0062,
-          "entry": 68193.52468741935
-        },
         "XPL": {
           "size": -2265.0,
           "entry": 0.04674310705355579
