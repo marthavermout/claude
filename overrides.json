@@ -12,8 +12,8 @@
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede",
     "0x9eb42f017e793512e4734f8785de605c4cb3a24e"
   ],
-  "reviews": 12,
-  "last_review": "2026-11-20T10:18:53.036252+00:00",
+  "reviews": 13,
+  "last_review": "2026-11-21T09:48:38.276439+00:00",
   "review_log": [
     {
       "time": "2026-11-10T08:40:34.762407+00:00",
@@ -175,6 +175,20 @@
         "`0x999510ad\u2026`: nog te weinig data om te beoordelen (242u, 2 gesloten trades)",
         "`0xd42350df\u2026` zelf +2987.75%, onze kopie -0.16%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo).",
         "`0x9eb42f01\u2026`: nog te weinig data om te beoordelen (164u, 4 gesloten trades)"
+      ],
+      "decision": "Afkoelperiode: vorige wijziging was minder dan 48u geleden; eerst het effect daarvan meten."
+    },
+    {
+      "time": "2026-11-21T09:48:38.276439+00:00",
+      "n": 13,
+      "mistakes": [
+        "43% van de trades draait binnen een uur de vorige om (churn)."
+      ],
+      "observations": [
+        "`0x999510ad\u2026`: nog te weinig data om te beoordelen (265u, 2 gesloten trades)",
+        "`0xf83858e5\u2026` zelf +54.89%, onze kopie -5.67%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo).",
+        "`0xd42350df\u2026` zelf +3414.47%, onze kopie +0.71%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo).",
+        "`0x9eb42f01\u2026`: nog te weinig data om te beoordelen (187u, 4 gesloten trades)"
       ],
       "decision": "Afkoelperiode: vorige wijziging was minder dan 48u geleden; eerst het effect daarvan meten."
     }
