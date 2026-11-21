@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 232.41985814474654,
-    "fees_paid": 18.258021151891445,
+    "realized_pnl": 233.0459229167465,
+    "fees_paid": 18.510121399755846,
     "funding_paid": 0.2764618536052348,
     "positions": {
       "FARTCOIN": {
@@ -42,8 +42,8 @@
         "entry": 1728.59565
       },
       "XMR": {
-        "size": -0.027,
-        "entry": 595.340908
+        "size": -0.059,
+        "entry": 526.6875227796611
       },
       "CASHCAT": {
         "size": 94.0,
@@ -110,8 +110,8 @@
         "entry": 68.9742921
       },
       "HYPE": {
-        "size": 4.19,
-        "entry": 58.878273300000004
+        "size": -5.05,
+        "entry": 58.98938293168317
       }
     }
   },
@@ -662,12 +662,12 @@
     },
     "0x03136324349c003f3498130f56f4526bf5720ab1": {
       "starting_balance": 1000.0,
-      "realized_pnl": -14.144096555465449,
-      "fees_paid": 0.9579894277372198,
+      "realized_pnl": -16.41764534117739,
+      "fees_paid": 0.9649297079035198,
       "funding_paid": 0.9207485554930693,
       "positions": {
         "HYPE": {
-          "size": 4.5,
+          "size": 4.24,
           "entry": 68.0630523065844
         },
         "AVAX": {
@@ -698,15 +698,10 @@
     },
     "0x5461e3a694004602961722522e70f62beb05ae65": {
       "starting_balance": 1000.0,
-      "realized_pnl": 10.69903003499999,
-      "fees_paid": 1.47418396763355,
+      "realized_pnl": 2.02567332599998,
+      "fees_paid": 1.5898647705948,
       "funding_paid": 0.07759699067077801,
-      "positions": {
-        "HYPE": {
-          "size": 4.37,
-          "entry": 60.81048231899314
-        }
-      }
+      "positions": {}
     }
   },
   "shadow_started": {
