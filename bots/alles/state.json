@@ -219,7 +219,7 @@
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
       "realized_pnl": 224.0445742204594,
-      "fees_paid": 2.998239899051339,
+      "fees_paid": 3.006723991393439,
       "funding_paid": -0.16137839514473015,
       "positions": {
         "BTC": {
@@ -231,8 +231,8 @@
           "entry": 0.07815677076080253
         },
         "ETH": {
-          "size": -0.1294,
-          "entry": 1925.5553676097777
+          "size": -0.1408,
+          "entry": 1903.5539993373952
         },
         "FARTCOIN": {
           "size": -5025.8,
@@ -258,12 +258,12 @@
     },
     "0xd10e2b1b66001bd4086d61e43e836ab9c168fd9a": {
       "starting_balance": 1000.0,
-      "realized_pnl": -17.479655301714295,
-      "fees_paid": 0.6222389188412699,
+      "realized_pnl": -15.336368528292905,
+      "fees_paid": 0.62949495250782,
       "funding_paid": -0.03182879556560055,
       "positions": {
         "HYPE": {
-          "size": -4.53,
+          "size": -4.26,
           "entry": 67.65854086081995
         }
       }
