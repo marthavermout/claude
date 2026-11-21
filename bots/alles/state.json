@@ -166,8 +166,8 @@
     },
     "0x5a19bfe9c095c3bd188eca00a690b95200797aba": {
       "starting_balance": 1000.0,
-      "realized_pnl": 91.77619050773237,
-      "fees_paid": 1.8000390049653596,
+      "realized_pnl": 94.30461694820583,
+      "fees_paid": 1.8068717154842096,
       "funding_paid": -3.218260277026318,
       "positions": {
         "PURR": {
@@ -175,7 +175,7 @@
           "entry": 0.08043302436985134
         },
         "USELESS": {
-          "size": -3781.0,
+          "size": -3598.0,
           "entry": 0.09678812892608454
         },
         "ZEC": {
