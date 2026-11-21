@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 165.2823008818685,
-    "fees_paid": 5.833521739572839,
+    "realized_pnl": 166.9236026832445,
+    "fees_paid": 5.845600782398339,
     "funding_paid": -0.7491612582322026,
     "positions": {
       "ASTER": {
@@ -38,7 +38,7 @@
         "entry": 0.0026454708
       },
       "PURR": {
-        "size": -1807.0,
+        "size": -1441.0,
         "entry": 0.07782409615130048
       },
       "TAO": {
@@ -218,8 +218,8 @@
     },
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
-      "realized_pnl": 232.80264811946682,
-      "fees_paid": 3.034869340187609,
+      "realized_pnl": 235.0030731010311,
+      "fees_paid": 3.041732672579609,
       "funding_paid": -0.16036682998009816,
       "positions": {
         "BTC": {
@@ -235,7 +235,7 @@
           "entry": 1903.5539993373952
         },
         "FARTCOIN": {
-          "size": -4826.9,
+          "size": -4632.4,
           "entry": 0.089728918979765
         },
         "JUP": {
