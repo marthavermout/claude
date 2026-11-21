@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 85.62208958575606,
-    "fees_paid": 1.4910747440601606,
+    "realized_pnl": 89.11955536943216,
+    "fees_paid": 1.4960731060326606,
     "funding_paid": 2.080304283750415,
     "positions": {
       "PUMP": {
@@ -14,7 +14,7 @@
         "entry": 1.405200721351808
       },
       "LIT": {
-        "size": -47.0,
+        "size": -42.0,
         "entry": 2.9209873667352224
       },
       "ETH": {
@@ -46,7 +46,7 @@
   "risk": {
     "day": "2026-11-21",
     "day_start_equity": 1143.6812228102076,
-    "peak_equity": 1155.5335436161895,
+    "peak_equity": 1159.2089562042172,
     "killed": false,
     "kill_reason": ""
   },
@@ -86,7 +86,6 @@
       "TRUMP": -1,
       "MELANIA": -1,
       "ANIME": -1,
-      "VVV": -1,
       "BERA": -1,
       "KAITO": -1,
       "NIL": -1,
@@ -120,7 +119,7 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
       "realized_pnl": -0.42599856190710916,
-      "fees_paid": 2.0478970987145093,
+      "fees_paid": 2.0619335604455094,
       "funding_paid": 0.1223993554047062,
       "positions": {
         "BTC": {
@@ -136,8 +135,8 @@
           "entry": 774.689907
         },
         "LIT": {
-          "size": 7.0,
-          "entry": 2.29585908
+          "size": 21.0,
+          "entry": 2.250626225714286
         },
         "CASHCAT": {
           "size": 305.0,
@@ -186,7 +185,7 @@
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
       "realized_pnl": 18.26631563970402,
-      "fees_paid": 0.4847031477848699,
+      "fees_paid": 0.4896223377500699,
       "funding_paid": 0.45223701256178406,
       "positions": {
         "ETH": {
@@ -194,8 +193,8 @@
           "entry": 1920.456556909586
         },
         "PUMP": {
-          "size": -71454.0,
-          "entry": 0.0030643946547071256
+          "size": -76214.0,
+          "entry": 0.003016437779324572
         },
         "SOL": {
           "size": -0.32,

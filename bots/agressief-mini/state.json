@@ -30,7 +30,7 @@
   "risk": {
     "day": "2026-11-21",
     "day_start_equity": 55.51361896490951,
-    "peak_equity": 56.44748958912424,
+    "peak_equity": 56.584409589124235,
     "killed": false,
     "kill_reason": ""
   },
@@ -70,7 +70,6 @@
       "TRUMP": -1,
       "MELANIA": -1,
       "ANIME": -1,
-      "VVV": -1,
       "BERA": -1,
       "KAITO": -1,
       "NIL": -1,
