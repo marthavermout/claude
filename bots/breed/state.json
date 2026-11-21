@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 229.7423527191538,
-    "fees_paid": 17.82739792654674,
+    "realized_pnl": 230.25078143091253,
+    "fees_paid": 17.920480598745094,
     "funding_paid": 0.3318772335787205,
     "positions": {
       "FARTCOIN": {
@@ -110,8 +110,8 @@
         "entry": 68.9742921
       },
       "HYPE": {
-        "size": 4.86,
-        "entry": 58.318362143499435
+        "size": 4.23,
+        "entry": 58.40788540949551
       }
     }
   },
@@ -241,7 +241,7 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
       "realized_pnl": -53.78422462233816,
-      "fees_paid": 2.7457050466280686,
+      "fees_paid": 2.8058848372622687,
       "funding_paid": 0.18350859286036147,
       "positions": {
         "XPL": {
@@ -259,6 +259,10 @@
         "CASHCAT": {
           "size": 972.0,
           "entry": 0.03622129836666667
+        },
+        "HYPE": {
+          "size": -2.28,
+          "entry": 58.6547667
         }
       }
     },
@@ -601,12 +605,12 @@
     },
     "0xdbbb9b4e361e1e1b6b4c640914ed4e4a11896df9": {
       "starting_balance": 1000.0,
-      "realized_pnl": 27.405035792365933,
-      "fees_paid": 1.7343528924911398,
+      "realized_pnl": 28.305265935163778,
+      "fees_paid": 1.7412501931754398,
       "funding_paid": -1.1703738305798486,
       "positions": {
         "HYPE": {
-          "size": -4.24,
+          "size": -3.98,
           "entry": 62.413711526145555
         },
         "ENA": {

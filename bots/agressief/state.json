@@ -119,7 +119,7 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
       "realized_pnl": -93.77957116650406,
-      "fees_paid": 3.1091203705702504,
+      "fees_paid": 3.1669246431531004,
       "funding_paid": 0.30317108064995074,
       "positions": {
         "XPL": {
@@ -137,6 +137,10 @@
         "CASHCAT": {
           "size": 774.0,
           "entry": 0.0356541294
+        },
+        "HYPE": {
+          "size": -2.19,
+          "entry": 58.654766699999996
         }
       }
     },
