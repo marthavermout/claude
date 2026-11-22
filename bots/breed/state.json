@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 239.25640308874648,
-    "fees_paid": 18.688401083381105,
+    "realized_pnl": 238.38366283474647,
+    "fees_paid": 18.692558791673104,
     "funding_paid": 0.14907867071146133,
     "positions": {
       "FARTCOIN": {
@@ -84,10 +84,6 @@
       "APE": {
         "size": 124.2,
         "entry": 0.08054610599999999
-      },
-      "ETC": {
-        "size": 1.7,
-        "entry": 5.94828942
       },
       "GRASS": {
         "size": 25.1,
@@ -374,8 +370,8 @@
     },
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
-      "realized_pnl": -40.459344211710146,
-      "fees_paid": 2.483364474950581,
+      "realized_pnl": -41.27063496101586,
+      "fees_paid": 2.485369957773781,
       "funding_paid": -8.262366628121802,
       "positions": {
         "AERO": {
@@ -421,10 +417,6 @@
         "EIGEN": {
           "size": 462.47,
           "entry": 0.1285492197418211
-        },
-        "ETC": {
-          "size": 0.8199999999999998,
-          "entry": 6.424291762567944
         },
         "ETHFI": {
           "size": -189.9,
