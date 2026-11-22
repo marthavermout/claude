@@ -153,7 +153,6 @@
       "ANIME": -1,
       "BERA": -1,
       "KAITO": -1,
-      "NIL": -1,
       "WCT": -1,
       "XPL": -1,
       "WLFI": -1,
@@ -375,8 +374,8 @@
     },
     "0xd82cb57a8d039760a2073a96aa1a8d9eded94068": {
       "starting_balance": 1000.0,
-      "realized_pnl": -29.33162209911262,
-      "fees_paid": 2.455502061098071,
+      "realized_pnl": -34.903563536078295,
+      "fees_paid": 2.469617542387081,
       "funding_paid": -8.242223543508182,
       "positions": {
         "AERO": {
@@ -424,7 +423,7 @@
           "entry": 0.1285492197418211
         },
         "ETC": {
-          "size": 12.19,
+          "size": 6.44,
           "entry": 6.424291762567944
         },
         "ETHFI": {
