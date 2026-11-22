@@ -1,7 +1,7 @@
 {
   "risk": {},
-  "reviews": 11,
-  "last_review": "2026-11-21T07:12:12.753274+00:00",
+  "reviews": 12,
+  "last_review": "2026-11-22T06:41:19.181454+00:00",
   "review_log": [
     {
       "time": "2026-11-11T12:49:22.186043+00:00",
@@ -76,6 +76,13 @@
     {
       "time": "2026-11-21T07:12:12.753274+00:00",
       "n": 11,
+      "mistakes": [],
+      "observations": [],
+      "decision": "niets veranderen"
+    },
+    {
+      "time": "2026-11-22T06:41:19.181454+00:00",
+      "n": 12,
       "mistakes": [],
       "observations": [],
       "decision": "niets veranderen"

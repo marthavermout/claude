@@ -2,8 +2,8 @@
   "risk": {
     "min_trade_usd": 10.0
   },
-  "reviews": 10,
-  "last_review": "2026-11-21T07:12:10.449267+00:00",
+  "reviews": 11,
+  "last_review": "2026-11-22T06:41:16.216477+00:00",
   "review_log": [
     {
       "time": "2026-11-12T12:27:59.460315+00:00",
@@ -84,6 +84,15 @@
       "mistakes": [
         "Kosten slokken 54% van het resultaat op.",
         "39% van de trades draait binnen een uur de vorige om (churn)."
+      ],
+      "observations": [],
+      "decision": "Afkoelperiode: vorige wijziging was minder dan 48u geleden; eerst het effect daarvan meten."
+    },
+    {
+      "time": "2026-11-22T06:41:16.216477+00:00",
+      "n": 11,
+      "mistakes": [
+        "37% van de trades draait binnen een uur de vorige om (churn)."
       ],
       "observations": [],
       "decision": "Afkoelperiode: vorige wijziging was minder dan 48u geleden; eerst het effect daarvan meten."

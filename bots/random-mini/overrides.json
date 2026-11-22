@@ -2,8 +2,8 @@
   "risk": {
     "max_leverage": 1.5
   },
-  "reviews": 10,
-  "last_review": "2026-11-21T07:12:12.094957+00:00",
+  "reviews": 11,
+  "last_review": "2026-11-22T06:41:18.335090+00:00",
   "review_log": [
     {
       "time": "2026-11-12T12:28:00.593224+00:00",
@@ -76,6 +76,13 @@
       ],
       "observations": [],
       "decision": "Max hefboom verlaagd: 2.0x \u2192 1.5x."
+    },
+    {
+      "time": "2026-11-22T06:41:18.335090+00:00",
+      "n": 11,
+      "mistakes": [],
+      "observations": [],
+      "decision": "niets veranderen"
     }
   ],
   "last_change": "2026-11-21T07:12:12.094957+00:00",
