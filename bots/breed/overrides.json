@@ -11,16 +11,16 @@
     "0x972d521729c0d07b360ae470f03878fe405f0650",
     "0x7dacca323e44f168494c779bb5e7483c468ef410",
     "0x94fb21bbfaed8927570a2d41af0c21527efbfd81",
-    "0xd82cb57a8d039760a2073a96aa1a8d9eded94068",
     "0xdbbb9b4e361e1e1b6b4c640914ed4e4a11896df9",
     "0x94dac1facdc4afd2614c3119447187b4143bc449",
     "0xb83de012dba672c76a7dbbbf3e459cb59d7d6e36",
     "0x03136324349c003f3498130f56f4526bf5720ab1",
     "0xa1d4fc32f21d9d77a4c20a6ac4b748815912c07c",
-    "0x5461e3a694004602961722522e70f62beb05ae65"
+    "0x5461e3a694004602961722522e70f62beb05ae65",
+    "0xb3e475368ed0fa0ad23c04de0423d48a0758806f"
   ],
-  "reviews": 12,
-  "last_review": "2026-11-21T09:48:41.270717+00:00",
+  "reviews": 13,
+  "last_review": "2026-11-22T09:17:38.477340+00:00",
   "review_log": [
     {
       "time": "2026-11-10T16:51:17.210917+00:00",
@@ -229,9 +229,25 @@
         "`0xa1d4fc32\u2026` zelf +57.56%, onze kopie +17.02%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo)."
       ],
       "decision": "Afkoelperiode: vorige wijziging was minder dan 48u geleden; eerst het effect daarvan meten."
+    },
+    {
+      "time": "2026-11-22T09:17:38.477340+00:00",
+      "n": 13,
+      "mistakes": [
+        "Trader `0xd82cb57a\u2026` kopi\u00ebren leverde -14.79% op (grens -8%).",
+        "41% van de trades draait binnen een uur de vorige om (churn)."
+      ],
+      "observations": [
+        "`0xd82cb57a\u2026` zelf +3.39%, onze kopie -14.79%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo).",
+        "`0xf83858e5\u2026` zelf +50.51%, onze kopie -4.97%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo).",
+        "`0xd10e2b1b\u2026`: nog te weinig data om te beoordelen (280u, 3 gesloten trades)",
+        "`0x972d5217\u2026`: nog te weinig data om te beoordelen (280u, 2 gesloten trades)",
+        "`0xa1d4fc32\u2026` zelf +43.56%, onze kopie +15.80%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo)."
+      ],
+      "decision": "Trader `0xd82cb57a\u2026` vervangen door `0xb3e47536\u2026`."
     }
   ],
-  "last_change": "2026-11-19T10:51:26.912391+00:00",
+  "last_change": "2026-11-22T09:17:38.477340+00:00",
   "history": [
     {
       "time": "2026-11-10T16:51:17.210917+00:00",
@@ -248,10 +264,15 @@
     {
       "time": "2026-11-19T10:51:26.912391+00:00",
       "change": "Minimale trade-grootte verhoogd: $10.0 \u2192 $15.0 (minder kleine aanpassingen)."
+    },
+    {
+      "time": "2026-11-22T09:17:38.477340+00:00",
+      "change": "Trader `0xd82cb57a\u2026` vervangen door `0xb3e47536\u2026`."
     }
   ],
   "blacklist": [
     "0x5a19bfe9c095c3bd188eca00a690b95200797aba",
-    "0xa4247526997374fdab0bad6f63c9f3daca8f22d4"
+    "0xa4247526997374fdab0bad6f63c9f3daca8f22d4",
+    "0xd82cb57a8d039760a2073a96aa1a8d9eded94068"
   ]
 }
