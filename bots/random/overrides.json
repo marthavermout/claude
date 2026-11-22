@@ -1,6 +1,6 @@
 {
   "risk": {
-    "min_trade_usd": 15.0
+    "min_trade_usd": 22.5
   },
   "leaders": [
     "0xfb47779fb0f59750fc714ba61a7859b059bbd3e6",
@@ -12,8 +12,8 @@
     "0xd57c9295947b5a616a3933344ef03a1ad67318ea",
     "0x18a794ea0363e75ab119d0392f172edc19625df3"
   ],
-  "reviews": 12,
-  "last_review": "2026-11-21T11:33:21.783317+00:00",
+  "reviews": 13,
+  "last_review": "2026-11-22T11:02:38.256901+00:00",
   "review_log": [
     {
       "time": "2026-11-10T18:14:30.643317+00:00",
@@ -195,9 +195,23 @@
         "`0x802dc9bd\u2026` zelf +16.29%, onze kopie -0.40%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo)."
       ],
       "decision": "Afkoelperiode: vorige wijziging was minder dan 48u geleden; eerst het effect daarvan meten."
+    },
+    {
+      "time": "2026-11-22T11:02:38.256901+00:00",
+      "n": 13,
+      "mistakes": [
+        "25% van de trades draait binnen een uur de vorige om (churn)."
+      ],
+      "observations": [
+        "`0xd57c9295\u2026`: nog te weinig data om te beoordelen (211u, 3 gesloten trades)",
+        "`0xd10e2b1b\u2026`: nog te weinig data om te beoordelen (281u, 3 gesloten trades)",
+        "`0x802dc9bd\u2026` zelf +39.31%, onze kopie +0.26%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo).",
+        "`0xde5a8068\u2026` zelf +379.18%, onze kopie +0.89%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo)."
+      ],
+      "decision": "Minimale trade-grootte verhoogd: $15.0 \u2192 $22.5 (minder kleine aanpassingen)."
     }
   ],
-  "last_change": "2026-11-19T12:35:50.829153+00:00",
+  "last_change": "2026-11-22T11:02:38.256901+00:00",
   "history": [
     {
       "time": "2026-11-10T18:14:30.643317+00:00",
@@ -214,6 +228,10 @@
     {
       "time": "2026-11-19T12:35:50.829153+00:00",
       "change": "Minimale trade-grootte verhoogd: $10.0 \u2192 $15.0 (minder kleine aanpassingen)."
+    },
+    {
+      "time": "2026-11-22T11:02:38.256901+00:00",
+      "change": "Minimale trade-grootte verhoogd: $15.0 \u2192 $22.5 (minder kleine aanpassingen)."
     }
   ],
   "blacklist": [
