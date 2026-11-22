@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": -129.4488284807824,
-    "fees_paid": 7.914386346427179,
+    "realized_pnl": -126.6803419227824,
+    "fees_paid": 7.921425503314179,
     "funding_paid": -2.0832037547693423,
     "positions": {
       "BTC": {
@@ -22,7 +22,7 @@
         "entry": 0.051590316000000004
       },
       "VVV": {
-        "size": 9.75,
+        "size": 9.13,
         "entry": 20.7646521
       },
       "ZRO": {
