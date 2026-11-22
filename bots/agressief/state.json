@@ -255,8 +255,8 @@
     },
     "0xa1d4fc32f21d9d77a4c20a6ac4b748815912c07c": {
       "starting_balance": 1000.0,
-      "realized_pnl": 134.73832057033354,
-      "fees_paid": 3.579235928847899,
+      "realized_pnl": 135.00349605584594,
+      "fees_paid": 3.589451018457299,
       "funding_paid": 0.7075900727084148,
       "positions": {
         "WLFI": {
@@ -264,7 +264,7 @@
           "entry": 0.04668568494263298
         },
         "HYPE": {
-          "size": -8.17,
+          "size": -7.81,
           "entry": 63.79270727086781
         },
         "LIT": {
