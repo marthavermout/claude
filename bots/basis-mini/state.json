@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 50.0,
     "realized_pnl": 0.38700550900000663,
-    "fees_paid": 0.31637834294715006,
+    "fees_paid": 0.3220647554371501,
     "funding_paid": 0.0231785371891012,
     "positions": {
       "BTC": {
@@ -20,6 +20,10 @@
       "ZEC": {
         "size": -0.02,
         "entry": 777.2845120000001
+      },
+      "NEAR": {
+        "size": -4.4,
+        "entry": 2.8719255
       }
     }
   },
