@@ -19,7 +19,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 12.996387861860585,
       "fees_paid": 5.221729939741828,
-      "funding_paid": -0.015583647546200615,
+      "funding_paid": -0.019435184305400616,
       "positions": {
         "XPL": {
           "size": -3878.0,
@@ -39,7 +39,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 161.0978134070029,
       "fees_paid": 5.43528231719283,
-      "funding_paid": -1.1536519409106138,
+      "funding_paid": -1.14714959015474,
       "positions": {
         "ASTER": {
           "size": -274.0,
@@ -91,7 +91,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 104.60359939012834,
       "fees_paid": 1.9436395379984994,
-      "funding_paid": -3.57453999261764,
+      "funding_paid": -3.5855351746301403,
       "positions": {
         "PURR": {
           "size": -3900.0,
@@ -111,7 +111,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 328.15591553260003,
       "fees_paid": 1.44969563479356,
-      "funding_paid": 12.022541148431053,
+      "funding_paid": 12.0281186414365,
       "positions": {
         "FIL": {
           "size": -17.6,
@@ -143,7 +143,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 271.5396694205083,
       "fees_paid": 3.4452257890975218,
-      "funding_paid": -0.6310162237419253,
+      "funding_paid": -0.6273020153652193,
       "positions": {
         "BTC": {
           "size": -0.00056,
@@ -183,7 +183,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -14.009084586502539,
       "fees_paid": 0.65763227430387,
-      "funding_paid": -0.11233291820687095,
+      "funding_paid": -0.11544543020687095,
       "positions": {
         "HYPE": {
           "size": -3.77,
@@ -200,15 +200,10 @@
     },
     "0x7dacca323e44f168494c779bb5e7483c468ef410": {
       "starting_balance": 1000.0,
-      "realized_pnl": 4.758328802561876,
-      "fees_paid": 0.24793929743669996,
-      "funding_paid": -0.27960755915620444,
-      "positions": {
-        "HYPE": {
-          "size": -3.85,
-          "entry": 67.7789182653086
-        }
-      }
+      "realized_pnl": 11.604478748999998,
+      "fees_paid": 0.36228550585544994,
+      "funding_paid": -0.28278611915620444,
+      "positions": {}
     }
   },
   "shadow_started": {
@@ -222,7 +217,7 @@
     "0x7dacca323e44f168494c779bb5e7483c468ef410": "2026-11-10T16:52:32.648945+00:00"
   },
   "meta": {
-    "funding_hour": 498736
+    "funding_hour": 498737
   },
   "pattern_trades": {},
   "pattern_scanned": {},
