@@ -226,8 +226,8 @@
     },
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
-      "realized_pnl": 259.1201248430962,
-      "fees_paid": 3.2188127768883,
+      "realized_pnl": 260.8969990109115,
+      "fees_paid": 3.22560127461636,
       "funding_paid": -0.5269221458196918,
       "positions": {
         "BTC": {
@@ -243,7 +243,7 @@
           "entry": 1903.5539993373952
         },
         "FARTCOIN": {
-          "size": -4638.7,
+          "size": -4448.6,
           "entry": 0.08870291780439375
         },
         "JUP": {
