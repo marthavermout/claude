@@ -12,8 +12,8 @@
     "0xd57c9295947b5a616a3933344ef03a1ad67318ea",
     "0x18a794ea0363e75ab119d0392f172edc19625df3"
   ],
-  "reviews": 13,
-  "last_review": "2026-11-22T11:02:38.256901+00:00",
+  "reviews": 14,
+  "last_review": "2026-11-23T10:31:03.103761+00:00",
   "review_log": [
     {
       "time": "2026-11-10T18:14:30.643317+00:00",
@@ -209,6 +209,20 @@
         "`0xde5a8068\u2026` zelf +379.18%, onze kopie +0.89%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo)."
       ],
       "decision": "Minimale trade-grootte verhoogd: $15.0 \u2192 $22.5 (minder kleine aanpassingen)."
+    },
+    {
+      "time": "2026-11-23T10:31:03.103761+00:00",
+      "n": 14,
+      "mistakes": [
+        "25% van de trades draait binnen een uur de vorige om (churn)."
+      ],
+      "observations": [
+        "`0xd57c9295\u2026`: nog te weinig data om te beoordelen (234u, 4 gesloten trades)",
+        "`0xd10e2b1b\u2026`: nog te weinig data om te beoordelen (304u, 3 gesloten trades)",
+        "`0x802dc9bd\u2026` zelf +45.76%, onze kopie +0.45%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo).",
+        "`0xde5a8068\u2026` zelf +417.46%, onze kopie +1.88%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo)."
+      ],
+      "decision": "Afkoelperiode: vorige wijziging was minder dan 48u geleden; eerst het effect daarvan meten."
     }
   ],
   "last_change": "2026-11-22T11:02:38.256901+00:00",

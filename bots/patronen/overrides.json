@@ -2,8 +2,8 @@
   "risk": {
     "min_trade_usd": 33.75
   },
-  "reviews": 13,
-  "last_review": "2026-11-22T11:02:37.699405+00:00",
+  "reviews": 14,
+  "last_review": "2026-11-23T10:31:02.580705+00:00",
   "review_log": [
     {
       "time": "2026-11-10T18:25:31.102784+00:00",
@@ -106,6 +106,15 @@
       "n": 13,
       "mistakes": [
         "Kosten slokken 92% van het resultaat op."
+      ],
+      "observations": [],
+      "decision": "Afkoelperiode: vorige wijziging was minder dan 48u geleden; eerst het effect daarvan meten."
+    },
+    {
+      "time": "2026-11-23T10:31:02.580705+00:00",
+      "n": 14,
+      "mistakes": [
+        "Kosten slokken 108% van het resultaat op."
       ],
       "observations": [],
       "decision": "Afkoelperiode: vorige wijziging was minder dan 48u geleden; eerst het effect daarvan meten."
