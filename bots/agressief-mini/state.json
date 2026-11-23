@@ -1,27 +1,10 @@
 {
   "broker": {
     "starting_balance": 50.0,
-    "realized_pnl": 1.8183334404977836,
-    "fees_paid": 0.08033815209860999,
+    "realized_pnl": 2.8593038888000093,
+    "fees_paid": 0.10339198872696,
     "funding_paid": 0.026325868351571288,
-    "positions": {
-      "HYPE": {
-        "size": -0.28,
-        "entry": 71.6586654
-      },
-      "WLFI": {
-        "size": -220.0,
-        "entry": 0.04644983261955556
-      },
-      "ETH": {
-        "size": 0.0002999999999999999,
-        "entry": 1728.59565
-      },
-      "LIT": {
-        "size": -8.0,
-        "entry": 2.67521485
-      }
-    }
+    "positions": {}
   },
   "risk": {
     "day": "2026-11-23",

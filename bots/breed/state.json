@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 226.9090751253103,
-    "fees_paid": 19.296984746623743,
+    "fees_paid": 19.32015205223574,
     "funding_paid": 0.15656535622299206,
     "positions": {
       "FARTCOIN": {
@@ -26,8 +26,8 @@
         "entry": 8.515396579999999
       },
       "WLFI": {
-        "size": -3408.0,
-        "entry": 0.04431754889051901
+        "size": -4583.0,
+        "entry": 0.044188764560089196
       },
       "ETH": {
         "size": 0.0068000000000000005,
@@ -269,8 +269,8 @@
     },
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
-      "realized_pnl": 100.98512494456122,
-      "fees_paid": 1.3929288962580908,
+      "realized_pnl": 100.69455796740793,
+      "fees_paid": 1.4003332368300907,
       "funding_paid": 0.7950120081670001,
       "positions": {
         "ETH": {
@@ -286,7 +286,7 @@
           "entry": 81.9551057
         },
         "LIT": {
-          "size": -106.0,
+          "size": -100.0,
           "entry": 2.6939205304744513
         }
       }
@@ -558,12 +558,12 @@
     },
     "0xdbbb9b4e361e1e1b6b4c640914ed4e4a11896df9": {
       "starting_balance": 1000.0,
-      "realized_pnl": 4.383873246921393,
-      "fees_paid": 1.8597135720823197,
+      "realized_pnl": 2.8297533666734154,
+      "fees_paid": 1.8665918834695197,
       "funding_paid": -1.2319396338993134,
       "positions": {
         "HYPE": {
-          "size": -3.74,
+          "size": -3.52,
           "entry": 62.413711526145555
         },
         "ENA": {
@@ -604,12 +604,12 @@
     },
     "0x03136324349c003f3498130f56f4526bf5720ab1": {
       "starting_balance": 1000.0,
-      "realized_pnl": -13.227112053669176,
-      "fees_paid": 1.1256188044424398,
+      "realized_pnl": -13.087036955117743,
+      "fees_paid": 1.1324200804151399,
       "funding_paid": 1.2893374719367234,
       "positions": {
         "HYPE": {
-          "size": 4.0,
+          "size": 3.78,
           "entry": 68.0630523065844
         },
         "AVAX": {
@@ -652,12 +652,12 @@
     "0xb3e475368ed0fa0ad23c04de0423d48a0758806f": {
       "starting_balance": 1000.0,
       "realized_pnl": -2.986639747820167,
-      "fees_paid": 0.33353756509707,
+      "fees_paid": 0.34035734408013,
       "funding_paid": 0.12804025293855517,
       "positions": {
         "MNT": {
-          "size": 125.2,
-          "entry": 0.393618708
+          "size": 161.8,
+          "entry": 0.3982455293473424
         },
         "SOPH": {
           "size": 261145.0,
