@@ -86,7 +86,7 @@
   "risk": {
     "day": "2026-11-23",
     "day_start_equity": 1202.4321539379075,
-    "peak_equity": 1226.9540249316344,
+    "peak_equity": 1228.7259329316344,
     "killed": false,
     "kill_reason": ""
   },
@@ -605,12 +605,12 @@
     "0x03136324349c003f3498130f56f4526bf5720ab1": {
       "starting_balance": 1000.0,
       "realized_pnl": -1.1973406431177605,
-      "fees_paid": 1.2217913725811398,
+      "fees_paid": 1.2286821784667399,
       "funding_paid": 1.3461251053326018,
       "positions": {
         "HYPE": {
-          "size": 3.78,
-          "entry": 68.0630523065844
+          "size": 4.02,
+          "entry": 67.80876609126594
         },
         "AVAX": {
           "size": -36.4,
