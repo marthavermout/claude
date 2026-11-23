@@ -1,37 +1,37 @@
-# Review #11 — 2026-11-22 06:41 UTC
+# Review #12 — 2026-11-23 06:09 UTC
 
 **Gevonden fouten:**
-- 37% van de trades draait binnen een uur de vorige om (churn).
+- 34% van de trades draait binnen een uur de vorige om (churn).
 
-**Besluit:** Afkoelperiode: vorige wijziging was minder dan 48u geleden; eerst het effect daarvan meten.
+**Besluit:** niets veranderen
 
 ## Laatste 24 uur
 
 | Meting | Waarde |
 |---|---|
 | Periode | 24.0 uur |
-| Vermogen | $49.32 → $50.60 (+2.59%) |
-| BTC vasthouden (benchmark) | +4.39% |
-| Grootste daling (drawdown) | 2.44% |
-| Trades | 2 (2.0/dag) |
-| Gerealiseerd / kosten | $+0.00 / $0.01 |
+| Vermogen | $50.69 → $50.84 (+0.29%) |
+| BTC vasthouden (benchmark) | +4.46% |
+| Grootste daling (drawdown) | 1.34% |
+| Trades | 4 (4.0/dag) |
+| Gerealiseerd / kosten | $-0.31 / $0.03 |
 | Heen-en-weer trades (churn) | 0 (0%) |
 | Dagen met risicostop | geen |
 
-**Slechtste munten:** ZEC $-0.01, NEAR $-0.01
-**Beste munten:** NEAR $-0.01, ZEC $-0.01
+**Slechtste munten:** NEAR $-0.60, HYPE $+0.26
+**Beste munten:** HYPE $+0.26, NEAR $-0.60
 
 ## Sinds de start
 
 | Meting | Waarde |
 |---|---|
-| Periode | 234.2 uur |
-| Vermogen | $49.99 → $50.60 (+1.21%) |
-| BTC vasthouden (benchmark) | -18.73% |
+| Periode | 257.7 uur |
+| Vermogen | $49.99 → $50.84 (+1.69%) |
+| BTC vasthouden (benchmark) | -15.19% |
 | Grootste daling (drawdown) | 11.14% |
-| Trades | 38 (3.9/dag) |
-| Gerealiseerd / kosten | $+0.39 / $0.32 |
-| Heen-en-weer trades (churn) | 14 (37%) |
+| Trades | 41 (3.8/dag) |
+| Gerealiseerd / kosten | $+0.08 / $0.35 |
+| Heen-en-weer trades (churn) | 14 (34%) |
 | Dagen met risicostop | 2026-11-20 |
 
 **Per trader (schaduwboek: wat als je alleen deze trader kopieerde)**
@@ -46,8 +46,8 @@
 | `0x888e000c…` | 19 | +0.00% | -7.40% | 0 |
 | `0x999510ad…` | 19 | +0.66% | +13.64% | 1 |
 
-**Slechtste munten:** BTC $-1.70, ETH $-0.82, NEAR $-0.01
-**Beste munten:** ZEC $+2.36, HYPE $+0.23, NEAR $-0.01
+**Slechtste munten:** BTC $-1.70, ETH $-0.82, NEAR $-0.60
+**Beste munten:** ZEC $+2.36, HYPE $+0.49, NEAR $-0.60
 
 ---
 

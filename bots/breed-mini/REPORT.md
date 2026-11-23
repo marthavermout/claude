@@ -1,7 +1,7 @@
-# Review #11 — 2026-11-22 06:41 UTC
+# Review #12 — 2026-11-23 06:10 UTC
 
 **Gevonden fouten:**
-- 34% van de trades draait binnen een uur de vorige om (churn).
+- 35% van de trades draait binnen een uur de vorige om (churn).
 
 **Besluit:** niets veranderen
 
@@ -10,28 +10,28 @@
 | Meting | Waarde |
 |---|---|
 | Periode | 24.0 uur |
-| Vermogen | $52.78 → $54.15 (+2.60%) |
-| BTC vasthouden (benchmark) | +4.39% |
-| Grootste daling (drawdown) | 1.17% |
-| Trades | 9 (9.0/dag) |
-| Gerealiseerd / kosten | $+0.79 / $0.04 |
-| Heen-en-weer trades (churn) | 3 (33%) |
+| Vermogen | $54.18 → $53.83 (-0.65%) |
+| BTC vasthouden (benchmark) | +4.46% |
+| Grootste daling (drawdown) | 1.18% |
+| Trades | 2 (2.0/dag) |
+| Gerealiseerd / kosten | $+0.11 / $0.01 |
+| Heen-en-weer trades (churn) | 1 (50%) |
 | Dagen met risicostop | geen |
 
-**Slechtste munten:** HYPE $+0.11, ZEC $+0.32, SOL $+0.33
-**Beste munten:** SOL $+0.33, ZEC $+0.32, HYPE $+0.11
+**Slechtste munten:** ETH $+0.10
+**Beste munten:** ETH $+0.10
 
 ## Sinds de start
 
 | Meting | Waarde |
 |---|---|
-| Periode | 234.2 uur |
-| Vermogen | $50.00 → $54.15 (+8.31%) |
-| BTC vasthouden (benchmark) | -18.73% |
+| Periode | 257.7 uur |
+| Vermogen | $50.00 → $53.83 (+7.66%) |
+| BTC vasthouden (benchmark) | -15.19% |
 | Grootste daling (drawdown) | 4.10% |
-| Trades | 50 (5.1/dag) |
-| Gerealiseerd / kosten | $+3.65 / $0.28 |
-| Heen-en-weer trades (churn) | 17 (34%) |
+| Trades | 52 (4.8/dag) |
+| Gerealiseerd / kosten | $+3.75 / $0.29 |
+| Heen-en-weer trades (churn) | 18 (35%) |
 | Dagen met risicostop | geen |
 
 **Per trader (schaduwboek: wat als je alleen deze trader kopieerde)**
@@ -45,7 +45,6 @@
 | `0x888e000c…` | 19 | +0.00% | -7.40% | 0 |
 | `0x972d5217…` | 19 | +0.00% | +0.00% | 0 |
 | `0x94fb21bb…` | 19 | +0.00% | -7.98% | 0 |
-| `0xd82cb57a…` | 19 | +0.00% | -2.64% | 0 |
 | `0x94dac1fa…` | 19 | +0.00% | -0.03% | 0 |
 | `0xb83de012…` | 19 | +0.00% | -11.74% | 0 |
 | `0xdbbb9b4e…` | 19 | +0.04% | +8.37% | 2 |
@@ -53,7 +52,7 @@
 | `0x03136324…` | 19 | +0.66% | -5.20% | 1 |
 
 **Slechtste munten:** NEAR $-0.11, BTC $-0.01, LIT $-0.00
-**Beste munten:** HYPE $+1.98, ZEC $+0.43, ETH $+0.35
+**Beste munten:** HYPE $+1.98, ETH $+0.45, ZEC $+0.43
 
 ---
 
