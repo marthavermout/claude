@@ -3,7 +3,7 @@
     "starting_balance": 1000.0,
     "realized_pnl": -120.17891141272679,
     "fees_paid": 7.959517893206829,
-    "funding_paid": -1.9838981326527432,
+    "funding_paid": -1.9899903958102423,
     "positions": {
       "BTC": {
         "size": 0.00367,
@@ -132,7 +132,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -131.86203340315112,
       "fees_paid": 2.2123854937889984,
-      "funding_paid": -0.7853513106431635,
+      "funding_paid": -0.8001039278917522,
       "positions": {
         "CHIP": {
           "size": 6573.0,
@@ -172,7 +172,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -17.442366417931552,
       "fees_paid": 0.6831119108610001,
-      "funding_paid": 1.5318065452727925,
+      "funding_paid": 1.5352943904727925,
       "positions": {
         "VVV": {
           "size": 10.64,
@@ -184,7 +184,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -10.175209597378007,
       "fees_paid": 7.609188063728528,
-      "funding_paid": 0.026854865861582065,
+      "funding_paid": 0.023893201893760065,
       "positions": {
         "BTC": {
           "size": 9.000000000000002e-05,
@@ -230,7 +230,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -2.3343904636517734,
       "fees_paid": 1.03779336680595,
-      "funding_paid": 0.04068811785081474,
+      "funding_paid": 0.03330452525851474,
       "positions": {
         "ETH": {
           "size": 0.149,
@@ -242,7 +242,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 56.60693948764633,
       "fees_paid": 0.68266896889815,
-      "funding_paid": -4.127809285952678,
+      "funding_paid": -4.140405172907349,
       "positions": {
         "ETH": {
           "size": 0.1514,
@@ -262,7 +262,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": -38.90875937099995,
       "fees_paid": 5.2626653777321994,
-      "funding_paid": 0.24955116763698143,
+      "funding_paid": 0.24427995765719343,
       "positions": {
         "BTC": {
           "size": 0.004030000000000001,
@@ -278,7 +278,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 8.256274180565638,
       "fees_paid": 0.57662925788151,
-      "funding_paid": -0.8072530736881208,
+      "funding_paid": -0.8235309686262846,
       "positions": {
         "DOGE": {
           "size": 3700.0,
@@ -306,7 +306,7 @@
       "starting_balance": 1000.0,
       "realized_pnl": 15.47964435305402,
       "fees_paid": 1.2628357544935804,
-      "funding_paid": -2.4566627030873716,
+      "funding_paid": -2.4597102479390394,
       "positions": {
         "ADA": {
           "size": 664.0,
@@ -388,7 +388,7 @@
     "0x18a794ea0363e75ab119d0392f172edc19625df3": "2026-11-16T14:20:29.822197+00:00"
   },
   "meta": {
-    "funding_hour": 498722
+    "funding_hour": 498723
   },
   "pattern_trades": {},
   "pattern_scanned": {},
