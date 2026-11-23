@@ -65,6 +65,10 @@ Run `review` for each and compare return, max drawdown, fees and number of trade
   25% of it. Bea made 671 HYPE trades in 14h as traders resized all day. On the exam part (splits 0.7 and 0.5)
   it won for Bea, Alex and Axel (+1.1 to +5.6 points) and is on there; Vera lost slightly and Bas (the
   reference bot) gained little, so they stay off. In-sample it cost ~1 point everywhere: re-check after a week.
+- Pia weekly retest (23 Nov 2026, fresh candles: 52 days 15m, 208 days 1h): the symmetrical triangle failed
+  the 15m exam part (-7.1% over 60 trades), so it is removed and Pia trades nothing (`patterns = ["none"]`)
+  while still logging what she sees. The descending triangle passed on 1h (+2.9%/+16.1%) but had too few
+  15m trades (8): not added. Re-test every Sunday; a pattern returns only if it passes both again.
 - Minimum trade size vs account (20 Nov 2026): the tuner's churn fix raised Bas-mini's minimum trade to
   $22.50 on a $50 account; replaying basis' history showed it then makes 0 trades. The minimum is now capped
   at 20% of the starting balance (never below the exchange's $10), and a too-high value is repaired at once.

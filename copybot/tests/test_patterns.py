@@ -125,3 +125,9 @@ class SelectionTest(unittest.TestCase):
         j = len(cs) - 1
         names = [s.pattern for s in detect_extra(cs, j, pivots(cs, j))]
         self.assertIn("elliott wave 3", names)
+
+
+class NoneEnabledTest(unittest.TestCase):
+    def test_none_trades_nothing(self):
+        from copybot.patterns import scan
+        self.assertIsNone(scan([], {"none"}))
