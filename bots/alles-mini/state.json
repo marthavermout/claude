@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 50.0,
     "realized_pnl": 2.4695637580000014,
-    "fees_paid": 0.08010748597698,
+    "fees_paid": 0.08460786147183,
     "funding_paid": -0.0634358015632689,
     "positions": {
       "BTC": {
@@ -28,6 +28,10 @@
       "ZEC": {
         "size": -0.02,
         "entry": 782.3035080000001
+      },
+      "DYDX": {
+        "size": -134.9,
+        "entry": 0.07413517
       }
     }
   },
