@@ -17,17 +17,13 @@
   "shadows": {
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
-      "realized_pnl": 12.996387861860585,
-      "fees_paid": 5.221729939741828,
+      "realized_pnl": 17.184887927860608,
+      "fees_paid": 5.351382797213068,
       "funding_paid": -0.019435184305400616,
       "positions": {
         "XPL": {
-          "size": -3878.0,
-          "entry": 0.047651902910092664
-        },
-        "BTC": {
-          "size": -0.00397,
-          "entry": 62932.9109
+          "size": -4781.0,
+          "entry": 0.047533232446253786
         },
         "HYPE": {
           "size": -3.84,
