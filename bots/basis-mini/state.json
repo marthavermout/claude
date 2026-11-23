@@ -1,13 +1,13 @@
 {
   "broker": {
     "starting_balance": 50.0,
-    "realized_pnl": 0.14722626900000796,
-    "fees_paid": 0.35060549368410004,
-    "funding_paid": 0.0216676806102922,
+    "realized_pnl": -0.22899341499999126,
+    "fees_paid": 0.36473309527275005,
+    "funding_paid": 0.0211962888456782,
     "positions": {
       "BTC": {
-        "size": 0.00021,
-        "entry": 58923.2823
+        "size": -1.9999999999999998e-05,
+        "entry": 63287.8399
       },
       "ETH": {
         "size": 0.0077,
@@ -16,10 +16,6 @@
       "HYPE": {
         "size": -0.10999999999999999,
         "entry": 63.812734899999995
-      },
-      "ZEC": {
-        "size": -0.02,
-        "entry": 777.2845120000001
       }
     }
   },
@@ -97,7 +93,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.005682030678900001,
-      "funding_paid": 0.009286180319431809,
+      "funding_paid": 0.009436527569431809,
       "positions": {
         "HYPE": {
           "size": 0.18,
@@ -116,7 +112,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.004616053276050001,
-      "funding_paid": -0.008090284740589204,
+      "funding_paid": -0.008190781174909205,
       "positions": {
         "ETH": {
           "size": 0.0051,
@@ -135,7 +131,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.010192234104000001,
-      "funding_paid": -0.014677363789259395,
+      "funding_paid": -0.014904240205259394,
       "positions": {
         "ETH": {
           "size": 0.005,
@@ -165,7 +161,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.0056234205909000004,
-      "funding_paid": 0.005374913634188001,
+      "funding_paid": 0.005317095332108001,
       "positions": {
         "PUMP": {
           "size": -3710.0,
@@ -185,7 +181,7 @@
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": "2026-11-12T12:28:05.519022+00:00"
   },
   "meta": {
-    "funding_hour": 498733
+    "funding_hour": 498734
   },
   "pattern_trades": {},
   "pattern_scanned": {},

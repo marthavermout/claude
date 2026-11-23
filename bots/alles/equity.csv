@@ -32620,3 +32620,11 @@ time,equity,positions,btc,halt
 2026-11-23T13:55:40.224679+00:00,1238.457,17,61142.5,
 2026-11-23T13:55:58.108403+00:00,1238.923,17,61123.5,
 2026-11-23T13:58:42.877079+00:00,1194.4755,17,63248.0,
+2026-11-23T14:01:44.742017+00:00,1185.1618,17,63300.5,
+2026-11-23T14:04:43.988143+00:00,1172.2296,0,63531.5,daily loss limit hit (5%); paused until next UTC day
+2026-11-23T14:07:13.291439+00:00,1172.2296,0,62883.0,daily loss limit hit (5%); paused until next UTC day
+2026-11-23T14:08:29.392376+00:00,1172.2296,0,63035.5,daily loss limit hit (5%); paused until next UTC day
+2026-11-23T14:09:18.284924+00:00,1172.2296,0,62974.5,daily loss limit hit (5%); paused until next UTC day
+2026-11-23T14:09:52.691785+00:00,1172.2296,0,62908.5,daily loss limit hit (5%); paused until next UTC day
+2026-11-23T14:10:36.153680+00:00,1172.2296,0,63146.5,daily loss limit hit (5%); paused until next UTC day
+2026-11-23T14:11:11.019448+00:00,1172.2296,0,63326.5,daily loss limit hit (5%); paused until next UTC day
