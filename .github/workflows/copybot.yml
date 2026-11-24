@@ -96,7 +96,13 @@ jobs:
         run: |
           elapsed=$(( $(date +%s) - RUN_STARTED ))
           if [ "$elapsed" -ge 1200 ]; then
-            gh workflow run copybot.yml --ref 3.x --repo "$GITHUB_REPOSITORY" && echo "next run requested"
+            # GitHub sometimes answers 502 (24 Nov 2026: trading stopped ~4h). Retry; a duplicate is harmless,
+            # the concurrency group keeps only one waiting run.
+            for try in 1 2 3 4; do
+              if gh workflow run copybot.yml --ref 3.x --repo "$GITHUB_REPOSITORY"; then echo "next run requested"; exit 0; fi
+              sleep $((try * 15))
+            done
+            echo "could not start the next run; the */15 schedule is the fallback"; exit 1
           else
             echo "run lasted only ${elapsed}s: not chaining (the hourly schedule will retry)"
           fi
