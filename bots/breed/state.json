@@ -90,7 +90,7 @@
   "risk": {
     "day": "2026-11-24",
     "day_start_equity": 1227.40408144995,
-    "peak_equity": 1264.317452350409,
+    "peak_equity": 1266.571494375207,
     "killed": false,
     "kill_reason": ""
   },
@@ -297,12 +297,12 @@
     },
     "0xd10e2b1b66001bd4086d61e43e836ab9c168fd9a": {
       "starting_balance": 1000.0,
-      "realized_pnl": -15.038111405999981,
-      "fees_paid": 0.46994190965009996,
+      "realized_pnl": -14.42216887599998,
+      "fees_paid": 0.47734919831159994,
       "funding_paid": 0.10192481395378422,
       "positions": {
         "LIT": {
-          "size": -71.0,
+          "size": -64.0,
           "entry": 2.439512
         }
       }
@@ -634,7 +634,7 @@
     "0xa1d4fc32f21d9d77a4c20a6ac4b748815912c07c": {
       "starting_balance": 1000.0,
       "realized_pnl": 88.48710850640822,
-      "fees_paid": 2.8234619149986906,
+      "fees_paid": 2.830435417419211,
       "funding_paid": 0.46657514070394696,
       "positions": {
         "WLFI": {
@@ -650,8 +650,8 @@
           "entry": 2.59615335633954
         },
         "SUI": {
-          "size": -435.9,
-          "entry": 0.699980611339757
+          "size": -459.5,
+          "entry": 0.6977545604539718
         },
         "ADA": {
           "size": -2007.0,
