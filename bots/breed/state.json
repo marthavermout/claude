@@ -216,12 +216,12 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
       "realized_pnl": -17.718602550800053,
-      "fees_paid": 5.250809322017999,
+      "fees_paid": 5.262857205112799,
       "funding_paid": 0.1533239256062245,
       "positions": {
         "MON": {
-          "size": 8361.0,
-          "entry": 0.01121792810290635
+          "size": 11105.0,
+          "entry": 0.010856926646771724
         },
         "ZEC": {
           "size": 0.12,
