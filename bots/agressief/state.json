@@ -237,12 +237,12 @@
     "0xd10e2b1b66001bd4086d61e43e836ab9c168fd9a": {
       "starting_balance": 1000.0,
       "realized_pnl": -22.15400523859994,
-      "fees_paid": 0.8930372661348298,
+      "fees_paid": 0.9037005830448298,
       "funding_paid": 0.14560174265378417,
       "positions": {
         "LIT": {
-          "size": -149.0,
-          "entry": 2.383769794966443
+          "size": -159.0,
+          "entry": 2.382880246855346
         }
       }
     },
@@ -267,8 +267,8 @@
     },
     "0xa1d4fc32f21d9d77a4c20a6ac4b748815912c07c": {
       "starting_balance": 1000.0,
-      "realized_pnl": 147.77941240783898,
-      "fees_paid": 5.3342651300622315,
+      "realized_pnl": 148.66739099303567,
+      "fees_paid": 5.344461714221281,
       "funding_paid": 0.7723856357330381,
       "positions": {
         "WLFI": {
@@ -276,7 +276,7 @@
           "entry": 0.04545414417726574
         },
         "HYPE": {
-          "size": -9.32,
+          "size": -8.95,
           "entry": 63.64068782215319
         },
         "LIT": {
