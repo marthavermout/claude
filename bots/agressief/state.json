@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 130.63551524860043,
-    "fees_paid": 10.058182351782303,
+    "fees_paid": 10.068308525642403,
     "funding_paid": 1.6692036860242077,
     "positions": {
       "ADA": {
@@ -56,6 +56,10 @@
       "ZRO": {
         "size": -45.6,
         "entry": 1.14842027
+      },
+      "XMR": {
+        "size": -0.046,
+        "entry": 489.187143
       }
     }
   },
