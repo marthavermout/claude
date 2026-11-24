@@ -3,7 +3,7 @@
     "starting_balance": 1000.0,
     "realized_pnl": 0.69097019840002,
     "fees_paid": 1.7039719559103303,
-    "funding_paid": -0.07367375015910613,
+    "funding_paid": -0.08256984902535013,
     "positions": {
       "LINK": {
         "size": 22.3,
@@ -12,8 +12,8 @@
     }
   },
   "risk": {
-    "day": "2026-11-23",
-    "day_start_equity": 1000.8365025029253,
+    "day": "2026-11-24",
+    "day_start_equity": 1000.162452958515,
     "peak_equity": 1007.0952116444789,
     "killed": false,
     "kill_reason": ""
@@ -22,7 +22,7 @@
   "shadows": {},
   "shadow_started": {},
   "meta": {
-    "funding_hour": 498743
+    "funding_hour": 498744
   },
   "pattern_trades": {},
   "pattern_scanned": {},
@@ -35,5 +35,5 @@
       "size": 22.30896674884086
     }
   },
-  "quant_hour": 498743
+  "quant_hour": 498744
 }
