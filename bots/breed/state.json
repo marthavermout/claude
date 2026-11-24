@@ -90,7 +90,7 @@
   "risk": {
     "day": "2026-11-24",
     "day_start_equity": 1227.40408144995,
-    "peak_equity": 1305.0124556546955,
+    "peak_equity": 1306.2141456546956,
     "killed": false,
     "kill_reason": ""
   },
@@ -642,7 +642,7 @@
     "0xa1d4fc32f21d9d77a4c20a6ac4b748815912c07c": {
       "starting_balance": 1000.0,
       "realized_pnl": 88.48710850640822,
-      "fees_paid": 2.8719196843561217,
+      "fees_paid": 2.8792185067996217,
       "funding_paid": 0.5741658722809967,
       "positions": {
         "WLFI": {
@@ -654,8 +654,8 @@
           "entry": 63.426937741101284
         },
         "LIT": {
-          "size": -128.0,
-          "entry": 2.59615335633954
+          "size": -135.0,
+          "entry": 2.5816832225293416
         },
         "SUI": {
           "size": -484.3,
@@ -680,8 +680,8 @@
     },
     "0xb3e475368ed0fa0ad23c04de0423d48a0758806f": {
       "starting_balance": 1000.0,
-      "realized_pnl": -3.883836502268533,
-      "fees_paid": 0.3949866647803801,
+      "realized_pnl": -4.711112812466948,
+      "fees_paid": 0.4017516060214801,
       "funding_paid": 0.0927014419121616,
       "positions": {
         "MNT": {
@@ -689,7 +689,7 @@
           "entry": 0.3982455293473424
         },
         "SOPH": {
-          "size": 209734.0,
+          "size": 192451.0,
           "entry": 0.0009176924763176771
         },
         "USUAL": {
