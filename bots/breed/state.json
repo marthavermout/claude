@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 243.7350926404335,
-    "fees_paid": 20.46155366033781,
+    "realized_pnl": 249.17759419022752,
+    "fees_paid": 20.49078404649606,
     "funding_paid": 0.29123616976680594,
     "positions": {
       "FARTCOIN": {
@@ -54,7 +54,7 @@
         "entry": 0.04772246825628604
       },
       "SOL": {
-        "size": -2.24,
+        "size": -1.79,
         "entry": 73.86585881619318
       },
       "HYPE": {
@@ -78,7 +78,7 @@
         "entry": 0.1515655226974916
       },
       "INJ": {
-        "size": -28.2,
+        "size": -22.3,
         "entry": 6.2981828419503545
       },
       "JTO": {
@@ -90,7 +90,7 @@
   "risk": {
     "day": "2026-11-24",
     "day_start_equity": 1227.40408144995,
-    "peak_equity": 1307.1453066546956,
+    "peak_equity": 1308.9533426546955,
     "killed": false,
     "kill_reason": ""
   },
@@ -575,8 +575,8 @@
     },
     "0xdbbb9b4e361e1e1b6b4c640914ed4e4a11896df9": {
       "starting_balance": 1000.0,
-      "realized_pnl": -14.8388840632439,
-      "fees_paid": 2.2571789448807897,
+      "realized_pnl": -17.955448929719857,
+      "fees_paid": 2.2813798033368897,
       "funding_paid": -1.1638419896165049,
       "positions": {
         "HYPE": {
@@ -584,8 +584,8 @@
           "entry": 62.34510624926178
         },
         "ENA": {
-          "size": 1922.0,
-          "entry": 0.11686232543360484
+          "size": 2162.0,
+          "entry": 0.1132335197140206
         },
         "INJ": {
           "size": -40.3,
