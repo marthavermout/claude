@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": -117.4180629895432,
-    "fees_paid": 8.139880041352301,
+    "fees_paid": 8.1644950133623,
     "funding_paid": -1.8342503039385676,
     "positions": {
       "BTC": {
@@ -60,6 +60,10 @@
       "GRASS": {
         "size": 60.5,
         "entry": 0.372964578
+      },
+      "BNB": {
+        "size": 0.1,
+        "entry": 546.999378
       }
     }
   },
@@ -262,13 +266,21 @@
     },
     "0xd738f8f8f68511eb644a31d8b23d0b20baa4854b": {
       "starting_balance": 1000.0,
-      "realized_pnl": -21.586616968999948,
-      "fees_paid": 5.87832125593635,
+      "realized_pnl": -22.87417543399996,
+      "fees_paid": 6.1294627617417,
       "funding_paid": 0.21670579958420907,
       "positions": {
         "ETH": {
-          "size": 0.1428,
+          "size": 0.0989,
           "entry": 1713.0425400000001
+        },
+        "BTC": {
+          "size": 0.00404,
+          "entry": 59865.4707
+        },
+        "BNB": {
+          "size": 0.443,
+          "entry": 546.999378
         }
       }
     },
@@ -295,7 +307,7 @@
     "0x18a794ea0363e75ab119d0392f172edc19625df3": {
       "starting_balance": 1000.0,
       "realized_pnl": 11.09992082463556,
-      "fees_paid": 1.495489871955781,
+      "fees_paid": 1.505665612400581,
       "funding_paid": -2.8778390390658806,
       "positions": {
         "ADA": {
@@ -343,8 +355,8 @@
           "entry": 859.0423161142893
         },
         "ZRO": {
-          "size": -206.1,
-          "entry": 1.3157824407550498
+          "size": -228.5,
+          "entry": 1.2857571885497405
         },
         "TRUMP": {
           "size": 43.2,
