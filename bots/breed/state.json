@@ -90,7 +90,7 @@
   "risk": {
     "day": "2026-11-24",
     "day_start_equity": 1227.40408144995,
-    "peak_equity": 1293.0730681495168,
+    "peak_equity": 1294.599435149517,
     "killed": false,
     "kill_reason": ""
   },
@@ -278,7 +278,7 @@
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
       "realized_pnl": 100.69455796740793,
-      "fees_paid": 1.4503302108350107,
+      "fees_paid": 1.4571801202790706,
       "funding_paid": 0.8733855836562388,
       "positions": {
         "ETH": {
@@ -286,8 +286,8 @@
           "entry": 1889.7852506570835
         },
         "PUMP": {
-          "size": -119993.0,
-          "entry": 0.002748628288837794
+          "size": -126374.0,
+          "entry": 0.002730294010234015
         },
         "SOL": {
           "size": -0.32,
