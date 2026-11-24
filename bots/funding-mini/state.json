@@ -17,18 +17,11 @@
   "shadows": {},
   "shadow_started": {},
   "meta": {
-    "funding_hour": 498744
+    "funding_hour": 498745
   },
   "pattern_trades": {},
   "pattern_scanned": {},
   "quant_sizes": {},
-  "funding_pos": {
-    "LINK": {
-      "side": 1,
-      "entry": 8.95855,
-      "notional": 9.998049777884521,
-      "size": 1.116034378095174
-    }
-  },
-  "quant_hour": 498744
+  "funding_pos": {},
+  "quant_hour": 498745
 }
