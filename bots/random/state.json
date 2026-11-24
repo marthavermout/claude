@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": -117.4180629895432,
-    "fees_paid": 8.1853672742542,
+    "realized_pnl": -117.0495234335432,
+    "fees_paid": 8.244858264711398,
     "funding_paid": -1.8484979417570473,
     "positions": {
       "BTC": {
@@ -60,10 +60,6 @@
       "GRASS": {
         "size": 60.5,
         "entry": 0.372964578
-      },
-      "BNB": {
-        "size": 0.1,
-        "entry": 546.999378
       }
     }
   },
@@ -265,21 +261,13 @@
     },
     "0xd738f8f8f68511eb644a31d8b23d0b20baa4854b": {
       "starting_balance": 1000.0,
-      "realized_pnl": -22.87417543399996,
-      "fees_paid": 6.1294627617417,
+      "realized_pnl": -20.321566955999934,
+      "fees_paid": 6.38268279849855,
       "funding_paid": 0.21617492208073308,
       "positions": {
         "ETH": {
-          "size": 0.0989,
-          "entry": 1713.0425400000001
-        },
-        "BTC": {
-          "size": 0.00404,
-          "entry": 59865.4707
-        },
-        "BNB": {
-          "size": 0.443,
-          "entry": 546.999378
+          "size": 0.144,
+          "entry": 1704.1754544375
         }
       }
     },
