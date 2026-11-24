@@ -321,12 +321,12 @@
     "0x7dacca323e44f168494c779bb5e7483c468ef410": {
       "starting_balance": 1000.0,
       "realized_pnl": 22.48225878899995,
-      "fees_paid": 0.5073500721743999,
+      "fees_paid": 0.5142499481731498,
       "funding_paid": -0.31222597576339733,
       "positions": {
         "HYPE": {
-          "size": -3.97,
-          "entry": 64.4126149
+          "size": -4.22,
+          "entry": 64.23012770805686
         }
       }
     },
@@ -571,8 +571,8 @@
     },
     "0xdbbb9b4e361e1e1b6b4c640914ed4e4a11896df9": {
       "starting_balance": 1000.0,
-      "realized_pnl": -11.253804715294944,
-      "fees_paid": 2.2222464722727295,
+      "realized_pnl": -14.8388840632439,
+      "fees_paid": 2.2292287308416694,
       "funding_paid": -1.2777757903596028,
       "positions": {
         "HYPE": {
@@ -580,7 +580,7 @@
           "entry": 62.45695905756826
         },
         "ENA": {
-          "size": 1753.0,
+          "size": 1595.0,
           "entry": 0.1208937310199301
         },
         "INJ": {
