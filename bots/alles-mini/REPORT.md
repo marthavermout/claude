@@ -1,35 +1,38 @@
-# Review #12 — 2026-11-23 06:09 UTC
+# Review #13 — 2026-11-24 05:38 UTC
 
 **Gevonden fouten:**
-- geen
+- 2 dagen met dagverlies-stop in de afgelopen week.
 
-**Besluit:** niets veranderen
+**Besluit:** Max hefboom verlaagd: 2.0x → 1.5x.
 
 ## Laatste 24 uur
 
 | Meting | Waarde |
 |---|---|
 | Periode | 24.0 uur |
-| Vermogen | $57.92 → $56.87 (-1.82%) |
-| BTC vasthouden (benchmark) | +4.46% |
-| Grootste daling (drawdown) | 2.41% |
-| Trades | 0 (0.0/dag) |
-| Gerealiseerd / kosten | $+0.00 / $0.00 |
-| Heen-en-weer trades (churn) | 0 (0%) |
-| Dagen met risicostop | geen |
+| Vermogen | $57.26 → $53.19 (-7.10%) |
+| BTC vasthouden (benchmark) | +1.04% |
+| Grootste daling (drawdown) | 8.23% |
+| Trades | 12 (12.0/dag) |
+| Gerealiseerd / kosten | $+1.24 / $0.07 |
+| Heen-en-weer trades (churn) | 2 (17%) |
+| Dagen met risicostop | 2026-11-23 |
+
+**Slechtste munten:** ZEC $-1.39, HYPE $-0.10, DYDX $-0.05
+**Beste munten:** USELESS $+1.38, LIT $+0.63, PURR $+0.50
 
 ## Sinds de start
 
 | Meting | Waarde |
 |---|---|
-| Periode | 257.7 uur |
-| Vermogen | $49.99 → $56.87 (+13.75%) |
-| BTC vasthouden (benchmark) | -15.19% |
-| Grootste daling (drawdown) | 8.79% |
-| Trades | 16 (1.5/dag) |
-| Gerealiseerd / kosten | $+2.47 / $0.08 |
-| Heen-en-weer trades (churn) | 0 (0%) |
-| Dagen met risicostop | 2026-11-19 |
+| Periode | 276.9 uur |
+| Vermogen | $49.99 → $53.19 (+6.40%) |
+| BTC vasthouden (benchmark) | -15.47% |
+| Grootste daling (drawdown) | 14.34% |
+| Trades | 28 (2.4/dag) |
+| Gerealiseerd / kosten | $+3.71 / $0.15 |
+| Heen-en-weer trades (churn) | 2 (7%) |
+| Dagen met risicostop | 2026-11-19, 2026-11-23 |
 
 **Per trader (schaduwboek: wat als je alleen deze trader kopieerde)**
 
@@ -44,8 +47,8 @@
 | `0x7dacca32…` | 19 | -0.66% | +85.12% | 1 |
 | `0x972d5217…` | 19 | +0.00% | +0.00% | 0 |
 
-**Slechtste munten:** LIT $-0.47, BTC $-0.43, ZEC $-0.01
-**Beste munten:** USELESS $+2.11, PURR $+1.06, HYPE $+0.13
+**Slechtste munten:** ZEC $-1.40, BTC $-0.22, DYDX $-0.05
+**Beste munten:** USELESS $+3.49, PURR $+1.55, LIT $+0.16
 
 ---
 

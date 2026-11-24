@@ -1,7 +1,9 @@
 {
-  "risk": {},
-  "reviews": 13,
-  "last_review": "2026-11-23T06:10:01.599649+00:00",
+  "risk": {
+    "min_trade_usd": 15.0
+  },
+  "reviews": 14,
+  "last_review": "2026-11-24T05:38:13.037619+00:00",
   "review_log": [
     {
       "time": "2026-11-11T12:49:21.716196+00:00",
@@ -93,6 +95,22 @@
       "mistakes": [],
       "observations": [],
       "decision": "niets veranderen"
+    },
+    {
+      "time": "2026-11-24T05:38:13.037619+00:00",
+      "n": 14,
+      "mistakes": [
+        "Kosten slokken 70% van het resultaat op."
+      ],
+      "observations": [],
+      "decision": "Minimale trade-grootte verhoogd: $10.0 \u2192 $15.0 (minder kleine aanpassingen)."
+    }
+  ],
+  "last_change": "2026-11-24T05:38:13.037619+00:00",
+  "history": [
+    {
+      "time": "2026-11-24T05:38:13.037619+00:00",
+      "change": "Minimale trade-grootte verhoogd: $10.0 \u2192 $15.0 (minder kleine aanpassingen)."
     }
   ]
 }
