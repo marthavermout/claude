@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 133.60550062060045,
-    "fees_paid": 10.290880581157085,
+    "realized_pnl": 133.88657623660046,
+    "fees_paid": 10.325742257098085,
     "funding_paid": 1.6009103706448933,
     "positions": {
       "ADA": {
@@ -34,7 +34,7 @@
         "entry": 0.0025324934
       },
       "SOL": {
-        "size": -4.61,
+        "size": -3.53,
         "entry": 71.9920987
       },
       "SOPH": {
@@ -268,7 +268,7 @@
     "0xa1d4fc32f21d9d77a4c20a6ac4b748815912c07c": {
       "starting_balance": 1000.0,
       "realized_pnl": 143.73689527221526,
-      "fees_paid": 5.0807552967206995,
+      "fees_paid": 5.090952604051259,
       "funding_paid": 0.7430479737155568,
       "positions": {
         "WLFI": {
@@ -284,8 +284,8 @@
           "entry": 2.5893707974687237
         },
         "SUI": {
-          "size": -730.5,
-          "entry": 0.6988599754138697
+          "size": -764.1,
+          "entry": 0.6977854927321447
         },
         "ADA": {
           "size": -3442.0,
