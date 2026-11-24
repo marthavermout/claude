@@ -3,7 +3,7 @@
     "starting_balance": 50.0,
     "realized_pnl": 3.269129652900006,
     "fees_paid": 0.31450307089302,
-    "funding_paid": 0.015071446885392109,
+    "funding_paid": 0.014566796385392109,
     "positions": {
       "WLFI": {
         "size": -231.0,
@@ -167,7 +167,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.004616053276050001,
-      "funding_paid": -0.01026852861491161,
+      "funding_paid": -0.010160045239911611,
       "positions": {
         "ETH": {
           "size": 0.0051,
@@ -179,7 +179,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.0101918651778,
-      "funding_paid": -0.016636500132149394,
+      "funding_paid": -0.016634622132149394,
       "positions": {
         "ETH": {
           "size": 0.005,
@@ -209,7 +209,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.0056234205909000004,
-      "funding_paid": 0.008409406400423,
+      "funding_paid": 0.008295509400423,
       "positions": {
         "PUMP": {
           "size": -3710.0,
@@ -221,7 +221,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.0056243565963899995,
-      "funding_paid": 0.03243068303534221,
+      "funding_paid": 0.03255018406034221,
       "positions": {
         "ETHFI": {
           "size": 20.3,
@@ -240,7 +240,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.005537568764700001,
-      "funding_paid": -0.010677840475642702,
+      "funding_paid": -0.010810695475642701,
       "positions": {
         "HYPE": {
           "size": -0.17,
@@ -266,7 +266,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.011372685776099999,
-      "funding_paid": -0.0192697235385848,
+      "funding_paid": -0.0192964965385848,
       "positions": {
         "PUMP": {
           "size": 3710.0,
@@ -303,7 +303,7 @@
       "starting_balance": 50.0,
       "realized_pnl": 0.0,
       "fees_paid": 0.005682030678900001,
-      "funding_paid": 0.011176835213161809,
+      "funding_paid": 0.01131750521316181,
       "positions": {
         "HYPE": {
           "size": 0.18,
@@ -330,7 +330,7 @@
     "0x03136324349c003f3498130f56f4526bf5720ab1": "2026-11-12T12:28:05.516665+00:00"
   },
   "meta": {
-    "funding_hour": 498756
+    "funding_hour": 498757
   },
   "pattern_trades": {},
   "pattern_scanned": {},
