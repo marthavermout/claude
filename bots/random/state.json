@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": -117.72711138954321,
-    "fees_paid": 8.08033501050625,
+    "fees_paid": 8.1151149703573,
     "funding_paid": -1.8246868035840431,
     "positions": {
       "BTC": {
@@ -56,6 +56,14 @@
       "ETHFI": {
         "size": -45.7,
         "entry": 0.49270144
+      },
+      "GRASS": {
+        "size": 60.5,
+        "entry": 0.372964578
+      },
+      "BNB": {
+        "size": 0.1,
+        "entry": 547.244427
       }
     }
   },
@@ -258,13 +266,21 @@
     },
     "0xd738f8f8f68511eb644a31d8b23d0b20baa4854b": {
       "starting_balance": 1000.0,
-      "realized_pnl": -22.996407538999954,
-      "fees_paid": 5.377437875390849,
+      "realized_pnl": -24.593612914999948,
+      "fees_paid": 5.625948715420949,
       "funding_paid": 0.22761036684925148,
       "positions": {
         "ETH": {
-          "size": 0.14,
+          "size": 0.0986,
           "entry": 1718.89371
+        },
+        "BTC": {
+          "size": 0.00403,
+          "entry": 59887.4751
+        },
+        "BNB": {
+          "size": 0.441,
+          "entry": 547.244427
         }
       }
     },
@@ -290,8 +306,8 @@
     },
     "0x18a794ea0363e75ab119d0392f172edc19625df3": {
       "starting_balance": 1000.0,
-      "realized_pnl": 9.167750962926668,
-      "fees_paid": 1.475005855356181,
+      "realized_pnl": 11.09992082463556,
+      "fees_paid": 1.485246411057781,
       "funding_paid": -2.8490547268495345,
       "positions": {
         "ADA": {
@@ -347,7 +363,7 @@
           "entry": 0.9132941037777778
         },
         "UNI": {
-          "size": -32.3,
+          "size": -27.5,
           "entry": 5.14353339785602
         },
         "ETHFI": {
