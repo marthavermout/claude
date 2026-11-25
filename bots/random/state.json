@@ -157,7 +157,6 @@
       "BCH": -1,
       "APT": -1,
       "WLD": -1,
-      "RUNE": -1,
       "TIA": -1,
       "PENDLE": -1,
       "ORDI": -1,
@@ -417,7 +416,7 @@
     "0x3ca146d2692f61746a28fa926dc9d18086ce37c6": {
       "starting_balance": 1000.0,
       "realized_pnl": -0.23907686600000036,
-      "fees_paid": 0.61938476575002,
+      "fees_paid": 0.64037727030924,
       "funding_paid": -0.12378475254043723,
       "positions": {
         "ADA": {
@@ -499,6 +498,10 @@
         "PUMP": {
           "size": -65782.0,
           "entry": 0.0025504898
+        },
+        "RUNE": {
+          "size": -84.9,
+          "entry": 0.549470084
         }
       }
     }
