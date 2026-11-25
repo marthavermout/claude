@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 249.17759419022752,
-    "fees_paid": 20.53513158071496,
+    "fees_paid": 20.55027660005517,
     "funding_paid": 0.33724378433939156,
     "positions": {
       "FARTCOIN": {
@@ -70,8 +70,8 @@
         "entry": 0.011772353999999999
       },
       "SUI": {
-        "size": -155.3,
-        "entry": 0.6953339109869013
+        "size": -207.4,
+        "entry": 0.6829361374641552
       },
       "ADA": {
         "size": -939.0,
