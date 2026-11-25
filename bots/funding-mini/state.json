@@ -17,11 +17,18 @@
   "shadows": {},
   "shadow_started": {},
   "meta": {
-    "funding_hour": 498788
+    "funding_hour": 498789
   },
   "pattern_trades": {},
   "pattern_scanned": {},
   "quant_sizes": {},
-  "funding_pos": {},
-  "quant_hour": 498788
+  "funding_pos": {
+    "ENA": {
+      "side": -1,
+      "entry": 0.100445,
+      "notional": 9.987987283242342,
+      "size": -99.43737650696741
+    }
+  },
+  "quant_hour": 498789
 }
