@@ -229,12 +229,12 @@
     },
     "0xe00f0d90bc976c311a7f22cbb728d8629ccd5394": {
       "starting_balance": 1000.0,
-      "realized_pnl": -14.63185120157294,
-      "fees_paid": 9.505642455855902,
+      "realized_pnl": -13.782822045498772,
+      "fees_paid": 9.515968790175902,
       "funding_paid": 0.12358620633189059,
       "positions": {
         "HYPE": {
-          "size": 3.6,
+          "size": 3.22,
           "entry": 58.15363274717324
         },
         "PUMP": {

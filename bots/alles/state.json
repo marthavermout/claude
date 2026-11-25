@@ -158,12 +158,12 @@
     },
     "0x5a19bfe9c095c3bd188eca00a690b95200797aba": {
       "starting_balance": 1000.0,
-      "realized_pnl": 140.45754824705327,
-      "fees_paid": 2.2299523013924096,
+      "realized_pnl": 141.60557375150523,
+      "fees_paid": 2.2367167953706795,
       "funding_paid": -3.9183881885884166,
       "positions": {
         "PURR": {
-          "size": -4835.0,
+          "size": -4618.0,
           "entry": 0.07456329191268185
         },
         "USELESS": {
@@ -210,8 +210,8 @@
     },
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
-      "realized_pnl": 310.77525416474276,
-      "fees_paid": 3.913111224082891,
+      "realized_pnl": 311.462177328562,
+      "fees_paid": 3.9205819250243112,
       "funding_paid": -1.0248270452544768,
       "positions": {
         "BTC": {
@@ -239,7 +239,7 @@
           "entry": 2.5054257499770083
         },
         "PUMP": {
-          "size": -137981.0,
+          "size": -131307.0,
           "entry": 0.0025904226567904204
         },
         "SOL": {
