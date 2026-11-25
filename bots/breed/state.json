@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 251.82788639972205,
-    "fees_paid": 20.56199146155897,
+    "fees_paid": 20.574295661906973,
     "funding_paid": 0.41969594707580105,
     "positions": {
       "FARTCOIN": {
@@ -84,13 +84,17 @@
       "JTO": {
         "size": -222.0,
         "entry": 0.23568837091441444
+      },
+      "ZEC": {
+        "size": 0.04,
+        "entry": 683.566686
       }
     }
   },
   "risk": {
     "day": "2026-11-25",
     "day_start_equity": 1290.4799908568066,
-    "peak_equity": 1352.66377681165,
+    "peak_equity": 1354.1331154029654,
     "killed": false,
     "kill_reason": ""
   },
@@ -216,7 +220,7 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
       "realized_pnl": -10.840855053800073,
-      "fees_paid": 5.400169359302248,
+      "fees_paid": 5.418625659824248,
       "funding_paid": 0.1564867720419862,
       "positions": {
         "MON": {
@@ -224,8 +228,8 @@
           "entry": 0.010856926646771724
         },
         "ZEC": {
-          "size": 0.22,
-          "entry": 710.1279062727274
+          "size": 0.28,
+          "entry": 704.4362162142858
         },
         "XPL": {
           "size": -1836.0,
@@ -572,12 +576,12 @@
     "0xdbbb9b4e361e1e1b6b4c640914ed4e4a11896df9": {
       "starting_balance": 1000.0,
       "realized_pnl": -20.322799690458574,
-      "fees_paid": 2.3018108488454696,
+      "fees_paid": 2.3120159774114697,
       "funding_paid": -0.9648761498506073,
       "positions": {
         "HYPE": {
-          "size": -4.02,
-          "entry": 62.34510624926178
+          "size": -4.42,
+          "entry": 61.83379877874036
         },
         "ENA": {
           "size": 2159.0,
@@ -638,7 +642,7 @@
     "0xa1d4fc32f21d9d77a4c20a6ac4b748815912c07c": {
       "starting_balance": 1000.0,
       "realized_pnl": 89.82834562411361,
-      "fees_paid": 2.943150259889521,
+      "fees_paid": 2.9533817396842212,
       "funding_paid": 0.7000302867155385,
       "positions": {
         "WLFI": {
@@ -658,8 +662,8 @@
           "entry": 0.6895012407530723
         },
         "ADA": {
-          "size": -2222.0,
-          "entry": 0.15123903957065704
+          "size": -2388.0,
+          "entry": 0.15024697139530985
         },
         "SOL": {
           "size": -4.64,

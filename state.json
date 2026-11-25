@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 129.39654704945752,
-    "fees_paid": 18.8256594704409,
+    "realized_pnl": 144.06247504945748,
+    "fees_paid": 19.04343428999556,
     "funding_paid": -0.3822460333524526,
     "positions": {
       "LIT": {
@@ -38,19 +38,19 @@
         "entry": 7.347106400181818
       },
       "ZEC": {
-        "size": -0.4,
-        "entry": 731.2787149999999
+        "size": 0.030000000000000027,
+        "entry": 694.6138950000001
       },
       "BIGTIME": {
-        "size": 17188.0,
-        "entry": 0.006340846633453572
+        "size": 46012.0,
+        "entry": 0.0063949956650569415
       }
     }
   },
   "risk": {
     "day": "2026-11-25",
     "day_start_equity": 1150.4719320395873,
-    "peak_equity": 1185.570146026075,
+    "peak_equity": 1189.6269934701572,
     "killed": false,
     "kill_reason": ""
   },
@@ -167,14 +167,10 @@
     },
     "0x329c787b163a730bd7900df2beb3ff4fe4670375": {
       "starting_balance": 1000.0,
-      "realized_pnl": -11.684381518999858,
-      "fees_paid": 10.859129413097397,
+      "realized_pnl": 0.41500908100009326,
+      "fees_paid": 10.962279576504898,
       "funding_paid": -7.690574935049559,
       "positions": {
-        "ZEC": {
-          "size": -0.33,
-          "entry": 731.2787149999999
-        },
         "BIGTIME": {
           "size": 39310.0,
           "entry": 0.006237413730373951
