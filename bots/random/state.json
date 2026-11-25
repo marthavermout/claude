@@ -161,7 +161,6 @@
       "ENA": -1,
       "SAGA": -1,
       "kNEIRO": -1,
-      "MOODENG": 1,
       "PNUT": -1,
       "PENGU": -1,
       "TRUMP": -1,
@@ -402,7 +401,7 @@
     "0x3ca146d2692f61746a28fa926dc9d18086ce37c6": {
       "starting_balance": 1000.0,
       "realized_pnl": 0.0,
-      "fees_paid": 0.49122688563197997,
+      "fees_paid": 0.5030003614563,
       "funding_paid": -0.0225126882271865,
       "positions": {
         "ADA": {
@@ -468,6 +467,10 @@
         "kSHIB": {
           "size": 17417.0,
           "entry": 0.0034716942
+        },
+        "MOODENG": {
+          "size": 992.0,
+          "entry": 0.0263742738
         }
       }
     }
