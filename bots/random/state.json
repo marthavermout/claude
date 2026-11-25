@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": -127.51067084631183,
-    "fees_paid": 8.570821766048375,
+    "realized_pnl": -126.62938902137755,
+    "fees_paid": 8.581025925058325,
     "funding_paid": -1.7558874726761395,
     "positions": {
       "BTC": {
@@ -30,7 +30,7 @@
         "entry": 1.1539020611229949
       },
       "HYPE": {
-        "size": 2.42,
+        "size": 2.05,
         "entry": 58.904397529907364
       },
       "WLFI": {
@@ -229,24 +229,16 @@
     },
     "0xe00f0d90bc976c311a7f22cbb728d8629ccd5394": {
       "starting_balance": 1000.0,
-      "realized_pnl": -7.117173907633488,
-      "fees_paid": 9.720589076066702,
+      "realized_pnl": 5.871979916931489,
+      "fees_paid": 9.927139060606143,
       "funding_paid": 0.1362625155966451,
       "positions": {
         "HYPE": {
-          "size": 2.99,
+          "size": 1.44,
           "entry": 58.747556714257854
         },
-        "ZEC": {
-          "size": 0.11,
-          "entry": 694.3799332211779
-        },
-        "BTC": {
-          "size": 0.00416,
-          "entry": 59626.05151240523
-        },
         "USELESS": {
-          "size": 818.0,
+          "size": 359.0,
           "entry": 0.0665052984
         }
       }
