@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 50.0,
     "realized_pnl": 2.9978566628000083,
-    "fees_paid": 0.14714849305494,
+    "fees_paid": 0.15164911285091998,
     "funding_paid": 0.02428331507245889,
     "positions": {
       "HYPE": {
@@ -24,6 +24,10 @@
       "SUI": {
         "size": -16.2,
         "entry": 0.6252649220000001
+      },
+      "WLFI": {
+        "size": -238.0,
+        "entry": 0.0420225938
       }
     }
   },
