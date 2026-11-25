@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": -119.48351019289133,
-    "fees_paid": 8.348674770973629,
+    "fees_paid": 8.359067335570929,
     "funding_paid": -1.7945116214782613,
     "positions": {
       "BTC": {
@@ -30,8 +30,8 @@
         "entry": 1.1539020611229949
       },
       "HYPE": {
-        "size": 3.37,
-        "entry": 59.441440810236706
+        "size": 3.78,
+        "entry": 59.103768128174
       },
       "WLFI": {
         "size": 344.0,
