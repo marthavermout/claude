@@ -7,7 +7,7 @@
     "positions": {}
   },
   "risk": {
-    "day": "2026-11-24",
+    "day": "2026-11-25",
     "day_start_equity": 50.0,
     "peak_equity": 50.0,
     "killed": false,
@@ -17,7 +17,7 @@
   "shadows": {},
   "shadow_started": {},
   "meta": {
-    "funding_hour": 498767
+    "funding_hour": 498768
   },
   "pattern_trades": {},
   "pattern_scanned": {},
@@ -39,5 +39,5 @@
     "WLD": -5.50122838087066
   },
   "funding_pos": {},
-  "quant_hour": 498767
+  "quant_hour": 498768
 }
