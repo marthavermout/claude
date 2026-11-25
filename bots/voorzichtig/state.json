@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 112.5876140023774,
-    "fees_paid": 2.47087202975154,
+    "fees_paid": 2.47718193147954,
     "funding_paid": 1.9822624072999904,
     "positions": {
       "PUMP": {
@@ -34,8 +34,8 @@
         "entry": 0.0111179683945157
       },
       "ZEC": {
-        "size": 0.02,
-        "entry": 722.259423
+        "size": 0.04,
+        "entry": 711.6798075
       },
       "XPL": {
         "size": -285.0,
@@ -46,7 +46,7 @@
   "risk": {
     "day": "2026-11-25",
     "day_start_equity": 1178.1894397088276,
-    "peak_equity": 1199.0530905585613,
+    "peak_equity": 1199.9365802584207,
     "killed": false,
     "kill_reason": ""
   },
@@ -116,7 +116,7 @@
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
       "realized_pnl": 7.666841173432571,
-      "fees_paid": 3.986176994521651,
+      "fees_paid": 4.008275333305651,
       "funding_paid": 0.07729236047586666,
       "positions": {
         "MON": {
@@ -124,8 +124,8 @@
           "entry": 0.010935616196299156
         },
         "ZEC": {
-          "size": 0.13,
-          "entry": 720.9576242307693
+          "size": 0.2,
+          "entry": 714.15955335
         },
         "XPL": {
           "size": -2172.0,
