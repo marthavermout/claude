@@ -115,8 +115,8 @@
   "shadows": {
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
-      "realized_pnl": 3.457036030432583,
-      "fees_paid": 3.9213233036271014,
+      "realized_pnl": 7.666841173432571,
+      "fees_paid": 3.986176994521651,
       "funding_paid": 0.04612021926860306,
       "positions": {
         "MON": {
@@ -130,10 +130,6 @@
         "XPL": {
           "size": -2172.0,
           "entry": 0.04511336226298343
-        },
-        "HYPE": {
-          "size": -2.43,
-          "entry": 61.040789399999994
         }
       }
     },
