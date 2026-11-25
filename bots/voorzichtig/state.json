@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 111.82576713688964,
-    "fees_paid": 2.46186621052569,
+    "fees_paid": 2.46637112111334,
     "funding_paid": 1.9928826127057546,
     "positions": {
       "PUMP": {
@@ -26,8 +26,8 @@
         "entry": 7.107824869624796
       },
       "HYPE": {
-        "size": -2.85,
-        "entry": 64.27312350561402
+        "size": -3.02,
+        "entry": 63.96997165827813
       },
       "MON": {
         "size": 2261.0,
