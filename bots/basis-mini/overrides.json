@@ -2,8 +2,8 @@
   "risk": {
     "min_trade_usd": 10.0
   },
-  "reviews": 13,
-  "last_review": "2026-11-24T05:38:11.376212+00:00",
+  "reviews": 14,
+  "last_review": "2026-11-25T05:15:04.364540+00:00",
   "review_log": [
     {
       "time": "2026-11-12T12:27:59.460315+00:00",
@@ -111,6 +111,15 @@
       "n": 13,
       "mistakes": [
         "33% van de trades draait binnen een uur de vorige om (churn)."
+      ],
+      "observations": [],
+      "decision": "niets veranderen"
+    },
+    {
+      "time": "2026-11-25T05:15:04.364540+00:00",
+      "n": 14,
+      "mistakes": [
+        "31% van de trades draait binnen een uur de vorige om (churn)."
       ],
       "observations": [],
       "decision": "niets veranderen"

@@ -2,8 +2,8 @@
   "risk": {
     "max_leverage": 1.5
   },
-  "reviews": 13,
-  "last_review": "2026-11-24T05:38:13.984673+00:00",
+  "reviews": 14,
+  "last_review": "2026-11-25T05:15:06.799761+00:00",
   "review_log": [
     {
       "time": "2026-11-12T12:28:00.593224+00:00",
@@ -96,6 +96,13 @@
     {
       "time": "2026-11-24T05:38:13.984673+00:00",
       "n": 13,
+      "mistakes": [],
+      "observations": [],
+      "decision": "niets veranderen"
+    },
+    {
+      "time": "2026-11-25T05:15:06.799761+00:00",
+      "n": 14,
       "mistakes": [],
       "observations": [],
       "decision": "niets veranderen"
