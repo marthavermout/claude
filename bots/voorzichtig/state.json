@@ -46,7 +46,7 @@
   "risk": {
     "day": "2026-11-25",
     "day_start_equity": 1178.1894397088276,
-    "peak_equity": 1212.3021582256174,
+    "peak_equity": 1213.2556152256175,
     "killed": false,
     "kill_reason": ""
   },
@@ -115,8 +115,8 @@
   "shadows": {
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
-      "realized_pnl": 6.5474048858708995,
-      "fees_paid": 4.080743069748121,
+      "realized_pnl": 6.810170301870899,
+      "fees_paid": 4.137338584880821,
       "funding_paid": 0.06498422366455466,
       "positions": {
         "MON": {
@@ -130,10 +130,6 @@
         "XPL": {
           "size": -1945.0,
           "entry": 0.04511336226298343
-        },
-        "HYPE": {
-          "size": 2.22,
-          "entry": 56.5338045
         }
       }
     },
@@ -177,12 +173,12 @@
     },
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
-      "realized_pnl": 41.47382765589161,
-      "fees_paid": 0.6188507540109001,
+      "realized_pnl": 43.22704201334134,
+      "fees_paid": 0.62342665025715,
       "funding_paid": 0.5485059214357826,
       "positions": {
         "ETH": {
-          "size": -0.1037,
+          "size": -0.0974,
           "entry": 1892.3607432459887
         },
         "PUMP": {
