@@ -9,11 +9,11 @@
     "0x802dc9bd0e048c4b47d943f7ad61d98d9b7361b0",
     "0xde5a8068836a16f92813104d7faf602bb0cbdf62",
     "0xd738f8f8f68511eb644a31d8b23d0b20baa4854b",
-    "0xd57c9295947b5a616a3933344ef03a1ad67318ea",
-    "0x18a794ea0363e75ab119d0392f172edc19625df3"
+    "0x18a794ea0363e75ab119d0392f172edc19625df3",
+    "0x3ca146d2692f61746a28fa926dc9d18086ce37c6"
   ],
-  "reviews": 15,
-  "last_review": "2026-11-24T10:00:50.843516+00:00",
+  "reviews": 16,
+  "last_review": "2026-11-25T09:37:46.072529+00:00",
   "review_log": [
     {
       "time": "2026-11-10T18:14:30.643317+00:00",
@@ -234,9 +234,21 @@
         "`0xd10e2b1b\u2026`: nog te weinig data om te beoordelen (328u, 3 gesloten trades)"
       ],
       "decision": "niets veranderen"
+    },
+    {
+      "time": "2026-11-25T09:37:46.072529+00:00",
+      "n": 16,
+      "mistakes": [
+        "Trader `0xd57c9295\u2026` kopi\u00ebren leverde -8.54% op (grens -8%)."
+      ],
+      "observations": [
+        "`0xde5a8068\u2026` zelf +265.56%, onze kopie -6.54%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo).",
+        "`0xd10e2b1b\u2026`: nog te weinig data om te beoordelen (351u, 4 gesloten trades)"
+      ],
+      "decision": "Trader `0xd57c9295\u2026` vervangen door `0x3ca146d2\u2026`."
     }
   ],
-  "last_change": "2026-11-22T11:02:38.256901+00:00",
+  "last_change": "2026-11-25T09:37:46.072529+00:00",
   "history": [
     {
       "time": "2026-11-10T18:14:30.643317+00:00",
@@ -257,10 +269,15 @@
     {
       "time": "2026-11-22T11:02:38.256901+00:00",
       "change": "Minimale trade-grootte verhoogd: $15.0 \u2192 $22.5 (minder kleine aanpassingen)."
+    },
+    {
+      "time": "2026-11-25T09:37:46.072529+00:00",
+      "change": "Trader `0xd57c9295\u2026` vervangen door `0x3ca146d2\u2026`."
     }
   ],
   "blacklist": [
     "0x5740affc8faf8913f9f2d5fbb9bdc6e8119ea9da",
-    "0x78c305976508a97adb6775044d962e56af617a7c"
+    "0x78c305976508a97adb6775044d962e56af617a7c",
+    "0xd57c9295947b5a616a3933344ef03a1ad67318ea"
   ]
 }
