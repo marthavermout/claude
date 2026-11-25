@@ -227,8 +227,8 @@
     },
     "0xe00f0d90bc976c311a7f22cbb728d8629ccd5394": {
       "starting_balance": 1000.0,
-      "realized_pnl": -16.494682448907312,
-      "fees_paid": 9.340397864805693,
+      "realized_pnl": -15.534827937754429,
+      "fees_paid": 9.353328638133693,
       "funding_paid": 0.11596173310689059,
       "positions": {
         "HYPE": {
@@ -240,7 +240,7 @@
           "entry": 0.002436351191842973
         },
         "ZEC": {
-          "size": 0.21,
+          "size": 0.17,
           "entry": 694.3799332211779
         },
         "BTC": {
@@ -277,8 +277,8 @@
     },
     "0xde5a8068836a16f92813104d7faf602bb0cbdf62": {
       "starting_balance": 1000.0,
-      "realized_pnl": 53.77501805964633,
-      "fees_paid": 0.9614967991426799,
+      "realized_pnl": 52.51519100324633,
+      "fees_paid": 0.97168383277839,
       "funding_paid": -4.055934400993424,
       "positions": {
         "ETH": {
@@ -298,7 +298,7 @@
           "entry": 0.182826558
         },
         "GRASS": {
-          "size": 550.6,
+          "size": 489.3,
           "entry": 0.389847954
         },
         "VVV": {
