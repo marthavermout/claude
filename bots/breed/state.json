@@ -90,7 +90,7 @@
   "risk": {
     "day": "2026-11-25",
     "day_start_equity": 1290.4799908568066,
-    "peak_equity": 1321.7113189670956,
+    "peak_equity": 1323.1803024810197,
     "killed": false,
     "kill_reason": ""
   },
@@ -677,7 +677,7 @@
     "0xb3e475368ed0fa0ad23c04de0423d48a0758806f": {
       "starting_balance": 1000.0,
       "realized_pnl": -4.711112812466948,
-      "fees_paid": 0.4017516060214801,
+      "fees_paid": 0.4123889925733801,
       "funding_paid": 0.0323365536015232,
       "positions": {
         "MNT": {
@@ -685,8 +685,8 @@
           "entry": 0.3982455293473424
         },
         "SOPH": {
-          "size": 192451.0,
-          "entry": 0.0009176924763176771
+          "size": 220093.0,
+          "entry": 0.0009098402563544197
         },
         "USUAL": {
           "size": 9372.5,

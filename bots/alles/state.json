@@ -159,12 +159,12 @@
     "0x5a19bfe9c095c3bd188eca00a690b95200797aba": {
       "starting_balance": 1000.0,
       "realized_pnl": 113.07266346242137,
-      "fees_paid": 2.10626683990236,
+      "fees_paid": 2.11336401493341,
       "funding_paid": -3.841687304013499,
       "positions": {
         "PURR": {
-          "size": -4807.0,
-          "entry": 0.07599202540217334
+          "size": -5048.0,
+          "entry": 0.0754883451222756
         },
         "USELESS": {
           "size": -4994.0,
