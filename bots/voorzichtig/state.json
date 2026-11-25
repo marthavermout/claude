@@ -198,12 +198,12 @@
     "0xd10e2b1b66001bd4086d61e43e836ab9c168fd9a": {
       "starting_balance": 1000.0,
       "realized_pnl": -9.430284373999989,
-      "fees_paid": 0.33213778401870003,
+      "fees_paid": 0.33728183000370004,
       "funding_paid": 0.011778996983065223,
       "positions": {
         "LIT": {
-          "size": -61.0,
-          "entry": 2.439512
+          "size": -66.0,
+          "entry": 2.4279006863636363
         }
       }
     },
