@@ -210,8 +210,8 @@
     },
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
-      "realized_pnl": 311.462177328562,
-      "fees_paid": 3.9205819250243112,
+      "realized_pnl": 312.2678617884011,
+      "fees_paid": 3.9281114581298113,
       "funding_paid": -1.0371202898709118,
       "positions": {
         "BTC": {
@@ -235,7 +235,7 @@
           "entry": 0.251474695
         },
         "LIT": {
-          "size": -142.0,
+          "size": -135.0,
           "entry": 2.5054257499770083
         },
         "PUMP": {
@@ -273,12 +273,12 @@
     },
     "0x7dacca323e44f168494c779bb5e7483c468ef410": {
       "starting_balance": 1000.0,
-      "realized_pnl": 11.604478748999998,
-      "fees_paid": 0.48991088167424995,
+      "realized_pnl": 12.310942942468468,
+      "fees_paid": 0.49677908629049994,
       "funding_paid": -0.32509884294734803,
       "positions": {
         "HYPE": {
-          "size": -4.44,
+          "size": -4.19,
           "entry": 63.87656447387388
         }
       }

@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 269.2579210070972,
-    "fees_paid": 21.795354150122687,
+    "realized_pnl": 271.80375060762,
+    "fees_paid": 21.856882274536936,
     "funding_paid": 0.44660096497733237,
     "positions": {
       "FARTCOIN": {
@@ -54,7 +54,7 @@
         "entry": 0.04772246825628604
       },
       "SOL": {
-        "size": -2.43,
+        "size": -0.48,
         "entry": 71.42307434129374
       },
       "HYPE": {
@@ -242,8 +242,8 @@
     },
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
-      "realized_pnl": 62.65194772911866,
-      "fees_paid": 2.2942498027325366,
+      "realized_pnl": 65.28449645565327,
+      "fees_paid": 2.3050294582325366,
       "funding_paid": -3.140521896585557,
       "positions": {
         "ETH": {
@@ -255,7 +255,7 @@
           "entry": 1.2875690299695122
         },
         "LIT": {
-          "size": -133.0,
+          "size": -123.0,
           "entry": 2.658733872653461
         },
         "XMR": {
@@ -644,8 +644,8 @@
     },
     "0xa1d4fc32f21d9d77a4c20a6ac4b748815912c07c": {
       "starting_balance": 1000.0,
-      "realized_pnl": 105.5642770280626,
-      "fees_paid": 3.0776357413569615,
+      "realized_pnl": 106.5907501435683,
+      "fees_paid": 3.0878473076618413,
       "funding_paid": 0.790377290782364,
       "positions": {
         "WLFI": {
@@ -661,7 +661,7 @@
           "entry": 2.5437336637928474
         },
         "SUI": {
-          "size": -484.8,
+          "size": -450.4,
           "entry": 0.6895012407530723
         },
         "ADA": {

@@ -217,24 +217,24 @@
     },
     "0xfb47779fb0f59750fc714ba61a7859b059bbd3e6": {
       "starting_balance": 1000.0,
-      "realized_pnl": -17.442366417931552,
-      "fees_paid": 0.6831119108610001,
+      "realized_pnl": -10.579498751551949,
+      "fees_paid": 0.6940221518763001,
       "funding_paid": 1.8153372448136635,
       "positions": {
         "VVV": {
-          "size": 10.64,
+          "size": 9.75,
           "entry": 19.530463334404946
         }
       }
     },
     "0xe00f0d90bc976c311a7f22cbb728d8629ccd5394": {
       "starting_balance": 1000.0,
-      "realized_pnl": -12.108971992134109,
-      "fees_paid": 9.526096151798402,
+      "realized_pnl": -9.148343632869363,
+      "fees_paid": 9.669450488691602,
       "funding_paid": 0.1292732078466451,
       "positions": {
         "HYPE": {
-          "size": 3.22,
+          "size": 2.81,
           "entry": 58.15363274717324
         },
         "PUMP": {
@@ -247,7 +247,7 @@
         },
         "BTC": {
           "size": 0.00416,
-          "entry": 59077.29867403846
+          "entry": 59626.05151240523
         },
         "USELESS": {
           "size": 818.0,
@@ -423,7 +423,7 @@
     "0x3ca146d2692f61746a28fa926dc9d18086ce37c6": {
       "starting_balance": 1000.0,
       "realized_pnl": -0.23907686600000036,
-      "fees_paid": 0.53375784492906,
+      "fees_paid": 0.5438854217394,
       "funding_paid": -0.14555783751376322,
       "positions": {
         "ADA": {
@@ -497,6 +497,10 @@
         "NEAR": {
           "size": -10.8,
           "entry": 2.86317725
+        },
+        "SUI": {
+          "size": 34.1,
+          "entry": 0.659991972
         }
       }
     }
