@@ -1,6 +1,6 @@
 {
   "risk": {
-    "min_trade_usd": 15.0
+    "min_trade_usd": 22.5
   },
   "leaders": [
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b",
@@ -19,8 +19,8 @@
     "0x5461e3a694004602961722522e70f62beb05ae65",
     "0xb3e475368ed0fa0ad23c04de0423d48a0758806f"
   ],
-  "reviews": 15,
-  "last_review": "2026-11-24T08:15:52.760687+00:00",
+  "reviews": 16,
+  "last_review": "2026-11-25T07:52:28.968850+00:00",
   "review_log": [
     {
       "time": "2026-11-10T16:51:17.210917+00:00",
@@ -275,9 +275,24 @@
         "`0xa1d4fc32\u2026` zelf +120.58%, onze kopie +18.50%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo)."
       ],
       "decision": "Afkoelperiode: vorige wijziging was minder dan 48u geleden; eerst het effect daarvan meten."
+    },
+    {
+      "time": "2026-11-25T07:52:28.968850+00:00",
+      "n": 16,
+      "mistakes": [
+        "40% van de trades draait binnen een uur de vorige om (churn)."
+      ],
+      "observations": [
+        "`0xf83858e5\u2026` zelf +69.92%, onze kopie -1.91%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo).",
+        "`0xb3e47536\u2026`: nog te weinig data om te beoordelen (71u, 10 gesloten trades)",
+        "`0xd10e2b1b\u2026` zelf +15.96%, onze kopie -0.49%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo).",
+        "`0x972d5217\u2026`: nog te weinig data om te beoordelen (351u, 3 gesloten trades)",
+        "`0xa1d4fc32\u2026` zelf +107.58%, onze kopie +25.79%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo)."
+      ],
+      "decision": "Minimale trade-grootte verhoogd: $15.0 \u2192 $22.5 (minder kleine aanpassingen)."
     }
   ],
-  "last_change": "2026-11-22T09:17:38.477340+00:00",
+  "last_change": "2026-11-25T07:52:28.968850+00:00",
   "history": [
     {
       "time": "2026-11-10T16:51:17.210917+00:00",
@@ -298,6 +313,10 @@
     {
       "time": "2026-11-22T09:17:38.477340+00:00",
       "change": "Trader `0xd82cb57a\u2026` vervangen door `0xb3e47536\u2026`."
+    },
+    {
+      "time": "2026-11-25T07:52:28.968850+00:00",
+      "change": "Minimale trade-grootte verhoogd: $15.0 \u2192 $22.5 (minder kleine aanpassingen)."
     }
   ],
   "blacklist": [

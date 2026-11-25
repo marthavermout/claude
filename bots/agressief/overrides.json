@@ -1,6 +1,7 @@
 {
   "risk": {
-    "min_trade_usd": 22.5
+    "min_trade_usd": 22.5,
+    "max_leverage": 2.25
   },
   "leaders": [
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5",
@@ -12,8 +13,8 @@
     "0xa1d4fc32f21d9d77a4c20a6ac4b748815912c07c",
     "0xb3e475368ed0fa0ad23c04de0423d48a0758806f"
   ],
-  "reviews": 15,
-  "last_review": "2026-11-24T08:15:50.307628+00:00",
+  "reviews": 16,
+  "last_review": "2026-11-25T07:52:26.326921+00:00",
   "review_log": [
     {
       "time": "2026-11-10T16:50:40.565967+00:00",
@@ -216,9 +217,24 @@
         "`0xa1d4fc32\u2026` zelf +120.58%, onze kopie +30.19%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo)."
       ],
       "decision": "Afkoelperiode: vorige wijziging was minder dan 48u geleden; eerst het effect daarvan meten."
+    },
+    {
+      "time": "2026-11-25T07:52:26.326921+00:00",
+      "n": 16,
+      "mistakes": [
+        "28% van de trades draait binnen een uur de vorige om (churn).",
+        "2 dagen met dagverlies-stop in de afgelopen week."
+      ],
+      "observations": [
+        "`0xd10e2b1b\u2026` zelf +15.96%, onze kopie -1.19%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo).",
+        "`0xb3e47536\u2026`: nog te weinig data om te beoordelen (71u, 6 gesloten trades)",
+        "`0x972d5217\u2026`: nog te weinig data om te beoordelen (351u, 3 gesloten trades)",
+        "`0xa1d4fc32\u2026` zelf +107.58%, onze kopie +43.03%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo)."
+      ],
+      "decision": "Max hefboom verlaagd: 3.0x \u2192 2.25x."
     }
   ],
-  "last_change": "2026-11-22T09:17:20.696540+00:00",
+  "last_change": "2026-11-25T07:52:26.326921+00:00",
   "history": [
     {
       "time": "2026-11-10T16:50:40.565967+00:00",
@@ -239,6 +255,10 @@
     {
       "time": "2026-11-22T09:17:20.696540+00:00",
       "change": "Trader `0xf83858e5\u2026` vervangen door `0xb3e47536\u2026`."
+    },
+    {
+      "time": "2026-11-25T07:52:26.326921+00:00",
+      "change": "Max hefboom verlaagd: 3.0x \u2192 2.25x."
     }
   ],
   "blacklist": [
