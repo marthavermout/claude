@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 178.61062063959974,
-    "fees_paid": 7.701818100457318,
+    "realized_pnl": 178.72114936959974,
+    "fees_paid": 7.709984654941619,
     "funding_paid": -1.3601233217656492,
     "positions": {
       "ASTER": {
@@ -50,7 +50,7 @@
         "entry": 0.0767406488
       },
       "WLD": {
-        "size": -110.9,
+        "size": -34.400000000000006,
         "entry": 0.238672256
       },
       "XMR": {
@@ -86,12 +86,12 @@
   "shadows": {
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
-      "realized_pnl": 36.55187349660984,
-      "fees_paid": 6.2959845234785385,
+      "realized_pnl": 40.92417645916935,
+      "fees_paid": 6.437395014372808,
       "funding_paid": 0.01260356918806758,
       "positions": {
         "MON": {
-          "size": 9826.0,
+          "size": 5394.0,
           "entry": 0.010857100348158956
         },
         "ZEC": {
@@ -101,13 +101,17 @@
         "XPL": {
           "size": -1926.0,
           "entry": 0.04515269974080997
+        },
+        "HYPE": {
+          "size": -4.35,
+          "entry": 60.17346289999999
         }
       }
     },
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
-      "realized_pnl": 187.90278663389347,
-      "fees_paid": 5.878745880843152,
+      "realized_pnl": 202.2239080173154,
+      "fees_paid": 5.915304073819712,
       "funding_paid": -1.3487244765918647,
       "positions": {
         "ASTER": {
@@ -138,10 +142,6 @@
           "size": -0.897,
           "entry": 184.34843719790393
         },
-        "WLD": {
-          "size": -342.4,
-          "entry": 0.27909331255905945
-        },
         "XMR": {
           "size": -0.171,
           "entry": 511.7762481552775
@@ -159,12 +159,12 @@
     "0x5a19bfe9c095c3bd188eca00a690b95200797aba": {
       "starting_balance": 1000.0,
       "realized_pnl": 136.2596666218968,
-      "fees_paid": 2.2161913671381295,
+      "fees_paid": 2.2230413224730095,
       "funding_paid": -3.9061011060384168,
       "positions": {
         "PURR": {
-          "size": -4609.0,
-          "entry": 0.07491677010879079
+          "size": -4835.0,
+          "entry": 0.07456329191268185
         },
         "USELESS": {
           "size": -4999.0,
