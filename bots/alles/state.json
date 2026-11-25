@@ -159,12 +159,12 @@
     "0x5a19bfe9c095c3bd188eca00a690b95200797aba": {
       "starting_balance": 1000.0,
       "realized_pnl": 104.60359939012834,
-      "fees_paid": 2.0461804103215795,
+      "fees_paid": 2.0531909700291595,
       "funding_paid": -3.8149593141101192,
       "positions": {
         "PURR": {
-          "size": -4843.0,
-          "entry": 0.07814866802158586
+          "size": -5085.0,
+          "entry": 0.0774932194298801
         },
         "USELESS": {
           "size": -4771.0,
@@ -210,8 +210,8 @@
     },
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
-      "realized_pnl": 287.42917311033926,
-      "fees_paid": 3.7025720620141516,
+      "realized_pnl": 288.6167819382365,
+      "fees_paid": 3.7093426902690316,
       "funding_paid": -0.9022742048133311,
       "positions": {
         "BTC": {
@@ -219,7 +219,7 @@
           "entry": 68756.24600000001
         },
         "DYDX": {
-          "size": -4929.6,
+          "size": -4716.8,
           "entry": 0.07628500655214855
         },
         "ETH": {
