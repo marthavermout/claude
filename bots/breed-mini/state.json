@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 50.0,
     "realized_pnl": 4.315323060900008,
-    "fees_paid": 0.34538415198146993,
+    "fees_paid": 0.3502236223937699,
     "funding_paid": 0.012676362835933607,
     "positions": {
       "WLFI": {
@@ -24,6 +24,10 @@
       "ADA": {
         "size": -70.0,
         "entry": 0.14336132199999999
+      },
+      "INJ": {
+        "size": -1.8,
+        "entry": 5.97465483
       }
     }
   },
