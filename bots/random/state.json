@@ -284,7 +284,7 @@
     "0xde5a8068836a16f92813104d7faf602bb0cbdf62": {
       "starting_balance": 1000.0,
       "realized_pnl": 52.51519100324633,
-      "fees_paid": 0.97168383277839,
+      "fees_paid": 0.9819552304471499,
       "funding_paid": -4.044962129912678,
       "positions": {
         "ETH": {
@@ -304,8 +304,8 @@
           "entry": 0.182826558
         },
         "GRASS": {
-          "size": 489.3,
-          "entry": 0.389847954
+          "size": 550.6,
+          "entry": 0.3879003487922267
         },
         "VVV": {
           "size": 3.99,

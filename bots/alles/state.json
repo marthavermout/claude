@@ -86,8 +86,8 @@
   "shadows": {
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b": {
       "starting_balance": 1000.0,
-      "realized_pnl": 40.92417645916935,
-      "fees_paid": 6.4673360759877285,
+      "realized_pnl": 38.774544789169305,
+      "fees_paid": 6.703623605535479,
       "funding_paid": 0.012197081738067581,
       "positions": {
         "MON": {
@@ -103,8 +103,8 @@
           "entry": 0.04515269974080997
         },
         "HYPE": {
-          "size": -4.35,
-          "entry": 60.17346289999999
+          "size": -4.3,
+          "entry": 60.7393497
         }
       }
     },
@@ -158,8 +158,8 @@
     },
     "0x5a19bfe9c095c3bd188eca00a690b95200797aba": {
       "starting_balance": 1000.0,
-      "realized_pnl": 136.2596666218968,
-      "fees_paid": 2.2230413224730095,
+      "realized_pnl": 140.45754824705327,
+      "fees_paid": 2.2299523013924096,
       "funding_paid": -3.9183881885884166,
       "positions": {
         "PURR": {
@@ -167,7 +167,7 @@
           "entry": 0.07456329191268185
         },
         "USELESS": {
-          "size": -4999.0,
+          "size": -4771.0,
           "entry": 0.08577023051384418
         },
         "ZEC": {
