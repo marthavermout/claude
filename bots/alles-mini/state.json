@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 50.0,
     "realized_pnl": 3.7834563901999982,
-    "fees_paid": 0.17093663402958004,
+    "fees_paid": 0.17691815598588004,
     "funding_paid": -0.08644308075625474,
     "positions": {
       "HYPE": {
@@ -24,6 +24,10 @@
       "PURR": {
         "size": -138.0,
         "entry": 0.0726564658
+      },
+      "BTC": {
+        "size": -0.00022,
+        "entry": 60419.4137
       }
     }
   },

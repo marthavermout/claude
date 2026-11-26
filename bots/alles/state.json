@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 181.9039972298432,
-    "fees_paid": 8.00090549067807,
+    "fees_paid": 8.11129175950797,
     "funding_paid": -1.7088084950417222,
     "positions": {
       "ASTER": {
@@ -74,8 +74,8 @@
         "entry": 0.009756951
       },
       "BTC": {
-        "size": -5.000000000000013e-05,
-        "entry": 60627.3721
+        "size": -0.004109999999999999,
+        "entry": 60421.943607542584
       }
     }
   },
@@ -214,8 +214,8 @@
     },
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
-      "realized_pnl": 314.6575862789787,
-      "fees_paid": 4.006758226817341,
+      "realized_pnl": 315.3454000875932,
+      "fees_paid": 4.013600940136351,
       "funding_paid": -1.3715410274942177,
       "positions": {
         "BTC": {
@@ -231,7 +231,7 @@
           "entry": 1872.788879932329
         },
         "FARTCOIN": {
-          "size": -4146.8,
+          "size": -3958.9,
           "entry": 0.0845867131794277
         },
         "JUP": {
@@ -267,9 +267,14 @@
     "0x972d521729c0d07b360ae470f03878fe405f0650": {
       "starting_balance": 1000.0,
       "realized_pnl": 10.510822457000005,
-      "fees_paid": 0.71284974726195,
+      "fees_paid": 0.82649866443165,
       "funding_paid": 0.2551248988459981,
-      "positions": {}
+      "positions": {
+        "BTC": {
+          "size": -0.00418,
+          "entry": 60419.4137
+        }
+      }
     },
     "0x7dacca323e44f168494c779bb5e7483c468ef410": {
       "starting_balance": 1000.0,
