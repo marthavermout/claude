@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 123.71439823128446,
-    "fees_paid": 2.5398513252816297,
+    "realized_pnl": 125.73826120128446,
+    "fees_paid": 2.55356701159563,
     "funding_paid": 1.8956228749617021,
     "positions": {
       "PUMP": {
@@ -34,7 +34,7 @@
         "entry": 0.01128057862028194
       },
       "ZEC": {
-        "size": 0.08,
+        "size": 0.04,
         "entry": 711.38599875
       },
       "XPL": {
