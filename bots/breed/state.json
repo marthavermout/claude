@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 272.38603174017186,
-    "fees_paid": 23.107360337316614,
+    "fees_paid": 23.118967164986714,
     "funding_paid": 0.26780378514032016,
     "positions": {
       "FARTCOIN": {
@@ -74,8 +74,8 @@
         "entry": 0.660425957273662
       },
       "ADA": {
-        "size": -522.0,
-        "entry": 0.14568156704374985
+        "size": -696.0,
+        "entry": 0.1463200120328124
       },
       "INJ": {
         "size": -23.5,
