@@ -218,8 +218,8 @@
     },
     "0x011820f60d75a2b870ffe64a4764873e14bc8ede": {
       "starting_balance": 1000.0,
-      "realized_pnl": 316.43416642588386,
-      "fees_paid": 4.028148437654071,
+      "realized_pnl": 316.75129345719614,
+      "fees_paid": 4.034902931082631,
       "funding_paid": -1.4313646767560935,
       "positions": {
         "BTC": {
@@ -235,7 +235,7 @@
           "entry": 1872.788879932329
         },
         "FARTCOIN": {
-          "size": -3958.9,
+          "size": -3777.7,
           "entry": 0.0845867131794277
         },
         "JUP": {
@@ -258,12 +258,12 @@
     },
     "0xd10e2b1b66001bd4086d61e43e836ab9c168fd9a": {
       "starting_balance": 1000.0,
-      "realized_pnl": -7.709074038447068,
-      "fees_paid": 0.9770990110747199,
+      "realized_pnl": -6.80916799402707,
+      "fees_paid": 0.9841042680959698,
       "funding_paid": -0.34959739745951374,
       "positions": {
         "HYPE": {
-          "size": -4.29,
+          "size": -4.04,
           "entry": 65.86857547768
         }
       }
