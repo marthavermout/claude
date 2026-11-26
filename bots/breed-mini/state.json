@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 50.0,
     "realized_pnl": 4.315323060900008,
-    "fees_paid": 0.3502236223937699,
+    "fees_paid": 0.3564985554061199,
     "funding_paid": 0.007206560216199204,
     "positions": {
       "WLFI": {
@@ -28,6 +28,10 @@
       "INJ": {
         "size": -1.8,
         "entry": 5.97465483
+      },
+      "BTC": {
+        "size": -0.00023,
+        "entry": 60627.3721
       }
     }
   },
