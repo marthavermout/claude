@@ -7,7 +7,7 @@
     "positions": {}
   },
   "risk": {
-    "day": "2026-11-25",
+    "day": "2026-11-26",
     "day_start_equity": 50.0,
     "peak_equity": 50.0,
     "killed": false,
@@ -17,7 +17,7 @@
   "shadows": {},
   "shadow_started": {},
   "meta": {
-    "funding_hour": 498791
+    "funding_hour": 498792
   },
   "pattern_trades": {},
   "pattern_scanned": {},
@@ -35,9 +35,9 @@
     "LTC": -0.04647511788339886,
     "ADA": -11.946730176079994,
     "AAVE": -0.012998439496310932,
-    "ENA": -13.487225664783418,
+    "ENA": -13.487225664783416,
     "WLD": -5.501228380870659
   },
   "funding_pos": {},
-  "quant_hour": 498791
+  "quant_hour": 498792
 }
