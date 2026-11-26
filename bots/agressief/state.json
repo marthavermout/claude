@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 127.93399237896826,
-    "fees_paid": 12.27571269255522,
+    "realized_pnl": 127.1949796622349,
+    "fees_paid": 12.35588118179697,
     "funding_paid": 1.421684498445508,
     "positions": {
       "ADA": {
@@ -58,7 +58,7 @@
         "entry": 489.187143
       },
       "BTC": {
-        "size": -0.00579,
+        "size": -0.00284,
         "entry": 60140.06291466666
       },
       "XRP": {
@@ -250,15 +250,10 @@
     },
     "0x972d521729c0d07b360ae470f03878fe405f0650": {
       "starting_balance": 1000.0,
-      "realized_pnl": 14.438490475000014,
-      "fees_paid": 1.6797339713151,
+      "realized_pnl": 15.648093319000015,
+      "fees_paid": 1.86153979945995,
       "funding_paid": 0.42714660800691395,
-      "positions": {
-        "BTC": {
-          "size": -0.00669,
-          "entry": 60571.3833
-        }
-      }
+      "positions": {}
     },
     "0x7dacca323e44f168494c779bb5e7483c468ef410": {
       "starting_balance": 1000.0,

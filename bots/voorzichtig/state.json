@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 130.1031448611091,
-    "fees_paid": 3.00061516321053,
+    "realized_pnl": 130.62748690110905,
+    "fees_paid": 3.0881993692470298,
     "funding_paid": 1.8568405967741113,
     "positions": {
       "PUMP": {
@@ -14,8 +14,8 @@
         "entry": 1.3408062112288404
       },
       "LIT": {
-        "size": -50.0,
-        "entry": 2.609086031654415
+        "size": -58.0,
+        "entry": 2.585400017633116
       },
       "ETH": {
         "size": 0.0133,
@@ -40,10 +40,6 @@
       "XPL": {
         "size": -285.0,
         "entry": 0.04529094
-      },
-      "BTC": {
-        "size": -0.0029,
-        "entry": 60571.383299999994
       }
     }
   },
@@ -211,15 +207,10 @@
     },
     "0x972d521729c0d07b360ae470f03878fe405f0650": {
       "starting_balance": 1000.0,
-      "realized_pnl": 5.861386245000032,
-      "fees_paid": 0.6322568836374,
+      "realized_pnl": 6.311597169000015,
+      "fees_paid": 0.69992452370925,
       "funding_paid": 0.15175927614501028,
-      "positions": {
-        "BTC": {
-          "size": -0.00249,
-          "entry": 60571.383299999994
-        }
-      }
+      "positions": {}
     },
     "0x7dacca323e44f168494c779bb5e7483c468ef410": {
       "starting_balance": 1000.0,
