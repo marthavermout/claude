@@ -171,13 +171,11 @@
       "ALT": -1,
       "W": -1,
       "TAO": -1,
-      "ENA": -1,
       "SAGA": -1,
       "kNEIRO": -1,
       "PNUT": -1,
       "PENGU": -1,
-      "TRUMP": -1,
-      "MELANIA": -1
+      "TRUMP": -1
     }
   },
   "shadows": {
@@ -339,8 +337,8 @@
     },
     "0x18a794ea0363e75ab119d0392f172edc19625df3": {
       "starting_balance": 1000.0,
-      "realized_pnl": 8.552904264622423,
-      "fees_paid": 1.7292800060190012,
+      "realized_pnl": 3.21591713334199,
+      "fees_paid": 1.740088332252001,
       "funding_paid": -3.4133303629343885,
       "positions": {
         "ADA": {
@@ -376,7 +374,7 @@
           "entry": 3.1698825804904573
         },
         "VVV": {
-          "size": -9.37,
+          "size": -8.55,
           "entry": 22.78233610819458
         },
         "WLFI": {
@@ -420,7 +418,7 @@
     "0x3ca146d2692f61746a28fa926dc9d18086ce37c6": {
       "starting_balance": 1000.0,
       "realized_pnl": -0.23907686600000036,
-      "fees_paid": 0.64037727030924,
+      "fees_paid": 0.7170962812568099,
       "funding_paid": -0.13109354361531614,
       "positions": {
         "ADA": {
@@ -506,6 +504,18 @@
         "RUNE": {
           "size": -84.9,
           "entry": 0.549470084
+        },
+        "ENA": {
+          "size": -1150.0,
+          "entry": 0.101874621
+        },
+        "MELANIA": {
+          "size": -654.6,
+          "entry": 0.04709058
+        },
+        "ARB": {
+          "size": 195.1,
+          "entry": 0.11535306599999999
         }
       }
     }
