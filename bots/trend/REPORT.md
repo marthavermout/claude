@@ -1,4 +1,4 @@
-# Review #15 — 2026-11-25 05:15 UTC
+# Review #16 — 2026-11-26 04:55 UTC
 
 **Gevonden fouten:**
 - geen
@@ -9,10 +9,10 @@
 
 | Meting | Waarde |
 |---|---|
-| Periode | 23.6 uur |
-| Vermogen | $1,117.11 → $1,142.40 (+2.26%) |
-| BTC vasthouden (benchmark) | -2.67% |
-| Grootste daling (drawdown) | 0.86% |
+| Periode | 24.0 uur |
+| Vermogen | $1,142.21 → $1,119.01 (-2.03%) |
+| BTC vasthouden (benchmark) | +3.19% |
+| Grootste daling (drawdown) | 3.93% |
 | Trades | 0 (0.0/dag) |
 | Gerealiseerd / kosten | $+0.00 / $0.00 |
 | Heen-en-weer trades (churn) | 0 (0%) |
@@ -22,11 +22,11 @@
 
 | Meting | Waarde |
 |---|---|
-| Periode | 328.4 uur |
-| Vermogen | $999.59 → $1,142.40 (+14.29%) |
-| BTC vasthouden (benchmark) | -20.17% |
+| Periode | 352.1 uur |
+| Vermogen | $999.59 → $1,119.01 (+11.95%) |
+| BTC vasthouden (benchmark) | -17.66% |
 | Grootste daling (drawdown) | 8.39% |
-| Trades | 31 (2.3/dag) |
+| Trades | 31 (2.1/dag) |
 | Gerealiseerd / kosten | $+11.74 / $0.40 |
 | Heen-en-weer trades (churn) | 0 (0%) |
 | Dagen met risicostop | geen |

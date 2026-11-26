@@ -2,8 +2,8 @@
   "risk": {
     "max_leverage": 1.5
   },
-  "reviews": 14,
-  "last_review": "2026-11-25T05:15:06.799761+00:00",
+  "reviews": 15,
+  "last_review": "2026-11-26T04:55:16.582404+00:00",
   "review_log": [
     {
       "time": "2026-11-12T12:28:00.593224+00:00",
@@ -104,6 +104,15 @@
       "time": "2026-11-25T05:15:06.799761+00:00",
       "n": 14,
       "mistakes": [],
+      "observations": [],
+      "decision": "niets veranderen"
+    },
+    {
+      "time": "2026-11-26T04:55:16.582404+00:00",
+      "n": 15,
+      "mistakes": [
+        "Kosten slokken 125% van het resultaat op."
+      ],
       "observations": [],
       "decision": "niets veranderen"
     }

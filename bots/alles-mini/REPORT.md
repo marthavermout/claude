@@ -1,4 +1,4 @@
-# Review #14 — 2026-11-25 05:15 UTC
+# Review #15 — 2026-11-26 04:55 UTC
 
 **Gevonden fouten:**
 - 2 dagen met dagverlies-stop in de afgelopen week.
@@ -9,25 +9,28 @@
 
 | Meting | Waarde |
 |---|---|
-| Periode | 23.6 uur |
-| Vermogen | $53.73 → $56.86 (+5.83%) |
-| BTC vasthouden (benchmark) | -2.67% |
-| Grootste daling (drawdown) | 1.75% |
-| Trades | 0 (0.0/dag) |
-| Gerealiseerd / kosten | $+0.00 / $0.00 |
+| Periode | 24.0 uur |
+| Vermogen | $56.85 → $53.26 (-6.31%) |
+| BTC vasthouden (benchmark) | +3.19% |
+| Grootste daling (drawdown) | 10.91% |
+| Trades | 2 (2.0/dag) |
+| Gerealiseerd / kosten | $+0.00 / $0.01 |
 | Heen-en-weer trades (churn) | 0 (0%) |
 | Dagen met risicostop | geen |
+
+**Slechtste munten:** LIT $-0.00, PURR $-0.00
+**Beste munten:** PURR $-0.00, LIT $-0.00
 
 ## Sinds de start
 
 | Meting | Waarde |
 |---|---|
-| Periode | 304.8 uur |
-| Vermogen | $49.99 → $56.86 (+13.74%) |
-| BTC vasthouden (benchmark) | -18.84% |
-| Grootste daling (drawdown) | 14.34% |
-| Trades | 28 (2.2/dag) |
-| Gerealiseerd / kosten | $+3.71 / $0.15 |
+| Periode | 328.4 uur |
+| Vermogen | $49.99 → $53.26 (+6.54%) |
+| BTC vasthouden (benchmark) | -16.29% |
+| Grootste daling (drawdown) | 14.76% |
+| Trades | 30 (2.2/dag) |
+| Gerealiseerd / kosten | $+3.71 / $0.16 |
 | Heen-en-weer trades (churn) | 2 (7%) |
 | Dagen met risicostop | 2026-11-19, 2026-11-23 |
 
@@ -45,7 +48,7 @@
 | `0x972d5217…` | 19 | +0.00% | +0.00% | 0 |
 
 **Slechtste munten:** ZEC $-1.40, BTC $-0.22, DYDX $-0.05
-**Beste munten:** USELESS $+3.49, PURR $+1.55, LIT $+0.16
+**Beste munten:** USELESS $+3.49, PURR $+1.55, LIT $+0.15
 
 ---
 
