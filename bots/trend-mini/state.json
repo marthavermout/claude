@@ -17,7 +17,7 @@
   "shadows": {},
   "shadow_started": {},
   "meta": {
-    "funding_hour": 498811
+    "funding_hour": 498812
   },
   "pattern_trades": {},
   "pattern_scanned": {},
@@ -35,9 +35,9 @@
     "LTC": -0.04647511788339885,
     "ADA": -11.946730176079994,
     "AAVE": -0.012998439496310932,
-    "ENA": -13.487225664783415,
+    "ENA": -13.487225664783416,
     "WLD": -5.501228380870659
   },
   "funding_pos": {},
-  "quant_hour": 498811
+  "quant_hour": 498812
 }
