@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 181.68642354184323,
-    "fees_paid": 8.552081074316671,
+    "realized_pnl": 181.26442893184324,
+    "fees_paid": 8.663589940582172,
     "funding_paid": -1.7415152274787904,
     "positions": {
       "ASTER": {
@@ -74,8 +74,8 @@
         "entry": 0.009756951
       },
       "BTC": {
-        "size": 0.00405,
-        "entry": 60542.6061
+        "size": -4.99999999999997e-05,
+        "entry": 60438.4099
       }
     }
   },
@@ -266,15 +266,10 @@
     },
     "0x972d521729c0d07b360ae470f03878fe405f0650": {
       "starting_balance": 1000.0,
-      "realized_pnl": 10.288145880999988,
-      "fees_paid": 1.2806352454824002,
+      "realized_pnl": 9.853647726999993,
+      "fees_paid": 1.3940479216597501,
       "funding_paid": 0.24742381963365606,
-      "positions": {
-        "BTC": {
-          "size": 0.00417,
-          "entry": 60542.6061
-        }
-      }
+      "positions": {}
     },
     "0x7dacca323e44f168494c779bb5e7483c468ef410": {
       "starting_balance": 1000.0,
