@@ -569,17 +569,21 @@
     },
     "0xdbbb9b4e361e1e1b6b4c640914ed4e4a11896df9": {
       "starting_balance": 1000.0,
-      "realized_pnl": -21.955091101235524,
-      "fees_paid": 2.63746314310221,
+      "realized_pnl": -23.817908766066054,
+      "fees_paid": 2.76301303426476,
       "funding_paid": -0.9749803855132985,
       "positions": {
         "ENA": {
-          "size": 2168.0,
+          "size": 1819.0,
           "entry": 0.10731218743217917
         },
         "INJ": {
           "size": -42.9,
           "entry": 6.223921633333333
+        },
+        "HYPE": {
+          "size": 3.9,
+          "entry": 62.4129801
         }
       }
     },
