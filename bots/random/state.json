@@ -2,12 +2,12 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": -120.71348295914638,
-    "fees_paid": 8.613222833038597,
+    "fees_paid": 8.623350472411447,
     "funding_paid": -1.7219706246079312,
     "positions": {
       "BTC": {
-        "size": 0.00367,
-        "entry": 58923.2823
+        "size": 0.00404,
+        "entry": 59097.60181039604
       },
       "DOGE": {
         "size": 442.0,
