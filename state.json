@@ -119,7 +119,7 @@
     "0xd42350dfad9884113f21109b5a7a6736fb4d50c3": {
       "starting_balance": 1000.0,
       "realized_pnl": 19.593495652494813,
-      "fees_paid": 0.7348465791643497,
+      "fees_paid": 0.7576853745100497,
       "funding_paid": -0.07447338123704428,
       "positions": {
         "HYPE": {
@@ -137,6 +137,10 @@
         "ZEC": {
           "size": -0.05,
           "entry": 741.266717
+        },
+        "GRAM": {
+          "size": 53.0,
+          "entry": 0.957601482
         }
       }
     },
