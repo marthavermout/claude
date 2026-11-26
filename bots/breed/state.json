@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 273.57669514597507,
-    "fees_paid": 22.967693935153275,
+    "fees_paid": 22.985636683385774,
     "funding_paid": 0.27799645723066835,
     "positions": {
       "FARTCOIN": {
@@ -78,8 +78,8 @@
         "entry": 0.14568156704374985
       },
       "INJ": {
-        "size": -17.0,
-        "entry": 6.1037740388464785
+        "size": -23.5,
+        "entry": 6.112209894059154
       },
       "ZEC": {
         "size": 0.04,
@@ -319,15 +319,10 @@
     },
     "0x972d521729c0d07b360ae470f03878fe405f0650": {
       "starting_balance": 1000.0,
-      "realized_pnl": 9.980602062999985,
-      "fees_paid": 0.8210527114968,
+      "realized_pnl": 9.008098014999966,
+      "fees_paid": 0.93486736812645,
       "funding_paid": 0.2699764910730434,
-      "positions": {
-        "BTC": {
-          "size": -0.00417,
-          "entry": 60419.4137
-        }
-      }
+      "positions": {}
     },
     "0x7dacca323e44f168494c779bb5e7483c468ef410": {
       "starting_balance": 1000.0,
@@ -583,12 +578,12 @@
     "0xdbbb9b4e361e1e1b6b4c640914ed4e4a11896df9": {
       "starting_balance": 1000.0,
       "realized_pnl": -23.58244141973272,
-      "fees_paid": 2.77326990347841,
+      "fees_paid": 2.79905282978256,
       "funding_paid": -0.8652391564638685,
       "positions": {
         "ENA": {
-          "size": 1819.0,
-          "entry": 0.10731218743217917
+          "size": 2392.0,
+          "entry": 0.1055586374273135
         },
         "INJ": {
           "size": -39.2,
