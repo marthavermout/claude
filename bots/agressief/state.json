@@ -2,12 +2,12 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 125.58808392588824,
-    "fees_paid": 12.790257907334219,
+    "fees_paid": 12.809193964615169,
     "funding_paid": 1.3886138882642498,
     "positions": {
       "ADA": {
-        "size": -836.0,
-        "entry": 0.1458874369299852
+        "size": -1115.0,
+        "entry": 0.14712289198606962
       },
       "ASTER": {
         "size": -55.0,
@@ -213,12 +213,12 @@
     "0x888e000c78b8f1aada5b3c99f880794907b76d77": {
       "starting_balance": 1000.0,
       "realized_pnl": 244.08451843900005,
-      "fees_paid": 0.99752016595941,
+      "fees_paid": 1.00979832233691,
       "funding_paid": 11.026032482401245,
       "positions": {
         "INIT": {
-          "size": -229.0,
-          "entry": 0.130993796
+          "size": -424.0,
+          "entry": 0.13509993215566038
         }
       }
     },
@@ -274,8 +274,8 @@
     },
     "0xa1d4fc32f21d9d77a4c20a6ac4b748815912c07c": {
       "starting_balance": 1000.0,
-      "realized_pnl": 269.2403855220978,
-      "fees_paid": 7.7257537957305935,
+      "realized_pnl": 268.9465897380978,
+      "fees_paid": 7.736142669589894,
       "funding_paid": 0.9726970517956848,
       "positions": {
         "WLFI": {
@@ -303,7 +303,7 @@
           "entry": 69.83951245962537
         },
         "BTC": {
-          "size": -0.00613,
+          "size": -0.00575,
           "entry": 59980.5015
         },
         "XRP": {
@@ -314,12 +314,12 @@
     },
     "0xb3e475368ed0fa0ad23c04de0423d48a0758806f": {
       "starting_balance": 1000.0,
-      "realized_pnl": -4.537261677204291,
-      "fees_paid": 0.55505172264399,
+      "realized_pnl": -5.384941297496054,
+      "fees_paid": 0.56529500589099,
       "funding_paid": -0.06291299219258872,
       "positions": {
         "HYPE": {
-          "size": -6.57,
+          "size": -6.21,
           "entry": 60.87547788807844
         },
         "MNT": {
