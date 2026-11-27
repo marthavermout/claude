@@ -1,12 +1,12 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 135.0795640170964,
-    "fees_paid": 3.5541758528678713,
+    "realized_pnl": 136.09654124251477,
+    "fees_paid": 3.5587858852899914,
     "funding_paid": 1.7638039610359841,
     "positions": {
       "PUMP": {
-        "size": -47015.0,
+        "size": -43163.0,
         "entry": 0.002923544579184415
       },
       "ZRO": {
