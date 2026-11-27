@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 257.96876336823175,
-    "fees_paid": 23.63543307954484,
+    "fees_paid": 23.668370691850058,
     "funding_paid": 0.28160963146615003,
     "positions": {
       "FARTCOIN": {
@@ -10,8 +10,8 @@
         "entry": 0.1145229
       },
       "PUMP": {
-        "size": 12166.0,
-        "entry": 0.0026965392
+        "size": 39564.0,
+        "entry": 0.002679223281740977
       },
       "ZRO": {
         "size": -32.5,
