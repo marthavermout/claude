@@ -1,9 +1,9 @@
 {
   "risk": {
-    "min_trade_usd": 15.0
+    "min_trade_usd": 22.5
   },
-  "reviews": 16,
-  "last_review": "2026-11-26T04:55:15.654144+00:00",
+  "reviews": 17,
+  "last_review": "2026-11-27T04:34:18.901023+00:00",
   "review_log": [
     {
       "time": "2026-11-11T12:49:21.716196+00:00",
@@ -122,13 +122,26 @@
       ],
       "observations": [],
       "decision": "Afkoelperiode: vorige wijziging was minder dan 48u geleden; eerst het effect daarvan meten."
+    },
+    {
+      "time": "2026-11-27T04:34:18.901023+00:00",
+      "n": 17,
+      "mistakes": [
+        "Kosten slokken 183% van het resultaat op."
+      ],
+      "observations": [],
+      "decision": "Minimale trade-grootte verhoogd: $15.0 \u2192 $22.5 (minder kleine aanpassingen)."
     }
   ],
-  "last_change": "2026-11-24T05:38:13.037619+00:00",
+  "last_change": "2026-11-27T04:34:18.901023+00:00",
   "history": [
     {
       "time": "2026-11-24T05:38:13.037619+00:00",
       "change": "Minimale trade-grootte verhoogd: $10.0 \u2192 $15.0 (minder kleine aanpassingen)."
+    },
+    {
+      "time": "2026-11-27T04:34:18.901023+00:00",
+      "change": "Minimale trade-grootte verhoogd: $15.0 \u2192 $22.5 (minder kleine aanpassingen)."
     }
   ]
 }

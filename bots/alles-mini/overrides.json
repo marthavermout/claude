@@ -1,9 +1,9 @@
 {
   "risk": {
-    "max_leverage": 1.5
+    "max_leverage": 1.12
   },
-  "reviews": 15,
-  "last_review": "2026-11-26T04:55:13.385468+00:00",
+  "reviews": 16,
+  "last_review": "2026-11-27T04:34:16.883041+00:00",
   "review_log": [
     {
       "time": "2026-11-12T12:27:59.146733+00:00",
@@ -115,13 +115,26 @@
       ],
       "observations": [],
       "decision": "Afkoelperiode: vorige wijziging was minder dan 48u geleden; eerst het effect daarvan meten."
+    },
+    {
+      "time": "2026-11-27T04:34:16.883041+00:00",
+      "n": 16,
+      "mistakes": [
+        "2 dagen met dagverlies-stop in de afgelopen week."
+      ],
+      "observations": [],
+      "decision": "Max hefboom verlaagd: 1.5x \u2192 1.12x."
     }
   ],
-  "last_change": "2026-11-24T05:38:10.711899+00:00",
+  "last_change": "2026-11-27T04:34:16.883041+00:00",
   "history": [
     {
       "time": "2026-11-24T05:38:10.711899+00:00",
       "change": "Max hefboom verlaagd: 2.0x \u2192 1.5x."
+    },
+    {
+      "time": "2026-11-27T04:34:16.883041+00:00",
+      "change": "Max hefboom verlaagd: 1.5x \u2192 1.12x."
     }
   ]
 }

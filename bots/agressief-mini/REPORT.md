@@ -1,38 +1,38 @@
-# Review #15 — 2026-11-26 04:55 UTC
+# Review #16 — 2026-11-27 04:34 UTC
 
 **Gevonden fouten:**
-- geen
+- 2 dagen met dagverlies-stop in de afgelopen week.
 
-**Besluit:** niets veranderen
+**Besluit:** Max hefboom verlaagd: 3.0x → 2.25x.
 
 ## Laatste 24 uur
 
 | Meting | Waarde |
 |---|---|
 | Periode | 24.0 uur |
-| Vermogen | $55.68 → $51.86 (-6.86%) |
-| BTC vasthouden (benchmark) | +3.19% |
-| Grootste daling (drawdown) | 10.83% |
-| Trades | 5 (5.0/dag) |
-| Gerealiseerd / kosten | $+0.40 / $0.02 |
-| Heen-en-weer trades (churn) | 0 (0%) |
-| Dagen met risicostop | geen |
+| Vermogen | $51.80 → $48.72 (-5.93%) |
+| BTC vasthouden (benchmark) | +0.77% |
+| Grootste daling (drawdown) | 9.60% |
+| Trades | 15 (15.0/dag) |
+| Gerealiseerd / kosten | $-4.40 / $0.10 |
+| Heen-en-weer trades (churn) | 3 (20%) |
+| Dagen met risicostop | 2026-11-27 |
 
-**Slechtste munten:** SUI $-0.00, ADA $-0.00, WLFI $-0.00
-**Beste munten:** SOL $+0.39, WLFI $-0.00, ADA $-0.00
+**Slechtste munten:** ADA $-1.05, SUI $-0.97, HYPE $-0.82
+**Beste munten:** WLFI $-0.04, BTC $-0.25, SOL $-0.65
 
 ## Sinds de start
 
 | Meting | Waarde |
 |---|---|
-| Periode | 328.4 uur |
-| Vermogen | $50.00 → $51.86 (+3.72%) |
-| BTC vasthouden (benchmark) | -16.29% |
-| Grootste daling (drawdown) | 10.83% |
-| Trades | 30 (2.2/dag) |
-| Gerealiseerd / kosten | $+3.40 / $0.16 |
-| Heen-en-weer trades (churn) | 1 (3%) |
-| Dagen met risicostop | 2026-11-23 |
+| Periode | 352.1 uur |
+| Vermogen | $50.00 → $48.72 (-2.55%) |
+| BTC vasthouden (benchmark) | -15.57% |
+| Grootste daling (drawdown) | 15.92% |
+| Trades | 45 (3.1/dag) |
+| Gerealiseerd / kosten | $-1.00 / $0.26 |
+| Heen-en-weer trades (churn) | 4 (9%) |
+| Dagen met risicostop | 2026-11-23, 2026-11-27 |
 
 **Per trader (schaduwboek: wat als je alleen deze trader kopieerde)**
 
@@ -45,8 +45,8 @@
 | `0x888e000c…` | 19 | +0.00% | -7.40% | 0 |
 | `0x972d5217…` | 19 | +0.00% | +0.00% | 0 |
 
-**Slechtste munten:** BTC $-0.97, SUI $-0.00, ADA $-0.00
-**Beste munten:** LIT $+1.62, ETH $+0.91, WLFI $+0.71
+**Slechtste munten:** BTC $-1.22, ADA $-1.05, SUI $-0.98
+**Beste munten:** LIT $+0.91, ETH $+0.91, WLFI $+0.67
 
 ---
 

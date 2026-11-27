@@ -1,38 +1,38 @@
-# Review #15 — 2026-11-26 04:55 UTC
+# Review #16 — 2026-11-27 04:34 UTC
 
 **Gevonden fouten:**
 - 2 dagen met dagverlies-stop in de afgelopen week.
 
-**Besluit:** Afkoelperiode: vorige wijziging was minder dan 48u geleden; eerst het effect daarvan meten.
+**Besluit:** Max hefboom verlaagd: 1.5x → 1.12x.
 
 ## Laatste 24 uur
 
 | Meting | Waarde |
 |---|---|
 | Periode | 24.0 uur |
-| Vermogen | $56.85 → $53.26 (-6.31%) |
-| BTC vasthouden (benchmark) | +3.19% |
-| Grootste daling (drawdown) | 10.91% |
-| Trades | 2 (2.0/dag) |
-| Gerealiseerd / kosten | $+0.00 / $0.01 |
-| Heen-en-weer trades (churn) | 0 (0%) |
-| Dagen met risicostop | geen |
+| Vermogen | $53.31 → $51.80 (-2.82%) |
+| BTC vasthouden (benchmark) | +0.77% |
+| Grootste daling (drawdown) | 9.32% |
+| Trades | 13 (13.0/dag) |
+| Gerealiseerd / kosten | $-1.77 / $0.08 |
+| Heen-en-weer trades (churn) | 5 (38%) |
+| Dagen met risicostop | 2026-11-27 |
 
-**Slechtste munten:** LIT $-0.00, PURR $-0.00
-**Beste munten:** PURR $-0.00, LIT $-0.00
+**Slechtste munten:** LIT $-1.68, PURR $-0.80, HYPE $-0.25
+**Beste munten:** ZEC $+0.59, USELESS $+0.31, BTC $-0.01
 
 ## Sinds de start
 
 | Meting | Waarde |
 |---|---|
-| Periode | 328.4 uur |
-| Vermogen | $49.99 → $53.26 (+6.54%) |
-| BTC vasthouden (benchmark) | -16.29% |
-| Grootste daling (drawdown) | 14.76% |
-| Trades | 30 (2.2/dag) |
-| Gerealiseerd / kosten | $+3.71 / $0.16 |
-| Heen-en-weer trades (churn) | 2 (7%) |
-| Dagen met risicostop | 2026-11-19, 2026-11-23 |
+| Periode | 352.1 uur |
+| Vermogen | $49.99 → $51.80 (+3.62%) |
+| BTC vasthouden (benchmark) | -15.57% |
+| Grootste daling (drawdown) | 16.55% |
+| Trades | 43 (2.9/dag) |
+| Gerealiseerd / kosten | $+1.94 / $0.23 |
+| Heen-en-weer trades (churn) | 7 (16%) |
+| Dagen met risicostop | 2026-11-19, 2026-11-23, 2026-11-27 |
 
 **Per trader (schaduwboek: wat als je alleen deze trader kopieerde)**
 
@@ -47,8 +47,8 @@
 | `0x7dacca32…` | 19 | -0.66% | +85.12% | 1 |
 | `0x972d5217…` | 19 | +0.00% | +0.00% | 0 |
 
-**Slechtste munten:** ZEC $-1.40, BTC $-0.22, DYDX $-0.05
-**Beste munten:** USELESS $+3.49, PURR $+1.55, LIT $+0.15
+**Slechtste munten:** LIT $-1.53, ZEC $-0.80, HYPE $-0.23
+**Beste munten:** USELESS $+3.80, PURR $+0.75, DYDX $-0.05
 
 ---
 

@@ -1,7 +1,7 @@
 {
   "risk": {},
-  "reviews": 15,
-  "last_review": "2026-11-26T04:55:14.541148+00:00",
+  "reviews": 16,
+  "last_review": "2026-11-27T04:34:17.903627+00:00",
   "review_log": [
     {
       "time": "2026-11-12T12:27:59.617054+00:00",
@@ -116,6 +116,15 @@
     {
       "time": "2026-11-26T04:55:14.541148+00:00",
       "n": 15,
+      "mistakes": [
+        "32% van de trades draait binnen een uur de vorige om (churn)."
+      ],
+      "observations": [],
+      "decision": "niets veranderen"
+    },
+    {
+      "time": "2026-11-27T04:34:17.903627+00:00",
+      "n": 16,
       "mistakes": [
         "32% van de trades draait binnen een uur de vorige om (churn)."
       ],
