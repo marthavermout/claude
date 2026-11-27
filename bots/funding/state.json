@@ -3,7 +3,7 @@
     "starting_balance": 1000.0,
     "realized_pnl": 1.5568582206000372,
     "fees_paid": 3.3250527366794103,
-    "funding_paid": -0.12295545694946973,
+    "funding_paid": -0.12671209788336174,
     "positions": {
       "HYPE": {
         "size": -3.08,
@@ -22,7 +22,7 @@
   "shadows": {},
   "shadow_started": {},
   "meta": {
-    "funding_hour": 498820
+    "funding_hour": 498821
   },
   "pattern_trades": {},
   "pattern_scanned": {},
@@ -35,5 +35,5 @@
       "size": -3.0769759722073418
     }
   },
-  "quant_hour": 498820
+  "quant_hour": 498821
 }
