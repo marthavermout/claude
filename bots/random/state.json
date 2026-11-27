@@ -434,8 +434,8 @@
     },
     "0x3ca146d2692f61746a28fa926dc9d18086ce37c6": {
       "starting_balance": 1000.0,
-      "realized_pnl": 4.038322623318795,
-      "fees_paid": 0.8480034637659001,
+      "realized_pnl": 2.8535318401108745,
+      "fees_paid": 0.8600858147529,
       "funding_paid": 0.10783020496233858,
       "positions": {
         "ADA": {
@@ -523,7 +523,7 @@
           "entry": 0.549470084
         },
         "ENA": {
-          "size": -952.0,
+          "size": -700.0,
           "entry": 0.10184475427298444
         },
         "MELANIA": {
