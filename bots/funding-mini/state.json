@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 50.0,
     "realized_pnl": 0.03509270840000388,
-    "fees_paid": 0.15366793225203002,
+    "fees_paid": 0.15816902128983001,
     "funding_paid": 0.00014397092783300012,
     "positions": {
       "LINK": {
@@ -12,6 +12,10 @@
       "WLD": {
         "size": 40.6,
         "entry": 0.24640927199999996
+      },
+      "ADA": {
+        "size": 67.0,
+        "entry": 0.149289852
       }
     }
   },
