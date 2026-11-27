@@ -3,7 +3,7 @@
     "starting_balance": 50.0,
     "realized_pnl": 0.04618140240000311,
     "fees_paid": 0.06788471990471999,
-    "funding_paid": 0.0016471654038536002,
+    "funding_paid": 0.0013812300856808003,
     "positions": {
       "WLD": {
         "size": 39.7,
@@ -22,7 +22,7 @@
   "shadows": {},
   "shadow_started": {},
   "meta": {
-    "funding_hour": 498823
+    "funding_hour": 498824
   },
   "pattern_trades": {},
   "pattern_scanned": {},
@@ -35,5 +35,5 @@
       "size": 39.71328504953133
     }
   },
-  "quant_hour": 498823
+  "quant_hour": 498824
 }
