@@ -1,7 +1,7 @@
 {
   "risk": {
     "min_trade_usd": 15.0,
-    "max_leverage": 1.12
+    "max_leverage": 1.0
   },
   "leaders": [
     "0xf83858e57d9f804f5ca1603bce82558119aeac7b",
@@ -13,8 +13,8 @@
     "0x972d521729c0d07b360ae470f03878fe405f0650",
     "0x7dacca323e44f168494c779bb5e7483c468ef410"
   ],
-  "reviews": 17,
-  "last_review": "2026-11-26T07:32:50.200853+00:00",
+  "reviews": 18,
+  "last_review": "2026-11-27T07:12:05.900667+00:00",
   "review_log": [
     {
       "time": "2026-11-10T16:50:57.965419+00:00",
@@ -224,9 +224,20 @@
         "`0xf83858e5\u2026` zelf +60.78%, onze kopie +4.45%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo)."
       ],
       "decision": "Afkoelperiode: vorige wijziging was minder dan 48u geleden; eerst het effect daarvan meten."
+    },
+    {
+      "time": "2026-11-27T07:12:05.900667+00:00",
+      "n": 18,
+      "mistakes": [
+        "2 dagen met dagverlies-stop in de afgelopen week."
+      ],
+      "observations": [
+        "`0xf83858e5\u2026` zelf +49.66%, onze kopie +2.13%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo)."
+      ],
+      "decision": "Max hefboom verlaagd: 1.12x \u2192 1.0x."
     }
   ],
-  "last_change": "2026-11-24T08:15:51.459528+00:00",
+  "last_change": "2026-11-27T07:12:05.900667+00:00",
   "history": [
     {
       "time": "2026-11-10T16:50:57.965419+00:00",
@@ -243,6 +254,10 @@
     {
       "time": "2026-11-24T08:15:51.459528+00:00",
       "change": "Max hefboom verlaagd: 1.5x \u2192 1.12x."
+    },
+    {
+      "time": "2026-11-27T07:12:05.900667+00:00",
+      "change": "Max hefboom verlaagd: 1.12x \u2192 1.0x."
     }
   ]
 }
