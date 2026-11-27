@@ -53,3 +53,6 @@ time,coin,event,detail
 2026-11-27T17:00:02.477889+00:00,SUI,funding normaal,funding -0.0008%/uur
 2026-11-27T17:00:02.477889+00:00,SOL,open,funding -0.0045%/uur
 2026-11-27T17:00:02.477889+00:00,WLD,open,funding -0.0040%/uur
+2026-11-27T18:00:05.388541+00:00,DOGE,funding normaal,funding 0.0013%/uur
+2026-11-27T18:00:05.388541+00:00,SOL,funding normaal,funding 0.0013%/uur
+2026-11-27T18:00:05.388541+00:00,WLD,funding normaal,funding 0.0004%/uur
