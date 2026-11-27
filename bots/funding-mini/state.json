@@ -1,14 +1,10 @@
 {
   "broker": {
     "starting_balance": 50.0,
-    "realized_pnl": 0.03509270840000388,
-    "fees_paid": 0.15816902128983001,
-    "funding_paid": 0.00014397092783300012,
+    "realized_pnl": -0.033153095599996504,
+    "fees_paid": 0.16278394836978002,
+    "funding_paid": -0.00043848107472209993,
     "positions": {
-      "LINK": {
-        "size": 1.1,
-        "entry": 9.38512665
-      },
       "WLD": {
         "size": 40.6,
         "entry": 0.24640927199999996
@@ -30,7 +26,7 @@
   "shadows": {},
   "shadow_started": {},
   "meta": {
-    "funding_hour": 498837
+    "funding_hour": 498838
   },
   "pattern_trades": {},
   "pattern_scanned": {},
@@ -47,13 +43,7 @@
       "entry": 0.149035,
       "notional": 9.978085668062267,
       "size": 66.95129109311415
-    },
-    "LINK": {
-      "side": 1,
-      "entry": 9.38325,
-      "notional": 9.978085668062267,
-      "size": 1.063393351777078
     }
   },
-  "quant_hour": 498837
+  "quant_hour": 498838
 }
