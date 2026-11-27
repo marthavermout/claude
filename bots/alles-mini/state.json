@@ -1,31 +1,10 @@
 {
   "broker": {
     "starting_balance": 50.0,
-    "realized_pnl": 3.7490037301999974,
-    "fees_paid": 0.20687512069278002,
+    "realized_pnl": 1.943988035399998,
+    "fees_paid": 0.23471298600255003,
     "funding_paid": -0.09287332367606974,
-    "positions": {
-      "HYPE": {
-        "size": -0.21,
-        "entry": 63.691759100000006
-      },
-      "ZEC": {
-        "size": -0.02,
-        "entry": 776.4846719999999
-      },
-      "USELESS": {
-        "size": -128.0,
-        "entry": 0.07826034479999999
-      },
-      "LIT": {
-        "size": -5.0,
-        "entry": 2.22160559
-      },
-      "PURR": {
-        "size": -138.0,
-        "entry": 0.0726564658
-      }
-    }
+    "positions": {}
   },
   "risk": {
     "day": "2026-11-27",
