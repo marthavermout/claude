@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 50.0,
     "realized_pnl": 2.619403811800007,
-    "fees_paid": 0.4692635770464,
+    "fees_paid": 0.47376884891178,
     "funding_paid": 0.0862900761928046,
     "positions": {
       "ETH": {
@@ -18,8 +18,8 @@
         "entry": 0.14298639700000002
       },
       "BIGTIME": {
-        "size": -475.0,
-        "entry": 0.0062867424
+        "size": -2048.0,
+        "entry": 0.006346639597851563
       },
       "HYPE": {
         "size": -0.2,
