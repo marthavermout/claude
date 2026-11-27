@@ -435,7 +435,7 @@
     "0x3ca146d2692f61746a28fa926dc9d18086ce37c6": {
       "starting_balance": 1000.0,
       "realized_pnl": 2.8535318401108745,
-      "fees_paid": 0.8600858147529,
+      "fees_paid": 0.8714511082395,
       "funding_paid": 0.1211153775145276,
       "positions": {
         "ADA": {
@@ -537,6 +537,10 @@
         "SEI": {
           "size": 654.0,
           "entry": 0.0406521288
+        },
+        "AVAX": {
+          "size": -3.8,
+          "entry": 6.64637046
         }
       }
     }
