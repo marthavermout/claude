@@ -242,15 +242,10 @@
     },
     "0x7dacca323e44f168494c779bb5e7483c468ef410": {
       "starting_balance": 1000.0,
-      "realized_pnl": 23.027875188345153,
-      "fees_paid": 0.5317208195053499,
+      "realized_pnl": 15.232693942999852,
+      "fees_paid": 0.6536484811615499,
       "funding_paid": -0.44936776867342587,
-      "positions": {
-        "HYPE": {
-          "size": -4.12,
-          "entry": 63.8726160171492
-        }
-      }
+      "positions": {}
     },
     "0x94fb21bbfaed8927570a2d41af0c21527efbfd81": {
       "starting_balance": 1000.0,
@@ -610,8 +605,8 @@
     },
     "0xb3e475368ed0fa0ad23c04de0423d48a0758806f": {
       "starting_balance": 1000.0,
-      "realized_pnl": -3.182450008322222,
-      "fees_paid": 0.5008616986461301,
+      "realized_pnl": -2.2216779578108423,
+      "fees_paid": 0.5112235259161201,
       "funding_paid": 0.04563356002703473,
       "positions": {
         "MNT": {
@@ -623,7 +618,7 @@
           "entry": 0.0009098402563544197
         },
         "USUAL": {
-          "size": 4571.7,
+          "size": 2591.4,
           "entry": 0.011142509100484078
         },
         "HYPE": {
