@@ -113,12 +113,12 @@
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
       "realized_pnl": 132.54372405588958,
-      "fees_paid": 3.8165408108273704,
+      "fees_paid": 3.8266747447088703,
       "funding_paid": -3.8622339515293844,
       "positions": {
         "ETH": {
-          "size": 0.2237,
-          "entry": 1780.2766852559707
+          "size": 0.2367,
+          "entry": 1777.6415190610928
         },
         "ZRO": {
           "size": -388.0,
@@ -206,20 +206,20 @@
     },
     "0x7dacca323e44f168494c779bb5e7483c468ef410": {
       "starting_balance": 1000.0,
-      "realized_pnl": 34.146989389438346,
-      "fees_paid": 0.9891510905349001,
+      "realized_pnl": 33.16382948063569,
+      "fees_paid": 0.9993339762048001,
       "funding_paid": -0.6499490412246306,
       "positions": {
         "HYPE": {
-          "size": -6.44,
+          "size": -6.1,
           "entry": 63.66316150940396
         }
       }
     },
     "0xa1d4fc32f21d9d77a4c20a6ac4b748815912c07c": {
       "starting_balance": 1000.0,
-      "realized_pnl": 267.61772036025235,
-      "fees_paid": 7.788750886079284,
+      "realized_pnl": 266.1175605055728,
+      "fees_paid": 7.799532765023884,
       "funding_paid": 0.9618888660718876,
       "positions": {
         "WLFI": {
@@ -227,7 +227,7 @@
           "entry": 0.04457820767139999
         },
         "HYPE": {
-          "size": -5.41,
+          "size": -5.05,
           "entry": 62.387697592556755
         },
         "LIT": {
@@ -258,8 +258,8 @@
     },
     "0xb3e475368ed0fa0ad23c04de0423d48a0758806f": {
       "starting_balance": 1000.0,
-      "realized_pnl": -7.255783561668598,
-      "fees_paid": 0.57572477267724,
+      "realized_pnl": -6.799747036522731,
+      "fees_paid": 0.58789553598765,
       "funding_paid": -0.025608852363365728,
       "positions": {
         "HYPE": {
@@ -271,7 +271,7 @@
           "entry": 0.393618708
         },
         "SOPH": {
-          "size": 221517.0,
+          "size": 192398.0,
           "entry": 0.0009131530672294424
         },
         "USUAL": {

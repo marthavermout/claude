@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 266.5655152242318,
-    "fees_paid": 23.60178258679204,
+    "realized_pnl": 257.96876336823175,
+    "fees_paid": 23.63543307954484,
     "funding_paid": 0.28160963146615003,
     "positions": {
       "FARTCOIN": {
@@ -58,7 +58,7 @@
         "entry": 69.82093913691293
       },
       "HYPE": {
-        "size": -5.5600000000000005,
+        "size": -4.44,
         "entry": 59.0911794
       },
       "SOPH": {
@@ -704,8 +704,8 @@
     },
     "0xb3e475368ed0fa0ad23c04de0423d48a0758806f": {
       "starting_balance": 1000.0,
-      "realized_pnl": -4.962811486945261,
-      "fees_paid": 0.46459190345625007,
+      "realized_pnl": -4.497115014108138,
+      "fees_paid": 0.4748504705324101,
       "funding_paid": 0.07130254620038783,
       "positions": {
         "MNT": {
@@ -713,7 +713,7 @@
           "entry": 0.3982455293473424
         },
         "SOPH": {
-          "size": 220093.0,
+          "size": 195549.0,
           "entry": 0.0009098402563544197
         },
         "USUAL": {
