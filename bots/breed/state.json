@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 266.6500075152318,
-    "fees_paid": 23.514884949296142,
+    "realized_pnl": 266.5655152242318,
+    "fees_paid": 23.60178258679204,
     "funding_paid": 0.28160963146615003,
     "positions": {
       "FARTCOIN": {
@@ -10,7 +10,7 @@
         "entry": 0.1145229
       },
       "PUMP": {
-        "size": 20551.0,
+        "size": 12166.0,
         "entry": 0.0026965392
       },
       "ZRO": {
@@ -86,8 +86,8 @@
         "entry": 683.566686
       },
       "BTC": {
-        "size": -0.0020699999999999994,
-        "entry": 60438.4099
+        "size": -0.00484,
+        "entry": 61092.434027685944
       },
       "XRP": {
         "size": -81.0,
@@ -325,9 +325,14 @@
     "0x972d521729c0d07b360ae470f03878fe405f0650": {
       "starting_balance": 1000.0,
       "realized_pnl": 9.326801438999972,
-      "fees_paid": 1.38778461732645,
+      "fees_paid": 1.5011247815091,
       "funding_paid": 0.26228632359022735,
-      "positions": {}
+      "positions": {
+        "BTC": {
+          "size": -0.00409,
+          "entry": 61581.1813
+        }
+      }
     },
     "0x7dacca323e44f168494c779bb5e7483c468ef410": {
       "starting_balance": 1000.0,
