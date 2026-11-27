@@ -1,29 +1,21 @@
 {
   "broker": {
     "starting_balance": 50.0,
-    "realized_pnl": 0.02242133740000351,
-    "fees_paid": 0.10390902813440998,
-    "funding_paid": 0.0009576028075120003,
+    "realized_pnl": -0.08640009919999485,
+    "fees_paid": 0.12192292273842,
+    "funding_paid": 7.89747550810001e-05,
     "positions": {
-      "LTC": {
-        "size": 0.23,
-        "entry": 43.668732
-      },
       "ENA": {
         "size": 97.0,
         "entry": 0.10312062
       },
-      "SUI": {
-        "size": 14.9,
-        "entry": 0.671314236
-      },
-      "ADA": {
-        "size": 67.0,
-        "entry": 0.14938987199999998
-      },
       "DOGE": {
         "size": 173.0,
         "entry": 0.057817561200000006
+      },
+      "SOL": {
+        "size": 0.14,
+        "entry": 72.0299031
       }
     }
   },
@@ -38,42 +30,36 @@
   "shadows": {},
   "shadow_started": {},
   "meta": {
-    "funding_hour": 498832
+    "funding_hour": 498833
   },
   "pattern_trades": {},
   "pattern_scanned": {},
   "quant_sizes": {},
   "funding_pos": {
-    "LTC": {
-      "side": 1,
-      "entry": 43.66,
-      "notional": 9.988016399803136,
-      "size": 0.22876812642700725
-    },
     "ENA": {
       "side": 1,
       "entry": 0.102695,
       "notional": 9.988016399803136,
       "size": 97.25903305714141
     },
-    "ADA": {
-      "side": 1,
-      "entry": 0.14872,
-      "notional": 9.988016399803136,
-      "size": 67.1598735866268
-    },
-    "SUI": {
-      "side": 1,
-      "entry": 0.66931,
-      "notional": 9.988016399803136,
-      "size": 14.922855477735483
-    },
     "DOGE": {
       "side": 1,
       "entry": 0.057658,
       "notional": 9.988016399803136,
       "size": 173.22863088908974
+    },
+    "SOL": {
+      "side": 1,
+      "entry": 72.0155,
+      "notional": 9.960876841302102,
+      "size": 0.13831573538060699
+    },
+    "WLD": {
+      "side": 1,
+      "entry": 0.2444,
+      "notional": 9.960876841302102,
+      "size": 40.75645188748814
     }
   },
-  "quant_hour": 498832
+  "quant_hour": 498833
 }
