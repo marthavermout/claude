@@ -43,3 +43,8 @@ time,coin,event,detail
 2026-11-27T12:00:02.231735+00:00,ENA,open,funding -0.0045%/uur
 2026-11-27T13:00:02.527554+00:00,WLD,funding normaal,funding 0.0013%/uur
 2026-11-27T13:00:02.527554+00:00,ENA,funding normaal,funding 0.0002%/uur
+2026-11-27T16:00:02.832691+00:00,LTC,open,funding -0.0080%/uur
+2026-11-27T16:00:02.832691+00:00,ENA,open,funding -0.0074%/uur
+2026-11-27T16:00:02.832691+00:00,ADA,open,funding -0.0073%/uur
+2026-11-27T16:00:02.832691+00:00,SUI,open,funding -0.0068%/uur
+2026-11-27T16:00:02.832691+00:00,DOGE,open,funding -0.0044%/uur
