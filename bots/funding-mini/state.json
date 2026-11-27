@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 50.0,
     "realized_pnl": -0.08640009919999485,
-    "fees_paid": 0.12192292273842,
+    "fees_paid": 0.12642422601906,
     "funding_paid": 7.89747550810001e-05,
     "positions": {
       "ENA": {
@@ -16,6 +16,10 @@
       "SOL": {
         "size": 0.14,
         "entry": 72.0299031
+      },
+      "WLD": {
+        "size": 40.8,
+        "entry": 0.245169024
       }
     }
   },
