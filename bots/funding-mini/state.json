@@ -3,7 +3,7 @@
     "starting_balance": 50.0,
     "realized_pnl": -0.1426388489999947,
     "fees_paid": 0.17624014603389002,
-    "funding_paid": -0.0005406101604920999,
+    "funding_paid": -0.0007491223782080999,
     "positions": {
       "LTC": {
         "size": 0.22,
@@ -22,7 +22,7 @@
   "shadows": {},
   "shadow_started": {},
   "meta": {
-    "funding_hour": 498840
+    "funding_hour": 498841
   },
   "pattern_trades": {},
   "pattern_scanned": {},
@@ -35,5 +35,5 @@
       "size": 0.22000847554078712
     }
   },
-  "quant_hour": 498840
+  "quant_hour": 498841
 }
