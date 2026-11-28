@@ -17,7 +17,7 @@
   "shadows": {},
   "shadow_started": {},
   "meta": {
-    "funding_hour": 498848
+    "funding_hour": 498849
   },
   "pattern_trades": {},
   "pattern_scanned": {},
@@ -35,12 +35,6 @@
       "notional": 9.902662395112891,
       "size": 41.07113929373685
     },
-    "DOGE": {
-      "side": 1,
-      "entry": 0.056957,
-      "notional": 9.902662395112891,
-      "size": 173.86207832422514
-    },
     "ADA": {
       "side": 1,
       "entry": 0.14641,
@@ -54,5 +48,5 @@
       "size": 0.13895645651218896
     }
   },
-  "quant_hour": 498848
+  "quant_hour": 498849
 }
