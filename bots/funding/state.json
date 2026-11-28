@@ -3,7 +3,7 @@
     "starting_balance": 1000.0,
     "realized_pnl": -13.93439049779991,
     "fees_paid": 6.979216431393811,
-    "funding_paid": -0.2902825650278519,
+    "funding_paid": -0.2999740744885459,
     "positions": {
       "ADA": {
         "size": 1349.0,
@@ -26,7 +26,7 @@
   "shadows": {},
   "shadow_started": {},
   "meta": {
-    "funding_hour": 498852
+    "funding_hour": 498853
   },
   "pattern_trades": {},
   "pattern_scanned": {},
@@ -45,5 +45,5 @@
       "size": 821.2061485150916
     }
   },
-  "quant_hour": 498852
+  "quant_hour": 498853
 }
