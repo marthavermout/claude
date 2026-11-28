@@ -2,9 +2,14 @@
   "broker": {
     "starting_balance": 50.0,
     "realized_pnl": -0.1426388489999947,
-    "fees_paid": 0.17173766621799003,
+    "fees_paid": 0.17624014603389002,
     "funding_paid": -0.0005406101604920999,
-    "positions": {}
+    "positions": {
+      "LTC": {
+        "size": 0.22,
+        "entry": 45.4795941
+      }
+    }
   },
   "risk": {
     "day": "2026-11-28",
