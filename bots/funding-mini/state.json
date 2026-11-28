@@ -17,7 +17,7 @@
   "shadows": {},
   "shadow_started": {},
   "meta": {
-    "funding_hour": 498847
+    "funding_hour": 498848
   },
   "pattern_trades": {},
   "pattern_scanned": {},
@@ -40,7 +40,19 @@
       "entry": 0.056957,
       "notional": 9.902662395112891,
       "size": 173.86207832422514
+    },
+    "ADA": {
+      "side": 1,
+      "entry": 0.14641,
+      "notional": 9.902662395112891,
+      "size": 67.63651659799802
+    },
+    "SOL": {
+      "side": 1,
+      "entry": 71.2645,
+      "notional": 9.902662395112891,
+      "size": 0.13895645651218896
     }
   },
-  "quant_hour": 498847
+  "quant_hour": 498848
 }
