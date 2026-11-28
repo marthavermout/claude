@@ -1,7 +1,7 @@
 {
   "risk": {
     "min_trade_usd": 22.5,
-    "max_leverage": 2.25
+    "max_leverage": 1.69
   },
   "leaders": [
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5",
@@ -13,8 +13,8 @@
     "0xa1d4fc32f21d9d77a4c20a6ac4b748815912c07c",
     "0xb3e475368ed0fa0ad23c04de0423d48a0758806f"
   ],
-  "reviews": 18,
-  "last_review": "2026-11-27T07:12:04.908030+00:00",
+  "reviews": 19,
+  "last_review": "2026-11-28T06:53:44.662427+00:00",
   "review_log": [
     {
       "time": "2026-11-10T16:50:40.565967+00:00",
@@ -258,9 +258,23 @@
         "`0xa1d4fc32\u2026` zelf +164.16%, onze kopie +18.38%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo)."
       ],
       "decision": "Afkoelperiode: vorige wijziging was minder dan 48u geleden; eerst het effect daarvan meten."
+    },
+    {
+      "time": "2026-11-28T06:53:44.662427+00:00",
+      "n": 19,
+      "mistakes": [
+        "26% van de trades draait binnen een uur de vorige om (churn).",
+        "2 dagen met dagverlies-stop in de afgelopen week."
+      ],
+      "observations": [
+        "`0xb3e47536\u2026` zelf +8.70%, onze kopie -3.06%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo).",
+        "`0xd10e2b1b\u2026` zelf +18.18%, onze kopie -2.03%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo).",
+        "`0xa1d4fc32\u2026` zelf +221.57%, onze kopie +40.16%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo)."
+      ],
+      "decision": "Max hefboom verlaagd: 2.25x \u2192 1.69x."
     }
   ],
-  "last_change": "2026-11-25T07:52:26.326921+00:00",
+  "last_change": "2026-11-28T06:53:44.662427+00:00",
   "history": [
     {
       "time": "2026-11-10T16:50:40.565967+00:00",
@@ -285,6 +299,10 @@
     {
       "time": "2026-11-25T07:52:26.326921+00:00",
       "change": "Max hefboom verlaagd: 3.0x \u2192 2.25x."
+    },
+    {
+      "time": "2026-11-28T06:53:44.662427+00:00",
+      "change": "Max hefboom verlaagd: 2.25x \u2192 1.69x."
     }
   ],
   "blacklist": [

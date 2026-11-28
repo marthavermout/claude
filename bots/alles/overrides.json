@@ -13,8 +13,8 @@
     "0x972d521729c0d07b360ae470f03878fe405f0650",
     "0x7dacca323e44f168494c779bb5e7483c468ef410"
   ],
-  "reviews": 18,
-  "last_review": "2026-11-27T07:12:05.900667+00:00",
+  "reviews": 19,
+  "last_review": "2026-11-28T06:53:45.785443+00:00",
   "review_log": [
     {
       "time": "2026-11-10T16:50:57.965419+00:00",
@@ -235,6 +235,18 @@
         "`0xf83858e5\u2026` zelf +49.66%, onze kopie +2.13%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo)."
       ],
       "decision": "Max hefboom verlaagd: 1.12x \u2192 1.0x."
+    },
+    {
+      "time": "2026-11-28T06:53:45.785443+00:00",
+      "n": 19,
+      "mistakes": [
+        "2 dagen met dagverlies-stop in de afgelopen week."
+      ],
+      "observations": [
+        "`0xd10e2b1b\u2026` zelf +18.18%, onze kopie +0.14%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo).",
+        "`0xf83858e5\u2026` zelf +80.24%, onze kopie +2.79%: we lopen achter (te snel, of stortingen/opnames vertekenen zijn saldo)."
+      ],
+      "decision": "Afkoelperiode: vorige wijziging was minder dan 48u geleden; eerst het effect daarvan meten."
     }
   ],
   "last_change": "2026-11-27T07:12:05.900667+00:00",
