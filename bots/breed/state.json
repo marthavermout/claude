@@ -1,8 +1,8 @@
 {
   "broker": {
     "starting_balance": 1000.0,
-    "realized_pnl": 213.23300031499994,
-    "fees_paid": 25.150019158769094,
+    "realized_pnl": 214.23948033099992,
+    "fees_paid": 25.297588098905543,
     "funding_paid": 0.34891742038163204,
     "positions": {
       "ADA": {
@@ -10,8 +10,8 @@
         "entry": 0.14832532899999998
       },
       "BTC": {
-        "size": -0.00172,
-        "entry": 59885.5205
+        "size": 0.00381,
+        "entry": 59300.3577
       },
       "ENA": {
         "size": 233.0,
@@ -288,9 +288,14 @@
     "0x972d521729c0d07b360ae470f03878fe405f0650": {
       "starting_balance": 1000.0,
       "realized_pnl": 7.949699256999963,
-      "fees_paid": 1.61508464167365,
+      "fees_paid": 1.72822972416525,
       "funding_paid": 0.25600815314022735,
-      "positions": {}
+      "positions": {
+        "BTC": {
+          "size": 0.00424,
+          "entry": 59300.3577
+        }
+      }
     },
     "0x7dacca323e44f168494c779bb5e7483c468ef410": {
       "starting_balance": 1000.0,
