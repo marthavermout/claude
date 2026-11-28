@@ -7,8 +7,8 @@
     "positions": {}
   },
   "risk": {
-    "day": "2026-11-27",
-    "day_start_equity": 49.87859933403389,
+    "day": "2026-11-28",
+    "day_start_equity": 49.686164094942505,
     "peak_equity": 50.50498241309183,
     "killed": false,
     "kill_reason": ""
@@ -17,11 +17,18 @@
   "shadows": {},
   "shadow_started": {},
   "meta": {
-    "funding_hour": 498839
+    "funding_hour": 498840
   },
   "pattern_trades": {},
   "pattern_scanned": {},
   "quant_sizes": {},
-  "funding_pos": {},
-  "quant_hour": 498839
+  "funding_pos": {
+    "LTC": {
+      "side": 1,
+      "entry": 45.1675,
+      "notional": 9.937232818988502,
+      "size": 0.22000847554078712
+    }
+  },
+  "quant_hour": 498840
 }
