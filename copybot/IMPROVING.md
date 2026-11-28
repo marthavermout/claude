@@ -61,6 +61,10 @@ Run `review` for each and compare return, max drawdown, fees and number of trade
   remove the triangle if it stops passing. Note: the 1.5x reward/risk filter makes double/triple
   tops and bottoms and rectangles impossible to trade (their target equals their risk); retested
   without the filter on 14 Nov, all five still lost money.
+- Fien minimum holding time (28 Nov 2026), rejected: she often opens on high funding and closes an hour
+  later (one hour of funding ~0.005% vs ~0.13% round-trip cost). Holding at least 8h / 24h was tested with
+  `quant.simulate` on 208 days, 15 coins: exam part -0.60% -> -0.70% / -2.20% (split 0.7) and
+  -0.53% -> -1.38% / -4.34% (split 0.5). Worse in both, so not applied. Her live result is about -1%.
 - Rebalance band (21 Nov 2026): `rebalance_band = 0.25` keeps a copied position while the target stays within
   25% of it. Bea made 671 HYPE trades in 14h as traders resized all day. On the exam part (splits 0.7 and 0.5)
   it won for Bea, Alex and Axel (+1.1 to +5.6 points) and is on there; Vera lost slightly and Bas (the
