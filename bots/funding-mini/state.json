@@ -17,11 +17,30 @@
   "shadows": {},
   "shadow_started": {},
   "meta": {
-    "funding_hour": 498846
+    "funding_hour": 498847
   },
   "pattern_trades": {},
   "pattern_scanned": {},
   "quant_sizes": {},
-  "funding_pos": {},
-  "quant_hour": 498846
+  "funding_pos": {
+    "ENA": {
+      "side": 1,
+      "entry": 0.10263,
+      "notional": 9.902662395112891,
+      "size": 96.48896419285678
+    },
+    "WLD": {
+      "side": 1,
+      "entry": 0.24111,
+      "notional": 9.902662395112891,
+      "size": 41.07113929373685
+    },
+    "DOGE": {
+      "side": 1,
+      "entry": 0.056957,
+      "notional": 9.902662395112891,
+      "size": 173.86207832422514
+    }
+  },
+  "quant_hour": 498847
 }
