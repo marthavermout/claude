@@ -17,24 +17,24 @@
   "shadows": {},
   "shadow_started": {},
   "meta": {
-    "funding_hour": 498851
+    "funding_hour": 498852
   },
   "pattern_trades": {},
   "pattern_scanned": {},
   "quant_sizes": {},
   "funding_pos": {
-    "ENA": {
-      "side": 1,
-      "entry": 0.10263,
-      "notional": 9.902662395112891,
-      "size": 96.48896419285678
-    },
     "ADA": {
       "side": 1,
       "entry": 0.14641,
       "notional": 9.902662395112891,
       "size": 67.63651659799802
+    },
+    "WLD": {
+      "side": 1,
+      "entry": 0.23851,
+      "notional": 9.878328731259074,
+      "size": 41.41683254898778
     }
   },
-  "quant_hour": 498851
+  "quant_hour": 498852
 }
