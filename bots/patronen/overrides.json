@@ -2,8 +2,8 @@
   "risk": {
     "min_trade_usd": 75.93
   },
-  "reviews": 18,
-  "last_review": "2026-11-27T08:57:33.069461+00:00",
+  "reviews": 19,
+  "last_review": "2026-11-28T08:38:58.583030+00:00",
   "review_log": [
     {
       "time": "2026-11-10T18:25:31.102784+00:00",
@@ -154,6 +154,15 @@
       ],
       "observations": [],
       "decision": "Minimale trade-grootte verhoogd: $50.62 \u2192 $75.93 (minder kleine aanpassingen)."
+    },
+    {
+      "time": "2026-11-28T08:38:58.583030+00:00",
+      "n": 19,
+      "mistakes": [
+        "Kosten slokken 68% van het resultaat op."
+      ],
+      "observations": [],
+      "decision": "Afkoelperiode: vorige wijziging was minder dan 48u geleden; eerst het effect daarvan meten."
     }
   ],
   "last_change": "2026-11-27T08:57:33.069461+00:00",

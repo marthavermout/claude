@@ -1,9 +1,9 @@
-# Review #18 — 2026-11-27 08:57 UTC
+# Review #19 — 2026-11-28 08:38 UTC
 
 **Gevonden fouten:**
 - Kosten slokken 68% van het resultaat op.
 
-**Besluit:** Minimale trade-grootte verhoogd: $50.62 → $75.93 (minder kleine aanpassingen).
+**Besluit:** Afkoelperiode: vorige wijziging was minder dan 48u geleden; eerst het effect daarvan meten.
 
 ## Laatste 24 uur
 
@@ -11,7 +11,7 @@
 |---|---|
 | Periode | 24.0 uur |
 | Vermogen | $1,008.50 → $1,008.50 (+0.00%) |
-| BTC vasthouden (benchmark) | +1.32% |
+| BTC vasthouden (benchmark) | -3.48% |
 | Grootste daling (drawdown) | 0.00% |
 | Trades | 0 (0.0/dag) |
 | Gerealiseerd / kosten | $+0.00 / $0.00 |
@@ -22,11 +22,11 @@
 
 | Meting | Waarde |
 |---|---|
-| Periode | 398.5 uur |
+| Periode | 422.2 uur |
 | Vermogen | $1,000.00 → $1,008.50 (+0.85%) |
-| BTC vasthouden (benchmark) | -15.69% |
+| BTC vasthouden (benchmark) | -18.59% |
 | Grootste daling (drawdown) | 6.99% |
-| Trades | 172 (10.4/dag) |
+| Trades | 172 (9.8/dag) |
 | Gerealiseerd / kosten | $+26.72 / $17.86 |
 | Heen-en-weer trades (churn) | 26 (15%) |
 | Dagen met risicostop | geen |
