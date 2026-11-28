@@ -2,7 +2,7 @@
   "broker": {
     "starting_balance": 1000.0,
     "realized_pnl": 187.21714943019794,
-    "fees_paid": 20.40060467153925,
+    "fees_paid": 20.53507677808275,
     "funding_paid": 3.110844759015002,
     "positions": {
       "LIT": {
@@ -44,6 +44,10 @@
       "INIT": {
         "size": -66.0,
         "entry": 0.14298639700000002
+      },
+      "WLFI": {
+        "size": 15345.0,
+        "entry": 0.019473894000000002
       }
     }
   },
@@ -171,9 +175,14 @@
     "0x329c787b163a730bd7900df2beb3ff4fe4670375": {
       "starting_balance": 1000.0,
       "realized_pnl": 26.422095962600096,
-      "fees_paid": 11.792280984470008,
+      "fees_paid": 11.906895561301708,
       "funding_paid": -3.994981329505564,
-      "positions": {}
+      "positions": {
+        "WLFI": {
+          "size": 13079.0,
+          "entry": 0.019473894000000002
+        }
+      }
     },
     "0x643430283b19fa5bd70a1138b495c2b43523cdd5": {
       "starting_balance": 1000.0,
