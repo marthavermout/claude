@@ -1,15 +1,10 @@
 {
   "broker": {
     "starting_balance": 50.0,
-    "realized_pnl": -0.3068781989999956,
-    "fees_paid": 0.18522582538149002,
-    "funding_paid": -0.0008588927067440999,
-    "positions": {
-      "HYPE": {
-        "size": 0.16,
-        "entry": 63.293156100000004
-      }
-    }
+    "realized_pnl": -0.4195464229999958,
+    "fees_paid": 0.18973223191989003,
+    "funding_paid": -0.0009223112152560999,
+    "positions": {}
   },
   "risk": {
     "day": "2026-11-28",
@@ -22,7 +17,7 @@
   "shadows": {},
   "shadow_started": {},
   "meta": {
-    "funding_hour": 498850
+    "funding_hour": 498851
   },
   "pattern_trades": {},
   "pattern_scanned": {},
@@ -39,13 +34,7 @@
       "entry": 0.14641,
       "notional": 9.902662395112891,
       "size": 67.63651659799802
-    },
-    "HYPE": {
-      "side": 1,
-      "entry": 63.2805,
-      "notional": 9.902662395112891,
-      "size": 0.1564883715380392
     }
   },
-  "quant_hour": 498850
+  "quant_hour": 498851
 }
